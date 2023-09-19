@@ -1,263 +1,1449 @@
 {
-  "status_code": "1",
-  "status_message": "",
   "data": {
-    "id": "1619575",
-    "article": [
+    "ads": {
+      "ad_unit_id": "",
+      "ad_landing_position": 2,
+      "ad_category_position": 2
+    },
+    "game_list": [
       {
-        "type": 0,
-        "value": {
-          "textSize": 24,
-          "textStyle": "bold",
-          "text": "PM मोदी को लेकर पाकिस्तानी मंत्री हिना रब्बानी खार ने कही ये बात, श्री श्री रविशंकर ने दिया कड़ा जवाब "
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "कुछ दिन पहले ही पाकिस्तान के प्रधानमंत्री ने भारत से बातचीत की इच्छा जाहिर की थी. लेकिन अगले ही दिन पाकिस्तान पीएमओ ने शहबाज शरीफ के बयान से पल्ला झाड़ लिया था. अब पाकिस्तान की विदेश राज्य मंत्री ने कहा है कि पाकिस्तान पीएम मोदी को सहयोगी के रूप में नहीं देखता है."
-        }
-      },
-      {
-        "type": 2,
-        "value": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421"
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>गंभीर आर्थिक संकट का सामना कर रहे पाकिस्तान के प्रधानमंत्री शहबाज शरीफ ने भारत से बातचीत की इच्छा जाहिर की थी. लेकिन अगले 24 घंटे में ही पाकिस्तान पीएमओ ने शहबाज शरीफ के बयान से पल्ला झाड़ते हुए कश्मीर राग अलापने लगा था. वहीं, अब पाकिस्तान की विदेश राज्य मंत्री हिना रब्बानी खार ने भी शहबाज शरीफ के बयान से पल्ला झाड़ लिया है.</p>"
-        }
-      },
-      {
-        "type": 6,
-        "value": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421"
-      },
-      {
-        "type": 1,
-        "value": "Native Ads"
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>मंत्री हिना रब्बानी खार ने गुरुवार को कहा, उनका देश (पाकिस्तान) दोनों देशों के बीच शांति की दिशा में काम करने के लिए प्रधान मंत्री नरेंद्र मोदी को एक सहयोगी के रूप में नहीं देखता है. भारत के पूर्व प्रधानमंत्री मनमोहन सिंह और अटल बिहारी वाजपेयी को एक सहयोगी के रूप में देखता था.</p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>हिना रब्बानी खार के इस बयान पर आर्ट ऑफ लिविंग फाउंडर श्री श्री रविशंकर ने पाक मंत्री हिना रब्बानी के आरोपों पर जोरदार पलटवार करते हुए कहा कि पाकिस्तान को यह मालूम होना चाहिए कि समस्या उनकी तरफ से है. क्योंकि भारत को किसी अन्य पड़ोसी देश से कोई समस्या नहीं है.</p>"
-        }
-      },
-      {
-        "type": 5,
-        "value": {
-          "video": "https://aajtak-pdelivery.akamaized.net/aajtak/video/2022_10/18_oct_22_at_breaking_news_chunk_3_1810_vt_ak_1024/18_oct_22_at_breaking_news_chunk_3_1810_vt_ak_1024.m3u8",
-          "thumbnail": "https://akm-img-a-in.tosshub.com/aajtak/images/video/202210/uttarakhand_helicopter_crash_near_kedarnath-sixteen_nine_0.png?size=325:183"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>पाकिस्तान की मंत्री का बयान ऐसे समय में आया है जब कुछ दिन पहले ही एक टीवी चैनल को दिए इंटरव्यू में पाकिस्तान के पीएम ने कहा था कि भारत से तीन युद्ध हुए हैं और इससे गरीबी और बेरोजगारी ही आई है. इसलिए हम पीएम मोदी से कहना चाहते हैं कि हम समस्याओं को सुलझाना चाहते हैं.</p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p><strong>हिना रब्बानी खार ने अलग राग अलापा</strong></p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>स्विटजरलैंड के दावोस में जारी वर्ल्ड इकोनॉमिक फोरम के वार्षिक बैठक 2023 में साउथ-एशिया पर आयोजित एक सत्र में बोलते हुए खार ने कहा, जब मैं विदेश मंत्री के रूप में भारत गई थी तो बेहतर सहयोग के लिए हमने कड़ी मेहनत की थी. वर्तमान स्थिति की तुलना में उस वक्त हम काफी बेहतर स्थिति में थे. </p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>उन्होंने कहा, इन सालों में हमने जो कुछ भी किया है, उसने दुश्मनी बढ़ा दी है. हमें यह मालूम होना चाहिए कि हम भौगोलिक स्थिति को नहीं बदल सकते. हमें यह भी समझना होगा कि यह दक्षिण एशिया की समस्या नहीं, बल्कि भारत-पाकिस्तान की समस्या है. भारत पर आरोप लगाते हुए हिना रब्बानी खार ने कहा कि कूटनीतिक कौशल (statesmanship) समस्या भारत की ओर से है. </p>"
-        }
-      },
-      {
-        "type": 3,
-        "value": "<div style=\"position:relative;max-width:400px;min-width:100px\"> <blockquote class=\"instagram-media\" data-instgrm-captioned data-instgrm-permalink=\"https://www.instagram.com/p/CJlxiWPMp9n/?utm_source=ig_embed&amp;utm_campaign=loading\" data-instgrm-version=\"14\" style=\"background:#fff;border:0;border-radius:3px;box-shadow:0 0 1px 0 rgba(0,0,0,.5),0 1px 10px 0 rgba(0,0,0,.15);margin:1px;max-width:400px;min-width:326px;padding:0;width:99.375%;width:-webkit-calc(100% - 2px);width:calc(100% - 2px)\" > <div style=\"padding:16px\"> <a href=\"https://www.instagram.com/p/CJlxiWPMp9n/?utm_source=ig_embed&amp;utm_campaign=loading\" style=\"background:#fff;line-height:0;padding:0 0;text-align:center;text-decoration:none;width:100%\" target=\"_blank\" ><div style=\"display:flex;flex-direction:row;align-items:center\"> <div style=\"background-color:#f4f4f4;border-radius:50%;flex-grow:0;height:40px;margin-right:14px;width:40px\" ></div> <div style=\"display:flex;flex-direction:column;flex-grow:1;justify-content:center\" > <div style=\"background-color:#f4f4f4;border-radius:4px;flex-grow:0;height:14px;margin-bottom:6px;width:100px\" ></div> <div style=\"background-color:#f4f4f4;border-radius:4px;flex-grow:0;height:14px;width:60px\" ></div> </div> </div> <div style=\"padding:19% 0\"></div> <div style=\"display:block;height:50px;margin:0 auto 12px;width:50px\"> <svg width=\"50px\" height=\"50px\" viewBox=\"0 0 60 60\" version=\"1.1\" xmlns=\"https://www.w3.org/2000/svg\" xmlns:xlink=\"https://www.w3.org/1999/xlink\" > <g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"> <g transform=\"translate(-511.000000, -20.000000)\" fill=\"#000000\"> <g> <path d=\"M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631\" ></path> </g> </g> </g> </svg> </div> <div style=\"padding-top:8px\"> <div style=\"color:#3897f0;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:550;line-height:18px\" > View this post on Instagram </div> </div> <div style=\"padding:12.5% 0\"></div> <div style=\"display:flex;flex-direction:row;margin-bottom:14px;align-items:center\" > <div> <div style=\"background-color:#f4f4f4;border-radius:50%;height:12.5px;width:12.5px;transform:translateX(0) translateY(7px)\" ></div> <div style=\"background-color:#f4f4f4;height:12.5px;transform:rotate(-45deg) translateX(3px) translateY(1px);width:12.5px;flex-grow:0;margin-right:14px;margin-left:2px\" ></div> <div style=\"background-color:#f4f4f4;border-radius:50%;height:12.5px;width:12.5px;transform:translateX(9px) translateY(-18px)\" ></div> </div> <div style=\"margin-left:8px\"> <div style=\"background-color:#f4f4f4;border-radius:50%;flex-grow:0;height:20px;width:20px\" ></div> <div style=\"width:0;height:0;border-top:2px solid transparent;border-left:6px solid #f4f4f4;border-bottom:2px solid transparent;transform:translateX(16px) translateY(-4px) rotate(30deg)\" ></div> </div> <div style=\"margin-left:auto\"> <div style=\"width:0;border-top:8px solid #f4f4f4;border-right:8px solid transparent;transform:translateY(16px)\" ></div> <div style=\"background-color:#f4f4f4;flex-grow:0;height:12px;width:16px;transform:translateY(-4px)\" ></div> <div style=\"width:0;height:0;border-top:8px solid #f4f4f4;border-left:8px solid transparent;transform:translateY(-4px) translateX(8px)\" ></div> </div> </div> <div style=\"display:flex;flex-direction:column;flex-grow:1;justify-content:center;margin-bottom:24px\" > <div style=\"background-color:#f4f4f4;border-radius:4px;flex-grow:0;height:14px;margin-bottom:6px;width:224px\" ></div> <div style=\"background-color:#f4f4f4;border-radius:4px;flex-grow:0;height:14px;width:144px\" ></div></div ></a> <p style=\"color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;line-height:17px;margin-bottom:0;margin-top:8px;overflow:hidden;padding:8px 0 7px;text-align:center;text-overflow:ellipsis;white-space:nowrap\" > <a href=\"https://www.instagram.com/p/CJlxiWPMp9n/?utm_source=ig_embed&amp;utm_campaign=loading\" style=\"color:#c9c8cd;font-family:Arial,sans-serif;font-size:14px;font-style:normal;font-weight:400;line-height:17px;text-decoration:none\" target=\"_blank\" >A post shared by Instagram (@instagram)</a > </p> </div> </blockquote> <script async src=\"//platform.instagram.com/en_US/embeds.js\"></script> <div style=\"position:absolute;width:80%;bottom:2px;left:0;right:0;margin-left:auto;margin-right:auto;color:#000;text-align:center\" > <small style=\"line-height:1.8;font-size:2px;background:0 0\" >Powered by<a href=\"https://embedinstagramfeed.com/\">embedinstagramfeed</a >&<a href=\"https://yatzyregler.se/da/\" >https://yatzyregler.se/da/</a ></small > </div></div>"
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p><strong>भारत से बातचीत को लेकर कही ये बात</strong></p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>पाक मंत्री हिना रब्बानी खार ने भारत से बातचीत को लेकर कहा, मैं वास्तव में मानती हूं कि अगर दोनों देशों के पास एक ही समय में कूटनीतिक कौशल (statesmen) नेता हो और जिन्हें सिर्फ चुनावों में ही रुचि नहीं हो, तो ऐसी कोई समस्या नहीं है जिसे हल नहीं किया जा सकता है.</p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>उन्होंने कहा, हमें चुनाव प्रक्रियाओं से परे सोचने और शांति की इच्छा रखने की जरूरत है. प्रधानमंत्री नरेंद्र मोदी अपने देश के लिए अच्छे नेता हो सकते हैं. लेकिन मुझे नरेंद्र मोदी में पाकिस्तान का सहयोगी नहीं दिखता है. मनमोहन सिंह और अटल बिहारी वाजपेयी को मैंने पाकिस्तान के सहयोगी के रूप में देखा था. </p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>हिना रब्बानी खार ने कहा कि पाकिस्तान अपने अतीत से सबक ले चुका है. अब वह आगे बढ़ना चाहता है लेकिन मुझे लगता है कि भारत हमेशा से एक ऐसा देश था जहां सभी धर्म के लोग शांतिपूर्वक रहते थे. लेकिन अब ऐसा नहीं है. </p>"
-        }
-      },
-      {
-        "type": 3,
-        "value": "<iframe style = \"border:none;\" max-width:400px;min-width:100px; height=\"620\" data-tweet-url=\"https://twitter.com/1joshuatz/status/1178001362690293760\" src=\"data:text/html;charset=utf-8,%3Cblockquote%20class%3D%22twitter-tweet%22%3E%3Cp%20lang%3D%22en%22%20dir%3D%22ltr%22%3EI%20needed%20a%20refresh%20on%20how%20JWT%20%28JSON%20Web%20Tokens%29%20work%2C%20so%20I%20wrote%20up%20a%20simple%20guide%20as%20I%20researched%2C%20and%20published%20it%20on%20%3Ca%20href%3D%22https%3A//t.co/HE7dpgdKP9%22%3Ehttps%3A//t.co/HE7dpgdKP9%3C/a%3E%20/%20%3Ca%20href%3D%22https%3A//twitter.com/hashtag/DEVcommunity%3Fsrc%3Dhash%26amp%3Bref_src%3Dtwsrc%255Etfw%22%3E%23DEVcommunity%3C/a%3E.%20%3Cbr%3E%3Cbr%3EIf%20you%26%2339%3Bve%20been%20putting%20off%20learning%20about%20JWTs%20or%20need%20a%20refresher%2C%20give%20it%20a%20read%21%20-%20%3Ca%20href%3D%22https%3A//t.co/SFNZWUjOCJ%22%3Ehttps%3A//t.co/SFNZWUjOCJ%3C/a%3E%3C/p%3E%26mdash%3B%20Joshua%20T%20%28@1joshuatz%29%20%3Ca%20href%3D%22https%3A//twitter.com/1joshuatz/status/1178001362690293760%3Fref_src%3Dtwsrc%255Etfw%22%3ESeptember%2028%2C%202019%3C/a%3E%3C/blockquote%3E%0A%3Cscript%20async%20src%3D%22https%3A//platform.twitter.com/widgets.js%22%20charset%3D%22utf-8%22%3E%3C/script%3E%0A%3Cstyle%3Ehtml%7Boverflow%3Ahidden%20%21important%3B%7D%3C/style%3E\"></iframe>"
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p><strong>श्री श्री रविशंकर ने किया पलटवार</strong></p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>उसी पैनल का हिस्सा रहे आर्ट ऑफ लिविंग फाउंडर श्री श्री रविशंकर ने पाक मंत्री हिना रब्बानी के आरोपों पर जोरदार पलटवार किया. पाकिस्तान को आइना दिखाते हुए रविशंकर ने कहा कि पाकिस्तान को यह मालूम होना चाहिए कि समस्या उनकी तरफ से है. क्योंकि भारत को किसी अन्य पड़ोसी देश से कोई समस्या नहीं है. </p>"
-        }
-      },
-      {
-        "type": 3,
-        "value": " <div class = \"twitter-tweet twitter-tweet-rendered\" style=\"display: flex; max-width: 550px; width: 100%; margin-top: 10px; margin-bottom: 10px;\"><iframe id=\"twitter-widget-0\" scrolling=\"no\" frameborder=\"0\" allowtransparency=\"true\" allowfullscreen=\"true\" class=\"\" style=\"position: static; visibility: visible; width: 431px; height: 808px; display: block; flex-grow: 1;\" title=\"Twitter Tweet\" src=\"https://platform.twitter.com/embed/Tweet.html?creatorScreenName=AajTak&amp;dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19idXNpbmVzc192ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmx1ZV92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19nb3ZfdmVyaWZpZWRfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYnVzaW5lc3NfYWZmaWxpYXRlX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2Zyb250ZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH19&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1394138721541316616&amp;lang=hi&amp;origin=https%3A%2F%2Fwww.aajtak.in%2Fentertainment%2Fbollywood-news%2Fstory%2Fscarlett-johanssons-husband-dumps-slime-on-her-head-during-her-mtv-award-acceptance-speech-tmov-1256423-2021-05-17&amp;sessionId=ab80e1fba405c03bacba114afa57711482d28b63&amp;siteScreenName=AajTak&amp;theme=light&amp;widgetsVersion=aaf4084522e3a%3A1674595607486&amp;width=550px\" data-tweet-id=\"1394138721541316616\"></iframe></div>"
-      },
-      {
-        "type": 1,
-        "value": "NATIVEAPP-ADS"
-      },
-      {
-        "type": 3,
-        "value": "<div class=\"twitter-tweet twitter-tweet-rendered\" style=\"display: flex; max-width: 550px; width: 100%; margin-top: 10px; margin-bottom: 10px;\"><iframe id=\"twitter-widget-1\" scrolling=\"no\" frameborder=\"0\" allowtransparency=\"true\" allowfullscreen=\"true\" class=\"\" style=\"position: static; visibility: visible; width: 431px; height: 586px; display: block; flex-grow: 1;\" title=\"Twitter Tweet\" src=\"https://platform.twitter.com/embed/Tweet.html?creatorScreenName=AajTak&amp;dnt=false&amp;embedId=twitter-widget-1&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19idXNpbmVzc192ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbWl4ZWRfbWVkaWFfMTU4OTciOnsiYnVja2V0IjoidHJlYXRtZW50IiwidmVyc2lvbiI6bnVsbH0sInRmd19leHBlcmltZW50c19jb29raWVfZXhwaXJhdGlvbiI6eyJidWNrZXQiOjEyMDk2MDAsInZlcnNpb24iOm51bGx9LCJ0ZndfZHVwbGljYXRlX3NjcmliZXNfdG9fc2V0dGluZ3MiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3ZpZGVvX2hsc19keW5hbWljX21hbmlmZXN0c18xNTA4MiI6eyJidWNrZXQiOiJ0cnVlX2JpdHJhdGUiLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmx1ZV92ZXJpZmllZF9iYWRnZSI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0Zndfc2hvd19nb3ZfdmVyaWZpZWRfYmFkZ2UiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYnVzaW5lc3NfYWZmaWxpYXRlX2JhZGdlIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd190d2VldF9lZGl0X2Zyb250ZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH19&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1394118987458387980&amp;lang=hi&amp;origin=https%3A%2F%2Fwww.aajtak.in%2Fentertainment%2Fbollywood-news%2Fstory%2Fscarlett-johanssons-husband-dumps-slime-on-her-head-during-her-mtv-award-acceptance-speech-tmov-1256423-2021-05-17&amp;sessionId=ab80e1fba405c03bacba114afa57711482d28b63&amp;siteScreenName=AajTak&amp;theme=light&amp;widgetsVersion=aaf4084522e3a%3A1674595607486&amp;width=550px\" data-tweet-id=\"1394118987458387980\"></iframe></div>"
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>श्री रविशंकर ने कहा कि दोनों देशों में एक समान भाषा बोली जाती है. दोनों की संस्कृति, खान-पान आदि समान हैं. प्रधानमंत्री मोदी ने कई बार हाथ बढ़ाते हुए मदद करने की पेशकश भी की है. हिना रब्बानी खेर के आरोपों का कोई मतलब नहीं बनता है. भारत में धर्मनिरपेक्षता पर उठाए गए सवालों पर भी रविशंकर ने जोरदार खंडन किया. <br />\n </p>"
-        }
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<p>Sample Click following link <a href = https://www.aajtak.in/world/story/pakistan-minister-hina-rabbani-khar-says-pakistan-does-not-see-a-partner-in-pm-modi-tlifwe-1619575-2023-01-20>Hyber Link Sample</a></p>"
-        }
-      },
-      {
-        "type": 3,
-        "value": "<p class=\"text-align-justify\"><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" height=\"250\" src=\"https://www.youtube.com/embed/oOf9w-aDIXY\" title=\"Desh Ki Awaaz: Gujarat की जनता को है PM Modi पर विश्वास, जानिए इस बार पटेल वोटर किसका देंगे साथ?\" width=\"100%\" class=\"multy-video-iframe\"></iframe></p>"
-      },
-      {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<body><h1>This is heading 1</h1><h2>This is heading 2</h2><h3>This is heading 3</h3><h4>This is heading 4</h4><h5>This is heading 5</h5><h6>This is heading 6</h6></body>"
-        }
-      },
-      {
-        "type": 3,
-        "value": "<article class=\"embedded-entity\"><article class=\"media media--type-ckeditor-image media--view-mode-image\"><div class=\"field field--name-field-media-image field--type-image field--label-hidden field__item\">  <imgstyle=\"width:100%;height:auto;\" src=\"https://akm-img-a-in.tosshub.com/aajtak/styles/medium_crop_simple/public/images/story/202210/act_check_opinion_poll_3.jpg\"   alt=\"\" typeof=\"foaf:Image\" class=\"image-style-medium-crop-simple\" /></div>\n      \n  </article></article>"
-      },
-      {
-        "type": 7,
-        "value": [
+        "type": "carousal",
+        "category": "Popular Games",
+        "categoryid": "popular_games",
+        "games": [
           {
-            "imgUrl": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421",
-            "title": "UP Election 2022: पश्चिमी यूपी में क्यों मुजफ्फरनगर दंगे को फिर से याद दिला रही है बीजेपी?"            
+            "id": "1",
+            "game_name": "Stack Bounce",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/stackbounce",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://stackbounce.h5games.usercontent.goog/v/5dbb5964-61ff-403a-a319-6941e7867309/high_res_icon.jpg",
+              "horizontalBanner": "https://stackbounce.h5games.usercontent.goog/v/5dbb5964-61ff-403a-a319-6941e7867309/high_res_banner.jpg",
+              "verticalBanner": "https://stackbounce.h5games.usercontent.goog/v/5dbb5964-61ff-403a-a319-6941e7867309/high_res_tall.jpg"
+            },
+            "description": "Time your taps to smash through a tower of colorful blocks.",
+            "enabled": "true",
+            "fullscreen": "false",
+            "device": "all"
           },
           {
-            "imgUrl": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421",
-            "title": "Ab the best"           
+            "id": "2",
+            "game_name": "Spiral Roll",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/spiralroll",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
+              "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
+              "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+            },
+            "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
           },
           {
-            "imgUrl": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421",
-            "title": "Ab the best"           
+            "id": "3",
+            "game_name": "Om Nom Run",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/omnomrun",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://omnomrun.h5games.usercontent.goog/v/5e921868-7442-48b7-8d4e-1433f4a900b5/high_res_icon.jpg",
+              "horizontalBanner": "https://omnomrun.h5games.usercontent.goog/v/5e921868-7442-48b7-8d4e-1433f4a900b5/high_res_banner.jpg",
+              "verticalBanner": "https://omnomrun.h5games.usercontent.goog/v/5e921868-7442-48b7-8d4e-1433f4a900b5/high_res_tall.jpg"
+            },
+            "description": "Run and jump with Om Nom in this famous endless runner adventure.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
           },
           {
-            "imgUrl": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421",
-            "title": "Ab the best"            
+            "id": "4",
+            "game_name": "Onet Connect Classic",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/onetconnectclassic",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://onetconnectclassic.h5games.usercontent.goog/v/3548fcd4-da1a-47bd-ac18-01488239c660/high_res_icon.jpg",
+              "horizontalBanner": "https://onetconnectclassic.h5games.usercontent.goog/v/3548fcd4-da1a-47bd-ac18-01488239c660/high_res_banner.jpg",
+              "verticalBanner": "https://onetconnectclassic.h5games.usercontent.goog/v/3548fcd4-da1a-47bd-ac18-01488239c660/high_res_tall.jpg"
+            },
+            "description": "Train your brain! Can you connect all the matching tile pairs?",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
           },
           {
-            "imgUrl": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421",
-            "title": "Ab the best"          
-          },
-          {
-            "imgUrl": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421",
-            "title": "Ab the best"            
-          }         
+            "id": "5",
+            "game_name": "Pin The UFO",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/pintheufo",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://pintheufo.h5games.usercontent.goog/v/c8d6c716-0303-4d83-8b4b-55ade4e03a56/high_res_icon.jpg",
+              "horizontalBanner": "https://pintheufo.h5games.usercontent.goog/v/c8d6c716-0303-4d83-8b4b-55ade4e03a56/high_res_banner.jpg",
+              "verticalBanner": "https://pintheufo.h5games.usercontent.goog/v/c8d6c716-0303-4d83-8b4b-55ade4e03a56/high_res_tall.jpg"
+            },
+            "description": "Pull out the pins and get all the aliens onto their spaceship.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
         ]
       },
       {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<!DOCTYPE html><html><body><h2>An Unordered HTML List</h2><ul> <li>Coffee</li> <li>Tea</li> <li>Milk</li></ul> <h2>An Ordered HTML List</h2><ol> <li>Coffee</li> <li>Tea</li> <li>Milk</li></ol> </body></html>"
-        }
+        "type": "list",
+        "category": "Adventure",
+        "categoryid": "adventure_games",
+        "games": [
+          {
+            "id": "1",
+            "game_name": "Cannon Balls 3D",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/cannonballs3d",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://cannonballs3d.h5games.usercontent.goog/v/e31c216c-933d-4874-b82a-c1dd2abdcb08/high_res_icon.jpg",
+              "horizontalBanner": "https://cannonballs3d.h5games.usercontent.goog/v/e31c216c-933d-4874-b82a-c1dd2abdcb08/high_res_banner.jpg",
+              "verticalBanner": "https://cannonballs3d.h5games.usercontent.goog/v/e31c216c-933d-4874-b82a-c1dd2abdcb08/high_res_tall.jpg",
+              "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way."
+            },
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "2",
+            "game_name": "Draw Climber",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/drawclimber",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://drawclimber.h5games.usercontent.goog/v/35ef0b5e-be32-42f2-bc8f-5dbf352a4f4b/high_res_icon.jpg",
+              "horizontalBanner": "https://drawclimber.h5games.usercontent.goog/v/35ef0b5e-be32-42f2-bc8f-5dbf352a4f4b/high_res_banner.jpg",
+              "verticalBanner": "https://drawclimber.h5games.usercontent.goog/v/35ef0b5e-be32-42f2-bc8f-5dbf352a4f4b/high_res_tall.jpg"
+            },
+            "description": "Draw your legs to win the race! Any drawing will make you run!",
+            "enabled": "true",
+            "fullscreen": "false",
+            "device": "all"
+          },
+          {
+            "id": "3",
+            "game_name": "RoadFury",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/roadfury",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://roadfury.h5games.usercontent.goog/v/a2a8cf2b-40b8-4c60-8bbd-5537053e72c6/high_res_icon.jpg",
+              "horizontalBanner": "https://roadfury.h5games.usercontent.goog/v/a2a8cf2b-40b8-4c60-8bbd-5537053e72c6/high_res_banner.jpg",
+              "verticalBanner": "https://roadfury.h5games.usercontent.goog/v/a2a8cf2b-40b8-4c60-8bbd-5537053e72c6/high_res_tall.jpg"
+            },
+            "description": "Race along the highway and shoot down all your enemies.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "4",
+            "game_name": "Ball Blast",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/ballblast",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://ballblast.h5games.usercontent.goog/v/7af9498f-e79b-4416-aca3-a60f91d3f420/high_res_icon.jpg",
+              "horizontalBanner": "https://ballblast.h5games.usercontent.goog/v/7af9498f-e79b-4416-aca3-a60f91d3f420/high_res_banner.jpg",
+              "verticalBanner": "https://ballblast.h5games.usercontent.goog/v/7af9498f-e79b-4416-aca3-a60f91d3f420/high_res_tall.jpg"
+            },
+            "description": "See how long you can survive by dodging and blasting the bouncing obstacles before they hit you!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "5",
+            "game_name": "Flappy Dunk",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/flappydunk",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://flappydunk.h5games.usercontent.goog/v/474de71e-7b32-4c6f-9d8c-830bdbcbc0e4/high_res_icon.jpg",
+              "horizontalBanner": "https://flappydunk.h5games.usercontent.goog/v/474de71e-7b32-4c6f-9d8c-830bdbcbc0e4/high_res_banner.jpg",
+              "verticalBanner": "https://flappydunk.h5games.usercontent.goog/v/474de71e-7b32-4c6f-9d8c-830bdbcbc0e4/high_res_tall.jpg"
+            },
+            "description": "Tap to jump into as many hoops as possible. Give it your best shot!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "6",
+            "game_name": "Lake Jump",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/lakejump",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://lakejump.h5games.usercontent.goog/v/ebbcde2a-5481-4f08-8a7e-b699094d8fe9/high_res_icon.jpg",
+              "horizontalBanner": "https://lakejump.h5games.usercontent.goog/v/ebbcde2a-5481-4f08-8a7e-b699094d8fe9/high_res_banner.jpg",
+              "verticalBanner": "https://lakejump.h5games.usercontent.goog/v/ebbcde2a-5481-4f08-8a7e-b699094d8fe9/high_res_tall.jpg"
+            },
+            "description": "Tap and hold to increase your jump distance. Jump from platform to platform and see how far you can get without falling into the lake!",
+            "enabled": "true",
+            "fullscreen": "false",
+            "device": "all"
+          },
+          {
+            "id": "7",
+            "game_name": "Northern Heights",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/northernheights",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
+              "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
+              "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+            },
+            "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "8",
+            "game_name": "Bolly Beat",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/bollybeat",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://bollybeat.h5games.usercontent.goog/v/2025a4e7-33cb-441c-8eb8-3cc2a593ff8a/high_res_icon.jpg",
+              "horizontalBanner": "https://bollybeat.h5games.usercontent.goog/v/2025a4e7-33cb-441c-8eb8-3cc2a593ff8a/high_res_banner.jpg",
+              "verticalBanner": "https://bollybeat.h5games.usercontent.goog/v/2025a4e7-33cb-441c-8eb8-3cc2a593ff8a/high_res_tall.jpg"
+            },
+            "description": "Dance to the beat in this Bollywood music themed rhythm runner game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "9",
+            "game_name": "Slime-io",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/slime-io",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
+              "horizontalBanner": "https://slime-io.h5games.usercontent.goog/v/c5b47372-7926-4fb4-8f1e-72c49ae10333/high_res_banner.jpg",
+              "verticalBanner": "https://slime-io.h5games.usercontent.goog/v/c5b47372-7926-4fb4-8f1e-72c49ae10333/high_res_tall.jp"
+            },
+            "description": "Devour other slimes to grow larger and avoid getting devoured yourself.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "10",
+            "game_name": "Sword Hit",
+            "game_play_url": "https://akm-img-a-in.tosshub.com/app/games/KnifeHit_ITG/index.html",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://akm-img-a-in.tosshub.com/app/at-app/at_dev/Thumbnail.png",
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/at_dev/Thumbnail.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/at_dev/Thumbnail.png"
+            },
+            "description": "The Sword Hit is a game where you enjoy your throwing sword. In this game, you’ll find a wooden board, the log with small wooden logs and knives. The trick is to throw your pointer/knife on the board where it gets stuck on it without hitting the hurdles.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
+        ]
       },
       {
-        "type": 5,
-        "value": {
-          "video": "https://aajtak-pdelivery.akamaized.net/aajtak/video/2022_10/17_oct_22_at_black_and_white_story_3_1710_vt_nr_1024/17_oct_22_at_black_and_white_story_3_1710_vt_nr_1024.m3u8",
-          "thumbnail": "https://akm-img-a-in.tosshub.com/aajtak/images/video/202210/tv-actress-vaishali-thakkar-suicide-sixteen_nine.png?size=325:183"
-        }
+        "type": "list",
+        "category": "Strategy",
+        "categoryid": "strategy_games",
+        "games": [
+          {
+            "id": "1",
+            "game_name": "Endless Siege",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/endlessseige",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://endlessseige.h5games.usercontent.goog/v/de6ce83a-1ac0-4f16-9195-c589110dd482/high_res_icon.jpg",
+              "horizontalBanner": "https://endlessseige.h5games.usercontent.goog/v/de6ce83a-1ac0-4f16-9195-c589110dd482/high_res_banner.jpg",
+              "verticalBanner": "https://endlessseige.h5games.usercontent.goog/v/de6ce83a-1ac0-4f16-9195-c589110dd482/high_res_tall.jpg"
+            },
+            "description": "Survive waves of orcs in this tower defence strategy game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "2",
+            "game_name": "Stack Colors",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/stackcolors",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://stackcolors.h5games.usercontent.goog/v/8c3a0c27-70cb-44a7-8d03-dc8d0ff67291/high_res_icon.jpg",
+              "horizontalBanner": "https://stackcolors.h5games.usercontent.goog/v/8c3a0c27-70cb-44a7-8d03-dc8d0ff67291/high_res_banner.jpg",
+              "verticalBanner": "https://stackcolors.h5games.usercontent.goog/v/8c3a0c27-70cb-44a7-8d03-dc8d0ff67291/high_res_tall.jpg"
+            },
+            "description": "Move and stack the right color platforms and finally kick them to get a huge score boost in a satisfying way!",
+            "enabled": "true",
+            "fullscreen": "false",
+            "device": "all"
+          },
+          {
+            "id": "3",
+            "game_name": "Mahjong Classic",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/mahjongclassic",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://mahjongclassic.h5games.usercontent.goog/v/390ce075-68ea-41ab-b192-b120b5647b61/high_res_icon.jpg",
+              "horizontalBanner": "https://mahjongclassic.h5games.usercontent.goog/v/390ce075-68ea-41ab-b192-b120b5647b61/high_res_banner.jpg",
+              "verticalBanner": "https://mahjongclassic.h5games.usercontent.goog/v/390ce075-68ea-41ab-b192-b120b5647b61/high_res_tall.jpg"
+            },
+            "description": "Perfect your skills and match tiles in this classic game of Mahjong Solitaire.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "4",
+            "game_name": "Tiles of Egypt",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/tilesofegypt",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_icon.jpg",
+              "horizontalBanner": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_banner.jpg",
+              "verticalBanner": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_tall.jpg"
+            },
+            "description": "Match at least 3 of the same tiles to remove them.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "5",
+            "game_name": "CHOTA LUDO",
+            "game_play_url": "https://games.indiatodaygaming.com/app/promogames/chotaludo/",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/Chhota%20Ludo_512.png",
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/Chhota%20Ludo_512.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/Chhota%20Ludo_512.png"
+            },
+            "description": "A game played between ancient Indian royal families. The game is won by rolling the dice to reach the center of the board. The player who reaches the center of the board before the other players is the winner.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "6",
+            "game_name": "Panda Pizza Parlor",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/pandapizzaparlor",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://pandapizzaparlor.h5games.usercontent.goog/v/696f7b56-a916-4c62-91c7-782b289a2277/high_res_icon.jpg",
+              "horizontalBanner": "https://pandapizzaparlor.h5games.usercontent.goog/v/696f7b56-a916-4c62-91c7-782b289a2277/high_res_banner.jpg",
+              "verticalBanner": "https://pandapizzaparlor.h5games.usercontent.goog/v/696f7b56-a916-4c62-91c7-782b289a2277/high_res_tall.jpg"
+            },
+            "description": "A food management game where you play as a panda that just opened a brand new Pizza Parlor.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "7",
+            "game_name": "Pocket Battle Royale",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/pocketbattleroyale",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://pocketbattleroyale.h5games.usercontent.goog/v/1047cdb0-2867-465d-a6c5-d8fb3eb5605c/high_res_icon.jpg",
+              "horizontalBanner": "https://pocketbattleroyale.h5games.usercontent.goog/v/1047cdb0-2867-465d-a6c5-d8fb3eb5605c/high_res_banner.jpg",
+              "verticalBanner": "https://pocketbattleroyale.h5games.usercontent.goog/v/1047cdb0-2867-465d-a6c5-d8fb3eb5605c/high_res_tall.jpg"
+            },
+            "description": "A battle royale game where you destroy all your enemies to be the last one standing.",
+            "enabled": "true",
+            "fullscreen": "false",
+            "device": "all"
+          },
+          {
+            "id": "8",
+            "game_name": "Merge Heroes",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/mergeheroes",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://mergeheroes.h5games.usercontent.goog/v/ef1c1df8-c7ca-460c-8d0e-a53cfbb37204/high_res_icon.jpg",
+              "horizontalBanner": "https://mergeheroes.h5games.usercontent.goog/v/ef1c1df8-c7ca-460c-8d0e-a53cfbb37204/high_res_banner.jpg",
+              "verticalBanner": "https://mergeheroes.h5games.usercontent.goog/v/ef1c1df8-c7ca-460c-8d0e-a53cfbb37204/high_res_tall.jpg"
+            },
+            "description": "Merge your heroes into more powerful units in this tower defense game!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "9",
+            "game_name": "Merge Pirates",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/mergepirates",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://mergepirates.h5games.usercontent.goog/v/c7817d47-cb1a-48cb-b1ff-ee2176545618/high_res_icon.jpg",
+              "horizontalBanner": "https://mergepirates.h5games.usercontent.goog/v/c7817d47-cb1a-48cb-b1ff-ee2176545618/high_res_banner.jpg",
+              "verticalBanner": "https://mergepirates.h5games.usercontent.goog/v/c7817d47-cb1a-48cb-b1ff-ee2176545618/high_res_tall.jpg"
+            },
+            "description": "Combine and upgrade Exploding Pirate Ships in a new tile merge game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "10",
+            "game_name": "99 Ball 3D",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/99balls3d",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://99balls3d.h5games.usercontent.goog/v/ae7fe090-0ff5-4ce9-afd9-b5e573e57f6d/high_res_icon.jpg",
+              "horizontalBanner": "https://99balls3d.h5games.usercontent.goog/v/ae7fe090-0ff5-4ce9-afd9-b5e573e57f6d/high_res_banner.jpg",
+              "verticalBanner": "https://99balls3d.h5games.usercontent.goog/v/ae7fe090-0ff5-4ce9-afd9-b5e573e57f6d/high_res_tall.jpg"
+            },
+            "description": "Break numbered blocks with your ball. The higher the number the more hits it takes.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "11",
+            "game_name": "Sushi Grab",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/sushigrab",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://sushigrab.h5games.usercontent.goog/v/f49f599c-cb04-4db6-8b63-693a45cdce7d/high_res_icon.jpg",
+              "horizontalBanner": "https://sushigrab.h5games.usercontent.goog/v/f49f599c-cb04-4db6-8b63-693a45cdce7d/high_res_banner.jpg",
+              "verticalBanner": "https://sushigrab.h5games.usercontent.goog/v/f49f599c-cb04-4db6-8b63-693a45cdce7d/high_res_tall.jpg"
+            },
+            "description": "Fulfill customer orders by grabbing the right sushi from the conveyer.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "12",
+            "game_name": "Cube Tower",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/cubetower",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://cubetower.h5games.usercontent.goog/v/52563dde-e757-48bf-a83e-b594ffdc8da8/high_res_icon.jpg",
+              "horizontalBanner": "https://cubetower.h5games.usercontent.goog/v/52563dde-e757-48bf-a83e-b594ffdc8da8/high_res_banner.jpg",
+              "verticalBanner": "https://cubetower.h5games.usercontent.goog/v/52563dde-e757-48bf-a83e-b594ffdc8da8/high_res_tall.jpg"
+            },
+            "description": "Defend your base from hordes of alien invaders with your strategic skills and arsenal of upgradable weapon towers.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "13",
+            "game_name": "Comfy Farm",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/comfyfarm",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://comfyfarm.h5games.usercontent.goog/v/3d6d4349-bdcf-4a27-a471-42afcfbb36da/high_res_icon.jpg",
+              "horizontalBanner": "https://comfyfarm.h5games.usercontent.goog/v/3d6d4349-bdcf-4a27-a471-42afcfbb36da/high_res_banner.jpg",
+              "verticalBanner": "https://comfyfarm.h5games.usercontent.goog/v/3d6d4349-bdcf-4a27-a471-42afcfbb36da/high_res_tall.jpg"
+            },
+            "description": "Run your farm by tilling the soil, planting seeds, watering and harvesting.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
+        ]
       },
       {
-        "type": 0,
-        "value": {
-          "textSize": 18,
-          "textStyle": "normal",
-          "text": "<!DOCTYPE html><html><body><p><b>This text is bold</b></p><p><i>This text is italic</i></p><p>This is<sub> subscript</sub> and <sup>superscript</sup></p></body></html>"
-        }
+        "type": "list",
+        "category": "Casual",
+        "categoryid": "casual_games",
+        "games": [
+          {
+            "id": "1",
+            "game_name": "Bubble Woods Ultimate",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/bubblewoods4",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://bubblewoods4.h5games.usercontent.goog/v/96d3b8ad-9616-47d4-8d03-544584d5245a/high_res_icon.jpg",
+              "horizontalBanner": "https://bubblewoods4.h5games.usercontent.goog/v/96d3b8ad-9616-47d4-8d03-544584d5245a/high_res_banner.jpg",
+              "verticalBanner": "https://bubblewoods4.h5games.usercontent.goog/v/96d3b8ad-9616-47d4-8d03-544584d5245a/high_res_tall.jpg"
+            },
+            "description": "Aim and pop bubbles in this adventurous bubble shooter game.",
+            "enabled": "true",
+            "fullscreen": "false",
+            "device": "all"
+          },
+          {
+            "id": "2",
+            "game_name": "Carrom Clash",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/carromclash",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://carromclash.h5games.usercontent.goog/v/2c8af22a-0d67-4b42-a42c-09eca14632c4/high_res_icon.jpg",
+              "horizontalBanner": "https://carromclash.h5games.usercontent.goog/v/2c8af22a-0d67-4b42-a42c-09eca14632c4/high_res_banner.jpg",
+              "verticalBanner": "https://carromclash.h5games.usercontent.goog/v/2c8af22a-0d67-4b42-a42c-09eca14632c4/high_res_tall.jpg"
+            },
+            "description": "Compete in this classic Carrom board game",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "3",
+            "game_name": "Carrom Clash",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/carromclash",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://carromclash.h5games.usercontent.goog/v/2c8af22a-0d67-4b42-a42c-09eca14632c4/high_res_icon.jpg",
+              "horizontalBanner": "https://carromclash.h5games.usercontent.goog/v/2c8af22a-0d67-4b42-a42c-09eca14632c4/high_res_banner.jpg",
+              "verticalBanner": "https://carromclash.h5games.usercontent.goog/v/2c8af22a-0d67-4b42-a42c-09eca14632c4/high_res_tall.jpg"
+            },
+            "description": "Compete in this classic Carrom board game",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "4",
+            "game_name": "Tappy Bird",
+            "game_play_url": "https://akm-img-a-in.tosshub.com/app/games/TappyBird_ITG/index.html",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/tappy_anner.png",
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/tappy_anner.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/tappy_anner.png"
+            },
+            "description": "Tap the screen and move the bird as long as you can go.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "5",
+            "game_name": "Tiger Run",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/tigerrun",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://tigerrun.h5games.usercontent.goog/v/67b2329a-9cdf-43e6-9c02-c8744dfb53f7/high_res_icon.jpg",
+              "horizontalBanner": "https://tigerrun.h5games.usercontent.goog/v/67b2329a-9cdf-43e6-9c02-c8744dfb53f7/high_res_banner.jpg",
+              "verticalBanner": "https://tigerrun.h5games.usercontent.goog/v/67b2329a-9cdf-43e6-9c02-c8744dfb53f7/high_res_tall.jpg"
+            },
+            "description": "Move from lane to lane, jump and slide in this endless runner game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "6",
+            "game_name": "Hexa Dungeon",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/hexadungeon",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://hexadungeon.h5games.usercontent.goog/v/b17859ab-46d3-40ae-b765-be3004898b11/high_res_icon.jpg",
+              "horizontalBanner": "https://hexadungeon.h5games.usercontent.goog/v/b17859ab-46d3-40ae-b765-be3004898b11/high_res_banner.jpg",
+              "verticalBanner": "https://hexadungeon.h5games.usercontent.goog/v/b17859ab-46d3-40ae-b765-be3004898b11/high_res_tall.jpg"
+            },
+            "description": "Battle enemies to survive the dungeon in this exciting puzzle adventure.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "7",
+            "game_name": "Idle Restaurants",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/idlerestaurants",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://idlerestaurants.h5games.usercontent.goog/v/111757cc-b2aa-46da-b917-5da3b1a055db/high_res_icon.jpg",
+              "horizontalBanner": "https://idlerestaurants.h5games.usercontent.goog/v/111757cc-b2aa-46da-b917-5da3b1a055db/high_res_banner.jpg",
+              "verticalBanner": "https://idlerestaurants.h5games.usercontent.goog/v/111757cc-b2aa-46da-b917-5da3b1a055db/high_res_tall.jpg"
+            },
+            "description": "Manage your restaurant by training chefs and upgrading equipment. Earn more and more money to make the best restaurant around in this idle clicker.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "8",
+            "game_name": "Kitty Match",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/kittymatch",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
+              "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
+              "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+            },
+            "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "9",
+            "game_name": "Moving Co.",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/movingco",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://movingco.h5games.usercontent.goog/v/8fe98e0f-b1b7-4fc6-8023-200af0320f20/high_res_icon.jpg",
+              "horizontalBanner": "https://movingco.h5games.usercontent.goog/v/8fe98e0f-b1b7-4fc6-8023-200af0320f20/high_res_banner.jpg",
+              "verticalBanner": "https://movingco.h5games.usercontent.goog/v/8fe98e0f-b1b7-4fc6-8023-200af0320f20/high_res_tall.jpg"
+            },
+            "description": "Quickly sort items and place them in boxes in this speed based matching game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "10",
+            "game_name": "My Space Pet",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/myspacepet",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://myspacepet.h5games.usercontent.goog/v/cc0ed757-609e-439b-a0a2-02226ab78735/high_res_icon.jpg",
+              "horizontalBanner": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_icon.jpg",
+              "verticalBanner": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_tall.jpg"
+            },
+            "description": "Test your snowboarding skills on the Northern Heights! Collect coins, customize your snowboarder, and unlock awesome acrobatic moves.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "11",
+            "game_name": "Pirate Pop",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/piratepop",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://piratepop.h5games.usercontent.goog/v/cc76b73f-af86-4f22-abb6-33b02def4d32/high_res_icon.jpg",
+              "horizontalBanner": "https://piratepop.h5games.usercontent.goog/v/cc76b73f-af86-4f22-abb6-33b02def4d32/high_res_banner.jpg",
+              "verticalBanner": "https://piratepop.h5games.usercontent.goog/v/cc76b73f-af86-4f22-abb6-33b02def4d32/high_res_tall.jpg"
+            },
+            "description": "Ahoy ye matey! Come take a deep dive into Pirate Pop and play through treasure-filled levels in a new bubble shooter game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "12",
+            "game_name": "Cake Slice Ninja",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/cakesliceninja",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://cakesliceninja.h5games.usercontent.goog/v/ec5b755d-e839-440b-988f-6a30a1235492/high_res_icon.jpg",
+              "horizontalBanner": "https://cakesliceninja.h5games.usercontent.goog/v/ec5b755d-e839-440b-988f-6a30a1235492/high_res_banner.jpg",
+              "verticalBanner": "https://cakesliceninja.h5games.usercontent.goog/v/ec5b755d-e839-440b-988f-6a30a1235492/high_res_tall.jpg"
+            },
+            "description": "Slice the cakes and avoid the bombs in this arcade food slicing game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "13",
+            "game_name": "Color Burst 3d",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/colorburst3d",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://colorburst3d.h5games.usercontent.goog/v/f9ac46fc-3e68-4395-ab17-fe9b056df979/high_res_icon.jpg",
+              "horizontalBanner": "https://colorburst3d.h5games.usercontent.goog/v/f9ac46fc-3e68-4395-ab17-fe9b056df979/high_res_banner.jpg",
+              "verticalBanner": "https://colorburst3d.h5games.usercontent.goog/v/f9ac46fc-3e68-4395-ab17-fe9b056df979/high_res_tall.jpg"
+            },
+            "description": "Smash a colored ball into matching colored sections of rings in this increasingly difficult action game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "14",
+            "game_name": "Diwali Lights",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/diwalilights",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://diwalilights.h5games.usercontent.goog/v/0abe774c-6154-4dd3-a416-a02e80b390d4/high_res_icon.jpg",
+              "horizontalBanner": "https://diwalilights.h5games.usercontent.goog/v/0abe774c-6154-4dd3-a416-a02e80b390d4/high_res_banner.jpg",
+              "verticalBanner": "https://diwalilights.h5games.usercontent.goog/v/0abe774c-6154-4dd3-a416-a02e80b390d4/high_res_tall.jpg"
+            },
+            "description": "Draw the path to the matching light pairs and connect them together in this Diwali themed game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "15",
+            "game_name": "Yodha Ram",
+            "game_play_url": "https://akm-img-a-in.tosshub.com/app/games/YoudhaRam_ITG/index.html",
+            "type": "webview",
+            "orientation": "land",
+            "images": {
+              "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/yodha_ram_port.png",
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/yodha_ram.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/yodha_ram_port.png"
+            },
+            "description": "Game is based on Ram and Ravan war. You have to fight with some devils before figting with Ravan. Kill the Ravan to win the game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
+        ]
       },
       {
-        "type": 2,
-        "value": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202301/9_19-sixteen_nine.jpg?size=749:421"
+        "type": "list",
+        "category": "Puzzle",
+        "categoryid": "puzzle_games",
+        "games": [
+          {
+            "id": "1",
+            "game_name": "Element Blocks",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/elementblocks",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://elementblocks.h5games.usercontent.goog/v/79834f3b-dae6-4966-981f-3453fec52569/high_res_icon.jpg",
+              "horizontalBanner": "https://elementblocks.h5games.usercontent.goog/v/79834f3b-dae6-4966-981f-3453fec52569/high_res_banner.jpg",
+              "verticalBanner": "https://elementblocks.h5games.usercontent.goog/v/79834f3b-dae6-4966-981f-3453fec52569/high_res_tall.jpg"
+            },
+            "description": "How many pieces can you fit in the grid in this addicting block puzzle game?",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "2",
+            "game_name": "Brain Trainer",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/braintrainer",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://braintrainer.h5games.usercontent.goog/v/4f2ffbc6-4208-4087-bfaf-ab0db086da02/high_res_icon.jpg",
+              "horizontalBanner": "https://braintrainer.h5games.usercontent.goog/v/4f2ffbc6-4208-4087-bfaf-ab0db086da02/high_res_banner.jpg",
+              "verticalBanner": "https://braintrainer.h5games.usercontent.goog/v/4f2ffbc6-4208-4087-bfaf-ab0db086da02/high_res_tall.jpg"
+            },
+            "description": "Put your brain to the test in this brain training game",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "3",
+            "game_name": "Find 500 Differences",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/find500differences2",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://find500differences2.h5games.usercontent.goog/v/a33cd484-bbd6-4518-9021-6e9bcd930de6/high_res_icon.jpg",
+              "horizontalBanner": "https://find500differences2.h5games.usercontent.goog/v/a33cd484-bbd6-4518-9021-6e9bcd930de6/high_res_banner.jpg",
+              "verticalBanner": "https://find500differences2.h5games.usercontent.goog/v/a33cd484-bbd6-4518-9021-6e9bcd930de6/high_res_tall.jpg"
+            },
+            "description": "Look at the two photos which seem identical and try to find the 5 differences.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "4",
+            "game_name": "Jigsaw Puzzle Deluxe",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/jigsawpuzzledeluxe",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://jigsawpuzzledeluxe.h5games.usercontent.goog/v/f796c04d-5370-4c4f-93ea-de69d4cbdbe7/high_res_icon.jpg",
+              "horizontalBanner": "https://jigsawpuzzledeluxe.h5games.usercontent.goog/v/f796c04d-5370-4c4f-93ea-de69d4cbdbe7/high_res_banner.jpg",
+              "verticalBanner": "https://jigsawpuzzledeluxe.h5games.usercontent.goog/v/f796c04d-5370-4c4f-93ea-de69d4cbdbe7/high_res_tall.jpg"
+            },
+            "description": "Relax and enjoy solving beautiful jigsaw puzzles.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "5",
+            "game_name": "Unblock That",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/unblockthat",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://unblockthat.h5games.usercontent.goog/v/72ae8ba3-8df0-437a-aa29-45c7cbf9334c/high_res_icon.jpg",
+              "horizontalBanner": "https://unblockthat.h5games.usercontent.goog/v/72ae8ba3-8df0-437a-aa29-45c7cbf9334c/high_res_banner.jpg",
+              "verticalBanner": "https://unblockthat.h5games.usercontent.goog/v/72ae8ba3-8df0-437a-aa29-45c7cbf9334c/high_res_tall.jpg"
+            },
+            "description": "Unblock the red block out of the board by sliding the other blocks out of the way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "6",
+            "game_name": "Tic Tac Toe",
+            "game_play_url": "https://akm-img-a-in.tosshub.com/app/games/Tic_Tec_Tow_ITG/index.html",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/tic_tac_banner.png",
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/tic_tac_banner.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/tic_tac_banner.png"
+            },
+            "description": "Tic Tac Toe is a simple two player game played on a 3x3 grid. The players take turns marking the spaces in the grid with X's and O's. The first one to get three of their marks in a line (horizontally, vertically, or diagonally) wins the game. If all spaces on the grid are filled and no one has three marks in a row, the tic tac toe games are a draw.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "7",
+            "game_name": "Hexa Dungeon",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/hexadungeon",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://hexadungeon.h5games.usercontent.goog/v/b17859ab-46d3-40ae-b765-be3004898b11/high_res_icon.jpg",
+              "horizontalBanner": "https://hexadungeon.h5games.usercontent.goog/v/b17859ab-46d3-40ae-b765-be3004898b11/high_res_banner.jpg",
+              "verticalBanner": "https://hexadungeon.h5games.usercontent.goog/v/b17859ab-46d3-40ae-b765-be3004898b11/high_res_tall.jpg"
+            },
+            "description": "Battle enemies to survive the dungeon in this exciting puzzle adventure.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "8",
+            "game_name": "Gym Stack",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/gymstack",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
+              "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
+              "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+            },
+            "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "9",
+            "game_name": "Tiles Of Egypt",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/tilesofegypt",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_icon.jpg",
+              "horizontalBanner": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_banner.jpg",
+              "verticalBanner": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_tall.jpg"
+            },
+            "description": "Match at least 3 of the same tiles to remove them.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "10",
+            "game_name": "Shabdam",
+            "game_play_url": "https://akm-img-a-in.tosshub.com/app/games/WordleHindi_ITG/index.html",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/sabdam_port.png",
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/sabdam_port.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/sabdam_port.png"
+            },
+            "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "11",
+            "game_name": "Rashtra Gyan",
+            "game_play_url": "https://akm-img-a-in.tosshub.com/app/games/RepublicDay_ITG/index.html",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/republic_port.png",
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/republic_port.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/republic_port.png"
+            },
+            "description": "Spin the wheel. A question will be appear related to category where wheel stops. Answer all the questions correctly to score more.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
+        ]
       },
       {
-        "type": 3,
-        "value": "<figurerole=\"group\" class=\"caption caption-article embedded-entity\"><article><article class=\"media media--type-ckeditor-image media--view-mode-image\"><div class=\"field field--name-field-media-image field--type-image field--label-hidden field__item\">  <img style=\"width:100%;height:auto;\" alt=\"\" class=\"image-style-medium-crop-simple\"  src=\"https://akm-img-a-in.tosshub.com/aajtak/styles/medium_crop_simple/public/images/story/202210/accident_2.jpg\" typeof=\"foaf:Image\"  /></div>\n      \n  </article></article><figcaption>गरूडचट्टी में रेस्क्यू करते हुए SDRF की टीम (फोटो- आजतक)</figcaption></figure>"
+        "type": "list",
+        "category": "Sports",
+        "categoryid": "sports_games",
+        "games": [
+          {
+            "id": "1",
+            "game_name": "Billiards Classic",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/billiardsclassic",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://billiardsclassic.h5games.usercontent.goog/v/dd1f188f-cef2-4a0f-bfb0-a58e0bb3c16e/high_res_icon.jpg",
+              "horizontalBanner": "https://billiardsclassic.h5games.usercontent.goog/v/dd1f188f-cef2-4a0f-bfb0-a58e0bb3c16e/high_res_banner.jpg",
+              "verticalBanner": "https://billiardsclassic.h5games.usercontent.goog/v/dd1f188f-cef2-4a0f-bfb0-a58e0bb3c16e/high_res_tall.jpg"
+            },
+            "description": "Play the classic sports game of 8-ball pool.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "2",
+            "game_name": "Archery",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/archery",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://archery.h5games.usercontent.goog/v/f12fb2aa-d64b-4074-8974-31705698e2e6/high_res_icon.jpg",
+              "horizontalBanner": "https://archery.h5games.usercontent.goog/v/f12fb2aa-d64b-4074-8974-31705698e2e6/high_res_banner.jpg",
+              "verticalBanner": "https://archery.h5games.usercontent.goog/v/f12fb2aa-d64b-4074-8974-31705698e2e6/high_res_tall.jpg"
+            },
+            "description": "Compete in archery tournaments to become the World Archery Champion.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "3",
+            "game_name": "Freekick Football",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/freekickfootball",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://freekickfootball.h5games.usercontent.goog/v/ab182940-898c-42b3-a5c7-65ba26a2b3d2/high_res_icon.jpg",
+              "horizontalBanner": "https://freekickfootball.h5games.usercontent.goog/v/ab182940-898c-42b3-a5c7-65ba26a2b3d2/high_res_banner.jpg",
+              "verticalBanner": "https://freekickfootball.h5games.usercontent.goog/v/ab182940-898c-42b3-a5c7-65ba26a2b3d2/high_res_tall.jpg"
+            },
+            "description": "How many goals can you score against the goalkeeper?",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "4",
+            "game_name": "Pocket Champions",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/pocketchampions",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://pocketchampions.h5games.usercontent.goog/v/a378c5e2-c5e7-4d17-a351-b5c2f4e7544f/high_res_icon.jpg",
+              "horizontalBanner": "https://pocketchampions.h5games.usercontent.goog/v/a378c5e2-c5e7-4d17-a351-b5c2f4e7544f/high_res_banner.jpg",
+              "verticalBanner": "https://pocketchampions.h5games.usercontent.goog/v/a378c5e2-c5e7-4d17-a351-b5c2f4e7544f/high_res_tall.jpg"
+            },
+            "description": "Take turns propelling your players into the soccer ball in order to score a goal.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "5",
+            "game_name": "Golf Adventures",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/golfadventures",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
+              "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
+              "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+            },
+            "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
+        ]
       },
       {
-        "type": 4,
-        "value": "https://www.aajtak.in/world/story/pakistan-minister-hina-rabbani-khar-says-pakistan-does-not-see-a-partner-in-pm-modi-tlifwe-1619575-2023-01-20"
+        "type": "list",
+        "category": "Racing",
+        "categoryid": "racing_games",
+        "games": [
+          {
+            "id": "1",
+            "game_name": "Retro Drift",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/retrodrift",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://retrodrift.h5games.usercontent.goog/v/50a609ce-7f08-43ba-a02c-53eace4cb812/high_res_icon.jpg",
+              "horizontalBanner": "https://retrodrift.h5games.usercontent.goog/v/50a609ce-7f08-43ba-a02c-53eace4cb812/high_res_banner.jpg",
+              "verticalBanner": "https://retrodrift.h5games.usercontent.goog/v/50a609ce-7f08-43ba-a02c-53eace4cb812/high_res_tall.jpg"
+            },
+            "description": "Tap to drift, collect rewards, and upgrade your car!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "2",
+            "game_name": "FullSpeed Racing",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/fullspeedracing",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://fullspeedracing.h5games.usercontent.goog/v/60efbec3-b373-492a-b627-bd138c880084/high_res_icon.jpg",
+              "horizontalBanner": "https://fullspeedracing.h5games.usercontent.goog/v/60efbec3-b373-492a-b627-bd138c880084/high_res_banner.jpg",
+              "verticalBanner": "https://fullspeedracing.h5games.usercontent.goog/v/60efbec3-b373-492a-b627-bd138c880084/high_res_tall.jpg"
+            },
+            "description": "The ultimate high-speed street. racing experience.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "3",
+            "game_name": "Scooter Xtreme",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/scooterxtreme",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://scooterxtreme.h5games.usercontent.goog/v/c842db43-7823-45bc-b575-acbd9bda5de4/high_res_icon.jpg",
+              "horizontalBanner": "https://scooterxtreme.h5games.usercontent.goog/v/c842db43-7823-45bc-b575-acbd9bda5de4/high_res_banner.jpg",
+              "verticalBanner": "https://scooterxtreme.h5games.usercontent.goog/v/c842db43-7823-45bc-b575-acbd9bda5de4/high_res_tall.jpg"
+            },
+            "description": "Ride your scooter and pull of extreme jumps and flips in this racing game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "category": "Card Games",
+        "categoryid": "card_games",
+        "games": [
+          {
+            "id": "1",
+            "game_name": "Gin Rummy",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/ginrummy",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://ginrummy.h5games.usercontent.goog/v/799snd3tshod0/images/GinRummy-icon.png",
+              "horizontalBanner": "https://ginrummy.h5games.usercontent.goog/v/799snd3tshod0/images/GinRummy-horizontal-banner.png",
+              "verticalBanner": "https://ginrummy.h5games.usercontent.goog/v/799snd3tshod0/images/GinRummy-tall-banner.png"
+            },
+            "description": "The classic two-player card game! Can you defeat all 5 opponents?",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "2",
+            "game_name": "Daily Solitaire",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/dailysolitaire",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://dailysolitaire.h5games.usercontent.goog/v/61363f43-37f3-4850-94b8-6f2c56e3d636/high_res_icon.jpg",
+              "horizontalBanner": "https://dailysolitaire.h5games.usercontent.goog/v/61363f43-37f3-4850-94b8-6f2c56e3d636/high_res_banner.jpg",
+              "verticalBanner": "https://dailysolitaire.h5games.usercontent.goog/v/61363f43-37f3-4850-94b8-6f2c56e3d636/high_res_tall.jpg"
+            },
+            "description": "A Klondike Solitaire game that features different challenges each day!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "3",
+            "game_name": "Tripeaks Solitaire",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/tripeakssolitaire",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://tripeakssolitaire.h5games.usercontent.goog/v/6f86c411-2572-4cc4-a1e6-32bec05cc85b/high_res_icon.jpg",
+              "horizontalBanner": "https://tripeakssolitaire.h5games.usercontent.goog/v/6f86c411-2572-4cc4-a1e6-32bec05cc85b/high_res_banner.jpg",
+              "verticalBanner": "https://tripeakssolitaire.h5games.usercontent.goog/v/6f86c411-2572-4cc4-a1e6-32bec05cc85b/high_res_tall.jpg"
+            },
+            "description": "Clear the board to grow your garden by finding adjacent cards in this spin on Tripeaks Solitaire.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "category": "All Games",
+        "categoryid": "all_games",
+        "games": [
+          {
+            "id": "1",
+            "game_name": "Stack Bounce",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/stackbounce",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://stackbounce.h5games.usercontent.goog/v/5dbb5964-61ff-403a-a319-6941e7867309/high_res_icon.jpg",
+              "horizontalBanner": "https://stackbounce.h5games.usercontent.goog/v/5dbb5964-61ff-403a-a319-6941e7867309/high_res_banner.jpg",
+              "verticalBanner": "https://stackbounce.h5games.usercontent.goog/v/5dbb5964-61ff-403a-a319-6941e7867309/high_res_tall.jpg"
+            },
+            "description": "Time your taps to smash through a tower of colorful blocks.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "2",
+            "game_name": "Spiral Roll",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/spiralroll",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
+              "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
+              "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+            },
+            "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "3",
+            "game_name": "Om Nom Run",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/omnomrun",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://omnomrun.h5games.usercontent.goog/v/5e921868-7442-48b7-8d4e-1433f4a900b5/high_res_icon.jpg",
+              "horizontalBanner": "https://omnomrun.h5games.usercontent.goog/v/5e921868-7442-48b7-8d4e-1433f4a900b5/high_res_banner.jpg",
+              "verticalBanner": "https://omnomrun.h5games.usercontent.goog/v/5e921868-7442-48b7-8d4e-1433f4a900b5/high_res_tall.jpg"
+            },
+            "description": "Run and jump with Om Nom in this famous endless runner adventure.",
+            "category": "Popular",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "4",
+            "game_name": "Cannon Balls 3D",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/cannonballs3d",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://cannonballs3d.h5games.usercontent.goog/v/e31c216c-933d-4874-b82a-c1dd2abdcb08/high_res_icon.jpg",
+              "horizontalBanner": "https://cannonballs3d.h5games.usercontent.goog/v/e31c216c-933d-4874-b82a-c1dd2abdcb08/high_res_banner.jpg",
+              "verticalBanner": "https://cannonballs3d.h5games.usercontent.goog/v/e31c216c-933d-4874-b82a-c1dd2abdcb08/high_res_tall.jpg"
+            },
+            "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "5",
+            "game_name": "Onet Connect Classic",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/onetconnectclassic",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://onetconnectclassic.h5games.usercontent.goog/v/3548fcd4-da1a-47bd-ac18-01488239c660/high_res_icon.jpg",
+              "horizontalBanner": "https://onetconnectclassic.h5games.usercontent.goog/v/3548fcd4-da1a-47bd-ac18-01488239c660/high_res_banner.jpg",
+              "verticalBanner": "https://onetconnectclassic.h5games.usercontent.goog/v/3548fcd4-da1a-47bd-ac18-01488239c660/high_res_tall.jpg"
+            },
+            "description": "Train your brain! Can you connect all the matching tile pairs?",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "6",
+            "game_name": "Draw Climber",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/drawclimber",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://drawclimber.h5games.usercontent.goog/v/35ef0b5e-be32-42f2-bc8f-5dbf352a4f4b/high_res_icon.jpg",
+              "horizontalBanner": "https://drawclimber.h5games.usercontent.goog/v/35ef0b5e-be32-42f2-bc8f-5dbf352a4f4b/high_res_banner.jpg",
+              "verticalBanner": "https://drawclimber.h5games.usercontent.goog/v/35ef0b5e-be32-42f2-bc8f-5dbf352a4f4b/high_res_tall.jpg"
+            },
+            "description": "Draw your legs to win the race! Any drawing will make you run!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "7",
+            "game_name": "Endless Siege",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/endlessseige",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://endlessseige.h5games.usercontent.goog/v/de6ce83a-1ac0-4f16-9195-c589110dd482/high_res_icon.jpg",
+              "horizontalBanner": "https://endlessseige.h5games.usercontent.goog/v/de6ce83a-1ac0-4f16-9195-c589110dd482/high_res_banner.jpg",
+              "verticalBanner": "https://endlessseige.h5games.usercontent.goog/v/de6ce83a-1ac0-4f16-9195-c589110dd482/high_res_tall.jpg"
+            },
+            "description": "Survive waves of orcs in this tower defence strategy game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "8",
+            "game_name": "RoadFury",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/roadfury",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://roadfury.h5games.usercontent.goog/v/a2a8cf2b-40b8-4c60-8bbd-5537053e72c6/high_res_icon.jpg",
+              "horizontalBanner": "https://roadfury.h5games.usercontent.goog/v/a2a8cf2b-40b8-4c60-8bbd-5537053e72c6/high_res_banner.jpg",
+              "verticalBanner": "https://roadfury.h5games.usercontent.goog/v/a2a8cf2b-40b8-4c60-8bbd-5537053e72c6/high_res_tall.jpg"
+            },
+            "description": "Race along the highway and shoot down all your enemies.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "9",
+            "game_name": "Element Blocks",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/elementblocks",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://elementblocks.h5games.usercontent.goog/v/79834f3b-dae6-4966-981f-3453fec52569/high_res_icon.jpg",
+              "horizontalBanner": "https://elementblocks.h5games.usercontent.goog/v/79834f3b-dae6-4966-981f-3453fec52569/high_res_banner.jpg",
+              "verticalBanner": "https://elementblocks.h5games.usercontent.goog/v/79834f3b-dae6-4966-981f-3453fec52569/high_res_tall.jpg"
+            },
+            "description": "How many pieces can you fit in the grid in this addicting block puzzle game?",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "10",
+            "game_name": "Gin Rummy",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/ginrummy",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://ginrummy.h5games.usercontent.goog/v/799snd3tshod0/images/GinRummy-icon.png",
+              "horizontalBanner": "https://ginrummy.h5games.usercontent.goog/v/799snd3tshod0/images/GinRummy-horizontal-banner.png",
+              "verticalBanner": "https://ginrummy.h5games.usercontent.goog/v/799snd3tshod0/images/GinRummy-tall-banner.png"
+            },
+            "description": "The classic two-player card game! Can you defeat all 5 opponents?",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "11",
+            "game_name": "Billiards Classic",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/billiardsclassic",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://billiardsclassic.h5games.usercontent.goog/v/dd1f188f-cef2-4a0f-bfb0-a58e0bb3c16e/high_res_icon.jpg",
+              "horizontalBanner": "https://billiardsclassic.h5games.usercontent.goog/v/dd1f188f-cef2-4a0f-bfb0-a58e0bb3c16e/high_res_banner.jpg",
+              "verticalBanner": "https://billiardsclassic.h5games.usercontent.goog/v/dd1f188f-cef2-4a0f-bfb0-a58e0bb3c16e/high_res_tall.jpg"
+            },
+            "description": "Play the classic sports game of 8-ball pool.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "12",
+            "game_name": "Stack Colors",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/stackcolors",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://stackcolors.h5games.usercontent.goog/v/8c3a0c27-70cb-44a7-8d03-dc8d0ff67291/high_res_icon.jpg",
+              "horizontalBanner": "https://stackcolors.h5games.usercontent.goog/v/8c3a0c27-70cb-44a7-8d03-dc8d0ff67291/high_res_banner.jpg",
+              "verticalBanner": "https://stackcolors.h5games.usercontent.goog/v/8c3a0c27-70cb-44a7-8d03-dc8d0ff67291/high_res_tall.jpg"
+            },
+            "description": "Move and stack the right color platforms and finally kick them to get a huge score boost in a satisfying way!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "13",
+            "game_name": "Ball Blast",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/ballblast",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://ballblast.h5games.usercontent.goog/v/7af9498f-e79b-4416-aca3-a60f91d3f420/high_res_icon.jpg",
+              "horizontalBanner": "https://ballblast.h5games.usercontent.goog/v/7af9498f-e79b-4416-aca3-a60f91d3f420/high_res_banner.jpg",
+              "verticalBanner": "https://ballblast.h5games.usercontent.goog/v/7af9498f-e79b-4416-aca3-a60f91d3f420/high_res_tall.jpg"
+            },
+            "description": "See how long you can survive by dodging and blasting the bouncing obstacles before they hit you!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "14",
+            "game_name": "Mahjong Classic",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/mahjongclassic",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://mahjongclassic.h5games.usercontent.goog/v/390ce075-68ea-41ab-b192-b120b5647b61/high_res_icon.jpg",
+              "horizontalBanner": "https://mahjongclassic.h5games.usercontent.goog/v/390ce075-68ea-41ab-b192-b120b5647b61/high_res_banner.jpg",
+              "verticalBanner": "https://mahjongclassic.h5games.usercontent.goog/v/390ce075-68ea-41ab-b192-b120b5647b61/high_res_tall.jpg"
+            },
+            "description": "Perfect your skills and match tiles in this classic game of Mahjong Solitaire.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "15",
+            "game_name": "Brain Trainer",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/braintrainer",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://braintrainer.h5games.usercontent.goog/v/4f2ffbc6-4208-4087-bfaf-ab0db086da02/high_res_icon.jpg",
+              "horizontalBanner": "https://braintrainer.h5games.usercontent.goog/v/4f2ffbc6-4208-4087-bfaf-ab0db086da02/high_res_banner.jpg",
+              "verticalBanner": "https://braintrainer.h5games.usercontent.goog/v/4f2ffbc6-4208-4087-bfaf-ab0db086da02/high_res_tall.jpg"
+            },
+            "description": "Put your brain to the test in this brain training game",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "16",
+            "game_name": "Flappy Dunk",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/flappydunk",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://flappydunk.h5games.usercontent.goog/v/474de71e-7b32-4c6f-9d8c-830bdbcbc0e4/high_res_icon.jpg",
+              "horizontalBanner": "https://flappydunk.h5games.usercontent.goog/v/474de71e-7b32-4c6f-9d8c-830bdbcbc0e4/high_res_banner.jpg",
+              "verticalBanner": "https://flappydunk.h5games.usercontent.goog/v/474de71e-7b32-4c6f-9d8c-830bdbcbc0e4/high_res_tall.jpg"
+            },
+            "description": "Tap to jump into as many hoops as possible. Give it your best shot!",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "17",
+            "game_name": "Bubble Woods Ultimate",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/bubblewoods4",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://bubblewoods4.h5games.usercontent.goog/v/96d3b8ad-9616-47d4-8d03-544584d5245a/high_res_icon.jpg",
+              "horizontalBanner": "https://bubblewoods4.h5games.usercontent.goog/v/96d3b8ad-9616-47d4-8d03-544584d5245a/high_res_banner.jpg",
+              "verticalBanner": "https://bubblewoods4.h5games.usercontent.goog/v/96d3b8ad-9616-47d4-8d03-544584d5245a/high_res_tall.jpg"
+            },
+            "description": "Aim and pop bubbles in this adventurous bubble shooter game.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "18",
+            "game_name": "Archery",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/archery",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://archery.h5games.usercontent.goog/v/f12fb2aa-d64b-4074-8974-31705698e2e6/high_res_icon.jpg",
+              "horizontalBanner": "https://archery.h5games.usercontent.goog/v/f12fb2aa-d64b-4074-8974-31705698e2e6/high_res_banner.jpg",
+              "verticalBanner": "https://archery.h5games.usercontent.goog/v/f12fb2aa-d64b-4074-8974-31705698e2e6/high_res_tall.jpg"
+            },
+            "description": "Compete in archery tournaments to become the World Archery Champion.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "19",
+            "game_name": "Find 500 Differences",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/find500differences2",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://find500differences2.h5games.usercontent.goog/v/a33cd484-bbd6-4518-9021-6e9bcd930de6/high_res_icon.jpg",
+              "horizontalBanner": "https://find500differences2.h5games.usercontent.goog/v/a33cd484-bbd6-4518-9021-6e9bcd930de6/high_res_banner.jpg",
+              "verticalBanner": "https://find500differences2.h5games.usercontent.goog/v/a33cd484-bbd6-4518-9021-6e9bcd930de6/high_res_tall.jpg"
+            },
+            "description": "Look at the two photos which seem identical and try to find the 5 differences.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "20",
+            "game_name": "Jigsaw Puzzle Deluxe",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/jigsawpuzzledeluxe",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://jigsawpuzzledeluxe.h5games.usercontent.goog/v/f796c04d-5370-4c4f-93ea-de69d4cbdbe7/high_res_icon.jpg",
+              "horizontalBanner": "https://jigsawpuzzledeluxe.h5games.usercontent.goog/v/f796c04d-5370-4c4f-93ea-de69d4cbdbe7/high_res_banner.jpg",
+              "verticalBanner": "https://jigsawpuzzledeluxe.h5games.usercontent.goog/v/f796c04d-5370-4c4f-93ea-de69d4cbdbe7/high_res_tall.jpg"
+            },
+            "description": "Relax and enjoy solving beautiful jigsaw puzzles.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          },
+          {
+            "id": "21",
+            "game_name": "Tiles of Egypt",
+            "game_play_url": "https://gamesnacks.com/embed/aajtak/games/tilesofegypt",
+            "type": "webview",
+            "orientation": "port",
+            "images": {
+              "icon": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_icon.jpg",
+              "horizontalBanner": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_banner.jpg",
+              "verticalBanner": "https://tilesofegypt.h5games.usercontent.goog/v/dd964fa3-8999-4546-a4a0-d55a0cc72248/high_res_tall.jpg"
+            },
+            "description": "Match at least 3 of the same tiles to remove them.",
+            "enabled": "true",
+            "fullscreen": "true",
+            "device": "all"
+          }
+        ]
       }
     ]
   }
