@@ -281,7 +281,7 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/SwordHit_icon.png",
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Sword_ico.png",
                 "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/SwordHit_Banner.png",
                 "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/SwordHit_Vertical.png"
               },
@@ -368,11 +368,11 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Snakes and Ladders_256_256.png",
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Snakes And Ladders_256_256.png",
                 "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Snakes and Ladders_AajTak_960_540 Banner.png",
                 "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Snakes and Ladders_AajTak_540_810 Banner.png"
               },
-              "description": "CThe object of the game is to navigate one's game piece, according to die rolls, from the start (bottom square) to the finish (top square), helped by climbing ladders but hindered by falling down snakes. The game is a simple race based on sheer luck, and it is popular with young children.",
+              "description": "The object of the game is to navigate one's game piece, according to die rolls, from the start (bottom square) to the finish (top square), helped by climbing ladders but hindered by falling down snakes. The game is a simple race based on sheer luck, and it is popular with young children.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -718,7 +718,7 @@
               "type": "webview",
               "orientation": "port",
              "images": {
-                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/TappyBird_icon.png",
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/TappyBird_Icon.png",
                 "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/TappyBird_Banner.png",
                 "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/TappyBird_Vertical.png"
               },
@@ -781,12 +781,12 @@
               "game_play_url": "https://gamesnacks.com/embed/aajtak/games/kittymatch",
               "type": "webview",
               "orientation": "port",
-              "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
-                "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
-                "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+             "images": {
+                "icon": "https://kittymatch.h5games.usercontent.goog/v/88bc7d42-51d8-4360-8c08-863875755917/high_res_icon.jpg",
+                "horizontalBanner": "https://kittymatch.h5games.usercontent.goog/v/88bc7d42-51d8-4360-8c08-863875755917/high_res_banner.jpg",
+                "verticalBanner": "https://kittymatch.h5games.usercontent.goog/v/88bc7d42-51d8-4360-8c08-863875755917/high_res_tall.jpg"
               },
-              "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+              "description": "Play match 3 to entice a variety of cuddly kittens to visit your yard.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -815,10 +815,10 @@
               "orientation": "port",
               "images": {
                 "icon": "https://myspacepet.h5games.usercontent.goog/v/cc0ed757-609e-439b-a0a2-02226ab78735/high_res_icon.jpg",
-                "horizontalBanner": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_icon.jpg",
-                "verticalBanner": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_tall.jpg"
+                "horizontalBanner": "https://myspacepet.h5games.usercontent.goog/v/cc0ed757-609e-439b-a0a2-02226ab78735/high_res_banner.jpg",
+                "verticalBanner": "https://myspacepet.h5games.usercontent.goog/v/cc0ed757-609e-439b-a0a2-02226ab78735/high_res_tall.jpg"
               },
-              "description": "Test your snowboarding skills on the Northern Heights! Collect coins, customize your snowboarder, and unlock awesome acrobatic moves.",
+              "description": "Earn coins by caring for and playing mini-games with your space pet. Dress it up in a wide variety of outfits and accessories!",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -997,7 +997,7 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/TicTac_icon.png",
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/TicTac_Icon.png",
                 "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/TicTacToe_Banner.png",
                 "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/TicTacToe_Vertical.png"
               },
@@ -1029,11 +1029,11 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
-                "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
-                "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+                "icon": "https://gymstack.h5games.usercontent.goog/v/eee9d7c0-118d-4b2b-9d47-b3464d73f939/high_res_icon.jpg",
+                "horizontalBanner": "https://gymstack.h5games.usercontent.goog/v/eee9d7c0-118d-4b2b-9d47-b3464d73f939/high_res_banner.jpg",
+                "verticalBanner": "https://gymstack.h5games.usercontent.goog/v/eee9d7c0-118d-4b2b-9d47-b3464d73f939/high_res_tall.jpg"
               },
-              "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+              "description": "Work out your mental muscles in this 3D puzzle match game.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -1164,11 +1164,11 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
-                "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
-                "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+                "icon": "https://golfadventures.h5games.usercontent.goog/v/9ad36b75-9aa3-4346-b2d7-bddfa325b70a/high_res_icon.jpg",
+                "horizontalBanner": "https://golfadventures.h5games.usercontent.goog/v/9ad36b75-9aa3-4346-b2d7-bddfa325b70a/med_res_banner.jpg",
+                "verticalBanner": "https://golfadventures.h5games.usercontent.goog/v/9ad36b75-9aa3-4346-b2d7-bddfa325b70a/high_res_tall.jpg"
               },
-              "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+              "description": "Play mini-golf across a variety of unique environments each with different gravities, obstacles and challenges.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -1712,7 +1712,7 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/TappyBird_icon.png",
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/TappyBird_Icon.png",
                 "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/TappyBird_Banner.png",
                 "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/TappyBird_Vertical.png"
               },
@@ -1728,7 +1728,7 @@
               "type": "webview",
               "orientation": "port",
              "images": {
-                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/TicTac_icon.png",
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/TicTac_Icon.png",
                 "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/TicTacToe_Banner.png",
                 "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/TicTacToe_Vertical.png"
               },
@@ -1839,12 +1839,12 @@
               "game_play_url": "https://gamesnacks.com/embed/aajtak/games/golfadventures",
               "type": "webview",
               "orientation": "port",
-              "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
-                "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
-                "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+               "images": {
+                "icon": "https://golfadventures.h5games.usercontent.goog/v/9ad36b75-9aa3-4346-b2d7-bddfa325b70a/high_res_icon.jpg",
+                "horizontalBanner": "https://golfadventures.h5games.usercontent.goog/v/9ad36b75-9aa3-4346-b2d7-bddfa325b70a/med_res_banner.jpg",
+                "verticalBanner": "https://golfadventures.h5games.usercontent.goog/v/9ad36b75-9aa3-4346-b2d7-bddfa325b70a/high_res_tall.jpg"
               },
-              "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+              "description": "Play mini-golf across a variety of unique environments each with different gravities, obstacles and challenges.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -1856,11 +1856,11 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
-                "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
-                "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+                "icon": "https://gymstack.h5games.usercontent.goog/v/eee9d7c0-118d-4b2b-9d47-b3464d73f939/high_res_icon.jpg",
+                "horizontalBanner": "https://gymstack.h5games.usercontent.goog/v/eee9d7c0-118d-4b2b-9d47-b3464d73f939/high_res_banner.jpg",
+                "verticalBanner": "https://gymstack.h5games.usercontent.goog/v/eee9d7c0-118d-4b2b-9d47-b3464d73f939/high_res_tall.jpg"
               },
-              "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+              "description": "Work out your mental muscles in this 3D puzzle match game.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -1888,11 +1888,11 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
-                "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
-                "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+                "icon": "https://kittymatch.h5games.usercontent.goog/v/88bc7d42-51d8-4360-8c08-863875755917/high_res_icon.jpg",
+                "horizontalBanner": "https://kittymatch.h5games.usercontent.goog/v/88bc7d42-51d8-4360-8c08-863875755917/high_res_banner.jpg",
+                "verticalBanner": "https://kittymatch.h5games.usercontent.goog/v/88bc7d42-51d8-4360-8c08-863875755917/high_res_tall.jpg"
               },
-              "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+              "description": "Play match 3 to entice a variety of cuddly kittens to visit your yard.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -1967,12 +1967,12 @@
               "game_play_url": "https://gamesnacks.com/embed/aajtak/games/myspacepet",
               "type": "webview",
               "orientation": "port",
-              "images": {
+             "images": {
                 "icon": "https://myspacepet.h5games.usercontent.goog/v/cc0ed757-609e-439b-a0a2-02226ab78735/high_res_icon.jpg",
-                "horizontalBanner": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_icon.jpg",
-                "verticalBanner": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_tall.jpg"
+                "horizontalBanner": "https://myspacepet.h5games.usercontent.goog/v/cc0ed757-609e-439b-a0a2-02226ab78735/high_res_banner.jpg",
+                "verticalBanner": "https://myspacepet.h5games.usercontent.goog/v/cc0ed757-609e-439b-a0a2-02226ab78735/high_res_tall.jpg"
               },
-              "description": "Test your snowboarding skills on the Northern Heights! Collect coins, customize your snowboarder, and unlock awesome acrobatic moves.",
+              "description": "Earn coins by caring for and playing mini-games with your space pet. Dress it up in a wide variety of outfits and accessories!",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -1984,11 +1984,11 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
-                "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
-                "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+                "icon": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_icon.jpg",
+                "horizontalBanner": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_icon.jpg",
+                "verticalBanner": "https://northernheights.h5games.usercontent.goog/v/0d890ef5-1cf6-40ff-8d0f-8906ed032d14/high_res_tall.jpg"
               },
-              "description": "Create huge spirals by removing bark from trunks and use them to collect coins and destroy obstacles in your way.",
+              "description": "Test your snowboarding skills on the Northern Heights! Collect coins, customize your snowboarder, and unlock awesome acrobatic moves.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -2112,7 +2112,7 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
+                "icon": "https://slime-io.h5games.usercontent.goog/v/c5b47372-7926-4fb4-8f1e-72c49ae10333/high_res_icon.jpg",
                 "horizontalBanner": "https://slime-io.h5games.usercontent.goog/v/c5b47372-7926-4fb4-8f1e-72c49ae10333/high_res_banner.jpg",
                 "verticalBanner": "https://slime-io.h5games.usercontent.goog/v/c5b47372-7926-4fb4-8f1e-72c49ae10333/high_res_tall.jp"
               },
@@ -2240,7 +2240,7 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/SwordHit_icon.png",
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Sword_ico.png",
                 "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/SwordHit_Banner.png",
                 "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/SwordHit_Vertical.png"
               },
@@ -2304,9 +2304,9 @@
               "type": "webview",
               "orientation": "land",
               "images": {
-                "icon": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_icon.jpg",
-                "horizontalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_banner.jpg",
-                "verticalBanner": "https://spiralroll.h5games.usercontent.goog/v/5be6bbdd-7a11-43b1-9860-e3fc44859f25/high_res_tall.jpg"
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/santa_port.png",
+                "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/santa_port.png",
+                "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_list_thumbnails/santa_port.png"
               },
               "description": "It's Christmas season and Santa is out to deliver gifts. Help him to drop the gifts in chimney.",
               "enabled": "true",
@@ -2372,7 +2372,7 @@
                 "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Snakes and Ladders_AajTak_960_540 Banner.png",
                 "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Snakes and Ladders_AajTak_540_810 Banner.png"
               },
-              "description": "CThe object of the game is to navigate one's game piece, according to die rolls, from the start (bottom square) to the finish (top square), helped by climbing ladders but hindered by falling down snakes. The game is a simple race based on sheer luck, and it is popular with young children.",
+              "description": "The object of the game is to navigate one's game piece, according to die rolls, from the start (bottom square) to the finish (top square), helped by climbing ladders but hindered by falling down snakes. The game is a simple race based on sheer luck, and it is popular with young children.",
               "enabled": "true",
               "fullscreen": "true",
               "device": "all"
@@ -2432,9 +2432,9 @@
               "type": "webview",
               "orientation": "port",
               "images": {
-                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/QuizBattle_256_256.png",
-                "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/QuizBattle_AajTak_960_540 Banner.png",
-                "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/QuizBattle_AajTak_540_810 Banner.png"
+                "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Quiz Battle_256_256.png",
+                "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Quiz Battle_AajTak_960_540 Banner.png",
+                "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Quiz Battle_AajTak_540_810 Banner.png"
               },
               "description": "Quiz Battle is a simple game where the user has the option to answer trivia questions in SOLO mode, Multiplayer MODE and fastest fingers first.",
               "enabled": "true",
