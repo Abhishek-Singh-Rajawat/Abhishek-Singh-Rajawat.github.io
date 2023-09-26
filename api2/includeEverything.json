@@ -32,7 +32,7 @@
             "game_name": "CRICKET",
             "game_play_url": "https://games.indiatodaygaming.com/app/game.php?cgame=cricket",
             "type": "webview",
-            "orientation": "port",
+            "orientation": "land",
             "images": {
               "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Cricket_256_256.png",
               "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Cricket_AajTak_960_540 Banner.png",
@@ -318,7 +318,7 @@
             "game_name": "CRICKET",
             "game_play_url": "https://games.indiatodaygaming.com/app/game.php?cgame=cricket",
             "type": "webview",
-            "orientation": "port",
+            "orientation": "land",
             "images": {
               "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Cricket_256_256.png",
               "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Cricket_AajTak_960_540 Banner.png",
@@ -364,13 +364,13 @@
           {
             "id": "5",
             "game_name": "Snakes and Ladders",
-            "game_play_url": "https://games.indiatodaygaming.com/app/game.php?cgame=snakesandladders",
+            "game_play_url": "https://games.indiatodaygaming.com/app/game.php?cgame=snakeandladders",
             "type": "webview",
             "orientation": "port",
-            "images": {
+             "images": {
               "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Snakes And Ladders_256_256.png",
-              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Snakes and Ladders_AajTak_960_540 Banner.png",
-              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Snakes and Ladders_AajTak_540_810 Banner.png"
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Snakes And Ladders_AajTak_960_540 Banner.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Snakes And Ladders_AajTak_540_810 Banner.png"
             },
             "description": "The object of the game is to navigate one's game piece, according to die rolls, from the start (bottom square) to the finish (top square), helped by climbing ladders but hindered by falling down snakes. The game is a simple race based on sheer luck, and it is popular with young children.",
             "enabled": "true",
@@ -433,8 +433,8 @@
             "orientation": "port",
             "images": {
               "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Quiz Battle_256_256.png",
-              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/QuizBattle_AajTak_960_540 Banner.png",
-              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/QuizBattle_AajTak_540_810 Banner.png"
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Quiz_AajTak_960_540 Banner.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Quiz Banner_AajTak_540_810 Banner.png"
             },
             "description": "Quiz Battle is a simple game where the user has the option to answer trivia questions in SOLO mode, Multiplayer MODE and fastest fingers first.",
             "enabled": "true",
@@ -2286,7 +2286,7 @@
             "game_name": "CRICKET",
             "game_play_url": "https://games.indiatodaygaming.com/app/game.php?cgame=cricket",
             "type": "webview",
-            "orientation": "port",
+            "orientation": "land",
             "images": {
               "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Cricket_256_256.png",
               "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Cricket_AajTak_960_540 Banner.png",
@@ -2332,13 +2332,13 @@
           {
             "id": "68",
             "game_name": "Snakes and Ladders",
-            "game_play_url": "https://games.indiatodaygaming.com/app/game.php?cgame=snakesandladders",
+            "game_play_url": "https://games.indiatodaygaming.com/app/game.php?cgame=snakeandladders",
             "type": "webview",
             "orientation": "port",
-            "images": {
+             "images": {
               "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Snakes And Ladders_256_256.png",
-              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Snakes and Ladders_AajTak_960_540 Banner.png",
-              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Snakes and Ladders_AajTak_540_810 Banner.png"
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Snakes And Ladders_AajTak_960_540 Banner.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Snakes And Ladders_AajTak_540_810 Banner.png"
             },
             "description": "The object of the game is to navigate one's game piece, according to die rolls, from the start (bottom square) to the finish (top square), helped by climbing ladders but hindered by falling down snakes. The game is a simple race based on sheer luck, and it is popular with young children.",
             "enabled": "true",
@@ -2401,8 +2401,8 @@
             "orientation": "port",
             "images": {
               "icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/icons/Quiz Battle_256_256.png",
-              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Quiz Battle_AajTak_960_540 Banner.png",
-              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Quiz Battle_AajTak_540_810 Banner.png"
+              "horizontalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/horizontal/Quiz_AajTak_960_540 Banner.png",
+              "verticalBanner": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/gamelist/game_thumbnail/vertical/Quiz Banner_AajTak_540_810 Banner.png"
             },
             "description": "Quiz Battle is a simple game where the user has the option to answer trivia questions in SOLO mode, Multiplayer MODE and fastest fingers first.",
             "enabled": "true",
