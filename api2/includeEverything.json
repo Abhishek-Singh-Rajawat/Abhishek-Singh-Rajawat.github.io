@@ -5142,12 +5142,12 @@
 "n_type": "story",
 "n_desc": "",
 "n_share_link": "https://dev-indiatoday.intoday.in/india/story/caught-on-cam-woman-nearly-run-over-by-auto-as-bike-borne-miscreant-snatches-her-gold-chains-in-chennai-2288585-2023-06-13",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {}
+"n_photo_count": "",
+"n_photo": [],
+"n_video": []
 },
 {
 "n_id": "2281329",
@@ -5168,12 +5168,13 @@
 "n_type": "videogallery",
 "n_desc": "See it's great when people see it but I don't really see that way because the generation that all of these people Sachin sir, Virat bhai and Rohit Sharma have inspired is beyond. Had we not won the 1983 World Cup, had there not been a Sachin Tendulkar....had we not won the 2011 world cup would I be \r\nIn the joint statement, a copy of which was uploaded on the Twitter handle of the Congress's communication department, the opposition parties said PM Modi's move to inaugurate the new Parliament building \"by himself, completely sidelining President Droupadi Murmu, is not only a grave insult but a direct assault on our democracy which demands a commensurate response\".",
 "n_share_link": "https://dev-indiatoday.intoday.in/india/andaman-and-nicobar-islands/video/kartik-aaryan-writes-in-cryptic-post-we-belong-here-and-we-deserve-to-dream-2281329-2022-08-30",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {
+"n_photo_count": "",
+"n_photo": [],
+"n_video": [
+{
 "nv_id": "2281329",
 "nv_ratio": "16:9",
 "nv_title": "Kartik Aaryan Writes In Cryptic Post: \"We Belong Here And We Deserve To Dream\"",
@@ -5192,6 +5193,7 @@
 "nv_duration": "55:13",
 "nv_show_ad": "0"
 }
+]
 },
 {
 "n_id": "2281384",
@@ -5205,12 +5207,13 @@
 "n_type": "videogallery",
 "n_desc": "See it's great when people see it but I don't really see that way because the generation that all of these people Sachin sir, Virat bhai and Rohit Sharma have inspired is beyond. Had we not won the 1983 World Cup, had there not been a Sachin Tendulkar....had we not won the 2011 world cup would I be ",
 "n_share_link": "https://dev-indiatoday.intoday.in/entertainment/video/bjp-taps-former-cm-biplab-deb-for-rajya-sabha-bypoll-in-tripura-2281384-2022-11-01",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {
+"n_photo_count": "",
+"n_photo": [],
+"n_video": [
+{
 "nv_id": "2281384",
 "nv_ratio": "16:9",
 "nv_title": "BJP taps former CM Biplab Deb for Rajya Sabha bypoll in Tripura",
@@ -5229,6 +5232,7 @@
 "nv_duration": "48:56",
 "nv_show_ad": "0"
 }
+]
 },
 {
 "n_id": "2289763",
@@ -5252,12 +5256,12 @@
 "n_type": "story",
 "n_desc": "",
 "n_share_link": "https://dev-indiatoday.intoday.in/science/story/handrayaan-3-launched-picture-2289763-2023-07-17",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {}
+"n_photo_count": "",
+"n_photo": [],
+"n_video": []
 },
 {
 "n_id": "2288425",
@@ -5281,12 +5285,12 @@
 "n_type": "story",
 "n_desc": "",
 "n_share_link": "https://dev-indiatoday.intoday.in/india/story/jaisalmer-collector-tina-dabi-announces-40-bigha-land-allotment-for-pakistani-hindu-migrants-2288425-2023-05-24",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {}
+"n_photo_count": "",
+"n_photo": [],
+"n_video": []
 },
 {
 "n_id": "2288424",
@@ -5300,12 +5304,12 @@
 "n_type": "story",
 "n_desc": "",
 "n_share_link": "https://dev-indiatoday.intoday.in/india/story/amit-shah-presents-modi-govts-9-year-report-card-says-new-parl-building-constructed-in-record-time-2288424-2023-05-24",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {}
+"n_photo_count": "",
+"n_photo": [],
+"n_video": []
 },
 {
 "n_id": "2288423",
@@ -5319,12 +5323,12 @@
 "n_type": "story",
 "n_desc": "",
 "n_share_link": "https://dev-indiatoday.intoday.in/auto/bikes/story/we-will-not-accept-says-pm-modi-as-india-australia-vow-strict-action-against-temple-vandalism-2288423-2023-05-24",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {}
+"n_photo_count": "",
+"n_photo": [],
+"n_video": []
 },
 {
 "n_id": "2288422",
@@ -5338,12 +5342,12 @@
 "n_type": "breaking_news",
 "n_desc": "",
 "n_share_link": "https://dev-indiatoday.intoday.in/india/story/httpsalpha-ismart-v2-indiatodayintodayin-2288422-2023-05-24",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {}
+"n_photo_count": "",
+"n_photo": [],
+"n_video": []
 },
 {
 "n_id": "2288419",
@@ -5357,12 +5361,12 @@
 "n_type": "story",
 "n_desc": "",
 "n_share_link": "https://dev-indiatoday.intoday.in/india/story/arvind-kejriwal-meets-mamata-banerjee-in-kolkata-to-muster-support-against-centres-ordinance-2288419-2023-05-23",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {}
+"n_photo_count": "",
+"n_photo": [],
+"n_video": []
 },
 {
 "n_id": "2288416",
@@ -5376,12 +5380,12 @@
 "n_type": "story",
 "n_desc": "",
 "n_share_link": "https://dev-indiatoday.intoday.in/india/assam/story/credit-suisse-no-more-how-years-of-decay-and-mistrust-ripped-apart-its-rich-legacy-2288416-2023-05-23",
-"n_raiting": "",
+"n_rating": "",
 "n_emoji_left": [],
 "n_emoji_right": [],
-"photo_count": "",
-"n_photo": {},
-"n_video": {}
+"n_photo_count": "",
+"n_photo": [],
+"n_video": []
 }
 ]
 },
