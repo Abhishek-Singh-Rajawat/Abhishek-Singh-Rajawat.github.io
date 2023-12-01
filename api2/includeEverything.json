@@ -1794,7 +1794,7 @@
 "title": "Top Headline",
 "label": "Top Headline",
 "show_label": 0,
-"type": "Top Headline",
+"type": "newslist",
 "news": [
 {
 "n_id": "2289944",
