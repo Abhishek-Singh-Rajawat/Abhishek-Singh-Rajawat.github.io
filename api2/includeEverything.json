@@ -498,7 +498,7 @@
 },
 {
 "n_id": "2289869",
-"n_type": "story",
+"n_type": "liveblog",
 "n_is_blog": "0",
 "n_livetv_enable": "0",
 "n_is_developing": "0",
@@ -678,7 +678,7 @@
 },
 {
 "n_id": "2289882",
-"n_type": "videogallery",
+"n_type": "photogallery",
 "n_is_blog": "0",
 "n_livetv_enable": "0",
 "n_is_developing": "0",
@@ -745,7 +745,7 @@
 },
 {
 "n_id": "2289862",
-"n_type": "story",
+"n_type": "visualstory",
 "n_is_blog": "0",
 "n_livetv_enable": "0",
 "n_is_developing": "0",
@@ -791,7 +791,7 @@
 },
 {
 "n_id": "2289860",
-"n_type": "story",
+"n_type": "podcast",
 "n_is_blog": "0",
 "n_livetv_enable": "0",
 "n_is_developing": "0",
