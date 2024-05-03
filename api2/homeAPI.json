@@ -48,6 +48,39 @@
       ]
     },
     {
+      "id": null,
+      "title": "Dhamaka News",
+      "type": "dhamaka",
+      "n_template_id": "1",
+      "underline_color": "#ffffff",
+      "background_color": "#ffffff",
+      "banner_bg_image": "",
+      "about_the_topic": "",
+      "see_more_id": "",
+      "news": [
+        {
+          "n_id": "",
+          "n_type": "",
+          "n_is_video_associated": 0,
+          "n_video_url": "",
+          "n_title": "And we're counting",
+          "n_pcategory_id": "",
+          "n_category_name": "",
+          "n_image": "",
+          "alt_text": "",
+          "n_related_stories": [],
+          "n_updated_datetime": "",
+          "n_share_desc": "",
+          "n_share_url": "https://alpha-indiatoday.intoday.in/television/reality-tv/story/kbc-14-registrations-are-on-here-s-the-1st-question-and-its-answer-1935696-2022-04-10",
+          "n_photo": {},
+          "n_video": {},
+          "n_widget": {},
+          "n_podcast": {},
+          "font_size": 70
+        }
+      ]
+    },
+    {
       "id": "2322296",
       "title": "Top Stories",
       "label": "Top Stories",
