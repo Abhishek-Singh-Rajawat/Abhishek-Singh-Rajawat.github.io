@@ -1,1117 +1,673 @@
 {
-  "status_code": "1",
-  "status_message": "",
-  "news_pagination_cap": 1,
-  "data": [
-    {
-      "id": "2322296",
-      "title": "NewsPresso",
-      "label": "NewsPresso",
-      "show_label": 0,
-      "order": 2,
-      "type": "Newspresso",
-      "n_template_id": "1",
-      "news": [
-        {
-          "n_id": "2426356",
-          "n_title": "China requested for bilateral meeting but PM Modi, Xi met informally: Sources",
-          "n_slug": "",
-          "n_description": "After speculations over Prime Minister Narendra Modi seeking talks with Chinese President Xi Jinping on the sidelines of BRICS Summit, Ministry of External Affairs (MEA) sources have clarified that China requested talks with PM Modi. ",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/modi-255257-16x9.jpg?VersionId=KO1JrNf_6ThWYDqS5M_XYDpVQT9LSSx6&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/modi-255257-16x9.jpg?VersionId=KO1JrNf_6ThWYDqS5M_XYDpVQT9LSSx6&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 10:27:22",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>After speculations over Prime Minister Narendra Modi seeking talks with Chinese President Xi Jinping on the sidelines of BRICS Summit, Ministry of External Affairs (MEA) sources have clarified that China requested talks with PM Modi.</p>\r\n",
-            "no_author": {
-              "a_title": "India Today News Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": null,
-      "title": "Dhamaka News",
-      "type": "dhamaka",
-      "n_template_id": "1",
-      "underline_color": "#ffffff",
-      "background_color": "#ffffff",
-      "banner_bg_image": "",
-      "about_the_topic": "",
-      "see_more_id": "",
-      "news": [
-        {
-          "n_id": "",
-          "n_type": "",
-          "n_is_video_associated": 0,
-          "n_video_url": "",
-          "n_title": "And we're counting",
-          "n_pcategory_id": "",
-          "n_category_name": "",
-          "n_image": "",
-          "alt_text": "",
-          "n_related_stories": [],
-          "n_updated_datetime": "",
-          "n_share_desc": "",
-          "n_share_link": "https://alpha-indiatoday.intoday.in/television/reality-tv/story/kbc-14-registrations-are-on-here-s-the-1st-question-and-its-answer-1935696-2022-04-10",
-          "font_size": 70
-        }
-      ]
-    },
-    {
-      "id": "2322296",
-      "title": "Top Stories",
-      "label": "Top Stories",
-      "show_label": 0,
-      "order": 2,
-      "type": "topstoriescrousel",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "1",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426356",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/india/story/china-requested-bilateral-meeting-pm-modi-xi-met-informally-2426356-2023-08-25",
-          "n_title": "China requested for bilateral meeting but PM Modi, Xi met informally: Sources",
-          "n_slug": "",
-          "n_description": "After speculations over Prime Minister Narendra Modi seeking talks with Chinese President Xi Jinping on the sidelines of BRICS Summit, Ministry of External Affairs (MEA) sources have clarified that China requested talks with PM Modi. ",
-          "n_pcategory_id": "1206578",
-          "n_pcategory_name": "India",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/modi-255257-16x9.jpg?VersionId=KO1JrNf_6ThWYDqS5M_XYDpVQT9LSSx6&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/modi-255257-16x9.jpg?VersionId=KO1JrNf_6ThWYDqS5M_XYDpVQT9LSSx6&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 10:27:22",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>After speculations over Prime Minister Narendra Modi seeking talks with Chinese President Xi Jinping on the sidelines of BRICS Summit, Ministry of External Affairs (MEA) sources have clarified that China requested talks with PM Modi.</p>\r\n",
-            "no_author": {
-              "a_title": "India Today News Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426329",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/science/chandrayaan-3/story/chandrayaan-2-orbiter-photoshoots-chandrayaan-3-lander-2426329-2023-08-25",
-          "n_title": "Isro shares photos of Vikram lander clicked by Chandrayaan-2 in now deleted post",
-          "n_slug": "",
-          "n_description": "Pictures of the Chandrayaan-3 lander, as taken by the Chandrayaan-2 orbiter, were shared by Isro on its X handle on Friday. However, Isro deleted the post minutes later. ",
-          "n_pcategory_id": "1938397",
-          "n_pcategory_name": "Chandrayaan-3",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/chandrayaan-3-lander-254116-16x9.jpg?VersionId=gI8deQiAwp52d5se.Sw3DmN5QRoef9k6&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/chandrayaan-3-lander-254116-16x9.jpg?VersionId=gI8deQiAwp52d5se.Sw3DmN5QRoef9k6&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 10:08:49",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>The Indian Space Research Organisation (Isro) on Friday took to X (formerly Twitter) and shared images of the Chandrayaan-3 lander, taken by the Chandrayaan-2 orbiter.&nbsp;</p>\r\n\r\n<p>Chandrayaan-2's Orbiter High-Resolution Camera (OHRC) currently&nbsp;has the best resolution around the Moon, Isro wrote on X.&nbsp;</p>\r\n\r\n<p>However, the space agency deleted the post from its X handle moments later.&nbsp;</p>\r\n\r\n<drupal-entity data-caption=\"Chandrayaan-2 orbiter photoshoots Chandrayaan-3 lander (Credits: Isro/Twitter)\" data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"131d02e4-7b1d-4f12-a4aa-fc2abe1d91e9\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>Here's what Isro tweeted -&nbsp;</p>\r\n\r\n<drupal-entity data-caption=\"Isro shares images of Chandrayaan 3 lander, as taken by Chandrayaan 2 orbiter (Credits: Isro/Twitter)\" data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"4a07f931-0462-4812-8653-4be967318537\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>In a giant leap for its space programme, India's Moon mission Chandrayaan-3 touched down on the lunar south pole at 6.04 pm on Wednesday, propelling India into an exclusive club of four and making it the first country to land on the uncharted southern pole of the Moon.</p>\r\n\r\n<p>On Thursday, former Isro chief G Madhavan Nair in Thiruvananthapuram said Chandrayaan 3's success will further boost India's international commercial contracts as there will be acceptance of its technical competence and launch systems.</p>\r\n\r\n<p>Nair said the success of Chandrayaan-3 is the first stepping stone to begin India's planetary explorations.</p>\r\n\r\n<p>\"We have really broken the ice and made a good beginning,\" he told PTI.</p>\r\n\r\n<p>The total cost of Chandrayaan-3, according to Isro, is Rs 615 crore, which is almost equivalent to a Hindi cinema's production budget.</p>\r\n",
-            "no_author": {
-              "a_title": "India Today Science Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426307",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/india/story/candid-discussion-china-reaction-pm-modi-xi-bilateral-talks-brics-summit-2426307-2023-08-25",
-          "n_title": "Improving India-China relations serves common interests: President Xi to PM Modi",
-          "n_slug": "",
-          "n_description": "Prime Minister Narendra Modi and Chinese President Xi Jinping were seen walking side by side and having a brief conversation on Thursday as they shared the stage in South Africa during the BRICS summit. \r\n",
-          "n_pcategory_id": "1206578",
-          "n_pcategory_name": "India",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/prime-minister-narendra-modi-with-chinese-president-xi-jinping-252642-16x9.jpg?VersionId=PJz5AH9DnuOdSaukSzRgDzNJKnLW5jUm&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/prime-minister-narendra-modi-with-chinese-president-xi-jinping-252642-16x9.jpg?VersionId=PJz5AH9DnuOdSaukSzRgDzNJKnLW5jUm&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 09:15:18",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>China on Thursday released a statement on Prime Minister Narendra Modi and Chinese President Xi Jinping’s <a href=\"https://www.indiatoday.in/india/story/pm-modi-chinas-xi-jinping-walk-together-chat-at-brics-summit-2425979-2023-08-24\" target=\"_self\">bilateral talks held on the sidelines of the BRICS Summit</a>, saying India-China relations were discussed in the meeting.&nbsp;</p>\r\n\r\n<p>Reacting to the bilateral exchange between China and India, Chinese Foreign Ministry spokesperson said that Xi Jinping and PM Modi had a “candid and in-depth exchange of views” on current China-India relations and other questions of shared interest.&nbsp;</p>\r\n\r\n<p>“President Xi stressed that improving China-India relations serves the common interests of the two countries and peoples, and is also conducive to peace, stability and development of the world and the region,” the statement by Chinese Foreign Ministry spokesperson read.&nbsp;</p>\r\n\r\n<div class=\"embedcode\"><iframe allowfullscreen=\"\" class=\"multy-video-iframe\" frameborder=\"0\" height=\"365\" scrolling=\"no\" src=\"https://embed.indiatoday.in/share/video/world/video/MjQyNTk3MQ==\" width=\"648\"></iframe></div>\r\n\r\n<p>The official statement added that the two countries should bear in mind the overall interests of their bilateral relations and handle the border issue properly so as to “jointly safeguard peace and tranquility in the border region”.</p>\r\n\r\n<p>Prime Minister Narendra <a href=\"https://www.indiatoday.in/india/story/pm-modi-chinas-xi-jinping-walk-together-chat-at-brics-summit-2425979-2023-08-24\" target=\"_self\">Modi and Chinese President Xi Jinping were seen walking side by side</a> and having a brief conversation on Thursday as they shared the stage in South Africa during the BRICS summit.&nbsp;</p>\r\n\r\n<p>During the brief meeting, PM Modi conveyed to Xi Jinping India's concerns about the unresolved issues along the Line of Actual Control (LAC) in the western sector of the India-China border areas, said India’s Foreign Secretary Vinay Mohan Kwatra.</p>\r\n\r\n<p>The meeting comes less than two weeks from the G20 summit which will be held in New Delhi.</p>\r\n\r\n<p>This is the second such informal interaction between the two leaders since the Galwan clashes of May 2020. In November 2022, during the G20 summit in Bali, Indonesia, the two leaders had a similar interaction where PM Modi exchanged courtesies with Chinese President Xi Jinping and spoke about the need to “stabilise” bilateral relations.&nbsp;</p>\r\n\r\n<p><br />\r\n&nbsp;</p>\r\n",
-            "no_author": {
-              "a_title": "India Today News Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426289",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/world/story/donald-trump-mugshot-arrest-surrender-election-charges-hair-blonde-strawberry-2426289-2023-08-25",
-          "n_title": "'6'3, 97 kg, hair blonde or strawberry': Trump's mugshot after arrest out",
-          "n_slug": "",
-          "n_description": "Trump spent only about 20 minutes at the jail before heading back to his New Jersey golf club. Before boarding his private plane at Atlanta's Hartsfield-Jackson airport, he repeated his claim that the prosecution is politically motivated.",
-          "n_pcategory_id": "1206577",
-          "n_pcategory_name": "World",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/donald-trump-253622-16x9.jpg?VersionId=rqPN5k1RmYyzB9ALkE5lav9QyJvo6Z9l&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/donald-trump-253622-16x9.jpg?VersionId=rqPN5k1RmYyzB9ALkE5lav9QyJvo6Z9l&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 07:27:34",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>Donald Trump's mug shot was released on Thursday evening after he was booked at an Atlanta jail on more than a dozen felony charges as part of a wide-ranging criminal case stemming from the former US president's attempts to overturn his 2020 election defeat in Georgia.</p>\r\n\r\n<p>An unsmiling Trump - inmate no. P01135809, according to Fulton County Jail records - was captured glaring at the camera in the mug shot. The image represented yet another extraordinary moment for Trump, who did not have to submit to a photograph when making appearances in his three other criminal cases.</p>\r\n\r\n<p>Trump’s height was listed on the jail's website as six foot three inches, his weight 97 kgs and hair described as blond or strawberry.</p>\r\n\r\n<p>The former US President shared his mug shot on X (formerly Twitter).</p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"176f619a-8a67-45f8-9210-3007b0ef0358\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>Trump spent only about 20 minutes at the jail before heading back to his New Jersey golf club. Before boarding his private plane at Atlanta's Hartsfield-Jackson airport, he repeated his claim that the prosecution - along with the others he faces - is politically motivated.</p>\r\n\r\n<p>\"What has taken place here is a travesty of justice,\" he told reporters. \"I did nothing wrong, and everybody knows it.\"</p>\r\n\r\n<p>Trump, 77, already has entered uncharted territory as the first former U.S. president to face criminal charges, even as he mounts another campaign for the White House next year.</p>\r\n\r\n<p>Far from damaging his candidacy for the Republican Party nomination, however, the four cases filed against him have only bolstered his standing. He holds a commanding polling lead in the Republican race to challenge Democratic President Joe Biden in the November 2024 election.</p>\r\n\r\n<p>Dozens of supporters, waving Trump banners and American flags, jostled for a glimpse as Trump arrived at the jail. Among the Trump backers gathered outside was Georgia U.S. Representative Marjorie Taylor Greene, one of the former president's most loyal congressional allies.</p>\r\n\r\n<p>Lyle Rayworth, 49, who is in the aviation industry in the Atlanta area, had been waiting near the jailhouse for 10 hours, since early on Thursday.</p>\r\n\r\n<p>\"Yeah, I'm hoping he sees me waving the flags, showing support,\" Rayworth said as he awaited Trump's arrival. \"He needs us.\"</p>\r\n\r\n<p>The image is certain to be circulated widely by Trump's foes and supporters alike.</p>\r\n\r\n<h3>'A MORE POPULAR IMAGE THAN THE MONA LISA'</h3>\r\n\r\n<p>\"We want to put it on a T-shirt. It will go worldwide. It will be a more popular image than the Mona Lisa,\" said Laura Loomer, 30, a Republican former congressional candidate who mingled with other Trump supporters outside the jail on Thursday morning.</p>\r\n\r\n<p>Judge Scott McAfee set a trial date of Oct. 23 for one of Trump's 18 co-defendants, attorney Kenneth Chesebro, after Fulton County District Attorney Fani Willis proposed that date in response to Chesebro's request for a speedy trial. The judge's order said the schedule does not yet apply to Trump or any of the other defendants.</p>\r\n\r\n<p>Eleven of his co-defendants already have been booked, according to authorities. Some, like Rudolph Giuliani, the former New York mayor, were stone-faced in their mug shots, while others, such as lawyer Jenna Ellis, smiled for the camera.</p>\r\n\r\n<p>All 19 defendants faced a Friday deadline to surrender. Court records showed that Mark Meadows, who served as Trump's White House chief of staff, was processed at the jail on Thursday.</p>\r\n\r\n<p>The jail has a reputation for grim conditions that have inspired rap songs and prompted an investigation by the U.S. Justice Department.</p>\r\n\r\n<p>Trump faces 13 felony counts in the Georgia case, including racketeering, which is typically used to target organized crime, for pressuring state officials to reverse his election loss and setting up an illegitimate slate of electors to undermine the formal congressional certification of Biden's 2020 victory.</p>\r\n\r\n<h3>TRIAL DATE WRANGLING</h3>\r\n\r\n<p>Willis originally proposed a trial date of March 4 but moved it up for Chesebro after he asked that his trial start by October. Trump's legal team has yet to propose a date but is expected to push for a much later start. On Thursday, his newest Atlanta lawyer, Steven Sadow, asked for Trump to be tried separately from Chesebro.</p>\r\n\r\n<p>Trump has pleaded not guilty in the three other cases and denied wrongdoing. In the Georgia case, Willis has requested that arraignments begin the week of Sept. 5, though defendants in Georgia are permitted to waive those appearances and plead not guilty via court filing.</p>\r\n\r\n<p>Manhattan District Attorney Alvin Bragg filed the first case, accusing Trump of falsifying business records to hide hush money payments to a porn star who claims to have had a sexual encounter with him years ago.</p>\r\n\r\n<p>Trump also faces two sets of federal charges brought by Special Counsel Jack Smith - one case in Washington involving election interference and one in Miami involving classified documents he retained after leaving office in 2021. He faces 91 criminal counts in total.</p>\r\n\r\n<p>Trump agreed to post $200,000 bond and accepted bail conditions that would bar him from threatening witnesses or his co-defendants in the Georgia case.</p>\r\n\r\n<p>Republicans who control the U.S. House of Representatives said on Thursday they would investigate whether Willis improperly coordinated with federal prosecutors. They previously launched an investigation of Bragg, who accused them of a \"campaign of intimidation.\"</p>\r\n\r\n<p>On Wednesday, Trump's leading rivals in the race for the Republican presidential nomination met in Milwaukee for their first debate. Trump skipped that event, instead sitting for a pre-taped interview with conservative commentator Tucker Carlson aimed at siphoning away viewers.</p>\r\n\r\n<p>\"I've been indicted four times - all trivial nonsense,\" Trump told Carlson.</p>\r\n",
-            "no_author": {
-              "a_title": "Reuters"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426305",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/india/story/monsoon-rain-deaths-himachal-rain-alert-flash-flood-imd-weather-forecast-2426305-2023-08-25",
-          "n_title": "Heavy rain continues to batter Himachal, several stranded on Kullu-Mandi highway",
-          "n_slug": "",
-          "n_description": "Incessant rain continued to lash parts of Himachal Pradesh, triggering landslides, building collapses in several areas. Hundreds of travellers were stranded after landslides blocked Kullu-Mandi highway.\r\n\r\n",
-          "n_pcategory_id": "1206578",
-          "n_pcategory_name": "India",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/cloudburst-254014-16x9.png?VersionId=A9vXq53dWgyOOUDTOWCPWUhnphd0yc5M&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/cloudburst-254014-16x9.png?VersionId=A9vXq53dWgyOOUDTOWCPWUhnphd0yc5M&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 09:05:09",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>The India Meteorological Department (IMD) has issued a yellow alert for Himachal Pradesh, predicting moderate to heavy rainfall amid threats of flash flood and landslides.</p>\r\n\r\n<p>Incessant rain continued to lash parts of the state on Thursday, triggering <a href=\"https://www.indiatoday.in/india/story/monsoon-rain-deaths-himachal-rain-red-alert-flash-flood-uttarakhand-imd-weather-forecast-2425297-2023-08-24\" target=\"_self\">landslides, building collapse in several areas.</a>&nbsp;With no relief in store, the India Meteorological Department (IMD) issued a yellow alert for the state on Friday, predicting moderate to heavy rainfall.</p>\r\n\r\n<p>The wet spell is expected to last till August 29, the weather body said.</p>\r\n\r\n<p>In view of the heavy rain alert, authorities have ordered the closure of all schools in Shimla on Friday.</p>\r\n\r\n<p><strong>TRAVELLERS STRANDED ON KULLU-MANDI HIGHWAY</strong></p>\r\n\r\n<p>As many as 729 roads are closed in the state and several areas were without electricity as 2,897 power transformers were damaged, said Principal Secretary (revenue) Onkar Chand Sharma, reported news agency PTI.</p>\r\n\r\n<p>Hundreds of travellers were stranded after landslides blocked the road to Mandi. A queue of vehicles was seen on both sides of landslide-hit area.</p>\r\n\r\n<p>Stranded people on the Kallu-Mandi highway were shifted to relief camps set up in hotels, rest houses and residential homes at Pandoh, Aut and Bajaura, said officials.</p>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\">\r\n<div class=\"media_embed_detail\" id=\"ssstwitter.com_1692928195927_169293438164e820ed6b498.mp4\" type=\"mp4\">&nbsp;</div>\r\n</div>\r\n</article>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\">As many as 120 people have died in landslides and other rain-related incidents in the state this month, about 80 of them since August 14. In total, 242 people have died in the state since the monsoon began on June 24.&nbsp;</div>\r\n</article>\r\n\r\n<p>Meanwhile, Chief Minister Sukhu on Thursday claimed that the state has suffered losses of Rs 12,000 crore so far.</p>\r\n",
-            "no_author": {
-              "a_title": "India Today News Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426347",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/law-today/story/bilkis-bano-compensation-was-highest-in-any-gang-rape-case-lawyer-tells-supreme-court-2426347-2023-08-25",
-          "n_title": "Compensation to Bilkis Bano highest in any gangrape case: Convict's lawyer",
-          "n_slug": "",
-          "n_description": "Lawyer for the convict in the Bilkis Bano rape case has told the Supreme Court that the compensation to Bano has been the highest ever in any gangrape case. She further said her client 'earned' the remission granted. ",
-          "n_pcategory_id": "1835970",
-          "n_pcategory_name": "Law Today",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/bilkis-bano-253752-16x9.jpg?VersionId=aRWKGIPsINHwPUoDe85X8ePg8IB.JTzI&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/bilkis-bano-253752-16x9.jpg?VersionId=aRWKGIPsINHwPUoDe85X8ePg8IB.JTzI&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 10:08:05",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>The compensation awarded by the Supreme Court to Bilkis Bano was the highest awarded in any gang rape case, the counsel appearing for one of the convicts who was granted early release in the case told the court.&nbsp;</p>\r\n\r\n<p>While arguing that remission granted to the convict should not be cancelled, advocate Sonia Mathur told the court that Bilkis Bano had already been awarded compensation, a government job and accommodation.</p>\r\n\r\n<p>Mathur further told a bench led by Justice BV Nagarathna, that the release on remission granted to the convict was not given as bounty or charity and he had 'earned it'.</p>\r\n\r\n<p>Mathur said her client has been out of jail for a significant period of time and that may not be undone as he has earned it.&nbsp;</p>\r\n\r\n<p>The compensation granted to Bilkis Bano, as referred to by Mathur, was through a Supreme Court order in 2019, when the court had directed the Gujarat government to pay her Rs 50 lakh as compensation, along with employment under the State and government accommodation at a place of her choice.&nbsp;</p>\r\n\r\n<p>While enhancing compensation as earlier granted to Bilkis Bano, the court had specifically noted that her case has to be dealt with differently, as the loss and suffering evidently surpassed normal cases.&nbsp;</p>\r\n\r\n<p>According to the court, gruesome and horrific acts of violence had left an indelible imprint on the survivor's mind, which would continue to torment and cripple her.</p>\r\n\r\n<p>Further, the court had recorded that Bilkis was 21 years old and pregnant at the time of the Gujarat riots.</p>\r\n\r\n<p>She was 'repeatedly gangraped and was a mute and helpless witness to her three-and-a-half-year-old daughter being butchered to death', the court noted.&nbsp;</p>\r\n\r\n<p>Also, she had lost all members of her family in the diabolical and brutal attacks that needed to be adequately compensated.&nbsp;</p>\r\n\r\n<p>The court had observed that Bano, who was about 40 years of age when she approached the court, was homeless and lived with her daughter who was born after the incident.&nbsp;</p>\r\n\r\n<p>Bano had been coerced to live the life of a nomad and as an orphan, the court said, adding, she was barely sustaining herself on the charity of NGOs, having lost her family members.&nbsp;</p>\r\n\r\n<p>Henceforth, a three-judge bench of the top court concluded that Bilkis Bano deserved to be adequately compensated.</p>\r\n",
-            "no_author": {
-              "a_title": "Srishti Ojha"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426267",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/india/story/group-backed-by-billionaire-george-soros-planning-expose-on-indian-firms-adani-hindenberg-2426267-2023-08-25",
-          "n_title": "Group backed by billionaire George Soros planning expose on Indian firms: Report",
-          "n_slug": "",
-          "n_description": "A global network of investigative journalists which has the funding of billionaire George Soros is reportedly planning an 'expose' on certain corporate houses in India. ",
-          "n_pcategory_id": "1206578",
-          "n_pcategory_name": "India",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/george-soros-242006-16x9.jpg?VersionId=3rwh9S_DULOpzb9QxUfCEft.E1YQizfk&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/george-soros-242006-16x9.jpg?VersionId=3rwh9S_DULOpzb9QxUfCEft.E1YQizfk&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 00:00:10",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>Seven months after the US-based short seller, <strong><a href=\"https://www.indiatoday.in/business/story/adani-group-shares-fall-after-hindenburg-report-what-we-know-so-far-2326418-2023-01-25\" target=\"_self\">Hindenberg Research, came out with an explosive report on the Adani Group</a></strong>, the&nbsp;Organised Crime and Corruption Reporting Project (OCCRP), an organisation funded by figures like <strong><a href=\"https://www.indiatoday.in/india/story/who-is-george-soros-smriti-irani-gautam-adani-hindenburg-controversy-pm-modi-2336028-2023-02-17\" target=\"_self\">George Soros</a></strong> and the Rockefeller Brothers Fund - is planning another 'expose' on certain corporate houses in India, reported PTI news agency.&nbsp;</p>\r\n\r\n<p>OCCRP&nbsp;is a global network of investigative journalists which \"exposes crime and corruption so the public can hold power to account\", says the description on its website. The group&nbsp;might publish a report or a series of articles on certain corporate houses in India, said the PTI report.&nbsp;</p>\r\n\r\n<p>It added that the&nbsp;'expose' may involve overseas funds investing in the stocks of the corporate houses. These firms have not yet been identified but agencies are reportedly&nbsp;keeping a close eye on the capital market.</p>\r\n\r\n<p>On its website, OCCRP lists&nbsp;Open Society Foundations,&nbsp;a philanthropic organisation established by George Soros, as one of the \"institutional donors that make our work possible\".&nbsp;Others include the Ford Foundation, the Rockefeller Brothers Fund and the Oak Foundation.</p>\r\n\r\n<p>The Hindenberg report which came out in January accused the Adani group companies of stock manipulation and accounting fraud. The stocks of the Adani Group tumbled and Gautam Adani's position as the richest Indian in the world was dethroned by&nbsp;Reliance Industries Chairman and Managing Director Mukesh Ambani.&nbsp;</p>\r\n\r\n<p>After the accusation by Hindenberg on the Adani Group sparked a major controversy, <strong><a href=\"https://www.indiatoday.in/india/story/adani-hidenburg-row-billionaire-george-soros-attack-pm-modi-smriti-irani-2335978-2023-02-17\" target=\"_self\">George Soros said Prime Minister Narendra Modi&nbsp;would “have to answer questions”</a></strong> from foreign investors and Parliament on the charges against the conglomerate. His remarks were sharply criticised by the ruling&nbsp;Bharatiya Janata Party (BJP) which said George Soros not only attacked PM Modi but also targeted the Indian democratic system.</p>\r\n\r\n<p>The allegations against the Adani group are being investigated by the Securities and Exchange Board of India (Sebi). It has reportedly <strong><a href=\"https://www.indiatoday.in/business/story/sebi-final-report-adani-group-hindenburg-research-allegations-stock-manipulation-supreme-court-2420650-2023-08-14\" target=\"_self\">prepared its final report on the case which will be submitted to the Supreme Court</a></strong>. On August 14, the deadline set by the top court, Sebi requested an additional 15 days to submit its report.</p>\r\n\r\n<p>The next Supreme Court hearing on the issue is&nbsp;scheduled for August 29.</p>\r\n",
-            "no_author": {
-              "a_title": "India Today News Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": "2281158",
-      "title": "Top Stories",
-      "label": "Top Stories",
-      "show_label": 0,
-      "order": 3,
-      "type": "topstories",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "1",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426329",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/science/chandrayaan-3/story/chandrayaan-2-orbiter-photoshoots-chandrayaan-3-lander-2426329-2023-08-25",
-          "n_title": "Isro shares photos of Vikram lander clicked by Chandrayaan-2 in now deleted post",
-          "n_slug": "",
-          "n_description": "Pictures of the Chandrayaan-3 lander, as taken by the Chandrayaan-2 orbiter, were shared by Isro on its X handle on Friday. However, Isro deleted the post minutes later. ",
-          "n_pcategory_id": "1938397",
-          "n_pcategory_name": "Chandrayaan-3",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/chandrayaan-3-lander-254116-16x9.jpg?VersionId=gI8deQiAwp52d5se.Sw3DmN5QRoef9k6&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/chandrayaan-3-lander-254116-16x9.jpg?VersionId=gI8deQiAwp52d5se.Sw3DmN5QRoef9k6&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 10:08:49",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>The Indian Space Research Organisation (Isro) on Friday took to X (formerly Twitter) and shared images of the Chandrayaan-3 lander, taken by the Chandrayaan-2 orbiter.&nbsp;</p>\r\n\r\n<p>Chandrayaan-2's Orbiter High-Resolution Camera (OHRC) currently&nbsp;has the best resolution around the Moon, Isro wrote on X.&nbsp;</p>\r\n\r\n<p>However, the space agency deleted the post from its X handle moments later.&nbsp;</p>\r\n\r\n<drupal-entity data-caption=\"Chandrayaan-2 orbiter photoshoots Chandrayaan-3 lander (Credits: Isro/Twitter)\" data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"131d02e4-7b1d-4f12-a4aa-fc2abe1d91e9\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>Here's what Isro tweeted -&nbsp;</p>\r\n\r\n<drupal-entity data-caption=\"Isro shares images of Chandrayaan 3 lander, as taken by Chandrayaan 2 orbiter (Credits: Isro/Twitter)\" data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"4a07f931-0462-4812-8653-4be967318537\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>In a giant leap for its space programme, India's Moon mission Chandrayaan-3 touched down on the lunar south pole at 6.04 pm on Wednesday, propelling India into an exclusive club of four and making it the first country to land on the uncharted southern pole of the Moon.</p>\r\n\r\n<p>On Thursday, former Isro chief G Madhavan Nair in Thiruvananthapuram said Chandrayaan 3's success will further boost India's international commercial contracts as there will be acceptance of its technical competence and launch systems.</p>\r\n\r\n<p>Nair said the success of Chandrayaan-3 is the first stepping stone to begin India's planetary explorations.</p>\r\n\r\n<p>\"We have really broken the ice and made a good beginning,\" he told PTI.</p>\r\n\r\n<p>The total cost of Chandrayaan-3, according to Isro, is Rs 615 crore, which is almost equivalent to a Hindi cinema's production budget.</p>\r\n",
-            "no_author": {
-              "a_title": "India Today Science Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": "2281158",
-      "title": "Explore India Today",
-      "label": "Explore India Today",
-      "show_label": 0,
-      "order": 3,
-      "type": "Explore India Today",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "1",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426329",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/science/chandrayaan-3/story/chandrayaan-2-orbiter-photoshoots-chandrayaan-3-lander-2426329-2023-08-25",
-          "n_slug": "",
-          "n_pcategory_id": "1938397",
-          "n_pcategory_name": "Trending News",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/chandrayaan-3-lander-254116-16x9.jpg?VersionId=gI8deQiAwp52d5se.Sw3DmN5QRoef9k6&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/chandrayaan-3-lander-254116-16x9.jpg?VersionId=gI8deQiAwp52d5se.Sw3DmN5QRoef9k6&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 10:08:49",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>The Indian Space Research Organisation (Isro) on Friday took to X (formerly Twitter) and shared images of the Chandrayaan-3 lander, taken by the Chandrayaan-2 orbiter.&nbsp;</p>\r\n\r\n<p>Chandrayaan-2's Orbiter High-Resolution Camera (OHRC) currently&nbsp;has the best resolution around the Moon, Isro wrote on X.&nbsp;</p>\r\n\r\n<p>However, the space agency deleted the post from its X handle moments later.&nbsp;</p>\r\n\r\n<drupal-entity data-caption=\"Chandrayaan-2 orbiter photoshoots Chandrayaan-3 lander (Credits: Isro/Twitter)\" data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"131d02e4-7b1d-4f12-a4aa-fc2abe1d91e9\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>Here's what Isro tweeted -&nbsp;</p>\r\n\r\n<drupal-entity data-caption=\"Isro shares images of Chandrayaan 3 lander, as taken by Chandrayaan 2 orbiter (Credits: Isro/Twitter)\" data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"4a07f931-0462-4812-8653-4be967318537\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>In a giant leap for its space programme, India's Moon mission Chandrayaan-3 touched down on the lunar south pole at 6.04 pm on Wednesday, propelling India into an exclusive club of four and making it the first country to land on the uncharted southern pole of the Moon.</p>\r\n\r\n<p>On Thursday, former Isro chief G Madhavan Nair in Thiruvananthapuram said Chandrayaan 3's success will further boost India's international commercial contracts as there will be acceptance of its technical competence and launch systems.</p>\r\n\r\n<p>Nair said the success of Chandrayaan-3 is the first stepping stone to begin India's planetary explorations.</p>\r\n\r\n<p>\"We have really broken the ice and made a good beginning,\" he told PTI.</p>\r\n\r\n<p>The total cost of Chandrayaan-3, according to Isro, is Rs 615 crore, which is almost equivalent to a Hindi cinema's production budget.</p>\r\n",
-            "no_author": {
-              "a_title": "India Today Science Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": "1206550",
-      "title": "\"Is Rahul Gandhi’s ‘evolution’ on the Bharat Jodo Yatra for real?\"",
-      "label": "Live Blog",
-      "show_label": 0,
-      "order": 6,
-      "type": "Live Blog",
-      "image": "https://www.indiatoday.in/trending-news/story/pakistan-mans-humorous-comeback-for-uk-journalists-chandrayaan-3-comment-2426332-2023-08-25",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "1",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426364",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/sports/cricket/story/kl-rahul-has-filled-spot-left-vacant-by-ms-dhoni-yuvraj-singh-retirements-with-expertise-r-ashwin-2426364-2023-08-25",
-          "n_title": "Rahul is a definite lock at No.5 and is also our wicketkeeper-batter: Ashwin",
-          "n_slug": "",
-          "n_updated_time": "15:30:45",
-          "": "",
-          "n_comment_count": "2",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/ap23010396184627jpg-013913-16x9_3.jpg?VersionId=J4Z9LTVdkgJuC9nHybSuPRTj9RVX5tB4&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/ap23010396184627jpg-013913-16x9_3.jpg?VersionId=J4Z9LTVdkgJuC9nHybSuPRTj9RVX5tB4&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 10:28:28",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>R Ashwin has claimed that KL Rahul has filled the spot left by MS Dhoni and Yuvraj Singh's retirement with expertise and is a definite lock at number five for India during the upcoming Asia Cup 2023.&nbsp;</p>\r\n\r\n<p>Rahul&nbsp;has emerged as a versatile cricketer for the Indian cricket team in recent years, coming in a number of different positions across the batting order. In the ODIs, the 30-year-old has excelled at the No.5 spot, scoring 742 runs from 18 matches at an average of over 50.&nbsp;</p>\r\n\r\n<div class=\"embedcode\"><iframe allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" height=\"352\" loading=\"lazy\" src=\"https://open.spotify.com/embed/episode/3dYL2NcaR0G2f6GBGwfXf6?utm_source=generator\" style=\"border-radius:12px\" width=\"100%\"></iframe></div>\r\n\r\n<p>Rahul had been undergoing intensive rehabilitation in the past few months in a bid to be ready for the upcoming Asia Cup and World Cup. Despite carrying a slight niggle, the Karnataka batter was given an opportunity to be included in the <a href=\"https://www.indiatoday.in/sports/cricket/story/asia-cup-2023-squad-selection-live-rohit-sharma-ajit-agarkar-chairman-new-delhi-meeting-2424202-2023-08-21\" target=\"_blank\">17-member squad</a> for the Asia Cup.&nbsp;</p>\r\n\r\n<p>Chief selector Ajit Agarkar had said Rahul would miss the first few matches because of the niggle.&nbsp;</p>\r\n\r\n<div class=\"embedcode\"><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/CMBnb5xrjok?si=GNGQu-okTkMzWPNn\" title=\"YouTube video player\" width=\"560\"></iframe></div>\r\n\r\n<p>Ashwin, while talking on his YouTube channel as quoted by NDTV, said that India have been desperate for a middle-order batter ever since Dhoni and Yuvraj's retirement. The off-spinner said that Rahul has filled the role well and is a definite lock for No.5 in the side.&nbsp;</p>\r\n\r\n<p>Ashwin also said that he is hoping Rahul would be able to shake off the niggle and be ready for the first game.</p>\r\n\r\n<p>\"Ever since Yuvraj Singh and MS Dhoni retired, India were desperately looking for a replacement. Rahul has filled that slot with expertise. He is a definite lock at No.5 and is also our wicketkeeper-batsman,\" Ashwin said in a&nbsp;video on his YouTube&nbsp;channel.</p>\r\n\r\n<p>\"Before Pant's injury, Rahul was second in line and now&nbsp;Ishan Kishan&nbsp;is the second keeper, he has grabbed that opportunity with both hands. Rahul has some niggle but hopefully, he will be ready for the first game. If he is not we have an 18-member travelling with squad in&nbsp;Sanju Samson,\"&nbsp;</p>\r\n",
-            "no_author": {
-              "a_title": "India Today Sports Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": "2281158",
-      "title": "Top Stories",
-      "label": "Top Stories",
-      "show_label": 0,
-      "order": 3,
-      "type": "topstories",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "1",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426364",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/sports/cricket/story/kl-rahul-has-filled-spot-left-vacant-by-ms-dhoni-yuvraj-singh-retirements-with-expertise-r-ashwin-2426364-2023-08-25",
-          "n_title": "Rahul is a definite lock at No.5 and is also our wicketkeeper-batter: Ashwin",
-          "n_slug": "",
-          "n_pcategory_id": "1938397",
-          "n_pcategory_name": "World",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/ap23010396184627jpg-013913-16x9_3.jpg?VersionId=J4Z9LTVdkgJuC9nHybSuPRTj9RVX5tB4&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/ap23010396184627jpg-013913-16x9_3.jpg?VersionId=J4Z9LTVdkgJuC9nHybSuPRTj9RVX5tB4&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 10:28:28",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>R Ashwin has claimed that KL Rahul has filled the spot left by MS Dhoni and Yuvraj Singh's retirement with expertise and is a definite lock at number five for India during the upcoming Asia Cup 2023.&nbsp;</p>\r\n\r\n<p>Rahul&nbsp;has emerged as a versatile cricketer for the Indian cricket team in recent years, coming in a number of different positions across the batting order. In the ODIs, the 30-year-old has excelled at the No.5 spot, scoring 742 runs from 18 matches at an average of over 50.&nbsp;</p>\r\n\r\n<div class=\"embedcode\"><iframe allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" height=\"352\" loading=\"lazy\" src=\"https://open.spotify.com/embed/episode/3dYL2NcaR0G2f6GBGwfXf6?utm_source=generator\" style=\"border-radius:12px\" width=\"100%\"></iframe></div>\r\n\r\n<p>Rahul had been undergoing intensive rehabilitation in the past few months in a bid to be ready for the upcoming Asia Cup and World Cup. Despite carrying a slight niggle, the Karnataka batter was given an opportunity to be included in the <a href=\"https://www.indiatoday.in/sports/cricket/story/asia-cup-2023-squad-selection-live-rohit-sharma-ajit-agarkar-chairman-new-delhi-meeting-2424202-2023-08-21\" target=\"_blank\">17-member squad</a> for the Asia Cup.&nbsp;</p>\r\n\r\n<p>Chief selector Ajit Agarkar had said Rahul would miss the first few matches because of the niggle.&nbsp;</p>\r\n\r\n<div class=\"embedcode\"><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/CMBnb5xrjok?si=GNGQu-okTkMzWPNn\" title=\"YouTube video player\" width=\"560\"></iframe></div>\r\n\r\n<p>Ashwin, while talking on his YouTube channel as quoted by NDTV, said that India have been desperate for a middle-order batter ever since Dhoni and Yuvraj's retirement. The off-spinner said that Rahul has filled the role well and is a definite lock for No.5 in the side.&nbsp;</p>\r\n\r\n<p>Ashwin also said that he is hoping Rahul would be able to shake off the niggle and be ready for the first game.</p>\r\n\r\n<p>\"Ever since Yuvraj Singh and MS Dhoni retired, India were desperately looking for a replacement. Rahul has filled that slot with expertise. He is a definite lock at No.5 and is also our wicketkeeper-batsman,\" Ashwin said in a&nbsp;video on his YouTube&nbsp;channel.</p>\r\n\r\n<p>\"Before Pant's injury, Rahul was second in line and now&nbsp;Ishan Kishan&nbsp;is the second keeper, he has grabbed that opportunity with both hands. Rahul has some niggle but hopefully, he will be ready for the first game. If he is not we have an 18-member travelling with squad in&nbsp;Sanju Samson,\"&nbsp;</p>\r\n",
-            "no_author": {
-              "a_title": "India Today Sports Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ],
-      "": ""
-    },
-    {
-      "id": "1206796",
-      "title": "Visual Stories",
-      "label": "Visual stories",
-      "show_label": 0,
-      "order": 9,
-      "type": "newslist",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "1",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426320",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/television/reality-tv/story/kbc-15-ep-8-big-b-recalls-working-on-kajra-re-song-with-bahu-aishwarya-and-abhishek-2426320-2023-08-25",
-          "n_title": "KBC 15 Ep 8: Big B recalls working on Kajra Re with 'bahu' Aishwarya and Abhishek",
-          "n_slug": "",
-          "n_description": "The eighth episode of 'Kaun Banega Crorepati 15' aired on August 24. Host Amitabh Bachchan recalled working with Aishwarya Rai and Abhishek Bachchan in the song, 'Kajra Re', from 'Bunty Aur Babli'.",
-          "n_pcategory_id": "1207924",
-          "n_pcategory_name": "Technology",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/amitabh-bachchan--aishwarya-rai-and-abhishek-bachchan-in-kajre-re-251431-16x9.jpg?VersionId=_ZfQ3cAZBFYFLZ796TjWrFcasoOb2k8e&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/amitabh-bachchan--aishwarya-rai-and-abhishek-bachchan-in-kajre-re-251431-16x9.jpg?VersionId=_ZfQ3cAZBFYFLZ796TjWrFcasoOb2k8e&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 08:57:06",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>Amitabh Bachchan is back as the host of the popular quiz-based game show, Kaun Banega Crorepati. The season's 15th chapter premiered on August 14 on Sony TV. The eigth episode aired on August 24. Amitabh Bachchan started the episode by congratulating the team of ISRO for the successful landing of Chandrayaan-3 on the moon. He then welcomed rollover contestant Abhishek Garg and started the game with him.&nbsp;</p>\r\n\r\n<h3>BIG B RECALLS SHOOTING 'KAJRE RE'</h3>\r\n\r\n<p>Abhishek Garg faced the 12th question for Rs 12,50,000. The question was: Piyush Mishra's band Ballimaaraan refers to a locality in Delhi, most famously associated with which poet? The contestant chose Option D) Mirza Ghalib which was the correct answer.</p>\r\n\r\n<p>Big B then shared that a few lines giving reference of Ballimaaraan was used in his song 'Kajra Re' which also featured his daughter-in-law Aishwarya Rai Bachchan and son Abhishek Bachchan.&nbsp;</p>\r\n\r\n<p>He said, \"Usmein hum teeno the. Tab Aishwarya humari bahu nahi thi, ab ban gayi hai. Gaane me bahu thi, Abhishek the aur hum the. Uss gaane mein bol the.\" Not only this, Amitabh Bachchan also requested the team to play Kajra Re as he grooved to it.&nbsp;</p>\r\n\r\n<h3>ABOUT KBC 15</h3>\r\n\r\n<p>'Kaun Banega Crorepati 15' airs from Monday to Friday at 9 pm on Sony TV. You can also stream it on the app SonyLIV. The show has undergone some changes, as far as format is concerned. The makers shared in a note that there would be something called 'Super Sandook' which will allow the candidates to retrieve what they might have lost during the game show. Another life line is also added to the show called Double Dip, while an element called Desh Ka Sawal has also been included to bring in more audience participation.</p>\r\n",
-            "no_author": {
-              "a_title": "Grace Cyril"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": "1206578",
-      "title": "India",
-      "label": "India",
-      "show_label": 0,
-      "order": 4,
-      "type": "newslist",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "1",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426332",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/trending-news/story/pakistan-mans-humorous-comeback-for-uk-journalists-chandrayaan-3-comment-2426332-2023-08-25",
-          "n_title": "‘Inhe Burnol bheje’: Pakistan man’s comeback for UK journalist’s Chandrayaan-3 comment",
-          "n_slug": "",
-          "n_description": "In a video that is now going viral on X (formerly Twitter), Pakistan's Mohsin Ali suggested that the UK journalist's surprise and jealousy were due to the fact that a former colony has significantly advanced in just 77 years.",
-          "n_pcategory_id": "1797650",
-          "n_pcategory_name": "Trending News",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/pakistan-254555-16x9.jpg?VersionId=LotFevAkAlCRsmxS1CkvYkwLitaaA31c&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/pakistan-254555-16x9.jpg?VersionId=LotFevAkAlCRsmxS1CkvYkwLitaaA31c&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 09:53:19",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>Mohsin Ali, a Pakistani cricket analyst, had a laughable response for a UK journalist named Patrick Christys who opposed the aid money Britain sent to India. This reaction followed the success of India's Chandrayaan 3 mission, which led to the journalist's criticism going viral and facing backlash for perceived racism.</p>\r\n\r\n<p>In a video that is now going viral on X (formerly Twitter), Ali suggested that the journalist's surprise and jealousy were due to the fact that a former colony has significantly advanced in just 77 years. According to Ali, this rapid progress, especially in the field of space science, was hard for the journalist to digest.</p>\r\n\r\n<p>“Gore bade pareshaan hai,” Ali can be heard saying in the video. “Hum ek dusre ko celebrate bhi karna jaante hai. Inhe burnol bheje, inhe phool bheje,” he added, hilariously as well.</p>\r\n\r\n<p><strong>Take a look at the video:</strong></p>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\"><iframe allowfullscreen=\"\" alt=\"\" class=\"custom-video-iframe-cls multy-video-iframe\" frameborder=\"0\" height=\"500\" layout=\"\" scrolling=\"no\" src=\"https://embed.indiatoday.in/share/video/embed/9107\" title=\"\" width=\"648\"></iframe></div>\r\n</article>\r\n\r\n<p>The post has garnered a significant amount of views and is going viral swiftly. Desi Internet was thoroughly impressed with Mohsin Ali’s support for Isro’s ambitious Moon mission. Many termed his words a perfect comeback to the ‘jealous racist rant’ by the UK journalist.</p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"6073317c-e8d1-4799-ad94-a54af2011d5a\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p><a href=\"https://www.indiatoday.in/trending-news/story/uk-journo-says-return-our-ps23-bn-after-india-chandrayaan-3-mission-internet-blasts-him-2425892-2023-08-24\" target=\"_self\">For the unaware, the incident started when Patrick </a>began his bulletin congratulating India for its historic feat, but it quickly changed into what Internet users termed as a “jealous racist rant”. He demanded back the 2.3 billion pounds that was “given to India as aid money”.</p>\r\n\r\n<p>On July 14, the Chandrayaan-3 spacecraft was launched from the Satish Dhawan Space Centre in Sriharikota, Andhra Pradesh. After a successful journey, it landed near the lunar south pole on August 23.</p>\r\n",
-            "no_author": {
-              "a_title": "Srimoyee Chowdhury"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426221",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/trending-news/story/anand-mahindra-shares-post-of-encouragement-for-chess-prodigy-r-praggnanandhaa-2426221-2023-08-24",
-          "n_title": "Anand Mahindra shares post of encouragement for chess prodigy R Praggnanandhaa",
-          "n_slug": "",
-          "n_description": "Anand Mahindra’s heartfelt post for R Praggnanandhaa on X (formerly Twitter) has won hearts.",
-          "n_pcategory_id": "1797650",
-          "n_pcategory_name": "News Analysis",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/chess-243420-16x9.jpg?VersionId=a3wNwbV_qYb8mvYXb1ifu8i2aL69FzWn&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/chess-243420-16x9.jpg?VersionId=a3wNwbV_qYb8mvYXb1ifu8i2aL69FzWn&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-24 21:04:49",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>Indian Chess prodigy Rameshbabu Praggnanandhaa has etched his name in the pages of Indian chess history. The teenager became the first Indian after Viswanathan Anand to reach the final and was a victory away from joining the Indian legend at the top.</p>\r\n\r\n<p>With the silver medal finish at the Chess World Cup, Praggnanandhaa booked his berth in the Candidates Tournament. Though the chess prodigy suffered a setback, he received abundant messages of encouragement from people on the internet.</p>\r\n\r\n<p>Adding to those precious messages is Anand Mahindra’s heartfelt post on X (formerly Twitter). “You aren’t the ‘runner-up’ @rpragchess. This is simply your ‘run-up’ to Gold and to greatness.&nbsp; Many battles require you to learn &amp; live to fight another day.&nbsp; You’ve learned &amp; you will fight again; and we will all be there again…cheering you on loudly,” Mahindra wrote.</p>\r\n\r\n<p><strong>Take a look:</strong></p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"6155a281-84ff-4f7d-9e0f-b7c9047f9bc6\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>The post has garnered over 198k views and tons of reactions. People shared heartfelt wishes for the youngster and wished him good luck for his next tournament.</p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"a7bbb5e0-a5d1-4572-a152-79881078d0e8\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>An inspiration indeed!</p>\r\n",
-            "no_author": {
-              "a_title": "Srimoyee Chowdhury"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426211",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/trending-news/story/meet-sir-nils-olav-a-penguin-with-the-third-highest-rank-in-norwegian-military-2426211-2023-08-24",
-          "n_title": "Meet Sir Nils Olav, a penguin with the third highest rank in Norwegian military",
-          "n_slug": "",
-          "n_description": "Images of a penguin, Sir Nils, recently promoted to the third highest rank in the Norwegian Army have been circulating on social media. Sir Nils resides at the Edinburgh Zoo.",
-          "n_pcategory_id": "1797650",
-          "n_pcategory_name": "Trending News",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/penguin-240224-16x9.jpg?VersionId=Gd2oN17xCT1pDIaZKXxRzVEVS6M.Ycyu&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/penguin-240224-16x9.jpg?VersionId=Gd2oN17xCT1pDIaZKXxRzVEVS6M.Ycyu&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-24 20:34:57",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>A penguin named Sir Nils Olav III, residing in Edinburgh Zoo, has been promoted to the rank of Brigadier in the Norwegian Army. The bird, which is the mascot of the Norwegian King's Guard, received this honour in a special ceremony at the zoo.</p>\r\n\r\n<p>The tradition of honouring penguins started in 1972 when the Norwegian King's Guard adopted a penguin during a visit to the zoo. Since then, the mascot has been promoted regularly.</p>\r\n\r\n<p>This makes Sir Nils Olav III the third-highest ranking officer in the Norwegian military. Images of a penguin, Sir Nils, recently promoted to the third highest rank in the Norwegian Army have been circulating on social media.</p>\r\n\r\n<p>&nbsp;Sir Nils resides at the Edinburgh Zoo and his promotion to Major General was announced on X, formerly known as Twitter. The zoo also shared details about Sir Nils, stating he is the mascot of His Majesty the King’s Guard and was adopted during the Band and Drill team’s participation at The Royal Edinburgh Military Tattoo.</p>\r\n\r\n<p><strong>Here’s the post:</strong></p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"e8275f44-a93c-4b8a-819f-290cf969a249\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>The penguin earlier held the post of a Brigadier and is now known as Major General Sir Nils Olav III, Baron of the Bouvet Islands and official mascot of His Majesty the King’s Guard of Norway. The post has garnered nearly 140k views.</p>\r\n",
-            "no_author": {
-              "a_title": "India Today Trending Desk"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426207",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/trending-news/story/company-changes-its-gurugram-office-sign-after-chandrayaan-3-mission-success-2426207-2023-08-24",
-          "n_title": "Company changes its Gurugram office sign after Chandrayaan-3 mission success",
-          "n_slug": "",
-          "n_description": "E-commerce firm Magicpin had announced that it will be replacing its 50-foot office sign at IFFCO Chowk, Gurugram to 'magicISRO' from 'magicpin'. ",
-          "n_pcategory_id": "1797650",
-          "n_pcategory_name": "Trending News",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/isro-243211-16x9.jpg?VersionId=I4iCZBpxKO_53i856Yog4AAwgj07Es0K&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/isro-243211-16x9.jpg?VersionId=I4iCZBpxKO_53i856Yog4AAwgj07Es0K&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-24 20:19:59",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>Chandrayaan-3 has made history after a successful soft landing on the Moon’s south pole. Isro’s ambitious project on a shoe-string budget has put India on the world map regarding space exploration programs.</p>\r\n\r\n<p>After the successful touchdown, the internet had erupted in joy and people didn’t waste a second to show their appreciation for the hardworking scientists of Isro.</p>\r\n\r\n<p>E-commerce firm Magicpin had announced that it will be replacing its 50-foot office sign at IFFCO Chowk, Gurugram to 'magicISRO' from 'magicpin'. After the successful landing of Chandrayaan 3 on the Moon, the company kept their promise.</p>\r\n\r\n<p>The announcement was made on X, formerly known as Twitter, and pictures of the new sign were also shared.</p>\r\n\r\n<p><strong>Take a look:</strong></p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"40c44a9e-a1ff-43e7-9e44-09db09cf4c61\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p>On July 14, the Chandrayaan-3 spacecraft was launched from the Satish Dhawan Space Centre in Sriharikota, Andhra Pradesh. After a successful journey, it landed near the lunar south pole on August 23. This landmark achievement makes India the first and only country to have made a soft landing on the Moon's south pole.</p>\r\n",
-            "no_author": {
-              "a_title": "Srimoyee Chowdhury"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        },
-        {
-          "n_id": "2426145",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/trending-news/story/delhi-metro-new-viral-video-women-fighting-with-each-other-over-seat-2426145-2023-08-24",
-          "n_title": "Women get into violent fight over seat in Delhi Metro. Video",
-          "n_slug": "",
-          "n_description": "A video shared on X showcases the violent scuffle. The group of women was seen engaging in verbal abuse as well.",
-          "n_pcategory_id": "1797650",
-          "n_pcategory_name": "Trending News",
-          "n_comment_count": "0",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/delhi-metro-245344-16x9.jpg?VersionId=t9kD97xbfFF9g3R1AZB_InXmwidd5Axi&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/delhi-metro-245344-16x9.jpg?VersionId=t9kD97xbfFF9g3R1AZB_InXmwidd5Axi&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-24 19:03:01",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>A video of a heated altercation between two women on the Delhi Metro has gone viral on the social media platform X (previously Twitter). The women, seen exchanging blows and pulling each other's hair, were reportedly fighting over a seat.</p>\r\n\r\n<p>A video shared on X showcases the violent scuffle. The group of women was seen engaging in verbal abuse as well. Bystanders attempted to intervene, but the women continued their heated exchange. The video, posted by @gharkekalesh, has sparked humorous responses from the public, with one user jokingly referring to the Delhi Metro as 'the most happening place in the universe'. This is not the first time such an incident has occurred on the Delhi Metro. In a past incident, two women were seen engaging in a similar dispute over standing space.</p>\r\n\r\n<p><strong>See the video here:</strong></p>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\">\r\n<div class=\"media_embed_detail\" id=\"3vr2ix0uv8ttonha_169288393264e75bdc0b73b.mp4\" type=\"mp4\">&nbsp;</div>\r\n</div>\r\n</article>\r\n\r\n<p>Earlier, the internet has been witness to numerous videos shot in the Delhi Metro which shows people breaking into an altercation over seats. Videos also show people dancing inside the rapid transit system.</p>\r\n",
-            "no_author": {
-              "a_title": "Srimoyee Chowdhury"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": "2281160",
-      "title": "Reviews",
-      "label": "Reviews",
-      "show_label": 0,
-      "order": 11,
-      "type": "Reviews",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426332",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/trending-news/story/pakistan-mans-humorous-comeback-for-uk-journalists-chandrayaan-3-comment-2426332-2023-08-25",
-          "n_title": "‘Inhe Burnol bheje’: Pakistan man’s comeback for UK journalist’s Chandrayaan-3 comment",
-          "n_slug": "",
-          "n_description": "In a video that is now going viral on X (formerly Twitter), Pakistan's Mohsin Ali suggested that the UK journalist's surprise and jealousy were due to the fact that a former colony has significantly advanced in just 77 years.",
-          "n_rating": "3",
-          "n_released_date": "2023-05-11",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/pakistan-254555-16x9.jpg?VersionId=LotFevAkAlCRsmxS1CkvYkwLitaaA31c&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/pakistan-254555-16x9.jpg?VersionId=LotFevAkAlCRsmxS1CkvYkwLitaaA31c&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 09:53:19",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>Mohsin Ali, a Pakistani cricket analyst, had a laughable response for a UK journalist named Patrick Christys who opposed the aid money Britain sent to India. This reaction followed the success of India's Chandrayaan 3 mission, which led to the journalist's criticism going viral and facing backlash for perceived racism.</p>\r\n\r\n<p>In a video that is now going viral on X (formerly Twitter), Ali suggested that the journalist's surprise and jealousy were due to the fact that a former colony has significantly advanced in just 77 years. According to Ali, this rapid progress, especially in the field of space science, was hard for the journalist to digest.</p>\r\n\r\n<p>“Gore bade pareshaan hai,” Ali can be heard saying in the video. “Hum ek dusre ko celebrate bhi karna jaante hai. Inhe burnol bheje, inhe phool bheje,” he added, hilariously as well.</p>\r\n\r\n<p><strong>Take a look at the video:</strong></p>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\"><iframe allowfullscreen=\"\" alt=\"\" class=\"custom-video-iframe-cls multy-video-iframe\" frameborder=\"0\" height=\"500\" layout=\"\" scrolling=\"no\" src=\"https://embed.indiatoday.in/share/video/embed/9107\" title=\"\" width=\"648\"></iframe></div>\r\n</article>\r\n\r\n<p>The post has garnered a significant amount of views and is going viral swiftly. Desi Internet was thoroughly impressed with Mohsin Ali’s support for Isro’s ambitious Moon mission. Many termed his words a perfect comeback to the ‘jealous racist rant’ by the UK journalist.</p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"6073317c-e8d1-4799-ad94-a54af2011d5a\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p><a href=\"https://www.indiatoday.in/trending-news/story/uk-journo-says-return-our-ps23-bn-after-india-chandrayaan-3-mission-internet-blasts-him-2425892-2023-08-24\" target=\"_self\">For the unaware, the incident started when Patrick </a>began his bulletin congratulating India for its historic feat, but it quickly changed into what Internet users termed as a “jealous racist rant”. He demanded back the 2.3 billion pounds that was “given to India as aid money”.</p>\r\n\r\n<p>On July 14, the Chandrayaan-3 spacecraft was launched from the Satish Dhawan Space Centre in Sriharikota, Andhra Pradesh. After a successful journey, it landed near the lunar south pole on August 23.</p>\r\n",
-            "no_author": {
-              "a_title": "Srimoyee Chowdhury"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": "2281160",
-      "title": "Podcast",
-      "label": "Podcast",
-      "show_label": 0,
-      "order": 11,
-      "type": "Podcast",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "section_id": "287811",
-          "category_id": "346686",
-          "category_title": "Sledging Room",
-          "id": "613498",
-          "title": "Class of 2011 vs Class of 2023: Is India World Cup Ready? | Sledging Room, Ep 59",
-          "large_image": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202307/59-one_one.jpg?size=1200:1200",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202307/59-one_one.jpg?size=230:230",
-          "audio_url": "https://api.spreaker.com/v2/episodes/56071779/ondemand.mp3",
-          "duration": 1903,
-          "image_caption": "SR",
-          "updated_datetime": "2023-07-12 20:22:58",
-          "published_datetime": "2023-07-12 20:23:05",
-          "share_link": "https://podcasts.indiatoday.in/sports/sledging-room/class-of-2011-vs-class-of-2023-is-india-world-cup-ready-sledging-room-ep-59-613498-2023-07-12",
-          "comment_count": "0",
-          "desc_withouthtml": "\n            The 2023 ODI World Cup to be played in India is less than three months away. But is the Indian team ready? There isn't much time and now is as good a time as any to delve deep into India's preparedness for cricket's showpiece event which returns to Asia after 12 years.\n\nIndia had of course won the World Cup in 2011 which was co-hosted by India, Sri Lanka and Bangladesh. Back then, India had a solid side ready for the World Cup with the likes of Sachin Tendulkar, Virender Sehwag, Gautam Gambhir, Yuvraj Singh and MS Dhoni in superb form. Besides, the team had plenty of bowling options in the playing XI.\n\nRohit Sharma's team has issues. Yes, they started the year well with series wins over Sri Lanka and New Zealand but they were beaten by Australia. Rohit Sharma hasn't played a lot of ODIs after the pandemic while Virat Kohli is still struggling to get his mojo back, never mind those hundreds against Bangladesh and Sri Lanka.\n\nTo make matters worse, Suryakumar Yadav has not set the ODI stage on fire despite his heroics in T20Is. He bagged three golden ducks in the series against Australia but given his heroic return to form for Mumbai Indians, India would be hoping he is in fine form for the rest of the year. Rishabh Pant, a high-impact player in the middle-order is racing against time to be fit for the World Cup following a car crash in December.\n\nMoreover, India's bowling resources will also be in focus. Jasprit Bumrah, who destroyed England with a six-wicket haul in July last year, has been away from action for a long time. The focus will be on Mohammed Siraj to lead the pace attack while the likes of Kuldeep Yadav and Yuzvendra Chahal could end up playing crucial roles.\n\nAlso on the Sledging Room, a look into England's fightback against Australia at Leeds.\n\nAnd as India start their third cycle of the World Test Championship, can Yashasvi Jaiswal cement his place in the side? Will Shubman Gill be a suitable replacement for Cheteshwar Pujara? Will Rohit Sharma, the India Test captain, answer his critics with some solid performances?\n\nSaurabh Kumar and Alan John join Rajarshi Gupta in a riveting debate on the latest episode of the Sledging Room.\n\nTune in!\n\nProduced by Anna Priyadarshini\n\nSound mix by Sachin Dwivedi\n\n      ",
-          "desc_withhtml": "\n            <div class=\"text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>The 2023 ODI World Cup to be played in India is less than three months away. But is the Indian team ready? There isn't much time and now is as good a time as any to delve deep into India's preparedness for cricket's showpiece event which returns to Asia after 12 years.</p>\n\n<p>India had of course won the World Cup in 2011 which was co-hosted by India, Sri Lanka and Bangladesh. Back then, India had a solid side ready for the World Cup with the likes of Sachin Tendulkar, Virender Sehwag, Gautam Gambhir, Yuvraj Singh and MS Dhoni in superb form. Besides, the team had plenty of bowling options in the playing XI.</p>\n\n<p>Rohit Sharma's team has issues. Yes, they started the year well with series wins over Sri Lanka and New Zealand but they were beaten by Australia. Rohit Sharma hasn't played a lot of ODIs after the pandemic while Virat Kohli is still struggling to get his mojo back, never mind those hundreds against Bangladesh and Sri Lanka.</p>\n\n<p>To make matters worse, Suryakumar Yadav has not set the ODI stage on fire despite his heroics in T20Is. He bagged three golden ducks in the series against Australia but given his heroic return to form for Mumbai Indians, India would be hoping he is in fine form for the rest of the year. Rishabh Pant, a high-impact player in the middle-order is racing against time to be fit for the World Cup following a car crash in December.</p>\n\n<p>Moreover, India's bowling resources will also be in focus. Jasprit Bumrah, who destroyed England with a six-wicket haul in July last year, has been away from action for a long time. The focus will be on Mohammed Siraj to lead the pace attack while the likes of Kuldeep Yadav and Yuzvendra Chahal could end up playing crucial roles.</p>\n\n<p>Also on the Sledging Room, a look into England's fightback against Australia at Leeds.</p>\n\n<p>And as India start their third cycle of the World Test Championship, can Yashasvi Jaiswal cement his place in the side? Will Shubman Gill be a suitable replacement for Cheteshwar Pujara? Will Rohit Sharma, the India Test captain, answer his critics with some solid performances?</p>\n\n<p>Saurabh Kumar and Alan John join Rajarshi Gupta in a riveting debate on the latest episode of the Sledging Room.</p>\n\n<p>Tune in!</p>\n\n<p><em>Produced by Anna Priyadarshini</em></p>\n\n<p><em>Sound mix by Sachin Dwivedi</em></p>\n</div>\n      ",
-          "desc_withembedded": "\n            <div class=\"text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>The 2023 ODI World Cup to be played in India is less than three months away. But is the Indian team ready? There isn't much time and now is as good a time as any to delve deep into India's preparedness for cricket's showpiece event which returns to Asia after 12 years.</p>\n\n<p>India had of course won the World Cup in 2011 which was co-hosted by India, Sri Lanka and Bangladesh. Back then, India had a solid side ready for the World Cup with the likes of Sachin Tendulkar, Virender Sehwag, Gautam Gambhir, Yuvraj Singh and MS Dhoni in superb form. Besides, the team had plenty of bowling options in the playing XI.</p>\n\n<p>Rohit Sharma's team has issues. Yes, they started the year well with series wins over Sri Lanka and New Zealand but they were beaten by Australia. Rohit Sharma hasn't played a lot of ODIs after the pandemic while Virat Kohli is still struggling to get his mojo back, never mind those hundreds against Bangladesh and Sri Lanka.</p>\n\n<p>To make matters worse, Suryakumar Yadav has not set the ODI stage on fire despite his heroics in T20Is. He bagged three golden ducks in the series against Australia but given his heroic return to form for Mumbai Indians, India would be hoping he is in fine form for the rest of the year. Rishabh Pant, a high-impact player in the middle-order is racing against time to be fit for the World Cup following a car crash in December.</p>\n\n<p>Moreover, India's bowling resources will also be in focus. Jasprit Bumrah, who destroyed England with a six-wicket haul in July last year, has been away from action for a long time. The focus will be on Mohammed Siraj to lead the pace attack while the likes of Kuldeep Yadav and Yuzvendra Chahal could end up playing crucial roles.</p>\n\n<p>Also on the Sledging Room, a look into England's fightback against Australia at Leeds.</p>\n\n<p>And as India start their third cycle of the World Test Championship, can Yashasvi Jaiswal cement his place in the side? Will Shubman Gill be a suitable replacement for Cheteshwar Pujara? Will Rohit Sharma, the India Test captain, answer his critics with some solid performances?</p>\n\n<p>Saurabh Kumar and Alan John join Rajarshi Gupta in a riveting debate on the latest episode of the Sledging Room.</p>\n\n<p>Tune in!</p>\n\n<p><em>Produced by Anna Priyadarshini</em></p>\n\n<p><em>Sound mix by Sachin Dwivedi</em></p>\n</div>\n      "
-        }
-      ]
-    },
-    {
-      "id": "2281160",
-      "title": "Photos",
-      "label": "Photos",
-      "show_label": 0,
-      "order": 11,
-      "type": "Photos",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "n_id": "2426332",
-          "n_is_blog": "0",
-          "n_livetv_enable": "0",
-          "n_is_developing": "0",
-          "n_is_sponsored": "0",
-          "n_share_link": "https://www.indiatoday.in/trending-news/story/pakistan-mans-humorous-comeback-for-uk-journalists-chandrayaan-3-comment-2426332-2023-08-25",
-          "n_title": "‘Inhe Burnol bheje’: Pakistan man’s comeback for UK journalist’s Chandrayaan-3 comment",
-          "n_slug": "",
-          "n_category_name": "Fashion",
-          "n_photo_count": 10,
-          "n_comment_count": 2,
-          "n_description": "In a video that is now going viral on X (formerly Twitter), Pakistan's Mohsin Ali suggested that the UK journalist's surprise and jealousy were due to the fact that a former colony has significantly advanced in just 77 years.",
-          "n_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/pakistan-254555-16x9.jpg?VersionId=LotFevAkAlCRsmxS1CkvYkwLitaaA31c&size=260:147",
-          "n_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/pakistan-254555-16x9.jpg?VersionId=LotFevAkAlCRsmxS1CkvYkwLitaaA31c&size=555:313",
-          "n_image_credit": "",
-          "n_updated_datetime": "2023-08-25 09:53:19",
-          "n_highlight": [],
-          "n_photo": [],
-          "n_video": [],
-          "n_polls": [],
-          "n_rating": [],
-          "n_magazine": [],
-          "n_widget": [],
-          "n_blog": {
-            "empty": ""
-          },
-          "n_carousal_widget": {
-            "empty": ""
-          },
-          "n_offline_data": {
-            "no_desc_withouthtml": "<p>Mohsin Ali, a Pakistani cricket analyst, had a laughable response for a UK journalist named Patrick Christys who opposed the aid money Britain sent to India. This reaction followed the success of India's Chandrayaan 3 mission, which led to the journalist's criticism going viral and facing backlash for perceived racism.</p>\r\n\r\n<p>In a video that is now going viral on X (formerly Twitter), Ali suggested that the journalist's surprise and jealousy were due to the fact that a former colony has significantly advanced in just 77 years. According to Ali, this rapid progress, especially in the field of space science, was hard for the journalist to digest.</p>\r\n\r\n<p>“Gore bade pareshaan hai,” Ali can be heard saying in the video. “Hum ek dusre ko celebrate bhi karna jaante hai. Inhe burnol bheje, inhe phool bheje,” he added, hilariously as well.</p>\r\n\r\n<p><strong>Take a look at the video:</strong></p>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\"><iframe allowfullscreen=\"\" alt=\"\" class=\"custom-video-iframe-cls multy-video-iframe\" frameborder=\"0\" height=\"500\" layout=\"\" scrolling=\"no\" src=\"https://embed.indiatoday.in/share/video/embed/9107\" title=\"\" width=\"648\"></iframe></div>\r\n</article>\r\n\r\n<p>The post has garnered a significant amount of views and is going viral swiftly. Desi Internet was thoroughly impressed with Mohsin Ali’s support for Isro’s ambitious Moon mission. Many termed his words a perfect comeback to the ‘jealous racist rant’ by the UK journalist.</p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-embed-display-settings=\"\" data-entity-type=\"media\" data-entity-uuid=\"6073317c-e8d1-4799-ad94-a54af2011d5a\" data-langcode=\"en\"></drupal-entity>\r\n\r\n<p><a href=\"https://www.indiatoday.in/trending-news/story/uk-journo-says-return-our-ps23-bn-after-india-chandrayaan-3-mission-internet-blasts-him-2425892-2023-08-24\" target=\"_self\">For the unaware, the incident started when Patrick </a>began his bulletin congratulating India for its historic feat, but it quickly changed into what Internet users termed as a “jealous racist rant”. He demanded back the 2.3 billion pounds that was “given to India as aid money”.</p>\r\n\r\n<p>On July 14, the Chandrayaan-3 spacecraft was launched from the Satish Dhawan Space Centre in Sriharikota, Andhra Pradesh. After a successful journey, it landed near the lunar south pole on August 23.</p>\r\n",
-            "no_author": {
-              "a_title": "Srimoyee Chowdhury"
-            }
-          },
-          "n_emoji_left": [],
-          "n_emoji_right": [],
-          "is_enable_micro_payment": "0",
-          "micro_payment": []
-        }
-      ]
-    },
-    {
-      "id": "2281160",
-      "title": "Videos",
-      "label": "Videos",
-      "show_label": 0,
-      "order": 11,
-      "type": "Videos",
-      "new_type": "",
-      "tag_name": "",
-      "cta_text": "",
-      "cta_link": "",
-      "n_template_id": "",
-      "underline_color": "",
-      "background_color": "",
-      "news": [
-        {
-          "v_id": "2426406",
-          "v_ratio": "16:9",
-          "v_title": "Best 5G phones under Rs 30,000 in India | Nord CE 3, Galaxy F54 and 3 more 🔥",
-          "v_slug": "",
-          "v_credit": "",
-          "v_byline": "India Today Video Desk",
-          "v_short_desc": "",
-          "v_small_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/best-phones-under-rs-30000-252929-16x9.jpg?VersionId=9pQrsg5jA.LkKlBwVf4kYNf7etFQZFwb&size=260:147",
-          "v_large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/best-phones-under-rs-30000-252929-16x9.jpg?VersionId=9pQrsg5jA.LkKlBwVf4kYNf7etFQZFwb&size=555:313",
-          "v_extralarge_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/best-phones-under-rs-30000-252929-16x9.jpg?VersionId=9pQrsg5jA.LkKlBwVf4kYNf7etFQZFwb&size=749:421",
-          "v_is_default_player": "0",
-          "v_view_count": "0",
-          "v_comment_count": "0",
-          "v_share_url": "https://www.indiatoday.in/technology/video/video/best-5g-phones-under-rs-30000-in-india-nord-ce-3-galaxy-f54-and-3-more-2426406-2023-08-25",
-          "v_updated_datetime": "2023-08-25 12:01:14",
-          "v_download_url": "https://indiatoday-pdelivery.akamaized.net/indiatoday/video/2023_08/24_aug_23_phones_under_30k_social_512.mp4",
-          "v_url": "https://indiatoday-amd.akamaized.net/indiatoday/video/2023_08/24_aug_23_phones_under_30k_social/24_aug_23_phones_under_30k_social.m3u8",
-          "v_duration": "07:15",
-          "v_show_ad": "1",
-          "v_video_size": "0",
-          "v_subcategory_id": "1207762",
-          "v_subcategory_title": "Auto"
-        }
-      ]
-    }
-  ],
-  "cube_widget": {
-    "show_widget": "0",
-    "widget_detail": [
-      {
-        "type": "webview",
-        "title": "SCORECARD",
-        "type_label": "scorecard",
-        "height": "140",
-        "width": "135",
-        "short_url": "https://feeds.intoday.in/data/newscorecard.html",
-        "extended_url": "https://feeds.intoday.in/xml_it/commentary/widget_scorecardapp_detail.html"
-      }
-    ]
-  },
-  "cache": {
-    "redis_ttl": "90",
-    "akamai_ttl": "120"
-  },
-  "data_source": "D"
+"status_code": 1,
+"status_message": "",
+"data": {
+"category_title": "World",
+"category_id": "1206577",
+"blog_type": "Live Blog",
+"id": "2526901",
+"short_desc": "US forces have destroyed over 80 one-way attack drones and six ballistic missiles launched from Iran and Yemen intended to strike Israel amid ongoing tensions in the region following Iran's unprecedented attack against Israel. In a retaliatory attack on Sunday, Iran fired more than 300 missiles and drones directly towards Israel to avenge an airstrike on its consulate in Syria earlier this month that killed seven Revolutionary Guards and six Syrian civilians. The attack lasted for five hours and 99 per cent of drones and missiles were intercepted by Israel. The Israeli military said that it was on high alert and monitoring all targets. Stay with indiatoday.in for the latest updates on the Iran-Israel tensions.",
+"is_published": "1",
+"new_blog": "1",
+"live_tv": "1",
+"live_tv_code":"https://feeds.intoday.in/aajtak/api/app_master.m3u8",
+"title": "Iran-Israel tensions LIVE updates: US forces destroy 80 drones, 6 missiles launched from Iran, Yemen",
+"sub_title": "US forces destroy 80 drones, 6 missiles launched from Iran, Yemen",
+"large_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202404/israel-air-defence-system-150442130-16x9_0.png?VersionId=XDYP9z.Kv.YLO4KNA5Xt_l1t.2hUz.ii",
+"image_caption": "An incoming attack by Iranian drones and ballistic missiles poses the latest challenge to Israel’s air defence system, which already has been working overtime amid the six-month war against Hamas. (AP Photo)",
+"image_alt_text": "Israel air defence system",
+"published_datetime": "2024-04-14 04:46:59",
+"share_link": "https://www.indiatoday.in/world/story/israel-iran-tensions-live-updates-middle-east-crisis-iran-drones-missiles-attack-at-israel-gaza-war-news-2526901-2024-04-14",
+"authors": [
+{
+"a_id": "1948186",
+"a_title": "Shweta Kumari",
+"a_twitter_handler": "",
+"a_is_inactive_profile": 0,
+"a_facebook": "",
+"a_designation": "",
+"a_email": "",
+"a_image": "https://akm-img-a-in.tosshub.com/indiatoday/images/reporter/202205/WhatsApp_Image_2022-05-11_at_5-1200x768.jpeg?VersionId=sJMdcI8ingjGqn.7eOucTm2nDe7y8WP4",
+"path": "https://www.indiatoday.in/author/shweta-kumari"
+}
+],
+"blog_content": [
+{
+"content_id": "739214",
+"desc_withouthtml": "US Secretary of State Antony Blinken on Sunday called the Foreign Ministers in Jordan, Saudi Arabia, Turkey and Egypt, while Defense Secretary Lloyd Austin spoke with his Saudi and Israeli counterparts amid escalating tensions in the region after Iran's attack on Israel.During their calls, Blinken and Austin emphasised on the need to avoid further escalation in the region and reaffirmed Washington's \"ironclad\" commitment to the security of Israel, the PTI news agency reported.Meanwhile, US President Joe Biden reached out to the Congressional leaders on Sunday and \"discussed the urgent need for the House of Representatives to pass the national security supplemental as soon as possible”, the White House said.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>US Secretary of State Antony Blinken on Sunday called the Foreign Ministers in Jordan, Saudi Arabia, Turkey and Egypt, while Defense Secretary Lloyd Austin spoke with his Saudi and Israeli counterparts amid escalating tensions in the region after Iran's attack on Israel.</p>\r\n\r\n<p>During their calls, Blinken and Austin emphasised on the need to avoid further escalation in the region and reaffirmed Washington's \"ironclad\" commitment to the security of Israel, the PTI news agency reported.</p>\r\n\r\n<p>Meanwhile, US President Joe Biden reached out to the Congressional leaders on Sunday and \"discussed the urgent need for the House of Representatives to pass the national security supplemental as soon as possible”, the White House said.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 11:16:36",
+"title": "Antony Blinken calls counterparts in Turkey, Egypt, Jordan",
+"posted_by": "Karishma Saurabh Kalita",
+"label": ""
+},
+{
+"content_id": "739212",
+"desc_withouthtml": "The Israeli military on Monday lifted a series of restrictions on public activities that were imposed before Iran's missile and drone attack on Sunday. It said children can also return to schools.Late Saturday, the Israeli military’s Home Front command cancelled schools and restricted the size of public gatherings as a safety precaution, the Associated Press reported.The Home Front Command says the restrictions were lifted at midnight.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The Israeli military on Monday lifted a series of restrictions on public activities that were imposed before Iran's missile and drone attack on Sunday. It said children can also return to schools.</p>\r\n\r\n<p>Late Saturday, the Israeli military’s Home Front command cancelled schools and restricted the size of public gatherings as a safety precaution, the Associated Press reported.</p>\r\n\r\n<p>The Home Front Command says the restrictions were lifted at midnight.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 10:32:05",
+"title": "Israeli military lifts restrictions",
+"posted_by": "Karishma Saurabh Kalita",
+"label": ""
+},
+{
+"content_id": "739209",
+"desc_withouthtml": "Iran gave its neighbouring countries and the US a 72-hour notice that it would launch missile and drone strikes at Israel on Sunday, Iranian Foreign Minister Hossein Amirabdollahian said. But American officials have denied this, saying that Iran sent the US a message only after the strikes began, and the intent was to be \"highly destructive\".The Turkish Foreign Ministry has also said that it had spoken to both Washington and Tehran before the attack, adding it had conveyed messages as an intermediary to be sure reactions were proportionate, Reuters reported.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iran gave its neighbouring countries and the US a 72-hour notice that it would launch missile and drone strikes at Israel on Sunday, Iranian Foreign Minister Hossein Amirabdollahian said. But American officials have denied this, saying that Iran sent the US a message only after the strikes began, and the intent was to be \"highly destructive\".</p>\r\n\r\n<p>The Turkish Foreign Ministry has also said that it had spoken to both Washington and Tehran before the attack, adding it had conveyed messages as an intermediary to be sure reactions were proportionate, Reuters reported.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 09:40:59",
+"title": "Iran says it warned before Israel attack",
+"posted_by": "Karishma Saurabh Kalita",
+"label": ""
+},
+{
+"content_id": "739203",
+"desc_withouthtml": "The US Central Command on Monday said American forces \"successfully engaged and destroyed\" over 80 one-way attack uncrewed aerial vehicles and at least six ballistic missiles intended to strike Israel from Iran and Yemen. The launches took place on Saturday and Sunday morning.Defense of Israel Activities UpdateOn April 13 and the morning of April 14, U.S. Central Command (CENTCOM) forces, supported by U.S. European Command destroyers, successfully engaged and destroyed more than 80 one-way attack uncrewed aerial vehicles (OWA UAV) and at least six… pic.twitter.com/QYyk01o1Vs— U.S. Central Command (@CENTCOM) April 14, 2024 ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The US Central Command on Monday said American forces \"successfully engaged and destroyed\" over 80 one-way attack uncrewed aerial vehicles and at least six ballistic missiles intended to strike Israel from Iran and Yemen. The launches took place on Saturday and Sunday morning.</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\">\r\n<p dir=\"ltr\" lang=\"en\">Defense of Israel Activities Update<br />\r\n<br />\r\nOn April 13 and the morning of April 14, U.S. Central Command (CENTCOM) forces, supported by U.S. European Command destroyers, successfully engaged and destroyed more than 80 one-way attack uncrewed aerial vehicles (OWA UAV) and at least six… <a href=\"https://t.co/QYyk01o1Vs\">pic.twitter.com/QYyk01o1Vs</a></p>\r\n— U.S. Central Command (@CENTCOM) <a href=\"https://twitter.com/CENTCOM/status/1779651553789362216?ref_src=twsrc%5Etfw\">April 14, 2024</a></blockquote>\r\n<script async=\"\" charset=\"utf-8\" src=\"https://platform.twitter.com/widgets.js\"></script>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 08:38:01",
+"title": "US military destroys drones fired from Iran, Yemen",
+"posted_by": "Karishma Saurabh Kalita",
+"label": ""
+},
+{
+"content_id": "739202",
+"desc_withouthtml": "The Israeli military said the country remains on high alert following Iran's unprecedented attack on Sunday when it launched more than 300 missiles and drones directly towards Israeli territory.\"We are still on high alert and assessing the situation,\" Reuters news agency quoted Rear Admiral Daniel Hagari as saying in a televised statement on Sunday. \"Over the last two hours we approved operational plans for both offensive and defensive action.\"The Israeli military said the armed forces had shot down more than 99 per cent of the Iranian drones and missiles and were discussing follow-up options. ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The Israeli military said the country remains on high alert following Iran's unprecedented attack on Sunday when it launched more than 300 missiles and drones directly towards Israeli territory.</p>\r\n\r\n<p>\"We are still on high alert and assessing the situation,\" Reuters news agency quoted Rear Admiral Daniel Hagari as saying in a televised statement on Sunday. \"Over the last two hours we approved operational plans for both offensive and defensive action.\"</p>\r\n\r\n<p>The Israeli military said the armed forces had shot down more than 99 per cent of the Iranian drones and missiles and were discussing follow-up options.</p>\r\n\r\n<p><br />\r\n&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 07:41:20",
+"title": "Israel remains on high alert",
+"posted_by": "Karishma Saurabh Kalita",
+"label": ""
+},
+{
+"content_id": "739200",
+"desc_withouthtml": "Unequivocally condemning in the strongest terms Iran’s direct and unprecedented attack against Israel, the G-7 leaders on Sunday said the development risks provoking an uncontrollable regional escalation even as the UN Security Council decided to convene an emergency meeting discuss the issue. ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Unequivocally condemning in the strongest terms Iran’s direct and unprecedented attack against Israel, the G-7 leaders on Sunday said the development risks provoking an uncontrollable regional escalation even as the UN Security Council decided to convene an emergency meeting discuss the issue.<br />\r\n&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 06:12:24",
+"title": "Iran attack on Israel risks provoking uncontrollable regional escalation, say G7 leaders",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739199",
+"desc_withouthtml": "Iranian Ambassador to the United Nations, Saeid Iravani, told the Security Council on Sunday that the Islamic republic was exercising its \"inherent right to self-defense\" in its unprecedented attack on Israel. \"Iran's operation was entirely in the exercise of Iran's inherent right to self-defense, as outlined in Article 51 of the Charter of the United Nations and recognized by international law. These concluded action was necessary and proportionate. It was precise and only targeted military objectives and carried out carefully to minimize the potential for escalation and prevent civilian harm.\"",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iranian Ambassador to the United Nations, Saeid Iravani, told the Security Council on Sunday that the Islamic republic was exercising its \"inherent right to self-defense\" in its unprecedented attack on Israel.&nbsp;</p>\r\n\r\n<p>\"Iran's operation was entirely in the exercise of Iran's inherent right to self-defense, as outlined in Article 51 of the Charter of the United Nations and recognized by international law. These concluded action was necessary and proportionate. It was precise and only targeted military objectives and carried out carefully to minimize the potential for escalation and prevent civilian harm.\"</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 06:08:29",
+"title": "Iran tells UN Israel attack was 'self defense,' 'necessary'",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739198",
+"desc_withouthtml": "The architect of global terrorism: Iran.Iran heavily funds, supports and trains terrorist groups around the world—expanding its influence all across the globe. Iran has revealed it’s true face as the biggest sponsor of global terrorism, IDF wrote on X.The architect of global terrorism: IranIran heavily funds, supports and trains terrorist groups around the world—expanding its influence all across the globe.Iran has revealed it’s true face as the biggest sponsor of global terrorism. pic.twitter.com/nFXVymAozf— Israel Defense Forces (@IDF) April 14, 2024 ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The architect of global terrorism: Iran.</p>\r\n\r\n<p>Iran heavily funds, supports and trains terrorist groups around the world—expanding its influence all across the globe. Iran has revealed it’s true face as the biggest sponsor of global terrorism, IDF wrote on X.</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\">\r\n<p dir=\"ltr\" lang=\"en\">The architect of global terrorism: Iran<br />\r\n<br />\r\nIran heavily funds, supports and trains terrorist groups around the world—expanding its influence all across the globe.<br />\r\n<br />\r\nIran has revealed it’s true face as the biggest sponsor of global terrorism. <a href=\"https://t.co/nFXVymAozf\">pic.twitter.com/nFXVymAozf</a></p>\r\n— Israel Defense Forces (@IDF) <a href=\"https://twitter.com/IDF/status/1779558920802996457?ref_src=twsrc%5Etfw\">April 14, 2024</a></blockquote>\r\n<script async=\"\" charset=\"utf-8\" src=\"https://platform.twitter.com/widgets.js\"></script>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 05:29:19",
+"title": "Iran revealed its true face, biggest sponsor of global terrorism: Israel Army",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739197",
+"desc_withouthtml": "\"Even while under attack from Iran, we have not lost sight—not for one moment—of our critical mission in Gaza to rescue our hostages from the hands of Iran’s-proxy Hamas,\" IDF Spokesperson RAdm. Daniel Hagari said.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>\"Even while under attack from Iran, we have not lost sight—not for one moment—of our critical mission in Gaza to rescue our hostages from the hands of Iran’s-proxy Hamas,\" IDF Spokesperson RAdm. Daniel Hagari said.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 05:15:04",
+"title": "Even under attack from Iran, we have not lost sight: IDF spokesperson",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739196",
+"desc_withouthtml": "Israel's UN envoy on Sunday urged the Security Council to impose \"all possible sanctions\" against Iran after the Islamic republic's unprecedented attack against Israel. ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Israel's UN envoy on Sunday urged the Security Council to impose \"all possible sanctions\" against Iran after the Islamic republic's unprecedented attack against Israel.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 05:06:19",
+"title": "At UN, Israel urges all possible sanctions against Iran",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739195",
+"desc_withouthtml": "House Speaker Mike Johnson said Sunday he will try to advance wartime aid for Israel this week as he attempts the difficult task of winning House approval for a national security package that also includes funding for Ukraine and allies in Asia.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>House Speaker Mike Johnson said Sunday he will try to advance wartime aid&nbsp;for Israel this week as he attempts the difficult task of winning House approval for a national security package that also includes funding for Ukraine and allies in Asia.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 04:57:39",
+"title": "House Speaker Mike Johnson says 'will push for aid to Israel, Ukraine this week'",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739194",
+"desc_withouthtml": "United Nations Secretary-General Antonio Guterres issued a reminder that acts of reprisal involving the use of force are barred under international law after Iran's attack on Israel.United Nations Secretary-General Antonio Guterres issued a reminder that acts of reprisal involving the use of force are barred under international law after Iran's attack on Israel https://t.co/M60iV4fKHk pic.twitter.com/4ES6ZyjDOW— Reuters (@Reuters) April 14, 2024 ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>United Nations Secretary-General Antonio Guterres issued a reminder that acts of reprisal involving the use of force are barred under international law after Iran's attack on Israel.</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\">\r\n<p dir=\"ltr\" lang=\"en\">United Nations Secretary-General Antonio Guterres issued a reminder that acts of reprisal involving the use of force are barred under international law after Iran's attack on Israel <a href=\"https://t.co/M60iV4fKHk\">https://t.co/M60iV4fKHk</a> <a href=\"https://t.co/4ES6ZyjDOW\">pic.twitter.com/4ES6ZyjDOW</a></p>\r\n— Reuters (@Reuters) <a href=\"https://twitter.com/Reuters/status/1779645812290846861?ref_src=twsrc%5Etfw\">April 14, 2024</a></blockquote>\r\n<script async=\"\" charset=\"utf-8\" src=\"https://platform.twitter.com/widgets.js\"></script>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 04:55:44",
+"title": "UN chief calls for maximum restraint after Iran's attack on Israel",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739193",
+"desc_withouthtml": "United Nations Secretary General Antonio Guterres warned the international community Sunday against deeper descent into conflict, addressing the Security Council during a meeting over Iran's weekend attack on Israel. \"Neither the region nor the world can afford more war,\" Guterres said. \"The Middle East is on the brink,\" he told the Security Council. (Inputs from AFP)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>United Nations Secretary General Antonio Guterres warned the international community Sunday against deeper descent into conflict, addressing the Security Council during a meeting over Iran's weekend attack on Israel.&nbsp;</p>\r\n\r\n<p>\"Neither the region nor the world can afford more war,\" Guterres said.&nbsp;</p>\r\n\r\n<p>\"The Middle East is on the brink,\" he told the Security Council.&nbsp;</p>\r\n\r\n<p><em>(Inputs from AFP)</em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 03:33:28",
+"title": "Middle East, world cannot 'afford more war': UN chief",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739192",
+"desc_withouthtml": "Permanent Representative of the Syrian Arab Republic to the United Nations, Koussay Aldahhak, speaks to members of Security Council during a meeting on the situation in the Middle East at UN headquarters in New York City.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Permanent Representative of the Syrian Arab Republic to the United Nations, Koussay Aldahhak, speaks to members of Security Council during a meeting on the situation in the Middle East at UN headquarters in New York City.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 03:32:08",
+"title": "United Nations Security Council on situation in Middle East",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739191",
+"desc_withouthtml": "Turkish, Jordanian and Iraqi officials said on Sunday Iran gave wide notice days before Saturday's drone and missile attack on Israel, allowing mass casualties and rampant escalation to be averted, but a US official denied this.(Inputs from Reuters)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Turkish, Jordanian and Iraqi officials said on Sunday Iran gave wide notice days before Saturday's drone and missile attack on Israel, allowing mass casualties and rampant escalation to be averted, but a US official denied this.</p>\r\n\r\n<p><em>(Inputs from Reuters)</em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 03:31:10",
+"title": "Iranian notice of attack may have dampened escalation risks",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739190",
+"desc_withouthtml": "External Affairs Minister S Jaishankar on Sunday held a telephonic conversation with his Israeli counterpart, Israel Katz, and shared India's concerns over the situation arising out of the Iran-Israel hostilities.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>External Affairs Minister S Jaishankar on Sunday held a telephonic conversation with his Israeli counterpart, Israel Katz, and shared India's concerns over the situation arising out of the Iran-Israel hostilities.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 02:47:00",
+"title": "S Jaishankar speaks to Israeli counterpart: 'To stay in touch'",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739189",
+"desc_withouthtml": "In the streets of Jerusalem, Israelis expressed vigilance after an attack that could further escalate the Middle East conflict.In the streets of Jerusalem, Israelis expressed vigilance after an attack that could further escalate the Middle East conflict pic.twitter.com/xV3QYT19mH— Reuters (@Reuters) April 14, 2024 ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>In the streets of Jerusalem, Israelis expressed vigilance after an attack that could further escalate the Middle East conflict.</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\">\r\n<p dir=\"ltr\" lang=\"en\">In the streets of Jerusalem, Israelis expressed vigilance after an attack that could further escalate the Middle East conflict <a href=\"https://t.co/xV3QYT19mH\">pic.twitter.com/xV3QYT19mH</a></p>\r\n— Reuters (@Reuters) <a href=\"https://twitter.com/Reuters/status/1779581638030016598?ref_src=twsrc%5Etfw\">April 14, 2024</a></blockquote>\r\n<script async=\"\" charset=\"utf-8\" src=\"https://platform.twitter.com/widgets.js\"></script>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 01:21:08",
+"title": "In Jerusalem, Israelis express vigilance after Iran attack",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739188",
+"desc_withouthtml": "Iran's attack on Israel gives Joe Biden a familiar dilemma, but on steroids -- how to balance support for a difficult ally while preventing the nightmare scenario of a wider war?Tensions with Benjamin Netanyahu over Israel's war on Gaza were papered over as the US president offered \"ironclad\" support, including shooting down Iranian drones.But the White House has made it clear it does not want further escalation following Iran's unprecedented assault and will not support an Israeli counterattack that could trigger a full-blown regional conflict.(Inputs from AFP)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iran's attack on Israel gives Joe Biden a familiar dilemma, but on steroids -- how to balance support for a difficult ally while preventing the nightmare scenario of a wider war?</p>\r\n\r\n<p>Tensions with Benjamin Netanyahu over Israel's war on Gaza were papered over as the US president offered \"ironclad\" support, including shooting down Iranian drones.</p>\r\n\r\n<p>But the White House has made it clear it does not want further escalation following Iran's unprecedented assault and will not support an Israeli counterattack that could trigger a full-blown regional conflict.</p>\r\n\r\n<p><em>(Inputs from AFP)</em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 00:24:47",
+"title": "Biden in 'very tough spot' trying to stop Middle East escalation",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739187",
+"desc_withouthtml": "The United States on Sunday said it will not join any Israeli counterattack on Iran, with President Joe Biden warning Prime Minister Benjamin Netanyahu to \"think carefully\" about any escalation.The White House said Biden did not want a wider war after helping key ally Israel repel a massive aerial attack by Tehran -- itself in retaliation for a presumed Israeli strike that killed an Iranian general in Damascus. (Inputs from AFP)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The United States on Sunday said it will not join any Israeli counterattack on Iran, with President Joe Biden warning Prime Minister Benjamin Netanyahu to \"think carefully\" about any escalation.</p>\r\n\r\n<p>The White House said Biden did not want a wider war after helping key ally Israel repel a massive aerial attack by Tehran -- itself in retaliation for a presumed Israeli strike that killed an Iranian general in Damascus.&nbsp;</p>\r\n\r\n<p><em>(Inputs from AFP)</em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-15 00:23:06",
+"title": "US rules out joining Israeli attack on Iran",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739175",
+"desc_withouthtml": "External Affairs Minister S Jaishankar today said he spoke with his Iranian counterpart Hossein Amir-Abdollahian and discussed the situation in West Asia after Tehran attacked Israel with missiles and drones.Jaishankar also discussed the release of 17 Indian crew members on a cargo ship seized by Iranian military on Saturday.\"Spoke to Iranian FM this evening. Took up the release of 17 Indian crew members of MSC Aries. Discussed the current situation in the region. Stressed the importance of avoiding escalation, exercising restraint and returning to diplomacy. Agreed to remain in touch,\" Mr Jaishankar said on X. ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>External Affairs Minister S Jaishankar today said he spoke with his Iranian counterpart Hossein Amir-Abdollahian and discussed the situation in West Asia after Tehran attacked Israel with missiles and drones.</p>\r\n\r\n<p>Jaishankar also discussed the release of 17 Indian crew members on a cargo ship seized by Iranian military on Saturday.</p>\r\n\r\n<p>\"Spoke to Iranian FM this evening. Took up the release of 17 Indian crew members of MSC Aries. Discussed the current situation in the region. Stressed the importance of avoiding escalation, exercising restraint and returning to diplomacy. Agreed to remain in touch,\" Mr Jaishankar said on X.<br />\r\n&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 22:58:55",
+"title": "Middle East crisis: S Jaishankar speaks to Iranian counterpart, discusses West Asia situation",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739174",
+"desc_withouthtml": "External Affairs Minister (EAM) S Jaishankar on Sunday spoke to his Israeli counterpart Israel Katz to discuss the unprecedented drone and missile attack on the Jewish state by Iran on Saturday night. \"Just concluded a conversation with Israel’s Minister of Foreign Affairs Israel Katz. Shared our concern at the developments yesterday. Discussed the larger regional situation. Agreed to stay in touch,\" Jaishankar said in a post on X (formerly known as Twitter).",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>External Affairs Minister (EAM) S Jaishankar on Sunday spoke to his Israeli counterpart Israel Katz to discuss the unprecedented drone and missile attack on the Jewish state by Iran on Saturday night.&nbsp;</p>\r\n\r\n<p>\"Just concluded a conversation with Israel’s Minister of Foreign Affairs Israel Katz. Shared our concern at the developments yesterday. Discussed the larger regional situation. Agreed to stay in touch,\" Jaishankar said in a post on X <em>(formerly known as Twitter)</em>.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 22:56:03",
+"title": "Middle East crisis: S Jaishankar speaks to Israeli counterpart, agrees to be in touch",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739170",
+"desc_withouthtml": "Lebanese terrorist group Hezbollah on Sunday praised Iran's attack on Israel, describing it as a \"brave\" decision. Iran-backed Hezbollah added in a statement that Iran had exercised its legal rights despite \"threats, intimidation and pressure.\"(With inputs from Reuters.)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Lebanese terrorist group Hezbollah on Sunday praised Iran's attack on Israel, describing it as a \"brave\" decision. Iran-backed Hezbollah added in a statement that Iran had exercised its legal rights despite \"threats, intimidation and pressure.\"</p>\r\n\r\n<p><em><strong>(With inputs from Reuters.)</strong></em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 22:43:52",
+"title": "Middle East crisis: Lebanese terror group praises Iranian attack on Israel as 'brave' decision",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739168",
+"desc_withouthtml": "Turkish Foreign Minister Hakan Fidan told his U.S. counterpart Antony Blinken in a call on Sunday that Ankara was worried about the potential spread and escalation of the crisis in the Middle East after Iran's attacks on Israel, a Turkish diplomatic source said.Fidan told Blinken that the root cause of the crisis in the region was the war in Gaza, and that an immediate ceasefire and unhindered access of humanitarian aid was needed in the enclave, the source said.Fidan also urged countries with influence over Israel to send the \"correct messages\" to prevent further escalating regional tensions, the source added.(With inputs from Reuters.)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Turkish Foreign Minister Hakan Fidan told his U.S. counterpart Antony Blinken in a call on Sunday that Ankara was worried about the potential spread and escalation of the crisis in the Middle East after Iran's attacks on Israel, a Turkish diplomatic source said.</p>\r\n\r\n<p>Fidan told Blinken that the root cause of the crisis in the region was the war in Gaza, and that an immediate ceasefire and unhindered access of humanitarian aid was needed in the enclave, the source said.</p>\r\n\r\n<p>Fidan also urged countries with influence over Israel to send the \"correct messages\" to prevent further escalating regional tensions, the source added.</p>\r\n\r\n<p><em><strong>(With inputs from Reuters.)</strong></em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 22:36:16",
+"title": "Turkey tells US it is worried about escalation of Middle East crisis",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739163",
+"desc_withouthtml": "Israeli Prime Minister Benjamin Netanyahu on Sunday convened the War Cabinet at the Kirya in Tel Aviv, a day after an unprecedented drone and missile attack by Iran. Iran and its proxies launched 330 missiles and drones on Israel late on Saturday night in retaliation to an alleged attack by Israel on a diplomatic mission of the Islamic Republic in Damascus on April 1 in which several people, including two top commanders, were killed.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Israeli Prime Minister Benjamin Netanyahu on Sunday convened the War Cabinet at the Kirya in Tel Aviv, a day after an unprecedented drone and missile attack by Iran.</p>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\">\r\n<iframe  alt=\"\" title=\"\" class=\"custom-video-iframe-cls multy-video-iframe\" scrolling=\"no\" allowfullscreen=\"\" frameborder=\"0\" width=\"auto\" height=\"160\" src=\"https://embed.indiatoday.in/share/video/embed/17013\" layout=\"responsive\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-top-navigation allow-top-navigation-by-user-activation\" loading=\"lazy\"></iframe>\r\n</div>\r\n</article>\r\n\r\n<p>Iran and its proxies launched 330 missiles and drones on Israel late on Saturday night in retaliation to an alleged attack by Israel on a diplomatic mission of the Islamic Republic in Damascus on April 1 in which several people, including two top commanders, were killed.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 22:08:41",
+"title": "Middle East crisis: Israeli PM convenes war cabinet",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739160",
+"desc_withouthtml": "G7 leaders today unanimously condemned Iran's unprecedented attack against Israel and urged that all parties must exercise restraint.\"We will continue all our efforts to work towards de-escalation. Ending the crisis in Gaza as soon as possible, notably through an immediate ceasefire, will make a difference. The situation in the Middle-East, including Lebanon, will be discussed at the European Council next week,\" President of the European Council Charles Michel said on X (formerly known as Twitter).",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>G7 leaders today unanimously condemned Iran's unprecedented attack against Israel and urged that all parties must exercise restraint.</p>\r\n\r\n<p>\"We will continue all our efforts to work towards de-escalation. Ending the crisis in Gaza as soon as possible, notably through an immediate ceasefire, will make a difference. The situation in the Middle-East, including Lebanon, will be discussed at the European Council next week,\" President of the European Council Charles Michel said on X <em>(formerly known as Twitter)</em>.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 22:05:15",
+"title": "Middle East crisis: G7 condemns Iran attack on Israel, calls for restraint",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739147",
+"desc_withouthtml": "Kerala Chief Minister Pinarayi Vijayan writes to External Affairs Minister S Jaishankar seeking immediate intervention and decisive action through diplomatic channels to ensure the safety of Indian nationals who are crew members of the ship MSC Aries, which was seized by Iran's Revolutionary Guards near the Strait of Hormuz.\"Our collective objective at this point of time is the safe repatriation of all our nationals, including those from Kerala, back to India without any delay. Given the sensitive geopolitical situation surrounding this incident, I urge immediate intervention and decisive action through diplomatic channels,\" Vijayan said in his letter to Jaishankar. ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Kerala Chief Minister Pinarayi Vijayan writes to External Affairs Minister S Jaishankar seeking immediate intervention and decisive action through diplomatic channels to ensure the safety of Indian nationals who are crew members of the ship MSC Aries, which was seized by Iran's Revolutionary Guards near the Strait of Hormuz.</p>\r\n\r\n<p>\"Our collective objective at this point of time is the safe repatriation of all our nationals, including those from Kerala, back to India without any delay. Given the sensitive geopolitical situation surrounding this incident, I urge immediate intervention and decisive action through diplomatic channels,\" Vijayan said in his letter to Jaishankar.&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 20:53:56",
+"title": "Middle East crisis: Kerala government seeks safety of Indians detained in Iran",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739141",
+"desc_withouthtml": "Israeli airlines said operations were returning to normal on Sunday after an overnight attack by Iranian missiles and drones closed the airspace and led to flight cancellations.Israel reopened its airspace as of 7.30 am (0430 GMT) on Sunday, though flight schedules from Tel Aviv were expected to be affected and travellers were advised to check flight times before going to Ben Gurion International Airport.A graphical representation of air traffic shows airspace over Iran and the neighbouring Middle East at 0000 GMT, April 14, 2024. (Image: Flightradar24.com)(With inputs from Reuters.)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Israeli airlines said operations were returning to normal on Sunday after an overnight attack by Iranian missiles and drones closed the airspace and led to flight cancellations.</p>\r\n\r\n<p>Israel reopened its airspace as of 7.30 am (0430 GMT) on Sunday, though flight schedules from Tel Aviv were expected to be affected and travellers were advised to check flight times before going to Ben Gurion International Airport.</p>\r\n\r\n<div class = \"embedded-entity img-custom-cls-entity \"><article class=\"media media--type-ckeditor-image media--view-mode-image\"><div class=\"field field--name-field-media-image field--type-image field--label-hidden field__item\"><img style=\"width:100%;height:auto;\" src=\"https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2024-04/whatsapp_image_2024-04-14_at_8.09.12_pm.jpeg?VersionId=Drs53eAT7NuLtSkARIKRiyFAHBQwlvMn\" alt=\"\" title=\"\"   data-entity-uuid=\"7d6549a4-56b2-43c5-80de-237b083e02d2\" ></div></article></div><figcaption>A graphical representation of air traffic shows airspace over Iran and the neighbouring Middle East at 0000 GMT, April 14, 2024. (Image: Flightradar24.com)</figcaption>\r\n\r\n<p><em><strong>(With inputs from Reuters.)</strong></em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 20:10:43",
+"title": "Middle East crisis: Israel reopens airspace as airlines cancel flights due to Iran attacks",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739139",
+"desc_withouthtml": "Iran informed Turkey in advance of its planned operation against Israel, a Turkish diplomatic source told Reuters on Sunday, adding that the US conveyed to Iran via Ankara that its operation must be \"within certain limits\".Earlier this week, US Secretary of State Antony Blinken spoke to the Turkish foreign minister to make clear that escalation in the Middle East was not in anyone's interest.(With inputs from Reuters.)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iran informed Turkey in advance of its planned operation against Israel, a Turkish diplomatic source told Reuters on Sunday, adding that the US conveyed to Iran via Ankara that its operation must be \"within certain limits\".</p>\r\n\r\n<p>Earlier this week, US Secretary of State Antony Blinken spoke to the Turkish foreign minister to make clear that escalation in the Middle East was not in anyone's interest.</p>\r\n\r\n<p><em><strong>(With inputs from Reuters.)</strong></em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 20:08:00",
+"title": "Middle East crisis: Iran told Turkey in advance of its operation against Israel",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739137",
+"desc_withouthtml": "Israeli war cabinet minister Benny Gantz on Sunday said that the country will \"exact a price from Iran\" in response to the drone and missile attack - when the \"time is right\". \"We will build a regional coalition and exact the price from Iran in the fashion and timing that is right for us,\" Gantz said in a statement. ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Israeli war cabinet minister Benny Gantz on Sunday said that the country will \"exact a price from Iran\" in response to the drone and missile attack - when the \"time is right\".&nbsp;</p>\r\n\r\n<p>\"We will build a regional coalition and exact the price from Iran in the fashion and timing that is right for us,\" Gantz said in a statement.&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 19:55:55",
+"title": "Middle East crisis: Israel says it will 'exact price from Iran' when time is right ",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739135",
+"desc_withouthtml": "Air India on Sunday announced its decision to temporarily suspend flights to Tel Aviv amid escalating tensions between Israel and Iran, news agency PTI reported.An official said that direct flights between Delhi and Tel Aviv will be suspended for now. ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Air India on Sunday announced its decision to temporarily suspend flights to Tel Aviv amid escalating tensions between Israel and Iran, <em>news agency PTI</em> reported.</p>\r\n\r\n<p>An official said that direct flights between Delhi and Tel Aviv will be suspended for now.<br />\r\n&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 19:53:44",
+"title": "Middle East crisis: Air India temporarily suspends Tel Aviv flights",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739133",
+"desc_withouthtml": "US President Joe Biden conveyed to Israeli Prime Minister Benjamin Netanyahu that the United States would abstain from engaging in any Israeli retaliation against Iran, news agency Reuters reported, quoting CNN and the Wall Street Journal.During his conversation with Netanyahu, Biden indicated that additional action was unwarranted, with senior US officials informing their Israeli counterparts that the US would refrain from joining any offensive response against Iran.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>US President Joe Biden conveyed to Israeli Prime Minister Benjamin Netanyahu that the United States would abstain from engaging in any Israeli retaliation against Iran, news agency Reuters reported, quoting&nbsp;CNN and the Wall Street Journal.</p>\r\n\r\n<p>During his conversation with Netanyahu, Biden indicated that additional action was unwarranted, with senior US officials informing their Israeli counterparts that the US would refrain from joining any offensive response against Iran.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 19:51:39",
+"title": "Middle East crisis: Biden says US wouldn't take part in Israeli counter against Iran ",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739125",
+"desc_withouthtml": "The 7-year-old girl, the sole individual in Israel to suffer severe injuries during the recent Iranian attack overnight Saturday-Sunday, continues to fight for her life at Soroka Medical Center in Beersheba, The Times of Israel reported.Hospital reports indicate that the girl underwent surgery for a critical head injury and is currently under intensive care in the pediatric unit. Her injuries occurred when debris from a intercepted ballistic missile struck her family's residence in a Bedouin community near Arad in the southern Negev area.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The 7-year-old girl, the sole individual in Israel to suffer severe injuries during the recent Iranian attack overnight Saturday-Sunday, continues to fight for her life at Soroka Medical Center in Beersheba, The Times of Israel reported.</p>\r\n\r\n<p>Hospital reports indicate that the girl underwent surgery for a critical head injury and is currently under intensive care in the pediatric unit.&nbsp;</p>\r\n\r\n<p>Her injuries occurred when debris from a intercepted ballistic missile struck her family's residence in a Bedouin community near Arad in the southern Negev area.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 19:11:52",
+"title": "Middle East crisis: Minor Israeli girl hurt in Iranian attack remains critical",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739121",
+"desc_withouthtml": "Israeli envoy to India Naor Gilon, during an interview with news agency ANI, emphasised that Indian workers \"will be as safe as the Israeli population\" since his country treats Indian workers as part of the Israeli population.\"The workers are no different than other Israelis. As you saw last night, there was a huge effort by Israel, and we were able to protect our civilians, which we will do in the future. Since we treat Indian workers as part of the Israeli population, they will be as safe as the Israeli population. We are doing maximum to protect everyone in Israel\", said Ambassador Gilon on Sunday.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Israeli envoy to India Naor Gilon, during an interview with <em>news agency ANI</em>, emphasised that Indian workers \"will be as safe as the Israeli population\" since his country treats Indian workers as part of the Israeli population.</p>\r\n\r\n<p>\"The workers are no different than other Israelis. As you saw last night, there was a huge effort by Israel, and we were able to protect our civilians, which we will do in the future. Since we treat Indian workers as part of the Israeli population, they will be as safe as the Israeli population. We are doing maximum to protect everyone in Israel\", said Ambassador Gilon on Sunday.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 18:47:09",
+"title": "Middle East crisis: Israeli envoy assures safety of Indian workers",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739119",
+"desc_withouthtml": "Reaffirming America’s \"ironclad commitment\" to the Jewish nation, US President Joe Biden on Sunday vowed to convene a meeting of the G-7 leaders to develop a coordinated response to Iranian air attack on Israel. \"Tomorrow, I will convene my fellow G-7 leaders to coordinate a united diplomatic response to Iran’s brazen attack. My team will engage with their counterparts across the region. And we will stay in close touch with Israel’s leaders. And while we have not seen attacks on our forces or facilities today, we will remain vigilant to all threats and will not hesitate to take all necessary action to protect our people,\" Biden said.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Reaffirming America’s \"ironclad commitment\" to the Jewish nation, US President Joe Biden on Sunday vowed to&nbsp;convene a meeting of the G-7 leaders to develop a coordinated response to&nbsp;Iranian air attack on Israel.&nbsp;</p>\r\n\r\n<p>\"Tomorrow, I will convene my fellow G-7 leaders to coordinate a united diplomatic response to Iran’s brazen attack.&nbsp;My team will engage with their counterparts across the region. And we will stay in close touch with Israel’s leaders. And while we have not seen attacks on our forces or facilities today, we will remain vigilant to all threats and will not hesitate to take all necessary action to protect our people,\" Biden said.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 18:45:11",
+"title": "Middle East crisis: Joe Biden to convene G-7 meet in response to Iranian attack",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739108",
+"desc_withouthtml": "Ukraine President Volodymyr Zelenskyy on Sunday condemned Iran's drone and missile attack on Israel and called for immediate efforts to prevent a further escalation in the Middle East conflict.\"Iran's actions threaten the entire region and the world, just as Russia's actions threaten a larger conflict, and the obvious collaboration between the two regimes in spreading terror must face a resolute and united response from the world,\" he wrote on social media platform X (formerly known as Twitter).",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Ukraine President Volodymyr Zelenskyy on Sunday condemned Iran's drone and missile attack on Israel and called for immediate efforts to prevent a further escalation in the Middle East conflict.</p>\r\n\r\n<p>\"Iran's actions threaten the entire region and the world, just as Russia's actions threaten a larger conflict, and the obvious collaboration between the two regimes in spreading terror must face a resolute and united response from the world,\" he wrote on social media platform X <em>(formerly known as Twitter)</em>.</p>\r\n\r\n<div class = \"embedded-entity img-custom-cls-entity \"><article class=\"media media--type-ckeditor-image media--view-mode-image\"><div class=\"field field--name-field-media-image field--type-image field--label-hidden field__item\"><img style=\"width:100%;height:auto;\" src=\"https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2024-04/zelensky.jpg?VersionId=83C6c1CUrELOMfwR1BJOYS6OaFE5J4M5\" alt=\"\" title=\"\"   data-entity-uuid=\"86ba35c2-240b-4337-b675-f89fa826d162\" ></div></article></div>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 18:06:13",
+"title": "Middle East crisis: Ukraine's Zelenskyy condemns attack on Israel, links it with 'Russia's action'",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739099",
+"desc_withouthtml": "Soon after Israel's attack \"still in the cards\" assertion, Iran warned Israel and the United States on Sunday of a \"much larger response\" if there is any retaliation for its mass drone and missile attack.Israeli Defence Minister Yoav Gallant said despite thwarting the attack, the military campaign was not over and \"we must be prepared for every scenario\".Israel's Channel 12 TV cited an unnamed Israeli official overnight as saying there would be a \"significant response\" to the attack.(With inputs from Reuters.)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Soon after Israel's attack \"still in the cards\" assertion, Iran warned Israel and the United States on Sunday of a \"much larger response\" if there is any retaliation for its mass drone and missile attack.</p>\r\n\r\n<p>Israeli Defence Minister Yoav Gallant said despite thwarting the attack, the military campaign was not over and \"we must be prepared for every scenario\".</p>\r\n\r\n<p>Israel's Channel 12 TV cited an unnamed Israeli official overnight as saying there would be a \"significant response\" to the attack.</p>\r\n\r\n<p><em><strong>(With inputs from Reuters.)</strong></em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 17:39:05",
+"title": "Middle East crisis: Iran warns Israel, US against retaliation",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739098",
+"desc_withouthtml": "UK Prime Minister Rishi Sunak asserted that British military jets successfully intercepted drones launched by Iran during its assault on Israel. He called for \"calm heads to prevail\" to prevent further escalation of the conflict.\"Iran's attack last night was a dangerous and unnecessary escalation,\" he said. \"I can confirm that our planes did shoot down a number of Iranian attack drones. If this attack had been successful, the fallout for regional stability would be hard to overstate. We stand by the security of Israel and the wider region, which is of course important for our security here at home, too. What we now need is for calm heads to prevail,\" UK PM added.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>UK Prime Minister Rishi Sunak asserted that British military jets successfully intercepted drones launched by Iran during its assault on Israel. He called for \"calm heads to prevail\" to prevent further escalation of the conflict.</p>\r\n\r\n<p>\"Iran's attack last night was a dangerous and unnecessary escalation,\" he said.</p>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\">\r\n<iframe  alt=\"\" title=\"\" class=\"custom-video-iframe-cls multy-video-iframe\" scrolling=\"no\" allowfullscreen=\"\" frameborder=\"0\" width=\"auto\" height=\"160\" src=\"https://embed.indiatoday.in/share/video/embed/17012\" layout=\"responsive\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-top-navigation allow-top-navigation-by-user-activation\" loading=\"lazy\"></iframe>\r\n</div>\r\n</article>\r\n\r\n<p>\"I can confirm that our planes did shoot down a number of Iranian attack drones. If this attack had been successful, the fallout for regional stability would be hard to overstate. We stand by the security of Israel and the wider region, which is of course important for our security here at home, too. What we now need is for calm heads to prevail,\" UK PM added.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 17:34:29",
+"title": "Middle East crisis: British jets shot down Iranian drones, says Rishi Sunak",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739088",
+"desc_withouthtml": "Israeli Foreign Minister Israel Katz told Israeli radio on Sunday morning that an Israeli attack against Iran is \"still in the cards\".\"If Iran attacks Israel, Israel will attack Iran. That assertion remains valid. We authorized the relevant forum headed by the prime minister to promote this topic and I trust them to make the right and appropriate decisions,\" he said in an interview for Army Radio. \"All the considerations are taken into account,\" The Wall Street Journal quoted Katz as saying.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Israeli Foreign Minister Israel Katz told Israeli radio on Sunday morning that an Israeli attack against Iran is \"still in the cards\".</p>\r\n\r\n<p>\"If Iran attacks Israel, Israel will attack Iran. That assertion remains valid. We authorized the relevant forum headed by the prime minister to promote this topic and I trust them to make the right and appropriate decisions,\" he said in an interview for Army Radio. \"All the considerations are taken into account,\" The Wall Street Journal quoted Katz as saying.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 16:21:02",
+"title": "Middle East crisis: Israel's Foreign Minister says reprisal against Iran is possible",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739084",
+"desc_withouthtml": "Thousands of Iranians took to the streets of Iran early Sunday in a show of support for the unprecedented drone and missile attack under way against arch foe Israel. \"Death to Israel!\" and \"Death to America!\" chanted demonstrators in Tehran's Palestine Square shortly after the Revolutionary Guards announced the launch of Operation Honest Promise. A mural saying \"the next slap is fiercer\" was unveiled in the square where a huge banner has hung for days calling, in Hebrew, for Israelis to \"take shelter\".(With inputs from AFP.)",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Thousands of Iranians took to the streets of Iran early Sunday in a show of support for the unprecedented drone and missile attack under way against arch foe Israel.&nbsp;</p>\r\n\r\n<p>\"Death to Israel!\" and \"Death to America!\" chanted demonstrators in Tehran's Palestine Square shortly after the Revolutionary Guards announced the launch of Operation Honest Promise.&nbsp;</p>\r\n\r\n<div class = \"embedded-entity img-custom-cls-entity \"><article class=\"media media--type-ckeditor-image media--view-mode-image\"><div class=\"field field--name-field-media-image field--type-image field--label-hidden field__item\"><img style=\"width:100%;height:auto;\" src=\"https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2024-04/000_34pc9zg.jpg?VersionId=w1llYxS4m7YlVUTlRuK8fPDUO6jkzuOZ\" alt=\"\" title=\"\"   data-entity-uuid=\"01f56476-7162-4b31-b234-488afbbf9ea4\" ></div></article></div>\r\n\r\n<p>A mural saying \"the next slap is fiercer\" was unveiled in the square where a huge banner has hung for days calling, in Hebrew, for Israelis to \"take shelter\".</p>\r\n\r\n<p><em><strong>(With inputs from AFP.)</strong></em></p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 16:01:42",
+"title": "Middle East crisis: Thousands gather in Iran in show of support for attack on Israel",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739081",
+"desc_withouthtml": "Iran on Sunday urged Israel not to retaliate militarily to an unprecedented attack overnight, which Tehran presented as a justified response to a deadly strike on its consulate building in Damascus.\"The matter can be deemed concluded,\" Iran's mission to the United Nations said in a post on social media platform X (formerly known as Twitter) just a few hours after the start of the operation late Saturday.\"However, should the Israeli regime make another mistake, Iran's response will be considerably more severe,\" the Iranian mission warned. ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iran on Sunday urged Israel not to retaliate militarily to an unprecedented attack overnight, which Tehran presented as a justified response to a deadly strike on its consulate building in Damascus.</p>\r\n\r\n<p>\"The matter can be deemed concluded,\" Iran's mission to the United Nations said in a post on social media platform X <em>(formerly known as Twitter)</em> just a few hours after the start of the operation late Saturday.</p>\r\n\r\n<div class = \"embedded-entity img-custom-cls-entity \"><article class=\"media media--type-ckeditor-image media--view-mode-image\"><div class=\"field field--name-field-media-image field--type-image field--label-hidden field__item\"><img style=\"width:100%;height:auto;\" src=\"https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2024-04/iran_c.jpg?VersionId=fbkv4lNGnzpoU7muL9Ca9uv5wM_Mih8D\" alt=\"\" title=\"\"   data-entity-uuid=\"b7dded53-8a60-49d9-8cfb-2f7943ba1650\" ></div></article></div>\r\n\r\n<p>\"However, should the Israeli regime make another mistake, Iran's response will be considerably more severe,\" the Iranian mission warned.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 15:53:24",
+"title": "Middle East crisis: Iran says retaliation 'concluded', warns Israel not to respond",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739080",
+"desc_withouthtml": "The Indian mission in Israel on Sunday issued a fresh \"important advisory\" for its nationals after attacks on the Jewish State by Iran with hundreds of projectiles, advising them to stay calm and adhere to safety protocols.\"In light of the recent events in the region, all Indian nationals in Israel are advised to stay calm and adhere to the safety protocols issued by the local authorities,\" the Indian mission said in the \"important advisory\" advisory posted on its social media handles.\"The Embassy is closely monitoring the situation, and it is in touch with the Israeli authorities and Indian community members to ensure the safety of all our nationals,\" it added.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The Indian mission in Israel on Sunday issued a fresh \"important advisory\" for its nationals after attacks on the Jewish State by Iran with hundreds of projectiles, advising them to stay calm and adhere to safety protocols.</p>\r\n\r\n<p>\"In light of the recent events in the region, all Indian nationals in Israel are advised to stay calm and adhere to the safety protocols issued by the local authorities,\" the Indian mission said in the \"important advisory\" advisory posted on its social media handles.</p>\r\n\r\n<p>\"The Embassy is closely monitoring the situation, and it is in touch with the Israeli authorities and Indian community members to ensure the safety of all our nationals,\" it added.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 15:46:08",
+"title": "Middle East crisis: Indian Embassy in Israel issues fresh advisory, no evacuations for now",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739078",
+"desc_withouthtml": "The Indian Embassy in Iran has activated additional helpline numbers for its citizens after the threat of retaliatory attack by Israel after the Islamic nation launched 330 missiles and drones on the Jewish State on Saturday.Indians residing in Iran can contact the Indian Embassy at: +989128109115; +98993179567; +989932179359; +98-21-88755103-5 -- in case of any assistance.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The Indian Embassy in Iran has activated additional helpline numbers for its citizens after the threat of retaliatory attack by Israel after the Islamic nation launched 330 missiles and drones on the Jewish State on Saturday.</p>\r\n\r\n<p>Indians residing in Iran can contact the Indian Embassy at: +989128109115; +98993179567; +989932179359; +98-21-88755103-5 -- in case of any assistance.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 15:43:04",
+"title": "Middle East crisis: Indian Embassy in Iran activates helpline numbers for citizens",
+"posted_by": "Sahil Sinha",
+"label": ""
+},
+{
+"content_id": "739076",
+"desc_withouthtml": "External Affairs Minister S Jaishankar said Iran's attack on Israel late Saturday was a matter of deep concern as the situation escalated in the Middle East. He also said India had particular stakes in the region.\"For sometimes, we have been concerned about the situation there starting with the October 7 attack on Israel, escalating into other dimensions and other zones, which is deeply worrying. Right now, we have advised people not to travel to Israel and Iran,\" he told India Today TV in an exclusive interview.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>External Affairs Minister S Jaishankar said Iran's attack on Israel late Saturday was a matter of deep concern as the situation escalated in the Middle East. He also said India had particular stakes in the region.</p>\r\n\r\n<p>\"For sometimes, we have been concerned about the situation there starting with the October 7 attack on Israel, escalating into other dimensions and other zones, which is deeply worrying. Right now, we have advised people not to travel to Israel and Iran,\" he told India Today TV in an exclusive interview.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 15:30:45",
+"title": "Matter of deep concern: S Jaishankar on Iran's attack on Israel",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739066",
+"desc_withouthtml": "Italy, which holds the rotating presidency of the G7, has called a video meeting of G7 leaders on Sunday to discuss Iran's attack on Israel late on Saturday, Reuters reported.The Iranian attack in response to a suspected Israeli air strike on Iran's embassy compound in Damascus on April 1 has raised the threat of a wider regional conflict.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Italy, which holds the rotating presidency of the G7, has called a video meeting of G7 leaders on Sunday to discuss Iran's attack on Israel late on Saturday, Reuters reported.</p>\r\n\r\n<p>The Iranian attack in response to a suspected Israeli air strike on Iran's embassy compound in Damascus on April 1 has raised the threat of a wider regional conflict.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 14:37:42",
+"title": "G7 leaders to discuss Iran's attack on Israel on video call today",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739061",
+"desc_withouthtml": "Emirates Airlines and Etihad Airways have cancelled their flights to Tel Aviv and Amman on Sunday after Iran attacked the Jewish nation with around 300 drones and missiles.\"Some of our flights have been affected by the temporary closure of a number of airspaces in the region,\" a statement from the United Arab Emirates’s Fly Dubai was quoted on state news agency WAM as saying.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Emirates Airlines and Etihad Airways have cancelled their flights to Tel Aviv and Amman on Sunday after Iran attacked the Jewish nation with around 300 drones and missiles.</p>\r\n\r\n<p>\"Some of our flights have been affected by the temporary closure of a number of airspaces in the region,\" a statement from the United Arab Emirates’s Fly Dubai was quoted on state news agency WAM as saying.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 14:17:23",
+"title": "Emirates, Etihad cancel flights to Israel after Iran attack",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739055",
+"desc_withouthtml": "India on Sunday called for an \"immediate de-escalation\" in the wake of Iran launching a direct attack on Israel by firing a barrage of missiles and drones. It also expressed concerns at the escalation of hostilities between Israel and Iran that threaten \"peace and security in the region\".Statement on the situation in West Asia:https://t.co/kpJzqwTVWC pic.twitter.com/cSbJQrAjCC— Randhir Jaiswal (@MEAIndia) April 14, 2024 ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>India on Sunday called for an \"immediate de-escalation\" in the wake of Iran launching a direct attack on Israel by firing a barrage of missiles and drones. It also expressed concerns at the escalation of hostilities between Israel and Iran that threaten \"peace and security in the region\".</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\">\r\n<p dir=\"ltr\" lang=\"en\">Statement on the situation in West Asia:<a href=\"https://t.co/kpJzqwTVWC\">https://t.co/kpJzqwTVWC</a> <a href=\"https://t.co/cSbJQrAjCC\">pic.twitter.com/cSbJQrAjCC</a></p>\r\n— Randhir Jaiswal (@MEAIndia) <a href=\"https://twitter.com/MEAIndia/status/1779336020380795294?ref_src=twsrc%5Etfw\">April 14, 2024</a></blockquote>\r\n<script async=\"\" charset=\"utf-8\" src=\"https://platform.twitter.com/widgets.js\"></script>\r\n</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 13:18:36",
+"title": "India calls for immediate de-escalation after Iran launches air attack on Israel",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739053",
+"desc_withouthtml": "The Indian Embassy in Israel released helpline numbers for Indian nationals in Israel following Iran's attack on the Jewish nation.In a post on X, the embassy said it was monitoring all developments and advised Indian nationals to remain calm and follow the safety protocols issued by local authorities.📢*IMPORTANT ADVISORY FOR INDIAN NATIONALS IN ISRAEL*Link : https://t.co/OEsz3oUtBJ pic.twitter.com/ZJJeu7hOug— India in Israel (@indemtel) April 14, 2024",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The Indian Embassy in Israel released helpline numbers for Indian nationals in Israel following Iran's attack on the Jewish nation.</p>\r\n\r\n<p>In a post on X, the embassy said it was monitoring all developments and advised Indian nationals to remain calm and follow the safety protocols issued by local authorities.</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\">\r\n<p dir=\"ltr\" lang=\"en\">📢*IMPORTANT ADVISORY FOR INDIAN NATIONALS IN ISRAEL*<br />\r\n<br />\r\nLink : <a href=\"https://t.co/OEsz3oUtBJ\">https://t.co/OEsz3oUtBJ</a> <a href=\"https://t.co/ZJJeu7hOug\">pic.twitter.com/ZJJeu7hOug</a></p>\r\n— India in Israel (@indemtel) <a href=\"https://twitter.com/indemtel/status/1779379978125099400?ref_src=twsrc%5Etfw\">April 14, 2024</a></blockquote>\r\n</div>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 12:43:54",
+"title": "'Remain calm, follow safety rules': Indian Embassy in Israel releases helpline numbers for citizens",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739052",
+"desc_withouthtml": "Iran fired some 300 missiles and drones at Israel overnight and 99 per cent of them were intercepted by Israel's air defence systems, the Israel Defense Forces (IDF) said, The Times of Israel reported.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iran fired some 300 missiles and drones at Israel overnight and 99 per cent of them were intercepted by Israel's air defence systems, the Israel Defense Forces (IDF) said, The Times of Israel reported.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 11:16:23",
+"title": "Iran fired 300 missiles, drones, 99% were intercepted, says Israel",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739049",
+"desc_withouthtml": "A viral video shows an exoatmospheric missile, fired by Iran, which appeared to be intercepted by Israel when Tehran attacked the Jewish state. So, what is an exoatmospheric missile intercept and how does it work?",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>A viral video shows an <a href=\"https://www.indiatoday.in/science/story/iran-israel-attack-exoatmospheric-missile-intercept-hamas-war-middle-east-tensions-2526952-2024-04-14\" target=\"_self\">exoatmospheric missile, fired by Iran, which appeared to be intercepted by Israel</a> when Tehran attacked the Jewish state. So, what is an exoatmospheric missile intercept and how does it work?</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 10:53:30",
+"title": "Iran attacks Israel: What is exoatmospheric missile intercept, how it works",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739042",
+"desc_withouthtml": "A senior Israeli source claimed that Iran's attack on the Jewish nation was a \"strategic failure\", The Times of Israel quoted Channel 12 as saying.The source said that Iran should get ready for Israel's counterattack and \"won't sleep in peace\", raising fears of a wider conflict in the Middle East.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>A senior Israeli source claimed that Iran's attack on the Jewish nation was a \"strategic failure\", The Times of Israel quoted Channel 12 as saying.</p>\r\n\r\n<p>The source said that Iran should get ready for Israel's counterattack and \"won't sleep in peace\", raising fears of a wider conflict in the Middle East.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 09:25:12",
+"title": "Iran's attack a 'strategic failure', won't sleep in peace: Israeli source",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739041",
+"desc_withouthtml": "US President Joe Biden condemned Iran's attack on Israel and said he will convene a G7 meeting on Monday to coordinate a united diplomatic response to Tehran's \"brazen\" assault on its ally.In a statement, Biden said he spoke to Israeli Prime Minister Benjamin Netanyahu to reaffirm the US's \"ironclad\" commitment to Israel's security.I condemn Iran's attacks in the strongest possible terms and reaffirm America’s ironclad commitment to the security of Israel.My full statement on Iran’s attacks against Israel: pic.twitter.com/EuPJZoGw6w— President Biden (@POTUS) April 14, 2024",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>US President Joe Biden condemned Iran's attack on Israel and said he will convene a G7 meeting on Monday to coordinate a united diplomatic response to Tehran's \"brazen\" assault on its ally.</p>\r\n\r\n<p>In a statement, Biden said he spoke to Israeli Prime Minister Benjamin Netanyahu to reaffirm the US's \"ironclad\" commitment to Israel's security.</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\">\r\n<p dir=\"ltr\" lang=\"en\">I condemn Iran's attacks in the strongest possible terms and reaffirm America’s ironclad commitment to the security of Israel.<br />\r\n<br />\r\nMy full statement on Iran’s attacks against Israel: <a href=\"https://t.co/EuPJZoGw6w\">pic.twitter.com/EuPJZoGw6w</a></p>\r\n— President Biden (@POTUS) <a href=\"https://twitter.com/POTUS/status/1779347601764020297?ref_src=twsrc%5Etfw\">April 14, 2024</a></blockquote>\r\n</div>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 09:16:27",
+"title": "Joe Biden condemns Iran attack on Israel, to convene G7 meet tomorrow",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739039",
+"desc_withouthtml": "Amid fears that Israel could retaliate to Iran's attack, the Jewish nation will coordinate its response with its allies, The New York Times reported, citing an Israeli official who spoke on the condition of anonymity.Iran struck Israel with over 200 drones and missiles in an attack that lasted for around five hours.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Amid fears that Israel could retaliate to Iran's attack, the Jewish nation will coordinate its response with its allies, The New York Times reported, citing an Israeli official who spoke on the condition of anonymity.</p>\r\n\r\n<p>Iran struck Israel with over 200 drones and missiles in an attack that lasted for around five hours.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 09:04:50",
+"title": "Israel to consult with allies on retaliation to Iran attack: Report",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739038",
+"desc_withouthtml": "UN General Assembly president Dennis Francis said he was \"deeply concerned\" over Iran's attack on Israel and the unfolding situation in the Middle East. He urged all parties to exercise utmost restraint to avoid further escalation of tension in the region.Statement by the President of the UN General Assembly, Dennis Francis, on attacks by Iran against Israel - “I am deeply concerned about the unfolding situation in the Middle East, involving the launch by Iran of drones and missiles against Israel...I strongly call upon all… pic.twitter.com/O49DQtiQAZ— ANI (@ANI) April 14, 2024",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>UN General Assembly president Dennis Francis said he was \"deeply concerned\" over Iran's attack on Israel and the unfolding situation in the Middle East. He urged all parties to exercise utmost restraint to avoid further escalation of tension in the region.</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\">\r\n<p dir=\"ltr\" lang=\"en\">Statement by the President of the UN General Assembly, Dennis Francis, on attacks by Iran against Israel - “I am deeply concerned about the unfolding situation in the Middle East, involving the launch by Iran of drones and missiles against Israel...I strongly call upon all… <a href=\"https://t.co/O49DQtiQAZ\">pic.twitter.com/O49DQtiQAZ</a></p>\r\n— ANI (@ANI) <a href=\"https://twitter.com/ANI/status/1779345364333764746?ref_src=twsrc%5Etfw\">April 14, 2024</a></blockquote>\r\n</div>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 09:00:49",
+"title": "'Deeply concerned' over Iran's attack on Israel, Middle East situation: UN",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739032",
+"desc_withouthtml": "UK Prime Minister Rishi Sunak condemned Iran's \"reckless\" attack on Israel and accused Tehran of sowing chaos \"in its own backyard\".\"The UK will continue to stand up for Israel’s security and that of all our regional partners, including Jordan and Iraq. Alongside our allies, we are urgently working to stabilise the situation and prevent further escalation. No-one wants to see more bloodshed,\" he wrote on X on Saturday night.Read my statement on the Iranian regime’s reckless attack against Israel. pic.twitter.com/xeuR3cd3kG— Rishi Sunak (@RishiSunak) April 13, 2024",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>UK Prime Minister Rishi Sunak condemned Iran's \"reckless\" attack on Israel and accused Tehran of sowing chaos \"in its own backyard\".</p>\r\n\r\n<p>\"The UK will continue to stand up for Israel’s security and that of all our regional partners, including Jordan and Iraq. Alongside our allies, we are urgently working to stabilise the situation and prevent further escalation. No-one wants to see more bloodshed,\" he wrote on X on Saturday night.</p>\r\n\r\n<div class=\"embedcode\">\r\n<blockquote class=\"twitter-tweet\">\r\n<p dir=\"ltr\" lang=\"en\">Read my statement on the Iranian regime’s reckless attack against Israel. <a href=\"https://t.co/xeuR3cd3kG\">pic.twitter.com/xeuR3cd3kG</a></p>\r\n— Rishi Sunak (@RishiSunak) <a href=\"https://twitter.com/RishiSunak/status/1779256852057874718?ref_src=twsrc%5Etfw\">April 13, 2024</a></blockquote>\r\n</div>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 07:40:20",
+"title": "Rishi Sunak condemns Iran's 'reckless' attack on Israel",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739031",
+"desc_withouthtml": "The UN Security Council is set to hold an emergency meeting on Sunday after Iran's drone and missile attack on Israel, Reuters reported.Israel's ambassador to the United Nations, Gilad Erdan, requested the council to hold the meeting in a letter to the body's president on Saturday.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The UN Security Council is set to hold an emergency meeting on Sunday after Iran's drone and missile attack on Israel, Reuters reported.</p>\r\n\r\n<p>Israel's ambassador to the United Nations, Gilad Erdan, requested the council to hold the meeting in a letter to the body's president on Saturday.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 07:00:47",
+"title": "UN Security Council emergency meet today after Iran's attack on Israel",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739030",
+"desc_withouthtml": "As Iran attacked Israel with drones, Saudi Arabia's foreign ministry issued a statement, saying it was alarmed by regional developments.Without naming Iran or Israel, the foreign ministry called on all parties to exercise restraint, The Times of Israel reported.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>As Iran attacked Israel with drones, Saudi Arabia's foreign ministry issued a statement, saying it was alarmed by regional developments.</p>\r\n\r\n<p>Without naming Iran or Israel, the foreign ministry called on all parties to exercise restraint, The Times of Israel reported.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 06:53:30",
+"title": "Saudi Arabia alarmed by Middle East tensions, urges parties to exercise restraint",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739029",
+"desc_withouthtml": "US President Joe Biden and Israeli Prime Minister Benjamin Netanyahu spoke over the phone after Iran launched a barrage of drones into Israel.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>US President Joe Biden and Israeli Prime Minister Benjamin Netanyahu spoke over the phone after Iran launched a barrage of drones into Israel.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 06:51:09",
+"title": "Joe Biden, Benjamin Netanyahu speak over phone amid Iranian drone attack on Israel",
+"posted_by": "Prateek Chakraborty",
+"label": ""
+},
+{
+"content_id": "739028",
+"desc_withouthtml": "German Chancellor Olaf Scholz tweeted, \"The air strike on Israeli territory that Iran launched last night is irresponsible and cannot be justified in any way. Iran is risking a conflagration. We stand closely by Israel's side and will now discuss everything further with our allies.\"",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>German Chancellor Olaf Scholz tweeted, \"The air strike on Israeli territory that Iran launched last night is irresponsible and cannot be justified in any way. Iran is risking a conflagration. We stand closely by Israel's side and will now discuss everything further with our allies.\"</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 06:33:30",
+"title": "German Chancellor condemns Iran's attack on Israel, says cannot be justified in any way",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739027",
+"desc_withouthtml": "Iranian drones intercepted by Israel's Iron Dome, as Iran launches drone attack against Israel by sending thousands of drones into its airspace.  ",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iranian drones intercepted by Israel's Iron Dome, as Iran launches drone attack against Israel by sending thousands of drones into its airspace.</p>\r\n\r\n<article>\r\n<div class=\"custom-media-docs\">\r\n<iframe  alt=\"\" title=\"\" class=\"custom-video-iframe-cls multy-video-iframe\" scrolling=\"no\" allowfullscreen=\"\" frameborder=\"0\" width=\"auto\" height=\"160\" src=\"https://embed.indiatoday.in/share/video/embed/16994\" layout=\"responsive\" sandbox=\"allow-scripts allow-same-origin allow-popups allow-top-navigation allow-top-navigation-by-user-activation\" loading=\"lazy\"></iframe>\r\n</div>\r\n</article>\r\n\r\n<p>&nbsp;</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 06:28:11",
+"title": "Iranian drones intercepted by Israel's Iron Dome",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739026",
+"desc_withouthtml": "Russia's Aeroflot airline diverted a Tehran-bound flight from Moscow on Saturday. The airline also postponed a number of flights to Egypt and the UAE.United Airlines canceled Saturday’s planned flight from Newark to Tel Aviv due to restrictions on Israeli airspace.Kuwait Airways diverted all incoming and outgoing flights away from \"areas of tension\" in view of the security situation in the region.Israel El Al Airlines cancelled 15 flights scheduled for Saturday and Sunday.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Russia's Aeroflot airline diverted a Tehran-bound flight from Moscow on Saturday. The airline also postponed a number of flights to Egypt and the UAE.</p>\r\n\r\n<p>United Airlines canceled Saturday’s planned flight from Newark to Tel Aviv due to restrictions on Israeli airspace.</p>\r\n\r\n<p>Kuwait Airways diverted all incoming and outgoing flights away from \"areas of tension\" in view of the security situation in the region.</p>\r\n\r\n<p>Israel El Al Airlines cancelled 15 flights scheduled for Saturday and Sunday.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 05:15:47",
+"title": " Air travel disrupted amid escalation in Middle East",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739025",
+"desc_withouthtml": "The US military shot down several Iranian drones in Sweida and Deraa provinces in southern Syria near the Jordanian border, security sources were quoted as saying by news agency Reuters.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>The US military shot down several Iranian drones in Sweida and Deraa provinces in southern Syria near the Jordanian border, security sources were quoted as saying by news agency Reuters.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 04:58:27",
+"title": "US military shoots down Iranian drones: Report",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739024",
+"desc_withouthtml": "Iran has launched more than 100 explosives-laden drones at Israel since Saturday, the Israeli military said early on Sunday, declining to immediately confirm media reports that cruise missiles were also part of the salvo.",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iran has launched more than 100 explosives-laden drones at Israel since Saturday, the Israeli military said early on Sunday, declining to immediately confirm media reports that cruise missiles were also part of the salvo.</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 04:53:19",
+"title": "Israel says Iran has launched more than 100 explosive drones so far",
+"posted_by": "Shweta Kumari",
+"label": ""
+},
+{
+"content_id": "739023",
+"desc_withouthtml": "Iran on Sunday launched drones towards Israel. The attack comes nearly two weeks after an air strike on the Iranian consulate in Damascus, Syria. Iran had blamed Israel for the attack and warned of retaliation. Hours before the drone attack, Iran had seized a cargo ship linked to Israel near the Strait of Hormuz.Meanwhile, the US vowed support to the Israel. The US said it stands by Israel and will \"support their defense\".",
+"desc_withhtml": "<style>figure.img-custom-cls-entity img{width: 100%;height: auto;}</style><p>Iran on Sunday launched drones towards Israel. The attack comes nearly two weeks after an air strike on the Iranian consulate in Damascus, Syria. Iran had blamed Israel for the attack and warned of retaliation.&nbsp;</p>\r\n\r\n<p>Hours before the drone attack, Iran had seized a cargo ship linked to Israel near the Strait of Hormuz.</p>\r\n\r\n<p>Meanwhile, the US vowed support to the Israel. The US said it stands by Israel and will \"support their defense\".</p>\r\n",
+"profile_image": "",
+"updated_datetime": "2024-04-14 04:48:52",
+"title": "Iran launches attack on Israel",
+"posted_by": "Shweta Kumari",
+"label": ""
+}
+],
+"livetv_content": []
+},
+"cache": {
+"redis_ttl": "90",
+"akamai_ttl": "120"
+},
+"data_source": "D"
 }
