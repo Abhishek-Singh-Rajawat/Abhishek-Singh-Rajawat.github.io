@@ -117,6 +117,11 @@
       ]
     },
     {
+      "id": 1,
+      "title": "News",
+      "type": "sub_category",
+      "underline_colour": "",
+      "more_url": "/podcast/news",
       "news": [
         {
           "id": "320288",
