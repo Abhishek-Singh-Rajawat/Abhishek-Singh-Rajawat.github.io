@@ -124,6 +124,19 @@
       "more_url": "/podcast/news",
       "news": [
         {
+          "id": "464887",
+          "title": "Let's Talk Cringe",
+          "is_live": 1,
+          "audio_url": "",
+          "flash_text": "Beware! This could be the most ridiculous, puke-worthy, nauseating and repulsive show ever!\r\n",
+          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/lets-talk-cringe-final-3.jpg?size=230:230",
+          "last_updated_datetime": "2024-04-19 15:27:54",
+          "duration": "",
+          "share_url": "https://indiatoday-pdelivery.akamaized.net//comedy/lets-talk-cringe",
+          "n_short_desc": "Beware! This could be the most ridiculous, puke-worthy, nauseating and repulsive show ever!\r\n",
+          "icon_url": ""
+        },
+        {
           "id": "320288",
           "title": "Nothing But The Truth",
           "is_live": 1,
@@ -225,19 +238,6 @@
           "duration": "",
           "share_url": "https://indiatoday-pdelivery.akamaized.net//lifestyle/the-fashion-scoop",
           "n_short_desc": "Your guide to trends, insights, and style stories, because fashion should be as fun as it looks!\r\n\r\n",
-          "icon_url": ""
-        },
-        {
-          "id": "464887",
-          "title": "Let's Talk Cringe",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "Beware! This could be the most ridiculous, puke-worthy, nauseating and repulsive show ever!\r\n",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/lets-talk-cringe-final-3.jpg?size=230:230",
-          "last_updated_datetime": "2024-04-19 15:27:54",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//comedy/lets-talk-cringe",
-          "n_short_desc": "Beware! This could be the most ridiculous, puke-worthy, nauseating and repulsive show ever!\r\n",
           "icon_url": ""
         }
       ]
