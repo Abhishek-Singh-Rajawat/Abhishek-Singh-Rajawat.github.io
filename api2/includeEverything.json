@@ -1,251 +1,167 @@
 {
-  "status_code": "1",
-  "status_message": "",
-  "data": [
-    {
-      "id": 287811,
-      "title": "Latest",
-      "type": "featured",
-      "underline_colour": "",
-      "more_url": "",
-      "news": [
-        {
-          "id": "1040448",
-          "title": "India are T20 world champions again: Sorry Rohit, Sorry Virat, Sorry Dravid | Sledging Room, S2 Ep 42",
-          "is_live": 1,
-          "audio_url": "https://api.spreaker.com/v2/episodes/60567168/play.mp3",
-          "large_image": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202407/sledging_ep_42-one_one_2.png?size=1200:1200",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202407/sledging_ep_42-one_one_2.png?size=230:230",
-          "last_updated_datetime": "2024-07-02 12:11:55",
-          "duration": "45:09",
-          "share_url": "https://podcasts.indiatoday.in/sports/sledging-room/india-are-t20-world-champions-again-sorry-rohit-sorry-virat-sorry-dravid-sledging-room-s2-ep-42-1040448-2024-07-01",
-          "n_short_desc": "There were other heroes as well. Jasprit Bumrah stood out from the rest and showed why he is one of the best in the world. Arshdeep Singh stepped up and came up with a record performance that will be remembered for the ages. Axar Patel emerged as India’s new all-round hero. Suryakumar Yadav chipped in with crucial contributions. It was a complete team effort. What next for India? Will Gautam Gambhir take over? Should Hardik Pandya replace Rohit Sharma as the T20I captain?",
-          "icon_url": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/1.png",
-          "ctime": "2024-07-01 21:06:06",
-          "cat_id": "346686"
-        },
-        {
-          "id": "1040396",
-          "title": " What happens when the drugs don't work? | Health Wealth, Ep 49",
-          "is_live": 1,
-          "audio_url": "https://api.spreaker.com/v2/episodes/60566430/play.mp3",
-          "large_image": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202407/health-wealth_thumbnail-one_one.jpg?size=1200:1200",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202407/health-wealth_thumbnail-one_one.jpg?size=230:230",
-          "last_updated_datetime": "2024-07-02 12:13:24",
-          "duration": "33:43",
-          "share_url": "https://podcasts.indiatoday.in/health/health-wealth/what-happens-when-the-drugs-dont-work-health-wealth-ep-49-1040396-2024-07-01",
-          "n_short_desc": "In this episode, Anirban Mahapatra, microbiologist and author of When The Drugs Don't Work: The Hidden Pandemic that Could End Modern Medicine, walks us through the complexities and realities of bacteria and antibiotics. Tune in to find out whether humans will be able to win the war against these tiny powerful creatures who were possibly the first life on land.",
-          "icon_url": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/2.png",
-          "ctime": "2024-07-01 19:58:39",
-          "cat_id": "424643"
-        },
-        {
-          "id": "1038562",
-          "title": "T20 WC Final Preview: Will Rohit Sharma's India be third time lucky? | Sledging Room, S02 Ep 41",
-          "is_live": 1,
-          "audio_url": "https://api.spreaker.com/v2/episodes/60541186/play.mp3",
-          "large_image": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/sledging_ep_41-one_one.jpg?size=1200:1200",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/sledging_ep_41-one_one.jpg?size=230:230",
-          "last_updated_datetime": "2024-06-28 23:01:41",
-          "duration": "24:58",
-          "share_url": "https://podcasts.indiatoday.in/sports/sledging-room/t20-wc-final-preview-will-rohit-sharmas-india-be-third-time-lucky-sledging-room-s02-ep-41-1038562-2024-06-28",
-          "n_short_desc": "India's campaign in the tournament has mirrored their performance in the home ODI World Cup last year. They cruised into the final unbeaten, only to be outdone by Australia on the big stage. This time, they remain unbeaten and have been the standout team of the tournament. Crucially, Australia, who thwarted their hopes previously, are not in their path to an elusive trophy. South Africa, whose sole ICC event victory was in the 1998 Champions Trophy (then called the ICC Knock-Out Trophy), approached the final with their hopes and dreams. Often labeled as \"chokers\" throughout their international cricket history, the Proteas are determined to shed this reputation at the Kensington Oval.",
-          "icon_url": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/3.png",
-          "ctime": "2024-06-28 22:59:32",
-          "cat_id": "346686"
-        },
-        {
-          "id": "1038559",
-          "title": "How to Fix The  EXAM MESS | Nothing But The Truth, S2, Ep 45",
-          "is_live": 1,
-          "audio_url": "https://api.spreaker.com/v2/episodes/60541094/play.mp3",
-          "large_image": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/podcast-one_one.jpg?size=1200:1200",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/podcast-one_one.jpg?size=230:230",
-          "last_updated_datetime": "2024-06-28 22:55:28",
-          "duration": "25:08",
-          "share_url": "https://podcasts.indiatoday.in/news/nothing-but-the-truth/how-to-fix-the-exam-mess-nothing-but-the-truth-s2-ep-45-1038559-2024-06-28",
-          "n_short_desc": "As serious leaks and lapses disrupt four national exams and the future of millions of Indian students, how to reform the National Testing Agency and make entrance examinations 100 per cent foolproof.",
-          "icon_url": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/4.png",
-          "ctime": "2024-06-28 22:52:09",
-          "cat_id": "320288"
-        },
-        {
-          "id": "1037410",
-          "title": "How a deal for armoured vehicles from US threatens Make in India | In Our Defence, S02, Ep 28",
-          "is_live": 1,
-          "audio_url": "https://api.spreaker.com/v2/episodes/60526617/play.mp3",
-          "large_image": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/28-one_one.jpg?size=1200:1200",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/28-one_one.jpg?size=230:230",
-          "last_updated_datetime": "2024-06-27 17:39:49",
-          "duration": "49:17",
-          "share_url": "https://podcasts.indiatoday.in/politics-&-history/in-our-defence/how-a-deal-for-armoured-vehicles-from-us-threatens-make-in-india-in-our-defence-s02-ep-28-1037410-2024-06-27",
-          "n_short_desc": "They raise the larger question: Does India need this deal? With private players like Mahindra, Tata, or Ashok Leyland, couldn't India build something similar, given that the Stryker ICVs have few exemplary specifications? “I am not saying that India can do better than the Stryker right now, but we sure can get close,” says Shiv. They also explore how a deal for armoured vehicles from the US might threaten the 'Make in India' initiative.",
-          "icon_url": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/5.png",
-          "ctime": "2024-06-27 15:49:17",
-          "cat_id": "320301"
-        },
-        {
-          "id": "1036808",
-          "title": "The Untold Truths of Modeling and Beauty Pageants | Ft. Vartika Singh | The Fashion Scoop, Ep 22",
-          "is_live": 1,
-          "audio_url": "https://api.spreaker.com/v2/episodes/60515990/play.mp3",
-          "large_image": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/fashion_scoop_ep221-one_one.jpg?size=1200:1200",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/fashion_scoop_ep221-one_one.jpg?size=230:230",
-          "last_updated_datetime": "2024-07-03 17:24:35",
-          "duration": "42:52",
-          "share_url": "https://podcasts.indiatoday.in/lifestyle/the-fashion-scoop/the-untold-truths-of-modeling-and-beauty-pageants-ft-vartika-singh-the-fashion-scoop-ep-22-1036808-2024-06-26",
-          "n_short_desc": "In this episode, you get to meet her, and she also busts some myths about being a model in 2024. It's not all glitz and glamour—it's about grit, determination, and seizing every opportunity. In modelling, women dominate the scene and earn more than their male counterparts. ",
-          "icon_url": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/6.png",
-          "ctime": "2024-06-26 19:01:28",
-          "cat_id": "456839"
-        },
-        {
-          "id": "1036104",
-          "title": "Dagestan Attack: Is Putin’s Hubris Making Moscow Ignore Forewarnings Of Islamist Militancy? | Geeta's World, Ep 95",
-          "is_live": 1,
-          "audio_url": "https://api.spreaker.com/v2/episodes/60504493/play.mp3",
-          "large_image": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/95_0-one_one.jpg?size=1200:1200",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/podcast/202406/95_0-one_one.jpg?size=230:230",
-          "last_updated_datetime": "2024-06-25 21:03:46",
-          "duration": "33:09",
-          "share_url": "https://podcasts.indiatoday.in/politics-&-history/geetas-world/dagestan-attack-is-putins-hubris-making-moscow-ignore-forewarnings-of-islamist-militancy-geetas-world-ep-95-1036104-2024-06-25",
-          "n_short_desc": "And despite evidence of homegrown terrorism in Russia, President Putin insists that Russia cannot be a target of Islamic fundamentalist attacks. Instead, it pins the blame on Ukraine. What explains this reluctance to acknowledge the presence of Islamic fundamentalists and the underlying resentment among Muslim conservatives in Russia?",
-          "icon_url": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/7.png",
-          "ctime": "2024-06-25 20:38:54",
-          "cat_id": "320309"
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "title": "News",
-      "type": "sub_category",
-      "underline_colour": "",
-      "more_url": "/podcast/news",
-      "news": [
-        {
-          "id": "464887",
-          "title": "Let's Talk Cringe",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "Beware! This could be the most ridiculous, puke-worthy, nauseating and repulsive show ever!\r\n",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/lets-talk-cringe-final-3.jpg?size=230:230",
-          "last_updated_datetime": "2024-04-19 15:27:54",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//comedy/lets-talk-cringe",
-          "n_short_desc": "Beware! This could be the most ridiculous, puke-worthy, nauseating and repulsive show ever!\r\n",
-          "icon_url": ""
-        },
-        {
-          "id": "320288",
-          "title": "Nothing But The Truth",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "For clarity and perspective on key issues confronting India and the clear truth that emerges!",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/b57020f1-5b15-4d9a-9d22-d5bc890facf5.jpg?size=230:230",
-          "last_updated_datetime": "2023-08-21 12:49:36",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//news/nothing-but-the-truth",
-          "n_short_desc": "For clarity and perspective on key issues confronting India and the clear truth that emerges!",
-          "icon_url": ""
-        },
-        {
-          "id": "320301",
-          "title": "In Our Defence",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "Unleash the fiery and frosty details of nations' defense strategies!",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/in-our-defence-season-1-1.jpg?size=230:230",
-          "last_updated_datetime": "2024-05-24 19:19:20",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//politics-history/in-our-defence",
-          "n_short_desc": "Unleash the fiery and frosty details of nations' defense strategies!",
-          "icon_url": ""
-        },
-        {
-          "id": "320309",
-          "title": "Geeta's World",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "Your geopolitical popsicle of intriguing stories of international relations and world politics.\r\n",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/geeta-1_0.jpg?size=230:230",
-          "last_updated_datetime": "2024-01-25 12:23:35",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//politics-history/geetas-world",
-          "n_short_desc": "Your geopolitical popsicle of intriguing stories of international relations and world politics.\r\n",
-          "icon_url": ""
-        },
-        {
-          "id": "346686",
-          "title": "Sledging Room",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "A weekly dose of cricket banter where politeness takes a backseat!",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/sledging-1-1-copy.jpg?size=230:230",
-          "last_updated_datetime": "2023-12-06 17:47:21",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//sports/sledging-room",
-          "n_short_desc": "A weekly dose of cricket banter where politeness takes a backseat!",
-          "icon_url": ""
-        },
-        {
-          "id": "422750",
-          "title": "Rewind",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "Let's Rewind India's most storied moments in the Cricket World Cup!",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/rewind-1.jpg?size=230:230",
-          "last_updated_datetime": "2023-08-07 13:57:47",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//sports/rewind",
-          "n_short_desc": "Let's Rewind India's most storied moments in the Cricket World Cup!",
-          "icon_url": ""
-        },
-        {
-          "id": "374160",
-          "title": "The Right Swipe",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "Swipe right into the comical, embarrassing, and frustrating world of dating!",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/the-right-swipe-1400_0.jpg?size=230:230",
-          "last_updated_datetime": "2024-02-01 12:25:34",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//society-culture/the-right-swipe",
-          "n_short_desc": "Swipe right into the comical, embarrassing, and frustrating world of dating!",
-          "icon_url": ""
-        },
-        {
-          "id": "424643",
-          "title": "Health Wealth",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "Understanding science behind health, so that you never have to stress about it again!",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/health-wealth.jpg?size=230:230",
-          "last_updated_datetime": "2023-08-16 14:52:48",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//health/health-wealth",
-          "n_short_desc": "Understanding science behind health, so that you never have to stress about it again!",
-          "icon_url": ""
-        },
-        {
-          "id": "456839",
-          "title": "The Fashion Scoop",
-          "is_live": 1,
-          "audio_url": "",
-          "flash_text": "Your guide to trends, insights, and style stories, because fashion should be as fun as it looks!\r\n\r\n",
-          "thumbnail_url": "https://akm-img-a-in.tosshub.com/lingo/itpod/images/category/2-1.jpg?size=230:230",
-          "last_updated_datetime": "2024-04-19 15:27:44",
-          "duration": "",
-          "share_url": "https://indiatoday-pdelivery.akamaized.net//lifestyle/the-fashion-scoop",
-          "n_short_desc": "Your guide to trends, insights, and style stories, because fashion should be as fun as it looks!\r\n\r\n",
-          "icon_url": ""
-        }
-      ]
-    }
-  ],
-  "cache": {
-    "redis_ttl": "300",
-    "akamai_ttl": "500"
-  },
-  "data_source": "D"
+"status_code": "1",
+"status_message": "",
+"data": {
+"category_id": "1837202",
+"category_title": "Dance",
+"id": "2294235",
+"title": "safari",
+"large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=749:421",
+"image_credit": "",
+"image_caption": "",
+"is_cover_video": 0,
+"cover_video_url": "",
+"app_video_caption": "",
+"updated_datetime": "2024-07-11 15:51:01",
+"published_datetime": "2024-07-11 15:25:51",
+"buzzflag": "0",
+"techflag": "0",
+"location": null,
+"star_cast": "",
+"rating": {},
+"director": "",
+"movie_plot": "",
+"share_link": "https://alpha-indiatoday.intoday.in/dance/story/safari-2294235-2024-07-11",
+"snappost": {},
+"comment_count": "0",
+"is_sponsored": "0",
+"sponsored_icon": "",
+"sponsored_url": "",
+"is_anchor_tag": 0,
+"desc_withouthtml": "\nThe thing with remakes is that it's easy to call the bad ones out. Fortunately for Akshay Kumar's 'Sarfira', the Hindi remake is directed by Sudha Kongara, who also directed the original Tamil film - 'Soorarai Pottru'.  Starring south superstar Suriya in the lead role, the Tamil film had a lot going for it. So how does one top the original or even come close to it? Well, the answer lies in the attention to detail and how well you interpret the film in a totally different setting.ADS\n\n'Sarfira' is based on the true story of GR Gopinath who pioneered the first low-cost airline in India. Hailing from a small village, he decided to dream big and overcame many obstacles on the path before making his dreams come true.\n\nIn 'Sarfira', Akshay Kumar plays Vir Mhatre, an ex-army officer who has faced rejection at the hands of his superiors but has never given up. His ambition of providing affordable air travel to millions of Indians is a dream that finds several thorns in its path to success. The biggest one being air tycoon Paresh Goswami (Paresh Rawal), who makes sure every step that Vir takes is setback immediately. But Vir is not alone in this fight. He has his feisty wife Rani (Radhika Madan) by his side and an entire village to support his endeavour. But does he achieve what he's set out to do and will Paresh kill his spirit and clip his wings? 'Sarfira' answers not just these questions but reflects much more.ADS\n\nHere's the trailer:\n\n\n\n\n\nSudha Kongara's writing and her staging of scenes are the major highlights of the film. From the very first scene of a plane declaring 'Mayday' to deep diving into the psyche of Vir and his never-die attitude, the film has several high points. Kongara also takes Akshay Kumar back to the basics. The actor has made a solid comeback in a performance that is so rooted. His emotional scene when he breaks down in front of his mother, played by the brilliant Seema Biswas, is a reminder of how an actor should surrender to his director to be able to deliver an honest performance.ADS\n\nAkshay's portrayal of Vir Mhatre shows strife and struggle that often makes for engaging cinema. Despite his superstar status, he becomes the common man and shines in several scenes that allow him to emote and perform. Radhika Madan is absolutely brilliant in a performance that makes you wonder why filmmakers aren't giving her such diverse roles. Her initial scenes with Akshay where they get to know each other are a highlight in the film. Paresh Rawal's character is evil and his jugalbandi with Akshay will remind you of their timing and cinematic chemistry over the years.\n\nOn the flip side, the editing of 'Sarfira' is a bit lazy. The film could have easily been cut by 20 minutes and the songs are an avoidable distraction, providing no relief. However, Suriya's cameo towards the end makes up for the fatigue that starts to set in due to the long length.\n\n'Sarfira' is a return to form for Akshay Kumar and definitely worth a watch for the real-life drama it portrays.\n\n4 out of 5 stars for 'Sarfira'.\n\n      ",
+"desc_withhtml": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\">\n<html><body><div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>The thing with remakes is that it's easy to call the bad ones out. Fortunately for Akshay Kumar's 'Sarfira', the Hindi remake is directed by Sudha Kongara, who also directed the original Tamil film - 'Soorarai Pottru'.  Starring south superstar Suriya in the lead role, the Tamil film had a lot going for it. So how does one top the original or even come close to it? Well, the answer lies in the attention to detail and how well you interpret the film in a totally different setting.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP>\n\n<p>'Sarfira' is based on the true story of GR Gopinath who pioneered the first low-cost airline in India. Hailing from a small village, he decided to dream big and overcame many obstacles on the path before making his dreams come true.</p>\n\n<p>In 'Sarfira', Akshay Kumar plays Vir Mhatre, an ex-army officer who has faced rejection at the hands of his superiors but has never given up. His ambition of providing affordable air travel to millions of Indians is a dream that finds several thorns in its path to success. The biggest one being air tycoon Paresh Goswami (Paresh Rawal), who makes sure every step that Vir takes is setback immediately. But Vir is not alone in this fight. He has his feisty wife Rani (Radhika Madan) by his side and an entire village to support his endeavour. But does he achieve what he's set out to do and will Paresh kill his spirit and clip his wings? 'Sarfira' answers not just these questions but reflects much more.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP>\n\n<p>Here's the trailer:</p>\n\n<p><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/8Iy2geJD8HY?si=j57jrvo8vBW5bg4F\" title=\"YouTube video player\" width=\"100%\" class=\"multy-video-iframe\"></iframe></p>\n\n<p class=\"youtube-embed-wrapper\" style=\"position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden\"><iframe allow=\";\" allowfullscreen=\"\" frameborder=\"0\" height=\"360\" src=\"https://www.youtube.com/embed/8Iy2geJD8HY?rel=0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%\" width=\"100%\" class=\"multy-video-iframe\"></iframe></p>\n\n<p>Sudha Kongara's writing and her staging of scenes are the major highlights of the film. From the very first scene of a plane declaring 'Mayday' to deep diving into the psyche of Vir and his never-die attitude, the film has several high points. Kongara also takes Akshay Kumar back to the basics. The actor has made a solid comeback in a performance that is so rooted. His emotional scene when he breaks down in front of his mother, played by the brilliant Seema Biswas, is a reminder of how an actor should surrender to his director to be able to deliver an honest performance.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP>\n\n<p>Akshay's portrayal of Vir Mhatre shows strife and struggle that often makes for engaging cinema. Despite his superstar status, he becomes the common man and shines in several scenes that allow him to emote and perform. Radhika Madan is absolutely brilliant in a performance that makes you wonder why filmmakers aren't giving her such diverse roles. Her initial scenes with Akshay where they get to know each other are a highlight in the film. Paresh Rawal's character is evil and his <em>jugalbandi</em> with Akshay will remind you of their timing and cinematic chemistry over the years.</p>\n\n<p>On the flip side, the editing of 'Sarfira' is a bit lazy. The film could have easily been cut by 20 minutes and the songs are an avoidable distraction, providing no relief. However, Suriya's cameo towards the end makes up for the fatigue that starts to set in due to the long length.</p>\n\n<p>'Sarfira' is a return to form for Akshay Kumar and definitely worth a watch for the real-life drama it portrays.</p>\n\n<p><strong>4 out of 5 stars for 'Sarfira'.</strong></p>\n</div>\n      </body></html>",
+"article": [
+{
+"type": "para",
+"value": "<p>The thing with remakes is that it's easy to call the bad ones out. Fortunately for Akshay Kumar's 'Sarfira', the Hindi remake is directed by Sudha Kongara, who also directed the original Tamil film - 'Soorarai Pottru'.  Starring south superstar Suriya in the lead role, the Tamil film had a lot going for it. So how does one top the original or even come close to it? Well, the answer lies in the attention to detail and how well you interpret the film in a totally different setting.</p>"
+},
+{
+"type": "ads",
+"value": "<itg-nativeapp>ADS</itg-nativeapp>"
+},
+{
+"type": "para",
+"value": "<p>'Sarfira' is based on the true story of GR Gopinath who pioneered the first low-cost airline in India. Hailing from a small village, he decided to dream big and overcame many obstacles on the path before making his dreams come true.</p>"
+},
+{
+"type": "para",
+"value": "<p>In 'Sarfira', Akshay Kumar plays Vir Mhatre, an ex-army officer who has faced rejection at the hands of his superiors but has never given up. His ambition of providing affordable air travel to millions of Indians is a dream that finds several thorns in its path to success. The biggest one being air tycoon Paresh Goswami (Paresh Rawal), who makes sure every step that Vir takes is setback immediately. But Vir is not alone in this fight. He has his feisty wife Rani (Radhika Madan) by his side and an entire village to support his endeavour. But does he achieve what he's set out to do and will Paresh kill his spirit and clip his wings? 'Sarfira' answers not just these questions but reflects much more.</p>"
+},
+{
+"type": "ads",
+"value": "<itg-nativeapp>ADS</itg-nativeapp>"
+},
+{
+"type": "para",
+"value": "<p>Here's the trailer:</p>"
+},
+{
+"type": "embed",
+"value": "<iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"315\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/8Iy2geJD8HY?si=j57jrvo8vBW5bg4F\" title=\"YouTube video player\" width=\"100%\" class=\"multy-video-iframe\"></iframe>"
+},
+{
+"type": "embed",
+"value": "<iframe allow=\";\" allowfullscreen=\"\" frameborder=\"0\" height=\"360\" src=\"https://www.youtube.com/embed/8Iy2geJD8HY?rel=0\" width=\"100%\" class=\"multy-video-iframe\"></iframe>"
+},
+{
+"type": "para",
+"value": "<p>Sudha Kongara's writing and her staging of scenes are the major highlights of the film. From the very first scene of a plane declaring 'Mayday' to deep diving into the psyche of Vir and his never-die attitude, the film has several high points. Kongara also takes Akshay Kumar back to the basics. The actor has made a solid comeback in a performance that is so rooted. His emotional scene when he breaks down in front of his mother, played by the brilliant Seema Biswas, is a reminder of how an actor should surrender to his director to be able to deliver an honest performance.</p>"
+},
+{
+"type": "ads",
+"value": "<itg-nativeapp>ADS</itg-nativeapp>"
+},
+{
+"type": "para",
+"value": "<p>Akshay's portrayal of Vir Mhatre shows strife and struggle that often makes for engaging cinema. Despite his superstar status, he becomes the common man and shines in several scenes that allow him to emote and perform. Radhika Madan is absolutely brilliant in a performance that makes you wonder why filmmakers aren't giving her such diverse roles. Her initial scenes with Akshay where they get to know each other are a highlight in the film. Paresh Rawal's character is evil and his <em>jugalbandi</em> with Akshay will remind you of their timing and cinematic chemistry over the years.</p>"
+},
+{
+"type": "para",
+"value": "<p>On the flip side, the editing of 'Sarfira' is a bit lazy. The film could have easily been cut by 20 minutes and the songs are an avoidable distraction, providing no relief. However, Suriya's cameo towards the end makes up for the fatigue that starts to set in due to the long length.</p>"
+},
+{
+"type": "para",
+"value": "<p>'Sarfira' is a return to form for Akshay Kumar and definitely worth a watch for the real-life drama it portrays.</p>"
+},
+{
+"type": "para",
+"value": "<p><strong>4 out of 5 stars for 'Sarfira'.</strong><span id=\"rectangle\" style=\"width:8px; height:8px; background-color:red; display:inline-block \"></span></p>"
+}
+],
+"related_content": [],
+"native_video": [],
+"tag": [],
+"highlight": [],
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"listicles": {
+"templates": "bullet_points",
+"title": null,
+"data": [
+{
+"description": null,
+"type": "",
+"color": ""
+}
+]
+},
+"tech_photo_gallery": [],
+"tech_photos": [],
+"tech_pros_cons": {},
+"polls": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"factcheck": {},
+"expert-chunk": {},
+"author": {
+"a_id": "2292030",
+"a_title": "India Today Business Desk",
+"a_twitter_handler": "",
+"a_is_inactive_profile": 0,
+"a_facebook": "",
+"a_designation": "",
+"a_email": "desk-itgd@intoday.com",
+"a_image": "https://static-dev.indiatodayonline.in/indiatoday/images/author/IndiaToday_10_2-profile_image_one_to_one.jpg",
+"path": "https://alpha-indiatoday.intoday.in/author/india-today-business-desk"
+},
+"authors": [
+{
+"a_id": "2292030",
+"a_title": "India Today Business Desk",
+"a_twitter_handler": "",
+"a_is_inactive_profile": 0,
+"a_facebook": "",
+"a_designation": "",
+"a_email": "desk-itgd@intoday.com",
+"a_image": "https://static-dev.indiatodayonline.in/indiatoday/images/author/IndiaToday_10_2-profile_image_one_to_one.jpg",
+"path": "https://alpha-indiatoday.intoday.in/author/india-today-business-desk"
+}
+],
+"action_type": "",
+"editors": [],
+"body_ender_text": "",
+"in_this_story": [],
+"read_more": {
+"heading_text": "",
+"embed_video": "",
+"links": [
+{
+"link_title": "",
+"link_url": ""
+}
+]
+},
+"also_read": [
+{
+"slug": "",
+"title": "",
+"share_link": ""
+}
+]
+},
+"cache": {
+"redis_ttl": "120",
+"akamai_ttl": "2592000"
+},
+"data_source": "R"
 }
