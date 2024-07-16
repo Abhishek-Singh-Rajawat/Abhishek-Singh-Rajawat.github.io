@@ -61,7 +61,7 @@
 },
 {
 "type": "embed",
-"value": "<iframe allow=\";\" allowfullscreen=\"\" frameborder=\"0\" height=\"360\" src=\"https://www.youtube.com/embed/8Iy2geJD8HY?rel=0\" width=\"100%\" class=\"multy-video-iframe\"></iframe>"
+"value": "<iframe allow=\";\" allowfullscreen=\"\" frameborder=\"0\" height=\"300\" src=\"https://www.youtube.com/embed/8Iy2geJD8HY?rel=0\" width=\"100%\" class=\"multy-video-iframe\"></iframe>"
 },
 {
 "type": "para",
