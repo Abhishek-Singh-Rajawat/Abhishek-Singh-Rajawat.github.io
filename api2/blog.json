@@ -9,7 +9,7 @@
     "short_desc": "HDFC Bank Ltd stock price: HDFC Bank Ltd shares closed 0.09% lower at ₹1,444.85 in the previous trading session. The market capitalisation of the HDFC Bank Ltd was ₹10.97 Lakh Cr. The stock’s 52-week high and 52-week low stood at ₹1,757.50 and ₹1,380.25 respectivey",
     "is_published": "1",
     "new_blog": "1",
-    "is_blinker_enabled": "true",
+    "is_blinker_enabled": true,
     "live_tv": "0",
     "live_tv_detail": {
       "type_label": "livestreamwidget",
