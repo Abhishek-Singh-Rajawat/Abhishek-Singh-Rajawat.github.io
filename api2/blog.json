@@ -16,7 +16,7 @@
       "title": "LIVE TV",
       "short_url": "https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8",
       "youtube_id": "sYZtOFzM78M",
-      "autoplay": false
+      "autoplay": true
     },
     "title": "US launches airstrike against Islamic State in Afghanistan after Kabul blasts",
     "sub_title": "Babri Masjid Demolition Verdict Updates",
