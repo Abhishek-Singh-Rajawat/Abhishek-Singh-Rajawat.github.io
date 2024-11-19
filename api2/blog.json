@@ -10,7 +10,7 @@
     "is_published": "1",
     "new_blog": "1",
     "is_blinker_enabled": true,
-    "live_tv": "1",
+    "live_tv": "0",
     "live_tv_detail": {
       "type_label": "livestreamwidget",
       "title": "LIVE TV",
