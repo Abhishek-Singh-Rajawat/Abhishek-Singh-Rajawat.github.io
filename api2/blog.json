@@ -65,7 +65,7 @@
 },
 {
 "type": "embed",
-"value": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"height: 300px; width: 609.481px;\">\n<caption>Testing</caption>\n<tbody>\n<tr>\n\t<td style=\"width: 72px;\">Facebook</td>\n\t<td style=\"width: 124px;\">Netflix</td>\n\t<td style=\"width: 146px;\">Amazon Prime Video</td>\n\t<td style=\"width: 116px;\">\n\t<p>Amazon Prime music</p>\n\t</td>\n\t<td style=\"width: 126px;\">adasdasdadsadsadsaads</td>\n</tr>\n<tr>\n\t<td style=\"width: 72px;\"> </td>\n\t<td style=\"width: 124px;\"> </td>\n\t<td style=\"width: 146px;\"> </td>\n\t<td style=\"width: 116px;\"> </td>\n\t<td style=\"width: 126px;\"> </td>\n</tr>\n<tr>\n\t<td style=\"width: 72px;\"> </td>\n\t<td style=\"width: 124px;\"> </td>\n\t<td style=\"width: 146px;\"> </td>\n\t<td style=\"width: 116px;\"> </td>\n\t<td style=\"width: 126px;\"> </td>\n</tr>\n</tbody>\n</table>"
+"value": "<div style=\"overflow:auto;  width: 500px\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"height: 300px; width: 609.481px;\">\n<caption>Testing</caption>\n<tbody>\n<tr>\n\t<td style=\"width: 72px;\">Facebook</td>\n\t<td style=\"width: 124px;\">Netflix</td>\n\t<td style=\"width: 146px;\">Amazon Prime Video</td>\n\t<td style=\"width: 116px;\">\n\t<p>Amazon Prime music</p>\n\t</td>\n\t<td style=\"width: 126px;\">adasdasdadsadsadsaads</td>\n</tr>\n<tr>\n\t<td style=\"width: 72px;\"> </td>\n\t<td style=\"width: 124px;\"> </td>\n\t<td style=\"width: 146px;\"> </td>\n\t<td style=\"width: 116px;\"> </td>\n\t<td style=\"width: 126px;\"> </td>\n</tr>\n<tr>\n\t<td style=\"width: 72px;\"> </td>\n\t<td style=\"width: 124px;\"> </td>\n\t<td style=\"width: 146px;\"> </td>\n\t<td style=\"width: 116px;\"> </td>\n\t<td style=\"width: 126px;\"> </td>\n</tr>\n</tbody>\n</table></div>"
 },
 {
 "type": "para",
@@ -73,7 +73,7 @@
 },
 {
 "type": "embed",
-"value": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"height: 250px; width: 250px;\">\n<tbody>\n<tr>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n</tr>\n<tr>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n</tr>\n<tr>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n</tr>\n</tbody>\n</table>"
+"value": "<div style=\"overflow:auto;  width: 500px\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"height: 250px; width: 250px;\">\n<tbody>\n<tr>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n</tr>\n<tr>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n</tr>\n<tr>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n\t<td> </td>\n</tr>\n</tbody>\n</table></div>"
 },
 {
 "type": "para",
@@ -85,7 +85,7 @@
 },
 {
 "type": "embed",
-"value": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\n<tbody>\n<tr>\n\t<td>Ram</td>\n\t<td>Laxman</td>\n\t<td>Bharat</td>\n</tr>\n<tr>\n\t<td>Dhashrat</td>\n\t<td>Janak</td>\n\t<td>Shatrughan</td>\n</tr>\n<tr>\n\t<td>Hanuman</td>\n\t<td>Site</td>\n\t<td>Bali</td>\n</tr>\n</tbody>\n</table>"
+"value": "<div style=\"overflow:auto;  width: 500px\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\n<tbody>\n<tr>\n\t<td>Ram</td>\n\t<td>Laxman</td>\n\t<td>Bharat</td>\n</tr>\n<tr>\n\t<td>Dhashrat</td>\n\t<td>Janak</td>\n\t<td>Shatrughan</td>\n</tr>\n<tr>\n\t<td>Hanuman</td>\n\t<td>Site</td>\n\t<td>Bali</td>\n</tr>\n</tbody>\n</table></div>"
 },
 {
 "type": "para",
@@ -141,7 +141,7 @@
 },
 {
 "type": "embed",
-"value": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\n<tbody>\n<tr>\n\t<td>Title</td>\n\t<td>Price</td>\n</tr>\n<tr>\n\t<td>The company is trading at a 3% discount, pointing towards a likely loss for initial investors.</td>\n\t<td>50</td>\n</tr>\n<tr>\n\t<td>Market experts are cautious about Ola Electric's listing prospects, highlighting the company's ongoing losses despite rising revenues.</td>\n\t<td>70</td>\n</tr>\n</tbody>\n</table>"
+"value": "<div style=\"overflow:auto;  width: 500px\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\n<tbody>\n<tr>\n\t<td>Title</td>\n\t<td>Price</td>\n</tr>\n<tr>\n\t<td>The company is trading at a 3% discount, pointing towards a likely loss for initial investors.</td>\n\t<td>50</td>\n</tr>\n<tr>\n\t<td>Market experts are cautious about Ola Electric's listing prospects, highlighting the company's ongoing losses despite rising revenues.</td>\n\t<td>70</td>\n</tr>\n</tbody>\n</table></div>"
 },
 {
 "type": "para",
