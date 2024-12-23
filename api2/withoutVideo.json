@@ -1,706 +1,311 @@
 {
-  "data": {
-    "title": "Widget",
-    "label": "Widget",
-    "label_url": "https://widget",
-    "state": [
-      {
-        "id": 84,
-        "state_name": "Haryana",
-        "state_name_h": "हरियाणा",
-        "state_name_bn": "Haryana",
-        "state_name_ml": "Haryana",
-        "active": "4",
-        "tally_ordering": "18",
-        "tally_ordering_h": "12",
-        "is_display_tally": "1",
-        "is_display_tally_h": "1",
-        "tally_ordering_bn": "1",
-        "is_display_tally_bn": "1",
-        "tally_ordering_ml": "1",
-        "is_display_tally_ml": "1",
-        "updated_at": "2024-09-30 16:06:01",
-        "tally_ordering_lt": "1",
-        "is_display_tally_lt": "1",
-        "seat_count": "90",
-        "show_data_at": "1",
-        "show_data_it": "1",
-        "show_data_atbn": "1",
-        "show_data_itml": "1",
-        "show_data_lt": "1",
-        "assembly": "1",
-        "status": "1",
-        "loader_image": "https://akm-img-a-in.tosshub.com/sites/elections/static/images/exit-poll/haryana-loader.gif",
-        "loader_image_h": "https://akm-img-a-in.tosshub.com/sites/elections/static/images/exit-poll/haryana-loader-h.gif",
-        "half_way_mark": 46
-      },
-      {
-        "id": 85,
-        "state_name": "Jammu and Kashmir",
-        "state_name_h": "जम्मू-कश्मीर",
-        "state_name_bn": "Jammu and Kashmir",
-        "state_name_ml": "Jammu and Kashmir",
-        "active": "4",
-        "tally_ordering": "20",
-        "tally_ordering_h": "16",
-        "is_display_tally": "1",
-        "is_display_tally_h": "1",
-        "tally_ordering_bn": "1",
-        "is_display_tally_bn": "1",
-        "tally_ordering_ml": "1",
-        "is_display_tally_ml": "1",
-        "updated_at": "2024-09-30 16:06:01",
-        "tally_ordering_lt": "1",
-        "is_display_tally_lt": "1",
-        "seat_count": "90",
-        "show_data_at": "1",
-        "show_data_it": "1",
-        "show_data_atbn": "1",
-        "show_data_itml": "1",
-        "show_data_lt": "1",
-        "assembly": "1",
-        "status": "1",
-        "loader_image": "https://akm-img-a-in.tosshub.com/sites/elections/static/images/exit-poll/jammu-and-kashmir-loader.gif",
-        "loader_image_h": "https://akm-img-a-in.tosshub.com/sites/elections/static/images/exit-poll/jammu-and-kashmir-loader-h.gif",
-        "half_way_mark": 46
-      }
-    ],
-    "state_detail": [
-      {
-        "state_id": "S84_2021",
-        "state_info": {
-          "id": 84,
-          "state_name": "Haryana",
-          "state_name_h": "हरियाणा",
-          "state_name_bn": "Haryana",
-          "state_name_ml": "Haryana",
-          "active": "4",
-          "tally_ordering": "18",
-          "tally_ordering_h": "12",
-          "is_display_tally": "1",
-          "is_display_tally_h": "1",
-          "tally_ordering_bn": "1",
-          "is_display_tally_bn": "1",
-          "tally_ordering_ml": "1",
-          "is_display_tally_ml": "1",
-          "updated_at": "2024-09-30 16:06:01",
-          "tally_ordering_lt": "1",
-          "is_display_tally_lt": "1",
-          "seat_count": "90",
-          "show_data_at": "1",
-          "show_data_it": "1",
-          "show_data_atbn": "1",
-          "show_data_itml": "1",
-          "show_data_lt": "1",
-          "assembly": "1",
-          "status": "1",
-          "loader_image": "https://akm-img-a-in.tosshub.com/sites/elections/static/images/exit-poll/haryana-loader.gif",
-          "loader_image_h": "https://akm-img-a-in.tosshub.com/sites/elections/static/images/exit-poll/haryana-loader-h.gif",
-          "half_way_mark": 46
-        },
-        "agency_detail": [
-          {
-            "id": 1527,
-            "order": "1",
-            "is_display": "1",
-            "show_data": "1",
-            "name": "India Today-Axis My India",
-            "name_h": "इंडिया टुडे- एक्सिस माय इंडिया",
-            "name_bn": "India Today Axis My India",
-            "name_ml": "India Today Axis My India",
-            "color": "#96288B",
-            "logo": null,
-            "party_detail": [
-              {
-                "name": "BJP",
-                "name_h": "BJP",
-                "name_bn": "BJP",
-                "name_ml": "BJP",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 25,
-                "projected_seat": "20-25"
-              },
-              {
-                "name": "CONG",
-                "name_h": "CONG",
-                "name_bn": "CONG",
-                "name_ml": "CONG",
-                "color": "#1CA9ED",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg",
-                "party_order": "1",
-                "average_seat": 12,
-                "projected_seat": "10-10"
-              },
-              {
-                "name": "INLD",
-                "name_h": "INLD",
-                "name_bn": "INLD",
-                "name_ml": "INLD",
-                "color": "#980b7c",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/Indian-National-Lok-Dal.jpg",
-                "party_order": "1",
-                "average_seat": 23,
-                "projected_seat": "20-21"
-              },
-              {
-                "name": "JJP",
-                "name_h": "JJP",
-                "name_bn": "JJP",
-                "name_ml": "JJP",
-                "color": "#22B14C",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/jjp.jpg",
-                "party_order": "1",
-                "average_seat": 13,
-                "projected_seat": "10-12"
-              },
-              {
-                "name": "OTH",
-                "name_h": "OTH",
-                "name_bn": "OTH",
-                "name_ml": "OTH",
-                "color": "#A3A3A3",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/others.jpg",
-                "party_order": "1",
-                "average_seat": 17,
-                "projected_seat": "15-15"
-              }
-            ]
-          },
-          {
-            "id": 1536,
-            "order": "3",
-            "is_display": "1",
-            "show_data": "1",
-            "name": "Times Now",
-            "name_h": "Times Now",
-            "name_bn": "Times Now",
-            "name_ml": "Times Now",
-            "color": "#B42730",
-            "logo": null,
-            "party_detail": [
-              {
-                "name": "BJP",
-                "name_h": "BJP",
-                "name_bn": "BJP",
-                "name_ml": "BJP",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "CONG",
-                "name_h": "CONG",
-                "name_bn": "CONG",
-                "name_ml": "CONG",
-                "color": "#1CA9ED",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "INLD",
-                "name_h": "INLD",
-                "name_bn": "INLD",
-                "name_ml": "INLD",
-                "color": "#980b7c",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/Indian-National-Lok-Dal.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "JJP",
-                "name_h": "JJP",
-                "name_bn": "JJP",
-                "name_ml": "JJP",
-                "color": "#22B14C",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/jjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "OTH",
-                "name_h": "OTH",
-                "name_bn": "OTH",
-                "name_ml": "OTH",
-                "color": "#A3A3A3",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/others.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              }
-            ]
-          },
-          {
-            "id": 1537,
-            "order": "3",
-            "is_display": "1",
-            "show_data": "1",
-            "name": "Jan Ki Baat",
-            "name_h": "जन की बात",
-            "name_bn": "Veto",
-            "name_ml": "Veto",
-            "color": "#00A5E3",
-            "logo": null,
-            "party_detail": [
-              {
-                "name": "BJP",
-                "name_h": "BJP",
-                "name_bn": "BJP",
-                "name_ml": "BJP",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "CONG",
-                "name_h": "CONG",
-                "name_bn": "CONG",
-                "name_ml": "CONG",
-                "color": "#1CA9ED",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "INLD",
-                "name_h": "INLD",
-                "name_bn": "INLD",
-                "name_ml": "INLD",
-                "color": "#980b7c",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/Indian-National-Lok-Dal.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "JJP",
-                "name_h": "JJP",
-                "name_bn": "JJP",
-                "name_ml": "JJP",
-                "color": "#22B14C",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/jjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "OTH",
-                "name_h": "OTH",
-                "name_bn": "OTH",
-                "name_ml": "OTH",
-                "color": "#A3A3A3",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/others.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              }
-            ]
-          },
-          {
-            "id": 1542,
-            "order": "4",
-            "is_display": "1",
-            "show_data": "1",
-            "name": "Matrize-Zee News",
-            "name_h": "Matrize-Zee News",
-            "name_bn": "Matrize-Zee News",
-            "name_ml": "Matrize-Zee News",
-            "color": "#A3A3A3",
-            "logo": "",
-            "party_detail": [
-              {
-                "name": "BJP",
-                "name_h": "BJP",
-                "name_bn": "BJP",
-                "name_ml": "BJP",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "CONG",
-                "name_h": "CONG",
-                "name_bn": "CONG",
-                "name_ml": "CONG",
-                "color": "#1CA9ED",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "INLD",
-                "name_h": "INLD",
-                "name_bn": "INLD",
-                "name_ml": "INLD",
-                "color": "#980b7c",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/Indian-National-Lok-Dal.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "JJP",
-                "name_h": "JJP",
-                "name_bn": "JJP",
-                "name_ml": "JJP",
-                "color": "#22B14C",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/jjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "OTH",
-                "name_h": "OTH",
-                "name_bn": "OTH",
-                "name_ml": "OTH",
-                "color": "#A3A3A3",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/others.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "state_id": "S85_2021",
-        "state_info": {
-          "id": 85,
-          "state_name": "Jammu and Kashmir",
-          "state_name_h": "जम्मू-कश्मीर",
-          "state_name_bn": "Jammu and Kashmir",
-          "state_name_ml": "Jammu and Kashmir",
-          "active": "4",
-          "tally_ordering": "20",
-          "tally_ordering_h": "16",
-          "is_display_tally": "1",
-          "is_display_tally_h": "1",
-          "tally_ordering_bn": "1",
-          "is_display_tally_bn": "1",
-          "tally_ordering_ml": "1",
-          "is_display_tally_ml": "1",
-          "updated_at": "2024-09-30 16:06:01",
-          "tally_ordering_lt": "1",
-          "is_display_tally_lt": "1",
-          "seat_count": "90",
-          "show_data_at": "1",
-          "show_data_it": "1",
-          "show_data_atbn": "1",
-          "show_data_itml": "1",
-          "show_data_lt": "1",
-          "assembly": "1",
-          "status": "1",
-          "loader_image": "https://akm-img-a-in.tosshub.com/sites/elections/static/images/exit-poll/jammu-and-kashmir-loader.gif",
-          "loader_image_h": "https://akm-img-a-in.tosshub.com/sites/elections/static/images/exit-poll/jammu-and-kashmir-loader-h.gif",
-          "half_way_mark": 46
-        },
-        "agency_detail": [
-          {
-            "id": 1548,
-            "order": "1",
-            "is_display": "1",
-            "show_data": "1",
-            "name": "India Today-Axis My India",
-            "name_h": "इंडिया टुडे- एक्सिस माय इंडिया",
-            "name_bn": "India Today Axis My India",
-            "name_ml": "India Today Axis My India",
-            "color": "#96288B",
-            "logo": null,
-            "party_detail": [
-              {
-                "name": "BJP",
-                "name_h": "BJP",
-                "name_bn": "BJP",
-                "name_ml": "BJP",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "CONG",
-                "name_h": "CONG",
-                "name_bn": "CONG",
-                "name_ml": "CONG",
-                "color": "#1CA9ED",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "JKPDP",
-                "name_h": "JKPDP",
-                "name_bn": "JKPDP",
-                "name_ml": "JKPDP",
-                "color": "#4c7013",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/pdp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "NC+",
-                "name_h": "NC+",
-                "name_bn": "NC+",
-                "name_ml": "NC+",
-                "color": "#9c0548",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/nc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "OTH",
-                "name_h": "OTH",
-                "name_bn": "OTH",
-                "name_ml": "OTH",
-                "color": "#A3A3A3",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/others.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              }
-            ]
-          },
-          {
-            "id": 1553,
-            "order": "3",
-            "is_display": "1",
-            "show_data": "1",
-            "name": "Times Now",
-            "name_h": "Times Now",
-            "name_bn": "Times Now",
-            "name_ml": "Times Now",
-            "color": "#B42730",
-            "logo": null,
-            "party_detail": [
-              {
-                "name": "BJP",
-                "name_h": "BJP",
-                "name_bn": "BJP",
-                "name_ml": "BJP",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "CONG",
-                "name_h": "CONG",
-                "name_bn": "CONG",
-                "name_ml": "CONG",
-                "color": "#1CA9ED",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "JKPDP",
-                "name_h": "JKPDP",
-                "name_bn": "JKPDP",
-                "name_ml": "JKPDP",
-                "color": "#4c7013",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/pdp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "NC+",
-                "name_h": "NC+",
-                "name_bn": "NC+",
-                "name_ml": "NC+",
-                "color": "#9c0548",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/nc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "OTH",
-                "name_h": "OTH",
-                "name_bn": "OTH",
-                "name_ml": "OTH",
-                "color": "#A3A3A3",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/others.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              }
-            ]
-          },
-          {
-            "id": 1558,
-            "order": "3",
-            "is_display": "1",
-            "show_data": "1",
-            "name": "Jan Ki Baat",
-            "name_h": "जन की बात",
-            "name_bn": "Veto",
-            "name_ml": "Veto",
-            "color": "#00A5E3",
-            "logo": null,
-            "party_detail": [
-              {
-                "name": "BJP",
-                "name_h": "BJP",
-                "name_bn": "BJP",
-                "name_ml": "BJP",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "BJD",
-                "name_h": "BJD",
-                "name_bn": "BJD",
-                "name_ml": "BJD",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "CONG",
-                "name_h": "CONG",
-                "name_bn": "CONG",
-                "name_ml": "CONG",
-                "color": "#1CA9ED",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "JKPDP",
-                "name_h": "JKPDP",
-                "name_bn": "JKPDP",
-                "name_ml": "JKPDP",
-                "color": "#4c7013",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/pdp.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "NC+",
-                "name_h": "NC+",
-                "name_bn": "NC+",
-                "name_ml": "NC+",
-                "color": "#9c0548",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/nc.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              },
-              {
-                "name": "OTH",
-                "name_h": "OTH",
-                "name_bn": "OTH",
-                "name_ml": "OTH",
-                "color": "#A3A3A3",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/others.jpg",
-                "party_order": "1",
-                "average_seat": 0,
-                "projected_seat": "0"
-              }
-            ]
-          },
-          {
-            "id": 1563,
-            "order": "4",
-            "is_display": "1",
-            "show_data": "1",
-            "name": "Matrize-Zee News",
-            "name_h": "Matrize-Zee News",
-            "name_bn": "Matrize-Zee News",
-            "name_ml": "Matrize-Zee News",
-            "color": "#A3A3A3",
-            "logo": "",
-            "party_detail": [
-              {
-                "name": "BJP",
-                "name_h": "BJP",
-                "name_bn": "BJP",
-                "name_ml": "BJP",
-                "color": "#ff550e",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bjp.jpg",
-                "party_order": "1",
-                "average_seat": 13,
-                "projected_seat": "10-13"
-              },
-              {
-                "name": "CONG",
-                "name_h": "CONG",
-                "name_bn": "CONG",
-                "name_ml": "CONG",
-                "color": "#1CA9ED",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg",
-                "party_order": "1",
-                "average_seat": 36,
-                "projected_seat": "30-35"
-              },
-              {
-                "name": "JKPDP",
-                "name_h": "JKPDP",
-                "name_bn": "JKPDP",
-                "name_ml": "JKPDP",
-                "color": "#4c7013",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/pdp.jpg",
-                "party_order": "1",
-                "average_seat": 49,
-                "projected_seat": "44-45"
-              },
-              {
-                "name": "NC+",
-                "name_h": "NC+",
-                "name_bn": "NC+",
-                "name_ml": "NC+",
-                "color": "#9c0548",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/nc.jpg",
-                "party_order": "1",
-                "average_seat": 23,
-                "projected_seat": "13-28"
-              },
-              {
-                "name": "OTH",
-                "name_h": "OTH",
-                "name_bn": "OTH",
-                "name_ml": "OTH",
-                "color": "#A3A3A3",
-                "logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/others.jpg",
-                "party_order": "1",
-                "average_seat": 23,
-                "projected_seat": "20-21"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "status_code": 1,
-  "status_message": "success"
+"status_code": "1",
+"status_message": "",
+"no_of_cards": "70",
+"data": {
+"id": "",
+"title": "",
+"layout_id": "0",
+"news_count": "10",
+"news_display_count": "10",
+"news_pagination_cap": "30",
+"updated_datetime": "2024-12-23 06:49:13",
+"news": [
+{
+"n_id": "2127568",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/world/story/bangladesh-sends-note-verbale-asking-india-to-send-back-deposed-pm-hasina-ntc-rpti-2127568-2024-12-23",
+"n_title": "'शेख हसीना को वापस भेजें...' बांग्लादेश सरकार ने भारत से की मांग ",
+"n_short_desc": "बांग्लादेश ने भारत को अपदस्थ प्रधानमंत्री हसीना को वापस भेजने के लिए  \"नोट वर्बल\" भेजा है. बांग्लादेश की अंतरिम सरकार ने सोमवार को कहा कि उसने अपदस्थ प्रधानमंत्री शेख हसीना को ढाका वापस भेजने के लिए भारत को एक राजनयिक संदेश भेजा है.\r\n",
+"n_pcategory_id": "300770",
+"n_pcategory_name": "विश्व",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/676940f84522b-sheikh-hasina--file-photo-235234516-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/676940f84522b-sheikh-hasina--file-photo-235234516-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/676940f84522b-sheikh-hasina--file-photo-235234516-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 18:28:34",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p class=\"text-align-justify\">बांग्लादेश के विदेश मंत्रालय के सलाहकार डॉ. तौहीद हुसैन ने कहा कि बांग्लादेश सरकार ने आधिकारिक तौर पर भारत सरकार से पूर्व प्रधानमंत्री शेख हसीना को वापस भेजने की मांग की है. हुसैन ने आज मंत्रालय में मीडिया से बात करते हुए कहा कि बांग्लादेश ने भारत सरकार को एक \"नोट वर्बल\" भेजा है, जिसमें देश में न्यायिक प्रक्रिया का सामना करने के लिए हसीना के प्रत्यर्पण की मांग की गई है.</p>\r\n\r\n<p class=\"text-align-justify\">बांग्लादेश में हुए हिंसक प्रदर्शनों के बाद 77 वर्षीय हसीना 5 अगस्त को भारत आ गई थी और तब से वह भारत में ही निर्वासन के तहत रह रही हैं. ढाका स्थित अंतर्राष्ट्रीय अपराध न्यायाधिकरण (ICT) ने हसीना और कई पूर्व कैबिनेट मंत्रियों, सलाहकारों और सैन्य और अधिकारियों के खिलाफ \"मानवता के खिलाफ अपराध और नरसंहार\" के लिए गिरफ्तारी वारंट जारी किए हैं.</p>\r\n\r\n<p class=\"text-align-justify\"><strong>यह भी पढ़ें: <a href=\"https://www.aajtak.in/world/story/deadline-for-probing-allegations-against-sheikh-hasina-extended-bangladeshi-tribunal-decides-ntc-dskc-2126701-2024-12-21\">शेख हसीना के खिलाफ आरोपों की जांच की समय सीमा बढ़ी, बांग्लादेशी ट्रिब्यूनल का फैसला</a></strong></p>\r\n\r\n<p class=\"text-align-justify\"><strong>भारत सरकार को भेजा संदेश</strong></p>\r\n\r\n<p class=\"text-align-justify\">विदेश मामलों के सलाहकार तौहीद हुसैन ने अपने कार्यालय में संवाददाताओं से कहा, \"हमने भारत सरकार को एक \"नोट वर्बल\"&nbsp; (राजनयिक संदेश) भेजा है, जिसमें कहा गया है कि बांग्लादेश न्यायिक प्रक्रिया के लिए उन्हें वापस चाहता है.\"</p>\r\n\r\n<p class=\"text-align-justify\">इससे पहले सुबह गृह सलाहकार जहांगीर आलम ने कहा कि उनके कार्यालय ने अपदस्थ प्रधानमंत्री के भारत से प्रत्यर्पण की सुविधा के लिए विदेश मंत्रालय को एक पत्र भेजा है.</p>\r\n\r\n<p class=\"text-align-justify\">उन्होंने एक प्रश्न के उत्तर में मीडिया से बात करते हुए उन्होंने कहा, \"हमने उनके प्रत्यर्पण के संबंध में विदेश मंत्रालय को एक पत्र भेजा है. प्रक्रिया अभी जारी है.\" आलम ने कहा कि ढाका और नई दिल्ली के बीच पहले से ही प्रत्यर्पण संधि है और इस संधि के तहत हसीना को बांग्लादेश वापस लाया जा सकता है.</p>\r\n\r\n<p class=\"text-align-justify\"><strong>यह भी पढ़ें: <a href=\"https://www.aajtak.in/world/story/bangladesh-chief-adviser-yunus-calls-this-year-victory-day-extra-significant-after-ouster-of-hasina-ntc-dskc-2122451-2024-12-16\">न परेड निकली न याद आए बंगबंधु... शेख हसीना सरकार गिरने के बाद बांग्लादेश में पहली बार मना विजय दिवस</a></strong></p>\r\n\r\n<p class=\"text-align-justify\"><strong>यूनुस पर किया था तीखा हमला</strong><br />\r\nअगस्त में बड़े पैमाने पर सरकार विरोधी प्रदर्शनों के कारण प्रधानमंत्री पद से इस्तीफा देने के बाद भारत में शरण लेने वाली हसीना ने कुछ समय पहले बंगाली में दिए गए एक बयान में कहा कि \"राष्ट्र विरोधी समूहों\" ने असंवैधानिक रूप से सत्ता पर कब्जा कर लिया है. उन्होंने कहा, \"फासीवादी यूनुस के नेतृत्व वाले इस अलोकतांत्रिक समूह की लोगों के प्रति कोई जिम्मेदारी नहीं है. वे सत्ता पर कब्जा कर रहे हैं और सभी जन कल्याण कार्यों में बाधा डाल रहे हैं.\"</p>\r\n\r\n<p class=\"text-align-justify\">हसीना ने यूनुस सरकार की आलोचना की और कहा कि बांग्लादेश के लोग कीमतों में वृद्धि से परेशान हैं. हसीना ने कहा, \"चूंकि यह सरकार लोकतांत्रिक तरीके से चुनी नहीं गई है, इसलिए लोगों के प्रति उनकी कोई जवाबदेही नहीं है. उनका मुख्य उद्देश्य मुक्ति संग्राम और मुक्ति समर्थक ताकतों की भावना को दबाना और उनकी आवाज को दबाना है. इसके विपरीत, वे गुप्त रूप से स्वतंत्रता विरोधी कट्टरपंथी सांप्रदायिक ताकतों का समर्थन कर रहे हैं. फासीवादी यूनुस सहित इस सरकार के नेताओं की मुक्ति संग्राम और उसके इतिहास के प्रति संवेदनशीलता की कमी उनके उनके इरादों को दर्शाती है.\"</p>\r\n",
+"no_author": {
+"a_title": "aajtak.in"
+}
+}
+},
+{
+"n_id": "2127538",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/uttar-pradesh/story/dalit-girl-murdered-in-mathura-after-labor-work-mathura-uttar-pradesh-lclar-strc-2127538-2024-12-23",
+"n_title": "मजदूरी करने गई दलित युवती की गेहूं के खेत में मिली लाश, बलात्कार के बाद हत्या की आशंका",
+"n_short_desc": "मथुरा के गोवर्धन थाना क्षेत्र में मजदूरी करने गई 23 वर्षीय दलित युवती का शव गेहूं के खेत में मिला. गला दुपट्टे से कसा हुआ और चेहरे पर चोट के निशान थे. घटनास्थल पर शराब की बोतल और कुछ रुपये भी पड़े मिले. बलात्कार के बाद हत्या की आशंका जताई जा रही है. पुलिस ने मामला दर्ज कर जांच शुरू कर दी है.",
+"n_pcategory_id": "436038",
+"n_pcategory_name": "उत्तर प्रदेश",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693eb5e9a68-20241223-234256405-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693eb5e9a68-20241223-234256405-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693eb5e9a68-20241223-234256405-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 16:15:29",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p class=\"text-align-justify\">उत्तर प्रदेश के मथुरा के थाना गोवर्धन क्षेत्र में 23 वर्षीय दलित युवती की गला घोंटकर हत्या कर दी गई.&nbsp;युवती का शव सोमवार सुबह गेहूं के खेत में मिला. घटना की सूचना मिलते ही पुलिस मौके पर पहुंची शव को कब्जे में लिया और पोस्टमार्टम के लिए भेज मामले की जांच शुरू की.&nbsp;शव पर गहरी चोटों के निशान और पास में शराब की बोतल मिलने से बलात्कार के बाद हत्या की आशंका जताई जा रही है.</p>\r\n\r\n<p class=\"text-align-justify\">मृतक युवती की पहचान कल्लौ के तौर पर हुई है, जो अपने मायके में रहकर मेहनत-मजदूरी करती थी. बताया जा रहा है कि&nbsp;वो&nbsp;रविवार दोपहर गांव में एक निर्माणाधीन मकान पर मजदूरी के लिए गई थी.&nbsp;देर शाम तक घर न लौटने पर परिजनों ने उसकी खोजबीन शुरू की.&nbsp;सोमवार सुबह गांव के एक खेत में उसका शव मिलने से हड़कंप मच गया.</p>\r\n\r\n<p><strong>चोट के निशान और गला दबाने के सबूत</strong></p>\r\n\r\n<p class=\"text-align-justify\">मौके पर पहुंची पुलिस को पता चला&nbsp;कि युवती के गले में दुपट्टे का फंदा था और चेहरे पर चोटों के गहरे निशान थे.&nbsp;पहचान मिटाने के लिए चेहरे पर ईंट से वार किया गया था.&nbsp;घटनास्थल पर शराब की बोतल और कुछ रुपये भी पड़े मिले.</p>\r\n\r\n<p class=\"text-align-justify\">इस मामले पर&nbsp;एसएसपी शैलेश कुमार पांडे ने बताया कि शव देखने से लग रहा था कि युवती की हत्या से पहले गला दबाया गया.&nbsp;मौत की सही वजह पोस्टमार्टम रिपोर्ट के बाद के बाद से पता चलेगी.&nbsp;पुलिस ने मामला दर्ज कर मौके से साक्ष्य जुटाए. साथ दी जल्द से जल्द हत्यारे को पकड़ने की बात भी कही.</p>\r\n\r\n<p class=\"text-align-justify\"><strong>पुलिस ने मामला दर्ज कर जांच शुरू की</strong></p>\r\n\r\n<p class=\"text-align-justify\">पुलिस ने परिजनों की तहरीर के आधार पर मामला दर्ज कर लिया है.&nbsp;युवती के शव को पोस्टमार्टम के लिए भेज दिया गया है.&nbsp;घटना के कारणों और दोषियों का पता लगाने के लिए जांच जारी है. परिजनों को बयान दर्ज कर लिए हैं और आसपास लगे सीसीटीवी कैमरों को खंगाला जा रहा है.&nbsp;</p>\r\n",
+"no_author": {
+"a_title": "मदन गोपाल शर्मा"
+}
+}
+},
+{
+"n_id": "2127557",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/education/news/story/shravasti-up-education-department-sent-notice-to-rickshaw-puller-claiming-fake-teacher-rptc-2127557-2024-12-23",
+"n_title": "Devendra रिक्शा चालक के घर श‍िक्षा विभाग ने भेजा 51 लाख से ज्यादा की रिकवरी का नोटिस",
+"n_short_desc": "नोट‍िस में लिखा है कि अंबेडकर नगर जिले के सुरेंद्र प्रताप सिंह के नाम पते पर रिक्शा चालक मनोहर यादव उच्च प्राथमिक विद्यालय नव्वा पुरवा में सहायक शिक्षक के पद पर फर्जी तरीके से नियुक्त थे. उसके द्वारा बीते 14 जुलाई वर्ष 2020 तक 51 लाख 63000 रुपये वेतन के रूप में लिया गया है. उसे वो हफ्ते भर में श्रावस्ती के कोषागार में जमा कर दें अन्यथा वसूली की कार्रवाई भी की जाएगी.",
+"n_pcategory_id": "358160",
+"n_pcategory_name": "एजुकेशन न्यूज़",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693e92b1408-education-department-up-234220813-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693e92b1408-education-department-up-234220813-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693e92b1408-education-department-up-234220813-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 16:26:59",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p>श्रावस्ती जिले के शिक्षा विभाग से जुड़ा एक ऐसा मामला सामने आया है जिसे सुनकर हर कोई हैरान है. दरअसल शिक्षा विभाग ने एक रिक्शा चालक को फर्जी शिक्षक बताकर उसके घर 51 लाख से अधिक की रिकवरी का नोटिस भेजा है. आरोप है कि अंबेडकर नगर के एक व्यक्ति के नाम पर मनोहर यादव श्रावस्ती मे सहायक शिक्षक थे. वहीं रिक्शा चालक इस नोटिस को लेकर दर-दर भटक रहा है. उसका पूरा परिवार परेशान है. हालांकि शिक्षा विभाग का मौखिक रूप से कहना है कि नोटिस को निरस्त कर दिया गया है.</p>\r\n\r\n<p>दरअसल श्रावस्ती जनपद के बेसिक शिक्षा विभाग के द्वारा बीते शुक्रवार को भिनगा क्षेत्र के गोड़पुरवा निवासी युवक मनोहर यादव को डाक से एक नोटिस भेजा. नोटिस को मनोहर यादव पढ़ाने के लिए गांव में पढ़े-लिखे व्यक्ति के पास गए जहां पर उन्हें 51 लाख से अधिक रिकवरी के नोटिस की जानकारी हुई. नोटिस की जानकारी होने पर उनके पैरों तले जमीन खिसक गई. भेजे गए नोटिस में यह दावा किया गया है कि अंबेडकर नगर जिले के सुरेंद्र प्रताप सिंह के नाम पते पर रिक्शा चालक मनोहर यादव उच्च प्राथमिक विद्यालय नव्वा पुरवा में सहायक शिक्षक के पद पर फर्जी तरीके से नियुक्त थे. उसके द्वारा बीते 14 जुलाई वर्ष 2020 तक 51 लाख 63000 रुपये वेतन के रूप में लिया गया है. उसे वो हफ्ते भर में श्रावस्ती के कोषागार में जमा कर दें अन्यथा वसूली की कार्रवाई भी की जाएगी.</p>\r\n\r\n<p>जानकारी के मुताबिक मनोहर यादव का पूरा परिवार भिनगा क्षेत्र के गोड़ पुरवा में निवास करता है. इस गरीब पर‍िवार के मनोहर यादव कुछ समय से दिल्ली में रहकर हाथ रिक्शा चलाते हैं ताकि परिवार का पालन पोषण कर सकें. मनोहर यादव के रिक्शा चालक होने की सबसे बड़ी बानगी उनके हाथों पर पड़े निशान खुद बताते हैं. मनोहर यादव बताते हैं कि वो पढ़े-लिखे नहीं है, निरक्षर हैं. कुछ भी पढ़ाने के लिए उन्हें दूसरे पढ़े लिखों का सहारा लेना पड़ता है.वहीं, जिस विद्यालय में फर्जी शिक्षक की तैनाती की बात की जा रही है, वहां 2020 से पूर्व तैनात फर्जी शिक्षक के फोटो से रिक्शा चालक मनोहर यादव का फोटो तक नहीं मेल खा रहा है. फिलहाल शिक्षा विभाग का कहना है कि नोटिस को निरस्त किया गया है.ऐसे में आखिर शिक्षा विभाग से कहां चूक हुई यह सवाल उठना भी लाजमी है.</p>\r\n\r\n<p>वहीं इस मामले में शिक्षा विभाग के कर्मियों का मौखिक कहना है कि नोटिस उन्हीं के कार्यालय से जारी हुई थी और फिलहाल नोटिस को निरस्त कर दिया गया है. उसी विद्यालय के वर्तमान शिक्षक जनार्दन यादव ने बताया कि मैं 2020 के बाद यहां आया हूं. फर्जी शिक्षक के बारे में मुझे कोई जानकारी नहीं है. शिक्षक ने बताया कि मैं जब से आया हूं, यहां अकेला हूं. उन्होंने बताया कि पेपर के माध्यम से फर्जी शिक्षक पकड़े गए हैं, मुझे इसकी जानकारी हुई. रिक्शा चालक मनोहर यादव ने रोते हुए बताया कि शिक्षा विभाग से नोटिस मिला है. मैं रिक्शा चलाता हूं, देख लीजिए हाथ में निशान पड़ गया है. मैं अपने बच्चों को जिलाऊं या कहां से इसकी किस्त भरूं. हमें जब से नोटिस मिला है तब से खाना नहीं खाया.मेरे पास कुछ है नहीं जिससे ये रकम चुका पाएं.</p>\r\n",
+"no_author": {
+"a_title": "aajtak.in"
+}
+}
+},
+{
+"n_id": "2127574",
+"n_type": "market",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/india/maharashtra/story/after-portfolios-competition-to-become-guardian-minister-in-mahayuti-government-ministers-of-all-three-parties-claimed-ntc-rptc-2127574-2024-12-23",
+"n_title": "Devendra विभाग बंटवारे के बाद अब महायुति सरकार में संरक्षक मंत्री बनने की होड़, तीनों दलों के मंत्रियों ने किया दावा",
+"n_short_desc": "पुणे जिले के संरक्षक मंत्री का पद सबसे चर्चित पद है. महायुति में एक बार फिर बीजेपी और एनसीपी अजित पवार गुट के बीच जुबानी जंग छिड़ सकती है क्योंकि, इस बात की प्रबल संभावना है कि पुणे के संरक्षक मंत्री पद के लिए दो दिग्गज, उपमुख्यमंत्री अजित पवार और उच्च तकनीकी शिक्षा मंत्री चंद्रकांत पाटिल एक बार फिर आमने-सामने होंगे.",
+"n_pcategory_id": "310803",
+"n_pcategory_name": "महाराष्ट्र",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769415667fa1-mahayuti-government-cabinet-expansion-235412666-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769415667fa1-mahayuti-government-cabinet-expansion-235412666-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769415667fa1-mahayuti-government-cabinet-expansion-235412666-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 16:27:35",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p>महाराष्ट्र की महायुति सरकार में शनिवार को विभागों का बंटवारा कर दिया गया. कई वरिष्ठ मंत्री जिन्हें अच्छे विभाग नहीं मिले हैं, वे अपने जिले का संरक्षक मंत्री पद पाने की उम्मीद कर रहे हैं. खासकर बीड, छत्रपति संभाजीनगर, रायगढ़, नासिक, सतारा जिलों का संरक्षक मंत्री पद पाने के लिए संबंधित मंत्रियों के जिलों में होड़ मची हुई है.</p>\r\n\r\n<p><strong>बीड और रायगढ़ का हाल</strong></p>\r\n\r\n<p>सूत्रों के मुताबिक, उपमुख्यमंत्री एकनाथ शिंदे ठाणे जिले के संरक्षक मंत्री होंगे जबकि अजित पवार पुणे जिले के संरक्षक मंत्री होंगे. बीड में भाई-बहन धनंजय मुंडे और पंकजा मुंडे मंत्री पद पाने में सफल रहे हैं. इस बात पर सवालिया निशान था कि क्या धनंजय मुंडे को मंत्री पद मिलेगा क्योंकि विपक्ष ने उन पर मासजोग के सरपंच संतोष देशमुख की हत्या का आरोप लगाया है.&nbsp;</p>\r\n\r\n<p>आखिरी वक्त पर उपमुख्यमंत्री अजित पवार ने उन पर भरोसा जताया. अब धनंजय मुंडे बीड का संरक्षक मंत्री पद पाने की जिद कर रहे हैं. पंकजा मुंडे भी बीड की संरक्षक मंत्री बनने को इच्छुक हैं. रायगढ़ में भरत गोगावले ने रायगढ़ के संरक्षक मंत्री पद पर दावा किया है और महिला एवं बाल विकास मंत्री अदिति तटकरे भी एक बार फिर रायगढ़ की संरक्षक मंत्री बनने की इच्छुक हैं.&nbsp;</p>\r\n\r\n<p><strong>दुविधा में सीएम और डिप्टी सीएम</strong></p>\r\n\r\n<p>मुख्यमंत्री देवेंद्र फडणवीस और उनके डिप्टी सीएम के सामने सवाल यह है कि इस दुविधा को कैसे हल किया जाए. छत्रपति संभाजीनगर में संरक्षक मंत्री पद पर शिवसेना शिंदे गुट के मंत्री संजय शिरसाट ने दावा किया है.&nbsp;</p>\r\n\r\n<p>उनका कहना है कि मैं पिछले 40 वर्षों से शिवसेना के लिए काम कर रहा हूं. इसीलिए मुझे सामाजिक न्याय मंत्री का पद मिला. मैं छत्रपति संभाजीनगर का संरक्षक मंत्री बनूंगा और इसकी औपचारिक घोषणा होना बाकी है. बीजेपी नेता और ओबीसी कल्याण मंत्री अतुल सावे ने भी छत्रपति संभाजीनगर के संरक्षक मंत्री पद के लिए दावा किया है.</p>\r\n\r\n<p><strong>बीजेपी और एनसीपी में छिड़ सकती है जुबानी जंग</strong></p>\r\n\r\n<p>पुणे जिले के संरक्षक मंत्री का पद सबसे चर्चित पद है. महायुति में एक बार फिर बीजेपी और एनसीपी अजित पवार गुट के बीच जुबानी जंग छिड़ सकती है क्योंकि, इस बात की प्रबल संभावना है कि पुणे के संरक्षक मंत्री पद के लिए दो दिग्गज, उपमुख्यमंत्री अजित पवार और उच्च तकनीकी शिक्षा मंत्री चंद्रकांत पाटिल एक बार फिर आमने-सामने होंगे.</p>\r\n\r\n<p><strong>सतारा में तीनों दलों ने किया दावा</strong></p>\r\n\r\n<p>सतारा में संरक्षक मंत्री पद की लड़ाई और भी तेज है. सतारा जिले को चार कैबिनेट मंत्री मिले हैं, शिवेंद्रसिंह राजे भोसले, शंभूराज देसाई, जयकुमार गोरे और मकरंद जाधव-पाटिल. महायुति के तीनों दलों ने सतारा के संरक्षक मंत्री पद पर दावा किया है. असली मुकाबला शिवेंद्रसिंह राजे और शंभुराज देसाई के बीच है.</p>\r\n",
+"no_author": {
+"a_title": "मुस्तफा शेख"
+}
+}
+},
+{
+"n_id": "2127582",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/sports/cricket/story/vinod-kambli-admitted-to-thane-hospital-sachin-tendulkar-friend-vinod-kambli-health-critical-condition-photo-video-viral-tspo-dskc-2127582-2024-12-23",
+"n_title": "पूर्व क्रिकेटर विनोद कांबली की तबीयत बिगड़ी... ठाणे के अस्पताल में भर्ती",
+"n_short_desc": "Vinod Kambli Admitted in Thane Hospital: पूर्व भारतीय क्रिकेटर विनोद कांबली की तबीयत खराब हो गई है. बताया जा रहा है कि उनकी हालत काफी गंभीर है. इसी के चलते कांबली को ठाणे अस्पताल में भर्ती कराया गया है.",
+"n_pcategory_id": "310810",
+"n_pcategory_name": "क्रिकेट",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769455d6d028-vinod-kambli-admitted-in-thane-hospital-231120276-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769455d6d028-vinod-kambli-admitted-in-thane-hospital-231120276-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769455d6d028-vinod-kambli-admitted-in-thane-hospital-231120276-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 17:04:07",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p class=\"text-align-justify\"><strong>Vinod Kambli Admitted in Thane Hospital: </strong>पूर्व भारतीय क्रिकेटर विनोद कांबली की तबीयत खराब हो गई है. बताया जा रहा है कि उनकी हालत काफी गंभीर थी. इसी के चलते कांबली को ठाणे अस्पताल में भर्ती कराया गया. फिलहाल, उनकी हालत स्थिर जरूर है, लेकिन अब भी चिंताजनक बनी हुई है.</p>\r\n\r\n<p class=\"text-align-justify\">बता दें कि कांबली की हालत शनिवार को ही काफी ज्यादा बिगड़ गई थी. इसी दिन उन्हें तत्काल ठाणे के आकृति हॉस्पिटल में भर्ती कराया गया. उनकी हालत में अब भी सुधार नहीं है.</p>\r\n\r\n<p><strong>ऐसा रहा है कांबली का क्रिकेट करियर</strong></p>\r\n\r\n<p class=\"text-align-justify\">कांबली-सचिन एक साथ कोच रमाकांत आचरेकर के मार्गदर्शन में शिवाजी पार्क में क्रिकेट खेलते थे. हाल ही में मुंबई के शिवाजी पार्क में आचरेकर के स्मारक का अनावरण हुआ था.</p>\r\n\r\n<p class=\"text-align-justify\">इसी प्रोग्राम में विनोद कांबली नजर आए थे, जहां उनके साथ जिगरी दोस्त सचिन तेंदुलकर भी मौजूद थे. उस समय भी कांबली की सेहत दुरुस्त नहीं दिख रही थी. वो 52 की उम्र में ऐसे लगते हैं कि मानों 75 साल के हों.&nbsp;</p>\r\n\r\n<p class=\"text-align-justify\"><img alt=\"Vinod Kambli Admitted in Thane Hospital\" class=\"lazyload\" data-entity-type=\"file\" data-entity-uuid=\"a5093249-9eac-4429-ad3f-5a6c13d66d02\" id=\"\" src=\"https://akm-img-a-in.tosshub.com/aajtak/inline-images/vinod-kambli-admitted-in-thane-hospital.jpeg\" title=\"Vinod Kambli Admitted in Thane Hospital\" /></p>\r\n\r\n<p class=\"text-align-justify\">कांबली ने टीम इंडिया के लिए 1991 में वनडे से डेब्यू किया था, जबकि 2000 में आखिरी वनडे खेला था. 2009 में कांबली ने अंतरराष्ट्रीय क्रिकेट को अलविदा कह दिया, जबकि 2011 में फर्स्ट क्लास क्रिकेट से संन्यास की घोषणा की.</p>\r\n\r\n<p class=\"text-align-justify\">कांबली भारत के लिए 17 टेस्ट और 104 वनडे इंटरनेशनल मुकाबले ही खेल पाए. बाएं हाथ के बल्लेबाज कांबली ने टेस्ट में 54.20 की औसत से 1084 रन बनाए, जिसमें चार शतक और तीन अर्धशतक शामिल रहे. वहीं वनडे इंटरनेशनल में उन्होंने 32.59 के एवरेज से 2477 रन बनाए. वनडे इंटरनेशनल में&nbsp;कांबली के बल्ले से दो शतक और 14 अर्धशतक निकले.</p>\r\n\r\n<p class=\"text-align-justify\"><strong>कांबली की दो शादियां, दूसरी पत्नी से हैं दो बच्चे</strong></p>\r\n\r\n<p class=\"text-align-justify\">कांबली ने 2019 में आखिरी बार किसी टीम की कोचिंग की थी, वह टी20 मुंबई लीग में जुड़े थे. मुंबई में जन्में कांबली ने 10वीं कक्षा तक पढ़ाई की है. उनके पिता मैकेनिक थे. उन्होंने दो शादियां कीं. पहली शादी 1998 में नोएला लुईस से की थी.</p>\r\n\r\n<p class=\"text-align-justify\">नोएला पुणे के होटल ब्लू डायमंड में रिसेप्शनिस्ट थीं. यह लव लाइफ ज्यादा दिन नहीं चली और तलाक हो गया. फिर कांबली ने मॉडल रहीं एंड्रिया हेविट से 2006 में शादी कर ली. कांबली का एक बेटा जीसस क्रिस्टियानो और एक बेटी है.</p>\r\n",
+"no_author": {
+"a_title": "अभिजीत करंडे"
+}
+}
+},
+{
+"n_id": "2127503",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/entertainment/news/story/police-arrests-wanted-gangster-from-theatre-laying-pushpa-2-as-he-was-watching-allu-arjun-film-tmovs-dskc-2127503-2024-12-23",
+"n_title": "अल्लू अर्जुन का फैन निकला वांटेड गैंगस्टर! 'पुष्पा 2' देखते हुए पुलिस ने किया अरेस्ट ",
+"n_short_desc": "'पुष्पा 2' के एक नाईट शो के बीच पुलिस सिनेमा हॉल में घुसी और एक व्यक्ति को गिरफ्तार किया जो मर्डर और ड्रग केस में वांटेड था. ये व्यक्ति 10 महीनों से पुलिस से बचता फिर रहा था लेकिन आखिरकार अल्लू अर्जुन की गैंगस्टर ड्रामा फिल्म देखने के चक्कर में पकड़ा गया. ",
+"n_pcategory_id": "358119",
+"n_pcategory_name": "एंटरटेनमेंट न्यूज़",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67694f4147cfd-allu-arjun-235331893-16x9.jpeg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67694f4147cfd-allu-arjun-235331893-16x9.jpeg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67694f4147cfd-allu-arjun-235331893-16x9.jpeg?size=749:421",
+"n_updated_datetime": "2024-12-23 17:23:58",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p>नागपुर, महाराष्ट्र में कुछ फिल्म लवर्स 'पुष्पा 2' में अल्लू अर्जुन का एक्शन देखने थिएटर पहुंचे. मगर उन्हें ऐसा लाइव एक्शन देखने को मिला जिसकी उम्मीद उन्हें दूर-दूर तक नहीं रही होगी! 'पुष्पा 2' के एक नाईट शो के बीच पुलिस सिनेमा हॉल में घुसी और एक व्यक्ति को गिरफ्तार किया जो मर्डर और ड्रग केस में वांटेड था. ये व्यक्ति 10 महीनों से पुलिस से बचता फिर रहा था लेकिन आखिरकार अल्लू अर्जुन की गैंगस्टर ड्रामा फिल्म देखने के चक्कर में पकड़ा गया.&nbsp;</p>\r\n\r\n<p><strong>'पुष्पा 2' देखने के चक्कर में पकड़ा गया गैंगस्टर</strong><br />\r\nहिंदुस्तान टाइम्स की एक रिपोर्ट के अनुसार, पाचपावली पुलिस के एक अधिकारी ने बताया कि मेशरम को तब&nbsp; पकड़ा गया, जब पुलिस को अल्लू अर्जुन की गैंगस्टर ड्रामा फिल्म में उसकी दिलचस्पी के बारे में पता चला.&nbsp;</p>\r\n\r\n<p>मेशरम के खिलाफ 27 केस दर्ज हैं, जिसमें दो मर्डर और ड्रग ट्रैफकिंग से जुड़े हैं. उसे हिंसक रवैये के लिए जाना जाता है और वो पहले पुलिस पर अटैक भी कर चुका है. साइबर सर्विलांस और उसकी SUV कार की मूवमेंट ट्रैकिंग के जरिए प्रशासन लगातार उसके पीछे लगा हुआ था.&nbsp;</p>\r\n\r\n<p><strong>पुलिस पहुंची तो क्लाइमेक्स में खोया था&nbsp;</strong><br />\r\nगुरुवार को गैंगस्टर को पकड़ने गई पुलिस ने सिनेमा हॉल के बाहर उसकी कार के टायर पंचर कर दिए ताकि वो भाग ना सके. 'पुष्पा 2' के क्लाइमेक्स के दौरान जब पुलिस सिनेमा हॉल में घुसी, तो मेशरम फिल्म में खोया हुआ था. अधिकारी ने बताया कि पुलिस ने उसे घेर लिया और बड़ी तेजी के साथ उसे अरेस्ट कर लिया जिससे उसे बचाव का मौका ही नहीं मिला. मेशरम को फिलहाल नागपुर सेंट्रल जेल में रखा गया है और जल्द ही उसे नासिक जेल में भेज दिया जाएगा.&nbsp;</p>\r\n\r\n<p>'पुष्पा 2' की बात करें तो अल्लू अर्जुन की फिल्म 5 दिसंबर को थिएटर्स में रिलीज हुई थी. थिएटर्स में पहुंचने&nbsp;के 20 दिन के अंदर ये इंडियन&nbsp;सिनेमा की सबसे बड़ी फिल्मों में से एक बन चुकी है. फिल्म का हिंदी वर्जन, हिंदी सिनेमा की सबसे कमाऊ फिल्म बन चुका है. अल्लू अर्जुन स्टारर 'पुष्पा 2' उस लीग की फिल्म बन चुकी है, जिसमें 'बाह्बली 2' और 'दंगल' जैसी फिल्में हैं. मेकर्स ने इसका सीक्वल 'पुष्पा 3' भी अनाउंस कर दिया है.&nbsp;&nbsp;</p>\r\n",
+"no_author": {
+"a_title": "aajtak.in"
+}
+}
+},
+{
+"n_id": "2127585",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/auto/news/story/honda-and-nissan-officially-begin-merger-sign-mou-for-a-joint-holding-company-here-is-complete-details-dskc-2127585-2024-12-23",
+"n_title": "बदल जाएगा विश्व का कार बाजार! Honda-Nissan ने मिलाया हाथ",
+"n_short_desc": "Honda-Nissan Merger: आखिरकार सभी अटकलों को विराम देते हुए होंडा और निसान ने एक साथ आने का ऐलान करते हुए एक ज्वाइंट होल्डिंग कंपनी के लिए MoU साइन किया है. निसान और होंडा का लक्ष्य एक साथ मिलकर सबसे बड़ी कार कंपनी बनाने का है. ",
+"n_pcategory_id": "358158",
+"n_pcategory_name": "ऑटो न्यूज़",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67694270d6204-honda-nissan-merger-235851602-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67694270d6204-honda-nissan-merger-235851602-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67694270d6204-honda-nissan-merger-235851602-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 16:35:04",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p class=\"text-align-justify\">दुनिया के ऑटोमोबाइल बाजार में पिछले कुछ दिनों से एक बड़ी चर्चा हो रही थी. जापानी दिग्गज कार कंपनियां निसान, होंडा और मित्सुबिशी के बीच मर्जर की ख़बरें आ रही थीं. आखिरकार सभी अटकलों को विराम देते हुए इन तीनों कंपनियों ने एक साथ आने का ऐलान करते हुए एक ज्वाइंट होल्डिंग कंपनी के लिए MoU साइन किया है. निसान और होंडा का लक्ष्य एक साथ मिलकर सबसे बड़ी कार कंपनी बनाने का है.&nbsp;<br />\r\n&nbsp;<br />\r\nजापानी वाहन निर्माता होंडा मोटर कंपनी और निसान मोटर कंपनी लिमिटेड ने मित्सुबिशी मोटर्स के साथ मिलकर सोमवार को घोषणा की कि उन्होंने संभावित विलय पर चर्चा शुरू करने के लिए एक समझौता ज्ञापन (MOU) पर हस्ताक्षर किए हैं. इस प्रस्तावित विलय में एक ज्वाइंट होल्डिंग कंपनी की शुरुआत करने की योजना शामिल हैं. जिसे इलेक्ट्रिक व्हीकल सेग्मेंट में टेस्ला और चीनी कार कंपनी बिल्ड योर ड्रीम (BYD) जैसे प्रतिद्वंदियों से मुकाबला करने की योजना के तौर पर देखा जा रहा है.</p>\r\n\r\n<p class=\"text-align-justify\"><strong>30 ट्रिलियन येन का टार्गेट:</strong></p>\r\n\r\n<p class=\"text-align-justify\">कंपनी का कहना है कि, इस विलय का लक्ष्य 30 ट्रिलियन येन (लगभग 16.30 लाख करोड़ रुपये) की वार्षिक बिक्री और 3 ट्रिलियन येन (1.62 लाख करोड़ रुपये) से अधिक का ऑपरेटिंग प्रॉफिट प्राप्त करना है. ये तीनों कंपनियां आगामी जून 2025 तक चर्चाओं को अंतिम रूप देने की योजना बना रही हैं. ऐसा माना जा रहा है कि ये होल्डिंग कंपनी के अगस्त 2026 तक चालू हो सकती है. होल्डिंग कंपनी की शुरुआत के साथ ही होंडा और निसान दोनों के शेयरों को जुलाई और अगस्त 2026 के अंत में डीलिस्ट किया जाएगा, जिसे बाद में स्टॉक एक्सचेंज में लिस्ट करने की योजना है.</p>\r\n\r\n<drupal-entity data-embed-button=\"ckeditor_image\" data-entity-embed-display=\"view_mode:media.image\" data-entity-type=\"media\" data-entity-uuid=\"bc2874ed-75d8-4de4-9dc8-4c165eed8c0b\"></drupal-entity>\r\n\r\n<p class=\"text-align-justify\">होंडा, निसान और मित्सुबिशी मिलकर प्रतिवर्ष लगभग 8 मिलियन वाहनों का उत्पादन करेंगे, जिससे वे टोयोटा मोटर कॉर्पोरेशन और वोक्सवैगन एजी जैसी ग्लोबल दिग्गजों को टक्कर देने में सक्षम होंगे. इस ज्वाइंट वेंचर में होंडा का प्रभाव सबसे ज्यादा देखने को मिलेगा क्योंकि वो इस साझेदारी की सबसे बड़ी कंपनी है. दूसरी ओर निसान की डूबती नैया को एक बड़ा सहारा मिलने की उम्मीद है.</p>\r\n\r\n<p class=\"text-align-justify\"><strong>नई तकनीक पर होगा काम:</strong></p>\r\n\r\n<p class=\"text-align-justify\">अस्तित्व में आने के बाद ये ज्वाइंट होंल्डिंग कंपनी दुनिया के ऑटोमोबाइल बाजार को एक नया रूख देगी. जहां नंबर एक और दो की पोजिशन पर टोयोटा और फॉक्सवैगन मौजूद हैं वहां होंडा-निसान को अपनी उपस्थिति मजबूत करने का मौका मिलेगा. इस ज्वाइंट वेंचर के तहत नई तकनीकी, व्हीकल प्लेटफॉर्म और डिजाइन पर काम किया जाएगा.&nbsp;</p>\r\n\r\n<p class=\"text-align-justify\">चूंकि रिसर्च, डेवलपमेंट और ऑपरेशन एक साथ मिलकर किए जाएंगे तो इससे कम लागत में वाहनों के निर्माण की भी सुविधा मिलेगी. जिसका असर न केवल वाहनों की कीमतों पर देखने को मिलेगा बल्कि इसका मुनाफे में इजाफा होने की पूरी उम्मीद है. नई तकनीक के साथ नेक्स्ट जेनरेशन सॉफ्टवेयर डिफाइंड व्हीकल्स (SDV's) पर भी काम किया जाएगा.</p>\r\n\r\n<p class=\"text-align-justify\">निसान और होंडा ने संयुक्त शेयर हस्तांतरण के माध्यम से एक ज्वाइंट होल्डिंग कंपनी शुरू करने की अपनी योजना का ऐलान किया है. जो दोनों कंपनियों की मूल कंपनी होगी. यह प्रत्येक कंपनी के शेयरधारकों की आम बैठक के बाद तय किया जाएगा. इसके लिए कंपनी संबंधित अधिकारियों से बातचीत करेगी और उनसे परमिशन लेगी. इसके लिए कंपनियों ने एक टाइमलाइन की योजना भी जारी किया है.</p>\r\n\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 500px;\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\"><strong>इवेंट </strong></td>\r\n\t\t\t<td class=\"text-align-center\"><strong>तारीख (योजनाबद्ध)&nbsp;</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">बिजनेस इंटीग्रेशन से संबंधित समझौते का एक्जीक्यूशन</td>\r\n\t\t\t<td class=\"text-align-center\">जून 2025</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">कंपनियों के शेयरधारकों की बैठक</td>\r\n\t\t\t<td class=\"text-align-center\">अप्रैल 2026</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">TSE से डीलिस्टिंग</td>\r\n\t\t\t<td class=\"text-align-center\">अगस्त 2026</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td class=\"text-align-center\">शेयर ट्रांसफर</td>\r\n\t\t\t<td class=\"text-align-center\">अगस्त 2026</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p class=\"text-align-justify\">निसान के निदेशक, अध्यक्ष और सीईओ मकोतो उचिदा ने कहा: \"होंडा और निसान ने एक बिजनेस इंटीग्रेशन पर विचार करना शुरू कर दिया है, और दोनों कंपनियों के बीच कई एरिया में तालमेल पर रिसर्च किया जाएगा. हम उम्मीद करते हैं कि अगर यह योजना सफल होगी.\"&nbsp;<br />\r\n&nbsp;<br />\r\nवहीं होंडा के निदेशक तोशीहिरो मिबे ने कहा \"ऑटोमोबाइल इंडस्ट्री में परिवर्तन के इस समय में, जिसके बारे में कहा जाता है कि यह हर 100 साल में एक बार होता है, हमें उम्मीद है कि निसान और होंडा के बिजनेस इंटीग्रेशन में मित्सुबिशी मोटर्स की भागीदारी से बड़ा बल मिलेगा. इसके अलावा हम एक मजबूत ज्वाइंट वेंचर शुरू करने में सफल होंगे.\"</p>\r\n\r\n<p class=\"text-align-justify\">मित्सुबिशी मोटर्स के निदेशक, प्रेसिडेंट एवं सीईओ ताकाओ काटो ने कहा \"ऑटोमोटिव इंडस्ट्री में बदलाव के इस दौर में निसान और होंडा के बीच बिजनेस इंटीग्रेशन के सफल होने की पूरी उम्मीद है. इससे मित्सुबिशी मोटर्स के साथ सहयोगी व्यवसायों को भी लाभ मिलेगा.\"<br />\r\n<br />\r\n&nbsp;</p>\r\n\r\n<div class=\"embedcode\"><iframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen=\"\" frameborder=\"0\" height=\"400\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/zRPk5d7Ux_c?si=XEbFdMluSZz6zGjy\" title=\"YouTube video player\" width=\"100%\"></iframe></div>\r\n\r\n<p>&nbsp;</p>\r\n",
+"no_author": {
+"a_title": "aajtak.in"
+}
+}
+},
+{
+"n_id": "2127540",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/business/news/story/reliance-to-paytm-share-rise-today-amid-stock-market-zooms-check-latest-price-update-tutc-dskc-2127540-2024-12-23",
+"n_title": "Reliance से Paytm तक... इन शेयरों ने दिखाया दम, शेयर बाजार में बम-बम",
+"n_short_desc": "Stock Market में सोमवार को सेंसेक्स और निफ्टी दोनों इंडेक्स शुरुआत से ही तेज रफ्तार के साथ भागते हुए नजर आए. इस बीच Reliance से लेकर Titan और Paytm से लेकर SAIL  तक के शेयरों तूफानी तेजी देखने को मिली. \r\n",
+"n_pcategory_id": "358157",
+"n_pcategory_name": "बिज़नेस न्यूज़",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693c1b34911-20241223-233151171-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693c1b34911-20241223-233151171-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/67693c1b34911-20241223-233151171-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 16:17:17",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p class=\"text-align-justify\">भारतीय शेयर बाजार (Indian Stock Market) सोमवार को जोरदार तेजी के साथ खुला और दिनभर के कारोबार के बाद जबर्दस्त बढ़त लेकर बंद हुआ. मुकेश अंबानी (Mukesh Ambani) की कंपनी रिलायंस से लेकर फिनटेक फर्म Paytm तक शेयर खूब भागे. टॉप शेयरों में आई तेजी की दम पर बॉम्बे स्टॉक एक्सचेंज का 30 शेयरों वाला सेंसेक्स (Sensex) 498.58 अंक उछलकर, जबकि नेशनल स्टॉक का निफ्टी (Nifty) 166 अंक की बढ़त लेकर क्लोज हुआ.&nbsp;</p>\r\n\r\n<p class=\"text-align-justify\"><strong>तूफानी तेजी के साथ सेंसेक्स में कारोबार</strong><br />\r\nसोमवार को शेयर बाजार (Share Market) में कारोबार शुरू होने पर सुबह 9.15 बजे पर BSE Sensex अपने पिछले बंद 78,041.59 की तुलना में जोरदार बढ़त लेते हुए 78,488.64 के लेवल पर ओपन हुआ और इसके बाद इसकी रफ्तार तेज होती गई. दोपहर 11 बजे के आस-पास ये बीएसई इंडेक्स 810.21 अंक या 0.97 फीसदी चढ़कर 78,852.80 के लेवल पर पहुंच गया था, हालांकि, मार्केट क्लोज होते-होते ये रफ्तार कुछ धीमी पड़ी फिर भी सेंसेक्स 498.58 अंक चढ़कर 78,540.17 के लेवल पर क्लोज हुआ.&nbsp;</p>\r\n\r\n<p class=\"text-align-justify\"><strong>निफ्टी ने भी पकड़े रखी रफ्तार</strong><br />\r\nसेंसेक्स की तरह ही NSE Nifty ने भी शुरुआत से ही तेजी बनाए रखी. अपने पिछले बंद 23,587.50 के स्तर से उछलकर ये इंडेक्स 23,738.20 के लेवल पर खुला था और दिन के कारोबार के दौरान 260 अंकों से ज्यादा की उछाल के साथ ये 23,869 के लेवल तक गया. हालांकि, बाजार बंद होने पर ये भी कुछ फिसलकर 165.95 अंक की बढ़त लेते हुए 23,753.45 के लेवल पर क्लोज हुआ.&nbsp;</p>\r\n\r\n<p class=\"text-align-justify\"><strong>रिलायंस-ITC समेत ये शेयर भागे</strong><br />\r\nसप्ताह के पहले कारोबारी दिन सबसे ज्यादा चढ़ने वाले शेयरों पर नजर डालें, तो मुकेश अंबानी की Reliance Industries का शेयर शुरुआत से ही ग्रीन जोन में कारोबार करता नजर आया. इसके साथ ही HDFC Bank, ITC, Titan, Tech Mahindra और IndusInd Bank के स्टॉक्स आगे रहे.&nbsp;</p>\r\n\r\n<p class=\"text-align-justify\"><strong>सबसे ज्यादा उछलने वाले 10 शेयर&nbsp;</strong></p>\r\n\r\n<p class=\"text-align-justify\"><strong>शेयर का नाम</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<strong>तेजी (प्रतिशत में)</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<strong>शेयर का क्लोजिंग&nbsp;प्राइस</strong><br />\r\nAmber Share&nbsp; &nbsp; &nbsp; &nbsp;12.69%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6891.10 रुपये&nbsp;&nbsp; &nbsp;<br />\r\nPGIL Share&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 9.64%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1438.00 रुपये<br />\r\nAWL Share&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 8.44%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 315.55 रुपये<br />\r\nTorntPower&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5.09%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1552.00 रुपये<br />\r\nSAIL Share&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4.30%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;121.15 रुपये<br />\r\nPaytm&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.15%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;965.60 रुपये<br />\r\nITC Share&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.07%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;474.20 रुपये<br />\r\nHDFC Bank&nbsp; &nbsp; &nbsp; &nbsp; 1.63%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1801.00 रुपये<br />\r\nReliance Share&nbsp;&nbsp; 1.33%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1222.10 रुपये<br />\r\nTitan Share&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.16%&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3396.50 रुपये</p>\r\n\r\n<p class=\"text-align-justify\"><strong>पौने दो घंटे में ही निवेशक मालामाल</strong><br />\r\nशेयर बाजार में शुरुआती कारोबार के दौरान ही आई तेजी के चलते बॉम्बे स्टॉक एक्सचेंज का मार्केट कैप (BSE Market Cap) कुछ ही देर में 440.90 लाख करोड़ रुपये से उछलकर 444.37 लाख करोड़ रुपये के लेवल पर पहुंच गया. इस हिसाब से देखें तो महज पौने दो घंटे में ही शेयर बाजार निवेशकों ने 3.38 लाख करोड़ रुपये की बड़ी रकम कमा डाली. &nbsp;&nbsp;</p>\r\n\r\n<p class=\"text-align-justify\"><strong>शुक्रवार को बाजार में आई थी बड़ी गिरावट&nbsp;</strong><br />\r\nबता दें कि बीते सप्ताह के आखिरी कारोबारी दिन शेयर बाजार में बड़ी गिरावट देखने को मिली थी. कारोबार के दौरान सेंसेक्‍स (Sensex) 1200 अंक तक फिसल गया था, जबकि Nifty में 364 अंक तक की गिरावट आई थी. हालांकि, मार्केट क्लोज होने पर सेंसेक्स 1176 अंक टूटकर 78041 पर क्‍लोज हुआ, जबकि निफ्टी 364 अंक गिरकर 23,587 पर क्‍लोज हुआ था.&nbsp;</p>\r\n\r\n<p class=\"text-align-justify\"><strong>(नोट- शेयर बाजार में किसी भी तरह के निवेश से पहले अपने मार्केट एक्सपर्ट्स की सलाह जरूर लें.)</strong></p>\r\n",
+"no_author": {
+"a_title": "aajtak.in"
+}
+}
+},
+{
+"n_id": "2127567",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/crime/news/story/unnao-rape-survivor-father-death-case-delhi-high-court-extends-kuldeep-sengar-interim-bail-opnm2-dskc-2127567-2024-12-23",
+"n_title": "उन्नाव केस: कुलदीप सेंगर को बड़ी राहत, इतने दिन के लिए बढ़ी जमानत",
+"n_short_desc": "उन्नाव रेप केस पीड़िता के पिता के मौत के मामले में जेल में बंद भाजपा से निष्कासित नेता कुलदीप सेंगर को एक बार फिर राहत मिली है. दिल्ली हाई कोर्ट ने उनकी अंतरिम जमानत 20 जनवरी तक बढ़ा दी. वो इस केस में 10 साल की सजा काट रहे हैं.",
+"n_pcategory_id": "358127",
+"n_pcategory_name": "क्राइम न्यूज़",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769407131827-kuldeep-singh-sengar-073504484-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769407131827-kuldeep-singh-sengar-073504484-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/6769407131827-kuldeep-singh-sengar-073504484-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 17:20:18",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p>उन्नाव रेप केस पीड़िता के पिता के मौत के मामले में जेल में बंद भाजपा से निष्कासित नेता कुलदीप सेंगर को एक बार फिर राहत मिली है. दिल्ली हाई कोर्ट ने उनकी अंतरिम जमानत 20 जनवरी तक बढ़ा दी. वो इस केस में 10 साल की सजा काट रहे हैं.&nbsp;</p>\r\n\r\n<p>न्यायमूर्ति मनोज कुमार ओहरी ने चिकित्सा आधार पर अंतरिम जमानत बढ़ाने की कुलदीप सेंगर की याचिका पर सुनवाई करते हुए कहा कि हाई कोर्ट की खंडपीठ ने उन्नाव रेप केस में उनकी सजा के अंतरिम निलंबन को भी एक महीने के लिए बढ़ा दिया है.</p>\r\n\r\n<p>न्यायमूर्ति ओहरी ने कहा, \"डिवीजन बेंच के 20 दिसंबर के आदेश के मद्देनजर अपीलकर्ता की सजा 20 जनवरी, 2025 तक निलंबित रहेगी, जिस दिन वो आत्मसमर्पण करेगा. इसके साथ ही आदेश संबंधित जेल अधीक्षक को भी सूचित किया जाना चाहिए.\"</p>\r\n\r\n<p>न्यायमूर्ति प्रतिभा एम सिंह और अमित शर्मा की पीठ ने 20 दिसंबर को उन्नाव रेप केस की सुनवाई करते हुए कुलदीप सेंगर की अंतरिम जमानत 20 जनवरी तक बढ़ा दी थी. कोर्ट ने शर्तें भी लगाई हैं, जिसके तहत सेंगर एम्स के अलावा कहीं दूसरी जगह नहीं जा सकते.<br />\r\n&nbsp;<br />\r\nएम्स की एक रिपोर्ट में कहा गया है कि डॉक्टरों की एक टीम द्वारा सेंगर का मूल्यांकन करने के बाद आवश्यक शल्य चिकित्सा की गई थी. सेंगर की ओर से पेश वकील ने आगे के उपचार को सुनिश्चित करने के लिए जमानत पांच महीने तक बढ़ाने की मांग की थी.&nbsp;</p>\r\n\r\n<p>पिछली सुनवाई में उन्होंने कहा था, 'उनको ऐसी जगह पर रखा जाना चाहिए जहां कोई संक्रमण न हो. वरना वो अपनी दृष्टि खो सकते हैं.' इससे पहले 5 दिसंबर को कोर्ट ने उनकी सजा को 20 दिसंबर तक के लिए अंतरिम रूप से निलंबित करने का निर्देश दिया था.&nbsp;</p>\r\n\r\n<p>कोर्ट ने कुलदीप सेंगर को उनकी चिकित्सा स्थिति की व्यापक समीक्षा के लिए नई दिल्ली स्थित एम्स में भर्ती करने का आदेश दिया था. 20 दिसंबर, 2019 को नाबालिग पीड़िता के साथ बलात्कार करने के आरोप में उनको आजीवन कारावास की सजा सुनाई गई थी.&nbsp;</p>\r\n\r\n<p>बताते चलें कि साल 2017 में नाबालिग लड़की का अपहरण कर उसके साथ बलात्कार किया गया था. 13 मार्च, 2020 को कुलदीप सेंगर को ट्रायल कोर्ट ने बलात्कार पीड़िता के पिता की हिरासत में मौत के मामले में 10 साल के कठोर कारावास की सजा सुनाई थी.</p>\r\n",
+"no_author": {
+"a_title": "aajtak.in"
+}
+}
+},
+{
+"n_id": "2127587",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://www.aajtak.in/india/news/story/kanpur-mayor-pramila-pandey-mayor-broke-the-locks-of-the-closed-temples-ntc-rpti-2127587-2024-12-23",
+"n_title": "कानपुर के बेकनगंज में 40 साल से बंद पड़ा था मंदिर, मेयर ने तुड़वाये ताले तो दर्शन के लिए उमड़ी भीड़",
+"n_short_desc": "बेकनगंज इलाके में 40 साल से एक मंदिर बंद पड़ा था. सोमवार को महापौर ने इस मंदिर का ताला तुड़वाया. मंदिर के अंदर से मिली प्रतिमाएं खंडित थीं और  मंदिर भी जर्जर अवस्था में था. प्रशासन के साथ ही 40 साल बाद पहली बार हिंदू समाज के लोग भी मंदिर के अंदर दर्शन करने पहुंचे.",
+"n_pcategory_id": "358125",
+"n_pcategory_name": "न्यूज़",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/676944083726b-kanpur-temple-230538467-16x9.jpg?size=260:147",
+"n_large_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/676944083726b-kanpur-temple-230538467-16x9.jpg?size=555:313",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202412/676944083726b-kanpur-temple-230538467-16x9.jpg?size=749:421",
+"n_updated_datetime": "2024-12-23 17:00:53",
+"n_photo": [],
+"n_video": [],
+"n_blog": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_offline_data": {
+"no_desc_withouthtml": "<p>संभल के बाद अब कानपुर में भी कई सालों से बंद पड़े मंदिर का मामला प्रकाश में आया है. कानपुर के बेकनगंज इलाके में महापौर ने सुरक्षा बलों के साथ पहुंचकर बंद पड़े मंदिर का ताला तुड़वाया. यहां 40 साल से बंद पड़े एक शिव मंदिर का ताला तुड़वाया गया. ताला टूटते ही हिंदू समाज की महिलाएं मंदिर के दर्शन के लिए अंदर पहुंची.</p>\r\n\r\n<p><strong>कार्रवाई में चिह्नित किए गए 125 मंदिर</strong><br />\r\nउन्होंने इस कार्रवाई के लिए प्रशासन का धन्यवाद किया है. बता दें कि इलाके में कुल 125 मंदिर चिह्नित किए गए हैं. नगर निगम इन सभी मंदिरों की सफाई कराएगी और फिर इन्हें दोबारा स्थापित किए जाने की रिपोर्ट भेजी जाएगी.</p>\r\n\r\n<p>बेकनगंज इलाके में 40 साल से एक मंदिर बंद पड़ा था. सोमवार को महापौर ने इस मंदिर का ताला तुड़वाया. मंदिर के अंदर से मिली प्रतिमाएं खंडित थीं और &nbsp;मंदिर भी जर्जर अवस्था में था. प्रशासन के साथ ही 40 साल बाद पहली बार हिंदू समाज के लोग भी मंदिर के अंदर दर्शन करने पहुंचे. इस पूरी कार्रवाई के बाद मंदिर से निकलते के महापौर प्रमिला पांडे ने आजतक को पूरी जानकारी दी और बताया कि अंदर सभी मूर्तियां खंडित हैं.</p>\r\n\r\n<p><strong>क्या बोलीं मेयर?</strong><br />\r\nकानपुर की मेयर प्रमिला पांडे ने शहर में मंदिरों की स्थिति को लेकर एक बड़ा बयान दिया है. उन्होंने कहा, \"मंदिरों की हालत बेहद खराब है. कई मंदिरों में मूर्तियां नहीं हैं। एक जगह तो लेदर फैक्ट्री बना दी गई है. मंदिरों की मूर्तियों को गंगा नदी में फेंक दिया गया है.\"</p>\r\n\r\n<p>प्रमिला पांडे ने इन मुद्दों को लेकर प्रशासन और स्थानीय लोगों पर भी सवाल उठाए.उन्होंने कहा कि कानपुर जैसे ऐतिहासिक और धार्मिक शहर में मंदिरों की यह स्थिति चिंताजनक है. मेयर ने इस मामले में तत्काल कार्रवाई की मांग की और प्रशासन से अपील की कि मंदिरों की मरम्मत की जाए और उन्हें उनकी पुरानी स्थिति में बहाल किया जाए.</p>\r\n",
+"no_author": {
+"a_title": "सिमर चावला"
+}
+}
+}
+]
+},
+"cache": {
+"redis_ttl": "60",
+"akamai_ttl": "90"
+},
+"data_source": "R"
 }
