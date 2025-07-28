@@ -2,46 +2,59 @@
 "status_code": "1",
 "status_message": "",
 "data": {
-"channel_list": [
+"channel_id": "1",
+"channel_title": "IndiaToday",
+"updated_datetime": "2018-09-04 18:05:09",
+"share_description": "India Today Live TV: Watch our news broadcast on the go",
+"share_url": "https://www.indiatoday.in/livetv",
+"ios": [
 {
-"id": "1",
-"name": "IndiaToday",
-"icon": "https://smedia2.intoday.in/app/logo/IT_90X90.png",
-"large_icon": "https://smedia2.intoday.in/app/logo/IT_512X512.png",
-"api_url": "https://alpha-itappfeeds.intoday.in/appapi/livetv_indiatoday",
-"is_audio_available": "0",
-"youtube_id": "",
-"vimeo_id": "4203334",  
-"pip_config": {
-"enabled": true,
-"position": "bottom_right"
-}
-},
+"video": [
 {
-"id": "2",
-"name": "Aajtak",
-"icon": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/bemisaal-20-saal/90x90.png",
-"large_icon": "https://akm-img-a-in.tosshub.com/aajtak/resource/img/app/bemisaal-20-saal/Bemisaal_512x512.png",
-"api_url": "https://alpha-itappfeeds.intoday.in/appapi/livetv_aajtak",
-"is_audio_available": "1",
-"youtube_id": "",
-"pip_config": {
-"enabled": true,
-"position": "bottom_right"
+"autoplay": "1",
+"small_image": "http://media2.intoday.in/app/logo/IT_90X90.png",
+"playback": "native",
+"is_preroll_enabled": "1",
+"provider": "unsigned_livestream",
+"livetvcode": "",
+"vimeo_id": "4203334"
 }
-},
+],
+"audio": [
 {
-"id": "3",
-"name": "GNT",
-"icon": "https://akm-img-a-in.tosshub.com/indiatoday/appicon/misc/APP_Logo/LIVE_TV/imgpsh_fullsize_anim.png",
-"large_icon": "https://akm-img-a-in.tosshub.com/indiatoday/appicon/misc/APP_Logo/LIVE_TV/GNT_logo_512x512.png",
-"api_url": "https://alpha-itappfeeds.intoday.in/appapi/livetv_tej",
-"is_audio_available": "1",
-"youtube_id": "",
-"pip_config": {
-"enabled": true,
-"position": "bottom_right"
+"autoplay": "1",
+"small_image": "http://media2.intoday.in/app/logo/IT_90X90.png",
+"playback": "native",
+"is_preroll_enabled": "0",
+"provider": "bitgravity",
+"livetvcode": ""
 }
+]
+}
+],
+"android": [
+{
+"video": [
+{
+"autoplay": "1",
+"small_image": "http://media2.intoday.in/app/logo/IT_90X90.png",
+"playback": "native",
+"is_preroll_enabled": "1",
+"provider": "unsigned_livestream",
+"livetvcode": "",
+"vimeo_id": ""
+}
+],
+"audio": [
+{
+"autoplay": "1",
+"small_image": "http://media2.intoday.in/app/logo/IT_90X90.png",
+"playback": "native",
+"is_preroll_enabled": "0",
+"provider": "bitgravity",
+"livetvcode": ""
+}
+]
 }
 ]
 },
