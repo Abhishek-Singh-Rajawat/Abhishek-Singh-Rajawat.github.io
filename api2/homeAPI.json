@@ -10,7 +10,7 @@
 "large_icon": "https://smedia2.intoday.in/app/logo/IT_512X512.png",
 "api_url": "https://alpha-itappfeeds.intoday.in/appapi/livetv_indiatoday",
 "is_audio_available": "0",
-"youtube_id": "sYZtOFzM78M",
+"youtube_id": "",
 "vimeo_id": "4203334",  
 "pip_config": {
 "enabled": true,
