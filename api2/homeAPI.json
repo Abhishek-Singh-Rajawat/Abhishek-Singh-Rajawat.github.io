@@ -1,66 +1,125 @@
 {
-"status_code": "1",
-"status_message": "",
-"data": {
-"channel_id": "2",
-"channel_title": "IndiaToday",
-"updated_datetime": "2018-09-04 18:05:09",
-"share_description": "India Today Live TV: Watch our news broadcast on the go",
-"share_url": "https://www.indiatoday.in/livetv",
-"ios": [
-{
-"video": [
-{
-"autoplay": "1",
-"small_image": "http://media2.intoday.in/app/logo/IT_90X90.png",
-"playback": "native",
-"is_preroll_enabled": "1",
-"provider": "unsigned_livestream",
-"livetvcode": "",
-"vimeo_id": "4203334"
-}
-],
-"audio": [
-{
-"autoplay": "1",
-"small_image": "http://media2.intoday.in/app/logo/IT_90X90.png",
-"playback": "native",
-"is_preroll_enabled": "0",
-"provider": "bitgravity",
-"livetvcode": ""
-}
-]
-}
-],
-"android": [
-{
-"video": [
-{
-"autoplay": "1",
-"small_image": "http://media2.intoday.in/app/logo/IT_90X90.png",
-"playback": "native",
-"is_preroll_enabled": "1",
-"provider": "unsigned_livestream",
-"livetvcode": "",
-"vimeo_id": "4203334"
-}
-],
-"audio": [
-{
-"autoplay": "1",
-"small_image": "http://media2.intoday.in/app/logo/IT_90X90.png",
-"playback": "native",
-"is_preroll_enabled": "0",
-"provider": "bitgravity",
-"livetvcode": ""
-}
-]
-}
-]
-},
-"cache": {
-"redis_ttl": "60",
-"akamai_ttl": "80"
-},
-"data_source": "D"
+  "status": true,
+  "message": "Success",
+  "data": [
+    {
+      "id": 1,
+      "title": "ब्लैक & व्हाइट",
+      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/black-and-white-325x244-with-image.jpg",
+      "program_list": [
+        {
+          "id": 101,
+          "title": "पाकिस्तान में इमरान खान के लिए जबरदस्त प्रदर्शन, आमने-सामने...",
+          "image": "https://example.com/imran_khan.jpg",
+          "video_url": "https://example.com/video1.mp4",
+          "duration": "00:05:30"
+        },
+        {
+          "id": 102,
+          "title": "पाकिस्तान में इमरान खान के लिए जबरदस्त प्रदर्शन, आमने-सामने...",
+          "image": "https://example.com/imran_khan.jpg",
+          "video_url": "https://example.com/video2.mp4",
+          "duration": "00:05:30"
+        },
+        {
+          "id": 103,
+          "title": "पाकिस्तान में इमरान खान के लिए जबरदस्त प्रदर्शन, आमने-सामने...",
+          "image": "https://example.com/imran_khan.jpg",
+          "video_url": "https://example.com/video3.mp4",
+          "duration": "00:05:30"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "हल्ला बोल",
+      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/halla-bol-325x244.png",
+      "program_list": [
+        {
+          "id": 201,
+          "title": "अडानी ग्रुप पर लगे आरोपों का संसद सत्र से क्या कनेक्शन?..",
+          "image": "https://example.com/adani.jpg",
+          "video_url": "https://example.com/video1.mp4",
+          "duration": "00:05:30"
+        },
+        {
+          "id": 202,
+          "title": "अडानी ग्रुप पर लगे आरोपों का संसद सत्र से क्या कनेक्शन?..",
+          "image": "https://example.com/adani.jpg",
+          "video_url": "https://example.com/video2.mp4",
+          "duration": "00:05:30"
+        },
+        {
+          "id": 203,
+          "title": "अडानी ग्रुप पर लगे आरोपों का संसद सत्र से क्या कनेक्शन?..",
+          "image": "https://example.com/adani.jpg",
+          "video_url": "https://example.com/video3.mp4",
+          "duration": "00:05:30"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "वारदात",
+      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/022318050027_vardaat.jpg",
+      "program_list": [
+        {
+          "id": 301,
+          "title": "दिल दहला देने वाली वारदात: अपराध की सच्ची कहानी...",
+          "image": "https://example.com/vardaat1.jpg",
+          "video_url": "https://example.com/video1.mp4",
+          "duration": "00:07:20"
+        },
+        {
+          "id": 302,
+          "title": "वारदात का खुलासा: पुलिस की बड़ी कार्रवाई...",
+          "image": "https://example.com/vardaat2.jpg",
+          "video_url": "https://example.com/video2.mp4",
+          "duration": "00:06:15"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "मुंबई मेट्रो",
+      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/mumbai-metro-325x244.png",
+      "program_list": [
+        {
+          "id": 401,
+          "title": "मुंबई की ताज़ा खबरें और बड़ी घटनाएं...",
+          "image": "https://example.com/mumbai1.jpg",
+          "video_url": "https://example.com/video1.mp4",
+          "duration": "00:04:45"
+        },
+        {
+          "id": 402,
+          "title": "मुंबई की सड़कों से लेकर राजनीति तक...",
+          "image": "https://example.com/mumbai2.jpg",
+          "video_url": "https://example.com/video2.mp4",
+          "duration": "00:05:10"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "सुबह सुबह",
+      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/325x244_subah_subah.jpg",
+      "program_list": [
+        {
+          "id": 501,
+          "title": "सुबह की ताज़ा खबरें और खास रिपोर्ट...",
+          "image": "https://example.com/subah1.jpg",
+          "video_url": "https://example.com/video1.mp4",
+          "duration": "00:03:50"
+        },
+        {
+          "id": 502,
+          "title": "दिन की शुरुआत की बड़ी खबरें...",
+          "image": "https://example.com/subah2.jpg",
+          "video_url": "https://example.com/video2.mp4",
+          "duration": "00:04:10"
+        }
+      ]
+    }
+  ]
 }
