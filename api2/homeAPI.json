@@ -1,125 +1,242 @@
 {
-  "status": true,
-  "message": "Success",
-  "data": [
-    {
-      "id": 1,
-      "title": "ब्लैक & व्हाइट",
-      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/black-and-white-325x244-with-image.jpg",
-      "program_list": [
-        {
-          "id": 101,
-          "title": "पाकिस्तान में इमरान खान के लिए जबरदस्त प्रदर्शन, आमने-सामने...",
-          "image": "https://example.com/imran_khan.jpg",
-          "video_url": "https://example.com/video1.mp4",
-          "duration": "00:05:30"
-        },
-        {
-          "id": 102,
-          "title": "पाकिस्तान में इमरान खान के लिए जबरदस्त प्रदर्शन, आमने-सामने...",
-          "image": "https://example.com/imran_khan.jpg",
-          "video_url": "https://example.com/video2.mp4",
-          "duration": "00:05:30"
-        },
-        {
-          "id": 103,
-          "title": "पाकिस्तान में इमरान खान के लिए जबरदस्त प्रदर्शन, आमने-सामने...",
-          "image": "https://example.com/imran_khan.jpg",
-          "video_url": "https://example.com/video3.mp4",
-          "duration": "00:05:30"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "हल्ला बोल",
-      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/halla-bol-325x244.png",
-      "program_list": [
-        {
-          "id": 201,
-          "title": "अडानी ग्रुप पर लगे आरोपों का संसद सत्र से क्या कनेक्शन?..",
-          "image": "https://example.com/adani.jpg",
-          "video_url": "https://example.com/video1.mp4",
-          "duration": "00:05:30"
-        },
-        {
-          "id": 202,
-          "title": "अडानी ग्रुप पर लगे आरोपों का संसद सत्र से क्या कनेक्शन?..",
-          "image": "https://example.com/adani.jpg",
-          "video_url": "https://example.com/video2.mp4",
-          "duration": "00:05:30"
-        },
-        {
-          "id": 203,
-          "title": "अडानी ग्रुप पर लगे आरोपों का संसद सत्र से क्या कनेक्शन?..",
-          "image": "https://example.com/adani.jpg",
-          "video_url": "https://example.com/video3.mp4",
-          "duration": "00:05:30"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "वारदात",
-      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/022318050027_vardaat.jpg",
-      "program_list": [
-        {
-          "id": 301,
-          "title": "दिल दहला देने वाली वारदात: अपराध की सच्ची कहानी...",
-          "image": "https://example.com/vardaat1.jpg",
-          "video_url": "https://example.com/video1.mp4",
-          "duration": "00:07:20"
-        },
-        {
-          "id": 302,
-          "title": "वारदात का खुलासा: पुलिस की बड़ी कार्रवाई...",
-          "image": "https://example.com/vardaat2.jpg",
-          "video_url": "https://example.com/video2.mp4",
-          "duration": "00:06:15"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "मुंबई मेट्रो",
-      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/mumbai-metro-325x244.png",
-      "program_list": [
-        {
-          "id": 401,
-          "title": "मुंबई की ताज़ा खबरें और बड़ी घटनाएं...",
-          "image": "https://example.com/mumbai1.jpg",
-          "video_url": "https://example.com/video1.mp4",
-          "duration": "00:04:45"
-        },
-        {
-          "id": 402,
-          "title": "मुंबई की सड़कों से लेकर राजनीति तक...",
-          "image": "https://example.com/mumbai2.jpg",
-          "video_url": "https://example.com/video2.mp4",
-          "duration": "00:05:10"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "title": "सुबह सुबह",
-      "program_image": "https://akm-img-a-in.tosshub.com/aajtak/images/category/325x244_subah_subah.jpg",
-      "program_list": [
-        {
-          "id": 501,
-          "title": "सुबह की ताज़ा खबरें और खास रिपोर्ट...",
-          "image": "https://example.com/subah1.jpg",
-          "video_url": "https://example.com/video1.mp4",
-          "duration": "00:03:50"
-        },
-        {
-          "id": 502,
-          "title": "दिन की शुरुआत की बड़ी खबरें...",
-          "image": "https://example.com/subah2.jpg",
-          "video_url": "https://example.com/video2.mp4",
-          "duration": "00:04:10"
-        }
-      ]
-    }
-  ]
+"status_code": "1",
+"status_message": "",
+"data": {
+"category_id": "1206578",
+"category_title": "India",
+"id": "2298189",
+"title": "We get along very well, but...: Trump on US-India ties amid tariff dispute",
+"large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202509/us-030528297-16x9_0.jpg?size=749:421",
+"image_credit": "",
+"image_caption": "",
+"ai_strip_enable": true,
+"is_cover_video": 0,
+"cover_video_url": "",
+"cover_video_ratio": "",
+"app_video_caption": "",
+"updated_datetime": "2025-09-03 11:24:55",
+"published_datetime": "2025-09-03 11:05:56",
+"buzzflag": "0",
+"techflag": "0",
+"location": "Noida",
+"star_cast": "",
+"rating": {},
+"director": "",
+"movie_plot": "",
+"share_link": "https://alpha-indiatoday.intoday.in/india/story/us-indiatariffwar-2298189-2025-09-03",
+"snappost": {},
+"comment_count": "0",
+"is_sponsored": "0",
+"sponsored_icon": "",
+"sponsored_url": "",
+"is_anchor_tag": 0,
+"desc_withouthtml": " US President Donald Trump on Tuesday sharpened his attack on Indias trade policies, accusing New Delhi of imposing some of the steepest tariffs in the world and calling the long-standing economic relationship between the two countries \"one-sided.\"ADSSpeaking from the Oval Office, Trump said, \"We get along with India very well, but for many years, it was a one-sided relationship. Only now, since I came along and because of the power that we have with us, India was charging us tremendous tariffs, about the highest in the world, and we therefore werent doing much business with India, but they were doing business with us because we werent charging them foolishly. We weren't charging them.\"ADSThe US president claimed that Indias trade practices had cost American manufacturers heavily.\"So they would send in massive, you know, everything they made, they'd send it in, it poured into our country. Therefore, it wouldn't be made here, you know, which is a negative. But we would not send in anything because they were charging us 100 percent tariffs,\" Trump said.HARLEY-DAVIDSON HIT BY INDIAS DUTIESCiting an example, Trump pointed to the struggles of Harley-Davidson, one of Americas most recognised motorcycle brands, in selling its products in India.ADS\"Harley-Davidson couldn't sell into India. There was a 200 percent tariff on a motorcycle. So what happens? Harley-Davidson went to India and built a motorcycle plant. And now they don't have to pay tariffs. Same thing as us,\" Trump remarked.The president also claimed that unfair tariff structures were pushing companies to set up production outside the US. However, he argued that his administrations trade policies, including the imposition of steep reciprocal tariffs, were beginning to reverse the trend.COMPANIES TURNING TO THE US\"So what we're doing is literally thousands of companies are coming into the US, car companies, AI, but, you know, more traditionally, car companies. We have so many car company factories under construction or being designed right now. And they're coming from China, they're coming from Mexico, I must tell you, and they're coming from Canada. But they're coming into our country because they want to build here,\" Trump said.According to him, businesses see advantages in relocating operations to the US. \"They want to build here for two reasons. Number one, they'd like to be here. And number two, the tariffs are protecting them. And number three, they want to avoid paying tariffs. When they build their cars here, they don't have any tariffs to pay. You know, when you build here, you don't have any tariffs,\" he added.INDIA OFFERED TO CUT TARIFFS TO ZEROEarlier on Monday, Trump also claimed that New Delhi had shown a willingness to ease trade barriers \"to nothing.\"\"India has now offered to cut its tariffs to nothing, but it's getting late,\" he said.On social media, the president repeated his frustration over Indias choices in trade and defence procurement. He argued that New Delhi continues to rely heavily on Moscow for oil and military hardware. \"India sells to us, its biggest client, massive amounts of goods, but we sell them very little -- until now a totally one-sided relationship, and it has been for many decades,\" Trump wrote.Trumps sharp remarks came as Prime Minister Narendra Modi held separate talks with Russian President Vladimir Putin and Chinese President Xi Jinping at Shanghai Cooperation Organisation summit in Tianjin.In response to pressure from Washington, Prime Minister Modi reiterated that India would prioritise domestic concerns. He said he could not compromise on the interests of farmers, small industries, and cattle-rearers. ",
+"desc_withhtml": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\" \"http://www.w3.org/TR/REC-html40/loose.dtd\">\n<html><body><div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>US President Donald Trump on Tuesday sharpened his attack on <a href=\"https://www.indiatoday.in/business/story/donald-trump-claims-india-offered-zero-tariff-deal-in-trade-talks-2725187-2025-05-15\" target=\"_self\">India’s trade policies</a>, accusing New Delhi of imposing some of the steepest tariffs in the world and calling the long-standing economic relationship between the two countries \"one-sided.\"</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP><p>Speaking from the Oval Office, Trump said, \"We get along with India very well, but for many years, it was a one-sided relationship. Only now, since I came along and because of the power that we have with us, India was charging us tremendous tariffs, about the highest in the world, and we therefore weren’t doing much business with India, but they were doing business with us because we weren’t charging them foolishly. We weren't charging them.\"</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP><div class=\"embedcode\"><iframe  height=\"383\"   width=\"100%\"   src=\"https://www.youtube.com/embed/ouZ4NGGFlog\" allow=\"\" allowfullscreen=\"\" frameborder=\"0\" class=\"multy-video-iframe\"> </iframe></div><p><a href=\"https://www.indiatoday.in/world/us-news/story/trump-downplays-china-russia-axis-threat-very-disappointed-putin-glbs-2781015-2025-09-03\" target=\"_self\">The US president</a> claimed that India’s trade practices had cost American manufacturers heavily.</p><article><div class=\"custom-media-docs\"><iframe allowfullscreen=\"\" alt=\"\" class=\"custom-video-iframe-cls multy-video-iframe\" frameborder=\"0\" height=\"500\" layout=\"\" scrolling=\"no\" src=\"https://alpha-embed-indiatoday.intoday.in/share/video/embed/630\" title=\"\" width=\"100%\" class=\"multy-video-iframe\"></iframe></div></article><p>\"So they would send in massive, you know, everything they made, they'd send it in, it poured into our country. Therefore, it wouldn't be made here, you know, which is a negative. But we would not send in anything because they were charging us 100 percent tariffs,\" Trump said.</p><h3>HARLEY-DAVIDSON HIT BY INDIA’S DUTIES</h3><p>Citing an example, Trump pointed to the struggles of Harley-Davidson, one of America’s most recognised motorcycle brands, in selling its products in India.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP><p>\"Harley-Davidson couldn't sell into India. There was a 200 percent tariff on a motorcycle. So what happens? Harley-Davidson went to India and built a motorcycle plant. And now they don't have to pay tariffs. Same thing as us,\" Trump remarked.</p><p>The president also claimed that unfair tariff structures were pushing companies to set up production outside the US. However, he argued that his administration’s trade policies, including the imposition of steep reciprocal tariffs, were beginning to reverse the trend.</p><h3>COMPANIES TURNING TO THE US</h3><p>\"So what we're doing is literally thousands of companies are coming into the US, car companies, AI, but, you know, more traditionally, car companies. We have so many car company factories under construction or being designed right now. And they're coming from China, they're coming from Mexico, I must tell you, and they're coming from Canada. But they're coming into our country because they want to build here,\" Trump said.</p><p>According to him, businesses see advantages in relocating operations to the US. \"They want to build here for two reasons. Number one, they'd like to be here. And number two, the tariffs are protecting them. And number three, they want to avoid paying tariffs. When they build their cars here, they don't have any tariffs to pay. You know, when you build here, you don't have any tariffs,\" he added.</p><h3>INDIA OFFERED TO CUT TARIFFS TO ZERO</h3><p>Earlier on Monday, Trump also claimed that New Delhi had shown a willingness to <a href=\"https://www.indiatoday.in/world/story/india-has-offered-to-cut-tariffs-to-nothing-but-its-getting-late-trumps-claim-hours-after-pm-putin-meet-2780265-2025-09-01\" target=\"_self\">ease trade barriers \"to nothing.\"</a></p><p>\"India has now offered to cut its tariffs to nothing, but it's getting late,\" he said.</p><p>On social media, the president repeated his frustration over India’s choices in trade and defence procurement. He argued that New Delhi continues to rely heavily on Moscow for oil and military hardware. \"India sells to us, its biggest client, massive amounts of goods, but we sell them very little -- until now a totally one-sided relationship, and it has been for many decades,\" Trump wrote.</p><p>Trump’s sharp remarks came as Prime Minister <a href=\"https://www.indiatoday.in/india/story/modi-putin-hug-sco-summit-china-visit-trump-tariffs-xi-jinping-india-russia-oil-deal-2779805-2025-09-01\" target=\"_self\">Narendra Modi held separate talks with Russian President Vladimir Putin</a> and Chinese President Xi Jinping at Shanghai Cooperation Organisation (SCO) summit in Tianjin.</p><p>In response to pressure from Washington, Prime Minister Modi reiterated that India would prioritise domestic concerns. He said he could not compromise on the interests of farmers, small industries, and cattle-rearers.</p></div>\n      </body></html>",
+"article": [
+{
+"type": "para",
+"value": "<p>US President Donald Trump on Tuesday sharpened his attack on <a href=\"https://www.indiatoday.in/business/story/donald-trump-claims-india-offered-zero-tariff-deal-in-trade-talks-2725187-2025-05-15\" target=\"_self\">India’s trade policies</a>, accusing New Delhi of imposing some of the steepest tariffs in the world and calling the long-standing economic relationship between the two countries \"one-sided.\"</p>"
+},
+{
+"type": "ads",
+"value": "<itg-nativeapp>ADS</itg-nativeapp>"
+},
+{
+"type": "para",
+"value": "<p>Speaking from the Oval Office, Trump said, \"We get along with India very well, but for many years, it was a one-sided relationship. Only now, since I came along and because of the power that we have with us, India was charging us tremendous tariffs, about the highest in the world, and we therefore weren’t doing much business with India, but they were doing business with us because we weren’t charging them foolishly. We weren't charging them.\"</p>"
+},
+{
+"type": "ads",
+"value": "<itg-nativeapp>ADS</itg-nativeapp>"
+},
+{
+"type": "embed",
+"value": "<iframe height=\"383\" width=\"100%\" src=\"https://www.youtube.com/embed/ouZ4NGGFlog\" allow=\"\" allowfullscreen=\"\" frameborder=\"0\" class=\"multy-video-iframe\"> </iframe>"
+},
+{
+"type": "para",
+"value": "<p><a href=\"https://www.indiatoday.in/world/us-news/story/trump-downplays-china-russia-axis-threat-very-disappointed-putin-glbs-2781015-2025-09-03\" target=\"_self\">The US president</a> claimed that India’s trade practices had cost American manufacturers heavily.</p>"
+},
+{
+"type": "embed",
+"value": "<iframe src=\"https://feeds.intoday.in/interactive/live-assessment/story-poll/697467645f38?content_id=2779985&device=app" width=\"100%\" height=\"480\" class=\"stpolliframe\" frameborder=\"0\" scrolling=\"no\"allowfullscreen></iframe>"
+},
+{
+"id": "2298189",
+"type": "video",
+"value": "https://video-indiatoday.tosshub.com/indiatoday/video/embed/2025_09/03_sep_25_countdown_timer_intro_video_175687648068b7cec039f5f/03_sep_25_countdown_timer_intro_video_175687648068b7cec039f5f.m3u8",
+"ratio": "16:9",
+"thumbnail_url": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202308/video-thumb-option2.jpg"
+},
+{
+"type": "para",
+"value": "<p>\"So they would send in massive, you know, everything they made, they'd send it in, it poured into our country. Therefore, it wouldn't be made here, you know, which is a negative. But we would not send in anything because they were charging us 100 percent tariffs,\" Trump said.</p>"
+},
+{
+"type": "text",
+"value": "<h3>HARLEY-DAVIDSON HIT BY INDIA’S DUTIES</h3>"
+},
+{
+"type": "para",
+"value": "<p>Citing an example, Trump pointed to the struggles of Harley-Davidson, one of America’s most recognised motorcycle brands, in selling its products in India.</p>"
+},
+{
+"type": "ads",
+"value": "<itg-nativeapp>ADS</itg-nativeapp>"
+},
+{
+"type": "para",
+"value": "<p>\"Harley-Davidson couldn't sell into India. There was a 200 percent tariff on a motorcycle. So what happens? Harley-Davidson went to India and built a motorcycle plant. And now they don't have to pay tariffs. Same thing as us,\" Trump remarked.</p>"
+},
+{
+"type": "para",
+"value": "<p>The president also claimed that unfair tariff structures were pushing companies to set up production outside the US. However, he argued that his administration’s trade policies, including the imposition of steep reciprocal tariffs, were beginning to reverse the trend.</p>"
+},
+{
+"type": "embed",
+"value": "<iframe src=\"https://feeds.intoday.in/interactive/assessment/quiz/697467645f3236/?content_id=2298189&filter=content&site=it&page=1&limit=5&device=app\" width=\"100%\" height=\"570\" class=\"stquiziframe\" frameborder=\"0\" scrolling=\"no\" allowfullscreen></iframe>"
+},
+{
+"type": "text",
+"value": "<h3>COMPANIES TURNING TO THE US</h3>"
+},
+{
+"type": "para",
+"value": "<p>\"So what we're doing is literally thousands of companies are coming into the US, car companies, AI, but, you know, more traditionally, car companies. We have so many car company factories under construction or being designed right now. And they're coming from China, they're coming from Mexico, I must tell you, and they're coming from Canada. But they're coming into our country because they want to build here,\" Trump said.</p>"
+},
+{
+"type": "para",
+"value": "<p>According to him, businesses see advantages in relocating operations to the US. \"They want to build here for two reasons. Number one, they'd like to be here. And number two, the tariffs are protecting them. And number three, they want to avoid paying tariffs. When they build their cars here, they don't have any tariffs to pay. You know, when you build here, you don't have any tariffs,\" he added.</p>"
+},
+{
+"type": "text",
+"value": "<h3>INDIA OFFERED TO CUT TARIFFS TO ZERO</h3>"
+},
+{
+"type": "para",
+"value": "<p>Earlier on Monday, Trump also claimed that New Delhi had shown a willingness to <a href=\"https://www.indiatoday.in/world/story/india-has-offered-to-cut-tariffs-to-nothing-but-its-getting-late-trumps-claim-hours-after-pm-putin-meet-2780265-2025-09-01\" target=\"_self\">ease trade barriers \"to nothing.\"</a></p>"
+},
+{
+"type": "para",
+"value": "<p>\"India has now offered to cut its tariffs to nothing, but it's getting late,\" he said.</p>"
+},
+{
+"type": "para",
+"value": "<p>On social media, the president repeated his frustration over India’s choices in trade and defence procurement. He argued that New Delhi continues to rely heavily on Moscow for oil and military hardware. \"India sells to us, its biggest client, massive amounts of goods, but we sell them very little -- until now a totally one-sided relationship, and it has been for many decades,\" Trump wrote.</p>"
+},
+{
+"type": "para",
+"value": "<p>Trump’s sharp remarks came as Prime Minister <a href=\"https://www.indiatoday.in/india/story/modi-putin-hug-sco-summit-china-visit-trump-tariffs-xi-jinping-india-russia-oil-deal-2779805-2025-09-01\" target=\"_self\">Narendra Modi held separate talks with Russian President Vladimir Putin</a> and Chinese President Xi Jinping at Shanghai Cooperation Organisation (SCO) summit in Tianjin.</p>"
+},
+{
+"type": "para",
+"value": "<p>In response to pressure from Washington, Prime Minister Modi reiterated that India would prioritise domestic concerns. He said he could not compromise on the interests of farmers, small industries, and cattle-rearers.</p>"
+},
+{
+"type": "embed",
+"value": "<div class=\"cf__wrapper widgetgap\"><style>:root{--cfbasebg:#FBF8F4;--cfsecondbasebg:#FFF;--cftextcolor:#000;}body{background-color:#fff}.cf__wrapper{font-family: \"Rubik\", \"helvatica\", Arial, sans-serif; font-size: 100%; line-height: 1; text-rendering: optimizeLegibility; padding: 0; margin: 0;background-color:transparent;background-color:var(--cfbasebg); border:1px solid #EDEAE5; border-radius: 8px;padding-bottom: 10px;}@media (prefers-color-scheme: dark){:root{--cfbasebg:#565656;--cfsecondbasebg:#4A4A4A;--cftextcolor:#fff;} body{background-color:#000}} .cf__wrapper .content__wrap { padding:10px; display: block; grid-template-columns: 1fr 1fr; grid-gap: 0px 31px;}.cf__wrapper .content__wrap .lhs .title {display: flex; justify-content: left; align-items: center; font-size: 22px; font-weight: 600;}.cf__wrapper .content__wrap .lhs .title svg {margin-right: 10px;}.cf__wrapper .content__wrap .rhs .title {display: flex; justify-content: right; align-items: center; font-size: 22px; font-weight: 600; margin-top: 30px; color:var(--cftextcolor);}.cf__wrapper .content__wrap .rhs .title svg {margin-left: 10px;}.cf__wrapper .content__wrap .card {background-color:var(--cfsecondbasebg); border:1px solid#e2e2e2; border-radius: 12px; padding: 10px; margin-top: 10px;}.cf__wrapper .content__wrap .card .content {font-size: 16px; line-height: 24px; font-weight: 500; color:var(--cftextcolor);}.cf__wrapper .content__wrap .card .author {font-size: 13px; line-height: 13px; font-weight: 400; color: var(--cftextcolor); margin-top: 10px;font-style: italic;}.cf__wrapper .comment__wrap {background-color: #F5F2ED; border: #EDEAE5; border-radius: 0px 0px 8px 8px; padding: 20px 20px 22px;}.cf__wrapper .comment__wrap .title {display: flex; justify-content: center; align-items: center; font-size: 22px; font-weight: 600;}.cf__wrapper .comment__wrap .title svg {margin-left: 10px;}.cf__wrapper .comment__wrap .input__box {width: 100%;}.cf__wrapper .comment__wrap .input__box .txtarea {box-sizing: border-box; border: 1px solid #e2e2e2; border-radius: 12px; width: 100%; margin: 20px 0px 20px; padding: 15px; font-size: 16px; line-height: 22px; max-height: 148px;}.cf__wrapper .comment__wrap .input__box .txtarea:focus {outline: none;}.cf__wrapper .comment__wrap .input__box .txtarea::placeholder {font-size: 14px; font-weight: 400; color: #999999;}.cf__wrapper .comment__wrap .btn__wrap {display: block; text-align: center; align-items: center; justify-content: center; margin-top: -3px;}.cf__wrapper .btn__submit {border-radius: 30px; background-color: #CC0000; color: #fff; display: flex; align-items: center; justify-content: center; padding: 12px 0 12px 0px; font-size: 18px; font-weight: 600; width: 225px; margin: 0 auto; cursor: pointer; position: relative; text-decoration:none;}@media (min-width:767px) {.cf__wrapper .content__wrap {padding: 16px 30px 19px; display: grid;}.cf__wrapper .content__wrap .lhs .title {justify-content: center;}.cf__wrapper .content__wrap .rhs .title {justify-content: center; margin-top: 0px;}.cf__wrapper .content__wrap .card {padding: 20px;margin-top: 10px;height: calc(100% - 30px); }.cf__wrapper .content__wrap .card .author {margin-top: 15px;}.cf__wrapper .comment__wrap {padding: 20px 30px 17px;}.cf__wrapper .comment__wrap .input__box .txtarea {margin: 10px 0px 20px; max-height: 110px; padding: 15px 20px;}.cf__wrapper .comment__wrap .input__box .txtarea::placeholder {font-size: 12px;}.cf__wrapper .comment__wrap .btn__wrap {display: flex; margin-top: 0px;}.cf__wrapper .btn__submit {min-width: 171px; width: auto; margin: 0px;}.cf__wrapper .comment__wrap .btn__wrap .btn__opinions {margin: 0px 0px 0px 20px; width: auto; padding: 12.5px 24.5px;} .cf__wrapper .content__wrap .lhs .title .title_content, .cf__wrapper .content__wrap .rhs .title .title_content {display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;line-height: 26px;}}</style><div class=\"content__wrap\"><div class=\"lhs\"><div class=\"title\"><svg width=\"28\" height=\"29\" viewBox=\"0 0 28 29\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 14.6807C0 22.5505 6.26827 28.9307 14 28.9307C21.7317 28.9307 28 22.5505 28 14.6807C28 6.81086 21.7317 0.430665 14 0.430665C6.26827 0.430666 0 6.81087 0 14.6807ZM13.209 12.2377L21.9333 12.2377V17.1236L13.209 17.1236V22.2807L6.06667 14.6807L13.209 7.08067V12.2377Z\" fill=\"#CC0000\" /></svg> <div class=\"title_content\">Left Says</div></div><div class=\"card\"><p class=\"content\">Speaking from the Oval Office, Trump said, \"We get along with India very well, but for many years, it was a one-sided relationship.</p><p class=\"author\">- Donald Trump</p></div></div><div class=\"rhs\"><div class=\"title\"><div class=\"title_content\">Right Says</div><svg width=\"28\" height=\"29\" viewBox=\"0 0 28 29\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M28 14.6807C28 22.5505 21.7317 28.9307 14 28.9307C6.26827 28.9307 0 22.5505 0 14.6807C0 6.81086 6.26827 0.430665 14 0.430665C21.7317 0.430666 28 6.81087 28 14.6807ZM14.791 12.2377L6.06667 12.2377V17.1236L14.791 17.1236V22.2807L21.9333 14.6807L14.791 7.08067V12.2377Z\" fill=\"#1475CA\" /></svg></div><div class=\"card\"><p class=\"content\">While economies around the world are facing concerns and challenges driven by economic self-interest, India has achieved a growth rate of 7.8 per cent. The day is not far when the world will say: Designed in India, Made in India, Trusted by the World.</p><p class=\"author\">- Narendra Modi</p></div></div></div><div class=\"info_butn\"><a class=\"btn__submit\" href=\"http://opinion.intoday.in/new/amp/comment/sso/get\">What you say?</a></div></div>"
+},
+{
+"type": "para",
+"value": "<p>- Ends<span id=\"rectangle\" style=\"width:8px; height:8px; background-color:red; display:inline-block \"></span></p>"
+}
+],
+"related_content": [],
+"native_video": [],
+"tag": [],
+"highlight": [
+{
+"h_title": "The US accused India of imposing some of the highest tariffs in the world"
+},
+{
+"h_title": "Donald Trump says Harley-Davidson forced to build a plant in India to avoid duties"
+},
+{
+"h_title": "The US President says India has offered to cut tariffs 'to nothing'"
+}
+],
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"listicles": {
+"templates": "bullet_points",
+"title": null,
+"data": [
+{
+"description": null,
+"type": "",
+"color": ""
+}
+]
+},
+"tech_photo_gallery": [],
+"tech_photos": [],
+"tech_pros_cons": {},
+"polls": [],
+"n_emoji_left": [],
+"n_emoji_right": [],
+"factcheck": {},
+"expert-chunk": {},
+"author": {
+"a_id": "2296961",
+"a_title": "test",
+"a_twitter_handler": "",
+"a_is_inactive_profile": 0,
+"a_facebook": "",
+"a_designation": "",
+"a_email": "yashpal.sharma@mail.com",
+"a_image": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+"path": "https://alpha-indiatoday.intoday.in/author/test-2"
+},
+"authors": [
+{
+"a_id": "2296961",
+"a_title": "test",
+"a_twitter_handler": "",
+"a_is_inactive_profile": 0,
+"a_facebook": "",
+"a_designation": "",
+"a_email": "yashpal.sharma@mail.com",
+"a_image": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+"path": "https://alpha-indiatoday.intoday.in/author/test-2"
+}
+],
+"action_type": "Edited By",
+"editors": [
+{
+"a_id": "2297460",
+"a_title": "Manish Sharma",
+"a_twitter_handler": "",
+"a_is_inactive_profile": 0,
+"a_facebook": "",
+"a_designation": "Sr. Editor ",
+"a_email": "manishsharma@test.com",
+"a_image": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+"path": "https://alpha-indiatoday.intoday.in/author/manish-sharma"
+}
+],
+"body_ender_text": "",
+"in_this_story": [],
+"read_more": {
+"heading_text": "",
+"embed_video": "",
+"links": [
+{
+"link_title": "",
+"link_url": ""
+}
+]
+},
+"also_read": [
+{
+"slug": "",
+"title": "",
+"share_link": ""
+}
+]
+},
+"cache": {
+"redis_ttl": "120",
+"akamai_ttl": "2592000"
+},
+"data_source": "D"
 }
