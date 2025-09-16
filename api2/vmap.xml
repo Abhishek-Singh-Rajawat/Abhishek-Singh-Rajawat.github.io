@@ -2,21 +2,21 @@
 <vmap:AdBreak timeOffset="start" breakType="linear" breakId="preroll">
 <vmap:AdSource id="preroll-ad-1" allowMultipleAds="false" followRedirects="true">
 <vmap:AdTagURI templateType="vast3">
-<![CDATA[ https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&correlator= ]]>
+<![CDATA[https://pubads.g.doubleclick.net/gampad/ads?sz=400x300&iu=/1007232/Aajtak_Apps/AT_And_VOD_Preroll_400x300&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]]]>
 </vmap:AdTagURI>
 </vmap:AdSource>
 </vmap:AdBreak>
 <vmap:AdBreak timeOffset="00:00:15.000" breakType="linear" breakId="midroll-1">
 <vmap:AdSource id="midroll-1-ad-1" allowMultipleAds="false" followRedirects="true">
 <vmap:AdTagURI templateType="vast3">
-<![CDATA[ https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&correlator= ]]>
+<![CDATA[https://pubads.g.doubleclick.net/gampad/ads?sz=400x300&iu=/1007232/Aajtak_Apps/AT_And_VOD_Preroll_400x300&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]]]>
 </vmap:AdTagURI>
 </vmap:AdSource>
 </vmap:AdBreak>
 <vmap:AdBreak timeOffset="end" breakType="linear" breakId="postroll">
 <vmap:AdSource id="postroll-ad-1" allowMultipleAds="false" followRedirects="true">
 <vmap:AdTagURI templateType="vast3">
-<![CDATA[ https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&correlator= ]]>
+<![CDATA[https://pubads.g.doubleclick.net/gampad/ads?sz=400x300&iu=/1007232/Aajtak_Apps/AT_And_VOD_Preroll_400x300&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]]]>
 </vmap:AdTagURI>
 </vmap:AdSource>
 </vmap:AdBreak>
