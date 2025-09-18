@@ -4,7 +4,8 @@
         <vmap:AdSource id="preroll-ad-1" allowMultipleAds="false" followRedirects="true">
             <vmap:AdTagURI templateType="vast3">
                 <![CDATA[
-                https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&correlator=&tfcd=0&npa=0&gdfp_req=1&output=vast&sz=400x300&unviewed_position_start=1                ]]>
+                https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&correlator=&tfcd=0&npa=0&gdfp_req=1&output=vast&sz=400x300&unviewed_position_start=1
+                ]]>
             </vmap:AdTagURI>
         </vmap:AdSource>
     </vmap:AdBreak>
@@ -12,14 +13,16 @@
         <vmap:AdSource id="midroll-ad-1" allowMultipleAds="false" followRedirects="true">
             <vmap:AdTagURI templateType="vast3">
                 <![CDATA[
-                    https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&correlator=&tfcd=0&npa=0&gdfp_req=1&output=vast&sz=400x300&unviewed_position_start=1
-        </vmap:AdSource>
+                https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&correlator=&tfcd=0&npa=0&gdfp_req=1&output=vast&sz=400x300&unviewed_position_start=1
+                ]]>
+            </vmap:AdSource>
     </vmap:AdBreak>
     <vmap:AdBreak timeOffset="00:00:50.000" breakType="linear" breakId="midroll2">
         <vmap:AdSource id="midroll-ad-2" allowMultipleAds="false" followRedirects="true">
             <vmap:AdTagURI templateType="vast3">
                 <![CDATA[
                     https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&correlator=&tfcd=0&npa=0&gdfp_req=1&output=vast&sz=400x300&unviewed_position_start=1
+                ]]>
             </vmap:AdTagURI>
         </vmap:AdSource>
     </vmap:AdBreak>
