@@ -6,7 +6,7 @@
     <vmap:AdSource id="preroll-ad-1" allowMultipleAds="false" followRedirects="true">
       <vmap:AdTagURI templateType="vast3">
         <![CDATA[
-https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&gdfp_req=1&ad_rule=0&output=xml_vast3&sz=400x300&unviewed_position_start=1&vpos=preroll&pod=1&ppos=1&correlator=REPLACE_WITH_TIMESTAMP
+https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&gdfp_req=1&ad_rule=1&output=vmap&sz=400x300&unviewed_position_start=1&vpos=preroll&pod=1&ppos=1&correlator=REPLACE_WITH_TIMESTAMP
         ]]>
       </vmap:AdTagURI>
     </vmap:AdSource>
@@ -17,7 +17,7 @@ https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll
     <vmap:AdSource id="midroll-ad-1" allowMultipleAds="false" followRedirects="true">
       <vmap:AdTagURI templateType="vast3">
         <![CDATA[
-https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&gdfp_req=1&ad_rule=0&output=xml_vast3&sz=400x300&unviewed_position_start=1&vpos=midroll&cue=30000&pod=2&mridx=1&rmridx=1&ppos=1&correlator=REPLACE_WITH_TIMESTAMP
+https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&gdfp_req=1&ad_rule=1&output=vmap&sz=400x300&unviewed_position_start=1&vpos=midroll&cue=30000&pod=2&mridx=1&rmridx=1&ppos=1&correlator=REPLACE_WITH_TIMESTAMP
         ]]>
       </vmap:AdTagURI>
     </vmap:AdSource>
@@ -28,7 +28,7 @@ https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll
     <vmap:AdSource id="midroll-ad-2" allowMultipleAds="false" followRedirects="true">
       <vmap:AdTagURI templateType="vast3">
         <![CDATA[
-https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&gdfp_req=1&ad_rule=0&output=xml_vast3&sz=400x300&unviewed_position_start=1&vpos=midroll&cue=50000&pod=3&mridx=1&rmridx=1&ppos=1&correlator=REPLACE_WITH_TIMESTAMP
+https://pubads.g.doubleclick.net/gampad/ads?iu=/1007232/IT_AND_App_Video_preroll&description_url=https%3A%2F%2Fwww.indiatoday.in%2F&env=vp&impl=s&gdfp_req=1&ad_rule=1&output=vmap&sz=400x300&unviewed_position_start=1&vpos=midroll&cue=50000&pod=3&mridx=1&rmridx=1&ppos=1&correlator=REPLACE_WITH_TIMESTAMP
         ]]>
       </vmap:AdTagURI>
     </vmap:AdSource>
