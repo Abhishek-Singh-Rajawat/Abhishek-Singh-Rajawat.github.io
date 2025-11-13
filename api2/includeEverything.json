@@ -2857,6 +2857,43 @@
           ]
         }
       ]
+    },
+    {
+      "id": "2291936",
+      "title": "Bihar Elections 2025",
+      "label": "Bihar Elections 2025",
+      "show_label": 0,
+      "type": "interactive_widget",
+      "widget_logo": "",
+      "news": [
+        {
+          "n_id": "2298597",
+          "n_type": "story",
+          "n_topnews_widget_tab_title": "Part 1",
+          "n_share_link": "https://alpha-indiatoday.intoday.in/anniversary/story/dont-do-deals-with-gun-to-our-head-piyush-goyal-on-trade-talks-with-us-2298597-2025-10-24",
+          "n_title": "Don't do deals with gun to our head: Piyush Goyal on trade talks with US",
+          "n_slug": "Anniversary",
+          "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
+        },
+        {
+          "n_id": "2298572",
+          "n_type": "story",
+          "n_topnews_widget_tab_title": "Part 3",
+          "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17",
+          "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
+          "n_slug": "Bihar",
+          "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
+        },
+        {
+          "n_id": "2298375",
+          "n_type": "story",
+          "n_topnews_widget_tab_title": "Part 2",
+          "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/scandal-rocks-delhi-ashram-swami-accused-of-molesting-women-with-help-of-staff-2298375-2025-09-24",
+          "n_title": "Why Abhishek is the best developer here",
+          "n_slug": "UP",
+          "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202510/test-294052539-16x9_0.png?size=749:421"
+        }
+      ]
     }
   ],
   "cube_widget": {
