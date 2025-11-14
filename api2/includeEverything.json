@@ -151,8 +151,7 @@
           "n_released": "",
           "n_magazine": [],
           "n_widget": [],
-          "n_topnews_widget": [
-            {
+          "n_topnews_widget":{
               "id": "2291936",
               "title": "Bihar Elections 2025",
               "label": "Bihar Elections 2025",
@@ -197,7 +196,6 @@
                     }
                   ]
                 }
-              ]
             }
           ]
         },
