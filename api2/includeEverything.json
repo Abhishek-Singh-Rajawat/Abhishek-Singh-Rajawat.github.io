@@ -1035,6 +1035,74 @@
           "n_left_right_widget_enabled": false
         },
         {
+          "n_id": "2281780",
+          "n_type": "eventwidget",
+          "n_is_blog": "0",
+          "n_livetv_enable": "0",
+          "n_is_developing": "0",
+          "n_is_sponsored": "0",
+          "n_share_link": "0",
+          "n_title": "Bihar Elections 2025",
+          "n_slug": "0",
+          "n_description": "0",
+          "n_pcategory_id": "0",
+          "n_pcategory_name": "0",
+          "n_comment_count": "0",
+          "n_small_image": "",
+          "n_large_image": "",
+          "n_verticle_image": "",
+          "n_one_to_one_image": "",
+          "n_image_type": "0",
+          "n_image_credit": "0",
+          "n_updated_datetime": "0",
+          "n_highlight": [],
+          "n_photo": [],
+          "n_video": [],
+          "n_polls": [],
+          "n_rating": "",
+          "n_released": "",
+          "n_magazine": [],
+          "n_widget": [],
+          "n_topnews_widget": {
+            "cta_text": "View More on Elections",
+            "cta_link": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
+            "news": [
+              {
+                "n_id": "2298597",
+                "n_type": "story",
+                "n_is_blog": "0",
+                "n_title": "Don't do deals with gun to our head: Piyush Goyal on trade talks with US",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/anniversary/story/dont-do-deals-with-gun-to-our-head-piyush-goyal-on-trade-talks-with-us-2298597-2025-10-24 ",
+                "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
+              },
+              {
+                "n_id": "2299932",
+                "n_type": "story",
+                "n_is_blog": "1",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/elections/story/babubarhi-assembly-election-results-2025-live-updates-vote-counting-bihar-jdu-nda-mahagathbandhan-rjd-baelb-2299932-2025-11-12",
+                "n_title": "Babubarhi Assembly Election Results 2025 Live Updates",
+                "n_large_image": ""
+              },
+              {
+                "n_id": "2297814",
+                "n_type": "videogallery",
+                "n_is_blog": "0",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01",
+                "n_title": "Narayana Murthy asked Indians to work 70 hrs, now Infosys seeks work-life balance and tells staff",
+                "n_large_image": ""
+              },
+              {
+                "n_id": "2298572",
+                "n_type": "story",
+                "n_is_blog": "0",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17 ",
+                "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
+                "n_large_image": ""
+              }
+            ]
+          }
+        },
+        {
           "n_id": "2297149",
           "n_type": "photogallery",
           "n_is_blog": "0",
