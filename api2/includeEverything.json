@@ -2961,8 +2961,36 @@
           "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202510/test-294052539-16x9_0.png?size=749:421"
         }
       ]
+    },
+    {
+  "id": "2291936",
+  "title": "Bihar Elections 2025",
+  "type": "eventwidget",
+  "cta_text": "View More on Elections",
+  "cta_link": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
+  "news": [
+    {
+      "n_title": "Don't do deals with gun to our head: Piyush Goyal on trade talks with US",
+      "n_share_link": "https://alpha-indiatoday.intoday.in/anniversary/story/dont-do-deals-with-gun-to-our-head-piyush-goyal-on-trade-talks-with-us-2298597-2025-10-24 ",
+      "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
+    },
+    {
+      "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17 ",
+      "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
+      "n_large_image": ""
+    },
+    {
+      "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17 ",
+      "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
+      "n_large_image": ""
+    },
+    {
+      "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17 ",
+      "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
+      "n_large_image": ""
     }
-  ],
+  ]
+}],
   "cube_widget": {
     "show_widget": "0",
     "widget_detail": [
