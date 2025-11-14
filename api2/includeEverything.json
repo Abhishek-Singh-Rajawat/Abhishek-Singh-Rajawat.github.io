@@ -160,14 +160,6 @@
               "widget_logo": "",
               "news": [
                 {
-                  "id": "2291936",
-                  "title": "Bihar Elections 2025",
-                  "label": "Bihar Elections 2025",
-                  "show_label": 0,
-                  "type": "interactive_widget",
-                  "widget_logo": "",
-                  "news": [
-                    {
                       "n_id": "2298597",
                       "n_type": "story",
                       "n_topnews_widget_tab_title": "Part 1",
@@ -195,8 +187,6 @@
                       "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202510/test-294052539-16x9_0.png?size=749:421"
                     }
                   ]
-                }
-              ]
             }
         },
         {
