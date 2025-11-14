@@ -151,43 +151,43 @@
           "n_released": "",
           "n_magazine": [],
           "n_widget": [],
-          "n_topnews_widget":{
-              "id": "2291936",
-              "title": "Bihar Elections 2025",
-              "label": "Bihar Elections 2025",
-              "show_label": 0,
-              "type": "interactive_widget",
-              "widget_logo": "",
-              "news": [
-                {
-                      "n_id": "2298597",
-                      "n_type": "story",
-                      "n_topnews_widget_tab_title": "Part 1",
-                      "n_share_link": "https://alpha-indiatoday.intoday.in/anniversary/story/dont-do-deals-with-gun-to-our-head-piyush-goyal-on-trade-talks-with-us-2298597-2025-10-24",
-                      "n_title": "Don't do deals with gun to our head: Piyush Goyal on trade talks with US",
-                      "n_slug": "Anniversary",
-                      "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
-                    },
-                    {
-                      "n_id": "2298572",
-                      "n_type": "story",
-                      "n_topnews_widget_tab_title": "Part 3",
-                      "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17",
-                      "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
-                      "n_slug": "Bihar",
-                      "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
-                    },
-                    {
-                      "n_id": "2298375",
-                      "n_type": "story",
-                      "n_topnews_widget_tab_title": "Part 2",
-                      "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/scandal-rocks-delhi-ashram-swami-accused-of-molesting-women-with-help-of-staff-2298375-2025-09-24",
-                      "n_title": "Why Abhishek is the best developer here",
-                      "n_slug": "UP",
-                      "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202510/test-294052539-16x9_0.png?size=749:421"
-                    }
-                  ]
-            }
+          "n_topnews_widget": {
+            "id": "2291936",
+            "title": "Bihar Elections 2025",
+            "label": "Bihar Elections 2025",
+            "show_label": 0,
+            "type": "interactive_widget",
+            "widget_logo": "",
+            "news": [
+              {
+                "n_id": "2298597",
+                "n_type": "story",
+                "n_topnews_widget_tab_title": "Part 1",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/anniversary/story/dont-do-deals-with-gun-to-our-head-piyush-goyal-on-trade-talks-with-us-2298597-2025-10-24",
+                "n_title": "Don't do deals with gun to our head: Piyush Goyal on trade talks with US",
+                "n_slug": "Anniversary",
+                "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
+              },
+              {
+                "n_id": "2298572",
+                "n_type": "story",
+                "n_topnews_widget_tab_title": "Part 3",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17",
+                "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
+                "n_slug": "Bihar",
+                "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
+              },
+              {
+                "n_id": "2298375",
+                "n_type": "story",
+                "n_topnews_widget_tab_title": "Part 2",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/scandal-rocks-delhi-ashram-swami-accused-of-molesting-women-with-help-of-staff-2298375-2025-09-24",
+                "n_title": "Why Abhishek is the best developer here",
+                "n_slug": "UP",
+                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202510/test-294052539-16x9_0.png?size=749:421"
+              }
+            ]
+          }
         },
         {
           "n_id": "2298364",
@@ -2963,34 +2963,47 @@
       ]
     },
     {
-  "id": "2291936",
-  "title": "Bihar Elections 2025",
-  "type": "eventwidget",
-  "cta_text": "View More on Elections",
-  "cta_link": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
-  "news": [
-    {
-      "n_title": "Don't do deals with gun to our head: Piyush Goyal on trade talks with US",
-      "n_share_link": "https://alpha-indiatoday.intoday.in/anniversary/story/dont-do-deals-with-gun-to-our-head-piyush-goyal-on-trade-talks-with-us-2298597-2025-10-24 ",
-      "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
-    },
-    {
-      "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17 ",
-      "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
-      "n_large_image": ""
-    },
-    {
-      "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17 ",
-      "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
-      "n_large_image": ""
-    },
-    {
-      "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17 ",
-      "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
-      "n_large_image": ""
+      "id": "2291936",
+      "title": "Bihar Elections 2025",
+      "type": "eventwidget",
+      "cta_text": "View More on Elections",
+      "cta_link": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
+      "news": [
+        {
+          "n_id": "2298597",
+          "n_type": "story",
+          "n_is_blog": "0",
+          "n_title": "Don't do deals with gun to our head: Piyush Goyal on trade talks with US",
+          "n_share_link": "https://alpha-indiatoday.intoday.in/anniversary/story/dont-do-deals-with-gun-to-our-head-piyush-goyal-on-trade-talks-with-us-2298597-2025-10-24 ",
+          "n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=555:313"
+        },
+        {
+          "n_id": "2299932",
+          "n_type": "story",
+          "n_is_blog": "1",
+          "n_share_link": "https://alpha-indiatoday.intoday.in/elections/story/babubarhi-assembly-election-results-2025-live-updates-vote-counting-bihar-jdu-nda-mahagathbandhan-rjd-baelb-2299932-2025-11-12",
+          "n_title": "Babubarhi Assembly Election Results 2025 Live Updates",
+          "n_large_image": ""
+        },
+        {
+          "n_id": "2297814",
+          "n_type": "videogallery",
+          "n_is_blog": "0",
+          "n_share_link": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01",
+          "n_title": "Narayana Murthy asked Indians to work 70 hrs, now Infosys seeks work-life balance and tells staff",
+          "n_large_image": ""
+        },
+        {
+          "n_id": "2298572",
+          "n_type": "story",
+          "n_is_blog": "0",
+          "n_share_link": "https://alpha-indiatoday.intoday.in/india/bihar/story/why-is-new-zealand-becoming-the-next-big-study-destination-for-indian-students-2298572-2025-10-17 ",
+          "n_title": "Why is New Zealand becoming the next big study destination for Indian students?",
+          "n_large_image": ""
+        }
+      ]
     }
-  ]
-}],
+  ],
   "cube_widget": {
     "show_widget": "0",
     "widget_detail": [
