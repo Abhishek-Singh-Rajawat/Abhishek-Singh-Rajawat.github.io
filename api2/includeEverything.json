@@ -2936,7 +2936,7 @@
           "channel_list": [
             {
               "id": "1",
-              "name": "India Today",
+              "name": "AT",
               "is_enabled": true,
               "is_preroll_enabled": true,
               "thumbnail_url": "",
@@ -2950,27 +2950,13 @@
             },
             {
               "id": "2",
-              "name": "Good News Today",
+              "name": "GT",
               "is_enabled": false,
               "is_preroll_enabled": true,
               "thumbnail_url": "",
               "vimeo_id": "",
               "youtube_id": "",
               "livetvcode": "https://feeds.intoday.in/gnt/api/master.m3u8",
-              "pip_config": {
-                "enabled": true,
-                "position": "bottom_right"
-              }
-            },
-            {
-              "id": "3",
-              "name": "Fire Tv YT",
-              "is_enabled": true,
-              "is_preroll_enabled": true,
-              "thumbnail_url": "",
-              "vimeo_id": "",
-              "youtube_id": "NKztgzrKpLs",
-              "livetvcode": "",
               "pip_config": {
                 "enabled": true,
                 "position": "bottom_right"
