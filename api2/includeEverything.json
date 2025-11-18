@@ -2929,7 +2929,7 @@
       "id": "2291954",
       "title": "Multiple Live TV",
       "label": "Multiple Live TV",
-      "type": "multiplelivetv",
+      "type": "multilivetv",
       "show_label": 0,
       "news": [
         {
