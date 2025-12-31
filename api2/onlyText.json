@@ -1,302 +1,45 @@
 {
-  "status_code": true,
-  "status_message": "",
-  "data": {
-    "title": "वाल्मिकी नगर विधानसभा चुनाव परिणाम 2025 (Valmiki Nagar Assembly Election Result 2025)",
-    "content": [
-      {
-        "type": "title",
-        "value": "वाल्मिकी नगर विधानसभा चुनाव परिणाम 2025 (Valmiki Nagar Assembly Election Result 2025)"
-      },
-      {
-        "type": "ads",
-        "value": {
-          "ad_unit_android": "/1007232/Aajtak_Apps/AT_And_LP_Top_300x250",
-          "ad_unit_ios": "/1007232/Aajtak_Apps/AT_IOS_LP_Top_300x250"
+    "status_code": "1",
+    "status_message": "",
+    "data": [
+        {
+            "v_id": "2300502",
+            "v_title": "Rajya sabha clears vbg ramji bill 2025 | sagarika ghose calls it ‘anti-poor’",
+            "v_credit": "India Today News Desk",
+            "v_byline": "India Today News Desk",
+            "v_short_desc": "\n            On this special report, the focus is on the passage of the vbg ramji bill 2025 in the rajya sabha. union minister of agriculture and farmers welfare shivraj singh chouhan presented the bill, which replaces mgnrega. trinamool congress mp sagarika ghose lashed out at the government, stating, ‘the manner in which the modi government has brought in this completely anti-poor... bill... is an insult to india&#039;s poor.’ the bill was passed by voice vote at midnight amid an opposition walkout.\n\n      <span id=\"rectangle\" style=\"width:8px; height:8px; background-color:red; display:inline-block \"></span>",
+            "v_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/202512/vbgramjibillpassedsagarikaghoseslamsgovt-s0-original-sixteen-to-nine.jpg?size=260:147",
+            "v_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/202512/vbgramjibillpassedsagarikaghoseslamsgovt-s0-original-sixteen-to-nine.jpg?size=555:313",
+            "v_extralarge_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/202512/vbgramjibillpassedsagarikaghoseslamsgovt-s0-original-sixteen-to-nine.jpg?size=749:421",
+            "v_is_default_player": "0",
+            "v_url": "https://video-indiatoday.tosshub.com/indiatoday/video/2025_12/19_dec_25_-ytvd-it_firstup_chunk_7_1912_vt_ak_1024-videotrans-social-251219-18997-nppg8-am92rgg2wym/19_dec_25_-ytvd-it_firstup_chunk_7_1912_vt_ak_1024-videotrans-social-251219-18997-nppg8-am92rgg2wym.m3u8",
+            "v_download_url": "https://video-indiatoday.tosshub.com/indiatoday/video/2025_12/19_dec_25_-ytvd-it_firstup_chunk_7_1912_vt_ak_1024-videotrans-social-251219-18997-nppg8-am92rgg2wym_720.mp4",
+            "v_view_count": "0",
+            "v_comment_count": "0",
+            "v_share_url": "https://alpha-indiatoday.intoday.in/india/video/rajya-sabha-passes-vbg-ramji-bill-tmc-mp-sagarika-ghose-terms-it-anti-poor-and-tyranny-ytvd-2300502-2025-12-19",
+            "v_duration": "05:47",
+            "v_updated_datetime": "2025-12-19 15:12:19",
+            "v_show_ad": "1",
+            "v_video_size": "0",
+            "v_subcategory_id": "1206578",
+            "v_subcategory_title": "India",
+            "v_ratio": "16:9",
+            "authors": []
         }
-      },
-      {
-        "type": "key_candidates",
-        "value": {
-          "title": "चुनाव 2025 के उम्मीदवार",
-          "key_candidates_data": [
-            {
-              "name": "Kumari Rajwanti Kushwaha",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/won.png",
-              "party": "IND",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "Rajesh Singh",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "INC",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/inc.jpg"
-            },
-            {
-              "name": "Sumant Kumar",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "JAP(L)",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "Mahendra Kumar Bharti",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "LJP",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/ljp.jpg"
-            },
-            {
-              "name": "Mahmad jalil",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "IND",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "Rajesh Kumar",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "IND",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "Dhirendra Pratap Singh alias Rinku Singh",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "JD(U)",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "Gaurav Jha",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "PP",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "Tirthraj Yadav",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "IND",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "Saket Kumar Pathak",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "JSHD",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "Baidyanath Prasad",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "BSP",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/bsp.jpg"
-            },
-            {
-              "name": "Deepak Kumar Malkar ",
-              "status_image": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png",
-              "party": "BP(L)",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            },
-            {
-              "name": "NOTA",
-              "status_image": "",
-              "party": "NOTA",
-              "vote": "",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg"
-            }
-          ]
+    ],
+    "related_video_category_list": [
+        {
+            "category_name": "Featured",
+            "category_id": "0"
+        },
+        {
+            "category_name": "PrimeTime",
+            "category_id": "1206577"
         }
-      },
-      {
-        "type": "live_heighlights",
-        "value": {
-          "id": 1440898,
-          "title": "वाल्मिकी नगर, बिहार Election Result 2025 Live Updates",
-          "head_image": "https://static-dev.indiatodayonline.in/aajtak/images/breaking_news/202510/4001-bihar-valmiki-nagar-at-original.jpg",
-          "live_updates_data": [
-            {
-              "id": 22640,
-              "description_without_html": "*Hyperlink it with the respective Constituency page",
-              "updated_datetime": "08:00"
-            },
-            {
-              "id": 20368,
-              "description_without_html": "बिहार विधानसभा चुनाव  एग्जिट पोल्स में राज्य में  की सरकार बनने की संभावना जताई गई थी.  के एग्जिट पोल के मुताबिक,  को  सीट्स मिलने का अनुमान जताया गया था. वहीं,  को   सीट्स मिलने का अनुमान जताया गया था.",
-              "updated_datetime": "07:35"
-            },
-            {
-              "id": 18214,
-              "description_without_html": "बिहार विधानसभा चुनाव के लिए वोटों की गिनती कुछ ही देर में शुरू हो जाएगी. इससे पहले जान लेते हैं कि इस बार के एग्जिट पोल में क्या अंदाजा लगाया गया है. एग्जिट पोल कई बार सही साबित होते हैं तो कई बार असल नतीजों से बेहद दूर. नीचे देखें आंकड़े.",
-              "updated_datetime": "07:10"
-            },
-            {
-              "id": 15944,
-              "description_without_html": "बिहार की वाल्मिकी नगर सीट सूबे के  इलाके में आती है. पिछले चुनाव में पार्टियों का प्रदर्शन कुछ ऐसा रहा था {Partywise Data}",
-              "updated_datetime": "06:45"
-            },
-            {
-              "id": 14048,
-              "description_without_html": "बिहार के वाल्मिकी नगर निर्वाचन क्षेत्र में इस बार कुल  मतदाता रजिस्टर्ड हैं. इनमें पुरुषों की संख्या {} है, जबकि महिला वोटरों की संख्या {} है.",
-              "updated_datetime": "06:20"
-            },
-            {
-              "id": 12199,
-              "description_without_html": "मतगणना शुरू होने से पहले एक बार पिछली बार के नतीजों पर नजर डाल लेते हैं. बता दें कि  उम्मीदवार  ने  वोटों के साथ वाल्मिकी नगर सीट पर जीत दर्ज की थी. वहीं,  कैंडिडेट  को  वोट मिले थे. इस बार क्या होगा? मतगणना शुरू होने के कुछ ही देर बाद तस्वीर साफ होने लगेगी.",
-              "updated_datetime": "05:55"
-            }
-          ]
-        }
-      },
-      {
-        "type": "ads",
-        "value": {
-          "ad_unit_android": "/1007232/Aajtak_Apps/AT_And_LP_Mid_300x250",
-          "ad_unit_ios": "/1007232/Aajtak_Apps/AT_IOS_LP_Mid_300x250"
-        }
-      },
-      {
-        "type": "consitancy_detail",
-        "value": {
-          "id": 1440898,
-          "map_image": "https://static-dev.indiatodayonline.in/aajtak/images/breaking_news/202510/4001-bihar-valmiki-nagar-at-original.jpg",
-          "description": "वाल्मिकी नगर Vidhan Sabha Chunav Parinam 2025 Live Updates: वाल्मिकी नगर विधानसभा चुनाव रिजल्ट 2025 (Assembly Election Results) का इंतजार खत्म. aajtak.in से तुरंत जुड़ जाएं और पाएं नतीजों से जुड़े हर जरूरी अपडेट. इसके अलावा, आजतक Live TV पर भी हमारी विस्तृत चुनावी कवरेज देख सकते हैं.",
-          "consitancy_data": [
-            {
-              "embed_url": "https://embed.aajtak.in/share/video/elections/assembly-chunav/420da542"
-            },
-            {
-              "embed_url": "https://embed.aajtak.in/share/video/elections/assembly-chunav/d20c1ad2"
-            }
-          ]
-        }
-      },
-      {
-        "type": "previous_results",
-        "value": {
-          "id": "4001",
-          "title": "पिछले नतीजे",
-          "election_tab_data": [
-            {
-              "year": "2020",
-              "is_selected": "",
-              "name": "Dhirendra Pratap Singh alias Rinku Singh",
-              "party_name": "JD(U)",
-              "status": "WINNER",
-              "status_color": "#afff42",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg",
-              "votes": 74906,
-              "vote_percentage": 38.3,
-              "winning_margin_percentage": 11
-            },
-            {
-              "year": "2015",
-              "is_selected": "",
-              "name": "Dhirendra Pratap Singh Alias Rinku Singh",
-              "party_name": "IND",
-              "status": "WINNER",
-              "status_color": "#F7F7F7",
-              "party_logo": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/counting-day/partylogo-118x118/default-partylogo.jpg",
-              "votes": 66860,
-              "vote_percentage": 36.2,
-              "winning_margin_percentage": 18.2
-            }
-          ]
-        }
-      },
-      {
-        "type": "newslist",
-        "value": [
-          {
-            "n_id": "1439513",
-            "n_type": "story",
-            "n_share_url": "https://alpha-aajtak-in.intoday.in/india/news/story/pm-modi-government-reply-on-us-trade-tariffs-in-parliament-rpti-1439513-2025-03-20",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202510/68f1c9aba905d-mukesh-sahni--rahul-gandhi-17442244-16x9.jpg",
-            "n_title": "ट्रंप के लगाए टैरिफ पर मोदी सरकार ने संसद में क्या बताया? 1"
-          },
-          {
-            "n_id": "1439472",
-            "n_type": "breaking_news",
-            "n_share_url": "https://alpha-aajtak-in.intoday.in/india/story/donald-trump-delayed-tarrif-targeting-mexico-and-canada-for-one-month-1439472-2025-03-07",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202510/68f1c9eeb7f07-mukesh-sahni-174528969-16x9.jpg",
-            "n_title": "अमेरिकी बाजार में सुस्ती के बाद नरम पड़े ट्रंप के तेवर, एक महीने के लिए मेक्सिको और कनाडा को टैरिफ से छूट"
-          },
-          {
-            "n_id": "1435920",
-            "n_type": "video",
-            "n_share_url": "https://alpha-aajtak-in.intoday.in/sports/cricket/video/imran-khan-targets-opposition-in-a-rally-in-pakistan-islamabad-news-in-hindi-1435920-2022-03-27",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/video/202510/nowwewillneverdivertfromourpathnitishkumarsmajorannouncement-s0-original_0.jpg",
-            "n_title": "पाक के इस्लामाबाद में इमरान खान का शक्ति प्रदर्शन!"
-          },
-          {
-            "n_id": "1436109",
-            "n_type": "photogallery",
-            "n_share_url": "https://alpha-aajtak-in.intoday.in/sports/t20-world-cup/photo/yae-haai-vao-paaudhaa-jaisae-mangala-para-ugaayaa-jaa-sakataa-haai-nai-satadai-maen-khaulaasaa-1436109-2022-08-23",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202510/68f1bd78a07d8-khesari-lal-yadav-maithili-thakur-175218840-16x9.jpg",
-            "n_title": "ये है वो पौधा... जिसे मंगल पर उगाया जा सकता है, नई स्टडी में खुलासा"
-          },
-          {
-            "n_id": "2359022",
-            "n_type": "story",
-            "n_share_url": "https://www.aajtak.in/elections/assembly-chunav/story/purnea-jdu-candidate-saba-zafar-amour-assembly-election-lclk-strc-2359022-2025-10-17",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202510/68f1b879eaed6-saba-zafar-173059782-16x9.jpg",
-            "n_title": "JDU ने सीमांचल के अमौर सीट से सबा जफर को मैदान में उतार, AIMIM से सीधी टक्कर"
-          },
-          {
-            "n_id": "2359005",
-            "n_type": "video",
-            "n_share_url": "https://www.aajtak.in/elections/assembly-chunav/video/bihar-elections-bjp-star-campaigner-list-amit-shah-yogi-bjp-mega-plan-ytvd-2359005-2025-10-17",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/video/202510/yogisattackontheopposition-theresnodevelopmentinbiharjustadebateontheburqa-s0-original_0.jpg",
-            "n_title": "बिहार चुनाव के लिए स्टार प्रचारकों की लिस्ट जारी, जानें क्या है BJP का मेगा प्लान? "
-          },
-          {
-            "n_id": "2358386",
-            "n_type": "story",
-            "n_share_url": "https://www.aajtak.in/elections/assembly-chunav/story/saba-zafar-jdu-purnia-amour-seat-bihar-election-2025-bjp-nda-aimim-ntcpbt-rpti-2358386-2025-10-17",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/story/202510/68f1b2e8adf2c-saba-zafar-170714944-16x9.jpg",
-            "n_title": "बीजेपी से बने विधायक, जेडीयू के टिकट पर हारे... नीतीश की पार्टी ने सबा जफर को अमौर से उतारा"
-          },
-          {
-            "n_id": "2358998",
-            "n_type": "video",
-            "n_share_url": "https://www.aajtak.in/elections/assembly-chunav/video/bihar-elections-last-day-of-nomination-of-first-phase-conflict-over-seat-distribution-mahagathbandhan-ytvd-2358998-2025-10-17",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/video/202510/wehavealreadyreducedourdemandforseats-mukeshsahni-s0-original_0.jpg",
-            "n_title": "बिहार चुनाव: पहले चरण के नामांकन का आखिरी दिन आज, महागठबंधन पर क्या अपडेट? "
-          },
-          {
-            "n_id": "2358973",
-            "n_type": "video",
-            "n_share_url": "https://www.aajtak.in/elections/assembly-chunav/video/panchayat-aajtak-bihar-pappu-yadav-on-nitish-kumar-modi-nda-ytvd-2358973-2025-10-17",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/video/202510/modijisoldthemillsafterpromisingtodrinkteapappuyadavsjibe-s0-original_0.jpg",
-            "n_title": "पप्पू यादव का नीतीश कुमार और NDA पर तंज, कही ये बड़ी बात"
-          },
-          {
-            "n_id": "2355083",
-            "n_type": "video",
-            "n_share_url": "https://www.aajtak.in/elections/assembly-chunav/video/bihar-elections-prashant-kishor-enters-battle-between-lalu-nitish-ytvd-2355083-2025-10-13",
-            "n_image": "https://akm-img-a-in.tosshub.com/aajtak/images/video/202510/underlalusgovernmentabductionwasanindustrythepublichasnotforgottenjungleraj-s0-original_0.jpg",
-            "n_title": "बिहार चुनाव: लालू-नीतीश की जंग में प्रशांत किशोर की एंट्री! 'जंगलराज' का डर या 'सुशासन' पर लगेगी मुहर?"
-          }
-        ]
-      },
-      {
-        "type": "webview",
-        "value": {
-          "url": "https://www.aajtak.in/",
-          "height": 600
-        }
-      }
-    ]
-  },
-  "cache": {
-    "redis_ttl": "90",
-    "akamai_ttl": "120"
-  },
-  "data_source": "R"
+    ],
+    "cache": {
+        "redis_ttl": "90",
+        "akamai_ttl": "2592000"
+    },
+    "data_source": "D"
 }
