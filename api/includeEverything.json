@@ -1,513 +1,156 @@
 {
-"status_code": "1",
-"status_message": "",
-"news_pagination_cap": 10,
-"data": [
-{
-"id": "2291936",
-"title": "Newspresso",
-"label": "Newspresso",
-"icon": "https://static-dev.indiatodayonline.in/indiatoday/images/newspresso_icon_url/widgeticon.png",
-"show_label": 0,
-"type": "newspresso",
-"news": [
-{
-"n_id": "2297417",
-"n_type": "story",
-"n_title": "Kashmir turns crimson with blood of Pandits",
-"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202504/test-304711995-16x9_0.png?size=483:271",
-"n_updated_datetime": "2025-09-18 11:24:16",
-"n_pcategory_id": "1206578",
-"n_pcategory_title": "India",
-"n_is_sponsored": "",
-"n_highlight": [
-{
-"h_title": "Al-Safa is one of the two hills where Muslims perform a holy ritual during the Haj pilgrimage in Mecca. But, to the Kashmiri Pandits, safa (holy) means a sinister morning."
-},
-{
-"h_title": "The morning of January 4, 1990, was even darker, the gloomiest in Srinagar’s history."
-},
-{
-"h_title": "The diktat had come from Hizbul Mujahideen, a fledgling group of Pak-sponsored terrorists, who had already unleashed fear with a series of targeted killings"
-}
-],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/india/story/aajtakin-2297417-2025-04-30",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": true
-},
-{
-"n_id": "2297330",
-"n_type": "video",
-"n_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"n_updated_datetime": "2025-04-23 18:06:10",
-"n_pcategory_id": "1817354",
-"n_pcategory_title": "Amazon Content",
-"n_is_sponsored": "",
-"n_highlight": [],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/amazon-content/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297330-2025-04-23",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [
-{
-"nv_id": "2297330",
-"nv_ratio": "16:9",
-"nv_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_credit": "India Today Video Desk",
-"nv_byline": "India Today Video Desk",
-"nv_short_desc": "Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
-"nv_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"nv_is_jwplayer": "0",
-"nv_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_02/25_feb_25_18_jun_24_indiatoday_07022024_11_1718692608831_720_1740464653235/25_feb_25_18_jun_24_indiatoday_07022024_11_1718692608831_720_1740464653235.m3u8",
-"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_02/25_feb_25_18_jun_24_indiatoday_07022024_11_1718692608831_720_1740464653235_720.mp4",
-"nv_view_count": "0",
-"nv_comment_count": "",
-"nv_share_url": "https://alpha-indiatoday.intoday.in/amazon-content/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297330-2025-04-23",
-"nv_updated_datetime": "2025-04-23 18:06:10",
-"nv_duration": "02:32",
-"nv_show_ad": "0"
-}
-],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-},
-{
-"n_id": "2297331",
-"n_type": "video",
-"n_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"n_updated_datetime": "2025-04-23 18:05:24",
-"n_pcategory_id": "1833944",
-"n_pcategory_title": "Amazon Lifestyle",
-"n_is_sponsored": "",
-"n_highlight": [],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/amazon-lifestyle/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297331-2025-04-23",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [
-{
-"nv_id": "2297331",
-"nv_ratio": "16:9",
-"nv_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_credit": "India Today Video Desk",
-"nv_byline": "India Today Video Desk",
-"nv_short_desc": "Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
-"nv_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"nv_is_jwplayer": "0",
-"nv_url": "https://video-indiatoday.tosshub.com/indiatoday/video/2025_02/05_feb_25_-ytvd-videotrans-social-2525-16526-awknq-hyuwp-lv1gk/05_feb_25_-ytvd-videotrans-social-2525-16526-awknq-hyuwp-lv1gk.m3u8",
-"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday/video/2025_02/05_feb_25_-ytvd-videotrans-social-2525-16526-awknq-hyuwp-lv1gk_720.mp4",
-"nv_view_count": "0",
-"nv_comment_count": "",
-"nv_share_url": "https://alpha-indiatoday.intoday.in/amazon-lifestyle/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297331-2025-04-23",
-"nv_updated_datetime": "2025-04-23 18:05:24",
-"nv_duration": "01:00",
-"nv_show_ad": "0"
-}
-],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-},
-{
-"n_id": "2297336",
-"n_type": "video",
-"n_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"n_updated_datetime": "2025-04-23 18:31:29",
-"n_pcategory_id": "1836350",
-"n_pcategory_title": "Amazon Food",
-"n_is_sponsored": "",
-"n_highlight": [],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/amazon-food/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297336-2025-04-23",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [
-{
-"nv_id": "2297336",
-"nv_ratio": "16:9",
-"nv_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_credit": "India Today Video Desk",
-"nv_byline": "India Today Video Desk",
-"nv_short_desc": "Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
-"nv_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"nv_is_jwplayer": "0",
-"nv_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_02/04_feb_25_sample_video_1738667708915/04_feb_25_sample_video_1738667708915.m3u8",
-"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_02/04_feb_25_sample_video_1738667708915_512.mp4",
-"nv_view_count": "0",
-"nv_comment_count": "",
-"nv_share_url": "https://alpha-indiatoday.intoday.in/amazon-food/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297336-2025-04-23",
-"nv_updated_datetime": "2025-04-23 18:31:29",
-"nv_duration": "01:17",
-"nv_show_ad": "0"
-}
-],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-},
-{
-"n_id": "2297337",
-"n_type": "video",
-"n_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"n_updated_datetime": "2025-04-23 18:34:11",
-"n_pcategory_id": "1833944",
-"n_pcategory_title": "Amazon Lifestyle",
-"n_is_sponsored": "",
-"n_highlight": [],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/amazon-lifestyle/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297337-2025-04-23",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [
-{
-"nv_id": "2297337",
-"nv_ratio": "16:9",
-"nv_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_credit": "India Today Video Desk",
-"nv_byline": "India Today Video Desk",
-"nv_short_desc": "Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
-"nv_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"nv_is_jwplayer": "0",
-"nv_url": "https://video-indiatoday.tosshub.com/indiatoday/video/2025_02/06_feb_25_-ytvd-videotrans-social-2526-16529-vsanq-hyuwp-lv1gk/06_feb_25_-ytvd-videotrans-social-2526-16529-vsanq-hyuwp-lv1gk.m3u8",
-"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday/video/2025_02/06_feb_25_-ytvd-videotrans-social-2526-16529-vsanq-hyuwp-lv1gk_720.mp4",
-"nv_view_count": "0",
-"nv_comment_count": "",
-"nv_share_url": "https://alpha-indiatoday.intoday.in/amazon-lifestyle/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297337-2025-04-23",
-"nv_updated_datetime": "2025-04-23 18:34:11",
-"nv_duration": "01:00",
-"nv_show_ad": "0"
-}
-],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-},
-{
-"n_id": "2297167",
-"n_type": "video",
-"n_title": "Phone 17 series might receive a 30 per cent price hike: UBS analyst",
-"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"n_updated_datetime": "2025-04-09 16:43:15",
-"n_pcategory_id": "1833944",
-"n_pcategory_title": "Amazon Lifestyle",
-"n_is_sponsored": "",
-"n_highlight": [],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/amazon-lifestyle/video/phone-17-series-might-receive-a-30-per-cent-price-hike-ubs-analyst-2297167-2025-04-09",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [
-{
-"nv_id": "2297167",
-"nv_ratio": "16:9",
-"nv_title": "Phone 17 series might receive a 30 per cent price hike: UBS analyst",
-"nv_credit": "India Today Video Desk",
-"nv_byline": "India Today Video Desk",
-"nv_short_desc": "",
-"nv_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
-"nv_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"nv_is_jwplayer": "0",
-"nv_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_03/04_mar_25_mediabank_testing_22jan20251_1741068180210/04_mar_25_mediabank_testing_22jan20251_1741068180210.m3u8",
-"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_03/04_mar_25_mediabank_testing_22jan20251_1741068180210_720.mp4",
-"nv_view_count": "0",
-"nv_comment_count": "",
-"nv_share_url": "https://alpha-indiatoday.intoday.in/amazon-lifestyle/video/phone-17-series-might-receive-a-30-per-cent-price-hike-ubs-analyst-2297167-2025-04-09",
-"nv_updated_datetime": "2025-04-09 16:43:15",
-"nv_duration": "02:05",
-"nv_show_ad": "0"
-}
-],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-},
-{
-"n_id": "2297168",
-"n_type": "video",
-"n_title": "Phone 18 series might receive a 30 per cent price hike: UBS analyst",
-"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"n_updated_datetime": "2025-04-09 16:42:08",
-"n_pcategory_id": "1206517",
-"n_pcategory_title": "Defence",
-"n_is_sponsored": "",
-"n_highlight": [],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/defence/video/phone-18-series-might-receive-a-30-per-cent-price-hike-ubs-analyst-2297168-2025-04-09",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [
-{
-"nv_id": "2297168",
-"nv_ratio": "16:9",
-"nv_title": "Phone 18 series might receive a 30 per cent price hike: UBS analyst",
-"nv_credit": "India Today Video Desk",
-"nv_byline": "India Today Video Desk",
-"nv_short_desc": "",
-"nv_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
-"nv_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"nv_is_jwplayer": "0",
-"nv_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_02/27_feb_25_mediabank_testing_22jan2025_1740639567591/27_feb_25_mediabank_testing_22jan2025_1740639567591.m3u8",
-"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_02/27_feb_25_mediabank_testing_22jan2025_1740639567591_720.mp4",
-"nv_view_count": "0",
-"nv_comment_count": "",
-"nv_share_url": "https://alpha-indiatoday.intoday.in/defence/video/phone-18-series-might-receive-a-30-per-cent-price-hike-ubs-analyst-2297168-2025-04-09",
-"nv_updated_datetime": "2025-04-09 16:42:08",
-"nv_duration": "02:16",
-"nv_show_ad": "0"
-}
-],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-},
-{
-"n_id": "2294993",
-"n_type": "story",
-"n_title": "Trump says India abuser of import tariffs, calls PM Modi fantastic ahead of meet",
-"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202409/nbvcx-184008442-16x9_0.jpeg?size=483:271",
-"n_updated_datetime": "2024-09-19 12:27:11",
-"n_pcategory_id": "1938447",
-"n_pcategory_title": "uk news",
-"n_is_sponsored": "",
-"n_highlight": [
-{
-"h_title": "Donald Trump calls India an 'abuser' of import tariffs"
-},
-{
-"h_title": "Trump discusses trade and tariffs at Michigan town hall"
-},
-{
-"h_title": "PM Modi to visit US from Sept 21-23 for Quad Summit"
-}
-],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/world/uk-news/story/trump-says-india-abuser-of-import-tariffs-calls-pm-modi-fantastic-ahead-of-meet-2294993-2024-09-18",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-},
-{
-"n_id": "2297173",
-"n_type": "video",
-"n_title": "Phone 19 series might receive a 30 per cent price hike: UBS analyst",
-"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"n_updated_datetime": "2025-04-09 16:40:06",
-"n_pcategory_id": "1833944",
-"n_pcategory_title": "Amazon Lifestyle",
-"n_is_sponsored": "",
-"n_highlight": [],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/amazon-lifestyle/video/phone-19-series-might-receive-a-30-per-cent-price-hike-ubs-analyst-2297173-2025-04-09",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [
-{
-"nv_id": "2297173",
-"nv_ratio": "16:9",
-"nv_title": "Phone 19 series might receive a 30 per cent price hike: UBS analyst",
-"nv_credit": "India Today Video Desk",
-"nv_byline": "India Today Video Desk",
-"nv_short_desc": "",
-"nv_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
-"nv_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
-"nv_is_jwplayer": "0",
-"nv_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_02/28_feb_25_testing_9_27feb2025_1740726877930/28_feb_25_testing_9_27feb2025_1740726877930.m3u8",
-"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_02/28_feb_25_testing_9_27feb2025_1740726877930_720.mp4",
-"nv_view_count": "0",
-"nv_comment_count": "",
-"nv_share_url": "https://alpha-indiatoday.intoday.in/amazon-lifestyle/video/phone-19-series-might-receive-a-30-per-cent-price-hike-ubs-analyst-2297173-2025-04-09",
-"nv_updated_datetime": "2025-04-09 16:40:06",
-"nv_duration": "00:09",
-"nv_show_ad": "0"
-}
-],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-},
-{
-"n_id": "2297338",
-"n_type": "video",
-"n_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202504/test-305613200-16x9_0.jpg?size=483:271",
-"n_updated_datetime": "2025-05-07 18:17:13",
-"n_pcategory_id": "1938521",
-"n_pcategory_title": "Tech Today",
-"n_is_sponsored": "",
-"n_highlight": [],
-"n_desc": "",
-"n_share_link": "https://alpha-indiatoday.intoday.in/technology/tech-today/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297338-2025-04-23",
-"n_rating": "",
-"n_emoji_left": [],
-"n_emoji_right": [],
-"n_photo_count": "",
-"n_photo": [],
-"n_video": [
-{
-"nv_id": "2297338",
-"nv_ratio": "16:9",
-"nv_title": "Cloned :- Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_credit": "India Today Video Desk",
-"nv_byline": "India Today Video Desk",
-"nv_short_desc": "Watch: Rishabh Pant recreates Sunil Gavaskar's 'stupid stupid' critical remarks in ad shoot",
-"nv_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202504/test-305613200-16x9_0.jpg?size=170:96",
-"nv_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202504/test-305613200-16x9_0.jpg?size=483:271",
-"nv_is_jwplayer": "0",
-"nv_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_01/22_jan_25_testing_7_22jan2025_1737532988160/22_jan_25_testing_7_22jan2025_1737532988160.m3u8",
-"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2025_01/22_jan_25_testing_7_22jan2025_1737532988160_720.mp4",
-"nv_view_count": "0",
-"nv_comment_count": "",
-"nv_share_url": "https://alpha-indiatoday.intoday.in/technology/tech-today/video/cloned-watch-rishabh-pant-recreates-sunil-gavaskars-stupid-stupid-critical-remarks-in-ad-shoot-2297338-2025-04-23",
-"nv_updated_datetime": "2025-05-07 18:17:13",
-"nv_duration": "23:56",
-"nv_show_ad": "0"
-}
-],
-"update_title": "",
-"redirection_url": "",
-"n_left_right_widget_enabled": false
-}
-]
-},
-{
-"id": "2291938",
-"title": "LIVE TV",
-"label": "LIVE TV",
-"type": "livetv",
-"show_label": 0,
-"news": [
-{
-"type": "15",
-"share_desc": "FULL COVERAGE",
-"news_list_position": "2",
-"news_list_section": "0",
-"type_label": "livestreamwidget",
-"title": "INDIA TODAY TV",
-"short_url": "https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8",
-"youtube_id": "HW0wNfLoy2s",
-"vimeo_id": "",
-"extended_url": "",
-"autoplay": false,
-"ext_url_open_in_external_browser": "0",
-"show_dark_mode": "1",
-"action": "webview",
-"section_id": "",
-"subcategory_id": "",
-"android_height": "",
-"android_tab_height": "0",
-"iPhone_height": "",
-"iPad_height": "0",
-"sc_id": "0",
-"disable_share": "1",
-"disable_drop_down": "1",
-"pip_config": {
-"enabled": true,
-"position": "bottom_left"
-}
-}
-]
-},
-{
-"id": "2292317",
-"title": "Scorecard Multiple Match ID",
-"label": "Scorecard Multiple Match ID",
-"type": "webview",
-"show_label": 0,
-"news": [
-{
-"type": "7",
-"share_desc": "Scorecard",
-"news_list_position": "15",
-"news_list_section": "0",
-"type_label": "scorecard",
-"title": "Scorecard",
-"short_url": "https://www.indiatoday.in/live-score/home/widget/live_score_matchids?device=app&app_it=true&match_id=266977,262215,258930,267151",
-"extended_url": "",
-"ext_url_open_in_external_browser": "0",
-"show_dark_mode": "1",
-"action": "webview",
-"section_id": "",
-"subcategory_id": "",
-"android_height": "",
-"android_tab_height": "0",
-"iPhone_height": "210",
-"iPad_height": "210",
-"sc_id": "0",
-"disable_share": "1",
-"disable_drop_down": "1"
-}
-]
-}
-],
-"cube_widget": {
-"show_widget": "0",
-"widget_detail": [
-{
-"type": "webview",
-"title": "Elections",
-"type_label": "scorecard",
-"height": "140",
-"width": "135",
-"short_url": "https://feeds.intoday.in/test/cube/elections/mhhar/cube_it.html",
-"extended_url": "",
-"widget_position": "top_right",
-"coachmark_enable": false,
-"cube_session_count": 3,
-"widget_section": {
-"home": true,
-"section": true,
-"details": true
-}
-}
-]
-},
-"cache": {
-"redis_ttl": "90",
-"akamai_ttl": "120"
-},
-"data_source": "D"
+  "status_code": "1",
+  "status_message": "",
+  "data": [
+    {
+      "date": "Day 1 , 26 ,December",
+      "is_day_active": true,
+      "category_item": [
+        {
+          "type": "program",
+          "data": {
+            "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
+            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status_icon": "",
+            "program_share_url": "",
+            "program_title": "Inaugural Address: India Today Conclave 2025",
+            "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
+            "speaker": [
+              {
+                "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+                "profile_name": "Kanha Singhal",
+                "profile_subtitle": "CEO OF India Today"
+              },
+              {
+                "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+                "profile_name": "Kanha Singhal",
+                "profile_subtitle": "CEO OF India Today"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ads",
+          "data": {
+            "description": "Bottom banner for all screens",
+            "type": "banner",
+            "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
+            "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
+            "size": "336x280,300x250,250x250"
+          }
+        },
+        {
+          "type": "program",
+          "data": {
+            "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
+            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status_icon": "",
+            "program_share_url": "",
+            "program_title": "Inaugural Address: India Today Conclave 2025",
+            "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
+            "speaker": [
+              {
+                "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+                "profile_name": "Kanha Singhal",
+                "profile_subtitle": "CEO OF India Today"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "date": "Day 2 , 27 ,December",
+      "is_day_active": false,
+      "category_item": [
+        {
+          "type": "program",
+          "data": {
+            "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
+            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status_icon": "",
+            "program_share_url": "",
+            "program_title": "Inaugural Address: India Today Conclave 2025",
+            "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
+            "speaker": [
+              {
+                "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+                "profile_name": "Kanha Singhal",
+                "profile_subtitle": "CEO OF India Today"
+              }
+            ]
+          }
+        },
+        {
+          "type": "ads",
+          "data": {
+            "description": "Bottom banner for all screens",
+            "type": "banner",
+            "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
+            "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
+            "size": "336x280,300x250,250x250"
+          }
+        },
+        {
+          "type": "program",
+          "data": {
+            "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
+            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status_icon": "",
+            "program_share_url": "",
+            "program_title": "Inaugural Address: India Today Conclave 2025",
+            "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
+            "speaker": [
+              {
+                "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+                "profile_name": "Abhishek SIngh",
+                "profile_subtitle": "Chaprasi OF India Today"
+              }
+            ]
+          }
+        },
+        {
+          "type": "program",
+          "data": {
+            "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
+            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status_icon": "",
+            "program_share_url": "",
+            "program_title": "Inaugural Address: India Today Conclave 2025",
+            "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
+            "speaker": [
+              {
+                "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+                "profile_name": "Abhishek SIngh",
+                "profile_subtitle": "Chaprasi OF India Today"
+              }
+            ]
+          }
+        },
+        {
+          "type": "program",
+          "data": {
+            "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
+            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status_icon": "",
+            "program_share_url": "",
+            "program_title": "Inaugural Address: India Today Conclave 2025",
+            "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
+            "speaker": [
+              {
+                "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+                "profile_name": "Kanha Singhal",
+                "profile_subtitle": "CEO OF India Today"
+              },
+              {
+                "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
+                "profile_name": "Kanha Singhal",
+                "profile_subtitle": "CEO OF India Today"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }
