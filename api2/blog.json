@@ -33,7 +33,7 @@
       {
         "type": "conclave",
         "item": {
-          "conclave_name": "Conclave 2025",
+          "conclave_name": "Conclave 2023",
           "conclave_image": "",
           "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/newslist?id=1206719"
         }
