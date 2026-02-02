@@ -10,7 +10,7 @@
           "type": "program",
           "data": {
             "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
-            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status": "Upcoming / lunch / watch now / play",
             "program_status_icon": "",
             "program_share_url": "",
             "program_title": "Inaugural Address: India Today Conclave 2025",
@@ -43,7 +43,7 @@
           "type": "program",
           "data": {
             "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
-            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status": "Upcoming / lunch / watch now / play",
             "program_status_icon": "",
             "program_share_url": "",
             "program_title": "Inaugural Address: India Today Conclave 2025",
@@ -67,7 +67,7 @@
           "type": "program",
           "data": {
             "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
-            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status": "Upcoming / lunch / watch now / play",
             "program_status_icon": "",
             "program_share_url": "",
             "program_title": "Inaugural Address: India Today Conclave 2025",
@@ -95,7 +95,7 @@
           "type": "program",
           "data": {
             "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
-            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status": "Upcoming / lunch / watch now / play",
             "program_status_icon": "",
             "program_share_url": "",
             "program_title": "Inaugural Address: India Today Conclave 2025",
@@ -113,7 +113,7 @@
           "type": "program",
           "data": {
             "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
-            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status": "Upcoming / lunch / watch now / play",
             "program_status_icon": "",
             "program_share_url": "",
             "program_title": "Inaugural Address: India Today Conclave 2025",
@@ -131,7 +131,7 @@
           "type": "program",
           "data": {
             "program_datetime": "16.00-17.00 Hrs / LIVE / 28 December",
-            "program_status": "Upcoming / lunch / watch now / play", // if play then need video detail id
+            "program_status": "Upcoming / lunch / watch now / play",
             "program_status_icon": "",
             "program_share_url": "",
             "program_title": "Inaugural Address: India Today Conclave 2025",
