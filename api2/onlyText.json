@@ -1,45 +1,77 @@
 {
-    "status_code": "1",
-    "status_message": "",
-    "data": [
-        {
-            "v_id": "2300502",
-            "v_title": "Rajya sabha clears vbg ramji bill 2025 | sagarika ghose calls it ‘anti-poor’",
-            "v_credit": "India Today News Desk",
-            "v_byline": "India Today News Desk",
-            "v_short_desc": "\n            On this special report, the focus is on the passage of the vbg ramji bill 2025 in the rajya sabha. union minister of agriculture and farmers welfare shivraj singh chouhan presented the bill, which replaces mgnrega. trinamool congress mp sagarika ghose lashed out at the government, stating, ‘the manner in which the modi government has brought in this completely anti-poor... bill... is an insult to india&#039;s poor.’ the bill was passed by voice vote at midnight amid an opposition walkout.\n\n      <span id=\"rectangle\" style=\"width:8px; height:8px; background-color:red; display:inline-block \"></span>",
-            "v_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/202512/vbgramjibillpassedsagarikaghoseslamsgovt-s0-original-sixteen-to-nine.jpg?size=260:147",
-            "v_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/202512/vbgramjibillpassedsagarikaghoseslamsgovt-s0-original-sixteen-to-nine.jpg?size=555:313",
-            "v_extralarge_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/202512/vbgramjibillpassedsagarikaghoseslamsgovt-s0-original-sixteen-to-nine.jpg?size=749:421",
-            "v_is_default_player": "0",
-            "v_url": "https://video-indiatoday.tosshub.com/indiatoday/video/2025_12/19_dec_25_-ytvd-it_firstup_chunk_7_1912_vt_ak_1024-videotrans-social-251219-18997-nppg8-am92rgg2wym/19_dec_25_-ytvd-it_firstup_chunk_7_1912_vt_ak_1024-videotrans-social-251219-18997-nppg8-am92rgg2wym.m3u8",
-            "v_download_url": "https://video-indiatoday.tosshub.com/indiatoday/video/2025_12/19_dec_25_-ytvd-it_firstup_chunk_7_1912_vt_ak_1024-videotrans-social-251219-18997-nppg8-am92rgg2wym_720.mp4",
-            "v_view_count": "0",
-            "v_comment_count": "0",
-            "v_share_url": "https://alpha-indiatoday.intoday.in/india/video/rajya-sabha-passes-vbg-ramji-bill-tmc-mp-sagarika-ghose-terms-it-anti-poor-and-tyranny-ytvd-2300502-2025-12-19",
-            "v_duration": "05:47",
-            "v_updated_datetime": "2025-12-19 15:12:19",
-            "v_show_ad": "1",
-            "v_video_size": "0",
-            "v_subcategory_id": "1206578",
-            "v_subcategory_title": "India",
-            "v_ratio": "16:9",
-            "authors": []
+  "status_code": "1",
+  "status_message": "",
+  "data": {
+    "title": "Speakers",
+    "speakers": [
+      {
+        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
+        "speaker_name": "Abhishek Singh Rajavat",
+        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "speaker_detail": ""
+      },
+      {
+        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14376/assets/12.jpeg?time=1669922487",
+        "speaker_name": "Holly Molly Hopper",
+        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "speaker_detail": ""
+      },
+      {
+        "type": "ads",
+        "item": {
+          "description": "Bottom banner for all screens",
+          "type": "banner",
+          "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
+          "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
+          "size": "336x280,300x250,250x250"
         }
-    ],
-    "related_video_category_list": [
-        {
-            "category_name": "Featured",
-            "category_id": "0"
-        },
-        {
-            "category_name": "PrimeTime",
-            "category_id": "1206577"
+      },
+      {
+        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14364/assets/22.jpeg?time=1669900581",
+        "speaker_name": "EXPO Parasocio Matteo",
+        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "speaker_detail": ""
+      },
+      {
+        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
+        "speaker_name": "Hollan Daniel Willinsky",
+        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "speaker_detail": ""
+      },
+      {
+        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
+        "speaker_name": "Abhishek Singh Rajavat",
+        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "speaker_detail": ""
+      },
+      {
+        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14376/assets/12.jpeg?time=1669922487",
+        "speaker_name": "Holly Molly Hopper",
+        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "speaker_detail": ""
+      },
+      {
+        "type": "ads",
+        "item": {
+          "description": "Bottom banner for all screens",
+          "type": "banner",
+          "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
+          "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
+          "size": "336x280,300x250,250x250"
         }
-    ],
-    "cache": {
-        "redis_ttl": "90",
-        "akamai_ttl": "2592000"
-    },
-    "data_source": "D"
+      },
+      {
+        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14364/assets/22.jpeg?time=1669900581",
+        "speaker_name": "EXPO Parasocio Matteo",
+        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "speaker_detail": ""
+      },
+      {
+        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
+        "speaker_name": "Hollan Daniel Willinsky",
+        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "speaker_detail": ""
+      }
+    ]
+  }
 }
