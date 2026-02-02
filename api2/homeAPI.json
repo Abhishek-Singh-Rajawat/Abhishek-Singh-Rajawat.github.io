@@ -48,12 +48,12 @@
           {
             "cat_title": "Speakers",
             "cat_type": "list",
-            "cat_api_url": "api"
+            "cat_api_url": "https://abhishek-singh-rajawat.github.io/api2/onlyText.json"
           },
           {
             "cat_title": "Sponsors",
             "cat_type": "webview",
-            "cat_api_url": "https://abhishek-singh-rajawat.github.io/api2/onlyText.json",
+            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/aajtak/budget-2026/it_banner.html",
             "open_in_external_url": false
           },
           {
