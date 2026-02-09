@@ -7,6 +7,7 @@
       "item": {
         "banner_url": "https://akm-img-a-in.tosshub.com/sites/aajtak/budget-2026/it_banner.html",
         "banner_redirection_url": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
+        "is_live_tv_enabled": false,
         "live_tv": {
           "title": "",
           "vimeo_id": "",
@@ -31,8 +32,7 @@
         "cat_tab": [
           {
             "cat_title": "Home",
-            "cat_type": "newslist",
-            "cat_api_url": "https://alpha-itappfeeds.intoday.in/appapi/newslist?id=1206719"
+            "cat_type": "home"
           },
           {
             "cat_title": "Register",
@@ -47,8 +47,8 @@
           },
           {
             "cat_title": "Speakers",
-            "cat_type": "list",
-            "cat_api_url": "https://abhishek-singh-rajawat.github.io/api2/onlyText.json"
+            "cat_type": "https://abhishek-singh-rajawat.github.io/api2/onlyText.json",
+            "cat_api_url": "api"
           },
           {
             "cat_title": "Sponsors",
@@ -59,13 +59,26 @@
           {
             "cat_title": "Past Conclaves",
             "cat_type": "list",
-            "cat_api_url": "https://abhishek-singh-rajawat.github.io/api2/blog.json"
+            "cat_past_conclave_list": [
+              {
+                "conclave_name": "Conclave 2025",
+                "conclave_newslist_api_url": " "
+              },
+              {
+                "conclave_name": "Conclave 2024",
+                "conclave_newslist_api_url": " "
+              },
+              {
+                "conclave_name": "Conclave 2023",
+                "conclave_newslist_api_url": " "
+              }
+            ]
           }
         ]
       }
     },
     {
-      "type": "program_schedule",
+      "type": "listItem",
       "item": {
         "program": [
           {
@@ -112,6 +125,48 @@
                   }
                 ]
               }
+            ],
+            "newslist_item": [
+              {
+                "n_id": "2301137",
+                "n_type": "story",
+                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
+                "n_slug": "Live blog",
+                "n_pcategory_name": "India",
+                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
+                "n_updated_datetime": "2026-01-28 15:09:51",
+                "n_widget": [],
+                "n_attached_story_url": "https://alpha-indiatoday.intoday.in/movies/bollywood/story/reviewsstorylove-marriage-vikram-prabhu-film-pleasant-rom-com-that-never-achieves-its-full-potential-2747315-2025-06-27-2297829-2025-07-02",
+                "n_attached_photo_url": "",
+                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
+              },
+              {
+                "n_id": "",
+                "n_type": "ads",
+                "n_widget": [
+                  {
+                    "description": "Bottom banner for all screens",
+                    "type": "banner",
+                    "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
+                    "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
+                    "size": "336x280,300x250,250x250"
+                  }
+                ]
+              },
+              {
+                "n_id": "2301137",
+                "n_type": "videogallery",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/constant-confusion-over-cm-issue-siddaramaiah-seeks-clarity-from-rahul-gandhi-2301137-2026-01-14",
+                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
+                "n_slug": "Live blog",
+                "n_pcategory_name": "India",
+                "n_widget": [],
+                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
+                "n_updated_datetime": "2026-01-28 15:09:51",
+                "n_attached_story_url": "",
+                "n_attached_photo_url": "https://alpha-indiatoday.intoday.in/science/photo/lindian-deportees-video-from-panama-jungle-shows-donkey-route-to-enter-us-2297149-2025-04-08",
+                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
+              }
             ]
           },
           {
@@ -157,6 +212,61 @@
                     "profile_subtitle": "CEO OF India Today"
                   }
                 ]
+              }
+            ],
+            "newslist_item": [
+              {
+                "n_id": "2301137",
+                "n_type": "videogallery",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/constant-confusion-over-cm-issue-siddaramaiah-seeks-clarity-from-rahul-gandhi-2301137-2026-01-14",
+                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
+                "n_slug": "Live blog",
+                "n_pcategory_name": "India",
+                "n_widget": [],
+                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
+                "n_updated_datetime": "2026-01-28 15:09:51",
+                "n_attached_story_url": "",
+                "n_attached_photo_url": "",
+                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
+              },
+              {
+                "n_id": "",
+                "n_type": "ads",
+                "n_widget": [
+                  {
+                    "description": "Bottom banner for all screens",
+                    "type": "banner",
+                    "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
+                    "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
+                    "size": "336x280,300x250,250x250"
+                  }
+                ]
+              },
+              {
+                "n_id": "2301137",
+                "n_type": "story",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/constant-confusion-over-cm-issue-siddaramaiah-seeks-clarity-from-rahul-gandhi-2301137-2026-01-14",
+                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
+                "n_slug": "Live blog",
+                "n_widget": [],
+                "n_pcategory_name": "India",
+                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
+                "n_updated_datetime": "2026-01-28 15:09:51",
+                "n_attached_content_url": ""
+              },
+              {
+                "n_id": "2301137",
+                "n_type": "photogallery",
+                "n_share_link": "https://alpha-indiatoday.intoday.in/science/photo/lindian-deportees-video-from-panama-jungle-shows-donkey-route-to-enter-us-2297149-2025-04-08",
+                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
+                "n_slug": "Live blog",
+                "n_pcategory_name": "India",
+                "n_widget": [],
+                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
+                "n_updated_datetime": "2026-01-28 15:09:51",
+                "n_attached_story_url": "",
+                "n_attached_photo_url": "https://alpha-indiatoday.intoday.in/science/photo/lindian-deportees-video-from-panama-jungle-shows-donkey-route-to-enter-us-2297149-2025-04-08",
+                "n_attached_video_url": ""
               }
             ]
           }
