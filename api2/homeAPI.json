@@ -84,7 +84,7 @@
         "program": [
           {
             "date": "Day 1 , 26 ,December",
-            "is_day_active": true,
+            "is_day_active": false,
             "category_item": [
               {
                 "program_datetime": "16.00-17.00 Hrs",
@@ -178,7 +178,7 @@
           },
           {
             "date": "Day 2 , 27 ,December",
-            "is_day_active": false,
+            "is_day_active": true,
             "category_item": [
               {
                 "program_datetime": "28 December",
