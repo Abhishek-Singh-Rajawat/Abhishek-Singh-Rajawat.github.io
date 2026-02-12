@@ -42,7 +42,7 @@
           },
           {
             "cat_title": "Programs",
-            "cat_type": "list",
+            "cat_type": "programlist",
             "cat_api_url": "https://abhishek-singh-rajawat.github.io/api/includeEverything.json"
           },
           {
