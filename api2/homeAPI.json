@@ -38,7 +38,7 @@
           {
             "cat_title": "Register",
             "cat_type": "webview",
-            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/aajtak/budget-2026/it_banner.html",
+            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/indiatoday/app/sponsor.html",
             "open_in_external_url": true
           },
           {
@@ -54,7 +54,7 @@
           {
             "cat_title": "Sponsors",
             "cat_type": "webview",
-            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/aajtak/budget-2026/it_banner.html",
+            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/indiatoday/app/sponsor.html",
             "open_in_external_url": false
           },
           {
