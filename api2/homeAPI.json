@@ -32,7 +32,8 @@
         "cat_tab": [
           {
             "cat_title": "Home",
-            "cat_type": "home"
+            "cat_type": "home",
+            "cat_api_url": "https://abhishek-singh-rajawat.github.io/api2/homeAPI.json"
           },
           {
             "cat_title": "Register",
