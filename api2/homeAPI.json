@@ -48,8 +48,8 @@
           },
           {
             "cat_title": "Speakers",
-            "cat_type": "https://abhishek-singh-rajawat.github.io/api2/onlyText.json",
-            "cat_api_url": "api"
+            "cat_type": "speakerlist",
+            "cat_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavespeakerslist?event_id=1641920"
           },
           {
             "cat_title": "Sponsors",
