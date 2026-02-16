@@ -6,11 +6,10 @@
       "type": "banner_live_tv",
       "item": {
         "banner_url": "https://akm-img-a-in.tosshub.com/sites/aajtak/budget-2026/it_banner.html",
-        "banner_redirection_url": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
-        "is_live_tv_enabled": true,
-        "live_tv": {
+        "banner_redirection_url": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",        "live_tv": {
           "title": "",
           "vimeo_id": "",
+          "is_tv_enabled":true,
           "is_preroll_ad_enabled": true,
           "ad_unit": ""
         }
