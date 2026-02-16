@@ -44,7 +44,7 @@
           {
             "cat_title": "Programs",
             "cat_type": "programlist",
-            "cat_api_url": "https://abhishek-singh-rajawat.github.io/api/includeEverything.json"
+            "cat_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclaveallprogramlist?url=/india-today-conclave/2020"
           },
           {
             "cat_title": "Speakers",
