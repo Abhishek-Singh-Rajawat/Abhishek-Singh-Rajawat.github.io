@@ -7,7 +7,7 @@
       "item": {
         "banner_url": "https://akm-img-a-in.tosshub.com/sites/aajtak/budget-2026/it_banner.html",
         "banner_redirection_url": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
-        "is_live_tv_enabled": false,
+        "is_live_tv_enabled": true,
         "live_tv": {
           "title": "",
           "vimeo_id": "",
