@@ -63,31 +63,31 @@
             "cat_past_conclave_list": [
               {
                 "conclave_name": "Conclave 2025",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2025"
+                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2025"
               },
               {
                 "conclave_name": "Conclave 2024",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2024"
+                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2024"
               },
               {
                 "conclave_name": "Conclave 2023",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2023"
+                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2023"
               },
               {
                 "conclave_name": "Conclave 2022",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2022"
+                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2022"
               },
               {
                 "conclave_name": "Conclave 2021",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2021"
+                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2021"
               },
               {
                 "conclave_name": "Conclave 2020",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2020"
+                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2020"
               },
               {
                 "conclave_name": "Conclave 2019",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/conclave-mumbai/2019"
+                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2019"
               }
             ]
           }
