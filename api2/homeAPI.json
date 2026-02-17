@@ -6,10 +6,11 @@
       "type": "banner_live_tv",
       "item": {
         "banner_url": "https://akm-img-a-in.tosshub.com/sites/aajtak/budget-2026/it_banner.html",
-        "banner_redirection_url": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",        "live_tv": {
+        "banner_redirection_url": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
+        "live_tv": {
           "title": "",
           "vimeo_id": "",
-          "is_tv_enabled":true,
+          "is_tv_enabled": true,
           "is_preroll_ad_enabled": true,
           "ad_unit": ""
         }
@@ -26,56 +27,38 @@
       }
     },
     {
-      "type": "category_tabs",
-      "item": {
-        "cat_tab": [
-          {
-            "cat_title": "Home",
-            "cat_type": "home",
-            "cat_api_url": "https://abhishek-singh-rajawat.github.io/api2/homeAPI.json"
-          },
-          {
-            "cat_title": "Register",
-            "cat_type": "webview",
-            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/indiatoday/app/sponsor.html",
-            "open_in_external_url": true
-          },
-          {
-            "cat_title": "Programs",
-            "cat_type": "programlist",
-            "cat_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclaveallprogramlist?url=/india-today-conclave/2020"
-          },
-          {
-            "cat_title": "Speakers",
-            "cat_type": "speakerlist",
-            "cat_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavespeakerslist?event_id=1641920"
-          },
-          {
-            "cat_title": "Sponsors",
-            "cat_type": "webview",
-            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/indiatoday/app/sponsor.html",
-            "open_in_external_url": false
-          },
-          {
-            "cat_title": "Past Conclaves",
-            "cat_type": "list",
-            "cat_past_conclave_list": [
-              {
-                "conclave_name": "Conclave 2025",
-                "conclave_newslist_api_url": " "
-              },
-              {
-                "conclave_name": "Conclave 2024",
-                "conclave_newslist_api_url": " "
-              },
-              {
-                "conclave_name": "Conclave 2023",
-                "conclave_newslist_api_url": " "
-              }
-            ]
-          }
-        ]
-      }
+      "cat_title": "Past Conclaves",
+      "cat_type": "past_conclave",
+      "cat_past_conclave_list": [
+        {
+          "conclave_name": "Conclave 2025",
+          "conclave_newslist_api_url": "http://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2025"
+        },
+        {
+          "conclave_name": "Conclave 2024",
+          "conclave_newslist_api_url": "http://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2024"
+        },
+        {
+          "conclave_name": "Conclave 2023",
+          "conclave_newslist_api_url": "http://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2023"
+        },
+        {
+          "conclave_name": "Conclave 2022",
+          "conclave_newslist_api_url": "http://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2022"
+        },
+        {
+          "conclave_name": "Conclave 2021",
+          "conclave_newslist_api_url": "http://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2021"
+        },
+        {
+          "conclave_name": "Conclave 2020",
+          "conclave_newslist_api_url": "http://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/india-today-conclave/2020"
+        },
+        {
+          "conclave_name": "Conclave 2019",
+          "conclave_newslist_api_url": "http://alpha-itappfeeds.intoday.in/appapi/conclavelanding?url=/conclave-mumbai/2019"
+        }
+      ]
     },
     {
       "type": "listItem",
