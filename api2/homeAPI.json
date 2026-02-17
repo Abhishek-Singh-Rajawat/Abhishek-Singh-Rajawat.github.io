@@ -59,7 +59,7 @@
           },
           {
             "cat_title": "Past Conclaves",
-            "cat_type": "list",
+            "cat_type": "past_conclave",
             "cat_past_conclave_list": [
               {
                 "conclave_name": "Conclave 2025",
