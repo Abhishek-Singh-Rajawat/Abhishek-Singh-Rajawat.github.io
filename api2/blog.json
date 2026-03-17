@@ -1,43 +1,72 @@
 {
-  "status_code": "1",
-  "status_message": "",
-  "data": {
-    "title": "Past Conclave",
-    "past_conclave": [
-      {
-        "type": "conclave",
-        "item": {
-          "conclave_name": "Conclave 2025",
-          "conclave_image": "",
-          "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/newslist?id=1206719"
-        }
-      },
-      {
-        "type": "ads",
-        "item": {
-          "description": "Bottom banner for all screens",
-          "type": "banner",
-          "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
-          "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
-          "size": "336x280,300x250,250x250"
-        }
-      },
-      {
-        "type": "conclave",
-        "item": {
-          "conclave_name": "Conclave 2024",
-          "conclave_image": "",
-          "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/newslist?id=1206578"
-        }
-      },
-      {
-        "type": "conclave",
-        "item": {
-          "conclave_name": "Conclave 2023",
-          "conclave_image": "",
-          "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/newslist?id=1206719"
-        }
-      }
-    ]
-  }
+"status_code": "1",
+"status_message": "",
+"data": {
+"party_labels": {
+"part_name_h": "गठबंधन",
+"part_name": "Alliance",
+"win_name_h": "जीत",
+"win_name": "Win",
+"lead_name_h": "बढ़त",
+"lead_name": "Lead",
+"total_name_h": "कुल सीट",
+"total_name": "Total"
+},
+"legends_labels": {
+"lead_name_h": "Lead",
+"lead_name": "Lead",
+"lead_icon": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/up_arrow.png",
+"trail_name_h": "Trail",
+"trail_name": "Trail",
+"trail_icon": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/down_arrow.png",
+"won_name_h": "Won",
+"won_name": "Won",
+"won_icon": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/won.png",
+"lost_name_h": "Lost",
+"lost_name": "Lost",
+"lost_icon": "https://akm-img-a-in.tosshub.com/sites/electiontak/images/lost.png"
+},
+"state_list": [
+{
+"id": "11",
+"name": "Bihar",
+"name_h": "बिहार",
+"name_bn": "Bihar",
+"name_ml": "Bihar",
+"total_seat": "243",
+"no_of_parties": "0",
+"ordering": "4",
+"ordering_h": "4",
+"ordering_bn": "4",
+"ordering_ml": "9",
+"ordering_lt": "4",
+"show_state": "1",
+"show_state_h": "1",
+"show_state_bn": "1",
+"show_state_ml": "1",
+"show_state_lt": "1",
+"api_url": "https://electionresults.intoday.in/elections/2025/assembly-elections/json/tally/app/rt-ae-assembly-bihar.json"
+},
+  {
+"id": "11",
+"name": "UP",
+"name_h": "बिहार",
+"name_bn": "Bihar",
+"name_ml": "Bihar",
+"total_seat": "243",
+"no_of_parties": "0",
+"ordering": "4",
+"ordering_h": "4",
+"ordering_bn": "4",
+"ordering_ml": "9",
+"ordering_lt": "4",
+"show_state": "1",
+"show_state_h": "1",
+"show_state_bn": "1",
+"show_state_ml": "1",
+"show_state_lt": "1",
+"api_url": "https://electionresults.intoday.in/elections/2025/assembly-elections/json/tally/app/rt-ae-assembly-bihar.json"
+}
+]
+}
 }
