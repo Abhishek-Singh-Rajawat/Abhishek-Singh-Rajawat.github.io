@@ -1,203 +1,928 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>AI Insights By Sana</title>
-<style>
-*,*:after,*:before{box-sizing:border-box;padding:0;margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;line-height:inherit;font-size:100%;touch-action:manipulation;}
+<html>
+  <head>
+    <title>
+      2026 Assembly Election Results
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <link rel="preconnect" crossorigin="" href="https://akm-img-a-in.tosshub.com" />
+    <link rel="preconnect" crossorigin="" href="https://electionresults.intoday.in" />
+    <style>
+      html, body {
+        overflow: hidden !important;
+        touch-action: none;
+        height: auto !important;
+      }
+      :root {
+        --theme-color: #d22423;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 100%;
+        font-family: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .img-comp-container .img-comp-img svg {
+        width: 700px;
+        height: 600px;
+     }
 
-/* Transparency for WebView and preventing body bounce */
-html, body { background: transparent; height: auto; overflow: hidden; }
+      .elecResults {
+        margin: 0px;
+        padding: 20px;
+        width: 100%;
+        border: 1px solid #e2e2e2;
+        border-top-width: 6px;
+        border-radius: 0 0 8px 8px;
+        overflow: hidden !important;
+        touch-action: none;
+      }
+      .elecResults * {
+        box-sizing: border-box;
+      }
+      .elecResults a {
+        text-decoration: none;
+      }
+      .elecResults h3 {
+        margin: 0px;
+        padding: 0px 0 15px 0;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #000;
+      }
+      .elecResults .tabArea{ margin-bottom:30px;}
+      .elecResults .tabArea ul#tabs {
+        list-style-type: none;
+        margin: 0px 0 0 0;
+        padding-left: 0px;
+        position: relative;
+      }
+      .elecResults .tabArea ul#tabs li {
+        display: inline;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .elecResults .tabArea ul#tabs li span {
+        font-weight: 400;
+      }
+      .elecResults .tabArea ul#tabs li a {
+        color: #a1a5b7;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0px 10px 6px;
+      }
+      .elecResults .tabArea ul#tabs li a.selected {
+        font-size: 22px;
+        border-bottom: 3px solid var(--theme-color);
+        color: #1d1d1f;
+      }
 
-@keyframes shimmer{0%{background-position:-600px 0}100%{background-position:600px 0}}
-.shimmer{background:linear-gradient(90deg,#ececec 25%,#f5f5f5 50%,#ececec 75%);background-size:600px 100%;animation:shimmer 1.4s infinite;border-radius:6px;}
+      .elecResults .tabArea div.tabContent {
+        background-color: #fff;
+        margin-top: 1.5px;
+        padding: 10px 0 0;
+        overflow: hidden;
+      }
+      .elecResults .tabArea div.tabContent.hide {
+        display: none;
+      }
 
-@keyframes slideInFade{0%{opacity:0;transform:translateX(-20px);}100%{opacity:1;transform:translateX(0);}}
-.insight-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:13px;font-size:14px;line-height:21px;color:#1f2937;animation:slideInFade 0.4s cubic-bezier(0.25,0.46,0.45,0.94) both;}
-.insight-item:last-child{margin-bottom:0;}
+      /* MAP AREA */
+      .elecResults .mapArea {
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        width: 30%;
+      }
+      .elecResults .mapArea img {
+        width: 100%;
+      }
+      .stateMob {
+        display: none;
+      }
 
-.outer {
-    position: relative;
-    padding-top: 14px;
-    width: calc(100% - 20px);
-    margin: 10px auto;
-    /* FIXED PIXEL HEIGHT for wrap_content WebViews */
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-}
+      @media (max-width: 768px) {
+        .elecResults {padding: 10px;}        
+      }
+      @media screen and (max-width: 1024px) {
+        .elecResults .tabArea ul#tabs li {font-size: 12px;}
+        .elecResults .tabArea div.tabContent {margin-top: 1px;}
+      }
+      @media screen and (max-width: 728px) {
+        .elecResults .tabArea div.tabContent {padding-left: 0px;padding-right: 0px;}
+        .elecResults .tabArea ul#tabs {display: none;}
+        .elecResults .tabArea div.tabContent {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        .elecResults .mapArea {
+          padding: 0px 10px;
+        }
+        .elecResults .mapArea {
+          float: none;
+          width: 100%;
+          margin: 0px 0 15px 0;
+        }
+        .elecResults .partPosi {
+          float: none;
+          width: 100%;
+          margin: 0px;
+        }
+        .elecResults .storyList {
+          float: none;
+          width: 100%;
+          padding: 0px 10px;
+          margin-top: 3px;
+        }
+        .elecResults .partPosi h2 {
+          display: block;
+          font-size: 20px;
+        }
+        .elecResults .partPosi table {
+          font-size: 14px;
+        }
+        .elecResults .storyList ul li {
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .elecResults .storyList ul li:nth-child(3n) {
+          border-bottom: 1px solid #dbdbdb;
+        }
+        .elecResults .storyList ul li:nth-child(4n) {
+          display: block;
+        }
 
-.close-btn{position:absolute;top:0;right:0;width:28px;height:28px;background:#CC0000;border-radius:50%;border:none;cursor:pointer;z-index:10;padding:0;display:flex;align-items:center;justify-content:center;transition:transform 0.2s,background 0.2s;touch-action:manipulation;}
-.close-btn svg{width:16px;height:16px;display:block;}
+        .elecResults .tabArea ul#tabs {
+          display: none;
+        }
+        .stateMob {
+          display: block;
+          padding: 5px 20px;
+          border: 1px solid #d9d9d9;
+          height: 42px;
+          width: 100%;
+          border-radius: 6px;
+          background-color: #fff;
+          position: relative;
+        }
+        .stateMob:after {
+          content: "";
+          position: absolute;
+          right: 20px;
+          border: 2px solid #111;
+          border-width: 0 2px 2px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: translateY(-50%) rotate(45deg);
+          top: calc(50% - 1px);
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          cursor: pointer;
+        }
+        .stateMob select {
+          font-size: 18px;
+          color: #181c32;
+          text-transform: capitalize;
+          width: 100%;
+          display: block;
+          box-sizing: border-box;
+          background-color: #fff;
+          border: 0px;
+          font-weight: bold;
+          height: 30px;
+          -webkit-appearance: none;
+        }
+        .stateMob select:focus-visible {
+          outline: 0;
+        }
+      }
 
-.sk-card, .real-card {
-    background:#f8f9fa;
-    border-radius:14px;
-    border:1px solid #e2e2e2;
-    padding:14px 14px 12px;
-    width:100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-}
+      .main_section {
+        padding: 20px 20px 10px;
+        border: 1px solid #e2e2e2;
+        border-top-width: 6px;
+        border-radius: 0 0 8px 8px;
+        background-color: #fff;
+      }
 
-/* Header stays at the top */
-.sticky-header-section {
-    flex-shrink: 0;
-    width: 100%;
-}
+      .img-comp-container {
+        position: relative;
+        height: 520px;
+        width: 500px;
+      }
 
-.header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
-.avatar-wrap{width:38px;height:38px;border-radius:50%;flex-shrink:0;overflow:hidden;background:#e0e0e0;}
-.avatar-wrap img{width:100%;height:100%;object-fit:cover;border-radius:50%;opacity:0;transition:opacity 0.3s ease;}
-.avatar-wrap img.loaded{opacity:1;}
-.header-title{font-size:15px;font-weight:700;color:#1f2937;white-space:nowrap;flex:1;}
+      .img-comp-img {
+        position: absolute;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+      }
 
-select.dropdown{width:100%;padding:8px 32px 8px 12px;border:1px solid #d1d5db;border-radius:10px;background:white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 10px center;font-size:14px;font-weight:500;color:#1f2937;cursor:pointer;appearance:none;-webkit-appearance:none;margin-bottom:9px;outline:none;}
+      .img-comp-img svg {
+        display: block;
+        vertical-align: middle;
+      }
 
-.summary-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;gap:8px;}
-.summary-label{font-size:11.5px;color:#6A7282;line-height:1.4;letter-spacing:0.3px;flex:1;}
-.listen-pill{display:inline-flex;align-items:center;border:1px solid #d1d5db;border-radius:999px;background:white;cursor:pointer;padding:3px 14px 3px 3px;flex-shrink:0;}
+      .img-comp-slider {
+        position: absolute;
+        z-index: 9;
+        cursor: ew-resize;
+        background-color: transparent;
+        opacity: 1;
+        height: 100%;
+        width: 40px;
+        background-image: url(https://akm-img-a-in.tosshub.com/sites/test/election-dashboard-2024/img/drager_.png);
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: left bottom 30px;
+      }
+      .img-comp-slider::after {
+        content: var(--curr-year, "2026");
+        position: absolute;
+        left: 20px;
+        top: 5px;
+        transform: translateY(0%);
+        font-weight: 600;
+        font-size: 18px;
+        padding: 5px 10px;
+        color: #000;
+        border-radius: 0 10px 10px 0;
+        background-color: rgba(255, 255, 255, 0.7);
+        -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
+      }
+      .img-comp-slider::before {
+        content: var(--prev-year, "2021");
+        position: absolute;
+        left: -45px;
+        top: 0;
+        transform: translateY(0%);
+        font-weight: 600;
+        font-size: 18px;
+        padding: 5px 10px;
+        color: #000;
+        border-radius: 10px 0 0 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 7px;
+      }
+      .img-comp-img div svg {
+        height: 100%;
+        width: 100%;
+      }
+      .top_election {
+        background: #b00205;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 3px 5px;
+        display: inline-block;
+        margin-bottom: 8px;
+        position: relative;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-left: 0px;
+        display: none;
+      }
+      .wapper_map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 10px;
+      }
+      .tally_table {
+        min-height: 233px;
+      }
+      .table_cont {
+        height: calc(100% - 66px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        min-height: 288px;
+      }
+      .tbhead {
+        border-radius: 4px 4px 0px 0px;
+        background: var(--theme-color);
+        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+        color: #fff;
+        flex: 1;
+      }
+      .tbhead span {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        min-width: 70px;
+      }
+      .tbhead span:first-child {
+        min-width: 93px;
+      }
+      .tbhead span:not(:first-child) {
+        justify-content: center;
+      }
+      .tbhead span:not(:last-child),
+      .tbrow span:not(:last-child) {
+        border-right: 2px solid #fff;
+      }
+      .tbhead,
+      .tbrow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .tbbody {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .tbrow {
+        flex: 1;
+      }
+      .tbrow span {
+        color: #3a3a3a;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        min-width: 70px;
+      }
+      .tbrow span:not(:first-child) {
+        justify-content: center;
+        font-size: 22px;
+      }
+      .tbrow span:first-child {
+        color: var(--partycolor);
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        min-width: 93px;
+      }
+      .tbrow span:first-child::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: var(--partycolor);
+        margin-right: 5px;
+        flex-shrink: 0;
+      }
+      .tbrow:nth-child(odd) {
+        background-color: #eef3f6;
+      }
+      .tbrow:nth-child(even) {
+        background-color: #fbfbfb;
+      }
+      .img-comp-overlay {
+        border-right: 1px solid lightgray;
+      }
+      .img-comp-overlay svg path {
+        cursor: pointer;
+      }
+      @media (min-width:1001px) {
+        .wapper_map {justify-content: space-between;}
+           .img-comp-container {
+            width: 700px;
+            height:610px;
+            }
+        
+      }
+      @media (min-width: 1030px) and (max-width: 1199px) {
+           .wapper_map {justify-content: space-between;}
+           .img-comp-container {
+            width: 700px;
+            height:610px;
+            }
+          }
+      @media (max-width: 1000px) {
+        .img-comp-container {
+          width: 385px;
+          height: 467px;
+        }
+        .img-comp-container .img-comp-img svg {
+          width: 360px;
+          height:467px;
+        }
+      }
 
-.play-circle{width:28px;height:28px;border-radius:50%;background:#CC0000;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.play-circle svg{width:13px;height:13px;display:block;}
-.listen-label{font-size:13px;font-weight:500;color:#374151;padding-left:8px;white-space:nowrap;}
+      @media (max-width: 680px) {
+        .img-comp-slider {
+          background-size: 35px;
+          background-position: left bottom 4px;
+        }
+        .img-comp-container {
+          width: 230px;
+          height: 290px;
+          margin-left: 0;
+        }
+        .img-comp-container .img-comp-img svg {
+          width: 230px;
+          height: 270px;
+        }
+        .main_section {
+          padding: 15px 10px 10px;
+        }
+        .wapper_map {
+          flex-direction: column;
+          grid-row-gap: 20px;
+        }
+        .img-comp-slider::after,
+        .img-comp-slider::before {
+          font-size: 12px;
+        }
+        .img-comp-slider::before {
+          left: -30px;
+        }
+        .table_cont {
+          min-height: 135px;
+          justify-content: flex-start;
+          margin-bottom: 0;
+        }
+        .tally_table {
+          min-height: unset;
+          width: 100%;
+        }
+        .tbhead span,
+        .tbrow span {
+          padding: 6px 12px;
+          font-size: 17px;
+        }
+        .tbrow span:not(:first-child) {
+          font-size: 20px;
+        }
+      }
+      #tooltip-container .closebut {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 100%;
+        font-size: 13px;
+        line-height: 20px;
+        right: 0;
+        top: -12px;
+        cursor: pointer;
+      }
 
-.audio-error{display:none;align-items:center;gap:7px;background:#fff3f3;border:1px solid #fca5a5;border-radius:8px;padding:7px 12px;margin-bottom:9px;font-size:12px;color:#b91c1c;}
-.progress-bar{height:3px;background:#e5e7eb;border-radius:2px;margin-bottom:8px;overflow:hidden;display:none;}
-.progress-bar.visible{display:block;}
-.progress-fill{height:100%;width:0%;background:#CC0000;border-radius:2px;transition:width 0.3s linear;}
+      #tooltip-container {
+        position: absolute;
+        background: #fff;
+        color: #000;
+        padding: 23px 8px 8px;
+        border-radius: 4px;
+        display: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        min-width: 120px;
+        max-width: 200px;
+        margin-right: 30px;
+      }
+      .year_title {
+        position: absolute;
+        top: 0;
+        background-color: #c00;
+        color: #fff;
+        left: 0;
+        font-size: 14px;
+        padding: 1px 5px;
+        font-weight: 500;
+        border-radius: 0 0 5px 0;
+      }
+      .consname {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        text-align: center;
+        word-break: break-word;
+      }
 
-/* This container scrolls internally */
-.content-box{
-    background:white;
-    border:1px solid #e5e7eb;
-    border-radius:10px;
-    padding:14px 14px 10px;
-    margin-bottom:8px;
-    flex: 1; 
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-}
+      .partyname img {
+        height: 35px;
+        width: 35px;
+      }
 
-.bullet{width:6px;height:6px;background:#CC0000;border-radius:1px;margin-top:7px;flex-shrink:0;}
-.footer-row{display:flex;justify-content:flex-end;font-size:11px;color:#6A7282;letter-spacing:0.3px; flex-shrink: 0;}
+      .partyname .status_logo {
+        height: 20px;
+        width: 20px;
+      }
 
-/* Skeletons */
-.sk-avatar{width:38px;height:38px;border-radius:50%;}
-.sk-title{height:18px;width:140px;border-radius:6px;}
-.sk-dropdown{height:36px;border-radius:10px;margin: 10px 0;}
-.sk-box{background:white;border:1px solid #e5e7eb;border-radius:10px;padding:16px; flex: 1;}
-.sk-line{height:13px;border-radius:4px;margin-bottom:12px;}
+      .partyname {
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+      }
+      .candidate_name {
+        text-align: center;
+      }
+      .status {
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        #tooltip-container {
+          right: 5vw;
+          margin-right: 0px;
+        }
+      }
 
-@media(max-width:720px){
-  .outer{width:calc(100% - 10px);margin:10px 5px;}
-}
-</style>
-</head>
-<body>
+      .img-comp-img svg .st0 {
+        fill: #fff;
+      }
 
-<div class="outer" id="skeletonOuter">
-  <button class="close-btn"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-  <div class="sk-card">
-    <div class="header"><div class="sk-avatar shimmer"></div><div class="sk-title shimmer" style="margin-left:10px"></div></div>
-    <div class="sk-dropdown shimmer"></div>
-    <div class="sk-box">
-      <div class="sk-line shimmer" style="width:90%"></div>
-      <div class="sk-line shimmer" style="width:78%"></div>
-      <div class="sk-line shimmer" style="width:95%"></div>
-    </div>
-  </div>
-</div>
+      #disclaimer {
+        display: block;
+        flex-basis: 100%;
+        font-size: 12px;
+        color: #4a4a4a;
+        text-align: center;
+      }
 
-<div class="outer" id="realOuter" style="display:none; opacity:0; transition:opacity 0.4s ease;">
-  <button class="close-btn" id="closeBtn"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-  <div class="real-card">
-    <div class="sticky-header-section">
-        <div class="header">
-          <div class="avatar-wrap"><img id="gifAvatar" alt="Sana"/></div>
-          <span class="header-title">AI Insights By Sana</span>
+      .tbrow span a {
+        text-decoration: none;
+        font-weight: 600;
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="elecResults">
+      <div class="tabArea">
+        <div class="stateMob">
+          <select id="assembly-states">
+          </select>
         </div>
-        <select class="dropdown" id="stateSelect"></select>
-        <div class="summary-row">
-          <span class="summary-label">Quick AI summary of election trends</span>
-          <button class="listen-pill" id="listenBtn">
-            <div class="play-circle">
-              <svg id="playIcon" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-              <svg id="pauseIcon" viewBox="0 0 24 24" fill="white" style="display:none;"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+        <!--end mobile tab menu -->
+        <ul id="tabs">
+        </ul>
+        <!--end tab menu -->
+      </div>
+      <div class="wapper_map">
+        <div id="tooltip-container">
+        </div>
+        <div class="img-comp-container">
+          <div class="img-comp-img" id="svg_one">
+          </div>
+          <div class="img-comp-img img-comp-overlay" id="svg_two">
+          </div>
+        </div>
+        <div class="tally_table">
+          <div class="table_cont">
+            <div class="tbbody" id="tally_table">
             </div>
-            <span class="listen-label" id="listenLabel">Listen</span>
-          </button>
+          </div>
         </div>
-        <div class="audio-error" id="audioError"><span id="audioErrorMsg"></span></div>
-        <div class="progress-bar" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
+      </div>
+      <p id="disclaimer">
+      </p>
     </div>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const site = urlParams.get("site");
+      const device = urlParams.get("device");
+      if (device == "app") {
+                document.head.appendChild(Object.assign(document.createElement('style'),{textContent:'.main_section{min-height:500px}'}));         
+        }
 
-    <div class="content-box" id="insightsList"></div>
+      if (
+        site == "at" ||
+        site == "gnt" ||
+        site == "mptak" ||
+        site == "uptak" ||
+        site == "lallantop" ||
+        site == "chhattisgarhtak" ||
+        site == "crimetak" ||
+        site == "newstak" ||
+        site == "rajasthantak"
+      ) {
+        document.getElementById("disclaimer").innerHTML ="";
+      }
+      let contentData,
+        allData = {};
+      let svgOne = document.getElementById("svg_one");
+      let svgTwo = document.getElementById("svg_two");
+      let tallyTable = document.getElementById("tally_table");
+      function initComparisons() {
+        var x, i;
+        x = document.getElementsByClassName("img-comp-overlay");
+        for (i = 0; i < x.length; i++) {
+          compareImages(x[i]);
+        }
+        function compareImages(img) {            
+          var slider,
+            img,
+            clicked = 0,
+            w,
+            h;
+          w = img.parentElement.offsetWidth;
+          h = img.offsetHeight;
+          img.style.width = w / 2 - 50 + "px";
+          document.querySelectorAll(".img-comp-slider").forEach(el => el.remove());
+          slider = document.createElement("DIV");
+          slider.setAttribute("class", "img-comp-slider");
+          img.parentElement.insertBefore(slider, img);
+          slider.style.top = "2px";
+          slider.style.left = img.offsetWidth - slider.offsetWidth / 2 + "px";
+          slider.addEventListener("mousedown", slideReady);
+          window.addEventListener("mouseup", slideFinish);
+          slider.addEventListener("touchstart", slideReady);
+          window.addEventListener("touchend", slideFinish);
+          function slideReady(e) {
+            e.preventDefault();
+            clicked = 1;
+            window.addEventListener("mousemove", slideMove);
+            window.addEventListener("touchmove", slideMove);
+          }
+          function slideFinish() {
+            clicked = 0;
+          }
+          function slideMove(e) {
+            var pos;
+            if (clicked == 0) return false;
+            pos = getCursorPos(e);
+            if (pos < 0) pos = 0;
+            if (pos > w) pos = w;
+            slide(pos);
+          }
+          function getCursorPos(e) {
+            var a,
+              x = 0;
+            e = e.changedTouches ? e.changedTouches[0] : e;
+            a = img.getBoundingClientRect();
+            x = e.pageX - a.left;
+            x = x - window.pageXOffset;
+            return x;
+          }
+          function slide(x) {
+            img.style.width = x + "px";
+            slider.style.left = img.offsetWidth - slider.offsetWidth / 2 + "px";
+          }
+        }
+      }
 
-    <div class="footer-row">
-      <span id="lastUpdated">Last Updated : --</span>
-    </div>
-  </div>
-</div>
+      const fetchMapData = async () => {
+        const response = await fetch(
+          `https://akm-img-a-in.tosshub.com/sites/elections/final-svg-${feedyear}/assembly-elections/${selectedTab}-assembly.json?v=1.3`
+        );
+        const data = await response.json();
+        if (data.status_code == 1) {
+          svgOne.style.width = "";
+          svgTwo.style.width = "";
+          document.querySelectorAll(".img-comp-slider").forEach((el) => el.remove());
+          svgOne.innerHTML = `${data.loksabha.htm}`;
+          svgTwo.innerHTML = `${data.loksabha.htm}`;
+          initComparisons();
+          fetchSeatData(curryear);
+          fetchSeatData(prevYear);
+        }
+      };
 
-<script>
-(function(){
-  var STATES = [
-    {
-      id:'78923', name:'West Bengal', lastUpdated:'11:43 am',
-      insights:["TMC is holding strong in its traditional urban base.", "BJP is gaining ground in northern districts.", "Left-Congress alliance is struggling.", "Voter turnout has crossed 72%.", "Minority consolidation is playing a decisive role.", "Independent candidates are impacting margins.", "Women voter participation has risen by 6%.", "River-belt constituencies are showing a late swing.", "TMC is holding strong in its traditional urban base.", "BJP is gaining ground in northern districts.", "Left-Congress alliance is struggling.", "Voter turnout has crossed 72%.", "Minority consolidation is playing a decisive role."]
-    },
-    {
-      id:'78924', name:'Tamil Nadu', lastUpdated:'11:43 am',
-      insights:["DMK alliance is dominating.", "AIADMK is struggling.", "Youth voter turnout is high.", "OBC vote split is hurting AIADMK."]
-    }
-  ];
+      const fetchSeatData = (year) => {
+        let svgId = "svg_one";
+		var d = new Date();
+        var n = d.getTime();
+        let url =
+          `https://electionresults.intoday.in/elections/${feedyear}/assembly-elections/json/ei-dashboard/${curryear}/seats/${selectedTab}-seat-matrix.json?rand=`+n;
+        if (year == prevYear) {
+          url =
+            `https://electionresults.intoday.in/elections/${feedyear}/assembly-elections/json/ei-dashboard/${prevYear}/seats/${selectedTab}-seat-matrix.json?v=53`;
+          svgId = "svg_two";
+        }
+        fetch(url)
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            let tempData = data.data.seat_data;
 
-  var select = document.getElementById('stateSelect');
-  STATES.forEach(function(s){
-    var opt=document.createElement('option'); opt.value=s.id; opt.textContent=s.name;
-    select.appendChild(opt);
-  });
+            if (year == prevYear) {
+              allData[prevYear] = data.data.seat_data;
+            } else {
+              allData[curryear] = data.data.seat_data;
+            }
 
-  function renderState(stateObj){
-    var box = document.getElementById('insightsList');
-    box.innerHTML = '';
-    document.getElementById('lastUpdated').textContent = 'Last Updated : ' + stateObj.lastUpdated;
-    stateObj.insights.forEach(function(text){
-      var div = document.createElement('div');
-      div.className = 'insight-item';
-      div.innerHTML = '<span class="bullet"></span><span>' + text + '</span>';
-      box.appendChild(div);
-    });
-  }
+            if (year != prevYear) {
+              contentData = data.data;
+			  
+              tallyTable.innerHTML = ` <div class="tbhead"><span>Party</span><span>${prevYear}</span><span>${year}</span></div>`;
+              
+              for (let partyData of contentData.overall_seat_distribution[0].party_detail) {
+                tallyTable.innerHTML += `<div class="tbrow" style="--partycolor: ${partyData.party_color}"><span>${partyData[changeContentLanguage('party_name')]}
+                    </span> <span>${partyData.last_won}</span> <span>${partyData.current_total}</span></div>`;
+              }
+            }
+            fillMap(svgId, tempData);
+            addTooltip(year);
+          })
+          .catch((err) => console.log(err));
+      };
 
-  select.addEventListener('change', function(){
-    var s = STATES.find(function(i){return i.id === select.value});
-    renderState(s);
-  });
+      const fillMap = (id, data) => {
+        const svgContainer = document.getElementById(id);
+        let mainSvg = svgContainer.getElementsByTagName("svg")[0];
+        for (let partyData of data) {
+          let color = partyData.party_color || partyData.color_code;
+          let tempId = partyData.id;
+          let element = mainSvg.getElementById(`cons${tempId}`);
 
-  setTimeout(function(){
-    document.getElementById('skeletonOuter').style.display='none';
-    var o = document.getElementById('realOuter');
-    o.style.display='flex';
-    setTimeout(function(){ o.style.opacity='1'; renderState(STATES[0]); }, 50);
-    
-    // Load GIF
-    var d = document.getElementById('gifData').textContent.trim();
-    var img = document.getElementById('gifAvatar');
-    img.onload = function(){ img.classList.add('loaded'); };
-    img.src = 'data:image/gif;base64,' + d;
-  }, 1500);
-})();
-</script>
+          let similarElements = mainSvg.querySelectorAll(`path[id*="cons${tempId}_"]`);
+          if (similarElements?.length > 0) {
+            for (let tempElement of similarElements) {
+              tempElement.style.fill = color;
+            }
+          }
+          if (element) {
+            element.style.fill = color;
+          }
+        }
+      };
 
-<script type="text/plain" id="gifData">
-R0lGODlh2ADeAPfsAKdzWTgiJsOOe4hVRbJ7ZpxmU612YvXf58pOXmY2K+rIyd60s7KZp9+yrceSgggAAu3V2N3H18ualndFNubN2ZF4hzIaFruLhdOek9uuqqIhMdS7yf3z+7eCa8aruqFsVpdkTe7c7damokMoJbqFcfPZ3XBZZbuisffj7Kh7dOW6thkICduqnue9u8SSjOO0rdzHyUkiG6SMmuO2ssimplU2NEkyOCkTEdeqpc60xU84Rfz19efT5L6KdFlDTyIQEpuCkbaYlsOOg3picMqWhbFLUc6emZhrY8uWi76Kes20uhAEBFsxKFYqIYRrebYuQvbl5SAMCjEcH8+iniwYG/bs62JLWLOEfJ5yasc7UJ12cjcgHYhbUmpAN6mIhadtYJBbSsaWkbZ8byUQDIlmZOrX5ndLQauRoIBKO62BenhXVWdHRdOejvvn9EAqM7WCco9iWtWqq3xSSfrv77yQi72FeIVOQurQz5ddUhIECGhSXopxgCgUGe7l5D8cFsealBQICLhoZsqwrLuhnfDg3sOanPLb5NSusuPP4EsuLBgIBJtBQ9CDg8Weo/vn7/Xr5zITD/fr9yQUFxkEA9umoquRjeTBxPvz7ywYFJ2AfBsMDrOOkXtgXYtwbGw9LSAMEMBcYl09OmtPTOLV1NHCwPvv+9Kmp+/Oz////61fXJNub9eilvvr99ummtumnvvv98VvcBwQEc+aj9eimpJhStuqotemmt+qom4mI9uqps+aitOinvfn8t+uqNemnv/v+9Oimvfn99OilvPj8s+ekMuaivfj89uuptOikvvr8//7+9Omnt+uosuakOvX6xQIBMuahn9PPdemlvPf7ywMB//799eqnnI/MeHQzcGWmPfz84JfX3BPT7aHgde/0Pvr6+K3t+/P1O/T0vvu+Pvv+f/9/fvv89SPjv//+9/Cvduuoteins2Wk+Oup9+qpxgECNOmmvvr+/vj6Nugmv/v/9yhoOOur//v9//6///r9wAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMS1jMDAzIDc5Ljk2OTBhODdmYywgMjAyNS8wMy8wNi0yMDo1MDoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI3LjAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjAxMjQ2N0EzMURBMTFGMTk3QTA4MTRERUQ3RjQxMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjAxMjQ2N0IzMURBMTFGMTk3QTA4MTRERUQ3RjQxMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMDEyNDY3ODMxREExMUYxOTdBMDgxNERFRDdGNDEyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyMDEyNDY3OTMxREExMUYxOTdBMDgxNERFRDdGNDEyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5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
-</script>
+      function hideTooltip() {
+        tooltipContainer.style.display = "none";
+      }
 
-</body>
+      function removeConsonants(inputString) {
+        return inputString.replace(/[^0-9]/g, "");
+      }
+
+      function addTooltip(year) {
+        let tempData = allData[curryear];
+        let svgContainer = document.getElementById("svg_one");
+        if (year == prevYear) {
+          svgContainer = document.getElementById("svg_two");
+          tempData = allData[prevYear];
+        }
+        let mainSvg = svgContainer.getElementsByTagName("svg")[0];
+        const paths = mainSvg.querySelectorAll("path");
+        paths.forEach((path, index) => {
+          path.addEventListener("click", (event) => {
+            let tempConstituencyData = tempData.filter((item) => {
+              return item.id == removeConsonants(event.target.getAttribute("id"));
+            })[0];
+            const content = `<span class="closebut" onclick="hideTooltip()">x</span> <div class="consname">${
+              tempConstituencyData.seat_name
+            } (${tempConstituencyData.state_name})</div>
+            <div class="candidate_name">${
+              tempConstituencyData.candidate_name ? tempConstituencyData.candidate_name : ""
+            }</div>
+            <div class="partyname"><img src=${tempConstituencyData.party_logo}></img> ${
+              tempConstituencyData.party_name
+            } ${
+              tempConstituencyData.status_logo
+                ? `<img class="status_logo" src=${tempConstituencyData.status_logo}></img>`
+                : ""
+            }</div>
+            
+            <div class="status">${tempConstituencyData.status ? tempConstituencyData.status : ""}</div>
+            <div class="year_title">${year ? year : curryear}</div>`;
+            showTooltip(content);
+          });
+        });
+      }
+
+      window.onresize = function (event) {
+        
+      };
+
+      const tooltipContainer = document.getElementById("tooltip-container");
+
+      function showTooltip(content) {
+        tooltipContainer.innerHTML = content;
+        tooltipContainer.style.display = "block";
+      }
+
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+        return false;
+      }
+
+      const changeContentLanguage = (key) => {
+        const site = getQueryVariable("site");
+        let keyName = key;
+        if (
+          site == "at" ||
+          site == "gnt" ||
+          site == "mptak" ||
+          site == "uptak" ||
+          site == "lallantop" ||
+          site == "chattisgarhtak" ||
+          site == "crimetak" ||
+          site == "newstak" ||
+          site == "rajasthantak"
+        ) {
+          keyName += "_h";
+          document.body.classList.add('lang_hi');
+        }
+        return keyName;
+      };
+      const normalizeStateName = (value) => {
+        const rawState = (value || "").toString().trim().toLowerCase();
+        const decodedState = decodeURIComponent(rawState);
+        const stateAliasMap = {
+          kerala: "keralam",
+          keralam: "keralam",
+        };
+        return stateAliasMap[decodedState] || decodedState;
+      };
+      const queryState = normalizeStateName(getQueryVariable("state") || "west-bengal");
+      const curryear = getQueryVariable("year") || new Date().getFullYear();
+      const prevYear = getQueryVariable("prevyear") || curryear - 5;
+      const feedyear = getQueryVariable("feedyear") || new Date().getFullYear();
+      document.documentElement.style.setProperty('--curr-year', `"${curryear}"`);
+      document.documentElement.style.setProperty('--prev-year', `"${prevYear}"`);
+      const tabsStatus = (getQueryVariable("tabs") || 'show').toLowerCase();
+      let selectedTab = queryState;
+      var tabLinks = new Array();
+      let timer, dataTimer;
+      let tabsDesktop = document.getElementById("tabs");
+      let assemblyStates = document.getElementById("assembly-states");
+
+
+        const fetchTabData = () => {
+            clearTimeout(dataTimer);
+            tabsDesktop.innerHTML = ``;
+            assemblyStates.innerHTML = ``;
+            fetch(
+            `https://electionresults.intoday.in/elections/${feedyear}/assembly-elections/json/tally/assembly_parent_result_tally_${feedyear}.json?v=${Date.now()}`
+            ).then((response) => {
+                return response.json();
+            }).then((data) => {
+                stateTabData = data.data.state_list;
+                
+                if(tabsStatus == 'hide'){
+                    document.querySelector('.elecResults').style.display = 'none';
+                }
+                for (let stateData of stateTabData) {
+                    let stateName = stateData.name.split(" ").join("-").toLowerCase();
+                    if (stateData[changeContentLanguage("show_state")] == 1) {                
+                        tabsDesktop.innerHTML += ` <li  id="${stateName}"><a class="${stateName==selectedTab ? 'selected' : ''}" href="javascript:void(0);" data-id="${stateName}">${stateData[changeContentLanguage("name")]}</a></li>`;
+                        assemblyStates.innerHTML += ` <option value="${stateName}" data-tab-sel="state_${stateName}" id="optn_state1" data-id="${stateName}"${stateName == selectedTab ? ' selected' : ''}>${stateData.name}</option>`;
+                    }
+                }
+                fetchMapData();
+            }).catch((err) => { console.log(err); fetchMapData(); });
+        }
+        document.getElementById("tabs").addEventListener("click", function (e) {
+            const link = e.target.closest("a");
+            if (!link) return;
+            e.preventDefault();
+            const state = link.dataset.id;
+            document.querySelectorAll("#tabs a").forEach(a => a.classList.remove("selected"));
+            link.classList.add("selected");
+            assemblyStates.value = state;
+            handleTabClick(state);
+        });
+
+        document.getElementById("assembly-states").addEventListener("change", function () {
+            const state = this.value;
+            if (!state) return;
+            document.querySelectorAll("#tabs a").forEach(a => {
+                a.classList.toggle("selected", a.dataset.id === state);
+            });
+            handleTabClick(state);
+        });
+
+        function handleTabClick(state) {
+            if (state !== selectedTab) {
+                selectedTab = state;
+                document.querySelectorAll(".img-comp-slider").forEach(el => {
+                    el.removeAttribute("style");
+                });
+                fetchMapData();
+            }
+        }
+        fetchTabData();
+    </script>
+  </body>
 </html>
