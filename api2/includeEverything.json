@@ -58,10 +58,10 @@
             "type":"ott",
             "id":"1",
             "ratio":"Big Mistakes",
-            "thumbnailUrl":"https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2026-05/chemistry.jpg?VersionId=A3ZRicOYSwlMQlOcCbk0hCuo3V7pV7IZ",
+            "thumbnail_url":"https://akm-img-a-in.tosshub.com/indiatoday/styles/medium_crop_simple/public/2026-05/chemistry.jpg?VersionId=A3ZRicOYSwlMQlOcCbk0hCuo3V7pV7IZ",
             "ott_value":"Netflix | April 9, 2026 | English",
             "caption":"<h3>NTA SAYS 'NO ONE' HAS ACCESS TO THE PAPER</h3> <p>On June 15, <a href=\"https://www.indiatoday.in/education-today/news/story/neet-2026-nta-warns-against-paper-leak-claims-opens-grievance-portal-2927256-2026-06-15\" target=\"_self\">NTA posted a blunt warning on X.</a></p>",
-            "embed":["<iframe src=\"https://feeds.intoday.in/interactive/live-assessment/quiz/697467645f37/?content_id=2927460&filter=content&site=it&page=1&limit=5&device=app\" width=\"100%\" height=\"390\" class=\"stquiziframe\" frameborder=\"0\" scrolling=\"no\" allowfullscreen></iframe>" ]
+            "embeds":["<iframe src=\"https://feeds.intoday.in/interactive/live-assessment/quiz/697467645f37/?content_id=2927460&filter=content&site=it&page=1&limit=5&device=app\" width=\"100%\" height=\"390\" class=\"stquiziframe\" frameborder=\"0\" scrolling=\"no\" allowfullscreen></iframe>" ]
          },
          {
             "type":"para",
@@ -80,10 +80,10 @@
             "type":"ott",
             "id":"2",
             "ratio":"Jaane Tu ya Jaane na",
-            "thumbnailUrl":"https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202504/test-304711995-16x9_0.png?size=483:271",
+            "thumbnail_url":"https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202504/test-304711995-16x9_0.png?size=483:271",
             "ott_value":"Prime Video | May 9, 2026 | Tamil",
             "caption":"The crime series revolves around two easygoing siblings whose lives take a dark turn after a theft goes wrong. What begins as an attempt to fulfil their dying grandmother’s wish soon pulls them into ",
-            "embed":[
+            "embeds":[
                "<div class=\"embedcode\"><blockquote style=\"padding: 0.5em !important; display:block;\" class=\"twitter-tweet\"><p dir=\"ltr\" lang=\"en\" xml:lang=\"en\">The President has been clear from day one: Iran will never have a nuclear weapon.<br><br>Once again, President Trump's efforts to establish peace have paid off for the American people, despite countless attempts to thwart it by people who hate America and President Trump. <a href=\"https://t.co/w9SWDRCOsZ\">pic.twitter.com/w9SWDRCOsZ</a></p>— JD Vance (@JDVance) <a href=\"https://x.com/JDVance/status/2066664516373315784?ref_src=twsrc%5Etfw\">June 15, 2026</a></blockquote></div><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
                "<iframe src=\"https://feeds.intoday.in/interactive/live-assessment/quiz/697467645f37/?content_id=2927460&filter=content&site=it&page=1&limit=5&device=app\" width=\"100%\" height=\"390\" class=\"stquiziframe\" frameborder=\"0\" scrolling=\"no\" allowfullscreen></iframe>" 
             ]
@@ -107,10 +107,10 @@
             "type":"ott",
             "id":"3",
             "ratio":"Delhi Belly",
-            "thumbnailUrl":"https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202504/test-304711995-16x9_0.png?size=483:271",
+            "thumbnail_url":"https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202504/test-304711995-16x9_0.png?size=483:271",
             "ott_value":"Jio Hotstar | Jan 9, 2026 | Malayalam",
             "caption":"<p>There have, however, been competing accounts of <a href=\"https://www.indiatoday.in/world/story/iran-300-billion-peace-deal-mou-us-tehran-seeks-sanctions-relief-reconstruction-aid-trump-2927037-2026-06-15\" target=\"_self\">what that USD 300 billion would actually mean</a>. According to sources cited by Iran's Mehr News Agency, Tehran's negotiating team has demanded that the United States and its allies present reconstruction plans worth at least USD 300 billion as part of the peace process.</p>",
-            "embed":[]
+            "embeds":[]
          },
          {
             "type":"text",
