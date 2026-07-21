@@ -1,77 +1,667 @@
 {
-  "status_code": "1",
-  "status_message": "",
-  "data": {
-    "title": "Speakers",
-    "speakers": [
-      {
-        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
-        "speaker_name": "Abhishek Singh Rajavat",
-        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "speaker_detail": ""
-      },
-      {
-        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14376/assets/12.jpeg?time=1669922487",
-        "speaker_name": "Holly Molly Hopper",
-        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "speaker_detail": ""
-      },
-      {
-        "type": "ads",
-        "item": {
-          "description": "Bottom banner for all screens",
-          "type": "banner",
-          "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
-          "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
-          "size": "336x280,300x250,250x250"
+  "campaigns": [
+    {
+      "created_at": "2026-07-21T08:55:15+00:00",
+      "updated_at": "2026-07-21T08:55:15+00:00",
+      "name": "Tripura DGP Anurag Dhankar found hanging in his office, suicide suspected. Read here",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-21T08:55:15+00:00",
+      "last_sent": "2026-07-21T08:55:15+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22547830282-67E9-C21C83DD-7DCAEE04-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951867",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/ips-anurag-dhankar-173232779-original-sixteen-to-nine.jpeg?VersionId=avJqREsrVvlJ6i.am5revoo54bQ_7BoR",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/india/story/tripura-dgp-anurag-dhankar-found-dead-in-agartala-phq-office-2951867-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Tripura top cop found dead"
+        },
+        "22547830282-67E9-C21C83DD-7DCAEE04-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951867",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/ips-anurag-dhankar-173232779-original-sixteen-to-nine.jpeg?VersionId=avJqREsrVvlJ6i.am5revoo54bQ_7BoR",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/india/story/tripura-dgp-anurag-dhankar-found-dead-in-agartala-phq-office-2951867-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Tripura top cop found dead"
         }
       },
-      {
-        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14364/assets/22.jpeg?time=1669900581",
-        "speaker_name": "EXPO Parasocio Matteo",
-        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "speaker_detail": ""
-      },
-      {
-        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
-        "speaker_name": "Hollan Daniel Willinsky",
-        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "speaker_detail": ""
-      },
-      {
-        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
-        "speaker_name": "Abhishek Singh Rajavat",
-        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "speaker_detail": ""
-      },
-      {
-        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14376/assets/12.jpeg?time=1669922487",
-        "speaker_name": "Holly Molly Hopper",
-        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "speaker_detail": ""
-      },
-      {
-        "type": "ads",
-        "item": {
-          "description": "Bottom banner for all screens",
-          "type": "banner",
-          "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
-          "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
-          "size": "336x280,300x250,250x250"
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784537711",
+      "created_ist": "2026-07-21 14:25:15",
+      "updated_ist": "2026-07-21 14:25:15",
+      "filter_name": "all-category-filter-it-prod"
+    },
+    {
+      "created_at": "2026-07-21T08:38:21+00:00",
+      "updated_at": "2026-07-21T08:38:21+00:00",
+      "name": "Andy Burnham to replace Keir Starmer as UK PM, seventh in 10 years",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-21T08:38:21+00:00",
+      "last_sent": "2026-07-21T08:38:21+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22547716058-0C44-E58AA418-03E58B52-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951871",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/andy-burnham-292850800-16x9_0.jpg%3FVersionId%3D6I2VM4IKD7UuIjYYcwKvQYZLFnkXmzRt?VersionId=cB_IIV6TKFC9aY3zl8Xm7cgdGTRYtueq",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/world/story/andy-burnham-to-replace-keir-starmer-as-uk-pm-seventh-in-10-years-2951871-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Andy Burnham to be new UK PM"
+        },
+        "22547716058-0C44-E58AA418-03E58B52-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951871",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/andy-burnham-292850800-16x9_0.jpg%3FVersionId%3D6I2VM4IKD7UuIjYYcwKvQYZLFnkXmzRt?VersionId=cB_IIV6TKFC9aY3zl8Xm7cgdGTRYtueq",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/world/story/andy-burnham-to-replace-keir-starmer-as-uk-pm-seventh-in-10-years-2951871-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Andy Burnham to be new UK PM"
         }
       },
-      {
-        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14364/assets/22.jpeg?time=1669900581",
-        "speaker_name": "EXPO Parasocio Matteo",
-        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "speaker_detail": ""
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784536700",
+      "created_ist": "2026-07-21 14:08:21",
+      "updated_ist": "2026-07-21 14:08:21",
+      "filter_name": "all-category-filter-it-prod PAE"
+    },
+    {
+      "created_at": "2026-07-20T08:18:48+00:00",
+      "updated_at": "2026-07-20T08:18:48+00:00",
+      "name": "Half in salary, half as cash: Accenture introduces new pay model. Read here",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-20T08:18:48+00:00",
+      "last_sent": "2026-07-20T08:20:00+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22547583556-7154-0F97DA55-1729F3F6-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951742",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/accenture-202525512-16x9_0.jpg?VersionId=q0qSHFrMw8ZDxCnmPEuSpXmKFLZTA5oh",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/business/story/accenture-rolls-out-new-compensation-model-for-employees-half-in-base-pay-half-as-cash-2951742-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Accenture's new salary structure"
+        },
+        "22547583556-7154-0F97DA55-1729F3F6-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951742",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/accenture-202525512-16x9_0.jpg?VersionId=q0qSHFrMw8ZDxCnmPEuSpXmKFLZTA5oh",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/business/story/accenture-rolls-out-new-compensation-model-for-employees-half-in-base-pay-half-as-cash-2951742-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Accenture's new salary structure"
+        }
       },
-      {
-        "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
-        "speaker_name": "Hollan Daniel Willinsky",
-        "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-        "speaker_detail": ""
-      }
-    ]
-  }
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784535526",
+      "created_ist": "2026-07-20 13:48:48",
+      "updated_ist": "2026-07-20 13:48:48",
+      "filter_name": "all-category-filter-it-prod"
+    },
+    {
+      "created_at": "2026-07-20T08:02:09+00:00",
+      "updated_at": "2026-07-20T08:02:09+00:00",
+      "name": "Education Minister Dharmendra Pradhan meets Amit Shah amid CJP protest. Tap for live updates",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-20T08:02:09+00:00",
+      "last_sent": "2026-07-20T08:02:09+00:00",
+      "tags": [
+        "blog"
+      ],
+      "messages": {
+        "22547463690-74C2-4AF38057-BDBED3E0-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951663",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/neet-re-exam-students-can-choose-exam-city--admit-cards-by-june-14--says-dharmendra-pradhan-154628756-16x9.jpeg?VersionId=tKjPwSJPjat0N_6DpxPZL9PHQKMS8CPP",
+            "tags": "blog",
+            "deep_link": "https://www.indiatoday.in/india/story/parliament-monsoon-session-2026-live-updates-lok-sabha-rajya-sabha-paper-leaks-vande-mataram-delimitation-2951663-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Amit Shah meets Dharmendra Pradhan"
+        },
+        "22547463690-74C2-4AF38057-BDBED3E0-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951663",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/neet-re-exam-students-can-choose-exam-city--admit-cards-by-june-14--says-dharmendra-pradhan-154628756-16x9.jpeg?VersionId=tKjPwSJPjat0N_6DpxPZL9PHQKMS8CPP",
+            "tags": "blog",
+            "deep_link": "https://www.indiatoday.in/india/story/parliament-monsoon-session-2026-live-updates-lok-sabha-rajya-sabha-paper-leaks-vande-mataram-delimitation-2951663-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Amit Shah meets Dharmendra Pradhan"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784534527",
+      "created_ist": "2026-07-20 13:32:09",
+      "updated_ist": "2026-07-20 13:32:09",
+      "filter_name": "all-category-filter-it-prod"
+    },
+    {
+      "created_at": "2026-07-19T07:46:13+00:00",
+      "updated_at": "2026-07-19T07:46:13+00:00",
+      "name": "Video: Security forces use tear gas as CJP protesters near Parliament House. Tap for live updates",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T07:46:13+00:00",
+      "last_sent": "2026-07-19T07:46:12+00:00",
+      "tags": [
+        "blog"
+      ],
+      "messages": {
+        "22547400374-5101-9ACCA3CF-5AC4FCCE-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951604",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/parliament-204133181-16x9_0.jpeg?VersionId=gTmLsKIeobX7DC8ZO6rLdTswAevbQbHC",
+            "tags": "blog",
+            "deep_link": "https://www.indiatoday.in/india/story/cockroach-janta-party-protest-in-delhi-live-updates-cjp-sonam-wangchuk-abhijeet-dipike-parliament-march-2951604-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "CJP protesters tear-gassed"
+        },
+        "22547400374-5101-9ACCA3CF-5AC4FCCE-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951604",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/parliament-204133181-16x9_0.jpeg?VersionId=gTmLsKIeobX7DC8ZO6rLdTswAevbQbHC",
+            "tags": "blog",
+            "deep_link": "https://www.indiatoday.in/india/story/cockroach-janta-party-protest-in-delhi-live-updates-cjp-sonam-wangchuk-abhijeet-dipike-parliament-march-2951604-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "CJP protesters tear-gassed"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784533570",
+      "created_ist": "2026-07-19 13:16:13",
+      "updated_ist": "2026-07-19 13:16:13",
+      "filter_name": "all-category-filter-it-prod"
+    },
+    {
+      "created_at": "2026-07-19T07:38:34+00:00",
+      "updated_at": "2026-07-19T07:38:34+00:00",
+      "name": "Karnataka man falls 40 feet after zipline snaps, suffers severe injuries. Video",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T07:38:34+00:00",
+      "last_sent": "2026-07-19T07:38:34+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22547372948-3C34-428ECF04-A1FFF143-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951658",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/man-suffered-multiple-fractures-and-severe-nerve-damage-in-the-fall-202121172-16x9_0.jpg?VersionId=sRf.Qqw_Bu.4wJZd2_SAGEoLlyjFhRup",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/india/karnataka/story/karnataka-dandeli-zipline-accident-vijayapura-man-injured-family-alleges-negligence-2951658-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Tourist's zipline horror"
+        },
+        "22547372948-3C34-428ECF04-A1FFF143-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951658",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/man-suffered-multiple-fractures-and-severe-nerve-damage-in-the-fall-202121172-16x9_0.jpg?VersionId=sRf.Qqw_Bu.4wJZd2_SAGEoLlyjFhRup",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/india/karnataka/story/karnataka-dandeli-zipline-accident-vijayapura-man-injured-family-alleges-negligence-2951658-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Tourist's zipline horror"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784533110",
+      "created_ist": "2026-07-19 13:08:34",
+      "updated_ist": "2026-07-19 13:08:34",
+      "filter_name": "all-category-filter-it-prod"
+    },
+    {
+      "created_at": "2026-07-19T07:21:53+00:00",
+      "updated_at": "2026-07-19T07:21:53+00:00",
+      "name": "India approves first dengue vaccine, Japanese firm's Qdenga formula will protect against all 4 virus sub-types",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T07:21:53+00:00",
+      "last_sent": "2026-07-19T07:21:53+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22547309810-526B-D956C976-69139616-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951815",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/dashboard/alpha/news-flash.jpg",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/health/story/india-approves-first-dengue-vaccine-japanese-firms-qdenga-formula-will-protect-against-all-4-virus-sub-types-2951815-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "India's 1st dengue vaccine approved"
+        },
+        "22547309810-526B-D956C976-69139616-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951815",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/dashboard/alpha/news-flash.jpg",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/health/story/india-approves-first-dengue-vaccine-japanese-firms-qdenga-formula-will-protect-against-all-4-virus-sub-types-2951815-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "India's 1st dengue vaccine approved"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784532112",
+      "created_ist": "2026-07-19 12:51:53",
+      "updated_ist": "2026-07-19 12:51:53",
+      "filter_name": "all-category-filter-it-prod PAE"
+    },
+    {
+      "created_at": "2026-07-19T07:09:06+00:00",
+      "updated_at": "2026-07-19T07:09:06+00:00",
+      "name": "Kerala court hands death sentence to 61-year-old man for killing 2 while out on bail in murder case",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T07:09:06+00:00",
+      "last_sent": "2026-07-19T07:09:06+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22547266494-0E04-59257527-B0E977D7-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951797",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/dashboard/alpha/news-flash.jpg",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/india/south/story/kerala-court-hands-death-sentence-to-61-year-old-man-in-sensational-nenmara-double-murder-case-2951797-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Death for twin murder convict"
+        },
+        "22547266494-0E04-59257527-B0E977D7-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951797",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/dashboard/alpha/news-flash.jpg",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/india/south/story/kerala-court-hands-death-sentence-to-61-year-old-man-in-sensational-nenmara-double-murder-case-2951797-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Death for twin murder convict"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784531186",
+      "created_ist": "2026-07-19 12:39:06",
+      "updated_ist": "2026-07-19 12:39:06",
+      "filter_name": ""
+    },
+    {
+      "created_at": "2026-07-19T06:52:29+00:00",
+      "updated_at": "2026-07-19T06:52:29+00:00",
+      "name": "Government reached out for talks, we will meet Union minister JP Nadda: CJP's claim ahead of Parliament march",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T06:52:29+00:00",
+      "last_sent": "2026-07-19T06:52:29+00:00",
+      "tags": [
+        "blog"
+      ],
+      "messages": {
+        "22547204446-65E6-E2C2C654-A1E84F08-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951604",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/jantar-mantar-protest-205926508-16x9_0.jpeg?VersionId=1ndaKfyhk.d733r9_6JegaqYNyAsMwqP",
+            "tags": "blog",
+            "deep_link": "https://www.indiatoday.in/india/story/cockroach-janta-party-protest-in-delhi-live-updates-cjp-sonam-wangchuk-abhijeet-dipike-parliament-march-2951604-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Govt-CJP meet on cards?"
+        },
+        "22547204446-65E6-E2C2C654-A1E84F08-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951604",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/jantar-mantar-protest-205926508-16x9_0.jpeg?VersionId=1ndaKfyhk.d733r9_6JegaqYNyAsMwqP",
+            "tags": "blog",
+            "deep_link": "https://www.indiatoday.in/india/story/cockroach-janta-party-protest-in-delhi-live-updates-cjp-sonam-wangchuk-abhijeet-dipike-parliament-march-2951604-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Govt-CJP meet on cards?"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784530347",
+      "created_ist": "2026-07-19 12:22:29",
+      "updated_ist": "2026-07-19 12:22:29",
+      "filter_name": "all-category-filter-it-prod"
+    },
+    {
+      "created_at": "2026-07-19T06:49:16+00:00",
+      "updated_at": "2026-07-19T06:49:16+00:00",
+      "name": "Baloch rebels, the TTP, protests in POK, and tensions with the Afghan Taliban are testing Pakistan all at once",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T06:49:16+00:00",
+      "last_sent": "2026-07-19T06:49:16+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22547184168-C22A-271CAAA4-BBED552B-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2950229",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/brazilian-journalist-pepe-escobar-alleged-that-israel-planned-to-kill-pakistan-armys-field-marshal-245600265-original-sixteen-to-nine.png?VersionId=XmeoGafae0RM2OChkrtal7Wkp.pGdh0c",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/world/story/pakistan-crisis-balochistan-insurgency-ttp-attacks-pok-protests-afghanistan-border-2950229-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Is Pakistan coming apart?"
+        },
+        "22547184168-C22A-271CAAA4-BBED552B-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2950229",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/brazilian-journalist-pepe-escobar-alleged-that-israel-planned-to-kill-pakistan-armys-field-marshal-245600265-original-sixteen-to-nine.png?VersionId=XmeoGafae0RM2OChkrtal7Wkp.pGdh0c",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/world/story/pakistan-crisis-balochistan-insurgency-ttp-attacks-pok-protests-afghanistan-border-2950229-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Is Pakistan coming apart?"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784530154",
+      "created_ist": "2026-07-19 12:19:16",
+      "updated_ist": "2026-07-19 12:19:16",
+      "filter_name": "all-category-filter-it-prod"
+    },
+    {
+      "created_at": "2026-07-19T06:19:08+00:00",
+      "updated_at": "2026-07-19T06:19:08+00:00",
+      "name": "Feeling fine, allow me to leave so I can join Parliament march: Sonam Wangchuk to hospital authorities",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T06:19:08+00:00",
+      "last_sent": "2026-07-19T06:19:08+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22546984858-8107-BFAF9B62-7AC16FC2-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951771",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/sonam-wangchuk-202437626-16x9.jpg%3FVersionId%3DpheSyzG0g7su2ed5y2yWSPxGn.i7IGZ_?VersionId=Ptp2dUD9dQhI9XSdcc6PgV7tUaLvqHX3",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/india/story/sonam-wangchuk-writes-to-govt-hospital-health-update-join-cjp-parliament-march-2951771-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Sonam Wangchuk's appeal to hospital"
+        },
+        "22546984858-8107-BFAF9B62-7AC16FC2-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951771",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/sonam-wangchuk-202437626-16x9.jpg%3FVersionId%3DpheSyzG0g7su2ed5y2yWSPxGn.i7IGZ_?VersionId=Ptp2dUD9dQhI9XSdcc6PgV7tUaLvqHX3",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/india/story/sonam-wangchuk-writes-to-govt-hospital-health-update-join-cjp-parliament-march-2951771-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Sonam Wangchuk's appeal to hospital"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784528346",
+      "created_ist": "2026-07-19 11:49:08",
+      "updated_ist": "2026-07-19 11:49:08",
+      "filter_name": "all-category-filter-it-prod PAE"
+    },
+    {
+      "created_at": "2026-07-19T06:10:07+00:00",
+      "updated_at": "2026-07-19T06:10:07+00:00",
+      "name": "Government trying to kill them: Mallikarjun Kharge raises lathicharge on protesters at Jantar Mantar in Parliament",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T06:10:07+00:00",
+      "last_sent": "2026-07-19T06:10:07+00:00",
+      "tags": [
+        "blog"
+      ],
+      "messages": {
+        "22546932178-5AEB-15FC1719-7A298EDB-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951663",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/lok-sabha-off-to-a-rocky-start-204138744-16x9_0.png?VersionId=nfzGHX1aAmBmB56I4GB3Pyay.ef0FxQv",
+            "tags": "blog",
+            "deep_link": "https://www.indiatoday.in/india/story/parliament-monsoon-session-2026-live-updates-lok-sabha-rajya-sabha-paper-leaks-vande-mataram-delimitation-2951663-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Kharge's big attack on govt"
+        },
+        "22546932178-5AEB-15FC1719-7A298EDB-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951663",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202607/lok-sabha-off-to-a-rocky-start-204138744-16x9_0.png?VersionId=nfzGHX1aAmBmB56I4GB3Pyay.ef0FxQv",
+            "tags": "blog",
+            "deep_link": "https://www.indiatoday.in/india/story/parliament-monsoon-session-2026-live-updates-lok-sabha-rajya-sabha-paper-leaks-vande-mataram-delimitation-2951663-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Kharge's big attack on govt"
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784527804",
+      "created_ist": "2026-07-19 11:40:07",
+      "updated_ist": "2026-07-19 11:40:07",
+      "filter_name": "all-category-filter-it-prod"
+    },
+    {
+      "created_at": "2026-07-19T05:54:31+00:00",
+      "updated_at": "2026-07-19T05:54:31+00:00",
+      "name": "No noise, no fun: Rohit Sharma puts full stop to retirement speculation in explosive interview",
+      "archived": false,
+      "draft": false,
+      "schedule_type": "time_based",
+      "channels": [
+        "android_push",
+        "ios_push"
+      ],
+      "first_sent": "2026-07-19T05:54:31+00:00",
+      "last_sent": "2026-07-19T05:54:31+00:00",
+      "tags": [
+        "newslist"
+      ],
+      "messages": {
+        "22546873530-85D1-74E96E30-5D224D78-1": {
+          "channel": "android_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951754",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_story_image/202607/rohitsharmabcci.jpg?VersionId=Wa99HnZHofEJEKBtHzfDEJs.bdSQhCTe",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/sports/cricket/story/rohit-sharma-retirement-rumours-lords-century-bcci-interview-2951754-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Rohit on retirement rumours  "
+        },
+        "22546873530-85D1-74E96E30-5D224D78-2": {
+          "channel": "ios_push",
+          "name": "Variant 1",
+          "extras": {
+            "content_id": "2951754",
+            "contagory_id": "",
+            "thumb_image_url": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_story_image/202607/rohitsharmabcci.jpg?VersionId=Wa99HnZHofEJEKBtHzfDEJs.bdSQhCTe",
+            "tags": "newslist",
+            "deep_link": "https://www.indiatoday.in/sports/cricket/story/rohit-sharma-retirement-rumours-lords-century-bcci-interview-2951754-2026-07-20",
+            "content_newspresso_type": "story"
+          },
+          "alert": "Rohit on retirement rumours  "
+        }
+      },
+      "conversion_behaviors": [],
+      "message": "success",
+      "notification_id": "1784526870",
+      "created_ist": "2026-07-19 11:24:31",
+      "updated_ist": "2026-07-19 11:24:31",
+      "filter_name": "all-category-filter-it-prod PAE"
+    }
+  ]
 }
