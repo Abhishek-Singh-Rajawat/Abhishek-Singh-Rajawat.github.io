@@ -33,7 +33,7 @@
       "cat_id": "1206574",
       "cat_name": "Business",
       "key": "IT_app_segment_Business_1206574",
-      "is_default": false,
+      "is_default": true,
       "display": true
     },
     {
@@ -41,7 +41,7 @@
       "cat_name": "Sports",
       "key": "IT_app_segment_Sports_1940190",
       "is_default": false,
-      "display": true
+      "display": false
     },
     {
       "cat_id": "1206577",
