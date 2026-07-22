@@ -1,141 +1,117 @@
 {
-  "status_code": "1",
-  "status_message": "",
-  "news_pagination_cap": 10,
-  "data": [
+  "segments": [
     {
-      "id": "2489489",
-      "title": "Newspresso",
-      "type": "newspresso",
-      "n_template_id": "1",
-      "n_icon": "https://akm-img-a-in.tosshub.com/app/at-app/app_config_imp/home_config/at-superfast_banner/superfast_logo.png",
-      "n_desc": "सबसे कम समय में सबसे ज्यादा खबरें…",
-      "underline_color": "#ffffff",
-      "background_color": "#ffffff",
-      "banner_bg_image": "",
-      "about_the_topic": "",
-      "see_more_id": "",
-      "news": [
-        {
-          "n_id": "1438567",
-          "n_type": "story",
-          "n_is_blog": "0",
-          "n_read_time": 2,
-          "n_is_video_associated": 0,
-          "n_video_url": "",
-          "n_title": "फर्जी डॉक्टर ने यूट्यूब से देख कर किया ऑपरेशन, 15 साल के लड़के की मौत",
-          "n_pcategory_id": "310815",
-          "n_category_name": "हॉलीवुड",
-          "n_image": "https://static-dev.indiatodayonline.in/aajtak/images/story/202005/breaking-news-750_618x347.jpg?size=260:147",
-          "n_related_stories": [],
-          "n_updated_datetime": "2024-09-26 12:41:48",
-          "n_share_desc": "ये फर्जी डॉक्टर बिना किसी डिग्री या प्रैक्टिस के मरीजों का इलाज कर देते हैं.ऐसे ही एक फर्जी डॉक्टर ने यूट्यूब वीडियो देख कर 15 साल के बच्चे का इलाज कर दिया. इससे लड़के की मौत हो गई. अब फर्जी डॉक्टर फरार है. बिहार के सहारनपुर जिले की इस घटना ने सभी को परेशान कर दिया है. क्या है पूरा मामला? देखें वीडियो.",
-          "n_share_url": "https://alpha-aajtak-in.intoday.in/entertainment/hollywood/story/fake-doctor-youtube-treatment-kills-15-year-old-now-on-the-run-video-content-rpti-1438567-2024-09-09",
-          "n_photo": {},
-          "n_video": {},
-          "n_widget": {}
-        },
-        {
-          "n_id": "1436465",
-          "n_type": "videogallery",
-          "n_is_blog": "0",
-          "n_is_video_associated": 0,
-          "n_video_url": "",
-          "n_title": "Video for US Edited",
-          "n_pcategory_id": "432755",
-          "n_category_name": "US Page",
-          "n_image": "https://static-dev.indiatodayonline.in/aajtak/images/video/202308/56d4264f-1dac-405f-baf5-7d8610d81e84-sixteen_nine.jpg?size=260:147",
-          "n_related_stories": [],
-          "n_updated_datetime": "2023-10-30 15:55:34",
-          "n_share_desc": "Video for US",
-          "n_share_url": "https://alpha-aajtak-in.intoday.in/us-page/video/video-for-us-edited-1436465-2023-08-17",
-          "n_photo": {},
-          "n_video": {
-            "n_video_url": "https://video-aajtak.tosshub.com/aajtak_hd/video/2022_03/25_mar_22_athd_breaking_petrol_diesel_ke_daam_prati_litre_80_paise_badhe_1024/25_mar_22_athd_breaking_petrol_diesel_ke_daam_prati_litre_80_paise_badhe_1024.m3u8",
-            "n_download_url": "https://video-aajtak.tosshub.com/aajtak_hd/video/2022_03/25_mar_22_athd_breaking_petrol_diesel_ke_daam_prati_litre_80_paise_badhe_1024_512.mp4",
-            "n_video_duration": "01:03",
-            "n_ratio": "16:9"
-          },
-          "n_widget": {}
-        },
-        {
-          "n_id": "1439197",
-          "n_type": "shortvideo",
-          "n_is_blog": "0",
-          "n_is_video_associated": 0,
-          "n_video_url": "",
-          "n_title": "Vertical Video Test",
-          "n_pcategory_id": "430107",
-          "n_category_name": "शॉर्ट  वीडियो",
-          "n_image": "https://static-dev.indiatodayonline.in/aajtak/images/video/202501/678644caf1ad1-test-140435961-9x16.png",
-          "n_related_stories": [],
-          "n_updated_datetime": "2025-01-14 16:34:50",
-          "n_share_desc": "this is video for testing the short video on Home",
-          "n_share_url": "https://alpha-aajtak-in.intoday.in/short-videos/video/test-1439197-2025-01-14",
-          "n_photo": {},
-          "n_video": {
-            "n_video_url": "https://video-aajtak.tosshub.com/aajtak/video/embed/2024_07/08_jul_24_431076273_7121753117877854_7003196186254973159_n_1720431014668bb1a636322/08_jul_24_431076273_7121753117877854_7003196186254973159_n_1720431014668bb1a636322.m3u8",
-            "n_download_url": "https://video-aajtak.tosshub.com/aajtak/video/embed/2024_07/08_jul_24_431076273_7121753117877854_7003196186254973159_n_1720431014668bb1a636322_512.mp4",
-            "n_video_duration": "00:17",
-            "n_ratio": "9:16"
-          },
-          "n_widget": {}
-        },
-        {
-          "n_id": "1435700",
-          "n_type": "photogallery",
-          "n_is_blog": "0",
-          "n_is_video_associated": 0,
-          "n_video_url": "",
-          "n_title": "IPL: जानें कौन है वो 'मिस्ट्री गर्ल', वायरल होने के बाद किया ये कमेंट",
-          "n_pcategory_id": "431442",
-          "n_category_name": "IPL 2022",
-          "n_image": "https://static-dev.indiatodayonline.in/aajtak/images/photo_gallery/202203/1ipl_mystery_girl_devika-sixteen_nine.jpg?size=260:147",
-          "n_related_stories": [],
-          "n_updated_datetime": "2023-06-13 16:07:33",
-          "n_share_desc": "IPL 2022 के पहले मैच में एक लड़की की फोटो और वीडियो सोशल मीडिया पर सबसे ज्यादा वायरल हुआ. फैन्स पूछने लगे कि आखिर यह मिस्ट्री गर्ल है कौन?...",
-          "n_share_url": "https://alpha-aajtak-in.intoday.in/sports/ipl-2022/photo/ipl-2022-mystery-girl-devika-nair-video-photos-indian-premier-league-mystery-girl-tspo-1435700-2022-03-27",
-          "n_photo": {
-            "n_photo_count": "8"
-          },
-          "n_video": {},
-          "n_widget": {}
-        }
-      ]
+      "cat_id": "breaking_news",
+      "cat_name": "Breaking News",
+      "key": "IT_app_segment_breaking_news",
+      "is_default": true,
+      "display": true
     },
     {
-      "id": "1437230",
-      "title": "Dhamaka News",
-      "type": "dhamaka",
-      "n_template_id": "1",
-      "underline_color": "#ffffff",
-      "background_color": "#ffffff",
-      "banner_bg_image": "",
-      "about_the_topic": "",
-      "see_more_id": "",
-      "news": [
-        {
-          "n_id": "",
-          "n_type": "",
-          "n_is_video_associated": 0,
-          "n_video_url": "",
-          "n_title": "",
-          "n_pcategory_id": "",
-          "n_category_name": "",
-          "n_image": "https://static-dev.indiatodayonline.in/aajtak/dhamaka_images/light-at-mob-bharat-ne-khoya-ratan_1.png",
-          "n_dark_image": "https://static-dev.indiatodayonline.in/aajtak/dhamaka_images/dark-mob-at-dekh-raha-hai-na-vinod_1.png",
-          "alt_text": "Ummedi bhara din",
-          "n_related_stories": [],
-          "n_updated_datetime": "",
-          "n_share_desc": "",
-          "n_share_url": "https://www.aajtak.in/elections2/story/maharashtra-jharkhand-vidhan-sabha-election-results-2024-live-updates-ntc-2104127-2024-11-23",
-          "n_photo": {},
-          "n_video": {},
-          "n_widget": {},
-          "n_podcast": {},
-          "font_size": 0
-        }
-      ]
+      "cat_id": "1206578",
+      "cat_name": "All News",
+      "key": "IT_app_segment_All_News",
+      "display": false,
+      "is_default": false
+
+    },
+    {
+      "cat_id": "1206578",
+      "cat_name": "India",
+      "key": "IT_app_segment_India_1206578",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1207084",
+      "cat_name": "South",
+      "key": "IT_app_segment_South_1207084",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1206574",
+      "cat_name": "Business",
+      "key": "IT_app_segment_Business_1206574",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1940190",
+      "cat_name": "Sports",
+      "key": "IT_app_segment_Sports_1940190",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1206577",
+      "cat_name": "Global",
+      "key": "IT_app_segment_Global_1206577",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1206749",
+      "cat_name": "Entertainment",
+      "key": "IT_app_segment_Entertainment_1206749",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1206567",
+      "cat_name": "Life+Style",
+      "key": "IT_app_segment_LifeStyle_1206567",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1206814",
+      "cat_name": "Science",
+      "key": "IT_app_segment_Science_1206814",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1206515",
+      "cat_name": "Health",
+      "key": "IT_app_segment_Health_1206515",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1938449",
+      "cat_name": "History",
+      "key": "IT_app_segment_History_1938449",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1797650",
+      "cat_name": "Trending",
+      "key": "IT_app_segment_Trending_1797650",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1835970",
+      "cat_name": "Law",
+      "key": "IT_app_segment_Law_1835970",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1206688",
+      "cat_name": "Technology",
+      "key": "IT_app_segment_Technology_1206688",
+      "is_default": false,
+      "display": true
+    },
+    {
+      "cat_id": "1206553",
+      "cat_name": "Programmes",
+      "key": "IT_app_segment_Programmes_1206553",
+      "is_default": false,
+      "display": true
     }
   ]
 }
