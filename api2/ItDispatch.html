@@ -1,1 +1,2834 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dispatch — newsroom intelligence</title>
+<style>
+/* ============================================================
+   Dispatch — "signal room"
+   Calm dark canvas. Colour appears only as signal: teal = the
+   system, red/amber/green = priority and verification. One bold
+   element — the live pipeline. Everything else quiet.
+   ============================================================ */
+:root{
+  /* dark "signal room" — the default */
+  --bg:#0D1420; --bg2:#111A28; --surf:#16202F; --surf2:#1C2838; --raise:#22304399;
+  --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+  --ink:#EDF2F9; --ink2:#9DABC2; --ink3:#647591;
+  --teal:#43D1C4; --teal-d:#1F8F86; --teal-soft:rgba(67,209,196,.12);
+  --red:#FF6B6B; --red-soft:rgba(255,107,107,.13);
+  --amber:#F5B84D; --amber-soft:rgba(245,184,77,.13);
+  --green:#4ADE94; --green-soft:rgba(74,222,148,.13);
+  --violet:#B694FF; --violet-soft:rgba(182,148,255,.14);
+  --tier1:#7FB2FF; --tier1-soft:rgba(127,178,255,.14);
+  --btn-ink:#04211E;
+  --topbar-bg:rgba(13,20,32,.82);
+  --shadow:0 1px 2px rgba(0,0,0,.4);
+  --sans:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,'SF Mono',Menlo,Consolas,monospace;
+}
+:root[data-theme="light"]{
+  /* calm daylight — same signal colours, dialled for a white canvas */
+  --bg:#F4F6FB; --bg2:#EDF1F8; --surf:#FFFFFF; --surf2:#F0F3F9; --raise:#E7ECF599;
+  --line:rgba(16,32,58,.10); --line2:rgba(16,32,58,.18);
+  --ink:#16233A; --ink2:#465569; --ink3:#78889E;
+  --teal:#0E9E90; --teal-d:#8FD8D0; --teal-soft:rgba(14,158,144,.10);
+  --red:#DA3B3B; --red-soft:rgba(218,59,59,.10);
+  --amber:#B7791F; --amber-soft:rgba(214,158,46,.16);
+  --green:#1F9D57; --green-soft:rgba(31,157,87,.12);
+  --violet:#7A5AF0; --violet-soft:rgba(122,90,240,.12);
+  --tier1:#2563C9; --tier1-soft:rgba(37,99,201,.10);
+  --btn-ink:#FFFFFF;
+  --topbar-bg:rgba(244,246,251,.86);
+  --shadow:0 1px 2px rgba(16,32,58,.08);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+#app{min-height:100%}
+h1,h2,h3,h4{margin:0;font-weight:650;letter-spacing:-.02em;line-height:1.15}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:4px}
+.mono{font-family:var(--mono)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* boot */
+.boot{min-height:100vh;display:grid;place-items:center}
+.bootcard{text-align:center}
+.logo{color:var(--teal)}
+.logo.big{font-size:40px;display:block;margin-bottom:10px}
+.bootcard h1{font-size:22px}
+.bootcard p{color:var(--ink3);margin:6px 0 16px}
+.bar{width:220px;height:3px;border-radius:99px;background:var(--surf2);overflow:hidden;margin:0 auto;position:relative}
+.bar i{position:absolute;top:0;bottom:0;left:-40%;width:40%;background:var(--teal);border-radius:99px;animation:sweep 1.1s infinite ease-in-out}
+@keyframes sweep{0%{left:-40%}100%{left:100%}}
+
+/* top bar */
+.bar-top{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:22px;
+  padding:12px 24px;background:var(--topbar-bg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body{transition:background .25s ease,color .25s ease}
+.lead{display:flex;align-items:baseline;gap:9px}
+.lead .logo{font-size:19px}
+.name{font-weight:700;font-size:16px;letter-spacing:-.02em}
+.tag{color:var(--ink3);font-size:12px}
+.nav{display:flex;gap:4px;background:var(--surf);border-radius:9px;padding:3px}
+.nb{padding:6px 14px;border-radius:7px;font-size:13px;color:var(--ink2)}
+.nb.on{background:var(--surf2);color:var(--ink)}
+.live{margin-left:auto;display:flex;align-items:center;gap:10px}
+.playbtn{width:30px;height:30px;border-radius:50%;background:var(--teal);color:var(--btn-ink);font-size:11px;
+  display:grid;place-items:center;font-weight:700}
+.playbtn.on{background:var(--surf2);color:var(--teal)}
+.ldot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 0 var(--teal);animation:beat 1.8s infinite}
+.ldot.paused{background:var(--ink3);animation:none}
+@keyframes beat{0%{box-shadow:0 0 0 0 rgba(67,209,196,.5)}70%{box-shadow:0 0 0 6px rgba(67,209,196,0)}100%{box-shadow:0 0 0 0 rgba(67,209,196,0)}}
+.lclock{font-family:var(--mono);font-size:14px;color:var(--ink2);min-width:42px}
+.scrub{-webkit-appearance:none;appearance:none;width:150px;height:4px;border-radius:99px;background:var(--surf2)}
+.scrub::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:var(--teal);border:2px solid var(--bg)}
+.scrub::-moz-range-thumb{width:11px;height:11px;border-radius:50%;background:var(--teal);border:2px solid var(--bg)}
+
+/* ---------- OVERVIEW ---------- */
+.ov{max-width:1120px;margin:0 auto;padding:0 24px 70px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;padding:46px 0 34px}
+.herotext h1{font-size:34px;line-height:1.08;max-width:15ch}
+.herotext p{margin:16px 0 0;color:var(--ink2);font-size:15px;max-width:52ch;line-height:1.6}
+.herostat{background:linear-gradient(160deg,var(--surf),var(--bg2));border:1px solid var(--line);
+  border-radius:18px;padding:24px 26px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;position:relative;overflow:hidden}
+.herostat::before{content:'';position:absolute;inset:0;background:radial-gradient(120% 80% at 90% 0%,var(--teal-soft),transparent 60%);pointer-events:none}
+.hnum{text-align:center}
+.hnum b{display:block;font-size:44px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.hnum span{font-size:12px;color:var(--ink3)}
+.hnum.accent b{color:var(--teal)}
+.harrow{font-size:24px;color:var(--ink3)}
+.hsub{grid-column:1/-1;text-align:center;font-size:11.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+
+/* pipeline — the one bold thing */
+.pipe{display:flex;align-items:stretch;gap:0;padding:6px 0 4px}
+.station{flex:1;background:var(--surf);border:1px solid var(--line);border-radius:14px;
+  padding:16px 12px 14px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;
+  transition:border-color .18s,transform .18s;min-width:0}
+.station:hover{border-color:var(--teal-d);transform:translateY(-2px)}
+.station.on{border-color:var(--teal);background:var(--surf2);box-shadow:0 0 0 1px var(--teal-d) inset}
+.sicon{width:30px;height:30px;color:var(--teal)}
+.sicon svg{width:100%;height:100%}
+.sbig{font-size:26px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.sname{font-size:13.5px;font-weight:600}
+.ssub{font-size:10.5px;color:var(--ink3);line-height:1.35}
+.flow{width:34px;align-self:center;height:2px;background:var(--line2);position:relative;flex:0 0 34px;overflow:hidden;border-radius:2px}
+.flow span{position:absolute;top:-1px;left:0;width:8px;height:4px;border-radius:2px;background:var(--teal);opacity:.55}
+.flow.run span{animation:dart 1s linear infinite}
+@keyframes dart{0%{left:-8px}100%{left:34px}}
+.pipehint{text-align:center;color:var(--ink3);font-size:12px;margin:12px 0 0;min-height:16px}
+
+/* stage explainer panel */
+.panel{background:var(--surf);border:1px solid var(--teal-d);border-radius:14px;padding:20px 22px;margin:14px 0 6px;
+  animation:drop .25s ease}
+@keyframes drop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.panelhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.panelhead h3{font-size:17px;color:var(--teal)}
+.x{font-size:12px;color:var(--ink3);border:1px solid var(--line);border-radius:7px;padding:4px 10px}
+.panel p{margin:0 0 14px;color:var(--ink2);font-size:13.5px;max-width:76ch;line-height:1.6}
+.panel p b{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.feedchip{font-size:11px;color:var(--ink2);background:var(--surf2);border:1px solid var(--line);border-radius:99px;padding:3px 10px 3px 18px;position:relative}
+.feedchip::before{content:'';position:absolute;left:8px;top:50%;transform:translateY(-50%);width:5px;height:5px;border-radius:50%;background:var(--teal)}
+.minibars{display:grid;gap:6px;max-width:460px}
+.mbar{display:grid;grid-template-columns:110px 1fr auto;align-items:center;gap:10px;font-size:12px}
+.mbl{color:var(--ink2)}
+.mbar i{height:7px;border-radius:99px;background:var(--teal);opacity:.6}
+.mbar b{font-family:var(--mono);color:var(--ink2);font-size:11px}
+.tally{display:flex;gap:12px;flex-wrap:wrap}
+.ty{background:var(--surf2);border:1px solid var(--line);border-radius:11px;padding:12px 16px;min-width:120px}
+.ty b{display:block;font-size:24px;font-weight:700;line-height:1}
+.ty span{font-size:11px;color:var(--ink3)}
+.ty.red b{color:var(--red)}.ty.amber b{color:var(--amber)}.ty.green b{color:var(--green)}
+
+/* output */
+.out{padding:40px 0 6px}
+.outhead{margin-bottom:18px}
+.outhead h2{font-size:24px}
+.outhead p{margin:5px 0 0;color:var(--ink2);font-size:13.5px}
+.corstrip{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:var(--amber-soft);
+  border:1px solid rgba(245,184,77,.3);border-radius:12px;padding:11px 15px;margin-bottom:18px}
+.cflag{font-size:11px;font-weight:700;color:var(--amber);background:rgba(245,184,77,.16);border-radius:6px;padding:3px 9px}
+.ctext{flex:1;font-size:12.5px;color:var(--ink2);min-width:200px}
+.clink{font-size:12px;color:var(--amber);border:1px solid rgba(245,184,77,.3);border-radius:7px;padding:4px 10px}
+.clink:hover{background:rgba(245,184,77,.12)}
+.group{margin-bottom:22px}
+.grouphead{display:flex;align-items:baseline;gap:12px;margin-bottom:10px}
+.gflag{font-size:13px;font-weight:700;padding:3px 11px;border-radius:7px}
+.g-red .gflag{color:var(--red);background:var(--red-soft)}
+.g-amber .gflag{color:var(--amber);background:var(--amber-soft)}
+.g-violet .gflag{color:var(--violet);background:var(--violet-soft)}
+.gsub{font-size:12px;color:var(--ink3)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:15px 17px;cursor:pointer;
+  transition:border-color .16s,transform .16s;position:relative;border-left-width:3px}
+.g-red .card{border-left-color:var(--red)}
+.g-amber .card{border-left-color:var(--amber)}
+.g-violet .card{border-left-color:var(--violet)}
+.card:hover{border-color:var(--teal-d);transform:translateY(-2px)}
+.cardtop{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.beat{font-size:11px;color:var(--ink3);border:1px solid var(--line);border-radius:5px;padding:1px 7px}
+.vchip{font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px}
+.vchip.b-corroborated{color:var(--green);background:var(--green-soft)}
+.vchip.b-partly{color:var(--teal);background:var(--teal-soft)}
+.vchip.b-unverified{color:var(--violet);background:var(--violet-soft)}
+.cortag{font-size:10.5px;font-weight:600;color:var(--amber);background:var(--amber-soft);border-radius:5px;padding:1px 7px}
+.card h3{font-size:15.5px;line-height:1.3;margin-bottom:6px}
+.why{font-size:12.5px;color:var(--ink2);line-height:1.5}
+.gap{margin:8px 0 0;font-size:12px;color:var(--amber);background:var(--amber-soft);border-radius:8px;padding:7px 10px}
+.gap b{font-weight:600}
+.cardfoot{display:flex;justify-content:space-between;align-items:center;margin-top:11px;padding-top:10px;border-top:1px solid var(--line)}
+.route{font-size:11.5px;color:var(--ink3)}
+.cta{font-size:12px;color:var(--teal);font-weight:600}
+.parked{margin:6px 0 0;font-size:12.5px;color:var(--ink3);font-style:italic}
+
+/* impact */
+.impact{padding:38px 0 6px}
+.impgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.imp{background:linear-gradient(165deg,var(--surf),var(--bg2));border:1px solid var(--line);border-radius:15px;padding:20px}
+.imp b{display:block;font-size:34px;font-weight:700;letter-spacing:-.03em;color:var(--teal);line-height:1}
+.imp i{font-style:normal;font-size:12px;color:var(--ink);font-weight:600;display:block;margin:6px 0 8px}
+.imp p{margin:0;font-size:11.5px;color:var(--ink3);line-height:1.5}
+.foot{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:11.5px;color:var(--ink3);text-align:center}
+
+/* ---------- STORY JOURNEY ---------- */
+.story{max-width:1080px;margin:0 auto;padding:0 24px 80px}
+.storyhead{padding:22px 0 20px;border-bottom:1px solid var(--line)}
+.back{font-size:12.5px;color:var(--teal);margin-bottom:12px}
+.shrow{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
+.storyhead h1{font-size:26px;line-height:1.18;max-width:32ch}
+.shmeta{margin:8px 0 0;font-size:12px;color:var(--ink3)}
+.shgauges{display:flex;gap:14px}
+.dial{text-align:center;position:relative}
+.dial svg{width:56px;height:56px;transform:rotate(-90deg)}
+.dial .dt{fill:none;stroke:var(--surf2);stroke-width:5}
+.dial .df{fill:none;stroke-width:5;stroke-linecap:round;transition:stroke-dashoffset .5s ease}
+.dial b{position:absolute;top:19px;left:0;right:0;font-size:15px;font-weight:700}
+.dial span{display:block;font-size:10.5px;color:var(--ink3);margin-top:2px}
+.dial.b-corroborated .df{stroke:var(--green)}
+.dial.b-partly .df{stroke:var(--teal)}
+.dial.b-unverified .df{stroke:var(--violet)}
+.dial:not(.b-corroborated):not(.b-partly):not(.b-unverified) .df{stroke:var(--teal)}
+.shexp{margin:16px 0 0;font-size:13px;color:var(--ink2)}
+
+.journey{display:grid;grid-template-columns:150px 1fr;gap:28px;margin-top:6px}
+.rail{position:sticky;top:74px;align-self:start;display:flex;flex-direction:column;gap:2px;padding-top:26px}
+.railitem{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:9px;color:var(--ink3);font-size:12.5px}
+.railitem:hover{background:var(--surf);color:var(--ink);text-decoration:none}
+.rn{width:20px;height:20px;border-radius:50%;background:var(--surf2);color:var(--ink2);display:grid;place-items:center;font-size:11px;font-weight:600;flex:0 0 20px}
+.stages{min-width:0}
+.stg{padding:24px 0;border-bottom:1px solid var(--line);scroll-margin-top:74px}
+.stghead{display:flex;gap:14px;align-items:flex-start;margin-bottom:16px}
+.stgn{width:30px;height:30px;border-radius:50%;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;font-weight:700;flex:0 0 30px}
+.stghead h2{font-size:19px}
+.stghead p{margin:2px 0 0;color:var(--ink3);font-size:12.5px}
+.stgnote{margin:12px 0 0;font-size:12px;color:var(--ink3);line-height:1.55;max-width:74ch}
+
+/* gather tape */
+.tape{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ti{display:grid;grid-template-columns:48px auto auto 1fr;gap:10px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12.5px}
+.ti:last-child{border-bottom:0}
+.ti.dup{opacity:.42}
+.tt{font-family:var(--mono);font-size:11px;color:var(--ink3)}
+.tsrc{font-size:10.5px;font-weight:600;padding:1px 7px;border-radius:5px;white-space:nowrap}
+.tsrc.s1{color:var(--tier1);background:var(--tier1-soft)}
+.tsrc.s2{color:var(--green);background:var(--green-soft)}
+.tsrc.s3{color:var(--amber);background:var(--amber-soft)}
+.tsrc.s4{color:var(--violet);background:var(--violet-soft)}
+.tv{font-size:10px;font-weight:600;padding:1px 7px;border-radius:99px;white-space:nowrap}
+.tv.v-new{color:var(--teal);background:var(--teal-soft)}
+.tv.v-upd{color:var(--ink2);background:var(--surf2)}
+.tv.v-dev{color:var(--green);background:var(--green-soft)}
+.tv.v-dup{color:var(--ink3);background:var(--surf2)}
+.tv.v-gap{color:var(--amber);background:var(--amber-soft)}
+.tv.v-cor{color:var(--red);background:var(--red-soft)}
+.tv.v-unv{color:var(--violet);background:var(--violet-soft)}
+.th{font-size:12.5px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* understand */
+.ucards{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.ucard{background:var(--surf);border:1px solid var(--line);border-radius:11px;padding:12px 16px;text-align:center}
+.ucard b{display:block;font-size:22px;font-weight:700}
+.archbox{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.archbox h4{font-size:13px;margin-bottom:8px}
+.arch{margin:5px 0;font-size:12.5px}
+.arch span{display:block;font-size:11px;color:var(--ink3)}
+
+/* judge */
+.judgegrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:16px}
+.jax h4{font-size:13.5px;margin-bottom:10px}
+.brow{background:var(--surf);border-radius:8px;padding:8px 11px;margin-bottom:7px;font-size:11.5px}
+.brhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:5px}
+.brhead b{font-size:12px;font-weight:600;color:var(--ink)}
+.bw{font-style:normal;font-size:10px;font-weight:700;color:var(--ink3);background:var(--surf2);border-radius:4px;padding:1px 6px;white-space:nowrap}
+.brbar{position:relative;height:6px;border-radius:4px;background:var(--surf2);overflow:hidden;margin-bottom:5px}
+.brbar i{position:absolute;left:0;top:0;bottom:0;background:var(--teal);border-radius:4px}
+.brsay{display:block;color:var(--ink2);font-size:11.5px}
+.scoreexp{font-size:11.5px;color:var(--ink2);line-height:1.5;margin:0 0 12px;max-width:60ch}
+.bandkey{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.morefac{font-size:11px;color:var(--ink3);margin:2px 0 0;line-height:1.5}
+.morefac b{color:var(--ink2);font-weight:600}
+.bandkey span{font-size:10px;color:var(--ink3);background:var(--surf);border:1px solid var(--line);border-radius:5px;padding:2px 8px}
+.credbox{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--surf)}
+.credbox.b-corroborated{border-color:rgba(74,222,148,.3)}
+.credbox.b-unverified{border-color:rgba(182,148,255,.3)}
+.credtop{display:flex;gap:16px;align-items:center;margin-bottom:12px}
+.bigconf{text-align:center;flex:0 0 auto}
+.bigconf b{display:block;font-size:34px;font-weight:700;line-height:1}
+.bigconf span{font-size:11px;color:var(--ink3)}
+.b-corroborated .bigconf b{color:var(--green)}
+.b-partly .bigconf b{color:var(--teal)}
+.b-unverified .bigconf b{color:var(--violet)}
+.credtop p{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
+.risks{list-style:none;margin:0 0 10px;padding:0}
+.risks li{padding:8px 0;border-top:1px solid var(--line);font-size:12px;color:var(--ink2);line-height:1.5}
+.risks li span{display:inline-block;font-size:9.5px;font-weight:700;padding:1px 6px;border-radius:4px;margin-right:7px;text-transform:uppercase;letter-spacing:.03em}
+.r-high span{color:var(--red);background:var(--red-soft)}
+.r-medium span{color:var(--amber);background:var(--amber-soft)}
+.r-low span{color:var(--ink3);background:var(--surf2)}
+.onecall{margin:8px 0 0;font-size:12.5px;color:var(--teal);background:var(--teal-soft);border-radius:8px;padding:9px 12px;line-height:1.5}
+.ocl{display:block;font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:2px}
+.excl{margin:8px 0 0;font-size:11.5px;color:var(--violet);background:var(--violet-soft);border-radius:8px;padding:8px 11px}
+
+/* decide */
+.brands{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap;margin-bottom:6px}
+.brand{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:13px 16px;min-width:150px}
+.brand.on{border-color:var(--teal);background:var(--surf2)}
+.brand .bt{font-size:10.5px;color:var(--ink3)}
+.brand b{display:block;font-size:16px;margin:2px 0}
+.brand i{font-style:normal;font-size:11px;color:var(--ink3)}
+.decision{display:flex;align-items:center;font-size:13px;color:var(--ink2);font-weight:500;padding:0 4px}
+.routenote{margin:10px 0 0;font-size:12px;color:var(--amber);background:var(--amber-soft);border-radius:8px;padding:8px 11px}
+.gapbox{margin-top:16px;background:var(--amber-soft);border:1px solid rgba(245,184,77,.28);border-radius:12px;padding:14px 16px}
+.gapbox h4{font-size:13px;color:var(--amber);margin-bottom:8px}
+.gaprow{margin:6px 0;font-size:12.5px;color:var(--ink2)}
+.gaprow b{font-weight:600;color:var(--ink)}
+.gaprow span{color:var(--ink3);font-size:11px}
+.deskbox{margin-top:16px;background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.deskbox h4{font-size:13px;margin-bottom:8px}
+.deskcols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.deskcol{background:var(--surf2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.dch{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--ink3);margin-bottom:6px}
+.deskrow{display:flex;align-items:center;gap:10px;margin:5px 0;font-size:12.5px}
+.deskrow b{font-weight:600}
+.deskrow.top{color:var(--ink)}
+.deskrow span{color:var(--ink3);font-size:11px;flex:1}
+.pickme{font-size:10.5px;color:var(--teal);background:var(--teal-soft);border-radius:5px;padding:1px 7px;flex:0!important}
+.cardtime{font-size:10.5px;color:var(--ink3);margin-left:auto;white-space:nowrap}
+
+/* publish */
+.publishcta{background:var(--surf);border:1px dashed var(--line2);border-radius:14px;padding:26px;text-align:center}
+.publishcta p{margin:0 0 16px;color:var(--ink2);font-size:13.5px;max-width:60ch;margin-inline:auto}
+.btn{padding:8px 16px;border-radius:9px;border:1px solid var(--line);background:var(--surf2);font-size:13px}
+.btn:hover{border-color:var(--teal-d)}
+.btn.primary{background:var(--teal);color:var(--btn-ink);border-color:var(--teal);font-weight:600}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.big{padding:11px 26px;font-size:14px}
+.btn.wide{width:100%;text-align:center}
+.btn[disabled]{opacity:.6;cursor:default}
+.grounding{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:20px}
+.gline{margin:0 0 8px;font-size:12.5px;color:var(--ink2);opacity:0;animation:fin .4s forwards}
+.gline:nth-child(1){animation-delay:.05s}.gline:nth-child(2){animation-delay:.22s}
+.gline:nth-child(3){animation-delay:.4s}.gline:nth-child(4){animation-delay:.58s}
+@keyframes fin{to{opacity:1}}
+.draftwrap{display:grid;grid-template-columns:1fr 300px;gap:18px}
+.gates{background:var(--red-soft);border:1px solid rgba(255,107,107,.3);border-radius:11px;padding:12px 14px;margin-bottom:14px}
+.gates h4{font-size:12.5px;color:var(--red);margin-bottom:5px}
+.gates p{margin:3px 0;font-size:12px;color:var(--ink2)}
+.copy{font-size:15px;line-height:1.85;max-width:64ch}
+.sent{border-radius:4px;padding:1px 2px;cursor:pointer;border-bottom:1px dotted var(--ink3)}
+.sent:hover{background:var(--teal-soft)}
+.sent.on{background:rgba(67,209,196,.18);border-bottom-color:var(--teal)}
+.sent sup{font-size:8.5px;color:var(--ink3);font-family:var(--mono);margin-left:2px}
+.holdback{margin-top:16px;background:var(--amber-soft);border:1px solid rgba(245,184,77,.28);border-radius:11px;padding:12px 14px}
+.holdback h4{font-size:12.5px;color:var(--amber);margin-bottom:5px}
+.holdback p{margin:3px 0;font-size:12px;color:var(--ink2)}
+.seo{margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
+.seo h4{font-size:13px;margin-bottom:9px}
+.fldgrp{margin-bottom:12px}
+.fldgrp:last-child{margin-bottom:0}
+.fgl{display:block;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--ink3);margin-bottom:6px}
+.seo dl{margin:0;display:grid;grid-template-columns:135px 1fr;gap:6px 14px;font-size:12.5px}
+.seo dt{color:var(--ink3);font-size:11.5px}
+.seo dt em{font-style:normal;color:var(--ink3);opacity:.75}
+.seo dd{margin:0;color:var(--ink2)}
+.tvsuper{font-weight:700;letter-spacing:.02em;color:var(--ink)!important;font-size:13px}
+.tag{display:inline-block;font-size:10.5px;background:var(--surf2);border-radius:99px;padding:1px 8px;margin:0 3px 3px 0}
+.draftside{align-self:start}
+.senddest{font-size:11.5px;color:var(--ink2);background:var(--surf);border:1px solid var(--line);border-radius:9px;padding:9px 11px;margin-bottom:9px;line-height:1.5}
+.prov{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.prov h4{font-size:12.5px;margin-bottom:8px}
+.provsrc{display:flex;gap:6px;align-items:center;margin:0 0 8px;flex-wrap:wrap}
+.rights{font-size:9.5px;color:var(--ink3);border:1px solid var(--line);border-radius:4px;padding:0 5px}
+.prov blockquote{margin:0;padding:10px 12px;background:var(--bg2);border-radius:9px;font-size:12px;color:var(--ink2);line-height:1.55}
+.provnote{margin:8px 0 0;font-size:10.5px;color:var(--ink3)}
+.draftside .btn.wide{margin-bottom:8px}
+.cmsdone{background:var(--green-soft);border:1px solid rgba(74,222,148,.3);border-radius:10px;padding:12px 14px;text-align:center;margin-bottom:8px}
+.cmsdone b{display:block;color:var(--green);font-size:14px}
+.cmsdone span{font-size:11px;color:var(--ink3)}
+.cmsdone.tv{background:var(--teal-soft);border-color:rgba(67,209,196,.32)}
+.cmsdone.tv b{color:var(--teal)}
+.nopub{margin:8px 0 0;font-size:10.5px;color:var(--ink3);text-align:center}
+
+/* ---------- confidence band: plain-language classes ---------- */
+.vchip.b-confirmed{color:var(--green);background:var(--green-soft)}
+.vchip.b-partly{color:var(--teal);background:var(--teal-soft)}
+.vchip.b-unverified{color:var(--violet);background:var(--violet-soft)}
+.dial.b-confirmed .df{stroke:var(--green)}
+.credbox.b-confirmed{border-color:rgba(74,222,148,.3)}
+.b-confirmed .bigconf b{color:var(--green)}
+.vchip{display:inline-flex;align-items:center;gap:4px}
+.vchip svg{width:11px;height:11px}
+
+/* ---------- theme toggle ---------- */
+.themebtn{width:30px;height:30px;border-radius:8px;background:var(--surf2);border:1px solid var(--line);
+  color:var(--ink2);display:grid;place-items:center}
+.themebtn:hover{border-color:var(--teal-d);color:var(--ink)}
+.themebtn svg{width:15px;height:15px}
+
+/* ---------- google trends widget ---------- */
+.trends{background:var(--surf2);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin-top:14px}
+.trends h4{font-size:12.5px;margin-bottom:3px;display:flex;align-items:center;gap:7px}
+.trends h4 .gdot{width:8px;height:8px;border-radius:50%;background:conic-gradient(#4285F4,#EA4335,#FBBC05,#34A853,#4285F4)}
+.trends .tsub{font-size:11px;color:var(--ink3);margin:0 0 10px}
+.trendchips{display:flex;flex-wrap:wrap;gap:6px}
+.trendchip{font-size:11.5px;color:var(--ink2);background:var(--surf);border:1px solid var(--line);border-radius:99px;
+  padding:3px 11px;display:inline-flex;align-items:center;gap:6px}
+.trendchip .tr{font-family:var(--mono);font-size:10px;color:var(--ink3)}
+.trendchip.hot{color:var(--red);border-color:rgba(218,59,59,.4);background:var(--red-soft);font-weight:600}
+.trendchip.hot .tr{color:var(--red)}
+.storytrend{margin-top:12px;display:flex;align-items:center;gap:9px;font-size:12px;color:var(--ink2);
+  background:var(--red-soft);border:1px solid rgba(218,59,59,.28);border-radius:10px;padding:9px 13px}
+.storytrend .gdot{width:9px;height:9px;border-radius:50%;flex:0 0 9px;background:conic-gradient(#4285F4,#EA4335,#FBBC05,#34A853,#4285F4)}
+.storytrend b{color:var(--ink)}
+
+/* ---------- decide: interactive channel picker ---------- */
+.picker{background:var(--surf);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.pickhead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.pickhead h4{font-size:13.5px}
+.pickhint{font-size:11.5px;color:var(--ink3);margin:0 0 14px;line-height:1.5;max-width:70ch}
+.suggested{font-size:11px;color:var(--teal);background:var(--teal-soft);border-radius:6px;padding:2px 9px}
+.chgrp{margin-bottom:12px}
+.chgrp-h{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px;display:flex;align-items:center;gap:7px}
+.chgrp-h .mi{width:14px;height:14px}
+.chans{display:flex;flex-wrap:wrap;gap:8px}
+.chan{display:inline-flex;align-items:center;gap:8px;background:var(--surf2);border:1px solid var(--line);
+  border-radius:10px;padding:8px 12px;cursor:pointer;transition:border-color .14s,background .14s;text-align:left}
+.chan:hover{border-color:var(--teal-d)}
+.chan .cbx{width:16px;height:16px;border-radius:5px;border:1.5px solid var(--ink3);flex:0 0 16px;display:grid;place-items:center}
+.chan .cbx svg{width:11px;height:11px;opacity:0}
+.chan.on{border-color:var(--teal);background:var(--teal-soft)}
+.chan.on .cbx{background:var(--teal);border-color:var(--teal)}
+.chan.on .cbx svg{opacity:1;color:var(--btn-ink)}
+.chan .cnm{font-size:12.5px;font-weight:600;line-height:1.15}
+.chan .clg{font-size:10.5px;color:var(--ink3)}
+.chan.sug::after{content:'suggested';font-size:9px;color:var(--teal);background:var(--teal-soft);border-radius:4px;padding:1px 5px;margin-left:2px}
+.picksum{margin-top:6px;font-size:12px;color:var(--ink2);background:var(--surf2);border-radius:9px;padding:9px 12px;line-height:1.5}
+.picksum b{color:var(--ink)}
+
+/* ---------- language selector ---------- */
+.langsel{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:2px 0 14px}
+.langsel .ll{font-size:11.5px;color:var(--ink3);margin-right:2px}
+.lang{font-size:12.5px;color:var(--ink2);background:var(--surf2);border:1px solid var(--line);border-radius:99px;padding:5px 13px;cursor:pointer}
+.lang:hover{border-color:var(--teal-d)}
+.lang.on{color:var(--btn-ink);background:var(--teal);border-color:var(--teal);font-weight:600}
+.xlate{margin:0 0 12px;font-size:11.5px;color:var(--ink2);background:var(--teal-soft);border:1px solid var(--teal-d);border-radius:9px;padding:8px 12px;line-height:1.5}
+
+/* ---------- card footer route label ---------- */
+.route .rlabel{color:var(--ink3);font-size:10.5px;margin-right:5px;text-transform:uppercase;letter-spacing:.03em}
+.route .rval{color:var(--ink2);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin:2px 0 16px;font-size:11.5px;color:var(--ink3)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:9px;height:9px;border-radius:2px;display:inline-block}
+
+/* ---------- impact band: prominent closing ---------- */
+.impact{margin:52px -24px 0;padding:44px 24px 40px;background:
+   radial-gradient(120% 120% at 85% -10%,var(--teal-soft),transparent 55%),var(--bg2);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.impwrap{max-width:1120px;margin:0 auto}
+.impact .outhead h2{font-size:27px}
+.impact .impgrid{margin-top:22px;gap:16px}
+.imp{background:var(--surf);border:1px solid var(--line);box-shadow:var(--shadow)}
+.imp b{font-size:40px}
+.imp i{font-size:13px}
+.imp p{font-size:12px}
+
+/* judge/rank + decide + publish clarity bits */
+.jax h4{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.jscore{font-family:var(--mono);font-size:13px;color:var(--teal);font-weight:700}
+.credhead h4{font-size:14px;margin-bottom:4px}
+.riskhead{font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--ink3);margin:2px 0 2px}
+.gapexp{font-size:11.5px;color:var(--ink2);margin:0 0 10px;line-height:1.5;max-width:74ch}
+.gapbox .gapexp{color:var(--ink2)}
+.hbexp{font-size:11.5px;color:var(--ink2);margin:0 0 8px;line-height:1.5}
+.routenote{max-width:74ch}
+
+/* responsive */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:24px}
+  .pipe{flex-wrap:wrap;gap:8px}
+  .station{flex:1 1 40%}
+  .flow{display:none}
+  .journey{grid-template-columns:1fr}
+  .rail{position:static;flex-direction:row;flex-wrap:wrap;padding-top:0;margin-bottom:8px}
+  .judgegrid{grid-template-columns:1fr}
+  .draftwrap{grid-template-columns:1fr}
+  .deskcols{grid-template-columns:1fr}
+}
+
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+(function(){
+'use strict';
+
+
+/* ==== feed ==== */
+/* ============================================================
+   News Hunt — Input Desk
+   feed.js  ·  Simulated ingest dataset
+   ------------------------------------------------------------
+   Everything here is stand-in data shaped like the real thing.
+   Replace SOURCES + ITEMS with live adapters; the engine and UI
+   do not need to change.
+   ============================================================ */
+
+/* ---------- Source registry -------------------------------
+   tier   1 = wire / own newsroom / verified official
+          2 = stringer, rival publisher
+          3 = large but unofficial account
+          4 = open social, anonymous
+   trust  prior probability a claim from here holds up
+   rights how ITG is contractually allowed to use the copy
+----------------------------------------------------------- */
+const SOURCES = {
+  PTI:        { label: 'PTI',                 kind: 'wire',        tier: 1, trust: 0.92, rights: 'rewrite-attribution' },
+  ANI:        { label: 'ANI',                 kind: 'wire',        tier: 1, trust: 0.90, rights: 'no-verbatim' },
+  REUTERS:    { label: 'Reuters',             kind: 'wire',        tier: 1, trust: 0.95, rights: 'attribution-required' },
+  AFP:        { label: 'AFP',                 kind: 'wire',        tier: 1, trust: 0.94, rights: 'attribution-required' },
+  ITG_REP:    { label: 'ITG reporter',        kind: 'reporter',    tier: 1, trust: 0.97, rights: 'own' },
+  ITG_STR:    { label: 'ITG stringer',        kind: 'stringer',    tier: 2, trust: 0.76, rights: 'own-on-accept' },
+  OFFICIAL:   { label: 'Official handle',     kind: 'official',    tier: 1, trust: 0.90, rights: 'quotable' },
+  X_OPEN:     { label: 'X (open)',            kind: 'social',      tier: 4, trust: 0.30, rights: 'verify-before-use' },
+  REDDIT:     { label: 'Reddit',              kind: 'social',      tier: 4, trust: 0.28, rights: 'verify-before-use' },
+  YOUTUBE:    { label: 'YouTube',             kind: 'social',      tier: 3, trust: 0.40, rights: 'embed-only' },
+  GTRENDS:    { label: 'Google Trends',       kind: 'trends',      tier: 3, trust: 0.35, rights: 'signal-only' },
+  NDTV:       { label: 'NDTV',                kind: 'competitor',  tier: 2, trust: 0.80, rights: 'reference-only' },
+  NEWS18:     { label: 'News18',              kind: 'competitor',  tier: 2, trust: 0.80, rights: 'reference-only' },
+  HT:         { label: 'Hindustan Times',     kind: 'competitor',  tier: 2, trust: 0.82, rights: 'reference-only' },
+  IE:         { label: 'Indian Express',      kind: 'competitor',  tier: 2, trust: 0.83, rights: 'reference-only' },
+  ITG_PUB:    { label: 'ITG published',       kind: 'itg',         tier: 1, trust: 0.95, rights: 'own' }
+};
+
+/* ---------- ITG's own back catalogue -----------------------
+   Loaded at t = -1 so it is already in the graph when the
+   replay starts. This is what makes "do we already have this?"
+   answerable at all.
+----------------------------------------------------------- */
+const RAW_ARCHIVE = [
+  { id:'ITG-9001', t:-1, source:'ITG_PUB', lang:'en', beat:'metro', brand:'India Today',
+    headline:'Satya Niketan\'s student PGs: cheap beds, no safety net',
+    body:'An India Today ground report earlier this year found dozens of paying-guest premises around Delhi University\'s South Campus, including Satya Niketan, running with illegal extra floors and dug-out basements, with civic notices routinely ignored.',
+    entities:['Delhi','Satya Niketan','Delhi University','paying guest','Municipal Corporation of Delhi'],
+    claims:[{key:'notice_history', value:'PGs running with illegal floors, notices ignored', text:'A ground report found DU-area PGs running with illegal extra floors and ignored civic notices.', text_hi:'एक ग्राउंड रिपोर्ट में डीयू इलाके के पीजी अवैध मंज़िलों और अनदेखे नोटिसों के साथ चलते पाए गए थे।'}],
+    assets:{photo:1,video:0,live:false}, publishedAgoMin: 2880, url:'/story/satya-niketan-pg-safety' },
+
+  { id:'ITG-9002', t:-1, source:'ITG_PUB', lang:'hi', beat:'metro', brand:'Aaj Tak',
+    headline:'दिल्ली में पीजी नीति पर नया मसौदा, लाइसेंस अनिवार्य होगा',
+    body:'दिल्ली सरकार पेइंग गेस्ट आवासों के लिए लाइसेंस और किराया नियमन अनिवार्य करने वाली नई नीति पर काम कर रही है। छात्रों की सुरक्षा और किराया नियंत्रण इसका मुख्य उद्देश्य है।',
+    entities:['Delhi','paying guest','Delhi University','Delhi government'],
+    claims:[{key:'policy', value:'PG licensing policy drafted', text:'Delhi is drafting a licensing and rent-regulation policy for paying-guest premises.', text_hi:'दिल्ली पेइंग गेस्ट आवासों के लिए लाइसेंस और किराया-नियमन नीति का मसौदा तैयार कर रही है।'}],
+    assets:{photo:1,video:0,live:false}, publishedAgoMin: 1440, url:'/story/pg-policy-draft' },
+
+  { id:'ITG-9003', t:-1, source:'ITG_PUB', lang:'en', beat:'business', brand:'Business Today',
+    headline:'Why the RBI has held the repo rate for three straight reviews',
+    body:'Sticky core inflation and a comfortable growth print have let the monetary policy committee stay on hold since February.',
+    entities:['RBI','repo rate','monetary policy committee','inflation'],
+    claims:[{key:'context', value:'held three reviews', text:'The MPC has held the repo rate for three consecutive reviews.'}],
+    assets:{photo:1,video:0,live:false}, publishedAgoMin: 4320, url:'/story/rbi-hold-explainer' },
+
+  { id:'ITG-9004', t:-1, source:'ITG_PUB', lang:'en', beat:'metro', brand:'India Today',
+    headline:'Madhya Pradesh hooch deaths: how spurious liquor reaches dry villages',
+    body:'An earlier investigation traced the supply chain of methanol-laced country liquor across three districts of Madhya Pradesh.',
+    entities:['Madhya Pradesh','hooch','methanol','excise department'],
+    claims:[{key:'context', value:'supply chain traced', text:'An earlier investigation traced the spurious liquor supply chain across three districts.'}],
+    assets:{photo:2,video:1,live:false}, publishedAgoMin: 10080, url:'/story/mp-hooch-supply-chain' }
+];
+
+/* ---------- The live tape ----------------------------------
+   t = seconds after the replay starts.
+   Claim keys are the unit of comparison: two items that carry
+   the same claim keys with the same values are duplicates,
+   however differently they are worded.
+----------------------------------------------------------- */
+const RAW_ITEMS = [
+
+  /* ========== A · Satya Niketan PG collapse (the scripted spine) ==========
+     Real event, Delhi, 6 Sep 2026: a five-storey boys' PG ("Hostel Daze")
+     near DU South Campus. Arrives anonymous -> social -> our stringer ->
+     wires -> a viral inflated toll (held out) -> police -> rivals ahead on
+     the cause -> our reporter -> a wire correction -> the arrests and the
+     city-wide audit. Demonstrates ingest, dedup, development, the
+     credibility catch, the rival gap, the correction, routing and drafting. */
+  { id:'X-7701', t:5, source:'X_OPEN', lang:'hi', beat:'metro',
+    headline:'सत्य निकेतन में बिल्डिंग गिर गई, अंदर स्टूडेंट फंसे हैं',
+    body:'सत्य निकेतन में एक बिल्डिंग अभी-अभी गिर गई है। कहा जा रहा है कि अंदर कई स्टूडेंट फंसे हुए हैं। धूल का गुबार उठा है।',
+    entities:['Satya Niketan','Delhi','building collapse'],
+    claims:[{key:'event', value:'building collapse', text:'A building has collapsed in Satya Niketan.'},
+            {key:'location', value:'Satya Niketan', text:'The site is Satya Niketan in Delhi.'}],
+    assets:{photo:0,video:1,live:false}, authorMeta:{accountAgeDays:130, followers:2400, priorPosts:410},
+    socialVolume: 90 },
+
+  { id:'RD-3320', t:44, source:'REDDIT', lang:'en', beat:'metro',
+    headline:'Loud crash near Satya Niketan, DU south campus — building came down, sirens everywhere',
+    body:'Something just collapsed near Satya Niketan market by the south campus. Multiple fire tenders, road blocked, people digging with bare hands. Felt like an earthquake.',
+    entities:['Satya Niketan','Delhi','Delhi University','building collapse','fire tender'],
+    claims:[{key:'event', value:'building collapse', text:'Residents report a building coming down near Satya Niketan market.'},
+            {key:'response', value:'fire tenders on site', text:'Multiple fire tenders are at the site and the road is blocked.'}],
+    assets:{photo:1,video:0,live:false}, authorMeta:{accountAgeDays:2600, followers:0, priorPosts:1500},
+    socialVolume: 260 },
+
+  { id:'STR-221', t:96, source:'ITG_STR', lang:'en', beat:'metro',
+    headline:'Stringer filing: five-storey PG "Hostel Daze" collapsed in Satya Niketan, students feared trapped',
+    body:'A five-storey building running as a boys\' paying-guest hostel called Hostel Daze has collapsed in Satya Niketan, near DU South Campus. Fire services and NDRF are at the site. Locals say students were inside; rescuers are pulling people from the rubble. Sending three photographs.',
+    entities:['Satya Niketan','Delhi','Delhi University','building collapse','NDRF','paying guest'],
+    claims:[{key:'event', value:'building collapse', text:'A five-storey paying-guest building has collapsed in Satya Niketan.'},
+            {key:'structure_use', value:'boys paying-guest hostel', text:'The building was being run as a boys\' paying-guest hostel.'},
+            {key:'response', value:'NDRF and fire services', text:'Fire services and NDRF teams are at the site.'},
+            {key:'trapped', value:'students inside', text:'Locals say students were inside when the structure gave way.'}],
+    assets:{photo:3,video:0,live:false}, socialVolume: 520 },
+
+  { id:'ANI-9101', t:150, source:'ANI', lang:'en', beat:'metro',
+    headline:'Delhi: Building collapses near Satya Niketan, several feared trapped',
+    body:'A building collapsed near Satya Niketan in south-west Delhi on Sunday afternoon. Several people are feared trapped, officials said. Rescue operations are underway.',
+    entities:['Satya Niketan','Delhi','building collapse'],
+    claims:[{key:'event', value:'building collapse', text:'A building collapsed near Satya Niketan on Sunday afternoon.'},
+            {key:'trapped', value:'several feared trapped', text:'Several people are feared trapped, officials said.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 700 },
+
+  { id:'PTI-2101', t:205, source:'PTI', lang:'en', beat:'metro',
+    headline:'Five-storey building collapses in Delhi\'s Satya Niketan; rescue operation underway',
+    body:'A five-storey building collapsed in the Satya Niketan area of south-west Delhi on Sunday afternoon, officials said. The Delhi Fire Services and NDRF have been deployed. The structure housed a paying-guest hostel for students, according to local residents.',
+    entities:['Satya Niketan','Delhi','Delhi University','building collapse','NDRF','paying guest'],
+    claims:[{key:'event', value:'building collapse', text:'A five-storey building collapsed in Satya Niketan on Sunday afternoon.',
+             text_hi:'दिल्ली के सत्य निकेतन में एक पांच मंजिला इमारत ढह गई।'},
+            {key:'location', value:'Satya Niketan, south-west Delhi', text:'The site is Satya Niketan in south-west Delhi, near DU South Campus.',
+             text_hi:'घटनास्थल दक्षिण-पश्चिम दिल्ली का सत्य निकेतन है, जो डीयू साउथ कैंपस के पास है।'},
+            {key:'structure_use', value:'paying-guest hostel', text:'The structure housed a paying-guest hostel for students, residents said.',
+             text_hi:'स्थानीय लोगों के मुताबिक इमारत में छात्रों का पेइंग गेस्ट हॉस्टल चल रहा था।'},
+            {key:'response', value:'NDRF and fire services', text:'The Delhi Fire Services and NDRF have been deployed.',
+             text_hi:'मौके पर दमकल और एनडीआरएफ की टीमें राहत कार्य में जुटी हैं।'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 1200 },
+
+  { id:'X-7749', t:250, source:'X_OPEN', lang:'en', beat:'metro',
+    headline:'50+ DEAD in Satya Niketan collapse, govt hiding the real number',
+    body:'Sources say more than 50 bodies pulled out at Satya Niketan. Administration suppressing the figure. Watch this video. RT to expose them.',
+    entities:['Satya Niketan','Delhi','building collapse'],
+    claims:[{key:'toll', value:'50', text:'More than 50 bodies have reportedly been pulled out.'}],
+    assets:{photo:0,video:1,live:false}, authorMeta:{accountAgeDays:6, followers:51000, priorPosts:18},
+    flags:['recycled-media'], socialVolume: 6200 },
+
+  { id:'OFF-DP-91', t:300, source:'OFFICIAL', lang:'en', beat:'metro', handle:'@DelhiPolice',
+    headline:'Delhi Police: rescue underway at Satya Niketan, three dead, nine shifted to AIIMS trauma centre',
+    body:'A rescue operation is underway at the site of a building collapse in Satya Niketan. Three deaths are confirmed so far. Nine persons have been rescued and shifted to the AIIMS trauma centre. NDRF, DDMA and Fire Services are on site. Public is requested to avoid the stretch.',
+    entities:['Satya Niketan','Delhi','Delhi Police','AIIMS','NDRF'],
+    claims:[{key:'toll', value:'3', text:'Three deaths are confirmed so far, Delhi Police said.'},
+            {key:'rescued', value:'9 rescued', text:'Nine persons have been rescued and shifted to the AIIMS trauma centre.',
+             text_hi:'नौ लोगों को मलबे से निकालकर एम्स ट्रॉमा सेंटर भेजा गया है।'},
+            {key:'official_presence', value:'NDRF, DDMA, Fire on site', text:'NDRF, DDMA and Fire Services are on site.', text_hi:'एनडीआरएफ, डीडीएमए और दमकल की टीमें मौके पर मौजूद हैं।'},
+            {key:'response', value:'multi-agency rescue', text:'A multi-agency rescue operation is underway at the site.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 2100 },
+
+  { id:'N18-6620', t:360, source:'NEWS18', lang:'en', beat:'metro',
+    headline:'Exclusive: Satya Niketan PG Was Unauthorised, Basement Being Dug Out For Shops',
+    body:'The collapsed Satya Niketan building operated as an unauthorised paying-guest hostel and its basement was being illegally excavated to create rental shop space, a preliminary probe has found. The premises had drawn civic notices that went unenforced, officials said.',
+    entities:['Satya Niketan','Delhi','paying guest','Municipal Corporation of Delhi'],
+    claims:[{key:'cause', value:'illegal basement excavation', text:'The basement was being illegally excavated to create shop space, a preliminary probe found.'},
+            {key:'licensing', value:'unauthorised PG', text:'The premises operated as an unauthorised paying-guest hostel.'},
+            {key:'notice_history', value:'civic notices unenforced', text:'The premises had drawn civic notices that went unenforced.'}],
+    assets:{photo:3,video:1,live:false}, published:true, socialVolume: 1500 },
+
+  { id:'NDTV-4471', t:420, source:'NDTV', lang:'en', beat:'metro',
+    headline:'"Felt Like An Earthquake": 5 Dead, Several Trapped As Satya Niketan Building Collapses',
+    body:'Five people have died and several remain trapped after the Satya Niketan building collapse, officials said. A senior fire officer said the pillars had been weakened by basement digging. Witnesses described a sound like an earthquake before the structure came down.',
+    entities:['Satya Niketan','Delhi','building collapse','Delhi Fire Service'],
+    claims:[{key:'toll', value:'5', text:'Five people have died, officials said.'},
+            {key:'official_quote', value:'fire officer on weakened pillars', text:'A senior fire officer said the pillars had been weakened by basement digging.'}],
+    assets:{photo:4,video:1,live:false}, published:true, socialVolume: 2400 },
+
+  { id:'REP-512', t:480, source:'ITG_REP', lang:'en', beat:'metro', byline:'Arvind Ojha',
+    headline:'Reporter filing: Satya Niketan PG owner Anand Bansal absconding, basement dug for shops, students paid Rs 8,000 a bunk',
+    body:'At the spot: the owner of the collapsed Hostel Daze PG, Anand Bansal of Gurugram, is absconding and an FIR has been registered. Municipal records show the basement was being dug out to add rental shops. Students paid Rs 8,000 a month for bunk beds in plywood-partitioned rooms. I have on-camera bites from two survivors and the rescue.',
+    entities:['Satya Niketan','Delhi','paying guest','Municipal Corporation of Delhi'],
+    claims:[{key:'accountability', value:'owner Anand Bansal absconding, FIR filed', text:'The owner, Anand Bansal of Gurugram, is absconding and an FIR has been registered.',
+             text_hi:'हॉस्टल डेज़ पीजी का मालिक, गुरुग्राम का आनंद बंसल, फरार है और उसके खिलाफ एफआईआर दर्ज की गई है।'},
+            {key:'cause', value:'basement dug for shops', text:'Municipal records show the basement was being dug out to add rental shops.',
+             text_hi:'नगर निगम के रिकॉर्ड बताते हैं कि दुकानें बनाने के लिए बेसमेंट की खुदाई की जा रही थी।'},
+            {key:'human_detail', value:'Rs 8,000 a bunk', text:'Students paid Rs 8,000 a month for bunk beds in plywood-partitioned rooms.',
+             text_hi:'छात्र प्लाईवुड से बंटे कमरों में बंक बेड के लिए हर महीने 8,000 रुपये देते थे।'}],
+    assets:{photo:6,video:2,live:false}, socialVolume: 2600 },
+
+  { id:'ANI-9140', t:545, source:'ANI', lang:'en', beat:'metro',
+    headline:'Satya Niketan collapse: nine feared dead, says agency; rescue continues',
+    body:'Nine people are feared dead in the Satya Niketan building collapse as the rescue operation continues into the evening, agencies reported. Nine others are injured.',
+    entities:['Satya Niketan','Delhi','building collapse'],
+    claims:[{key:'toll', value:'9', text:'Nine people are feared dead as the rescue continues.'},
+            {key:'injured', value:'9 injured', text:'Nine others are injured.',
+             text_hi:'नौ अन्य लोग घायल हैं।'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 3000 },
+
+  { id:'PTI-2140', t:620, source:'PTI', lang:'en', beat:'metro',
+    headline:'CORRECTED: Satya Niketan collapse toll seven, not nine — Delhi Police',
+    body:'Correcting an earlier transmission: the death toll in the Satya Niketan building collapse stands at seven, not nine. Nine is the number of injured being treated at AIIMS. Please carry the corrected figure.',
+    entities:['Satya Niketan','Delhi','Delhi Police','AIIMS'],
+    claims:[{key:'toll', value:'7', text:'The death toll stands at seven, not nine; nine is the number of injured.',
+             text_hi:'मरने वालों की संख्या सात है, नौ नहीं; नौ घायलों की संख्या है।'}],
+    assets:{photo:0,video:0,live:false}, flags:['correction'], socialVolume: 2600 },
+
+  { id:'OFF-DP-96', t:690, source:'OFFICIAL', lang:'en', beat:'metro', handle:'@DelhiPolice',
+    headline:'Satya Niketan collapse: PG owner Anand Bansal, wife and son arrested after Look Out Circular',
+    body:'The owner of the collapsed Satya Niketan PG, Anand Bansal, has been arrested along with his wife and son after a Look Out Circular was issued. They face charges over the unauthorised construction and the illegal basement work, Delhi Police said.',
+    entities:['Satya Niketan','Delhi','Delhi Police','paying guest'],
+    claims:[{key:'arrests', value:'owner, wife and son arrested', text:'The PG owner Anand Bansal, his wife and son have been arrested after a Look Out Circular.',
+             text_hi:'पीजी मालिक आनंद बंसल, उसकी पत्नी और बेटे को लुकआउट सर्कुलर के बाद गिरफ्तार कर लिया गया है।'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 2300 },
+
+  { id:'PTI-2166', t:745, source:'PTI', lang:'en', beat:'metro',
+    headline:'Satya Niketan collapse: Delhi CM orders city-wide PG safety audit, five officials suspended',
+    body:'Delhi Chief Minister Rekha Gupta on Monday ordered mandatory structural audits and safety certification for all paying-guest premises, hostels, nursing homes and schools after the Satya Niketan collapse. The MCD began sealing illegal buildings above four floors and five officials, including an MCD deputy commissioner, were suspended. Evacuated students are being housed in college hostels.',
+    entities:['Satya Niketan','Delhi','Delhi government','Municipal Corporation of Delhi'],
+    claims:[{key:'probe', value:'city-wide PG audit ordered, officials suspended', text:'The Delhi CM ordered structural audits of all PGs, hostels and schools; five officials, including an MCD deputy commissioner, were suspended and illegal buildings are being sealed.',
+             text_hi:'दिल्ली सरकार ने सभी पीजी, हॉस्टल और स्कूलों की संरचनात्मक जांच के आदेश दिए; एमसीडी के एक उपायुक्त समेत पांच अधिकारी निलंबित और अवैध इमारतें सील की जा रही हैं।'},
+            {key:'compensation', value:'students moved to college hostels', text:'Evacuated students are being housed in college hostels.', text_hi:'निकाले गए छात्रों को कॉलेज हॉस्टलों में ठहराया जा रहा है।'}],
+    assets:{photo:2,video:1,live:false}, socialVolume: 2000 },
+
+  /* ========== B · Madhya Pradesh hooch deaths ========== */
+  { id:'PTI-1002', t:18, source:'PTI', lang:'en', beat:'metro',
+    headline:'Fourteen dead after consuming spurious liquor in Madhya Pradesh village',
+    body:'Fourteen people have died after consuming spurious liquor in a village in Madhya Pradesh, officials said. Several others are hospitalised. The excise department has begun an inquiry.',
+    entities:['Madhya Pradesh','hooch','excise department'],
+    claims:[{key:'toll', value:'14', text:'Fourteen people have died after consuming spurious liquor.'},
+            {key:'event', value:'hooch deaths', text:'Deaths followed consumption of spurious liquor in a Madhya Pradesh village.'},
+            {key:'response', value:'excise inquiry', text:'The excise department has begun an inquiry.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 400 },
+
+  { id:'IE-7710', t:96, source:'IE', lang:'en', beat:'metro',
+    headline:'Victims saved Rs 20, told liquor wasn\'t fake: Inside Madhya Pradesh deaths',
+    body:'Families of the victims said the men bought pouches priced twenty rupees below the licensed rate from a roadside vendor who assured them the stock was genuine. Three vendors have been arrested and the district excise officer transferred.',
+    entities:['Madhya Pradesh','hooch','excise department'],
+    claims:[{key:'human_detail', value:'Rs 20 cheaper pouches', text:'Victims bought pouches priced twenty rupees below the licensed rate.'},
+            {key:'arrests', value:'3 vendors arrested', text:'Three vendors have been arrested.'},
+            {key:'accountability', value:'excise officer transferred', text:'The district excise officer has been transferred.'}],
+    assets:{photo:2,video:0,live:false}, published:true, socialVolume: 620 },
+
+  { id:'ANI-8790', t:150, source:'ANI', lang:'hi', beat:'metro',
+    headline:'मध्य प्रदेश में जहरीली शराब से 14 की मौत, जांच शुरू',
+    body:'मध्य प्रदेश के एक गांव में जहरीली शराब पीने से 14 लोगों की मौत हो गई है। आबकारी विभाग ने जांच शुरू कर दी है।',
+    entities:['Madhya Pradesh','hooch','excise department'],
+    claims:[{key:'toll', value:'14', text:'Fourteen have died after drinking spurious liquor.'},
+            {key:'response', value:'excise inquiry', text:'The excise department has begun an inquiry.'}],
+    assets:{photo:0,video:0,live:false}, socialVolume: 300 },
+
+  { id:'PTI-1049', t:430, source:'PTI', lang:'en', beat:'metro',
+    headline:'MP hooch deaths: toll climbs to 21, chief minister orders magisterial probe',
+    body:'The toll in the Madhya Pradesh spurious liquor case climbed to twenty-one on Tuesday. The chief minister has ordered a magisterial inquiry and announced compensation of four lakh rupees for each family.',
+    entities:['Madhya Pradesh','hooch','chief minister'],
+    claims:[{key:'toll', value:'21', text:'The toll climbed to twenty-one on Tuesday.'},
+            {key:'probe', value:'magisterial inquiry ordered', text:'The chief minister has ordered a magisterial inquiry.'},
+            {key:'compensation', value:'Rs 4 lakh per family', text:'Compensation of four lakh rupees per family has been announced.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 1500 },
+
+  { id:'HT-6620', t:498, source:'HT', lang:'en', beat:'metro',
+    headline:'MP Hooch Tragedy: Toll 21, Methanol Traced To Industrial Supplier',
+    body:'Forensic samples show methanol sourced from an industrial supplier in a neighbouring district, investigators said. The toll stands at twenty-one.',
+    entities:['Madhya Pradesh','hooch','methanol'],
+    claims:[{key:'toll', value:'21', text:'The toll stands at twenty-one.'},
+            {key:'cause', value:'methanol from industrial supplier', text:'Forensic samples trace methanol to an industrial supplier in a neighbouring district.'}],
+    assets:{photo:2,video:0,live:false}, published:true, socialVolume: 900 },
+
+  /* ========== C · Vijay jaw gesture row ========== */
+  { id:'X-4402', t:30, source:'X_OPEN', lang:'ta', beat:'politics',
+    headline:'விஜய் அந்த சைகையை செய்ததற்கு விளக்கம் தர வேண்டும்',
+    body:'Clip of the actor-politician making a jaw gesture at the Madurai rally is being read as a reference to a 1976 arrest. Trending on Tamil timelines.',
+    entities:['Vijay','DMK','Madurai','MK Stalin'],
+    claims:[{key:'event', value:'jaw gesture row', text:'A jaw gesture made at a Madurai rally is being read as a political reference.'}],
+    assets:{photo:0,video:1,live:false}, authorMeta:{accountAgeDays:1400, followers:88000, priorPosts:9100},
+    socialVolume: 4200 },
+
+  { id:'NDTV-3350', t:210, source:'NDTV', lang:'en', beat:'politics',
+    headline:'Vijay Faces DMK Heat Over \'Jaw Gesture\', Ally Also Decries It As Reference To MK Stalin\'s 1976 Arrest',
+    body:'The DMK has objected to a gesture made by the actor-politician at a Madurai rally, reading it as a reference to the chief minister\'s 1976 arrest. A coalition ally also criticised the gesture.',
+    entities:['Vijay','DMK','Madurai','MK Stalin'],
+    claims:[{key:'event', value:'jaw gesture row', text:'The DMK objected to a gesture made at a Madurai rally.'},
+            {key:'reaction', value:'DMK and ally object', text:'The DMK and a coalition ally both criticised the gesture.'}],
+    assets:{photo:2,video:1,live:false}, published:true, socialVolume: 5100 },
+
+  { id:'PTI-1044', t:352, source:'PTI', lang:'en', beat:'politics',
+    headline:'TVK chief\'s gesture at Madurai rally draws DMK objection',
+    body:'The DMK on Tuesday objected to a gesture made by the TVK chief at a rally in Madurai, calling it a slur on the chief minister. The party has demanded an apology.',
+    entities:['Vijay','DMK','Madurai','TVK'],
+    claims:[{key:'event', value:'jaw gesture row', text:'The DMK objected to a gesture made at a Madurai rally.'},
+            {key:'demand', value:'apology demanded', text:'The party has demanded an apology.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 5600 },
+
+  { id:'YT-9912', t:420, source:'YOUTUBE', lang:'ta', beat:'politics',
+    headline:'Madurai rally full speech — 2.1M views in 4 hours',
+    body:'Unedited rally upload crossing two million views, comment volume rising sharply on the gesture timestamp.',
+    entities:['Vijay','Madurai','TVK'],
+    claims:[{key:'attention', value:'2.1M views', text:'An unedited rally upload has crossed two million views.'}],
+    assets:{photo:0,video:1,live:false}, socialVolume: 9800 },
+
+  /* ========== D · RBI policy (embargoed, high importance, low urgency) ========== */
+  { id:'RTR-2201', t:60, source:'REUTERS', lang:'en', beat:'business',
+    headline:'EMBARGOED: India central bank expected to hold rates, cut CRR — sources',
+    body:'India\'s central bank is expected to keep the repo rate unchanged at its review while trimming the cash reserve ratio to ease liquidity, three people familiar with the deliberations said. Embargoed until 10:00 IST.',
+    entities:['RBI','repo rate','CRR','monetary policy committee'],
+    claims:[{key:'expectation', value:'hold repo, cut CRR', text:'The central bank is expected to hold the repo rate and trim the cash reserve ratio.'}],
+    assets:{photo:1,video:0,live:false}, flags:['embargo'], embargoUntilMin: 14, socialVolume: 120 },
+
+  { id:'PTI-1050', t:455, source:'PTI', lang:'en', beat:'business',
+    headline:'RBI holds repo rate at 6.25 per cent, cuts CRR by 25 bps',
+    body:'The Reserve Bank of India kept the repo rate unchanged at 6.25 per cent and reduced the cash reserve ratio by 25 basis points, the governor announced after the monetary policy review. Growth forecast retained at 6.8 per cent.',
+    entities:['RBI','repo rate','CRR','monetary policy committee'],
+    claims:[{key:'decision', value:'repo held 6.25%', text:'The repo rate was kept unchanged at 6.25 per cent.'},
+            {key:'crr', value:'CRR cut 25 bps', text:'The cash reserve ratio was reduced by 25 basis points.'},
+            {key:'growth', value:'6.8% retained', text:'The growth forecast was retained at 6.8 per cent.'}],
+    assets:{photo:2,video:1,live:true}, socialVolume: 800 },
+
+  { id:'RTR-2240', t:470, source:'REUTERS', lang:'en', beat:'business',
+    headline:'India holds key rate, cuts reserve ratio to support growth',
+    body:'The Reserve Bank of India held its key repo rate at 6.25 per cent and cut the cash reserve ratio by 25 basis points on Tuesday.',
+    entities:['RBI','repo rate','CRR'],
+    claims:[{key:'decision', value:'repo held 6.25%', text:'The key repo rate was held at 6.25 per cent.'},
+            {key:'crr', value:'CRR cut 25 bps', text:'The cash reserve ratio was cut by 25 basis points.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 700 },
+
+  { id:'X-4520', t:520, source:'OFFICIAL', lang:'en', beat:'business', handle:'@FinMinIndia',
+    headline:'Finance Ministry welcomes liquidity measures announced by RBI',
+    body:'The measures announced today will support credit flow to productive sectors while keeping inflation expectations anchored.',
+    entities:['RBI','finance ministry','CRR'],
+    claims:[{key:'reaction', value:'ministry welcomes', text:'The finance ministry said the measures will support credit flow.'}],
+    assets:{photo:0,video:0,live:false}, socialVolume: 260 },
+
+  /* ========== E · Suspicious: Bengaluru metro claim ========== */
+  { id:'X-4555', t:250, source:'X_OPEN', lang:'en', beat:'metro',
+    headline:'BREAKING: Bangalore metro pillar collapses on traffic, many crushed',
+    body:'Huge accident just now, a metro pillar has collapsed onto vehicles in Bangalore. At least 8 crushed. Mainstream media silent. RT to spread.',
+    entities:['Bengaluru','Namma Metro','pillar collapse'],
+    claims:[{key:'event', value:'metro pillar collapse', text:'A metro pillar has reportedly collapsed onto vehicles.'},
+            {key:'toll', value:'8', text:'At least eight people were reportedly crushed.'}],
+    assets:{photo:0,video:1,live:false}, authorMeta:{accountAgeDays:4, followers:12000, priorPosts:11},
+    flags:['recycled-media'], socialVolume: 5400 },
+
+  { id:'X-4560', t:300, source:'X_OPEN', lang:'en', beat:'metro',
+    headline:'Bengaluru metro pillar accident video going viral',
+    body:'Same clip circulating with different captions. Some accounts say Bengaluru, some say Hyderabad 2023.',
+    entities:['Bengaluru','Namma Metro','pillar collapse','Hyderabad'],
+    claims:[{key:'event', value:'metro pillar collapse', text:'A clip of a pillar accident is circulating with conflicting captions.'},
+            {key:'provenance_doubt', value:'clip also captioned Hyderabad 2023', text:'The same clip is also captioned as Hyderabad, 2023.'}],
+    assets:{photo:0,video:1,live:false}, authorMeta:{accountAgeDays:800, followers:3200, priorPosts:4400},
+    socialVolume: 3100 },
+
+  { id:'OFF-BMRCL-3', t:560, source:'OFFICIAL', lang:'en', beat:'metro', handle:'@OfficialBMRCL',
+    headline:'BMRCL: no incident on any Namma Metro corridor today',
+    body:'A video being circulated claiming a pillar collapse on Namma Metro is not from Bengaluru. All corridors are operating normally. Legal action will be taken against those spreading it.',
+    entities:['Bengaluru','Namma Metro','BMRCL'],
+    claims:[{key:'denial', value:'no incident, clip not from Bengaluru', text:'BMRCL said no incident occurred and the circulating video is not from Bengaluru.'}],
+    assets:{photo:0,video:0,live:false}, socialVolume: 900 },
+
+  /* ========== F · Malaysia helicopter crash ========== */
+  { id:'RTR-2215', t:140, source:'REUTERS', lang:'en', beat:'world',
+    headline:'Helicopter carrying five, including medical staff, crashes in Malaysia',
+    body:'A helicopter carrying five people including medical personnel crashed in Malaysia\'s Pahang state, authorities said. Search and rescue teams have been dispatched.',
+    entities:['Malaysia','Pahang','helicopter crash'],
+    claims:[{key:'event', value:'helicopter crash', text:'A helicopter carrying five people crashed in Pahang state.'},
+            {key:'occupants', value:'5 aboard incl medical staff', text:'Five people including medical personnel were aboard.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 210 },
+
+  { id:'AFP-3301', t:190, source:'AFP', lang:'en', beat:'world',
+    headline:'Five aboard as helicopter goes down in Malaysia',
+    body:'A helicopter with five people on board crashed in Malaysia on Tuesday, officials said. Rescue teams were sent to the site.',
+    entities:['Malaysia','helicopter crash'],
+    claims:[{key:'event', value:'helicopter crash', text:'A helicopter with five people on board crashed on Tuesday.'},
+            {key:'occupants', value:'5 aboard incl medical staff', text:'Five people were on board.'}],
+    assets:{photo:0,video:0,live:false}, socialVolume: 160 },
+
+  { id:'NDTV-3372', t:380, source:'NDTV', lang:'en', beat:'world',
+    headline:'Helicopter Carrying 5, Including Medical Staff, Crashes In Malaysia',
+    body:'All five aboard were killed, Malaysian authorities confirmed. The aircraft was on a medical transfer flight.',
+    entities:['Malaysia','helicopter crash'],
+    claims:[{key:'event', value:'helicopter crash', text:'A helicopter on a medical transfer flight crashed in Malaysia.'},
+            {key:'toll', value:'5 killed', text:'All five aboard were killed, authorities confirmed.'}],
+    assets:{photo:1,video:0,live:false}, published:true, socialVolume: 340 },
+
+  /* ========== G · Cricket (low importance, high social) ========== */
+  { id:'IE-7742', t:75, source:'IE', lang:'en', beat:'sport',
+    headline:'Mohammed Shami\'s masterclass leaves Siraj a mountain still to climb',
+    body:'A five-wicket haul in overcast conditions underlined the gulf between the two seamers in red-ball craft.',
+    entities:['Mohammed Shami','Mohammed Siraj','cricket'],
+    claims:[{key:'event', value:'Shami five-wicket haul', text:'Shami took a five-wicket haul in overcast conditions.'}],
+    assets:{photo:2,video:0,live:false}, published:true, socialVolume: 3400 },
+
+  { id:'X-4436', t:180, source:'X_OPEN', lang:'en', beat:'sport',
+    headline:'Shami 5 wickets trending, fans demand Siraj be dropped',
+    body:'Timeline flooded after the spell. Hashtag climbing.',
+    entities:['Mohammed Shami','Mohammed Siraj','cricket'],
+    claims:[{key:'attention', value:'hashtag climbing', text:'The spell set off heavy timeline volume.'}],
+    assets:{photo:0,video:0,live:false}, authorMeta:{accountAgeDays:2400, followers:15000, priorPosts:33000},
+    socialVolume: 7600 },
+
+  { id:'ANI-8812', t:445, source:'ANI', lang:'en', beat:'sport',
+    headline:'Shami takes five as India tighten grip on second day',
+    body:'Mohammed Shami\'s five-wicket haul put India in control on the second day of the Test.',
+    entities:['Mohammed Shami','cricket','India'],
+    claims:[{key:'event', value:'Shami five-wicket haul', text:'Shami took five wickets on the second day.'}],
+    assets:{photo:1,video:1,live:false}, socialVolume: 5200 },
+
+  /* ========== H · Low-value PR duplicate storm ========== */
+  { id:'PR-101', t:88, source:'X_OPEN', lang:'en', beat:'education',
+    headline:'Study UK Alumni Awards 2027: Apply by October 15',
+    body:'Applications open for the Study UK Alumni Awards 2027. Categories include business and innovation, science and sustainability, and social action.',
+    entities:['Study UK','British Council','alumni awards'],
+    claims:[{key:'event', value:'awards applications open', text:'Applications for the Study UK Alumni Awards 2027 are open until October 15.'}],
+    assets:{photo:1,video:0,live:false}, authorMeta:{accountAgeDays:3000, followers:200000, priorPosts:8000},
+    socialVolume: 40 },
+
+  { id:'NDTV-3311', t:260, source:'NDTV', lang:'en', beat:'education',
+    headline:'Study UK Alumni Awards 2027: Apply By October 15, Check Categories And Benefits',
+    body:'The Study UK Alumni Awards 2027 are open for applications until October 15. Categories and eligibility are listed below.',
+    entities:['Study UK','British Council','alumni awards'],
+    claims:[{key:'event', value:'awards applications open', text:'Applications are open until October 15.'}],
+    assets:{photo:1,video:0,live:false}, published:true, socialVolume: 30 },
+
+  { id:'PR-104', t:404, source:'X_OPEN', lang:'en', beat:'education',
+    headline:'Reminder: Study UK Alumni Awards close October 15',
+    body:'Last date to apply for the Study UK Alumni Awards 2027 is October 15.',
+    entities:['Study UK','alumni awards'],
+    claims:[{key:'event', value:'awards applications open', text:'The last date to apply is October 15.'}],
+    assets:{photo:0,video:0,live:false}, authorMeta:{accountAgeDays:3000, followers:200000, priorPosts:8000},
+    socialVolume: 20 },
+
+  /* ========== I · Late-breaking second spine: train derailment ========== */
+  { id:'X-4602', t:660, source:'X_OPEN', lang:'hi', beat:'metro',
+    headline:'इटारसी के पास मालगाड़ी के डिब्बे पटरी से उतरे',
+    body:'इटारसी के पास मालगाड़ी के कुछ डिब्बे पटरी से उतर गए हैं। ट्रेनें रुकी हुई हैं।',
+    entities:['Itarsi','Madhya Pradesh','derailment','Indian Railways'],
+    claims:[{key:'event', value:'goods train derailment', text:'Wagons of a goods train have derailed near Itarsi.'}],
+    assets:{photo:1,video:0,live:false}, authorMeta:{accountAgeDays:900, followers:6000, priorPosts:2100},
+    socialVolume: 260 },
+
+  { id:'ANI-8850', t:715, source:'ANI', lang:'en', beat:'metro',
+    headline:'Goods train derails near Itarsi, several trains diverted',
+    body:'Six wagons of a goods train derailed near Itarsi junction, disrupting movement on the Delhi-Mumbai route. No casualties reported. Several passenger trains have been diverted.',
+    entities:['Itarsi','Madhya Pradesh','derailment','Indian Railways'],
+    claims:[{key:'event', value:'goods train derailment', text:'Six wagons derailed near Itarsi junction.'},
+            {key:'impact', value:'Delhi-Mumbai route disrupted', text:'Movement on the Delhi-Mumbai route has been disrupted.'},
+            {key:'casualties', value:'none reported', text:'No casualties have been reported.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 700 },
+
+  { id:'OFF-RLY-9', t:790, source:'OFFICIAL', lang:'en', beat:'metro', handle:'@WCRailway',
+    headline:'West Central Railway: restoration underway at Itarsi, 11 trains diverted',
+    body:'Restoration work is underway after six wagons of a goods train derailed near Itarsi. Eleven passenger trains have been diverted and two short-terminated. No injuries.',
+    entities:['Itarsi','Indian Railways','derailment'],
+    claims:[{key:'impact', value:'11 trains diverted', text:'Eleven passenger trains have been diverted and two short-terminated.'},
+            {key:'response', value:'restoration underway', text:'Restoration work is underway at the site.'}],
+    assets:{photo:1,video:0,live:false}, socialVolume: 480 }
+];
+
+/* Desk roster, used by the assign action */
+const RAW_DESK = [
+  { name:'Ananya Rao',    beat:'metro',    location:'Delhi',    load:2 },
+  { name:'Imran Qureshi', beat:'metro',    location:'Bhopal',   load:1 },
+  { name:'Kavya Menon',   beat:'business', location:'Mumbai',   load:3 },
+  { name:'R Sridhar',     beat:'politics', location:'Chennai',  load:1 },
+  { name:'Nikhil Bose',   beat:'sport',    location:'Kolkata',  load:0 },
+  { name:'Farah Sheikh',  beat:'world',    location:'Delhi',    load:2 }
+];
+
+/* ==== engine ==== */
+/* ============================================================
+   News Hunt — Input Desk
+   engine.js  ·  the part that has to be real
+   ------------------------------------------------------------
+   One structure, the story graph. Every requirement in the
+   brief is a query against it rather than a separate feature.
+
+   Nothing here calls a model. Clustering, dedup, scoring,
+   credibility and routing are deterministic and inspectable,
+   which is what makes the "why" line trustworthy. A model
+   belongs at draft time only, over a fixed claim set.
+   ============================================================ */
+
+/* ---------------------------------------------------------
+   1 · Normalisation
+   Indian-desk reality: the same entity arrives under several
+   surface forms, across scripts. Without this layer dedup
+   fails silently, which is worse than not deduping at all.
+--------------------------------------------------------- */
+const ALIASES = {
+  'bangalore':'bengaluru', 'bengaluru':'bengaluru', 'blr':'bengaluru',
+  'bombay':'mumbai', 'calcutta':'kolkata', 'madras':'chennai',
+  'gurgaon':'gurugram', 'poona':'pune', 'baroda':'vadodara',
+  'nammametro':'namma metro', 'bmrcl':'namma metro',
+  'pm modi':'narendra modi', 'modi':'narendra modi', 'pm':'narendra modi',
+  'stalin':'mk stalin', 'mkstalin':'mk stalin',
+  'tvk':'vijay', 'thalapathy':'vijay',
+  'rbi':'reserve bank of india', 'reserve bank':'reserve bank of india',
+  'mpc':'monetary policy committee',
+  'crr':'cash reserve ratio',
+  'ndrf':'national disaster response force',
+  'pg':'paying guest', 'payingguest':'paying guest',
+  'mp':'madhya pradesh',
+  'ddu hospital':'deen dayal upadhyay hospital',
+  'hooch':'spurious liquor', 'liquor':'spurious liquor',
+  'collapse':'collapse', 'derail':'derailment', 'derailed':'derailment',
+  'chopper':'helicopter'
+};
+
+const STOP = new Set(('a an the and or but of in on at to for from by with as is are was were be been '+
+  'has have had say said says will would can could after over into out up down about more most new '+
+  'that this these those it its his her their they we you i he she also than then so such very just '+
+  'per cent tuesday monday wednesday thursday friday saturday sunday today yesterday').split(' '));
+
+function alias(s) { return ALIASES[s] || s; }
+
+function tokenise(text) {
+  const raw = String(text || '')
+    .toLowerCase()
+    .replace(/[\u2018\u2019\u201c\u201d]/g, '')
+    .replace(/[^a-z0-9\u0900-\u097F\u0B80-\u0BFF ]+/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean);
+  const out = new Set();
+  for (const w of raw) {
+    if (STOP.has(w) || w.length < 3) continue;
+    out.add(alias(w));
+  }
+  return out;
+}
+
+function normEntity(e) {
+  const k = String(e || '').toLowerCase().trim();
+  return alias(k);
+}
+
+function jaccard(a, b) {
+  if (!a.size || !b.size) return 0;
+  let hits = 0;
+  for (const v of a) if (b.has(v)) hits++;
+  return hits / (a.size + b.size - hits);
+}
+
+/* ---------------------------------------------------------
+   2 · Item preparation
+--------------------------------------------------------- */
+function prepare(item) {
+  const src = SOURCES[item.source] || { label: item.source, kind: 'unknown', tier: 4, trust: 0.2, rights: 'unknown' };
+  return {
+    ...item,
+    src,
+    tokens: tokenise(item.headline + ' ' + item.body),
+    entitySet: new Set((item.entities || []).map(normEntity)),
+    claims: item.claims || [],
+    claimKeys: new Set((item.claims || []).map(c => c.key)),
+    assets: item.assets || { photo:0, video:0, live:false },
+    flags: item.flags || [],
+    socialVolume: item.socialVolume || 0
+  };
+}
+
+/* ---------------------------------------------------------
+   3 · Cluster resolution
+   Text similarity alone breaks across languages, so entity
+   overlap is weighted at least as heavily. A Hindi wire take
+   and an English one on the same event share entities even
+   when they share no tokens.
+--------------------------------------------------------- */
+const MATCH_FLOOR   = 0.24;   // live event clustering
+const RELATED_FLOOR = 0.16;   // looser, for archive context
+const COVERED_FLOOR = 0.42;   // "we have already published this"
+
+function overlapCount(a, b) { let n = 0; for (const v of a) if (b.has(v)) n++; return n; }
+
+/* An entity anchor is what stops "Delhi" on its own from
+   welding unrelated stories together. Similarity is necessary
+   but not sufficient. */
+function eligible(item, m) {
+  const ents = overlapCount(item.entitySet, m.entitySet);
+  if (ents >= 2) return true;
+  return ents >= 1 && jaccard(item.tokens, m.tokens) >= 0.35;
+}
+
+function matchScore(item, cluster, opts = {}) {
+  let best = 0, bestOn = null;
+  for (const m of cluster.items) {
+    if (!opts.loose && !eligible(item, m)) continue;
+    const tx = jaccard(item.tokens, m.tokens);
+    const en = jaccard(item.entitySet, m.entitySet);
+    const ck = jaccard(item.claimKeys, m.claimKeys);
+    const s = 0.34 * tx + 0.48 * en + 0.18 * ck;
+    if (s > best) { best = s; bestOn = m.id; }
+  }
+  return { score: best, on: bestOn };
+}
+
+/* ---------------------------------------------------------
+   4 · What kind of arrival is this
+   The brief asks for duplicate / update / new development /
+   enrichment as separate outcomes. They are all one test:
+   does this item carry a claim key the cluster does not
+   already hold, and does that key change the story's state.
+--------------------------------------------------------- */
+const STATE_KEYS = new Set(['toll','injured','arrests','rescued','cause','decision','denial',
+  'probe','accountability','casualties','compensation','impact','licensing']);
+
+function classify(item, cluster) {
+  if (!cluster) return { type:'NEW', label:'New story', newKeys:[...item.claimKeys], note:'No existing cluster matched this arrival.' };
+
+  const held = cluster.claimIndex;
+  const newKeys = [];
+  const changed = [];
+  for (const c of item.claims) {
+    if (!held.has(c.key)) newKeys.push(c.key);
+    else {
+      const existing = held.get(c.key);
+      const differs = ![...existing.values].includes(c.value);
+      if (differs) changed.push(c.key);
+    }
+  }
+
+  if (item.flags.includes('correction'))
+    return { type:'CORRECTION', label:'Correction', newKeys, changed,
+             note:'Wire correction. Any published copy carrying the earlier figure needs updating now.' };
+
+  const isRival = item.src.kind === 'competitor';
+
+  if (!newKeys.length && !changed.length)
+    return { type:'DUPLICATE', label:'Duplicate', newKeys, changed,
+             note: isRival ? 'Same facts we already hold. No enrichment here.'
+                           : 'Adds no claim the cluster does not already hold. Collapsed.' };
+
+  if (isRival) {
+    const gained = [...new Set([...newKeys, ...changed])];
+    return { type:'ENRICH', label:'Rival has more', newKeys, changed,
+             note:`${item.src.label} is carrying ${gained.join(', ')} and we are not. Needs our own confirmation before use.` };
+  }
+
+  const stateful = [...newKeys, ...changed].some(k => STATE_KEYS.has(k));
+
+  /* A tier-4 account introducing a casualty figure nobody else
+     has is not a development. It is a claim to check. */
+  if (stateful && item.src.tier >= 4) {
+    const co = corroboration(cluster);
+    if (!co.official || co.count < 2)
+      return { type:'UNVERIFIED', label:'Unverified claim', newKeys, changed,
+               note:`Open-social account is first with ${[...new Set([...newKeys,...changed])].join(', ')}. Nothing else on the tape carries it.` };
+  }
+  if (stateful)
+    return { type:'DEVELOPMENT', label:'New development', newKeys, changed,
+             note:`Changes the state of the story: ${[...new Set([...newKeys, ...changed])].join(', ')}.` };
+
+  return { type:'UPDATE', label:'Update', newKeys, changed,
+           note:`Adds detail to a story we already hold: ${newKeys.join(', ') || changed.join(', ')}.` };
+}
+
+/* ---------------------------------------------------------
+   5 · The graph
+--------------------------------------------------------- */
+function newGraph() {
+  return { clusters: [], seq: 1, arrivals: [], overrides: [], beatBias: {}, archive: [] };
+}
+
+/* Our own back catalogue is not part of the live event graph.
+   It hangs off clusters as context and as the answer to
+   "have we already published this?". Folding a two-year-old
+   investigation into a breaking event as if it were another
+   sighting is a real editorial error, not a cosmetic one. */
+function loadArchive(graph, rows) {
+  graph.archive = rows.map(prepare);
+}
+
+function attachArchive(graph, cluster) {
+  const rel = [];
+  for (const a of graph.archive) {
+    let best = 0;
+    for (const m of cluster.items) {
+      if (overlapCount(a.entitySet, m.entitySet) < 2) continue;
+      const s = 0.34 * jaccard(a.tokens, m.tokens) + 0.48 * jaccard(a.entitySet, m.entitySet) + 0.18 * jaccard(a.claimKeys, m.claimKeys);
+      if (s > best) best = s;
+    }
+    if (best >= RELATED_FLOOR) rel.push({ item: a, score: best });
+  }
+  rel.sort((x, y) => y.score - x.score);
+  cluster.related = rel;
+
+  /* Similarity alone is not coverage. An old audit piece about
+     the same building is context; it is not us having filed on
+     today's collapse. Require a shared event-defining claim. */
+  const evt = cluster.claimIndex.get('event');
+  cluster.published = rel.filter(r => {
+    if (r.score < COVERED_FLOOR) return false;
+    if (!evt) return false;
+    return r.item.claims.some(c => c.key === 'event' && evt.values.has(c.value));
+  });
+}
+
+function reindex(cluster) {
+  const idx = new Map();
+  for (const it of cluster.items) {
+    for (const c of it.claims) {
+      if (!idx.has(c.key)) idx.set(c.key, { values:new Set(), texts:[], sources:new Set() });
+      const e = idx.get(c.key);
+      e.values.add(c.value);
+      const rec = { text:c.text, itemId:it.id, source:it.source, value:c.value };
+      for (const k in c) if (k.indexOf('text_') === 0) rec[k] = c[k];  // carry hi/bn/ml phrasings
+      e.texts.push(rec);
+      e.sources.add(it.source);
+    }
+  }
+  cluster.claimIndex = idx;
+}
+
+function ingest(graph, rawItem, now) {
+  const item = prepare(rawItem);
+  item.arrivedAt = now;
+
+  let best = null, bestScore = 0, on = null;
+  for (const c of graph.clusters) {
+    const m = matchScore(item, c);
+    if (m.score > bestScore) { bestScore = m.score; best = c; on = m.on; }
+  }
+  const matched = bestScore >= MATCH_FLOOR ? best : null;
+  const verdict = classify(item, matched);
+  verdict.similarity = bestScore;
+  verdict.matchedOn = on;
+  item.verdict = verdict;
+
+  let cluster = matched;
+  if (!cluster) {
+    cluster = {
+      id: 'C' + (graph.seq++),
+      title: rawItem.headline,
+      beat: rawItem.beat,
+      items: [],
+      firstSeen: now,
+      lastSeen: now,
+      claimIndex: new Map(),
+      status: 'open',
+      owner: null,
+      routingOverride: null,
+      log: []
+    };
+    graph.clusters.push(cluster);
+  }
+
+  cluster.items.push(item);
+  cluster.lastSeen = now;
+  /* Wire and official copy carry publishable headlines. A
+     reporter's filing note does not; it is an internal memo. */
+  const labelWorthy = ['wire','official'].includes(item.src.kind)
+    && rawItem.lang === 'en'
+    && !item.flags.includes('embargo') && !item.flags.includes('correction');
+  const advances = verdict.type === 'DEVELOPMENT' || verdict.type === 'CORRECTION';
+  if (labelWorthy && (!cluster.titleLocked || advances)) {
+    cluster.title = rawItem.headline.replace(/^(CORRECTED|EMBARGOED):\s*/, '');
+    cluster.titleLocked = true;
+  }
+  reindex(cluster);
+  attachArchive(graph, cluster);
+  graph.arrivals.push({ item, cluster, verdict, at: now });
+  return { item, cluster, verdict };
+}
+
+/* ---------------------------------------------------------
+   5b · Whose number wins
+   Claim values arrive in the order they were posted, and the
+   loudest account is often first. Any figure that reaches copy
+   or a headline has to come from the most trustworthy source
+   carrying it, with a wire correction outranking everything.
+--------------------------------------------------------- */
+function bestValue(cluster, key) {
+  const entry = cluster.claimIndex.get(key);
+  if (!entry) return null;
+  let best = null, bestRank = -1;
+  for (const t of entry.texts) {
+    const it = cluster.items.find(x => x.id === t.itemId);
+    if (!it) continue;
+    if (!USABLE.has(it.src.kind)) continue;
+    const rank = it.src.trust
+      + (it.flags.includes('correction') ? 0.5 : 0)
+      + (it.src.kind === 'reporter' ? 0.08 : 0)
+      + it.arrivedAt / 1e7;
+    if (rank > bestRank) { bestRank = rank; best = { value: t.value, text: t.text, itemId: t.itemId, source: t.source }; }
+  }
+  if (best) return best;
+  const t = entry.texts[entry.texts.length - 1];
+  return { value: t.value, text: t.text, itemId: t.itemId, source: t.source, unusable: true };
+}
+
+/* ---------------------------------------------------------
+   6 · Independent corroboration
+   Two wires running the same PTI-derived line are not two
+   sources. Count organisations, and count social separately.
+--------------------------------------------------------- */
+function corroboration(cluster) {
+  const orgs = new Set(), social = new Set(), rivals = new Set();
+  let ownStaff = false, official = false;
+  for (const it of cluster.items) {
+    if (it.src.kind === 'trends') { continue; }   // demand-side signal, not a source
+    if (it.src.kind === 'social') { social.add(it.source); continue; }
+    if (it.src.kind === 'competitor') { rivals.add(it.source); continue; }
+    orgs.add(it.source);
+    if (it.src.kind === 'reporter' || it.src.kind === 'stringer') ownStaff = true;
+    if (it.src.kind === 'official') official = true;
+  }
+  return { orgs:[...orgs], social:[...social], rivals:[...rivals], ownStaff, official, count:orgs.size };
+}
+
+/* ---------------------------------------------------------
+   7 · Importance and urgency, kept apart
+   A cabinet reshuffle is important and not urgent. A viral
+   clip is urgent and not important. Collapsing them into one
+   number is how triage tools end up ignored.
+--------------------------------------------------------- */
+const BEAT_WEIGHT = { metro:0.92, politics:0.85, business:0.80, world:0.62, sport:0.40, education:0.22, entertainment:0.35 };
+const IMPACT_KEYS = { toll:1, casualties:0.5, injured:0.55, trapped:0.7, occupants:0.5,
+  arrests:0.35, compensation:0.4, impact:0.5, decision:0.7, crr:0.6 };
+
+function magnitude(cluster) {
+  let m = 0, evidence = [];
+  for (const [key, entry] of cluster.claimIndex) {
+    const w = IMPACT_KEYS[key];
+    if (!w) continue;
+    const bv = bestValue(cluster, key);
+    const num = bv ? parseFloat(String(bv.value).replace(/[^0-9.]/g, '')) : NaN;
+    const n = isNaN(num) ? 0 : num;
+    const scaled = n > 0 ? Math.min(1, Math.log10(n + 1) / 2.2) : 0.45;
+    const c = w * scaled;
+    if (c > 0) evidence.push({ key, value: bv ? bv.value : [...entry.values][0], contribution:c });
+    m = Math.max(m, c);
+  }
+  return { value: Math.min(1, m), evidence };
+}
+
+const IMPACT_LABEL = { toll:'death toll', injured:'injured', rescued:'rescued', trapped:'people trapped',
+  casualties:'casualties', missing:'missing', growth:'growth forecast', crr:'CRR change',
+  decision:'policy decision', magnitude:'scale' };
+const impactLabel = k => IMPACT_LABEL[k] || k;
+
+function importance(cluster, graph) {
+  const co = corroboration(cluster);
+  const authority = Math.max(0, ...cluster.items.map(i => i.src.trust));
+  const corrob = Math.min(1, co.count / 3);
+  const mag = magnitude(cluster);
+  const prox = BEAT_WEIGHT[cluster.beat] ?? 0.5;
+  const totalKeys = cluster.claimIndex.size;
+  const novelty = Math.min(1, totalKeys / 8);
+  const bias = (graph && graph.beatBias[cluster.beat]) || 0;
+
+  const parts = [
+    { name:'Source authority',  w:0.20, v:authority,  say:`strongest source: ${cluster.items.reduce((a,b)=>b.src.trust>a.src.trust?b:a).src.label}` },
+    { name:'Corroboration',     w:0.25, v:corrob,     say:`${co.count} independent ${co.count===1?'organisation':'organisations'} carrying it` },
+    { name:'Human impact',      w:0.30, v:mag.value,  say: mag.evidence.length ? `${cap(impactLabel(mag.evidence[0].key))}: ${mag.evidence[0].value}` : 'no hard impact figure yet' },
+    { name:'Beat weight',       w:0.15, v:prox,       say:`${cap(cluster.beat)} desk` },
+    { name:'Claim depth',       w:0.10, v:novelty,    say:`${totalKeys} distinct facts on the story` }
+  ];
+  let score = parts.reduce((s,p) => s + p.w * p.v, 0) + bias;
+  score = Math.max(0, Math.min(1, score));
+  return { value: Math.round(score * 100), parts, magnitude: mag, corroboration: co, biased: bias !== 0 };
+}
+
+function urgency(cluster, now, graph) {
+  const win = 240;
+  const recent = cluster.items.filter(i => now - i.arrivedAt <= win);
+  const recentOrgs = new Set(recent.filter(i => i.src.kind !== 'social').map(i => i.source));
+  const velocity = Math.min(1, recentOrgs.size / 3);
+
+  const half = cluster.items.filter(i => now - i.arrivedAt <= win/2)
+    .reduce((s,i) => s + i.socialVolume, 0);
+  const older = cluster.items.filter(i => now - i.arrivedAt > win/2 && now - i.arrivedAt <= win)
+    .reduce((s,i) => s + i.socialVolume, 0);
+  const socialLift = Math.min(1, (half - older) / 3000 + (half > 0 ? 0.15 : 0));
+
+  const ours = (cluster.published || []);
+  const rivalPub = cluster.items.filter(i => i.src.kind === 'competitor')
+    .sort((a,b) => a.arrivedAt - b.arrivedAt)[0];
+  let compClock = 0, compSay = 'no rival has filed';
+  if (rivalPub && !ours.length) {
+    const mins = (now - rivalPub.arrivedAt) / 60;
+    compClock = Math.min(1, 0.35 + mins / 12);
+    compSay = `${rivalPub.src.label} filed ${fmtMin(mins)} ago, we have nothing out`;
+  } else if (rivalPub && ours.length) {
+    compSay = 'we already have copy live on this';
+    compClock = 0.15;
+  }
+
+  const recentCorrection = cluster.items.some(i =>
+    i.flags && i.flags.includes('correction') && (now - i.arrivedAt) <= 300);
+  const live = cluster.items.some(i => i.assets.live) ? 1 : 0;
+  const developing = cluster.claimIndex.has('toll') || cluster.claimIndex.has('trapped') || cluster.claimIndex.has('rescued');
+  const settled = cluster.claimIndex.has('decision') && !developing;
+  const perish = recentCorrection ? 1 : live ? 1 : developing ? 0.85
+    : settled ? 0.2 : (cluster.beat === 'education' ? 0.15 : 0.5);
+
+  /* A settled decision also stops accruing urgency from the last
+     burst of near-identical wire takes. The story is done moving. */
+  const velEff = settled ? Math.min(velocity, 0.3) : velocity;
+
+  const parts = [
+    { name:'New sources arriving', w:0.35, v: Math.max(velEff, recentCorrection ? 0.85 : 0),
+      say: recentCorrection ? 'a correction just landed — published copy may be wrong'
+        : `${recentOrgs.size} new ${recentOrgs.size===1?'source':'sources'} in the last ${win/60} min` },
+    { name:'Attention climbing',   w:0.20, v:Math.max(0,socialLift), say: half ? `~${Math.round(half)} posts in the last ${win/120} min` : 'no rise in search or social' },
+    { name:'Rival clock',          w:0.30, v:compClock,  say: compSay },
+    { name:'Goes stale fast',      w:0.15, v: recentCorrection ? 1 : perish,
+      say: recentCorrection ? 'correction must reach readers now' : live ? 'live, unfolding event' : developing ? 'figures still moving' : 'holds its value' }
+  ];
+  const score = Math.max(0, Math.min(1, parts.reduce((s,p) => s + p.w * p.v, 0)));
+  return { value: Math.round(score * 100), parts, rivalFirst: rivalPub || null, weOut: ours.length > 0 };
+}
+
+function fmtMin(m) {
+  if (m < 1) return Math.round(m * 60) + 's';
+  return Math.round(m) + ' min';
+}
+
+/* The one line an editor actually reads. Built from the two
+   highest contributors on each axis, never generic. */
+function why(imp, urg) {
+  const top = arr => arr.slice().sort((a,b) => b.w*b.v - a.w*a.v).filter(p => p.v > 0.15).slice(0,2);
+  const bits = [...top(urg.parts), ...top(imp.parts)].map(p => p.say);
+  const seen = new Set(); const out = [];
+  for (const b of bits) { if (!seen.has(b)) { seen.add(b); out.push(b); } }
+  return out.slice(0,3).join('. ') + '.';
+}
+
+/* ---------------------------------------------------------
+   8 · Credibility
+   Never returns a verdict on truth. Returns what is thin,
+   and the single call that would settle it.
+--------------------------------------------------------- */
+const HEDGES = /\b(reportedly|reported to|sources say|it is said|claimed|allegedly|feared|unconfirmed|kaha ja raha|said to be|apparently)\b/gi;
+const WHO_TO_ASK = {
+  'delhi police':'Delhi Police PRO', 'dwarka':'DCP Dwarka', 'namma metro':'BMRCL corporate communications',
+  'indian railways':'Divisional Railway Manager, Itarsi', 'derailment':'West Central Railway CPRO',
+  'spurious liquor':'district excise officer', 'madhya pradesh':'Bhopal district collectorate (the local administration)',
+  'reserve bank of india':'RBI communications', 'malaysia':'Malaysian civil aviation authority',
+  'dmk':'DMK spokesperson', 'vijay':'TVK media cell'
+};
+
+function credibility(cluster) {
+  const co = corroboration(cluster);
+  const authority = Math.max(0, ...cluster.items.map(i => i.src.trust));
+  const risks = [];
+
+  const bodyAll = cluster.items.map(i => i.headline + ' ' + i.body).join(' ');
+  const words = bodyAll.split(/\s+/).length;
+  const hedgeHits = (bodyAll.match(HEDGES) || []).length;
+  const hedgeDensity = words ? (hedgeHits / words) * 100 : 0;
+
+  const contradictions = [];
+  for (const [key, entry] of cluster.claimIndex) {
+    if (entry.values.size > 1 && (STATE_KEYS.has(key) || key === 'toll')) {
+      const byVal = {};
+      for (const t of entry.texts) (byVal[t.value] ||= []).push(t.source);
+      contradictions.push({ key, byVal });
+    }
+  }
+
+  const socialOnly = co.count === 0 && co.social.length > 0;
+  const rivalsOnly = co.count === 0 && co.rivals.length > 0;
+  const youngAccounts = cluster.items.filter(i => i.authorMeta && i.authorMeta.accountAgeDays < 30);
+  const recycled = cluster.items.filter(i => i.flags.includes('recycled-media'));
+  const denial = cluster.claimIndex.has('denial');
+  const provenanceDoubt = cluster.claimIndex.has('provenance_doubt');
+
+  const mag = magnitude(cluster).value;
+  if (mag > 0.5 && co.count < 2) risks.push({ level:'high', code:'single-source', text:`High-impact claim resting on ${co.count} independent organisation${co.count===1?'':'s'}.` });
+  if (socialOnly) risks.push({ level:'high', code:'social-only', text: rivalsOnly
+    ? `No wire, no official and nobody of ours. Only open social and a ${co.rivals.map(r=>SOURCES[r].label).join('/')} pickup.`
+    : 'Nothing but open social so far. No wire, no official, nobody of ours.' });
+  for (const a of youngAccounts) risks.push({ level:'high', code:'young-account', text:`${a.id} posted from an account ${a.authorMeta.accountAgeDays} days old with ${a.authorMeta.priorPosts} prior posts and ${a.authorMeta.followers.toLocaleString('en-IN')} followers.` });
+  for (const r of recycled) risks.push({ level:'high', code:'recycled', text:`Attached media on ${r.id} matches footage already in circulation from an earlier event.` });
+  if (provenanceDoubt) risks.push({ level:'high', code:'provenance', text:'The same clip is circulating with conflicting captions and dates.' });
+  if (denial) risks.push({ level:'high', code:'denial', text:'The named authority has denied the central claim on record.' });
+  for (const c of contradictions) {
+    const desc = Object.entries(c.byVal).map(([v,s]) => `${v} (${s.map(x => SOURCES[x]?.label || x).join(', ')})`).join(' vs ');
+    risks.push({ level:'medium', code:'contradiction', text:`Sources disagree on ${c.key}: ${desc}.` });
+  }
+  if (hedgeDensity > 1.2) risks.push({ level:'low', code:'hedging', text:`Hedging language is dense across the tape (${hedgeDensity.toFixed(1)} per 100 words), so most of this is still attributed rather than confirmed.` });
+  const hardNews = ['metro','politics','business','world'].includes(cluster.beat);
+  const isLocationEvent = cluster.claimIndex.has('location') || cluster.claimIndex.has('event');
+  if (!co.official && hardNews) risks.push({ level:'medium', code:'no-official', text:'No on-record statement from the named authority yet.' });
+  if (!co.ownStaff && hardNews && isLocationEvent) risks.push({ level:'low', code:'no-own', text:'Nobody of ours has been at the location.' });
+  if (cluster.items.some(i => i.flags.includes('embargo'))) risks.push({ level:'low', code:'embargo', text:'Cluster contains embargoed copy. Check the clock before anything goes out.' });
+
+  const highs = risks.filter(r => r.level === 'high').length;
+  const meds  = risks.filter(r => r.level === 'medium').length;
+
+  /* Corroboration absorbs item-level noise. Once five
+     organisations and the police are on a story, one throwaway
+     account attaching old footage is a bad arrival to exclude,
+     not a reason to distrust the cluster. */
+  const strength = Math.min(1, co.count / 3) * (co.official ? 1 : 0.6);
+  let confidence = 100 * (0.40 * authority + 0.40 * Math.min(1, co.count / 3) + 0.20 * (co.official ? 1 : 0.2));
+  confidence -= highs * 22 * (1 - strength) + meds * 7;
+  if (denial) confidence = Math.min(confidence, 12);
+  confidence = Math.max(3, Math.min(97, Math.round(confidence)));
+
+  const band = confidence >= 70 ? 'Confirmed' : confidence >= 40 ? 'Partly confirmed' : 'Unverified';
+
+  /* The single call that would settle it. Named, or nothing.
+     A generic suggestion is noise an editor learns to skip. */
+  let oneCall = null;
+  const ents = new Set();
+  cluster.items.forEach(i => i.entitySet.forEach(e => ents.add(e)));
+  for (const e of ents) if (WHO_TO_ASK[e]) { oneCall = WHO_TO_ASK[e]; break; }
+  if (co.official && oneCall) oneCall = null;
+  if (!oneCall && !co.ownStaff && hardNews && isLocationEvent && confidence < 80)
+    oneCall = 'our nearest stringer, for an independent look at the site';
+
+  const excludeItems = cluster.items.filter(i =>
+    i.flags.includes('recycled-media') ||
+    (i.authorMeta && i.authorMeta.accountAgeDays < 30) ||
+    (i.src.tier >= 4 && i.verdict && i.verdict.type === 'UNVERIFIED')
+  ).map(i => i.id);
+
+  const CHECKABLE = new Set(['recycled','young-account','provenance','denial']);
+  const hardSignals = risks.filter(r => CHECKABLE.has(r.code));
+
+  return { confidence, band, risks, contradictions, oneCall,
+           corroboration: co, hedgeDensity, excludeItems, hardSignals };
+}
+
+const USABLE = new Set(['wire','reporter','stringer','official','itg']);
+
+/* ---------------------------------------------------------
+   9 · Destination
+   ITG is not one outlet. Getting the brand and the language
+   right matters more than the digital-or-TV binary.
+--------------------------------------------------------- */
+const BRANDS = {
+  aajtak:      { name:'Aaj Tak',          medium:'TV + digital', lang:'Hindi' },
+  itTv:        { name:'India Today TV',   medium:'TV',           lang:'English' },
+  itDigital:   { name:'India Today',      medium:'Digital',      lang:'English' },
+  businessToday:{name:'Business Today',   medium:'Digital + TV', lang:'English' },
+  lallantop:   { name:'Lallantop',        medium:'Digital video',lang:'Hindi' }
+};
+
+function routing(cluster, imp, urg) {
+  if (cluster.routingOverride) return { ...cluster.routingOverride, overridden:true };
+
+  const airable = cluster.items.filter(i => USABLE.has(i.src.kind));
+  const video = airable.reduce((s,i) => s + (i.assets.video||0), 0);
+  const photo = airable.reduce((s,i) => s + (i.assets.photo||0), 0);
+  const live  = cluster.items.some(i => i.assets.live);
+  const langs = new Set(cluster.items.map(i => i.lang));
+  const hasHindi = langs.has('hi');
+  const hasTamil = langs.has('ta');
+
+  const movingFigures = cluster.claimIndex.has('toll') || cluster.claimIndex.has('trapped') || cluster.claimIndex.has('rescued');
+  const casualtyEvent = movingFigures && ['metro','world'].includes(cluster.beat);
+
+  const tvParts = [
+    { name:'moving pictures exist', w:0.35, v: Math.min(1, video/2), say: video ? `${video} video ${video===1?'file':'files'} on the tape` : 'no video yet' },
+    { name:'live shape',            w:0.25, v: live ? 1 : (movingFigures ? 0.8 : (urg.value/100)*0.6), say: live ? 'live event' : movingFigures ? 'figures still moving, rolling coverage shape' : 'not a rolling story' },
+    { name:'urgency',               w:0.25, v: urg.value/100, say:`urgency ${urg.value}` },
+    { name:'visual event',          w:0.15, v: casualtyEvent ? 1 : (['metro','world','sport'].includes(cluster.beat) ? 0.9 : 0.35), say: casualtyEvent ? `casualty event on the ${cluster.beat} desk` : `${cluster.beat} story` }
+  ];
+  const digParts = [
+    { name:'search and social pull',w:0.28, v: Math.min(1, cluster.items.reduce((s,i)=>s+i.socialVolume,0)/8000), say:'audience pull on this topic' },
+    { name:'claim depth',           w:0.24, v: Math.min(1, cluster.claimIndex.size/7), say:`${cluster.claimIndex.size} claims to lay out` },
+    { name:'importance',            w:0.28, v: imp.value/100, say:`importance ${imp.value}` },
+    { name:'explainer shape',       w:0.20, v: ['business','education','politics'].includes(cluster.beat) ? 0.9 : 0.5, say: ['business','education','politics'].includes(cluster.beat) ? 'benefits from an explainer' : 'straight news shape' }
+  ];
+  const tv  = tvParts.reduce((s,p)=>s+p.w*p.v,0);
+  const dig = digParts.reduce((s,p)=>s+p.w*p.v,0);
+
+  let primary, secondary, note = null;
+  if (cluster.beat === 'business') {
+    primary = BRANDS.businessToday;
+    secondary = live ? BRANDS.itTv : BRANDS.itDigital;
+  } else if (hasHindi && tv > 0.5) {
+    primary = BRANDS.aajtak;
+    secondary = BRANDS.itDigital;
+  } else if (tv > dig) {
+    primary = BRANDS.itTv;
+    secondary = hasHindi ? BRANDS.aajtak : BRANDS.itDigital;
+  } else {
+    primary = BRANDS.itDigital;
+    secondary = hasHindi ? BRANDS.aajtak : BRANDS.itTv;
+  }
+  if (cluster.beat === 'politics' && dig > 0.55 && video) secondary = BRANDS.lallantop;
+  if (hasTamil) note = 'Tamil-origin story with no Tamil property in the group. English digital plus an Aaj Tak package with subtitles is the closest fit.';
+  if (photo === 0 && video === 0) note = (note ? note + ' ' : '') + 'No pictures on the tape. TV cannot lead with this until a crew or a stringer feed lands.';
+
+  const decision = tv > dig ? 'TV first, digital alongside'
+                 : (tv > 0.45 ? 'Digital first, TV package to follow' : 'Digital only');
+
+  return { decision, primary, secondary, tv:Math.round(tv*100), dig:Math.round(dig*100), tvParts, digParts, note, overridden:false };
+}
+
+function recordOverride(graph, cluster, chosen, reason) {
+  cluster.routingOverride = chosen;
+  graph.overrides.push({ cluster: cluster.id, beat: cluster.beat, chosen: chosen.decision, reason, at: Date.now() });
+  const same = graph.overrides.filter(o => o.beat === cluster.beat).length;
+  if (same >= 2) graph.beatBias[cluster.beat] = Math.min(0.08, (graph.beatBias[cluster.beat] || 0) + 0.02);
+}
+
+/* ---------------------------------------------------------
+   10 · Claim ledger and the coverage gap
+   Story count is a vanity metric. The question a desk can act
+   on is which facts a rival is carrying that we are not.
+--------------------------------------------------------- */
+function ledger(cluster) {
+  const cols = [];
+  const push = k => { if (!cols.includes(k)) cols.push(k); };
+  for (const it of cluster.items) push(it.source);
+  const rows = [];
+  for (const [key, entry] of cluster.claimIndex) {
+    const row = { key, values:[...entry.values], by:{} };
+    for (const t of entry.texts) row.by[t.source] = t.value;
+    rows.push(row);
+  }
+  const oursHave = new Set();
+  cluster.items.filter(i => ['itg','reporter','stringer'].includes(i.src.kind))
+    .forEach(i => i.claims.forEach(c => oursHave.add(c.key)));
+  const wireHave = new Set();
+  cluster.items.filter(i => i.src.kind === 'wire' || i.src.kind === 'official')
+    .forEach(i => i.claims.forEach(c => wireHave.add(c.key)));
+
+  const gaps = [];
+  for (const row of rows) {
+    const rivals = Object.keys(row.by).filter(s => SOURCES[s]?.kind === 'competitor');
+    const weHaveIt = oursHave.has(row.key) || wireHave.has(row.key);
+    if (rivals.length && !weHaveIt) {
+      gaps.push({ key: row.key, value: row.by[rivals[0]], who: rivals.map(r => SOURCES[r].label) });
+    }
+  }
+  return { cols, rows, gaps, oursHave:[...oursHave], wireHave:[...wireHave] };
+}
+
+/* ---------------------------------------------------------
+   11 · Grounded draft
+   Every sentence carries the id of the item it came from. A
+   sentence with no source does not get written. Rival copy is
+   never drafted from, only listed as something to confirm.
+--------------------------------------------------------- */
+function draft(cluster, lang) {
+  lang = lang || 'en';
+  const langKey = 'text_' + lang;
+  let missing = 0, total = 0;
+  const localize = t => {                       // model phrases the same sourced fact in the chosen language
+    total++;
+    if (lang === 'en') return t.text;
+    if (t[langKey]) return t[langKey];
+    missing++; return t.text;                   // fall back to source language, counted as "not yet phrased"
+  };
+  const usable = cluster.items.filter(i => USABLE.has(i.src.kind));
+  const rank = i => i.src.trust + (i.src.kind === 'reporter' ? 0.1 : 0) + (i.flags.includes('correction') ? 0.2 : 0);
+  const order = ['toll','event','location','injured','rescued','trapped','cause','decision','crr','impact',
+                 'response','official_quote','official_presence','denial','arrests','probe','compensation',
+                 'accountability','notice_history','licensing','human_detail','structure_use','casualties','reaction','growth'];
+
+  const picked = new Map();
+  for (const key of order) {
+    const entry = cluster.claimIndex.get(key);
+    if (!entry) continue;
+    const candidates = entry.texts.filter(t => USABLE.has(SOURCES[t.source]?.kind));
+    if (!candidates.length) continue;
+    candidates.sort((a,b) => {
+      const ia = cluster.items.find(x => x.id === a.itemId), ib = cluster.items.find(x => x.id === b.itemId);
+      return rank(ib) - rank(ia);
+    });
+    picked.set(key, candidates[0]);
+  }
+
+  /* "Three feared trapped" is not wrong, it is over. Once a
+     toll lands, the earlier figure is history, not a sentence. */
+  const SUPERSEDES = { toll:['trapped'], denial:['event','toll','provenance_doubt'], decision:['expectation'] };
+  for (const [winner, losers] of Object.entries(SUPERSEDES))
+    if (picked.has(winner)) losers.forEach(l => picked.delete(l));
+
+  const sentences = [];
+  for (const [key, t] of picked) {
+    const item = cluster.items.find(x => x.id === t.itemId);
+    sentences.push({
+      text: localize(t),
+      textEn: t.text,
+      claimKey: key,
+      itemId: t.itemId,
+      source: t.source,
+      sourceLabel: item.src.label,
+      rights: item.src.rights,
+      snippet: item.body
+    });
+  }
+
+  /* Attribution line, because a draft that does not say where
+     it came from is not publishable copy. */
+  const orgs = [...new Set(usable.filter(i => i.src.kind === 'wire').map(i => i.src.label))];
+  if (orgs.length) {
+    total++;
+    const attrText = lang === 'hi' ? `विवरण ${orgs.join(' और ')} ने रिपोर्ट किया।`
+                                    : `Details were reported by ${orgs.join(' and ')}.`;
+    if (lang !== 'en' && lang !== 'hi') missing++;
+    sentences.push({ text:attrText, textEn:`Details were reported by ${orgs.join(' and ')}.`, claimKey:'attribution',
+      itemId: usable.find(i => i.src.kind === 'wire').id, source:'—', sourceLabel:'attribution', rights:'own',
+      snippet:'Generated attribution line, required by the wire terms attached to this cluster.' });
+  }
+
+  /* Our own back catalogue, as a context sentence plus a real
+     internal link. This is what the graph buys us for free. */
+  const arch = (cluster.related || []).map(r => r.item).filter(i => i.url).slice(0, 2);
+  for (const a of arch) {
+    const c = a.claims[0];
+    sentences.push({ text: localize(c), textEn:c.text, claimKey:'context', itemId:a.id, source:a.source,
+      sourceLabel:`${a.brand} archive`, rights:'own', snippet:a.body, internal:a.url, internalTitle:a.headline });
+  }
+
+  const cred = credibility(cluster);
+  const holdBack = [];
+  if (cred.contradictions.length)
+    holdBack.push(`Figures are still in dispute on ${cred.contradictions.map(c=>c.key).join(', ')}. Carry the wire figure only.`);
+  const lg = ledger(cluster);
+  for (const g of lg.gaps)
+    holdBack.push(`${g.who.join('/')} are carrying ${g.key} as "${g.value}". Not in the draft. Confirm independently before adding.`);
+
+  /* Editorial gates. These are blocks, not advisories. */
+  const gates = [];
+  if (cred.confidence < 40) gates.push('Confidence is below the publish floor. Desk head sign-off required.');
+  if (cluster.claimIndex.has('denial')) gates.push('The named authority has denied the central claim. This cannot run as fact.');
+  if (cluster.claimIndex.has('accountability') || cluster.claimIndex.has('arrests'))
+    gates.push('Names an accused or an absconding party. Legal read required before publish.');
+  if (cluster.items.some(i => i.flags.includes('embargo')))
+    gates.push('Embargoed material in cluster. Publish is locked until the embargo lifts.');
+  const noVerbatim = cluster.items.filter(i => i.src.rights === 'no-verbatim').map(i => i.src.label);
+  if (noVerbatim.length) gates.push(`${[...new Set(noVerbatim)].join(', ')} copy cannot be used verbatim. Every sentence sourced there has been rewritten.`);
+
+  const seo = seoFor(cluster, sentences);
+  const checklist = checklistFor(cluster, cred);
+
+  return { sentences, holdBack, gates, seo, checklist, confidence: cred.confidence, band: cred.band,
+           lang, langComplete: lang === 'en' || missing === 0 };
+}
+
+function titleCaseKeep(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+
+function seoFor(cluster, sentences) {
+  /* Tags come from copy we can stand behind, not from every
+     passer-by who tweeted near the story. */
+  const ents = [];
+  for (const it of cluster.items) {
+    if (!USABLE.has(it.src.kind)) continue;
+    for (const e of (it.entities || [])) if (!ents.includes(e)) ents.push(e);
+  }
+  const place = ents.find(e => /satya niketan|dwarka|bengaluru|itarsi|madurai/i.test(e))
+             || ents.find(e => /delhi|mumbai|madhya|malaysia|chennai/i.test(e)) || ents[0] || '';
+  const tollBest = bestValue(cluster, 'toll');
+  const toll = tollBest && !tollBest.unusable ? String(tollBest.value).replace(/[^0-9]/g,'') : null;
+
+  const evtBest = bestValue(cluster, 'event');
+  const key = evtBest && !evtBest.unusable ? evtBest.value : cluster.beat;
+  const seoHeadline = titleCaseKeep(`${place} ${key}${toll ? `: ${toll} dead` : ''}`.replace(/\s+/g,' ').trim()).slice(0, 65);
+  const display = cluster.title.length > 90 ? cluster.title.slice(0, 87) + '…' : cluster.title;
+  const social = toll
+    ? `${toll} dead in ${place} ${key}. What we know so far.`
+    : `${titleCaseKeep(key)} in ${place}. Here is what we know.`;
+  const slug = seoHeadline.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,70);
+  const metaDesc = sentences.slice(0,2).map(s => s.text).join(' ').slice(0, 155);
+  const photoItem = cluster.items.find(i => (i.assets.photo || 0) > 0 && USABLE.has(i.src.kind));
+  const altText = photoItem ? `${place}: ${key} site, photographed by ${photoItem.src.label}` : null;
+  const internal = (cluster.related || []).map(r => r.item).filter(i => i.url)
+    .slice(0, 3).map(i => ({ title:i.headline, url:i.url }));
+
+  const jsonld = {
+    '@context':'https://schema.org', '@type':'NewsArticle',
+    headline: seoHeadline,
+    datePublished: new Date().toISOString(),
+    articleSection: cluster.beat,
+    about: ents.slice(0,6).map(e => ({ '@type':'Thing', name:e })),
+    publisher: { '@type':'Organization', name:'India Today Group' }
+  };
+
+  const video = cluster.items.filter(i => USABLE.has(i.src.kind)).reduce((s,i)=>s+(i.assets.video||0),0);
+  const placeUp = place ? place.toUpperCase() : '';
+  const tvHeadline = (toll ? `${placeUp}: ${toll} DEAD`
+      : `${placeUp}${placeUp?': ':''}${titleCaseKeep(key).toUpperCase()}`).replace(/\s+/g,' ').trim().slice(0,44);
+  const ticker = (toll ? `${toll} DEAD IN ${placeUp} ${String(key).toUpperCase()}`
+      : `${placeUp} ${String(key).toUpperCase()}`).replace(/\s+/g,' ').trim().slice(0,96);
+  const tv = { headline: tvHeadline, ticker, video };
+
+  return { display, seoHeadline, social, slug, metaDesc, tags:ents.slice(0,8), altText, internal, jsonld, tv };
+}
+
+function checklistFor(cluster, cred) {
+  const photo = cluster.items.filter(i => USABLE.has(i.src.kind)).reduce((s,i)=>s+(i.assets.photo||0),0);
+  const video = cluster.items.filter(i => USABLE.has(i.src.kind)).reduce((s,i)=>s+(i.assets.video||0),0);
+  const out = [];
+  out.push({ ok: photo > 0, text: photo > 0 ? `${photo} usable stills on the tape` : 'No usable still. Picture desk needed.' });
+  out.push({ ok: video > 0, text: video > 0 ? `${video} usable video ${video===1?'file':'files'}` : 'No usable video. TV cannot lead.' });
+  out.push({ ok: cred.corroboration.official, text: cred.corroboration.official ? 'On-record statement from the authority is in' : 'No on-record statement yet' });
+  out.push({ ok: cred.corroboration.ownStaff, text: cred.corroboration.ownStaff ? 'Our own reporter or stringer has filed' : 'Nobody of ours has filed' });
+  out.push({ ok: cred.corroboration.count >= 2, text: cred.corroboration.count >= 2 ? `${cred.corroboration.count} independent organisations` : 'Second independent source needed' });
+  const quote = cluster.claimIndex.has('official_quote') || cluster.items.some(i => i.src.kind === 'official');
+  out.push({ ok: quote, text: quote ? 'Quotable line available' : 'No quote we can use' });
+  return out;
+}
+
+/* ---------------------------------------------------------
+   12 · Desk assignment
+--------------------------------------------------------- */
+function suggestReporter(cluster, desk) {
+  const scored = desk.map(d => {
+    let s = 0;
+    if (d.beat === cluster.beat) s += 0.6;
+    const ents = new Set();
+    cluster.items.forEach(i => i.entitySet.forEach(e => ents.add(e)));
+    if ([...ents].some(e => e.includes(d.location.toLowerCase()))) s += 0.3;
+    s -= d.load * 0.06;
+    return { ...d, fit: s };
+  }).sort((a,b) => b.fit - a.fit);
+  return scored;
+}
+
+/* ---------------------------------------------------------
+   13 · Board state
+--------------------------------------------------------- */
+function board(graph, now) {
+  return graph.clusters.map(c => {
+    const imp = importance(c, graph);
+    const urg = urgency(c, now, graph);
+    const cred = credibility(c);
+    const rt = routing(c, imp, urg);
+    const dups = c.items.filter(i => i.verdict && i.verdict.type === 'DUPLICATE').length;
+    /* Anything this thin does not belong on a planning board
+       at all, however important it would be if it were true. */
+    const quadrant = cred.confidence < 30 ? 'hold'
+      : imp.value >= 50
+        ? (urg.value >= 50 ? 'move-now' : 'plan-it')
+        : (urg.value >= 50 ? 'watch' : 'park');
+    return { cluster:c, imp, urg, cred, routing:rt, dups, quadrant,
+             why: why(imp, urg), ledger: ledger(c) };
+  }).sort((a,b) => (b.urg.value + b.imp.value) - (a.urg.value + a.imp.value));
+}
+
+const QUADRANTS = {
+  'move-now': { label:'Move now',        blurb:'Matters and decays fast.' },
+  'plan-it':  { label:'Plan it',         blurb:'Matters, keeps. Give it a proper piece.' },
+  'watch':    { label:'Watch',           blurb:'Loud but thin. Verify before touching.' },
+  'park':     { label:'Park',            blurb:'Neither. Queue or drop.' },
+  'hold':     { label:'Hold and check',  blurb:'Too thin to act on. Verify or kill.' }
+};
+
+/* ==== api ==== */
+/* ============================================================
+   News Hunt — Input Desk
+   api.js  ·  the mock backend
+   ------------------------------------------------------------
+   Every method here is async and maps one-to-one onto a real
+   endpoint. Swapping the mock for production is a matter of
+   changing what is behind these five calls; nothing upstream
+   in the engine or the UI needs to know.
+
+     fetchSources()   -> config table: source tiers and rights
+     fetchArchive()   -> ITG CMS search over the back catalogue
+     fetchTape()      -> the ingest firehose. In production this
+                         is a websocket or a long-poll off PTI,
+                         ANI, Reuters, the social listeners and
+                         the rival scrapers. Here it is the fixed
+                         replay tape.
+     generateDraft(c) -> the ONE model call. Per cluster, at
+                         draft time, over a fixed claim set. Not
+                         per arrival. This is the cost boundary.
+     saveDraft(p)     -> CMS write. Always status:draft. There is
+                         deliberately no publish endpoint here.
+   ============================================================ */
+
+
+const latency = ms => new Promise(r => setTimeout(r, ms));
+const clone = x => (typeof structuredClone === 'function')
+  ? structuredClone(x) : JSON.parse(JSON.stringify(x));
+
+/* Which live feeds are "connected". Drives the ribbon so the
+   multi-source-ingest requirement is visible, not just claimed. */
+const FEED_REGISTRY = [
+  { id:'PTI',     label:'PTI',        status:'live' },
+  { id:'ANI',     label:'ANI',        status:'live' },
+  { id:'REUTERS', label:'Reuters',    status:'live' },
+  { id:'AFP',     label:'AFP',        status:'live' },
+  { id:'ITG',     label:'ITG filing', status:'live' },
+  { id:'OFFICIAL',label:'Official handles', status:'live' },
+  { id:'SOCIAL',  label:'Social listeners', status:'live' },
+  { id:'RIVALS',  label:'Rival wires', status:'live' },
+  { id:'GTRENDS', label:'Google Trends (IN)', status:'live' }
+];
+
+const NewsHuntAPI = {
+  async fetchFeeds() {
+    await latency(60);
+    return FEED_REGISTRY;
+  },
+
+  async fetchSources() {
+    await latency(40);
+    return SOURCES;
+  },
+
+  async fetchArchive() {
+    await latency(180);   // a CMS search is not instant
+    return clone(RAW_ARCHIVE);
+  },
+
+  async fetchTape() {
+    await latency(220);   // first firehose connection
+    return clone(RAW_ITEMS).sort((a, b) => a.t - b.t);
+  },
+
+  async fetchDesk() {
+    await latency(40);
+    return clone(RAW_DESK);
+  },
+
+  /* The model call. Kept behind a promise on purpose: it is the
+     only place latency and cost live, and the UI shows a real
+     grounding state while it runs. The grounding itself is
+     deterministic (engine.draft); a production version would
+     hand the fixed claim set to a model to phrase, never to
+     invent, which is what keeps every sentence traceable. */
+  async generateDraft(cluster, lang) {
+    await latency(650);
+    return draft(cluster, lang);
+  },
+
+  /* Live demand-side signal. In production this polls Google
+     Trends' RSS (trends.google.com/trending/rss?geo=IN). Trends
+     lag real events, so they never originate a story here — they
+     only confirm public attention on one the supply side already
+     surfaced. The fetch is attempted; offline it falls back to a
+     representative snapshot so the demo still runs. */
+  async fetchTrends() {
+    const FALLBACK = [
+      { title:'Satya Niketan', traffic:'200K+', rank:1 },
+      { title:'Delhi building collapse', traffic:'100K+', rank:2 },
+      { title:'RBI policy', traffic:'50K+', rank:3 },
+      { title:'India vs South Africa', traffic:'50K+', rank:4 },
+      { title:'Vijay Madurai rally', traffic:'20K+', rank:5 },
+      { title:'DU South Campus', traffic:'20K+', rank:6 }
+    ];
+    try {
+      const res = await fetch('https://trends.google.com/trending/rss?geo=IN', { mode:'cors' });
+      if (!res.ok) throw new Error('status ' + res.status);
+      const xml = new DOMParser().parseFromString(await res.text(), 'text/xml');
+      const items = [...xml.querySelectorAll('item')].slice(0, 8).map((n, i) => ({
+        title: n.querySelector('title')?.textContent?.trim() || '',
+        traffic: n.getElementsByTagName('ht:approx_traffic')[0]?.textContent?.trim() || '',
+        rank: i + 1
+      })).filter(t => t.title);
+      return items.length ? { live:true, items } : { live:false, items:FALLBACK };
+    } catch (e) {
+      return { live:false, items:FALLBACK, error:String(e && e.message || e) };
+    }
+  },
+
+  async saveDraft(payload) {
+    await latency(400);
+    return { ok: true, id: 'DRAFT-' + Math.floor(Math.random() * 9000 + 1000),
+             status: 'draft', receivedAt: new Date().toISOString() };
+  },
+
+  async sendToTv(payload) {
+    await latency(400);
+    return { ok: true, id: 'TV-' + Math.floor(Math.random() * 9000 + 1000),
+             status: 'queued', receivedAt: new Date().toISOString() };
+  }
+};
+
+/* ==== ui ==== */
+/* ============================================================
+   Dispatch — newsroom intelligence
+   ui.js  ·  jury-facing presentation layer
+   ------------------------------------------------------------
+   The interface IS the pipeline. Content pours in, the system
+   turns it into a few understood, ranked, publish-ready
+   stories. Two views only:
+     overview  — the pipeline, what it produced, the impact
+     story     — one story walked through all five stages
+   Every heavy computation is the tested engine; this file
+   only presents it.
+   ============================================================ */
+
+
+
+const BRAND = 'Dispatch';
+
+/* five stages, in order, colour-keyed to the pipeline */
+const STAGES = [
+  { id:'gather',     name:'Gather',   blurb:'Everything coming in, from every source.' },
+  { id:'understand', name:'Group',    blurb:'Merge the same story from many sources into one. Drop repeats.' },
+  { id:'judge',      name:'Rank',     blurb:'Score what matters, how fast it moves, and whether we can trust it.' },
+  { id:'decide',     name:'Route',    blurb:'Send each story to the right channel and language.' },
+  { id:'publish',    name:'Publish',  blurb:'A sourced draft, ready for the CMS.' }
+];
+
+const BEATS = { metro:'Metro', politics:'Politics', business:'Business',
+  world:'World', sport:'Sport', education:'Education', entertainment:'Entertainment' };
+
+/* ITG properties the desk can send a story to. Each is a real
+   destination; TV and digital are separate outputs so a story
+   can go to one, the other, or both. */
+const PROPERTIES = [
+  { id:'aajtak-tv',   brand:'Aaj Tak',               medium:'TV',      lang:'hi' },
+  { id:'aajtak-dig',  brand:'Aaj Tak',               medium:'Digital', lang:'hi' },
+  { id:'it-tv',       brand:'India Today',           medium:'TV',      lang:'en' },
+  { id:'it-dig',      brand:'India Today',           medium:'Digital', lang:'en' },
+  { id:'bangla-dig',  brand:'Aaj Tak Bangla',        medium:'Digital', lang:'bn' },
+  { id:'malayalam-dig',brand:'India Today Malayalam',medium:'Digital', lang:'ml' },
+  { id:'bt-dig',      brand:'Business Today',        medium:'Digital', lang:'en' },
+  { id:'lallantop-dig',brand:'Lallantop',            medium:'Digital', lang:'hi' }
+];
+const LANGS = [
+  { id:'en', label:'English' }, { id:'hi', label:'हिंदी' },
+  { id:'bn', label:'বাংলা' },   { id:'ml', label:'മലയാളം' }
+];
+const LANG_NAME = { en:'English', hi:'Hindi', bn:'Bengali', ml:'Malayalam' };
+
+/* Plain-language names for the internal claim keys, so the
+   desk never has to read "official_quote" or "notice_history". */
+const KEY_LABEL = {
+  toll:'the death toll', event:'what happened', location:'the exact location',
+  trapped:'how many are trapped', rescued:'how many were pulled out', injured:'the number injured',
+  cause:'the cause of the collapse', decision:'the decision', crr:'the CRR change', growth:'the growth forecast',
+  official_quote:'an on-record quote from the authority', official_presence:'official confirmation on the ground',
+  licensing:'the building\u2019s licensing status', notice_history:'the building\u2019s earlier safety notices',
+  accountability:'who is being held responsible', arrests:'the arrests', probe:'the official inquiry',
+  compensation:'the relief announced', human_detail:'the ground detail (rent, conditions)',
+  structure_use:'what the building was used for', response:'the rescue response', impact:'the impact',
+  casualties:'the casualties', reaction:'the political reaction', denial:'the official denial',
+  provenance_doubt:'doubt over the footage', attention:'the public attention', demand:'the demand made',
+  expectation:'the expectation', reaction_market:'the market reaction'
+};
+const keyLabel = k => KEY_LABEL[k] || k.replace(/_/g,' ');
+
+const VERDICT = {
+  NEW:{t:'New story',c:'v-new'}, UPDATE:{t:'Update',c:'v-upd'},
+  DEVELOPMENT:{t:'Develops the story',c:'v-dev'}, DUPLICATE:{t:'Duplicate',c:'v-dup'},
+  ENRICH:{t:'Rival has more',c:'v-gap'}, CORRECTION:{t:'Correction',c:'v-cor'},
+  UNVERIFIED:{t:'Unverified claim',c:'v-unv'}
+};
+
+/* ---------- state ---------- */
+let TAPE = [], ARCHIVE = [], DESK = [], FEEDS = [], END = 850, OPEN_AT = 850;
+
+const S = {
+  ready:false, now:0, playing:false, speed:12,
+  graph:null, cursor:0,
+  view:'overview', storyId:null, openStage:null,
+  alerts:[], seenAlert:new Set(),
+  storyDraft:{ id:null, loading:false, data:null, focus:0 },
+  cms:{ saving:false, result:null },
+  tv:{ saving:false, result:null },   // TV rundown send
+  theme:'light',                // 'dark' | 'light' — light is the default
+  draftLang:'en',               // language for the generated draft
+  routeSel:{},                  // clusterId -> Set of selected property ids
+  trends:null,                  // { live, items:[{title,traffic,rank}] }
+  user:'Shanu'
+};
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const clock = t => { const m=Math.floor(Math.max(0,t)/60), s=Math.floor(Math.max(0,t)%60);
+  return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`; };
+const ago = t => { const d=Math.max(0,S.now-t); return d<60?Math.round(d)+'s ago':Math.round(d/60)+' min ago'; };
+const bandClass = b => 'b-'+b.split(' ')[0].toLowerCase();
+
+/* ---------- replay engine ---------- */
+function rebuild(target){
+  S.graph = newGraph(); loadArchive(S.graph, ARCHIVE);
+  S.cursor=0; S.now=0; S.alerts=[]; S.seenAlert=new Set();
+  advanceTo(target);
+}
+function advanceTo(target){
+  while(S.cursor<TAPE.length && TAPE[S.cursor].t<=target){
+    const raw=TAPE[S.cursor++]; S.now=raw.t;
+    const res=ingest(S.graph, raw, raw.t); evalAlerts(res);
+  }
+  S.now=target;
+}
+function evalAlerts(res){
+  const rows=board(S.graph,S.now);
+  for(const r of rows){
+    const wireBacked=r.cluster.items.some(i=>i.src.tier===1 && ['wire','official','reporter'].includes(i.src.kind));
+    const worth=r.imp.value>=50 && (r.urg.intrinsic>=45 || (wireBacked && r.imp.value>=58));
+    const key=r.cluster.id+':move';
+    if(worth && r.cred.confidence>=30 && !S.seenAlert.has(key)){
+      S.seenAlert.add(key);
+      S.alerts.unshift({ clusterId:r.cluster.id, at:S.now });
+    }
+  }
+}
+let timer=null;
+/* While playing, only the main content + live clock update each tick.
+   The header (and its play/pause button) is left untouched, so a tap to
+   pause is never lost to a mid-tick re-render. */
+function tick(){
+  advanceTo(Math.min(END,S.now+S.speed*0.25));
+  const m=document.getElementById('main'); if(m) m.innerHTML = (S.view==='overview' ? overview() : storyView());
+  const cl=$('.lclock'); if(cl) cl.textContent=clock(S.now);
+  const sc=$('.scrub'); if(sc && document.activeElement!==sc) sc.value=Math.round(S.now);
+  if(S.now>=END) pause();
+}
+function play(){ if(timer) return; if(S.now>=END) rebuild(0); S.playing=true; render();
+  timer=setInterval(tick,250); }
+function pause(){ S.playing=false; if(timer){ clearInterval(timer); timer=null; } render(); }
+
+/* ============================================================
+   RENDER SHELL
+   ============================================================ */
+function render(){
+  if(!S.ready){ $('#app').innerHTML = booting(); return; }
+  if(!document.getElementById('main')){
+    $('#app').innerHTML = topbar() + '<div id="main"></div>';
+  } else {
+    const bar=$('.bar-top'); if(bar) bar.outerHTML = topbar();   // replace header in place (stays under #app for sticky)
+  }
+  document.getElementById('main').innerHTML = (S.view==='overview' ? overview() : storyView());
+}
+
+function booting(){
+  return `<div class="boot"><div class="bootcard">
+    <span class="logo big">◇</span>
+    <h1>${BRAND}</h1><p>Connecting to the wires…</p>
+    <div class="bar"><i></i></div></div></div>`;
+}
+
+function topbar(){
+  const c = S.view==='story' && curStory();
+  return `<header class="bar-top">
+    <div class="lead">
+      <span class="logo">◇</span>
+      <span class="name">${BRAND}</span>
+      <span class="tag">newsroom intelligence</span>
+    </div>
+    <nav class="nav">
+      <button class="nb ${S.view==='overview'?'on':''}" data-view="overview">Overview</button>
+      ${c ? `<button class="nb on" data-view="story">Story journey</button>` : ''}
+    </nav>
+    <div class="live">
+      <button class="playbtn ${S.playing?'on':''}" data-act="${S.playing?'pause':'play'}" aria-label="${S.playing?'Pause':'Play'} replay">
+        ${S.playing?'❙❙':'▶'}</button>
+      <span class="ldot ${S.playing?'':'paused'}"></span>
+      <span class="lclock">${clock(S.now)}</span>
+      <input class="scrub" type="range" min="0" max="${END}" value="${Math.round(S.now)}" aria-label="Replay position">
+      <button class="themebtn" data-act="theme" aria-label="Switch to ${S.theme==='dark'?'light':'dark'} mode" title="Switch to ${S.theme==='dark'?'light':'dark'} mode">${themeIcon()}</button>
+    </div>
+  </header>`;
+}
+
+function themeIcon(){
+  return S.theme==='dark'
+    ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>`
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>`;
+}
+
+/* ============================================================
+   OVERVIEW
+   ============================================================ */
+function overview(){
+  const d = stats();
+  return `<main class="ov">
+    ${hero(d)}
+    ${pipeline(d)}
+    ${S.openStage ? stagePanel(S.openStage, d) : ''}
+    ${output(d)}
+    ${impact(d)}
+    <footer class="foot">Mock data throughout, shaped like the real feeds. Every number is computed live from the incoming tape — press play to watch it build.</footer>
+  </main>`;
+}
+
+function stats(){
+  const g=S.graph, rows=board(g,S.now);
+  const arrivals=g.arrivals.length;
+  const merged=g.arrivals.filter(a=>a.verdict.type==='DUPLICATE').length;
+  const stories=g.clusters.length;
+  const moveNow=rows.filter(r=>r.quadrant==='move-now');
+  const planIt=rows.filter(r=>r.quadrant==='plan-it');
+  const check=rows.filter(r=>r.quadrant==='watch'||r.quadrant==='hold');
+  const parked=rows.filter(r=>r.quadrant==='park');
+  const verified=rows.filter(r=>r.cred.band==='Confirmed').length;
+  const flagged=rows.filter(r=>r.cred.hardSignals.length).length;
+  const gaps=rows.reduce((s,r)=>s+r.ledger.gaps.length,0);
+  const corrections=g.arrivals.filter(a=>a.verdict.type==='CORRECTION');
+  let leading=0,trailing=0;
+  for(const r of rows){ if(!r.cluster.items.some(i=>i.src.kind==='competitor')) continue;
+    if(r.ledger.gaps.length) trailing++; else leading++; }
+  const srcCount=new Set(g.arrivals.map(a=>a.item.source)).size;
+  const skippable=merged + parked.reduce((s,r)=>s+r.cluster.items.length,0);
+  const pctSkippable=arrivals?Math.round((skippable/arrivals)*100):0;
+  const leads=rows.map(r=>{ const fa=[...S.alerts].reverse().find(a=>a.clusterId===r.cluster.id);
+    const rv=r.cluster.items.filter(i=>i.src.kind==='competitor').sort((a,b)=>a.arrivedAt-b.arrivedAt)[0];
+    return (fa&&rv)?rv.arrivedAt-fa.at:null; }).filter(x=>x!=null&&x>0);
+  const avgLead=leads.length?leads.reduce((s,x)=>s+x,0)/leads.length:0;
+  return { rows, arrivals, merged, stories, moveNow, planIt, check, parked,
+    verified, flagged, gaps, corrections, leading, trailing, srcCount,
+    pctSkippable, avgLead };
+}
+
+function hero(d){
+  return `<section class="hero">
+    <div class="herotext">
+      <h1>A newsroom firehose, turned into decisions.</h1>
+      <p>Wires, reporters, official handles, open social and rival copy arrive non-stop. ${BRAND} reads all of it, groups it into stories, works out what is real and what matters, and hands the desk a sourced draft — in the time it takes to read this.</p>
+    </div>
+    <div class="herostat">
+      <div class="hnum"><b>${d.arrivals}</b><span>items came in</span></div>
+      <div class="harrow">→</div>
+      <div class="hnum accent"><b>${d.stories}</b><span>stories to act on</span></div>
+      <div class="hsub">${d.merged} duplicates merged · ${d.srcCount} sources · nobody read them by hand</div>
+    </div>
+  </section>`;
+}
+
+function pipeline(d){
+  const counts={
+    gather:{ big:d.arrivals, sub:`from ${d.srcCount} live sources` },
+    understand:{ big:d.stories, sub:`after merging duplicates` },
+    judge:{ big:d.moveNow.length, sub:`need attention now` },
+    decide:{ big:d.stories, sub:`routed to a channel` },
+    publish:{ big:d.stories, sub:`ready to draft` }
+  };
+  return `<section class="pipe" aria-label="The pipeline">
+    ${STAGES.map((st,i)=>{
+      const c=counts[st.id];
+      return `${i?`<div class="flow ${S.playing?'run':''}" aria-hidden="true"><span></span></div>`:''}
+      <button class="station ${S.openStage===st.id?'on':''}" data-stage="${st.id}">
+        <span class="sicon">${stageIcon(st.id)}</span>
+        <span class="sbig">${c.big}</span>
+        <span class="sname">${st.name}</span>
+        <span class="ssub">${esc(c.sub)}</span>
+      </button>`;
+    }).join('')}
+  </section>
+  <p class="pipehint">${S.openStage?'':'Tap any stage to see what it does with the incoming content.'}</p>`;
+}
+
+function stageIcon(id){
+  const p = {
+    gather:'<circle cx="5" cy="6" r="2"/><circle cx="5" cy="14" r="2"/><circle cx="5" cy="22" r="2"/><path d="M8 6c6 0 6 8 12 8M8 14h12M8 22c6 0 6-8 12-8"/><circle cx="22" cy="14" r="2.4"/>',
+    understand:'<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="15" width="7" height="7" rx="1.5"/><rect x="15" y="9" width="9" height="9" rx="1.5"/><path d="M11 7.5h4M11 18.5h4"/>',
+    judge:'<path d="M14 4v18"/><path d="M6 22h16"/><circle cx="14" cy="4" r="1.6"/><path d="M14 7l-7 4M14 7l7 4"/><path d="M4 11a3 3 0 0 0 6 0M18 11a3 3 0 0 0 6 0"/>',
+    decide:'<path d="M4 14h7"/><circle cx="4" cy="14" r="1.8"/><path d="M11 14c5 0 4-8 9-8M11 14c5 0 4 8 9 8"/><circle cx="21" cy="6" r="1.8"/><circle cx="21" cy="22" r="1.8"/>',
+    publish:'<path d="M5 14l17-8-6 18-4-7-7-3z"/>'
+  }[id];
+  return `<svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+}
+
+function stagePanel(id, d){
+  const st = STAGES.find(x=>x.id===id);
+  let body='';
+  if(id==='gather'){
+    const kinds={}; for(const a of S.graph.arrivals){ const k=a.item.src.kind; kinds[k]=(kinds[k]||0)+1; }
+    body=`<p>Content never stops arriving and it never arrives clean. ${BRAND} takes it from every source at once — wire agencies, our own reporters and stringers, official handles, open social, rival copy, and the Google Trends demand signal — and treats each item the same way: as one more sighting in the life of a story.</p>
+      <div class="chips">${FEEDS.map(f=>`<span class="feedchip">${esc(f.label)}</span>`).join('')}</div>
+      <div class="minibars">${Object.entries(kinds).sort((a,b)=>b[1]-a[1]).map(([k,n])=>`
+        <div class="mbar"><span class="mbl">${esc(k)}</span><i style="width:${Math.min(100,n*7)}%"></i><b>${n}</b></div>`).join('')}</div>
+      ${trendsPanel()}`;
+  }
+  if(id==='understand'){
+    body=`<p>The same event shows up worded ten different ways, in two languages, from ten sources. ${BRAND} recognises they are one story and collapses the repeats — so the desk sees <b>${d.stories} stories</b> instead of <b>${d.arrivals} items</b>. Each new arrival gets a plain label: a fresh story, an update, a real development, or just a duplicate.</p>
+      <div class="tally">
+        <div class="ty"><b>${d.merged}</b><span>duplicates merged away</span></div>
+        <div class="ty"><b>${d.corrections.length}</b><span>corrections caught</span></div>
+        <div class="ty"><b>${d.stories}</b><span>distinct stories left</span></div>
+      </div>`;
+  }
+  if(id==='judge'){
+    body=`<p>Every story gets three simple scores, kept separate on purpose. <b>Matters</b>: how big a deal is it? <b>Moving</b>: how fast is it developing? <b>Trust</b>: can we stand it up? A rate decision matters but keeps; a viral clip moves fast but may be nothing. The trust score never says "fake" — it shows what is thin and the one call that would settle it.</p>
+      <div class="tally">
+        <div class="ty red"><b>${d.moveNow.length}</b><span>need a decision now</span></div>
+        <div class="ty green"><b>${d.verified}</b><span>confirmed</span></div>
+        <div class="ty amber"><b>${d.flagged}</b><span>check before touching</span></div>
+      </div>`;
+  }
+  if(id==='decide'){
+    body=`<p>The group is not one outlet. ${BRAND} suggests where each story should go — which brand (Aaj Tak, India Today, Aaj Tak Bangla, Business Today…), which language, and whether it belongs on TV, on digital, or both. The desk can accept the suggestion or change it in one tap.</p>
+      <div class="tally">
+        <div class="ty"><b>${d.stories}</b><span>stories routed</span></div>
+        <div class="ty amber"><b>${d.trailing}</b><span>where a rival is ahead</span></div>
+        <div class="ty"><b>${d.moveNow.length}</b><span>flagged for a human call</span></div>
+      </div>`;
+  }
+  if(id==='publish'){
+    body=`<p>One click writes the story. Every sentence is tied to the exact arrival it came from — a sentence with no source is never written, and rival copy is never drafted from. It comes with the search and social headlines, the tags, the internal links, and hard blocks a person must clear. It saves as a draft. There is no publish button.</p>
+      <div class="tally">
+        <div class="ty"><b>${d.stories}</b><span>stories ready to draft</span></div>
+        <div class="ty green"><b>100%</b><span>sentences carry a source</span></div>
+        <div class="ty red"><b>0</b><span>auto-published, ever</span></div>
+      </div>`;
+  }
+  return `<section class="panel"><div class="panelhead"><h3>${st.name}</h3>
+    <button class="x" data-act="closestage" aria-label="Close">Close</button></div>${body}</section>`;
+}
+
+/* ---------- google trends: demand-side signal ---------- */
+function trendMatch(title){
+  if(!S.graph) return null;
+  const q=String(title||'').toLowerCase();
+  const first=q.split(' ')[0];
+  for(const c of S.graph.clusters){
+    const ents=new Set(); c.items.forEach(i=>i.entitySet.forEach(e=>ents.add(e)));
+    for(const e of ents){ if(e && (q.includes(e) || (first.length>3 && e.includes(first)))) return c; }
+    if(c.title && first.length>3 && c.title.toLowerCase().includes(first)) return c;
+  }
+  return null;
+}
+function trendsPanel(){
+  const tr=S.trends; if(!tr) return '';
+  const src=tr.live?'live from Google Trends India':'Google Trends India · offline snapshot';
+  const chips=tr.items.map(t=>{
+    const c=trendMatch(t.title);
+    return `<span class="trendchip ${c?'hot':''}" ${c?`data-open="${c.id}" role="button" tabindex="0"`:''}>${esc(t.title)}<span class="tr">${c?'a live story':esc(t.traffic||'')}</span></span>`;
+  }).join('');
+  return `<div class="trends"><h4><span class="gdot"></span>Google Trends — what India is searching right now</h4>
+    <p class="tsub">A demand-side signal, wired in from <span class="mono">trends.google.com/trending/rss?geo=IN</span>. Trends lag the newsroom feeds, so they never break a story here — they confirm which of our stories the public is already searching. Highlighted chips match a live story. <b>${esc(src)}.</b></p>
+    <div class="trendchips">${chips}</div></div>`;
+}
+function storyTrend(c){
+  const tr=S.trends; if(!tr) return '';
+  const t=tr.items.find(x=>{ const m=trendMatch(x.title); return m && m.id===c.id; });
+  if(!t) return '';
+  return `<div class="storytrend"><span class="gdot"></span><span>Public attention: <b>&ldquo;${esc(t.title)}&rdquo;</b> is trending #${t.rank} on Google Trends India${t.traffic?` (${esc(t.traffic)} searches)`:''}. The search spike confirms this story is landing — but it reached our feeds before it trended, which is the whole point of watching the supply side.</span></div>`;
+}
+
+/* ---------- the output: what the desk should do ---------- */
+function output(d){
+  const groups=[
+    { key:'move', title:'Act now', sub:'Matters, and moving fast — needs a decision in minutes.', rows:d.moveNow, tone:'red' },
+    { key:'plan', title:'On the radar', sub:'Matters, but it keeps. Give it a proper piece, no rush.', rows:d.planIt, tone:'amber' },
+    { key:'check', title:'Check before touching', sub:'Loud, but thin. Not trusted yet — verify before anything runs.', rows:d.check, tone:'violet' }
+  ];
+  return `<section class="out">
+    <div class="outhead"><h2>What the desk should do right now</h2>
+      <p>The pipeline's output, ranked. Every card says why it sits where it sits.</p></div>
+    <div class="legend">
+      <span><i style="background:var(--red)"></i> Act now</span>
+      <span><i style="background:var(--amber)"></i> On the radar</span>
+      <span><i style="background:var(--violet)"></i> Check first</span>
+      <span><i style="background:var(--green)"></i> Trust score: green = confirmed, violet = unverified</span>
+    </div>
+    ${d.corrections.length?correctionStrip(d.corrections):''}
+    ${groups.filter(g=>g.rows.length).map(g=>`
+      <div class="group g-${g.tone}">
+        <div class="grouphead"><span class="gflag">${g.title}</span><span class="gsub">${esc(g.sub)}</span></div>
+        <div class="cards">${g.rows.map(storyCard).join('')}</div>
+      </div>`).join('')}
+    ${d.parked.length?`<p class="parked">${d.parked.reduce((s,r)=>s+r.cluster.items.length,0)} more arrivals parked as low priority or duplicates — off the desk's plate entirely.</p>`:''}
+  </section>`;
+}
+
+function correctionStrip(cors){
+  return `<div class="corstrip">
+    <span class="cflag">Correction</span>
+    <span class="ctext">A wire has changed a published figure. Anything already live carrying the old number needs fixing now.</span>
+    ${cors.map(c=>`<button class="clink" data-open="${c.cluster.id}">${esc(c.cluster.title.slice(0,42))}</button>`).join('')}
+  </div>`;
+}
+
+function shieldIcon(){
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>`;
+}
+function humanGap(gaps){
+  const labels=gaps.slice(0,3).map(g=>keyLabel(g.key));
+  if(labels.length<=1) return labels.join('');
+  return labels.slice(0,-1).join(', ')+' and '+labels[labels.length-1];
+}
+function storyCard(r){
+  const c=r.cluster;
+  const rival=c.items.filter(i=>i.src.kind==='competitor').sort((a,b)=>a.arrivedAt-b.arrivedAt)[0];
+  const corrected=c.items.some(i=>i.verdict&&i.verdict.type==='CORRECTION');
+  const updated=Math.max(...c.items.map(i=>i.arrivedAt));
+  const route=[r.routing.primary.name, r.routing.secondary&&r.routing.secondary.name].filter(Boolean);
+  const rl=[...new Set(route)].join(' · ');
+  return `<article class="card" data-open="${c.id}" tabindex="0" role="button">
+    <div class="cardtop">
+      <span class="beat">${BEATS[c.beat]||c.beat} desk</span>
+      <span class="vchip ${bandClass(r.cred.band)}" title="How confident we are the story stands up, out of 100">${shieldIcon()}${r.cred.confidence}/100 · ${esc(r.cred.band)}</span>
+      ${corrected?`<span class="cortag">figure corrected</span>`:''}
+      <span class="cardtime" title="When the most recent item on this story arrived">updated ${ago(updated)}</span>
+    </div>
+    <h3>${esc(c.title)}</h3>
+    <p class="why">${esc(r.why)}</p>
+    ${rival&&r.ledger.gaps.length?`<p class="gap"><b>${esc(rival.src.label)} is ahead of us</b> — they've published ${esc(humanGap(r.ledger.gaps))}; we haven't confirmed that yet.</p>`:''}
+    <div class="cardfoot">
+      <span class="route"><span class="rlabel">Suggested for</span><span class="rval">${esc(rl)}</span></span>
+      <span class="cta">See the journey ›</span>
+    </div>
+  </article>`;
+}
+
+/* ---------- impact ---------- */
+function impact(d){
+  const cards=[
+    { b:d.merged, k:'duplicate items merged', p:'Repeats the desk never had to open or read.' },
+    { b:d.avgLead?Math.round(d.avgLead/60)+' min':'—',
+      k:d.avgLead?'earlier than rivals':'no rival beat us',
+      p:d.avgLead?'Average head start before a competitor published — measured on our own signals, not a rival\u2019s byline.':'On this tape, no competitor published a story before we flagged it.' },
+    { b:d.pctSkippable+'%', k:'cleared without a human', p:'Duplicates and low-priority arrivals, filtered out automatically.' },
+    { b:d.stories, k:'stories to act on', p:`Distilled from ${d.arrivals} raw arrivals, each with the reason it matters attached.` }
+  ];
+  return `<section class="impact"><div class="impwrap">
+    <div class="outhead"><h2>Why this matters for the desk</h2>
+      <p>Same flood of content, a fraction of the manual effort — and the desk hears about a story sooner. Every number here is computed live from the tape.</p></div>
+    <div class="impgrid">${cards.map(c=>`<div class="imp"><b>${c.b}</b><i>${esc(c.k)}</i><p>${esc(c.p)}</p></div>`).join('')}</div>
+  </div></section>`;
+}
+
+/* ============================================================
+   STORY JOURNEY — one story through all five stages
+   ============================================================ */
+function curStory(){ return S.storyId ? S.graph.clusters.find(c=>c.id===S.storyId) : null; }
+
+function storyView(){
+  const c=curStory();
+  if(!c){ S.view='overview'; return overview(); }
+  const imp=importance(c,S.graph), urg=urgency(c,S.now,S.graph);
+  const cred=credibility(c), rt=routing(c,imp,urg), lg=ledger(c);
+  const R={ cluster:c, imp, urg, cred, routing:rt, ledger:lg };
+  return `<main class="story">
+    ${storyHeader(R)}
+    <div class="journey">
+      <nav class="rail" aria-label="Stages">
+        ${STAGES.map((st,i)=>`<a class="railitem" href="#stg-${st.id}"><span class="rn">${i+1}</span><span>${st.name}</span></a>`).join('')}
+      </nav>
+      <div class="stages">
+        ${sGather(R)}
+        ${sUnderstand(R)}
+        ${sJudge(R)}
+        ${sDecide(R)}
+        ${sPublish(R)}
+      </div>
+    </div>
+  </main>`;
+}
+
+function storyHeader(R){
+  const c=R.cluster;
+  return `<section class="storyhead">
+    <button class="back" data-view="overview">Back to overview</button>
+    <div class="shrow">
+      <div>
+        <h1>${esc(c.title)}</h1>
+        <p class="shmeta">${BEATS[c.beat]||c.beat} · first seen ${clock(c.firstSeen)} · ${c.items.length} arrivals in this story</p>
+      </div>
+      <div class="shgauges">
+        ${dial('Matters',R.imp.value)}
+        ${dial('Moving',R.urg.value)}
+        ${dial('Confidence',R.cred.confidence, bandClass(R.cred.band))}
+      </div>
+    </div>
+    <p class="shexp">Below: exactly how ${BRAND} handled this one story, from the first anonymous post to a publish-ready draft.</p>
+  </section>`;
+}
+
+function dial(label,v,tone){
+  const t=tone||(v>=70?'b-corroborated':v>=40?'b-partly':'b-unverified');
+  const r=26, circ=2*Math.PI*r, off=circ*(1-v/100);
+  return `<div class="dial ${t}">
+    <svg viewBox="0 0 64 64"><circle class="dt" cx="32" cy="32" r="${r}"/>
+      <circle class="df" cx="32" cy="32" r="${r}" stroke-dasharray="${circ}" stroke-dashoffset="${off}"/></svg>
+    <b>${v}</b><span>${label}</span></div>`;
+}
+
+function stageWrap(id,n,title,sub,body){
+  return `<section class="stg" id="stg-${id}">
+    <div class="stghead"><span class="stgn">${n}</span><div><h2>${title}</h2><p>${esc(sub)}</p></div></div>
+    ${body}</section>`;
+}
+
+function sGather(R){
+  const items=[...R.cluster.items].sort((a,b)=>a.arrivedAt-b.arrivedAt);
+  const srcs=new Set(items.map(i=>i.source)).size;
+  const body=`<ol class="tape">${items.map(i=>{
+    const v=VERDICT[i.verdict.type]||{t:i.verdict.type,c:'v-new'};
+    const dup=i.verdict.type==='DUPLICATE';
+    return `<li class="ti ${dup?'dup':''} t${i.src.tier}">
+      <span class="tt">${clock(i.arrivedAt)}</span>
+      <span class="tsrc s${i.src.tier}">${esc(i.src.label)}</span>
+      <span class="tv ${v.c}">${v.t}</span>
+      <span class="th">${esc(i.headline)}</span>
+    </li>`;
+  }).join('')}</ol>
+  <p class="stgnote">${items.length} arrivals from ${srcs} different sources — wires, our own stringer, an official handle, open social, and rival copy. The greyed rows are duplicates the system folded away, so nobody re-reads them.</p>
+  ${storyTrend(R.cluster)}`;
+  return stageWrap('gather',1,'Gather','Everything that came in about this story, in the order it landed.',body);
+}
+
+function sUnderstand(R){
+  const c=R.cluster;
+  const counts={}; for(const i of c.items){ const t=i.verdict.type; counts[t]=(counts[t]||0)+1; }
+  const arch=(c.related||[]).slice(0,3);
+  const body=`<div class="ucards">
+    ${Object.entries(counts).map(([t,n])=>{ const v=VERDICT[t]||{t,c:'v-new'};
+      return `<div class="ucard"><b>${n}</b><span class="tv ${v.c}">${v.t}</span></div>`; }).join('')}
+  </div>
+  ${arch.length?`<div class="archbox"><h4>Checked against our own past coverage</h4>
+    ${arch.map(a=>`<p class="arch"><a href="${esc(a.item.url||'#')}">${esc(a.item.headline)}</a>
+      <span>${esc(a.item.brand||'')} · ${a.score>=0.42?'we have filed on this before':'related background'}</span></p>`).join('')}
+    <p class="stgnote">This answers the brief's "do we already have this?" — and these become the internal links on the finished draft, for free.</p></div>`
+   :`<p class="stgnote">Nothing closely related in our past coverage — this is genuinely new.</p>`}`;
+  return stageWrap('understand',2,'Group','All these arrivals are one story. Each one is labelled — new, update, development, or duplicate.',body);
+}
+
+function sJudge(R){
+  const cred=R.cred;
+  const excl=cred.excludeItems||[];
+  const impBand = R.imp.value>=60?'a big story':R.imp.value>=40?'a solid story':'a minor story';
+  const urgBand = R.urg.value>=60?'move now':R.urg.value>=40?'soon, not frantic':'no rush';
+  const body=`<div class="judgegrid">
+    <div class="jax">
+      <h4>How big a deal is it? <b class="jscore">${R.imp.value}/100</b></h4>
+      <p class="scoreexp">A 0&ndash;100 blend of five things, each weighted. Add up every bar below (bar length &times; its weight) and you get the score &mdash; here, ${impBand}.</p>
+      ${R.imp.parts.slice(0,3).map(p=>barRow(p)).join('')}
+      ${hiddenFactors(R.imp.parts)}
+      <div class="bandkey"><span>0&ndash;39 minor</span><span>40&ndash;59 solid</span><span>60&ndash;100 big</span></div>
+    </div>
+    <div class="jax">
+      <h4>How fast is it developing? <b class="jscore">${R.urg.value}/100</b></h4>
+      <p class="scoreexp">The same 0&ndash;100 idea, but about speed: is it still changing, is attention rising, is a rival already out, will it go stale? Here it says <b>${urgBand}</b>.</p>
+      ${R.urg.parts.slice(0,3).map(p=>barRow(p)).join('')}
+      ${hiddenFactors(R.urg.parts)}
+      <div class="bandkey"><span>0&ndash;39 no rush</span><span>40&ndash;59 soon</span><span>60&ndash;100 now</span></div>
+    </div>
+  </div>
+  <div class="credbox ${bandClass(cred.band)}">
+    <div class="credtop"><div class="bigconf"><b>${cred.confidence}</b><span>out of 100</span></div>
+      <div class="credhead"><h4>Can we trust it? — ${esc(cred.band)}</h4>
+      <p>A 0&ndash;100 read on how well the story stands up: mostly independent corroboration and whether an authority is on record, minus anything that looks thin. <b>70+ Confirmed, 40&ndash;69 Partly confirmed, under 40 Unverified.</b> It never calls anything "fake" — it shows what's thin and the one call that would settle it.</p></div></div>
+    ${cred.risks.length?`<div class="riskhead">What looks shaky</div><ul class="risks">${cred.risks.slice(0,4).map(r=>`<li class="r-${r.level}"><span>${r.level==='high'?'serious':r.level==='medium'?'worth a check':'minor'}</span>${esc(r.text)}</li>`).join('')}</ul>`:''}
+    ${cred.oneCall?`<p class="onecall"><span class="ocl">One call would settle it</span>Get the <b>${esc(cred.oneCall)}</b> on the record — that single confirmation is what moves this into "Confirmed."</p>`:''}
+    ${excl.length?`<p class="excl"><b>${excl.length} arrival${excl.length===1?'':'s'} held out of the copy</b> — recycled footage and throwaway accounts (like the viral "50 dead" post). The story still stands on the wires and the police; these arrivals never touch it. This is the "check before touching" catch, inside a story we do trust.</p>`:''}
+  </div>`;
+  return stageWrap('judge',3,'Rank','Three scores, kept apart: how much it matters, how fast it moves, and whether we can trust it.',body);
+}
+
+function barRow(p){
+  const pct=Math.round((p.v||0)*100);
+  const w=p.w!=null?`<em class="bw" title="how much this factor counts toward the score">${Math.round(p.w*100)}%</em>`:'';
+  return `<div class="brow">
+    <div class="brhead"><b>${esc(p.name||'')}</b>${w}</div>
+    <div class="brbar"><i style="width:${pct}%"></i></div>
+    <span class="brsay">${esc(p.say)}</span>
+  </div>`;
+}
+
+/* The card shows the top 3 factors as bars for readability; this
+   names the remaining ones and their weights so the five clearly
+   add up to 100%. */
+function hiddenFactors(parts){
+  const rest=parts.slice(3);
+  if(!rest.length) return '';
+  return `<p class="morefac">Also counted: ${rest.map(p=>`${esc(p.name)} <b>${Math.round(p.w*100)}%</b>`).join(' &middot; ')} &mdash; weights total 100%.</p>`;
+}
+
+/* Map the engine's suggestion (primary/secondary brand) to the
+   channel ids that should start out selected. */
+function suggestedChannels(R){
+  const rt=R.routing;
+  const want=new Set();
+  const brands=[rt.primary&&rt.primary.name, rt.secondary&&rt.secondary.name].filter(Boolean);
+  const tv = rt.tv>=rt.dig;                 // the engine's TV-vs-digital lean
+  for(const p of PROPERTIES){
+    const brandMatch = brands.includes(p.brand) ||
+      (p.brand==='India Today' && brands.includes('India Today TV'));
+    if(!brandMatch) continue;
+    // give the primary brand both mediums it supports where the lean fits
+    if(p.medium==='Digital') want.add(p.id);
+    if(p.medium==='TV' && tv) want.add(p.id);
+  }
+  if(!want.size) want.add('it-dig');        // never leave it empty
+  return want;
+}
+function routeSel(R){
+  const id=R.cluster.id;
+  if(!S.routeSel[id]) S.routeSel[id]=suggestedChannels(R);
+  return S.routeSel[id];
+}
+function sDecide(R){
+  const rt=R.routing, lg=R.ledger;
+  const sel=routeSel(R);
+  const suggested=suggestedChannels(R);
+  const byMedium=m=>PROPERTIES.filter(p=>p.medium===m);
+  const chan=p=>{
+    const on=sel.has(p.id), sug=suggested.has(p.id);
+    return `<button class="chan ${on?'on':''} ${sug?'sug':''}" data-chan="${p.id}" aria-pressed="${on}">
+      <span class="cbx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span>
+      <span><span class="cnm">${esc(p.brand)}</span><span class="clg">${LANG_NAME[p.lang]}</span></span>
+    </button>`;
+  };
+  const chosen=[...sel].map(id=>PROPERTIES.find(p=>p.id===id)).filter(Boolean);
+  const tvNames=[...new Set(chosen.filter(p=>p.medium==='TV').map(p=>p.brand))];
+  const digNames=[...new Set(chosen.filter(p=>p.medium==='Digital').map(p=>p.brand))];
+  const langs=[...new Set(chosen.map(p=>LANG_NAME[p.lang]))];
+  const summary = chosen.length
+    ? `Publishing to <b>${chosen.length} channel${chosen.length===1?'':'s'}</b>${tvNames.length?` — on TV: <b>${esc(tvNames.join(', '))}</b>`:''}${digNames.length?`; on digital: <b>${esc(digNames.join(', '))}</b>`:''}. Languages: <b>${esc(langs.join(', '))}</b>.`
+    : `Nothing selected yet — pick at least one channel.`;
+
+  const body=`<div class="picker">
+    <div class="pickhead"><h4>Where should this story go?</h4><span class="suggested">✓ ${BRAND}'s suggestion is pre-selected</span></div>
+    <p class="pickhint">${BRAND} picks the brands, languages and medium that fit this story — here, ${esc(rt.decision.toLowerCase())}. Tap any channel to add or remove it. TV and digital are separate outputs, so a story can run on one, the other, or both.</p>
+    <div class="chgrp"><div class="chgrp-h"><svg class="mi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg> On TV</div>
+      <div class="chans">${byMedium('TV').map(chan).join('')}</div></div>
+    <div class="chgrp"><div class="chgrp-h"><svg class="mi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M3 20h18"/></svg> On digital</div>
+      <div class="chans">${byMedium('Digital').map(chan).join('')}</div></div>
+    <p class="picksum">${summary}</p>
+    ${rt.note?`<p class="routenote">${esc(rt.note)}</p>`:''}
+  </div>
+  ${lg.gaps.length?`<div class="gapbox"><h4>Before we publish: what rivals have that we haven't confirmed</h4>
+    <p class="gapexp">A rival has already published these facts and we haven't stood them up ourselves. We won't print them until we do — but the desk needs to know it's behind, and on what.</p>
+    ${lg.gaps.map(g=>`<p class="gaprow"><b>${esc(cap(keyLabel(g.key)))}</b> — ${esc(g.who.join(', '))} ${g.who.length>1?'have':'has'} it; we don't yet.</p>`).join('')}
+    </div>`:''}
+  ${sPeople(R)}`;
+  return stageWrap('decide',4,'Route','Choose the channels and language. See where a rival is ahead.',body);
+}
+
+function cap(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
+
+function sPeople(R){
+  const primary = (R.routing.primary && R.routing.primary.name) || '';
+  const digital = [
+    { name:'Dev Goswami', brand:'India Today' },
+    { name:'Abhishek Bhattacharya', brand:'Aaj Tak' }
+  ];
+  const tv = [
+    { name:'Kaushlendra Bikram Singh' },
+    { name:'Rahul Raj' }
+  ];
+  const digLead = digital.find(p=>primary.includes(p.brand)) || digital[0];
+  return `<div class="deskbox"><h4>Who on the desk should cover it</h4>
+    <p class="gapexp">Split by output, so the story reaches the right person fast — a digital reporter to file the copy and a TV reporter for the broadcast. The best fit is picked from where the story is routed.</p>
+    <div class="deskcols">
+      <div class="deskcol"><div class="dch">Digital</div>
+        ${digital.map(p=>`<p class="deskrow ${p===digLead?'top':''}"><b>${esc(p.name)}</b><span>${esc(p.brand)}</span>${p===digLead?'<span class="pickme">best fit</span>':''}</p>`).join('')}
+      </div>
+      <div class="deskcol"><div class="dch">On TV</div>
+        ${tv.map((p,i)=>`<p class="deskrow ${i===0?'top':''}"><b>${esc(p.name)}</b><span>Broadcast desk</span>${i===0?'<span class="pickme">best fit</span>':''}</p>`).join('')}
+      </div>
+    </div>
+  </div>`;
+}
+
+function langSelector(){
+  return `<div class="langsel"><span class="ll">Draft language</span>${LANGS.map(l=>`<button class="lang ${S.draftLang===l.id?'on':''}" data-lang="${l.id}">${esc(l.label)}</button>`).join('')}</div>`;
+}
+function sPublish(R){
+  const st=S.storyDraft;
+  const isThis = st.id===R.cluster.id;
+  let body;
+  if(!isThis || (!st.data && !st.loading)){
+    body=`<div class="publishcta">
+      <p>One click grounds a draft: every sentence tied to a source, with the editorial and search fields filled in. Watch it write.</p>
+      <button class="btn primary big" data-act="write">Write the story</button>
+    </div>`;
+  } else if(st.loading){
+    body=`<div class="grounding">
+      <p class="gline">Reading ${R.cluster.items.length} arrivals…</p>
+      <p class="gline">Ranking each fact by how trustworthy the source is…</p>
+      <p class="gline">Dropping unverified and rival-only claims…</p>
+      <p class="gline">Writing only what a source stands behind…</p>
+      <div class="bar"><i></i></div></div>`;
+  } else {
+    body=draftBody(R.cluster, st.data);
+  }
+  return stageWrap('publish',5,'Publish','A sourced draft, ready for the CMS. Nothing here publishes itself.',body);
+}
+
+function draftBody(c, d){
+  const f=d.sentences[S.storyDraft.focus]||d.sentences[0];
+  const item=f?c.items.find(x=>x.id===f.itemId)||(c.related||[]).map(r=>r.item).find(x=>x.id===f.itemId):null;
+  const cms=S.cms, tv=S.tv||{saving:false,result:null};
+  const tvf=d.seo.tv||{headline:'',ticker:'',video:0};
+
+  /* which channels is this story routed to? drives the send options */
+  const imp=importance(c,S.graph), urg=urgency(c,S.now,S.graph);
+  const R={cluster:c,imp,urg,routing:routing(c,imp,urg)};
+  const chosen=[...routeSel(R)].map(id=>PROPERTIES.find(p=>p.id===id)).filter(Boolean);
+  const hasTV=chosen.some(p=>p.medium==='TV');
+  const hasDig=chosen.some(p=>p.medium==='Digital');
+  const tvBrands=[...new Set(chosen.filter(p=>p.medium==='TV').map(p=>p.brand))];
+  const digBrands=[...new Set(chosen.filter(p=>p.medium==='Digital').map(p=>p.brand))];
+
+  const destsum = (hasTV||hasDig)
+    ? `Routed to ${hasTV?`<b>TV</b> (${esc(tvBrands.join(', '))})`:''}${hasTV&&hasDig?' and ':''}${hasDig?`<b>Digital</b> (${esc(digBrands.join(', '))})`:''} — change it in Route above.`
+    : `No channel selected in Route above — pick at least one to send.`;
+
+  const tvBtn = tv.result
+    ? `<div class="cmsdone tv"><b>Queued for TV · ${esc(tv.result.id)}</b><span>on the rundown, not on air</span></div>`
+    : tv.saving ? `<button class="btn primary wide" disabled>Sending to TV…</button>`
+    : `<button class="btn primary wide" data-act="tv">Send to TV rundown</button>`;
+  const digBtn = cms.result
+    ? `<div class="cmsdone"><b>Saved · ${esc(cms.result.id)}</b><span>digital draft, never live</span></div>`
+    : cms.saving ? `<button class="btn ${hasTV?'':'primary'} wide" disabled>Saving…</button>`
+    : `<button class="btn ${hasTV?'':'primary'} wide" data-act="cms">Save digital draft to CMS</button>`;
+
+  return `<div class="draftwrap">
+    <div class="draftmain">
+      ${d.gates.length?`<div class="gates"><h4>Blocked until a person clears these</h4>${d.gates.map(g=>`<p>${esc(g)}</p>`).join('')}</div>`:''}
+      <div class="copy">${d.sentences.map((s,i)=>`<span class="sent ${i===S.storyDraft.focus?'on':''}" data-sent="${i}" tabindex="0" role="button">${esc(s.text)}<sup>${esc(s.sourceLabel)}</sup></span> `).join('')}</div>
+      ${d.holdBack.length?`<div class="holdback"><h4>Held back until we confirm it ourselves</h4><p class="hbexp">These facts came from rivals or unverified accounts. They stay out of the copy until our own reporting stands them up.</p>${d.holdBack.slice(0,3).map(h=>`<p>${esc(h)}</p>`).join('')}</div>`:''}
+      <div class="seo"><h4>Editorial and search fields, filled in</h4>
+        <div class="fldgrp"><span class="fgl">Digital &amp; search</span>
+          <dl>
+            <dt>Search headline</dt><dd>${esc(d.seo.seoHeadline)}</dd>
+            <dt>Social headline</dt><dd>${esc(d.seo.social)}</dd>
+            <dt>Slug</dt><dd class="mono">${esc(d.seo.slug)}</dd>
+            <dt>Tags</dt><dd>${d.seo.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</dd>
+            <dt>Internal links</dt><dd>${d.seo.internal.length?d.seo.internal.map(l=>esc(l.title)).join('<br>'):'none'}</dd>
+          </dl>
+        </div>
+        <div class="fldgrp"><span class="fgl">TV / broadcast</span>
+          <dl>
+            <dt>TV headline <em>(lower-third)</em></dt><dd class="tvsuper">${esc(tvf.headline)}</dd>
+            <dt>Ticker</dt><dd class="mono">${esc(tvf.ticker)}</dd>
+            <dt>Package video</dt><dd>${tvf.video?`${tvf.video} usable clip${tvf.video===1?'':'s'} on the tape`:'no usable video yet — TV can’t lead on this'}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <aside class="draftside">
+      <div class="prov"><h4>Where this sentence came from</h4>
+        ${f?`<p class="provsrc"><span class="tsrc s${item?item.src.tier:1}">${esc(f.sourceLabel)}</span><span class="rights">${esc(f.rights)}</span></p>
+          <blockquote>${esc(f.snippet)}</blockquote>`:'<p>—</p>'}
+        <p class="provnote">Click any sentence to trace it. A sentence with no source is never written.</p>
+      </div>
+      <div class="senddest">${destsum}</div>
+      ${hasTV?tvBtn:''}
+      ${hasDig?digBtn:''}
+      ${(!hasTV&&!hasDig)?`<button class="btn primary wide" disabled>Select a channel in Route</button>`:''}
+      <p class="nopub">Nothing goes live here — TV queues to the rundown, digital saves as a draft. The desk presses publish.</p>
+    </aside>
+  </div>`;
+}
+
+/* ============================================================
+   EVENTS
+   ============================================================ */
+function openStory(id){
+  S.storyId=id; S.view='story';
+  S.storyDraft={id:null,loading:false,data:null,focus:0}; S.cms={saving:false,result:null}; S.tv={saving:false,result:null};
+  S.draftLang='en';
+  render();
+}
+
+function writeDraft(){
+  const c=curStory(); if(!c) return;
+  const lang=S.draftLang;
+  S.storyDraft={ id:c.id, loading:true, data:null, focus:0 };
+  S.cms={saving:false,result:null}; S.tv={saving:false,result:null}; render();
+  NewsHuntAPI.generateDraft(c, lang).then(d=>{ if(S.view!=='story'||S.storyId!==c.id) return;
+    S.storyDraft={ id:c.id, loading:false, data:d, focus:0 }; render(); });
+}
+
+function changeLang(lang){
+  S.draftLang=lang;
+  const c=curStory(), st=S.storyDraft;
+  if(c && st.id===c.id && st.data && !st.loading){ writeDraft(); }  // regenerate in the new language
+  else render();
+}
+
+function toggleChannel(pid){
+  const c=curStory(); if(!c) return;
+  const imp=importance(c,S.graph), urg=urgency(c,S.now,S.graph);
+  const R={cluster:c,imp,urg,routing:routing(c,imp,urg)};
+  const sel=routeSel(R);
+  if(sel.has(pid)) sel.delete(pid); else sel.add(pid);
+  render();
+}
+
+function toggleTheme(){
+  S.theme = S.theme==='dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = S.theme;
+  render();
+}
+function saveCms(){
+  const c=curStory(), d=S.storyDraft.data; if(!c||!d) return;
+  const payload={ target:'digital', status:'draft', autoPublish:false, headline:d.seo.display,
+    seoHeadline:d.seo.seoHeadline, socialHeadline:d.seo.social, slug:d.seo.slug,
+    metaDescription:d.seo.metaDesc, tags:d.seo.tags, internalLinks:d.seo.internal,
+    body:d.sentences.map(s=>({text:s.text, source:s.sourceLabel, sourceItem:s.itemId, rights:s.rights})),
+    editorialGates:d.gates, confidence:d.confidence, clusterId:c.id };
+  S.cms={saving:true,result:null}; render();
+  NewsHuntAPI.saveDraft(payload).then(res=>{ S.cms={saving:false,result:res}; render(); });
+}
+function sendTv(){
+  const c=curStory(), d=S.storyDraft.data; if(!c||!d) return;
+  const tvf=d.seo.tv||{};
+  const payload={ target:'tv', status:'queued', autoAir:false,
+    tvHeadline:tvf.headline, ticker:tvf.ticker, hasVideo:(tvf.video||0)>0,
+    body:d.sentences.map(s=>({text:s.text, source:s.sourceLabel, sourceItem:s.itemId, rights:s.rights})),
+    editorialGates:d.gates, confidence:d.confidence, clusterId:c.id };
+  S.tv={saving:true,result:null}; render();
+  NewsHuntAPI.sendToTv(payload).then(res=>{ S.tv={saving:false,result:res}; render(); });
+}
+
+document.addEventListener('click', e=>{
+  const t=e.target.closest('[data-act],[data-view],[data-stage],[data-open],[data-sent],[data-lang],[data-chan]');
+  if(!t) return;
+  if(t.dataset.act){
+    const a=t.dataset.act;
+    if(a==='play') play();
+    if(a==='pause') pause();
+    if(a==='closestage'){ S.openStage=null; render(); }
+    if(a==='write') writeDraft();
+    if(a==='cms') saveCms();
+    if(a==='tv') sendTv();
+    if(a==='theme') toggleTheme();
+    return;
+  }
+  if(t.dataset.lang){ changeLang(t.dataset.lang); return; }
+  if(t.dataset.chan){ toggleChannel(t.dataset.chan); return; }
+  if(t.dataset.view){ S.view=t.dataset.view; if(t.dataset.view==='overview') S.storyId=null; render(); return; }
+  if(t.dataset.stage){ S.openStage = S.openStage===t.dataset.stage ? null : t.dataset.stage; render(); return; }
+  if(t.dataset.open){ openStory(t.dataset.open); return; }
+  if(t.dataset.sent){ S.storyDraft.focus=+t.dataset.sent; render(); return; }
+});
+
+document.addEventListener('keydown', e=>{
+  if((e.key==='Enter'||e.key===' ')){ const t=e.target.closest('[data-open],[data-sent],[data-chan],[data-lang]');
+    if(t){ e.preventDefault(); t.click(); } }
+  if(e.key==='Escape'){ if(S.openStage){ S.openStage=null; render(); }
+    else if(S.view==='story'){ S.view='overview'; S.storyId=null; render(); } }
+});
+
+document.addEventListener('input', e=>{
+  if(e.target.classList.contains('scrub')){ const v=+e.target.value; pause();
+    v<S.now?rebuild(v):advanceTo(v); render(); }
+});
+
+/* ---------- boot ---------- */
+async function boot(){
+  document.documentElement.dataset.theme = S.theme;   // default light; user can toggle
+  render();
+  const [feeds,archive,tape,desk,trends]=await Promise.all([
+    NewsHuntAPI.fetchFeeds(), NewsHuntAPI.fetchArchive(),
+    NewsHuntAPI.fetchTape(), NewsHuntAPI.fetchDesk(), NewsHuntAPI.fetchTrends()
+  ]);
+  FEEDS=feeds; ARCHIVE=archive; TAPE=tape; DESK=desk; S.trends=trends;
+  END=TAPE[TAPE.length-1].t+60; OPEN_AT=END;
+  rebuild(OPEN_AT); S.ready=true; render();
+}
+boot();
+})();
+</script>
+</body>
+</html>
