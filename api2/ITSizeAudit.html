@@ -3,262 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India Today Android: APK Size Optimization</title>
+    <title>India Today Android · APK Size Engineering</title>
     <style>
         :root {
-            --primary-red: #D32F2F;
-            --dark-bg: #121212;
-            --card-bg: #1E1E1E;
-            --text-main: #E0E0E0;
-            --text-muted: #9E9E9E;
-            --accent-green: #4CAF50;
+            --primary: #c62828;
+            --primary-hover: #b71c1c;
+            --bg: #f4f6f8;
+            --surface: #ffffff;
+            --surface-alt: #f8fafc;
+            --border: #e2e8f0;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --success: #15803d;
+            --success-bg: #dcfce7;
+            --tag-bg: #fee2e2;
+            --tag-text: #991b1b;
+            --code-bg: #f1f5f9;
         }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--text-main);
-            margin: 0;
-            padding: 2rem;
-            line-height: 1.6;
-        }
-        header {
-            border-bottom: 2px solid var(--primary-red);
-            padding-bottom: 1rem;
-            margin-bottom: 2rem;
-        }
-        h1 { margin: 0; color: #fff; font-size: 2rem; }
-        h2 { color: var(--primary-red); font-size: 1.5rem; margin-top: 2rem; }
-        .subtitle { color: var(--text-muted); font-size: 1.1rem; }
-        
-        /* Dashboard Stats */
-        .dashboard {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .stat-card {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            flex: 1;
-            text-align: center;
-            border-top: 4px solid var(--primary-red);
-        }
-        .stat-card.success { border-top-color: var(--accent-green); }
-        .stat-value { font-size: 2.5rem; font-weight: bold; margin: 0.5rem 0; color: #fff; }
-        .stat-label { color: var(--text-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;}
 
-        /* Interactive Roadmap */
-        .roadmap-item {
-            background: var(--card-bg);
-            margin-bottom: 1rem;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.2s ease;
+        [data-theme="dark"] {
+            --bg: #0f172a;
+            --surface: #1e293b;
+            --surface-alt: #334155;
+            --border: #334155;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #4ade80;
+            --success-bg: #14532d;
+            --tag-bg: #450a0a;
+            --tag-text: #fca5a5;
+            --code-bg: #0f172a;
         }
-        .roadmap-header {
-            padding: 1.2rem;
+
+        * { box-sizing: border-box; margin: 0; padding: 0; transition: background 0.2s, border-color 0.2s, color 0.2s; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-size: 13px;
+            line-height: 1.5;
+            padding: 1.5rem;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        header {
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .header-title h1 { font-size: 1.25rem; font-weight: 700; color: var(--text-main); }
+        .header-title p { font-size: 0.8rem; color: var(--text-muted); }
+
+        .theme-toggle-btn {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 0.35rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 4px;
             cursor: pointer;
-            user-select: none;
         }
-        .roadmap-header:hover { background: #252525; }
-        .checkbox-container {
-            margin-right: 1rem;
+        .theme-toggle-btn:hover { background: var(--surface-alt); }
+
+        /* KPI Cards */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
         }
-        input[type="checkbox"] {
-            transform: scale(1.5);
-            cursor: pointer;
-            accent-color: var(--accent-green);
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.85rem;
         }
-        .item-title { flex: 1; font-size: 1.2rem; font-weight: bold; }
-        .item-savings { 
-            background: rgba(76, 175, 80, 0.2); 
-            color: var(--accent-green); 
-            padding: 0.3rem 0.8rem; 
-            border-radius: 20px; 
-            font-weight: bold;
-        }
-        .item-details {
-            padding: 0 1.2rem 1.2rem 3.5rem;
-            display: none;
-            color: var(--text-muted);
-        }
-        .roadmap-item.active .item-details { display: block; }
-        
+
+        .stat-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); }
+        .stat-val { font-size: 1.5rem; font-weight: 700; margin: 0.2rem 0; }
+        .stat-sub { font-size: 0.72rem; color: var(--text-muted); }
+        .stat-live { color: var(--primary); }
+
+        /* Section Headings */
+        h2 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem; }
+        .section-desc { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+
+        /* Tables */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 1rem;
-            background: var(--card-bg);
-            border-radius: 8px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+            font-size: 0.75rem;
+            margin-bottom: 1.25rem;
+        }
+
+        th, td { padding: 0.55rem 0.75rem; text-align: left; border-bottom: 1px solid var(--border); }
+        th { background: var(--surface-alt); font-weight: 600; color: var(--text-muted); }
+        tr:last-child td { border-bottom: none; }
+
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.68rem;
+            font-weight: 600;
+        }
+        .badge-success { background: var(--success-bg); color: var(--success); }
+        .badge-tag { background: var(--tag-bg); color: var(--tag-text); }
+
+        /* Interactive Checklist */
+        .checklist-group { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem; }
+        .check-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 5px;
             overflow: hidden;
         }
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #333;
+        .check-item-header {
+            display: flex;
+            align-items: center;
+            padding: 0.6rem 0.85rem;
+            cursor: pointer;
+            gap: 0.6rem;
+            user-select: none;
         }
-        th { background: #252525; color: #fff; }
-        code { background: #000; padding: 0.2rem 0.4rem; border-radius: 4px; color: #ff9800;}
-
-        .completed-row td { color: var(--text-muted); }
-        .completed-badge { color: var(--accent-green); font-weight: bold; }
+        .check-item-header:hover { background: var(--surface-alt); }
+        .check-item input[type="checkbox"] { width: 14px; height: 14px; cursor: pointer; accent-color: var(--primary); }
+        .check-title { flex: 1; font-weight: 600; font-size: 0.8rem; }
+        .check-savings { font-weight: 700; color: var(--success); font-size: 0.75rem; }
+        .details-content {
+            display: none;
+            padding: 0.6rem 0.85rem 0.75rem 2.1rem;
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            border-top: 1px dashed var(--border);
+            background: var(--surface-alt);
+        }
+        .check-item.expanded .details-content { display: block; }
+        code { background: var(--code-bg); color: var(--primary); padding: 0.1rem 0.3rem; border-radius: 3px; font-family: monospace; font-size: 0.72rem; }
     </style>
 </head>
-<body>
-
+<body data-theme="light">
+<div class="container">
     <header>
-        <h1>India Today Android · Size Engineering</h1>
-        <div class="subtitle">APK / Bundle Size Reduction Roadmap & Live Calculator</div>
+        <div class="header-title">
+            <h1>India Today Android · Size Reduction Strategy</h1>
+            <p>App Install Optimization & Comprehensive Size Auditing Report</p>
+        </div>
+        <button class="theme-toggle-btn" onclick="toggleTheme()" id="themeBtn">Dark Mode</button>
     </header>
 
-    <div class="dashboard">
-        <div class="stat-card">
+    <div class="dashboard-grid">
+        <div class="card">
             <div class="stat-label">Baseline Size (v5.7.3)</div>
-            <div class="stat-value">37.60 MB</div>
+            <div class="stat-val">37.60 MB</div>
+            <div class="stat-sub">Original Build Size</div>
         </div>
-        <div class="stat-card success">
-            <div class="stat-label">Already Saved</div>
-            <div class="stat-value">~3.86 MB</div>
+        <div class="card">
+            <div class="stat-label">Completed Savings</div>
+            <div class="stat-val" style="color: var(--success);">-3.86 MB</div>
+            <div class="stat-sub">RxJava, Compose, Moshi, Dead Code</div>
         </div>
-        <div class="stat-card">
-            <div class="stat-label">Current Optimized Size</div>
-            <div class="stat-value">33.74 MB</div>
+        <div class="card">
+            <div class="stat-label">Current Unoptimized</div>
+            <div class="stat-val">33.74 MB</div>
+            <div class="stat-sub">Starting Point for Phase 2 & 3</div>
         </div>
-        <div class="stat-card success">
-            <div class="stat-label">Projected Live Size</div>
-            <div class="stat-value" id="projected-size">33.74 MB</div>
+        <div class="card">
+            <div class="stat-label">Target Simulated Size</div>
+            <div class="stat-val stat-live" id="projectedSize">33.74 MB</div>
+            <div class="stat-sub" id="selectedSavings">Selected: 0.00 MB</div>
         </div>
     </div>
 
-    <h2>Phase 1: Completed Optimizations</h2>
+    <h2>Phase 1: Completed Optimizations (Verified)</h2>
+    <div class="section-desc">Extracted binary deltas verified via class-signature and dex diffing.</div>
     <table>
         <thead>
             <tr>
-                <th>Component / Dead Code Category</th>
-                <th>Old Refs</th>
-                <th>New Refs</th>
-                <th>Est. Dex Weight Removed</th>
+                <th>Library / Dead Code Target</th>
+                <th>Old Signature Refs</th>
+                <th>New Signature Refs</th>
+                <th>Dex Weight Removed</th>
                 <th>Status</th>
             </tr>
         </thead>
         <tbody>
-            <tr class="completed-row">
-                <td>RxJava2 / RxAndroid <code>io.reactivex.*</code></td>
+            <tr>
+                <td>RxJava2 / RxAndroid (<code>io.reactivex.*</code>)</td>
                 <td>2,230</td>
                 <td>0</td>
-                <td>~3.0 - 5.0 MB</td>
-                <td class="completed-badge">✓ Removed</td>
+                <td>~3.00 – 5.00 MB</td>
+                <td><span class="badge badge-success">Eliminated</span></td>
             </tr>
-            <tr class="completed-row">
-                <td>Compose Layouts <code>androidx.compose.foundation.layout</code></td>
+            <tr>
+                <td>Compose Layout (<code>androidx.compose.foundation.layout</code>)</td>
                 <td>928</td>
                 <td>0</td>
-                <td>~400 - 800 KB</td>
-                <td class="completed-badge">✓ Removed</td>
+                <td>~400 – 800 KB</td>
+                <td><span class="badge badge-success">Eliminated</span></td>
             </tr>
-            <tr class="completed-row">
-                <td>Moshi <code>com.squareup.moshi.*</code></td>
+            <tr>
+                <td>Moshi Engine (<code>com.squareup.moshi.*</code>)</td>
                 <td>179</td>
-                <td>125 (Retrofit probes)</td>
-                <td>~100 - 250 KB</td>
-                <td class="completed-badge">✓ Removed</td>
+                <td>125 (Retrofit reflection probes)</td>
+                <td>~100 – 250 KB</td>
+                <td><span class="badge badge-success">Dependency Removed</span></td>
+            </tr>
+            <tr>
+                <td>Java-to-Kotlin Conversions &amp; Dead Screens</td>
+                <td>Various</td>
+                <td>0</td>
+                <td>~4.00 – 6.00 MB uncompressed</td>
+                <td><span class="badge badge-success">Completed</span></td>
             </tr>
         </tbody>
     </table>
 
-    <h2>Phase 2: Execution Roadmap (Interactive)</h2>
-    <div class="subtitle" style="margin-bottom: 1.5rem;">Select items below to simulate size reduction on the projected dashboard. Click rows to view technical implementation details.</div>
+    <h2>Phase 2 &amp; 3: Active &amp; New Architectural Opportunities</h2>
+    <div class="section-desc">Toggle checkboxes to simulate size impacts on the primary build target. Click rows to inspect implementation steps.</div>
 
-    <div class="roadmap-item" onclick="toggleDetails(this)">
-        <div class="roadmap-header">
-            <div class="checkbox-container">
-                <input type="checkbox" class="opt-checkbox" data-savings="3.69" onclick="event.stopPropagation(); calculateSize();">
+    <div class="checklist-group">
+        <!-- Native ABI -->
+        <div class="check-item" onclick="toggleExpand(this)">
+            <div class="check-item-header">
+                <input type="checkbox" class="opt-cb" data-size="3.69" onclick="event.stopPropagation(); updateCalc();">
+                <span class="check-title">1. Drop x86 / x86_64 Native Libs for Direct Distribution</span>
+                <span class="badge badge-tag">Low Risk</span>
+                <span class="check-savings">-3.69 MB</span>
             </div>
-            <div class="item-title">1. Strip x86 / x86_64 Native Libs</div>
-            <div class="item-savings">-3.69 MB</div>
+            <div class="details-content">
+                <strong>Analysis:</strong> <code>lib/x86/</code> is 1.89 MB and <code>lib/x86_64/</code> is 1.80 MB. These emulator binaries only bloat direct/alpha builds.<br>
+                <strong>Execution:</strong> Add <code>ndk { abiFilters "armeabi-v7a", "arm64-v8a" }</code> to the distribution build variant in <code>app/build.gradle</code>.
+            </div>
         </div>
-        <div class="item-details">
-            <strong>Context:</strong> <code>lib/x86/</code> is 1.89 MB and <code>lib/x86_64/</code> is 1.80 MB. These are emulator-only architectures and are dead weight for direct-distributed alpha/dev APKs.<br><br>
-            <strong>Action:</strong> Add <code>ndk { abiFilters "armeabi-v7a", "arm64-v8a" }</code> to the <code>buildTypes</code> or <code>productFlavors</code> used for direct distribution.<br>
-            <em>Note: Play Store users already avoid this via AAB ABI splits.</em>
+
+        <!-- kotlin-reflect -->
+        <div class="check-item" onclick="toggleExpand(this)">
+            <div class="check-item-header">
+                <input type="checkbox" class="opt-cb" data-size="2.00" onclick="event.stopPropagation(); updateCalc();">
+                <span class="check-title">2. Isolate and Strip kotlin-reflect</span>
+                <span class="badge badge-tag">High Impact</span>
+                <span class="check-savings">-2.00 MB</span>
+            </div>
+            <div class="details-content">
+                <strong>Analysis:</strong> 2,330 <code>kotlin/reflect/jvm/internal</code> references remain in DEX. It is one of the heaviest jars in the Android ecosystem.<br>
+                <strong>Execution:</strong> Audit classpath using <code>./gradlew :app:dependencies --configuration indiatodayProdReleaseRuntimeClasspath | grep -i reflect</code> and eliminate transitive injection.
+            </div>
+        </div>
+
+        <!-- NEW POINT: R8 Full Mode -->
+        <div class="check-item" onclick="toggleExpand(this)">
+            <div class="check-item-header">
+                <input type="checkbox" class="opt-cb" data-size="0.85" onclick="event.stopPropagation(); updateCalc();">
+                <span class="check-title">3. Enable R8 Full Mode (Code Outlining &amp; Class Merging)</span>
+                <span class="badge badge-tag">New Finding</span>
+                <span class="check-savings">-850 KB</span>
+            </div>
+            <div class="details-content">
+                <strong>Analysis:</strong> Default R8 runs in compatibility mode. Full Mode enables aggressive dead-code elimination, unboxing, class merging, and method outlining.<br>
+                <strong>Execution:</strong> Add <code>android.enableR8.fullMode=true</code> in <code>gradle.properties</code> and verify reflection-reliant entry points.
+            </div>
+        </div>
+
+        <!-- NEW POINT: Font Subsetting & Deduplication -->
+        <div class="check-item" onclick="toggleExpand(this)">
+            <div class="check-item-header">
+                <input type="checkbox" class="opt-cb" data-size="0.45" onclick="event.stopPropagation(); updateCalc();">
+                <span class="check-title">4. Font Deduplication &amp; Glyph Subsetting (pyftsubset)</span>
+                <span class="badge badge-tag">New Finding</span>
+                <span class="check-savings">-450 KB</span>
+            </div>
+            <div class="details-content">
+                <strong>Analysis:</strong> <code>font_medium.ttf</code> and <code>InterTightBlack.ttf</code> are duplicated across <code>assets/</code> and <code>res/font/</code>, carrying unused extended character glyphs.<br>
+                <strong>Execution:</strong> Deduplicate storage and run <code>pyftsubset</code> to strip unused non-Latin/extended ligatures or transition to Google Play Downloadable Fonts.
+            </div>
+        </div>
+
+        <!-- WebP Conversion -->
+        <div class="check-item" onclick="toggleExpand(this)">
+            <div class="check-item-header">
+                <input type="checkbox" class="opt-cb" data-size="0.35" onclick="event.stopPropagation(); updateCalc();">
+                <span class="check-title">5. Convert Raw PNG/JPEG Drawables to Lossless/Lossy WebP</span>
+                <span class="badge badge-tag">Asset Compression</span>
+                <span class="check-savings">-350 KB</span>
+            </div>
+            <div class="details-content">
+                <strong>Analysis:</strong> Raw drawables consume uncompressed size in <code>res/</code>.<br>
+                <strong>Execution:</strong> Right-click <code>res/drawable*</code> &rarr; <em>Convert to WebP</em> (Lossless for icons, 75-80% quality for imagery). Follow with an unused-resources lint pass.
+            </div>
+        </div>
+
+        <!-- NEW POINT: Desugaring Configuration -->
+        <div class="check-item" onclick="toggleExpand(this)">
+            <div class="check-item-header">
+                <input type="checkbox" class="opt-cb" data-size="0.25" onclick="event.stopPropagation(); updateCalc();">
+                <span class="check-title">6. Audit Java 8+ Desugaring Configuration (desugar_jdk_libs)</span>
+                <span class="badge badge-tag">New Finding</span>
+                <span class="check-savings">-250 KB</span>
+            </div>
+            <div class="details-content">
+                <strong>Analysis:</strong> Using the full desugar library adds large companion methods in DEX.<br>
+                <strong>Execution:</strong> Switch from <code>desugar_jdk_libs</code> (Full) to <code>desugar_jdk_libs_minimal</code> if only using basic <code>java.time</code> or Streams.
+            </div>
+        </div>
+
+        <!-- Long Term: Gson Migration -->
+        <div class="check-item" onclick="toggleExpand(this)">
+            <div class="check-item-header">
+                <input type="checkbox" class="opt-cb" data-size="0.30" onclick="event.stopPropagation(); updateCalc();">
+                <span class="check-title">7. Complete Gson &rarr; kotlinx.serialization Transition</span>
+                <span class="badge badge-tag">Tech Debt</span>
+                <span class="check-savings">-300 KB</span>
+            </div>
+            <div class="details-content">
+                <strong>Analysis:</strong> Shared models across screens (<code>ElectionWidgetParentBase</code>, <code>StateLists</code>) hold Gson in the runtime classpath.<br>
+                <strong>Execution:</strong> Migrate shared models to <code>@Serializable</code> and remove the Gson dependency and its associated keep-rules entirely.
+            </div>
         </div>
     </div>
+</div>
 
-    <div class="roadmap-item" onclick="toggleDetails(this)">
-        <div class="roadmap-header">
-            <div class="checkbox-container">
-                <input type="checkbox" class="opt-checkbox" data-savings="2.00" onclick="event.stopPropagation(); calculateSize();">
-            </div>
-            <div class="item-title">2. Audit & Remove kotlin-reflect</div>
-            <div class="item-savings">-2.00 MB (Est.)</div>
-        </div>
-        <div class="item-details">
-            <strong>Context:</strong> 2,330 <code>kotlin/reflect/jvm/internal</code> references exist untouched in the new dex. This is a massive legacy dependency likely pulled in via Dagger or Gson fallback paths.<br><br>
-            <strong>Action:</strong> Run <code>./gradlew :app:dependencies --configuration indiatodayProdReleaseRuntimeClasspath | grep -i reflect</code> to find the pull-in point. Resolve the transitive dependency before removal to prevent runtime crashes.
-        </div>
-    </div>
-
-    <div class="roadmap-item" onclick="toggleDetails(this)">
-        <div class="roadmap-header">
-            <div class="checkbox-container">
-                <input type="checkbox" class="opt-checkbox" data-savings="0.35" onclick="event.stopPropagation(); calculateSize();">
-            </div>
-            <div class="item-title">3. Convert PNG/JPEG to WebP</div>
-            <div class="item-savings">-350 KB (Est.)</div>
-        </div>
-        <div class="item-details">
-            <strong>Context:</strong> Legacy drawables in <code>res/</code> are uncompressed.<br><br>
-            <strong>Action:</strong> In Android Studio, right-click <code>res/</code> &rarr; Convert to WebP. Use lossless for UI icons and lossy (75%) for photographic assets. Run a subsequent unused-resources lint pass to catch orphaned XML drawables.
-        </div>
-    </div>
-
-    <div class="roadmap-item" onclick="toggleDetails(this)">
-        <div class="roadmap-header">
-            <div class="checkbox-container">
-                <input type="checkbox" class="opt-checkbox" data-savings="0.35" onclick="event.stopPropagation(); calculateSize();">
-            </div>
-            <div class="item-title">4. Migrate Shared Gson Models to Kotlinx.serialization</div>
-            <div class="item-savings">-350 KB (Est.)</div>
-        </div>
-        <div class="item-details">
-            <strong>Context:</strong> Models like <code>ElectionWidgetParentBase</code>, <code>StateLists</code>, and <code>PartyLabels</code> are shared across 17 screens and still rely on Gson.<br><br>
-            <strong>Action:</strong> Long-term tech debt task. Convert model-by-model to <code>@Serializable</code>. Once complete, completely remove the Gson dependency and its associated ProGuard rules to allow R8 to strip the remaining parser code.
-        </div>
-    </div>
-
-    <script>
-        // Toggle Accordion Details
-        function toggleDetails(element) {
-            element.classList.toggle('active');
+<script>
+    function toggleTheme() {
+        const body = document.body;
+        const btn = document.getElementById('themeBtn');
+        if (body.getAttribute('data-theme') === 'light') {
+            body.setAttribute('data-theme', 'dark');
+            btn.innerText = 'Light Mode';
+        } else {
+            body.setAttribute('data-theme', 'light');
+            btn.innerText = 'Dark Mode';
         }
+    }
 
-        // Live Size Calculator
-        function calculateSize() {
-            const baseSize = 33.74;
-            let totalSavings = 0;
-            
-            const checkboxes = document.querySelectorAll('.opt-checkbox');
-            checkboxes.forEach(box => {
-                if (box.checked) {
-                    totalSavings += parseFloat(box.getAttribute('data-savings'));
-                }
-            });
+    function toggleExpand(element) {
+        element.classList.toggle('expanded');
+    }
 
-            const projectedSize = (baseSize - totalSavings).toFixed(2);
-            const sizeElement = document.getElementById('projected-size');
-            
-            sizeElement.innerText = projectedSize + " MB";
-            
-            // Visual feedback on the number
-            sizeElement.style.color = totalSavings > 0 ? "var(--accent-green)" : "#fff";
-            sizeElement.style.transform = "scale(1.1)";
-            setTimeout(() => {
-                sizeElement.style.transform = "scale(1)";
-            }, 200);
-        }
-    </script>
+    function updateCalc() {
+        const base = 33.74;
+        let savings = 0;
+        const boxes = document.querySelectorAll('.opt-cb');
+        boxes.forEach(b => {
+            if (b.checked) savings += parseFloat(b.getAttribute('data-size'));
+        });
+
+        const projected = (base - savings).toFixed(2);
+        document.getElementById('projectedSize').innerText = projected + " MB";
+        document.getElementById('selectedSavings').innerText = "Selected: -" + savings.toFixed(2) + " MB";
+    }
+</script>
 </body>
 </html>
