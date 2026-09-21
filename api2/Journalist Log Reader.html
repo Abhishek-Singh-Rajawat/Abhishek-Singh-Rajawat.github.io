@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Session Story — Activity Log Reader</title>
+<style>
+  :root {
+    --bg: #F2F1EC;
+    --surface: #FFFFFF;
+    --surface-2: #EAE8E1;
+    --ink: #1C1E22;
+    --ink-muted: #5B5F66;
+    --ink-faint: #8A8E94;
+    --line: #DEDCD3;
+    --accent: #1F6F6B;
+    --accent-ink: #0E4441;
+    --accent-soft: #DCEBE9;
+    --success: #2E7D4F;
+    --success-soft: #E1F0E6;
+    --warning: #A5730E;
+    --warning-soft: #F5EBD6;
+    --critical: #B23A2E;
+    --critical-soft: #F7E3E0;
+    --shadow: 0 1px 2px rgba(20,23,26,0.04), 0 4px 16px rgba(20,23,26,0.05);
+    --radius: 10px;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171A;
+      --surface: #1C1F22;
+      --surface-2: #23272B;
+      --ink: #ECEAE4;
+      --ink-muted: #9BA0A6;
+      --ink-faint: #6C7278;
+      --line: #2B2F33;
+      --accent: #4FBDB6;
+      --accent-ink: #BFEEE9;
+      --accent-soft: #1C3532;
+      --success: #5FBE84;
+      --success-soft: #1B3226;
+      --warning: #D8A94A;
+      --warning-soft: #332A16;
+      --critical: #E0776A;
+      --critical-soft: #3A211D;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171A; --surface: #1C1F22; --surface-2: #23272B; --ink: #ECEAE4;
+    --ink-muted: #9BA0A6; --ink-faint: #6C7278; --line: #2B2F33;
+    --accent: #4FBDB6; --accent-ink: #BFEEE9; --accent-soft: #1C3532;
+    --success: #5FBE84; --success-soft: #1B3226; --warning: #D8A94A; --warning-soft: #332A16;
+    --critical: #E0776A; --critical-soft: #3A211D;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    color-scheme: dark;
+  }
+  :root[data-theme="light"] {
+    --bg: #F2F1EC; --surface: #FFFFFF; --surface-2: #EAE8E1; --ink: #1C1E22;
+    --ink-muted: #5B5F66; --ink-faint: #8A8E94; --line: #DEDCD3;
+    --accent: #1F6F6B; --accent-ink: #0E4441; --accent-soft: #DCEBE9;
+    --success: #2E7D4F; --success-soft: #E1F0E6; --warning: #A5730E; --warning-soft: #F5EBD6;
+    --critical: #B23A2E; --critical-soft: #F7E3E0;
+    --shadow: 0 1px 2px rgba(20,23,26,0.04), 0 4px 16px rgba(20,23,26,0.05);
+    color-scheme: light;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .mono {
+    font-family: ui-monospace, "SF Mono", "Menlo", "Cascadia Mono", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+  h1, h2, h3 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 600;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .shell {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    min-height: 100vh;
+  }
+  @media (max-width: 860px) {
+    .shell { grid-template-columns: 1fr; }
+    .rail { border-right: none; border-bottom: 1px solid var(--line); }
+  }
+
+  /* ---------- Left rail ---------- */
+  .rail {
+    background: var(--surface);
+    border-right: 1px solid var(--line);
+    padding: 22px 18px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .brand .mark {
+    width: 22px; height: 22px;
+    border-radius: 5px;
+    background: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+  .brand .mark svg { width: 13px; height: 13px; stroke: var(--surface); }
+  .brand h1 { font-size: 17px; letter-spacing: -0.01em; }
+  .brand span { color: var(--ink-faint); font-size: 12px; }
+
+  .dropzone {
+    border: 1.5px dashed var(--line);
+    border-radius: var(--radius);
+    padding: 18px 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color .15s ease, background .15s ease;
+    background: var(--bg);
+  }
+  .dropzone:hover, .dropzone.drag {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .dropzone p { margin: 0; font-size: 13px; color: var(--ink-muted); line-height: 1.5; }
+  .dropzone strong { color: var(--ink); font-weight: 600; }
+  .dropzone input { display: none; }
+  .or-paste {
+    font-size: 11px;
+    color: var(--ink-faint);
+    text-align: center;
+  }
+  textarea#pasteBox {
+    width: 100%;
+    min-height: 56px;
+    resize: vertical;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-monospace, monospace;
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+  .load-btn {
+    background: var(--accent);
+    color: var(--surface);
+    border: none;
+    border-radius: 7px;
+    padding: 8px 10px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .load-btn:hover { filter: brightness(1.06); }
+
+  .rail-section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--ink-faint);
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .session-list { display: flex; flex-direction: column; gap: 8px; overflow-y: auto; }
+  .session-card {
+    text-align: left;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: 10px 12px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: transform .18s cubic-bezier(.2,.8,.3,1.2), border-color .15s ease, background .15s ease, box-shadow .18s ease;
+  }
+  .session-card:hover {
+    border-color: var(--accent);
+    transform: translateX(3px);
+    box-shadow: var(--shadow);
+  }
+  .session-card.active {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    box-shadow: var(--shadow);
+  }
+  .session-card:active { transform: translateX(3px) scale(.98); }
+  @keyframes cardIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .session-card.card-new { animation: cardIn .4s cubic-bezier(.2,.8,.3,1.2) both; }
+  .session-card .top-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .session-card .device { font-size: 12.5px; font-weight: 600; color: var(--ink); }
+  .session-card .when { font-size: 10.5px; color: var(--ink-faint); }
+  .session-card .stats { font-size: 11px; color: var(--ink-muted); }
+  .session-card .badges { display: flex; gap: 5px; margin-top: 2px; }
+  .badge {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 100px;
+    letter-spacing: .02em;
+  }
+  .badge.crash { background: var(--critical-soft); color: var(--critical); animation: badgePulse 1.8s ease-in-out infinite; }
+  @keyframes badgePulse {
+    0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--critical) 35%, transparent); }
+    50% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--critical) 0%, transparent); }
+  }
+
+  .empty-rail-note { font-size: 12px; color: var(--ink-faint); line-height: 1.6; }
+
+  /* ---------- Main ---------- */
+  .main { padding: 30px 40px 60px; max-width: 900px; }
+  @media (max-width: 640px) { .main { padding: 22px 18px 48px; } }
+
+  .placeholder {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--ink-faint);
+    flex-direction: column;
+    gap: 10px;
+  }
+  .placeholder svg { width: 40px; height: 40px; stroke: var(--ink-faint); opacity: .5; }
+  .placeholder p { max-width: 320px; font-size: 13.5px; line-height: 1.6; margin: 0; }
+
+  .story-header { margin-bottom: 22px; }
+  .eyebrow {
+    font-size: 11.5px;
+    color: var(--accent-ink);
+    background: var(--accent-soft);
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 100px;
+    font-weight: 700;
+    letter-spacing: .03em;
+    margin-bottom: 10px;
+  }
+  .story-header h2 { font-size: 26px; margin-bottom: 6px; }
+  .story-header .sub { color: var(--ink-muted); font-size: 13.5px; }
+
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin: 20px 0 30px;
+  }
+  .stat {
+    background: var(--surface);
+    padding: 12px 14px;
+    transition: background .15s ease;
+  }
+  .stat:hover { background: var(--accent-soft); }
+  .stat .num { font-size: 19px; font-weight: 700; font-family: ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .stat .num.warn { color: var(--critical); }
+  .stat .label { font-size: 10.5px; color: var(--ink-faint); text-transform: uppercase; letter-spacing: .04em; margin-top: 2px; }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .filter-chip {
+    font-size: 11.5px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink-muted);
+    padding: 5px 11px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform .12s ease, background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .filter-chip:hover { transform: translateY(-1px); border-color: var(--accent); }
+  .filter-chip.active { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+
+  .play-btn {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--ink);
+    color: var(--surface);
+    border: none;
+    padding: 6px 14px 6px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .12s cubic-bezier(.2,.8,.3,1.4), background .15s ease;
+  }
+  .play-btn:hover { transform: translateY(-1px) scale(1.03); }
+  .play-btn:active { transform: scale(.97); }
+  .play-btn.playing { background: var(--critical); }
+  .play-btn svg { width: 12px; height: 12px; fill: currentColor; }
+  .speed-btn {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--ink-muted);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 9px;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .speed-btn:hover { border-color: var(--accent); }
+
+  .play-progress-track {
+    height: 3px;
+    background: var(--line);
+    border-radius: 100px;
+    margin: 10px 0 24px;
+    overflow: hidden;
+    display: none;
+  }
+  .play-progress-track.show { display: block; }
+  .play-progress-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--accent);
+    border-radius: 100px;
+    transition: width .25s linear;
+  }
+
+  /* ---------- Timeline / chapters ---------- */
+  .chapter { position: relative; margin-bottom: 8px; }
+  .chapter-gap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink-faint);
+    font-size: 11.5px;
+    padding: 14px 0 10px 0;
+    margin-left: 2px;
+  }
+  .chapter-gap::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+
+  .timeline {
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background: var(--line);
+  }
+  .event {
+    position: relative;
+    padding: 7px 0;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .5s ease, transform .5s ease, background-color .3s ease, box-shadow .3s ease;
+  }
+  .event.in-view { opacity: 1; transform: translateY(0); }
+  .event.spotlight {
+    background: var(--accent-soft);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .event { transition: none; opacity: 1; transform: none; }
+    .badge.crash { animation: none; }
+    .session-card, .filter-chip, .play-btn { transition: none; }
+  }
+
+  .icon-bubble {
+    position: relative;
+    z-index: 1;
+    width: 26px; height: 26px;
+    flex: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border: 2px solid var(--ink-faint);
+    color: var(--ink-faint);
+  }
+  .icon-bubble svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .event.kind-nav .icon-bubble { border-color: var(--accent); color: var(--accent); }
+  .event.kind-tap .icon-bubble { border-color: var(--ink-muted); color: var(--ink-muted); }
+  .event.kind-api .icon-bubble { border-color: var(--success); color: var(--success); }
+  .event.kind-api-fail .icon-bubble { border-color: var(--critical); color: var(--surface); background: var(--critical); }
+  .event.kind-life .icon-bubble { border-color: var(--ink-faint); color: var(--ink-faint); }
+  .event.kind-crash .icon-bubble {
+    border-color: var(--critical); color: var(--surface); background: var(--critical);
+    width: 28px; height: 28px;
+  }
+  .event.kind-crash .icon-bubble svg { width: 14px; height: 14px; }
+
+  .event-row {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    cursor: default;
+  }
+  .event-time {
+    font-size: 10.5px;
+    color: var(--ink-faint);
+    margin-bottom: 2px;
+    letter-spacing: .02em;
+  }
+  .event-body { flex: 1; min-width: 0; padding-top: 4px; }
+  .event-sentence { font-size: 14px; line-height: 1.5; color: var(--ink); }
+  .event-sentence b { font-weight: 600; }
+  .event-meta { font-size: 11.5px; color: var(--ink-faint); margin-top: 2px; }
+  .event-meta .tag {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 5px;
+    background: var(--surface-2);
+    font-family: ui-monospace, monospace;
+    font-size: 10.5px;
+    margin-right: 4px;
+  }
+  .event.crash-block .event-sentence { color: var(--critical); font-weight: 600; }
+  .crash-detail {
+    margin-top: 8px;
+    background: var(--critical-soft);
+    border: 1px solid color-mix(in srgb, var(--critical) 30%, transparent);
+    border-radius: 8px;
+    padding: 10px 12px;
+    overflow-x: auto;
+  }
+  .crash-detail pre {
+    margin: 0;
+    font-size: 11px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--ink);
+    font-family: ui-monospace, monospace;
+  }
+
+  .raw-toggle {
+    background: none;
+    border: none;
+    color: var(--ink-faint);
+    font-size: 10.5px;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .raw-json {
+    display: none;
+    margin-top: 6px;
+    background: var(--surface-2);
+    border-radius: 6px;
+    padding: 8px 10px;
+    overflow-x: auto;
+  }
+  .raw-json.show { display: block; }
+  .raw-json pre { margin: 0; font-size: 10.5px; font-family: ui-monospace, monospace; color: var(--ink-muted); }
+
+  .theme-toggle {
+    position: fixed;
+    top: 14px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-muted);
+    cursor: pointer;
+    z-index: 30;
+    transition: transform .15s cubic-bezier(.2,.8,.3,1.3), border-color .15s ease, color .15s ease, box-shadow .15s ease;
+  }
+  .theme-toggle:hover {
+    transform: rotate(-10deg) scale(1.07);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 14%, transparent);
+  }
+  .theme-toggle svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* ---------- Floating playback HUD ---------- */
+  .play-hud {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translate(-50%, 24px);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    padding: 8px 8px 8px 16px;
+    box-shadow: var(--shadow), 0 0 0 1px color-mix(in srgb, var(--accent) 30%, transparent), 0 0 26px color-mix(in srgb, var(--accent) 22%, transparent);
+    transition: opacity .25s ease, transform .3s cubic-bezier(.2,.8,.25,1.15);
+  }
+  .play-hud.show { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+  .hud-rec {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    color: var(--critical);
+    white-space: nowrap;
+  }
+  .hud-rec .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--critical); animation: recBlink 1s steps(2, jump-none) infinite; }
+  @keyframes recBlink { 50% { opacity: .2; } }
+  .hud-step {
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .hud-track {
+    width: 100px;
+    height: 4px;
+    background: var(--line);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .hud-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 55%, white));
+    box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 70%, transparent);
+    transition: width .2s linear;
+  }
+  .hud-stop {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    flex: none;
+    background: var(--critical);
+    color: var(--surface);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--critical) 16%, transparent);
+    transition: transform .12s cubic-bezier(.2,.8,.3,1.4), box-shadow .15s ease;
+  }
+  .hud-stop:hover { transform: scale(1.08); box-shadow: 0 0 0 6px color-mix(in srgb, var(--critical) 22%, transparent); }
+  .hud-stop:active { transform: scale(.92); }
+  .hud-stop svg { width: 11px; height: 11px; }
+  @media (max-width: 520px) {
+    .play-hud { left: 12px; right: 12px; transform: translateY(24px); width: auto; }
+    .play-hud.show { transform: translateY(0); }
+    .hud-track { width: auto; flex: 1; }
+  }
+
+  /* ---------- Travelling replay beam ---------- */
+  #timelineWrap { position: relative; }
+  .timeline-beam {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    margin-left: -7px;
+    margin-top: -7px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 10px 2px color-mix(in srgb, var(--accent) 75%, transparent), 0 0 26px 8px color-mix(in srgb, var(--accent) 35%, transparent);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 2;
+    transition: top .32s cubic-bezier(.3,.7,.2,1), left .32s ease, opacity .25s ease;
+  }
+  .timeline-beam::after {
+    content: "";
+    position: absolute;
+    inset: 3.5px;
+    border-radius: 50%;
+    background: var(--surface);
+    opacity: .4;
+  }
+  .timeline-beam.show { opacity: 1; }
+
+  .event.spotlight .icon-bubble {
+    animation: iconPing 1.15s ease-out infinite;
+  }
+  @keyframes iconPing {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent); }
+    70% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--accent) 0%, transparent); }
+    100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .timeline-beam { transition: none; }
+    .event.spotlight .icon-bubble { animation: none; }
+    .hud-rec .dot { animation: none; }
+  }
+
+  ::selection { background: var(--accent-soft); color: var(--ink); }
+</style>
+</head>
+<body>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 3v5h5"/><path d="M8 13h8M8 17h5"/></svg></span>
+      <div>
+        <h1>Session Story</h1><br/>
+        <span>read activity logs in plain English</span>
+      </div>
+    </div>
+
+    <label class="dropzone" id="dropzone">
+      <input type="file" id="fileInput" accept=".log,.json,application/json" multiple />
+      <p><strong>Drop .log files here</strong><br/>or click to browse</p>
+    </label>
+
+    <div>
+      <div class="or-paste">— or paste the raw JSON —</div>
+      <textarea id="pasteBox" placeholder='{"session_id": "...", "logs": [...] }'></textarea>
+      <div style="margin-top:6px;"><button class="load-btn" id="pasteLoadBtn">Read this log</button></div>
+    </div>
+
+    <div>
+      <div class="rail-section-label">Sessions found</div>
+      <div class="session-list" id="sessionList">
+        <div class="empty-rail-note">Nothing loaded yet. Upload a log file to see every session on the device, most recent first.</div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="placeholder">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <p>Load an activity log and pick a session on the left — it'll turn into a plain-language story of exactly what the reporter did on their phone, in order.</p>
+    </div>
+  </main>
+</div>
+
+<button class="theme-toggle" id="themeToggle" title="Switch theme" aria-label="Switch theme"></button>
+
+<div class="play-hud" id="playHud">
+  <span class="hud-rec"><span class="dot"></span>REPLAY</span>
+  <span class="hud-step mono" id="hudStep">00 / 00</span>
+  <div class="hud-track"><div class="hud-fill" id="hudFill"></div></div>
+  <button class="hud-stop" id="hudStopBtn" title="Stop playback" aria-label="Stop playback">
+    <svg viewBox="0 0 12 12"><rect x="1" y="1" width="10" height="10" rx="1.5" fill="currentColor"/></svg>
+  </button>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---------- theme toggle ----------
+  var root = document.documentElement;
+  var SUN_ICON = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/>';
+  var MOON_ICON = '<path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/>';
+  var themeToggleBtn = document.getElementById("themeToggle");
+  function isDarkActive() {
+    var attr = root.getAttribute("data-theme");
+    if (attr === "dark") return true;
+    if (attr === "light") return false;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function paintThemeToggle() {
+    themeToggleBtn.innerHTML = '<svg viewBox="0 0 24 24">' + (isDarkActive() ? MOON_ICON : SUN_ICON) + '</svg>';
+  }
+  themeToggleBtn.addEventListener("click", function () {
+    root.setAttribute("data-theme", isDarkActive() ? "light" : "dark");
+    paintThemeToggle();
+  });
+  paintThemeToggle();
+
+  // ---------- state ----------
+  var allSessions = []; // {sessionId, deviceInfo, events:[...], sourceFile}
+  var activeSessionKey = null;
+  var activeFilter = "all";
+  var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // play-back state
+  var playSpeed = 1;
+  var isPlaying = false;
+  var playTimer = null;
+  var playEls = [];
+  var playIdx = 0;
+  var PLAY_STEP_MS = 1300;
+
+  var ICON_PATHS = {
+    "nav": '<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 18v3"/>',
+    "tap": '<circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7.5" stroke-dasharray="2 3"/>',
+    "api": '<path d="M7 18a4 4 0 0 1-.7-7.94A5 5 0 0 1 16 8.5a3.8 3.8 0 0 1 1 7.46"/><path d="M9.5 14.5l1.8 1.8 3.2-3.6"/>',
+    "api-fail": '<path d="M7 18a4 4 0 0 1-.7-7.94A5 5 0 0 1 16 8.5a3.8 3.8 0 0 1 1 7.46"/><path d="M10 12.5l3.2 3.2M13.2 12.5l-3.2 3.2"/>',
+    "life": '<path d="M3 12h4l1.6-4.5L11 17l2-9 1.6 4.5H21"/>',
+    "crash": '<path d="M12 3.5l9.2 16H2.8L12 3.5z"/><path d="M12 10v4.5"/><circle cx="12" cy="17.2" r="0.6" fill="currentColor" stroke="none"/>'
+  };
+  function iconSvg(kind) {
+    var paths = ICON_PATHS[kind] || ICON_PATHS.life;
+    return '<svg viewBox="0 0 24 24">' + paths + '</svg>';
+  }
+
+  var sessionListEl = document.getElementById("sessionList");
+  var mainEl = document.getElementById("main");
+  var dropzone = document.getElementById("dropzone");
+  var fileInput = document.getElementById("fileInput");
+  var pasteBox = document.getElementById("pasteBox");
+
+  // ---------- ingest ----------
+  dropzone.addEventListener("dragover", function (e) { e.preventDefault(); dropzone.classList.add("drag"); });
+  dropzone.addEventListener("dragleave", function () { dropzone.classList.remove("drag"); });
+  dropzone.addEventListener("drop", function (e) {
+    e.preventDefault();
+    dropzone.classList.remove("drag");
+    handleFiles(e.dataTransfer.files);
+  });
+  fileInput.addEventListener("change", function (e) { handleFiles(e.target.files); });
+  document.getElementById("pasteLoadBtn").addEventListener("click", function () {
+    var txt = pasteBox.value.trim();
+    if (!txt) return;
+    try {
+      ingestPayload(JSON.parse(txt), "pasted");
+    } catch (err) {
+      alert("That doesn't look like valid JSON: " + err.message);
+    }
+  });
+
+  function handleFiles(fileList) {
+    Array.prototype.forEach.call(fileList, function (file) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        try {
+          ingestPayload(JSON.parse(reader.result), file.name);
+        } catch (err) {
+          alert("Couldn't parse " + file.name + ": " + err.message);
+        }
+      };
+      reader.readAsText(file);
+    });
+  }
+
+  function ingestPayload(payload, sourceName) {
+    var logs = payload.logs || [];
+    var deviceInfo = payload.device_info || {};
+    var bySession = {};
+    logs.forEach(function (entry) {
+      var sid = entry.sessionId || "unknown";
+      if (!bySession[sid]) bySession[sid] = [];
+      bySession[sid].push(entry);
+    });
+    Object.keys(bySession).forEach(function (sid) {
+      var events = bySession[sid].slice().sort(function (a, b) {
+        return new Date(a.timestamp) - new Date(b.timestamp);
+      });
+      var key = sourceName + "::" + sid;
+      allSessions.push({
+        key: key,
+        sessionId: sid,
+        deviceInfo: deviceInfo,
+        events: events,
+        sourceFile: sourceName,
+        isNew: true
+      });
+    });
+    allSessions.sort(function (a, b) {
+      return new Date(b.events[0].timestamp) - new Date(a.events[0].timestamp);
+    });
+    if (!activeSessionKey && allSessions.length) activeSessionKey = allSessions[0].key;
+    renderSessionList();
+    renderMain();
+  }
+
+  // ---------- helpers ----------
+  function fmtTime(ts) {
+    var d = new Date(ts);
+    if (isNaN(d)) return ts;
+    return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  }
+  function fmtDateTime(ts) {
+    var d = new Date(ts);
+    if (isNaN(d)) return ts;
+    return d.toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  }
+  function durationLabel(ms) {
+    if (ms < 1000) return Math.round(ms) + "ms";
+    var s = ms / 1000;
+    if (s < 60) return s.toFixed(s < 10 ? 1 : 0) + "s";
+    var m = Math.floor(s / 60);
+    var rem = Math.round(s % 60);
+    if (m < 60) return m + "m " + rem + "s";
+    var h = Math.floor(m / 60);
+    return h + "h " + (m % 60) + "m";
+  }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  // Friendly, human-only phrasing for known technical URL endpoints.
+  var ENDPOINT_LABEL = {
+    "/api/push_notification": "sent a push notification",
+    "/api/save-device-log": "backed up the device's activity log",
+    "/api/draft-articles": "loaded the list of draft stories",
+    "/api/getAllArticles": "loaded the list of sent stories",
+    "/api/createNewsArticle": "published the story to the server"
+  };
+  function friendlyEndpoint(url) {
+    if (!url) return "talked to the server";
+    for (var key in ENDPOINT_LABEL) {
+      if (url.indexOf(key) === 0) return ENDPOINT_LABEL[key];
+    }
+    if (url.indexOf("/api/draft-article/") === 0) return "loaded a draft story to edit";
+    return "exchanged data with the server (" + url + ")";
+  }
+
+  // ---------- turn a raw event into a plain sentence + classification ----------
+  function describe(entry) {
+    var p = entry.params || {};
+    var kind = "life";
+    var sentence = entry.message || entry.event;
+
+    switch (entry.event) {
+      case "screen_view":
+        kind = "nav";
+        sentence = "Opened the <b>" + esc(entry.screen || "app") + "</b> screen.";
+        break;
+      case "navigate":
+        kind = "nav";
+        sentence = esc(entry.message);
+        break;
+      case "button_tap":
+        kind = "tap";
+        sentence = esc(entry.message || ("Tapped " + entry.element));
+        break;
+      case "tab_change":
+        kind = "tap";
+        sentence = esc(entry.message) + (p.tabPosition !== undefined ? " (tab " + esc(p.tabPosition) + ")" : "");
+        break;
+      case "toggle_changed":
+        kind = "tap";
+        sentence = esc(entry.message) + " &mdash; turned <b>" + (p.checked === "true" ? "on" : "off") + "</b>.";
+        break;
+      case "story_submit_started":
+        kind = "tap";
+        sentence = "Hit submit to publish the story.";
+        break;
+      case "api_call_success":
+        kind = "api";
+        sentence = "The app " + friendlyEndpoint(p.url) + " &mdash; worked fine" + (p.durationMs ? " (took " + p.durationMs + "ms)" : "") + ".";
+        break;
+      case "api_call_failure":
+      case "api_call_error":
+        kind = "api-fail";
+        sentence = "The app tried to " + friendlyEndpoint(p.url).replace(/^sent|^loaded|^published|^backed up|^exchanged/, function (m) {
+          return { sent: "send", loaded: "load", published: "publish", "backed up": "back up", exchanged: "exchange" }[m] || m;
+        }) + " but it <b>failed</b>" + (p.code ? " (error " + p.code + ")" : "") + ".";
+        break;
+      case "app_background":
+        kind = "life";
+        sentence = "Left the app (put it in the background).";
+        break;
+      case "app_foreground":
+        kind = "life";
+        sentence = "Came back to the app.";
+        break;
+      case "app_launch":
+        kind = "life";
+        sentence = "Opened the app from scratch.";
+        break;
+      case "app_crash":
+        kind = "crash";
+        sentence = "The app <b>crashed</b>: " + esc(entry.message || "unknown error") + ".";
+        break;
+      default:
+        kind = "life";
+        sentence = esc(entry.message || entry.event);
+    }
+    return { kind: kind, sentence: sentence };
+  }
+
+  // ---------- session list (left rail) ----------
+  function renderSessionList() {
+    sessionListEl.innerHTML = "";
+    if (!allSessions.length) {
+      sessionListEl.innerHTML = '<div class="empty-rail-note">Nothing loaded yet.</div>';
+      return;
+    }
+    allSessions.forEach(function (s) {
+      var first = s.events[0], last = s.events[s.events.length - 1];
+      var dur = new Date(last.timestamp) - new Date(first.timestamp);
+      var crashCount = s.events.filter(function (e) { return e.event === "app_crash"; }).length;
+      var card = document.createElement("button");
+      card.type = "button";
+      card.className = "session-card" + (s.key === activeSessionKey ? " active" : "") + (s.isNew ? " card-new" : "");
+      card.innerHTML =
+        '<div class="top-row"><span class="device">' + esc(s.deviceInfo.device_name || "Unknown device") + '</span>' +
+        '<span class="when mono">' + esc(fmtDateTime(first.timestamp)) + '</span></div>' +
+        '<div class="stats">' + s.events.length + ' events &middot; ' + durationLabel(dur) + ' on screen</div>' +
+        (crashCount ? '<div class="badges"><span class="badge crash">crashed</span></div>' : '');
+      card.addEventListener("click", function () {
+        activeSessionKey = s.key;
+        renderSessionList();
+        renderMain();
+      });
+      sessionListEl.appendChild(card);
+    });
+    allSessions.forEach(function (s) { s.isNew = false; });
+  }
+
+  // ---------- main story ----------
+  var FILTERS = [
+    { id: "all", label: "Everything" },
+    { id: "nav", label: "Screens" },
+    { id: "tap", label: "Taps" },
+    { id: "api", label: "Server calls" },
+    { id: "life", label: "App state" }
+  ];
+
+  function renderMain() {
+    var session = allSessions.filter(function (s) { return s.key === activeSessionKey; })[0];
+    if (!session) return;
+
+    var events = session.events;
+    var first = events[0], last = events[events.length - 1];
+    var totalMs = new Date(last.timestamp) - new Date(first.timestamp);
+
+    var screens = {}, taps = 0, apiOk = 0, apiFail = 0, crashes = 0;
+    events.forEach(function (e) {
+      if (e.event === "screen_view") screens[e.screen] = true;
+      if (e.event === "button_tap" || e.event === "tab_change" || e.event === "toggle_changed") taps++;
+      if (e.event === "api_call_success") apiOk++;
+      if (e.event === "api_call_failure" || e.event === "api_call_error") apiFail++;
+      if (e.event === "app_crash") crashes++;
+    });
+
+    var html = "";
+    html += '<div class="story-header">';
+    html += '<span class="eyebrow">' + esc(session.deviceInfo.device_name || "Unknown device") + ' &middot; ' + esc(session.deviceInfo.app_os || "") + ' ' + esc(session.deviceInfo.app_version || "") + '</span>';
+    html += '<h2>What happened, ' + esc(fmtDateTime(first.timestamp)) + '</h2>';
+    html += '<div class="sub">From ' + esc(fmtTime(first.timestamp)) + ' to ' + esc(fmtTime(last.timestamp)) + ' &middot; session ' + esc(session.sessionId.slice(0, 8)) + '&hellip;</div>';
+    html += '</div>';
+
+    html += '<div class="stat-strip">';
+    html += stat(durationLabel(totalMs), "Time on app");
+    html += stat(Object.keys(screens).length, "Screens visited");
+    html += stat(taps, "Taps & switches");
+    html += stat(apiOk, "Server calls, OK");
+    html += stat(apiFail, "Server calls, failed", apiFail > 0);
+    html += stat(crashes, "Crashes", crashes > 0);
+    html += '</div>';
+
+    html += '<div class="toolbar">';
+    FILTERS.forEach(function (f) {
+      html += '<button class="filter-chip' + (activeFilter === f.id ? " active" : "") + '" data-filter="' + f.id + '">' + f.label + '</button>';
+    });
+    html += '<button class="speed-btn" id="speedBtn">' + playSpeed + '&times;</button>';
+    html += '<button class="play-btn" id="playBtn"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5V1z"/></svg><span id="playBtnLabel">Play it back</span></button>';
+    html += '</div>';
+    html += '<div class="play-progress-track" id="playTrack"><div class="play-progress-fill" id="playFill"></div></div>';
+
+    html += '<div id="timelineWrap"></div>';
+
+    stopPlay();
+    mainEl.innerHTML = html;
+
+    document.querySelectorAll(".filter-chip").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        activeFilter = btn.getAttribute("data-filter");
+        renderMain();
+      });
+    });
+
+    document.getElementById("speedBtn").addEventListener("click", function () {
+      playSpeed = playSpeed === 1 ? 2 : playSpeed === 2 ? 4 : 1;
+      this.textContent = playSpeed + "×";
+    });
+    document.getElementById("playBtn").addEventListener("click", function () {
+      isPlaying ? stopPlay() : startPlay();
+    });
+
+    renderTimeline(events);
+  }
+
+  function stat(num, label, warn) {
+    return '<div class="stat"><div class="num' + (warn ? " warn" : "") + '">' + num + '</div><div class="label">' + label + '</div></div>';
+  }
+
+  var GAP_THRESHOLD_MS = 90 * 1000; // idle gap that starts a new "chapter"
+
+  function renderTimeline(events) {
+    var wrap = document.getElementById("timelineWrap");
+    wrap.innerHTML = "";
+
+    var filtered = events.filter(function (e) {
+      if (activeFilter === "all") return true;
+      var kind = describe(e).kind;
+      if (activeFilter === "api") return kind === "api" || kind === "api-fail";
+      if (activeFilter === "life") return kind === "life" || kind === "crash";
+      return kind === activeFilter;
+    });
+
+    if (!filtered.length) {
+      wrap.innerHTML = '<div class="empty-rail-note" style="padding:20px 0;">No events match this filter.</div>';
+      return;
+    }
+
+    var currentTimelineEl = null;
+    var prevTs = null;
+
+    filtered.forEach(function (entry, idx) {
+      var ts = new Date(entry.timestamp).getTime();
+      if (prevTs !== null && (ts - prevTs) > GAP_THRESHOLD_MS) {
+        var gapDiv = document.createElement("div");
+        gapDiv.className = "chapter-gap";
+        gapDiv.textContent = "then, " + durationLabel(ts - prevTs) + " later…";
+        wrap.appendChild(gapDiv);
+        currentTimelineEl = null;
+      }
+      prevTs = ts;
+
+      if (!currentTimelineEl) {
+        currentTimelineEl = document.createElement("div");
+        currentTimelineEl.className = "timeline";
+        wrap.appendChild(currentTimelineEl);
+      }
+
+      var d = describe(entry);
+      var evDiv = document.createElement("div");
+      evDiv.className = "event kind-" + d.kind + (d.kind === "crash" ? " crash-block" : "");
+
+      var metaBits = [];
+      if (entry.screen) metaBits.push('<span class="tag">' + esc(entry.screen) + '</span>');
+      if (entry.params && entry.params.code) metaBits.push('<span class="tag">HTTP ' + esc(entry.params.code) + '</span>');
+
+      var uid = "raw-" + idx + "-" + Math.abs(hashStr(entry.timestamp + entry.event + idx));
+
+      evDiv.innerHTML =
+        '<div class="event-row">' +
+          '<div class="icon-bubble">' + iconSvg(d.kind) + '</div>' +
+          '<div class="event-body">' +
+            '<div class="event-time mono">' + esc(fmtTime(entry.timestamp)) + '</div>' +
+            '<div class="event-sentence">' + d.sentence + '</div>' +
+            (metaBits.length ? '<div class="event-meta">' + metaBits.join("") + '</div>' : "") +
+            (d.kind === "crash" ? crashDetailHtml(entry) : "") +
+            '<button class="raw-toggle" data-target="' + uid + '">show raw event</button>' +
+            '<div class="raw-json" id="' + uid + '"><pre>' + esc(JSON.stringify(entry, null, 2)) + '</pre></div>' +
+          '</div>' +
+        '</div>';
+
+      currentTimelineEl.appendChild(evDiv);
+    });
+
+    wrap.querySelectorAll(".raw-toggle").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var el = document.getElementById(btn.getAttribute("data-target"));
+        el.classList.toggle("show");
+        btn.textContent = el.classList.contains("show") ? "hide raw event" : "show raw event";
+      });
+    });
+
+    observeEntrance(wrap.querySelectorAll(".event"));
+  }
+
+  // ---------- scroll-triggered entrance ----------
+  var entranceObserver = "IntersectionObserver" in window ? new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        entranceObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }) : null;
+
+  function observeEntrance(nodeList) {
+    if (prefersReducedMotion) {
+      nodeList.forEach(function (el) { el.classList.add("in-view"); });
+      return;
+    }
+    if (!entranceObserver) {
+      nodeList.forEach(function (el) { el.classList.add("in-view"); });
+      return;
+    }
+    nodeList.forEach(function (el) { entranceObserver.observe(el); });
+  }
+
+  // ---------- play it back ----------
+  var playHudEl = document.getElementById("playHud");
+  var playBeamEl = null;
+  document.getElementById("hudStopBtn").addEventListener("click", stopPlay);
+
+  function padStep(n, total) {
+    var width = Math.max(2, String(total).length);
+    return ("000" + n).slice(-width);
+  }
+
+  function startPlay() {
+    playEls = Array.prototype.slice.call(document.querySelectorAll("#timelineWrap .event"));
+    if (!playEls.length) return;
+    isPlaying = true;
+    playIdx = 0;
+
+    var btn = document.getElementById("playBtn");
+    if (btn) { btn.classList.add("playing"); document.getElementById("playBtnLabel").textContent = "Stop"; }
+    var track = document.getElementById("playTrack");
+    if (track) track.classList.add("show");
+
+    playHudEl.classList.add("show");
+
+    var wrap = document.getElementById("timelineWrap");
+    playBeamEl = document.createElement("div");
+    playBeamEl.className = "timeline-beam";
+    wrap.appendChild(playBeamEl);
+
+    stepPlay();
+  }
+
+  function stepPlay() {
+    playEls.forEach(function (el) { el.classList.remove("spotlight"); });
+    if (playIdx >= playEls.length) { stopPlay(); return; }
+    var el = playEls[playIdx];
+    el.classList.add("in-view", "spotlight");
+    el.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "center" });
+
+    var pct = ((playIdx + 1) / playEls.length) * 100;
+    var fill = document.getElementById("playFill");
+    if (fill) fill.style.width = pct + "%";
+    var hudFill = document.getElementById("hudFill");
+    if (hudFill) hudFill.style.width = pct + "%";
+    var hudStep = document.getElementById("hudStep");
+    if (hudStep) hudStep.textContent = padStep(playIdx + 1, playEls.length) + " / " + playEls.length;
+
+    positionBeam(el);
+
+    playIdx++;
+    playTimer = window.setTimeout(stepPlay, PLAY_STEP_MS / playSpeed);
+  }
+
+  function positionBeam(el) {
+    if (!playBeamEl) return;
+    var bubble = el.querySelector(".icon-bubble");
+    var wrap = document.getElementById("timelineWrap");
+    if (!bubble || !wrap) return;
+    var bubbleRect = bubble.getBoundingClientRect();
+    var wrapRect = wrap.getBoundingClientRect();
+    playBeamEl.style.top = (bubbleRect.top - wrapRect.top + bubbleRect.height / 2) + "px";
+    playBeamEl.style.left = (bubbleRect.left - wrapRect.left + bubbleRect.width / 2) + "px";
+    playBeamEl.classList.add("show");
+  }
+
+  function stopPlay() {
+    isPlaying = false;
+    if (playTimer) { window.clearTimeout(playTimer); playTimer = null; }
+    playEls.forEach(function (el) { el.classList.remove("spotlight"); });
+
+    var btn = document.getElementById("playBtn");
+    if (btn) { btn.classList.remove("playing"); var lbl = document.getElementById("playBtnLabel"); if (lbl) lbl.textContent = "Play it back"; }
+    var track = document.getElementById("playTrack");
+    if (track) { track.classList.remove("show"); }
+    var fill = document.getElementById("playFill");
+    if (fill) fill.style.width = "0%";
+
+    playHudEl.classList.remove("show");
+    var hudFill = document.getElementById("hudFill");
+    if (hudFill) hudFill.style.width = "0%";
+
+    if (playBeamEl && playBeamEl.parentNode) playBeamEl.parentNode.removeChild(playBeamEl);
+    playBeamEl = null;
+  }
+
+  function crashDetailHtml(entry) {
+    var p = entry.params || {};
+    var lines = [];
+    if (p.exceptionType) lines.push("Type: " + p.exceptionType);
+    if (p.thread) lines.push("Thread: " + p.thread);
+    if (p.stackTrace) lines.push("\n" + p.stackTrace);
+    if (!lines.length) return "";
+    return '<div class="crash-detail"><pre>' + esc(lines.join("\n")) + '</pre></div>';
+  }
+
+  function hashStr(s) {
+    var h = 0;
+    for (var i = 0; i < s.length; i++) { h = (h << 5) - h + s.charCodeAt(i); h |= 0; }
+    return h;
+  }
+})();
+</script>
+</body>
+</html>
