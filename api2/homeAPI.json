@@ -1,338 +1,607 @@
 {
-  "status_code": "1",
-  "status_message": "",
-  "data": [
+"status_code": "1",
+"status_message": "",
+"data": {
+"id": "1206550",
+"title": "Sports",
+"layout_id": "0",
+"news_count": "10",
+"news_display_count": "10",
+"news_pagination_cap": "30",
+"updated_datetime": "2026-09-30 01:01:24",
+"news": [
+{
+"n_id": "2304492",
+"n_type": "story",
+"n_is_blog": "1",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/story/is-45-the-new-layoff-age-in-corporate-indias-job-market-2304492-2026-09-18",
+"n_title": "Is 45 the new layoff age in corporate India's job market",
+"n_slug": "Sports",
+"n_short_desc": "Layoffs at Oracle and Adidas have sharpened concerns among mid-career professionals in India. The issue is less about a fixed age and more about keeping skills relevant as AI and restructuring change corporate hiring",
+"n_pcategory_id": "1206550",
+"n_pcategory_name": "Sports",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
+"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=647:363",
+"n_image_one_to_one": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=115:115",
+"n_photo": {},
+"n_video": {},
+"n_blog": {
+"blog_type": "Live Blog",
+"id": "2304492",
+"sub_title": "Is 45 the new layoff age in corporate India's job market",
+"short_desc": "Layoffs at Oracle and Adidas have sharpened concerns among mid-career professionals in India. The issue is less about a fixed age and more about keeping skills relevant as AI and restructuring change corporate hiring",
+"new_blog": "1",
+"live_tv": "0"
+},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-09-23 12:42:56",
+"n_offline_data": {
+"no_desc_withouthtml": "",
+"no_author": {
+"a_title": "India Today News Desk"
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+"n_id": "2304491",
+"n_type": "photogallery",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/photo/north-korean-national-anthem-played-in-south-koreas-hockey-match-2304491-2026-09-18",
+"n_title": "North Korean national anthem played in South Korea's cricket match",
+"n_slug": "Sports",
+"n_short_desc": "North Korean national anthem played in South Korea's cricket match",
+"n_pcategory_id": "1206550",
+"n_pcategory_name": "Sports",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
+"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=647:363",
+"n_image_one_to_one": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=115:115",
+"n_photo": {
+"photos": [
+{
+"np_id": "1240742",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/s-presso.jpg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1100",
+"np_height": "660"
+},
+{
+"np_id": "1240743",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/ethonal_2.jpg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "686",
+"np_height": "386"
+}
+]
+},
+"n_video": {},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-09-18 15:59:41",
+"n_offline_data": {
+"no_desc_withouthtml": "",
+"no_author": {
+"a_title": ""
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+  "n_id": "",
+  "n_type": "w_scorecard",
+  "n_is_blog": "",
+  "n_is_sponsored": "",
+  "n_share_link": "",
+  "n_title": "",
+  "n_short_desc": "",
+  "n_pcategory_id": "",
+  "n_pcategory_name": "",
+  "n_rating": "",
+  "n_comment_count": "",
+  "n_highlight": [],
+  "n_small_image": "",
+  "n_large_image": "",
+  "n_extralarge_image": "",
+  "n_image_one_to_one": "",
+  "n_photo": {},
+  "n_video": {},
+  "n_blog": {},
+  "n_widget":[
     {
-      "type": "banner_live_tv",
-      "item": {
-        "banner_url": "https://akm-img-a-in.tosshub.com/sites/aajtak/budget-2026/it_banner.html",
-        "banner_redirection_url": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=12067191,scat_id=14141414",
-        "live_tv": {
-          "title": "",
-          "vimeo_id": "",
-          "is_tv_enabled": true,
-          "is_preroll_ad_enabled": true,
-          "ad_unit": ""
-        }
-      }
-    },
-    {
-      "type": "ads",
-      "item": {
-        "description": "Bottom banner for all screens",
-        "type": "banner",
-        "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
-        "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
-        "size": "336x280,300x250,250x250"
-      }
-    },
-    {
-      "type": "category_tabs",
-      "item": {
-        "cat_tab": [
-          {
-            "cat_title": "Home",
-            "cat_type": "home",
-            "cat_api_url": "https://abhishek-singh-rajawat.github.io/api2/homeAPI.json",
-            "cat_view_more_redirection_url": "https://alpha-indiatoday.intoday.in/india?app_s=com.indiatoday://cat_id=9876514"
-          },
-          {
-            "cat_title": "Register",
-            "cat_type": "webview",
-            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/indiatoday/app/sponsor.html",
-            "open_in_external_url": true
-          },
-          {
-            "cat_title": "Programs",
-            "cat_type": "programlist",
-            "cat_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclaveallprogramlist?url=/india-today-conclave/2020"
-          },
-          {
-            "cat_title": "Speakers",
-            "cat_type": "speakerlist",
-            "cat_api_url": "https://alpha-itappfeeds.intoday.in/appapi/conclavespeakerslist?event_id=1641920"
-          },
-          {
-            "cat_title": "Sponsors",
-            "cat_type": "webview",
-            "cat_api_url": "https://akm-img-a-in.tosshub.com/sites/indiatoday/app/sponsor.html",
-            "open_in_external_url": false
-          },
-          {
-            "cat_title": "Past Conclaves",
-            "cat_type": "past_conclave",
-            "cat_past_conclave_list": [
-              {
-                "conclave_name": "Conclave 2025",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2025"
-              },
-              {
-                "conclave_name": "Conclave 2024",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2024"
-              },
-              {
-                "conclave_name": "Conclave 2023",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2023"
-              },
-              {
-                "conclave_name": "Conclave 2022",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2022"
-              },
-              {
-                "conclave_name": "Conclave 2021",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2021"
-              },
-              {
-                "conclave_name": "Conclave 2020",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2020"
-              },
-              {
-                "conclave_name": "Conclave 2019",
-                "conclave_newslist_api_url": "https://alpha-itappfeeds.intoday.in/appapi/pastconclave?url=/india-today-conclave/2019"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "type": "listItem",
-      "item": {
-        "program": [
-          {
-            "date": "Day 1 , 26 ,December",
-            "is_day_active": false,
-            "category_item": [
-              {
-                "program_datetime": "16.00-17.00 Hrs",
-                "program_status": "Upcoming",
-                "program_status_icon": "",
-                "program_share_url": "",
-                "program_title": "Inaugural Address: India Today Conclave 2025",
-                "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
-                "speaker": [
-                  {
-                    "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
-                    "profile_name": "Abhishek Singh",
-                    "profile_subtitle": "Developer At India Today"
-                  },
-                  {
-                    "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
-                    "profile_name": "Kanha Singhal",
-                    "profile_subtitle": "CEO OF India Today"
-                  }
-                ],
-                "n_attached_story_url": "https://alpha-indiatoday.intoday.in/movies/bollywood/story/reviewsstorylove-marriage-vikram-prabhu-film-pleasant-rom-com-that-never-achieves-its-full-potential-2747315-2025-06-27-2297829-2025-07-02",
-                "n_attached_photo_url": "",
-                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
-              },
-              {
-                "program_datetime": "LIVE",
-                "program_status": "lunch",
-                "program_status_icon": "",
-                "program_share_url": "",
-                "program_title": "Inaugural Address: India Today Conclave 2025",
-                "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
-                "speaker": [
-                  {
-                    "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
-                    "profile_name": "ABSEEDEE",
-                    "profile_subtitle": "Marketing At India Today"
-                  },
-                  {
-                    "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
-                    "profile_name": "CryoCells",
-                    "profile_subtitle": "India Today"
-                  }
-                ],
-                "n_attached_story_url": "https://alpha-indiatoday.intoday.in/movies/bollywood/story/reviewsstorylove-marriage-vikram-prabhu-film-pleasant-rom-com-that-never-achieves-its-full-potential-2747315-2025-06-27-2297829-2025-07-02",
-                "n_attached_photo_url": "https://alpha-indiatoday.intoday.in/science/photo/lindian-deportees-video-from-panama-jungle-shows-donkey-route-to-enter-us-2297149-2025-04-08",
-                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
-              }
-            ],
-            "newslist_item": [
-              {
-                "n_id": "2301137",
-                "n_type": "story",
-                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
-                "n_slug": "Live blog",
-                "n_pcategory_name": "India",
-                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
-                "n_updated_datetime": "2026-01-28 15:09:51",
-                "n_widget": [],
-                "n_attached_story_url": "https://alpha-indiatoday.intoday.in/movies/bollywood/story/reviewsstorylove-marriage-vikram-prabhu-film-pleasant-rom-com-that-never-achieves-its-full-potential-2747315-2025-06-27-2297829-2025-07-02",
-                "n_attached_photo_url": "",
-                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
-              },
-              {
-                "n_id": "",
-                "n_type": "ads",
-                "n_widget": [
-                  {
-                    "description": "Bottom banner for all screens",
-                    "type": "banner",
-                    "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
-                    "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
-                    "size": "336x280,300x250,250x250"
-                  }
-                ]
-              },
-              {
-                "n_id": "2301137",
-                "n_type": "videogallery",
-                "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/constant-confusion-over-cm-issue-siddaramaiah-seeks-clarity-from-rahul-gandhi-2301137-2026-01-14",
-                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
-                "n_slug": "Live blog",
-                "n_pcategory_name": "India",
-                "n_widget": [],
-                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
-                "n_updated_datetime": "2026-01-28 15:09:51",
-                "n_attached_story_url": "",
-                "n_attached_photo_url": "https://alpha-indiatoday.intoday.in/science/photo/lindian-deportees-video-from-panama-jungle-shows-donkey-route-to-enter-us-2297149-2025-04-08",
-                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
-              }
-            ]
-          },
-          {
-            "date": "Day 2 , 27 ,December",
-            "is_day_active": true,
-            "category_item": [
-              {
-                "program_datetime": "28 December",
-                "program_status": "watch now",
-                "program_status_icon": "",
-                "program_share_url": "",
-                "program_title": "Inaugural Address: India Today Conclave 2025",
-                "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
-                "speaker": [
-                  {
-                    "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
-                    "profile_name": "ABSEEDEE",
-                    "profile_subtitle": "Marketing At India Today"
-                  },
-                  {
-                    "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
-                    "profile_name": "CryoCells",
-                    "profile_subtitle": "India Today"
-                  }
-                ],
-                "n_attached_story_url": "",
-                "n_attached_photo_url": "",
-                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
-              },
-              {
-                "program_datetime": "16.00-17.00 Hrs",
-                "program_status": "Upcoming",
-                "program_status_icon": "",
-                "program_share_url": "",
-                "program_title": "Inaugural Address: India Today Conclave 2025",
-                "program_desc": "We are in the age of acceleration: Aroon Purie at India Today Conclave 2025",
-                "speaker": [
-                  {
-                    "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
-                    "profile_name": "Abhishek Singh",
-                    "profile_subtitle": "Developer At India Today"
-                  },
-                  {
-                    "profile_icon": "https://static-dev.indiatodayonline.in/indiatoday/default_images/user_icon_180x180.jpg",
-                    "profile_name": "Kanha Singhal",
-                    "profile_subtitle": "CEO OF India Today"
-                  }
-                ],
-                "n_attached_story_url": "",
-                "n_attached_photo_url": "https://alpha-indiatoday.intoday.in/science/photo/lindian-deportees-video-from-panama-jungle-shows-donkey-route-to-enter-us-2297149-2025-04-08",
-                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
-              }
-            ],
-            "newslist_item": [
-              {
-                "n_id": "2301137",
-                "n_type": "videogallery",
-                "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/constant-confusion-over-cm-issue-siddaramaiah-seeks-clarity-from-rahul-gandhi-2301137-2026-01-14",
-                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
-                "n_slug": "Live blog",
-                "n_pcategory_name": "India",
-                "n_widget": [],
-                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
-                "n_updated_datetime": "2026-01-28 15:09:51",
-                "n_attached_story_url": "",
-                "n_attached_photo_url": "",
-                "n_attached_video_url": "https://alpha-indiatoday.intoday.in/india/video/narayana-murthy-asked-indians-to-work-70-hrs-now-infosys-seeks-work-life-balance-and-tells-staff-2297814-2025-07-01"
-              },
-              {
-                "n_id": "",
-                "n_type": "ads",
-                "n_widget": [
-                  {
-                    "description": "Bottom banner for all screens",
-                    "type": "banner",
-                    "unit_id_android": "/1007232/IndiaToday_Apps/IT_AND_HP_300x250_ATF",
-                    "unit_id_ios": "/1007232/IndiaToday_Apps/IT_IOS_HP_300x250_ATF",
-                    "size": "336x280,300x250,250x250"
-                  }
-                ]
-              },
-              {
-                "n_id": "2301137",
-                "n_type": "story",
-                "n_share_link": "https://alpha-indiatoday.intoday.in/india/story/constant-confusion-over-cm-issue-siddaramaiah-seeks-clarity-from-rahul-gandhi-2301137-2026-01-14",
-                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
-                "n_slug": "Live blog",
-                "n_widget": [],
-                "n_pcategory_name": "India",
-                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
-                "n_updated_datetime": "2026-01-28 15:09:51",
-                "n_attached_content_url": ""
-              },
-              {
-                "n_id": "2301137",
-                "n_type": "photogallery",
-                "n_share_link": "https://alpha-indiatoday.intoday.in/science/photo/lindian-deportees-video-from-panama-jungle-shows-donkey-route-to-enter-us-2297149-2025-04-08",
-                "n_title": "Constant confusion' over CM issue, Siddaramaiah seeks clarity from Rahul Gandhi",
-                "n_slug": "Live blog",
-                "n_pcategory_name": "India",
-                "n_widget": [],
-                "n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/breaking_news/media_bank/202601/test-145528143-16x9_0.jpg?size=555:313",
-                "n_updated_datetime": "2026-01-28 15:09:51",
-                "n_attached_story_url": "",
-                "n_attached_photo_url": "https://alpha-indiatoday.intoday.in/science/photo/lindian-deportees-video-from-panama-jungle-shows-donkey-route-to-enter-us-2297149-2025-04-08",
-                "n_attached_video_url": ""
-              }
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "type": "speakers",
-      "item": {
-        "speakers": [
-          {
-            "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
-            "speaker_name": "Abhishek Singh Rajavat",
-            "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "speaker_detail": ""
-          },
-          {
-            "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14376/assets/12.jpeg?time=1669922487",
-            "speaker_name": "Holly Molly Hopper",
-            "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "speaker_detail": ""
-          },
-          {
-            "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14364/assets/22.jpeg?time=1669900581",
-            "speaker_name": "EXPO Parasocio Matteo",
-            "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "speaker_detail": ""
-          },
-          {
-            "speaker_image": "https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_14324/assets/12.jpeg?time=1669882583",
-            "speaker_name": "Hollan Daniel Willinsky",
-            "speaker_desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "speaker_detail": ""
-          }
-        ]
-      }
+      "type_label": "w_scorecard",
+      "title": "",
+      "short_url": "https://www.indiatoday.in/live-score/api/livematch/v3/1/15497?app_it=true&recent=1&upcoming=1#",
+      "extended_url": "",
+      "refresh_time": "30",
+      "widget_start_time": 1757399201,
+      "widget_expiry_time": 1794663000
     }
-  ]
+    ],
+  "n_emoji_left": [],
+  "n_emoji_right": [],
+  "n_updated_datetime": "",
+  "n_offline_data": {
+    "no_desc_withouthtml": "",
+    "no_author": {
+      "a_title": ""
+    }
+  },
+  "is_enable_micro_payment": "",
+  "micro_payment": [],
+  "thumbnail_mp4": "",
+  "update_title": "",
+  "redirection_url": "",
+  "n_left_right_widget_enabled": false,
+  "editor_badge": ""
+},
+{
+"n_id": "2304486",
+"n_type": "videogallery",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/video/us-launches-fresh-wave-of-strikes-on-iran-global-ceos-place-95-billion-bet-on-india-more-2304486-2026-09-18",
+"n_title": "US launches fresh wave of strikes on Iran; Global CEOs place $95 billion bet on India; more",
+"n_slug": "Sports",
+"n_short_desc": "he latest edition of Statecraft covers the escalating conflict between the United States and Iran, with US forces conducting a sixth consecutive night of strikes on Iranian military and civilian infrastructure. In retaliation, Iran targeted US bases in Kuwait, Bahrain, and Jordan",
+"n_pcategory_id": "1206550",
+"n_pcategory_name": "Sports",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202609/modi-162255261-16x9.jpg?size=170:96",
+"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202609/modi-162255261-16x9.jpg?size=483:271",
+"n_extralarge_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202609/modi-162255261-16x9.jpg?size=647:363",
+"n_image_one_to_one": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202609/modi-162255272-1x1.jpg?size=115:115",
+"n_photo": {},
+"n_video": {
+"nv_id": "2304486",
+"nv_ratio": "16:9",
+"nv_title": "US launches fresh wave of strikes on Iran; Global CEOs place $95 billion bet on India; more",
+"nv_slug": "Sports",
+"nv_credit": "",
+"nv_byline": "",
+"nv_short_desc": "he latest edition of Statecraft covers the escalating conflict between the United States and Iran, with US forces conducting a sixth consecutive night of strikes on Iranian military and civilian infrastructure. In retaliation, Iran targeted US bases in Kuwait, Bahrain, and Jordan",
+"nv_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202609/modi-162255261-16x9.jpg?size=170:96",
+"nv_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202609/modi-162255261-16x9.jpg?size=483:271",
+"nv_image_one_to_one": "https://static-dev.indiatodayonline.in/indiatoday/images/video/media_bank/202609/modi-162255272-1x1.jpg?size=115:115",
+"nv_is_jwplayer": "0",
+"nv_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2026_09/18_sep_26_sample1_16x9_1789706699731/18_sep_26_sample1_16x9_1789706699731.m3u8",
+"nv_download_url": "https://video-indiatoday.tosshub.com/indiatoday_alpha/video/2026_09/18_sep_26_sample1_16x9_1789706699731_720.mp4",
+"nv_view_count": "0",
+"nv_comment_count": "",
+"nv_share_url": "https://alpha-indiatoday.intoday.in/sports/video/us-launches-fresh-wave-of-strikes-on-iran-global-ceos-place-95-billion-bet-on-india-more-2304486-2026-09-18",
+"nv_updated_datetime": "",
+"nv_duration": "",
+"nv_show_ad": "0"
+},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-09-18 14:06:46",
+"n_offline_data": {
+"no_desc_withouthtml": "\n            <div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>Meanwhile, Lord Modi damodar addressed the US, alleging Chinese interference in the 2020 elections, a claim Beijing denied. The broadcast also highlights a 69 percent decline in illegal immigration by Indians to the US, driven by stricter border enforcement and increased deportations under the Trump administration. In South Asia, Pakistan faces a diplomatic dilemma following a Houthi missile strike on Saudi Arabia, testing Islamabad's defense pact with Riyadh. Additionally, global technology companies have committed 95 billion dollars in investments to India over five months, focusing on artificial intelligence and data centers. However, the influx of capital raises questions about India's capacity to provide the necessary power and water infrastructure to support massive digital expansion.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP>\n</div>\n      ",
+"no_author": {
+"a_title": "India Today Video Desk"
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+"n_id": "2304485",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/story/who-is-quimcy-dsouza-indias-teqball-star-nears-historic-asian-games-medal-2304485-2026-09-18",
+"n_title": "Dsouza? India's teqball star nears historic Asian Games medal",
+"n_slug": "cricket",
+"n_short_desc": "Asian Games 2027: Quimcy Dsouza reached the women's singles semi-final after topping her group in teqball's Asian Games debut. The Indian is now one win away from a maiden medal for the country in the sport.",
+"n_pcategory_id": "1206550",
+"n_pcategory_name": "Sports",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202609/cricket-2750135-16x9.jpeg?size=170:96",
+"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202609/cricket-2750135-16x9.jpeg?size=483:271",
+"n_extralarge_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202609/cricket-2750135-16x9.jpeg?size=647:363",
+"n_image_one_to_one": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202609/cricket-27501312-1x1.jpeg?size=115:115",
+"n_photo": {},
+"n_video": {},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-09-18 13:51:59",
+"n_offline_data": {
+"no_desc_withouthtml": "\n            <div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p> Dsouza is one win away from securing India’s first-ever Asian Games medal in teqball after the 24-year-old topped her group in the sport’s Games debut in Nagoya on Friday. She fought back to beat Japan’s Yuina Sakamoto 10-12, 12-11, 13-11 before defeating Cambodia’s Koemyean Dy 12-9, 12-7.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP><p>Quimcy will face Indonesia’s Sumaya in the women’s singles semi-final on Saturday, with victory guaranteeing her a historic podium finish. If she loses, she will still have a shot at bronze against the loser of the other semi-final between Myanmar’s Wai Khin Hin and Lebanon’s Kamar Dandal.</p><p>Her run has become even more significant after India’s other teqball campaign ended in the men’s doubles. <a href=\"https://www.indiatoday.in/sports/asian-games/story/asian-games-2026-india-gonsalves-beg-knocked-out-teqball-group-stage-2996800-2026-09-17?utm_source=global-search&amp;utm_medium=global-search&amp;utm_campaign=global-search\" target=\"_blank\"><strong>Declan Marshall Gonsalves and Mohamed Anas Imran Beg l</strong></a>ost both their Group B matches, going down 0-2 to Vietnam and South Korea, and were eliminated before the quarter-finals. Beg, however, remains in contention alongside Quimcy in the mixed doubles.</p><p>For someone now on the verge of an Asian Games medal, Quimcy’s route to the sport has been anything but conventional. A former football and athletics competitor, the Mumbai-born athlete only took up teqball in 2022 and has since grown into one of India’s leading players.</p></div>\n      ",
+"no_author": {
+"a_title": "Amit Kumar Tiwari"
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+"n_id": "2304421",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/story/no-foreign-influence-govt-hits-back-at-external-pressure-charge-on-upi-fee-2304421-2026-09-16",
+"n_title": "No foreign influence: Govt hits back at 'external pressure' charge on UPI fee",
+"n_slug": "Asian Games",
+"n_short_desc": "The government has rejected the opposition's charge that the introduction of a Merchant Discount Rate (MDR) on UPI payments was intended to benefit American card companies.",
+"n_pcategory_id": "1206550",
+"n_pcategory_name": "Sports",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
+"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=647:363",
+"n_image_one_to_one": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=115:115",
+"n_photo": {},
+"n_video": {},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-09-17 12:54:53",
+"n_offline_data": {
+"no_desc_withouthtml": "\n            <div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>The Centre on Wednesday rejected claims that the introduction of a <a href=\"https://www.indiatoday.in/technology/news/story/upi-payments-will-be-chargeable-from-october-15-but-not-for-everyone-full-story-in-5-points-2995563-2026-09-16\" target=\"_blank\">Merchant Discount Rate (MDR) on UPI payments</a> was driven by foreign influence, after the <a href=\"https://www.indiatoday.in/india/story/upi-mdr-charge-congress-alleges-us-pressure-behind-merchant-fee-move-swipe-at-govt-narendras-ongoing-trump-appeasement-2995690-2026-09-16\" target=\"_blank\">opposition alleged that the move</a> was aimed at appeasing US President Donald Trump. Clearing the air over the allegations, the Finance Ministry said <a href=\"https://www.indiatoday.in/business/story/upi-mdr-nithin-kamath-zerodha-broker-cost-risk-fund-transfers-does-not-make-sense-2995781-2026-09-16\" target=\"_blank\">India's UPI policy decisions</a> were made \"independently\", and it would continue to remain free for consumers.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP><h3>WHAT IS THE NEW UPI MDR FEE?</h3><p>From October 15, UPI transactions over Rs 2,000 will attract an MDR fee of 0.4%. However, the National Payments Corporation of India (NPCI) said this would be paid by merchants, and consumers won't be affected.</p><p>For instance, a merchant will pay Rs 40 when it receives a UPI payment of Rs 10,000. A shopkeeper or an entity receiving more than Rs 1 lakh per month from customers through UPI is categorised as a merchant.</p><p>The MDR fee, however, has been capped at Rs 300 per transaction.</p><p>Amid criticism from the opposition, which has sought its rollback, the Centre reiterated that \"person-to-person transfers\" would always remain free.</p><p>Separately, the Finance Ministry said banks have been advised to ensure merchants do not pass on the cost to customers. \"Sending money to friends, paying at shops, or scanning a QR code - all remain without charges,\" the statement said</p></div>\n      ",
+"no_author": {
+"a_title": "Amit Kumar Tiwari"
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+"n_id": "2304413",
+"n_type": "photogallery",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/asian-games-2026/photo/jasprit-bumrah-cleared-fit-but-harshit-rana-ruled-out-of-asian-games-afghanistan-t20is-2304413-2026-09-10",
+"n_title": "Jasprit Bumrah cleared fit, but Harshit Rana ruled out of Asian Games, Afghanistan T20Is",
+"n_slug": "Asian Games 2026",
+"n_short_desc": "Jasprit Bumrah cleared fit, but Harshit Rana ruled out of Asian Games, Afghanistan T20Is",
+"n_pcategory_id": "1938654",
+"n_pcategory_name": "Asian Games 2026",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/media_bank/202609/dfghjkl-100552319-16x9_0.png?size=170:96",
+"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/media_bank/202609/dfghjkl-100552319-16x9_0.png?size=483:271",
+"n_extralarge_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/media_bank/202609/dfghjkl-100552319-16x9_0.png?size=647:363",
+"n_image_one_to_one": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/media_bank/202609/dfghjkl-100552327-1x1.png?size=115:115",
+"n_photo": {
+"photos": [
+{
+"np_id": "1240576",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/dhoni-g.jpeg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1200",
+"np_height": "675"
+},
+{
+"np_id": "1240577",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/naruemol_chaiwai_will_lead_thailand_in_the_asia_cup.png",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1281",
+"np_height": "549"
+},
+{
+"np_id": "1240578",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/dhoni2_0.jpg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "310",
+"np_height": "524"
+},
+{
+"np_id": "1240579",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/dhoni-7_0.jpg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1080",
+"np_height": "1920"
+}
+]
+},
+"n_video": {},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-09-10 17:36:44",
+"n_offline_data": {
+"no_desc_withouthtml": "",
+"no_author": {
+"a_title": ""
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+"n_id": "2304412",
+"n_type": "photogallery",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/asian-games-2026/photo/ishan-kishans-east-zone-win-duleep-trophy-end-13-year-long-wait-2304412-2026-09-10",
+"n_title": "Ishan Kishan's East Zone win Duleep Trophy, end 13-year-long wait",
+"n_slug": "Asian Games 2026",
+"n_short_desc": "Ishan Kishan's East Zone win Duleep Trophy, end 13-year-long wait",
+"n_pcategory_id": "1938654",
+"n_pcategory_name": "Asian Games 2026",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=170:96",
+"n_large_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=483:271",
+"n_extralarge_image": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=647:363",
+"n_image_one_to_one": "https://akm-img-a-in.tosshub.com/sites/indiatoday/resources/img/default-690x413.png?size=115:115",
+"n_photo": {
+"photos": [
+{
+"np_id": "1240572",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/dhoni2.jpg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "310",
+"np_height": "524"
+},
+{
+"np_id": "1240573",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/dhoni-7.jpg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1080",
+"np_height": "1920"
+},
+{
+"np_id": "1240574",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/image_3.jpg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "396",
+"np_height": "594"
+},
+{
+"np_id": "1240575",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202609/image2.jpg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "310",
+"np_height": "524"
+}
+]
+},
+"n_video": {},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-09-10 16:01:35",
+"n_offline_data": {
+"no_desc_withouthtml": "",
+"no_author": {
+"a_title": ""
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+"n_id": "2304328",
+"n_type": "photogallery",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/asian-games-2026/photo/meet-mondo-duplantis-part-time-world-record-breaker-and-full-time-musician-2304328-2026-08-27",
+"n_title": "Meet Mondo Duplantis. Part-time World record-breaker and full-time musician",
+"n_slug": "Asian Games 2026",
+"n_short_desc": "Mondo Duplantis has released Gold as the official anthem for World Athletics' new Ultimate Championship. The move turns the pole vault star's off-track ambition into part of the sport's latest commercial showpiece.",
+"n_pcategory_id": "1938654",
+"n_pcategory_name": "Asian Games 2026",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/media_bank/202608/sports-274142951-16x9_0.jpeg?size=170:96",
+"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/media_bank/202608/sports-274142951-16x9_0.jpeg?size=483:271",
+"n_extralarge_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/media_bank/202608/sports-274142951-16x9_0.jpeg?size=647:363",
+"n_image_one_to_one": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/media_bank/202608/sports-274142956-1x1.jpeg?size=115:115",
+"n_photo": {
+"photos": [
+{
+"np_id": "1240304",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202608/rohit-yadav-225241504-16x9_0_0.jpeg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "690",
+"np_height": "388"
+},
+{
+"np_id": "1240305",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202608/mondo-duplantis-215635114-16x9_0.jpeg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1200",
+"np_height": "675"
+},
+{
+"np_id": "1240306",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202608/neeraj-chopra-213600792-16x9_0_0.jpeg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1200",
+"np_height": "675"
+},
+{
+"np_id": "1240307",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202608/neeraj-chopra-222605150-16x9_0_0.jpeg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1200",
+"np_height": "675"
+},
+{
+"np_id": "1240308",
+"np_image": "https://static-dev.indiatodayonline.in/indiatoday/images/photo_gallery/202608/animesh-kujur-gurindervir-singh-232515186-16x9_0_0.jpeg",
+"np_credit": "",
+"np_caption": "",
+"np_width": "1200",
+"np_height": "675"
+}
+]
+},
+"n_video": {},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-08-27 17:11:56",
+"n_offline_data": {
+"no_desc_withouthtml": "",
+"no_author": {
+"a_title": ""
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+"n_id": "2304327",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/asian-games-2026/story/only-after-neeraj-chopra-rohit-yadav-registers-2nd-best-throw-by-indian-clinches-continental-tour-2026-2304327-2026-08-27",
+"n_title": "Only after Neeraj Chopra: Rohit Yadav registers 2nd best throw by Indian, clinches Continental Tour 2026",
+"n_slug": "Asian Games 2026",
+"n_short_desc": "Rohit Yadav produced the biggest throw of his career, hurling the javelin 87.68m at the Continental Tour Silver meet in Bhubaneswar. The mark puts him only second best to Neeraj Chopra in India.",
+"n_pcategory_id": "1938654",
+"n_pcategory_name": "Asian Games 2026",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202608/rohit-273237896-16x9_0.jpeg?size=170:96",
+"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202608/rohit-273237896-16x9_0.jpeg?size=483:271",
+"n_extralarge_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202608/rohit-273237896-16x9_0.jpeg?size=647:363",
+"n_image_one_to_one": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202608/rohit-273237901-1x1.jpeg?size=115:115",
+"n_photo": {},
+"n_video": {},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-08-27 17:03:09",
+"n_offline_data": {
+"no_desc_withouthtml": "\n            <div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>India's men's cricket team will begin its Asian Games campaign in Japan on September 28, with the Shreyas Iyer-led side entering the competition directly in the quarter-finals. The women's team, led by Harmanpreet Kaur, will begin its campaign against Japan on September 18.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP><p>Both Indian teams are seeded and will start their campaigns from the quarter-final stage. They will go into the competition as firm favourites for the gold medal after sweeping the cricket events at the previous edition in Hangzhou.</p><p>In the men's competition, 10 teams will take part, with India, Pakistan, Bangladesh and Sri Lanka receiving direct entry into the quarter-finals. India have been placed in Quarter-final 2, while Pakistan will feature in Quarter-final 1.</p><p>India will face the second-placed team from Group A, which comprises Afghanistan, Japan and Nepal. Pakistan, meanwhile, will take on the runners-up from Group B, featuring Hong Kong, China, Malaysia and Oman.</p><p>The remaining six teams will have to come through the group stage to reach the last eight. The top two teams from each group will progress to the quarter-finals.</p><p>The semi-final draw has kept India and Pakistan on opposite sides of the bracket. The winner of Quarter-final 1 will face the winner of Quarter-final 3, while the winner of Quarter-final 2 will take on the winner of Quarter-final 4. The semi-finals are scheduled for October 1.</p><p>As a result, India and Pakistan cannot meet in the semi-finals. If both teams win their respective quarter-finals and then make it through the semi-finals, they can meet only in the gold-medal match on October 3. If they lose in the semi-finals, they could face each other in the bronze-medal play-off on the same day.</p><p>The women's competition will get underway earlier, with India taking on Japan on September 18. The women's final is scheduled for September 22, while the men's summit clash will be played on October 3.</p><p>India's women's team will be looking to defend the gold medal it won in Hangzhou, while the men will aim to repeat the success of the previous edition. With both teams entering at the quarter-final stage, India will be among the leading contenders for gold in both competitions.</p></div>\n      ",
+"no_author": {
+"a_title": "India Today World Desk"
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+},
+{
+"n_id": "2304326",
+"n_type": "story",
+"n_is_blog": "0",
+"n_is_sponsored": "0",
+"n_share_link": "https://alpha-indiatoday.intoday.in/sports/asian-games-2026/story/lausanne-diamond-league-neeraj-chopra-warms-up-for-asian-games-with-season-best-throw-2304326-2026-08-27",
+"n_title": "Lausanne Diamond League: Neeraj Chopra warms up for Asian Games with season-best throw",
+"n_slug": "Asian Games 2026",
+"n_short_desc": "Neeraj Chopra produced a season-best 88.05m throw to finish second at the Lausanne Diamond League. The performance offers timely momentum as he builds towards defending his Asian Games title next month.",
+"n_pcategory_id": "1938654",
+"n_pcategory_name": "Asian Games 2026",
+"n_rating": "",
+"n_comment_count": "0",
+"n_highlight": [],
+"n_small_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202608/chopra-272541582-16x9_0.jpeg?size=170:96",
+"n_large_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202608/chopra-272541582-16x9_0.jpeg?size=483:271",
+"n_extralarge_image": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202608/chopra-272541582-16x9_0.jpeg?size=647:363",
+"n_image_one_to_one": "https://static-dev.indiatodayonline.in/indiatoday/images/story/media_bank/202608/chopra-272541588-1x1.jpeg?size=115:115",
+"n_photo": {},
+"n_video": {},
+"n_blog": {},
+"n_emoji_left": [],
+"n_emoji_right": [],
+"n_updated_datetime": "2026-08-27 16:56:08",
+"n_offline_data": {
+"no_desc_withouthtml": "\n            <div class=\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item\"><p>India's men's cricket team will begin its Asian Games campaign in Japan on September 28, with the Shreyas Iyer-led side entering the competition directly in the quarter-finals. The women's team, led by Harmanpreet Kaur, will begin its campaign against Japan on September 18.</p><ITG-NATIVEAPP>ADS<ITG-NATIVEAPP><p>Both Indian teams are seeded and will start their campaigns from the quarter-final stage. They will go into the competition as firm favourites for the gold medal after sweeping the cricket events at the previous edition in Hangzhou.</p><p>In the men's competition, 10 teams will take part, with India, Pakistan, Bangladesh and Sri Lanka receiving direct entry into the quarter-finals. India have been placed in Quarter-final 2, while Pakistan will feature in Quarter-final 1.</p><p>India will face the second-placed team from Group A, which comprises Afghanistan, Japan and Nepal. Pakistan, meanwhile, will take on the runners-up from Group B, featuring Hong Kong, China, Malaysia and Oman.</p><p>The remaining six teams will have to come through the group stage to reach the last eight. The top two teams from each group will progress to the quarter-finals.</p><p>The semi-final draw has kept India and Pakistan on opposite sides of the bracket. The winner of Quarter-final 1 will face the winner of Quarter-final 3, while the winner of Quarter-final 2 will take on the winner of Quarter-final 4. The semi-finals are scheduled for October 1.</p><p>As a result, India and Pakistan cannot meet in the semi-finals. If both teams win their respective quarter-finals and then make it through the semi-finals, they can meet only in the gold-medal match on October 3. If they lose in the semi-finals, they could face each other in the bronze-medal play-off on the same day.</p><p>The women's competition will get underway earlier, with India taking on Japan on September 18. The women's final is scheduled for September 22, while the men's summit clash will be played on October 3.</p><p>India's women's team will be looking to defend the gold medal it won in Hangzhou, while the men will aim to repeat the success of the previous edition. With both teams entering at the quarter-final stage, India will be among the leading contenders for gold in both competitions.</p></div>\n      ",
+"no_author": {
+"a_title": "India Today World Desk"
+}
+},
+"is_enable_micro_payment": "0",
+"micro_payment": [],
+"thumbnail_mp4": "",
+"update_title": "",
+"redirection_url": "",
+"n_left_right_widget_enabled": false,
+"editor_badge": ""
+}
+]
+},
+"cache": {
+"redis_ttl": "200",
+"akamai_ttl": "300"
+},
+"data_source": "D"
 }
