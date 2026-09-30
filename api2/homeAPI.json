@@ -132,9 +132,9 @@
   "n_photo": {},
   "n_video": {},
   "n_blog": {},
-  "widget":
+  "n_widget":
     {
-      "type_label": "w_scorecard",
+      "type_label": "scorecard",
       "title": "",
       "short_url": "https://www.indiatoday.in/live-score/api/livematch/v3/1/15497?app_it=true&recent=1&upcoming=1#",
       "extended_url": "",
