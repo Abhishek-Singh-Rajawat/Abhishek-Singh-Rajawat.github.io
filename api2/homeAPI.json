@@ -132,7 +132,7 @@
   "n_photo": {},
   "n_video": {},
   "n_blog": {},
-  "n_widget":[
+  "n_widget":
     {
       "type_label": "w_scorecard",
       "title": "",
@@ -141,8 +141,7 @@
       "refresh_time": "30",
       "widget_start_time": 1757399201,
       "widget_expiry_time": 1794663000
-    }
-    ],
+    },
   "n_emoji_left": [],
   "n_emoji_right": [],
   "n_updated_datetime": "",
