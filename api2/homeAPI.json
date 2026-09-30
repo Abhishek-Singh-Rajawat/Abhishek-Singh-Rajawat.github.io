@@ -114,7 +114,7 @@
 },
 {
   "n_id": "",
-  "n_type": "scorecard",
+  "n_type": "w_scorecard",
   "n_is_blog": "",
   "n_is_sponsored": "",
   "n_share_link": "",
@@ -132,7 +132,7 @@
   "n_photo": {},
   "n_video": {},
   "n_blog": {},
-  "n_widget":
+  "widget":
     {
       "type_label": "w_scorecard",
       "title": "",
