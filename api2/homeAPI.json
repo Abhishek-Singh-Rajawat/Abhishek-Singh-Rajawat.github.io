@@ -33,10 +33,11 @@
   "n_widget":
     {
       "type_label": "scorecard",
-      "title": "",
-      "short_url": "https://www.indiatoday.in/live-score/api/livematch/v3/1/15497?app_it=true&recent=1&upcoming=1#",
+      "title": "Scorecard",
+      "short_url": "https://www.indiatoday.in/live-score/api/livematch/v3/1/15498_15753_15788_15754?app_it=true&recent=5&upcoming=5",
       "extended_url": "",
       "refresh_time": "30",
+      "listing_url": "https://www.indiatoday.in/live-score/api/livematch/v3/1/15498_15753_15788_15754?app_it=true",
       "widget_start_time": 1757399201,
       "widget_expiry_time": 1794663000
     },
