@@ -1,31 +1,57 @@
 {
+  "status_code": "1",
+  "status_message": "",
   "is_enabled": "1",
+  "background_enabled": "1",
+  "banner_enabled": "1",
+  "server_time": 1787000000,
+  "campaign": {
+    "campaign_id": "spl_20260817_001",
+    "campaign_name": "Independence Day 2026",
+    "start_time": 1786953000,
+    "end_time": 1787039400,
+    "published_at": 1786900000,
+    "published_by": "marketing@aajtak.com",
+    "is_default": "0"
+  },
   "data": {
     "background": {
       "android": {
         "phone": {
-          "hdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/17_aug_2026/742x1290.jpg",
-          "mdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/17_aug_2026/557x968.jpg",
-          "xhdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/17_aug_2026/742x1290.jpg",
-          "xxhdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/17_aug_2026/1170x2532.jpg",
-          "xxxhdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/17_aug_2026/1484x2580.jpg"
+          "mdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/android_mdpi_557x968.jpg",
+          "hdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/android_hdpi_742x1290.jpg",
+          "xhdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/android_xhdpi_1170x2532.jpg",
+          "xxhdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/android_xxhdpi_1170x2532.jpg",
+          "xxxhdpi": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/android_xxxhdpi_1484x2480.jpg"
         },
         "tab": {
-          "sw600": "https://akm-img-a-in.tosshub.com/app/it-app/splash/17_aug_2026/1372x1029.jpg",
-          "sw720": "https://akm-img-a-in.tosshub.com/app/it-app/splash/17_aug_2026/2048x1536.jpg"
+          "sw600": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/android_sw600_1372x1029.jpg",
+          "sw720": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/android_sw720_2048x1536.jpg"
         }
       },
       "ios": {
         "phone": {
-          "one_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/12_oct_24/428x926.jpg?imbypass=true",
-          "two_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/12_oct_24/856x1852.jpg?imbypass=true",
-          "three_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/12_oct_24/1284x2778.jpg?imbypass=true"
+          "one_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/ios_phone_1x_828x1792.jpg",
+          "two_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/ios_phone_2x_828x1792.jpg",
+          "three_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/ios_phone_3x_1284x2778.jpg"
         },
         "tab": {
-          "one_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/12_oct_24/1028x768.jpg?imbypass=true",
-          "two_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/12_oct_24/2048x1536.jpg?imbypass=true",
-          "three_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/12_oct_24/2048x1536.jpg?imbypass=true"
+          "one_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/ios_tab_1x_2048x1536.jpg",
+          "two_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/ios_tab_2x_2048x1536.jpg",
+          "three_x": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/ios_tab_3x_2048x1536.jpg"
         }
+      }
+    },
+    "banner": {
+      "android": {
+        "gravity": "1",
+        "phone": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/banner_android_phone.png",
+        "tab": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/banner_android_tab.png"
+      },
+      "ios": {
+        "gravity": "1",
+        "phone": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/banner_ios_phone.png",
+        "tab": "https://akm-img-a-in.tosshub.com/app/it-app/splash/spl_20260817_001/banner_ios_tab.png"
       }
     }
   }
